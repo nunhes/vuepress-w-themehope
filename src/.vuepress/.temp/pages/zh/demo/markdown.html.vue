@@ -6,7 +6,7 @@
 <h2 id="markdown-配置" tabindex="-1"><a class="header-anchor" href="#markdown-配置" aria-hidden="true">#</a> Markdown 配置</h2>
 <p>VuePress 通过 Frontmatter 为每个 Markdown 页面引入配置。</p>
 <div class="hint-container info">
-<p class="hint-container-title">相关信息</p>
+<p class="hint-container-title">Info</p>
 <p>Frontmatter 是 VuePress 中很重要的一个概念，如果你不了解它，你需要阅读 <a href="https://theme-hope.vuejs.press/zh/cookbook/vuepress/page.html#front-matter" target="_blank" rel="noopener noreferrer">Frontmatter 介绍<ExternalLinkIcon/></a>。</p>
 </div>
 <h2 id="markdown-扩展" tabindex="-1"><a class="header-anchor" href="#markdown-扩展" aria-hidden="true">#</a> Markdown 扩展</h2>

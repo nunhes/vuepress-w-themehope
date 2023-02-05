@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar, glNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar, glSidebar } from "./sidebar/index.js";
+import { enNavbar} from "./navbar/index.js";
+import { enSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
   hostname: "https://ambosass.com/megaboot/",
@@ -82,7 +82,7 @@ export default hopeTheme({
 
     /**
      * Chinese locale config
-     */
+    
     "/zh/": {
       // navbar
       navbar: zhNavbar,
@@ -103,11 +103,11 @@ export default hopeTheme({
       metaLocales: {
         editLink: "在 GitHub 上编辑此页",
       },
-    },
+    }, */
 
     /**
      * Galician locale config
-     */
+     
     "/gl/": {
       // navbar
       navbar: glNavbar,
@@ -128,7 +128,7 @@ export default hopeTheme({
       metaLocales: {
         editLink: "Editar esta página en GitHub",
       },
-    },
+    },*/
   },
 
   encrypt: {

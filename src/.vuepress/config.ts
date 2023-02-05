@@ -10,7 +10,7 @@ export default defineUserConfig({
       title: "MEGA Bootcamp 2023",
       description: "Lecturas complementarias",
     },
-    "/gl/": {
+    /*"/gl/": {
       lang: "gl-ES",
       title: "Galego",
       description: "vuepress-theme-hope demo blog",
@@ -19,7 +19,7 @@ export default defineUserConfig({
       lang: "zh-CN",
       title: "博客演示",
       description: "vuepress-theme-hope 的博客演示",
-    },
+    },*/
   },
 
   theme,

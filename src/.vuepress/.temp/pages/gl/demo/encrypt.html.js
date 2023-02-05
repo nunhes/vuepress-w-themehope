@@ -1,1 +1,14 @@
-export const data = JSON.parse("{\"key\":\"v-6b66a00f\",\"path\":\"/gl/demo/encrypt.html\",\"title\":\"密码加密的文章\",\"lang\":\"gl-ES\",\"frontmatter\":{\"icon\":\"lock\",\"category\":[\"使用指南\"],\"tag\":[\"文章加密\"],\"seo\":false,\"head\":[[\"link\",{\"rel\":\"alternate\",\"hreflang\":\"en-us\",\"href\":\"https://ambosass.com/megaboot/demo/encrypt.html\"}],[\"link\",{\"rel\":\"alternate\",\"hreflang\":\"zh-cn\",\"href\":\"https://ambosass.com/megaboot/zh/demo/encrypt.html\"}]]},\"headers\":[],\"git\":{\"createdTime\":1675605014000,\"updatedTime\":1675605014000,\"contributors\":[{\"name\":\"nunhes\",\"email\":\"nunhes@gmail.com\",\"commits\":1}]},\"readingTime\":{\"minutes\":0.52,\"words\":156},\"filePathRelative\":\"gl/demo/encrypt.md\",\"localizedDate\":\"February 5, 2023\"}")
+export const data = JSON.parse("{\"key\":\"v-6b66a00f\",\"path\":\"/gl/demo/encrypt.html\",\"title\":\"密码加密的文章\",\"lang\":\"en-US\",\"frontmatter\":{\"icon\":\"lock\",\"category\":[\"使用指南\"],\"tag\":[\"文章加密\"],\"seo\":false,\"head\":[]},\"headers\":[],\"readingTime\":{\"minutes\":0.52,\"words\":156},\"filePathRelative\":\"gl/demo/encrypt.md\"}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

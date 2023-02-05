@@ -11,7 +11,7 @@
 <h2 id="页面内容" tabindex="-1"><a class="header-anchor" href="#页面内容" aria-hidden="true">#</a> 页面内容</h2>
 <p>你可以自由在这里书写你的 Markdown。</p>
 <div class="hint-container tip">
-<p class="hint-container-title">提示</p>
+<p class="hint-container-title">Tips</p>
 <ul>
 <li>
 <p>你可以将图片和 Markdown 文件放置在一起，但是你需要使用<strong>相对链接</strong><code v-pre>./</code> 进行引用。</p>

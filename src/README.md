@@ -2,10 +2,10 @@
 home: true
 layout: BlogHome
 icon: home
-title: Blog Home
+title: Home
 heroImage: /logo.svg
-heroText: The name of your blog
-tagline: You can put your slogan here
+heroText: MEGA Bootcamp
+tagline: Desenvolvemento de Aplicacións con Tecnoloxías Web
 heroFullScreen: true
 projects:
   - icon: project
@@ -38,7 +38,7 @@ projects:
     desc: Detailed description of this custom item
     link: https://link.to.your.friend
 
-footer: customize your footer text
+footer: mega bootcamp &copy; 2023 \n i.bernárdez
 ---
 
 This is a blog home page demo.

@@ -3,11 +3,11 @@ import { enNavbar, zhNavbar, glNavbar } from "./navbar/index.js";
 import { enSidebar, zhSidebar, glSidebar } from "./sidebar/index.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://ambosass.com/megaboot/",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mrhope.site",
+    name: "i.berndz",
+    url: "https://ambosass.com",
   },
 
   iconAssets: "iconfont",
@@ -66,7 +66,7 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Default footer",
+      footer: "MEGA Bootcamp 2023",
 
       displayFooter: true,
 
@@ -144,15 +144,15 @@ export default hopeTheme({
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    comment: {
+    // comment: {
       /**
        * Using Giscus
        */
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      // provider: "Giscus",
+      // repo: "vuepress-theme-hope/giscus-discussions",
+      // repoId: "R_kgDOG_Pt2A",
+      // category: "Announcements",
+      // categoryId: "DIC_kwDOG_Pt2M4COD69",
 
       /**
        * Using Twikoo
@@ -172,7 +172,7 @@ export default hopeTheme({
       // provider: "Artalk",
       // site: "artalk-demo",
       // server: "https://demo-artalk.jjdxb.top/",
-    },
+  // },
 
     // Disable features you don’t want here
     mdEnhance: {

@@ -7,8 +7,8 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Blog Demo",
-      description: "A blog demo for vuepress-theme-hope",
+      title: "MEGA Bootcamp 2023",
+      description: "Lecturas complementarias",
     },
     "/gl/": {
       lang: "gl-ES",

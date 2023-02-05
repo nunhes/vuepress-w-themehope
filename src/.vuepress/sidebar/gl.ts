@@ -11,6 +11,12 @@ export const glSidebar = sidebar({
       children: "structure",
     },
     {
+      text: "Modulo1",
+      icon: "note",
+      prefix: "mod1/",
+      children: "structure",
+    },
+    {
       text: "Artigos",
       icon: "note",
       prefix: "posts/",

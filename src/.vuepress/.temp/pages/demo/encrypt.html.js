@@ -1,14 +1,1 @@
-export const data = JSON.parse("{\"key\":\"v-c151bf32\",\"path\":\"/demo/encrypt.html\",\"title\":\"Encryption Article\",\"lang\":\"en-US\",\"frontmatter\":{\"icon\":\"lock\",\"category\":[\"Guide\"],\"tag\":[\"encryption\"],\"seo\":false,\"head\":[[\"link\",{\"rel\":\"alternate\",\"hreflang\":\"gl-es\",\"href\":\"https://mister-hope.github.io/gl/demo/encrypt.html\"}],[\"link\",{\"rel\":\"alternate\",\"hreflang\":\"zh-cn\",\"href\":\"https://mister-hope.github.io/zh/demo/encrypt.html\"}]]},\"headers\":[],\"readingTime\":{\"minutes\":0.3,\"words\":90},\"filePathRelative\":\"demo/encrypt.md\"}")
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
+export const data = JSON.parse("{\"key\":\"v-c151bf32\",\"path\":\"/demo/encrypt.html\",\"title\":\"Encryption Article\",\"lang\":\"en-US\",\"frontmatter\":{\"icon\":\"lock\",\"category\":[\"Guide\"],\"tag\":[\"encryption\"],\"seo\":false,\"head\":[[\"link\",{\"rel\":\"alternate\",\"hreflang\":\"gl-es\",\"href\":\"https://ambosass.com/megaboot/gl/demo/encrypt.html\"}],[\"link\",{\"rel\":\"alternate\",\"hreflang\":\"zh-cn\",\"href\":\"https://ambosass.com/megaboot/zh/demo/encrypt.html\"}]]},\"headers\":[],\"git\":{\"createdTime\":1675605014000,\"updatedTime\":1675605014000,\"contributors\":[{\"name\":\"nunhes\",\"email\":\"nunhes@gmail.com\",\"commits\":1}]},\"readingTime\":{\"minutes\":0.3,\"words\":90},\"filePathRelative\":\"demo/encrypt.md\",\"localizedDate\":\"February 5, 2023\"}")

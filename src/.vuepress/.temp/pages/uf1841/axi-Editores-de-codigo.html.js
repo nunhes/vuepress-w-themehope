@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-0220e48a\",\"path\":\"/uf1841/axi-Editores-de-codigo.html\",\"title\":\"Editores de código\",\"lang\":\"en-US\",\"frontmatter\":{\"description\":\"Editores de código Estas tomando unha cervexa cuns amigos e dous deles parecen non estar presentes, pero entre eles a conversa vese moi animada. De que estarán a falar? Se son programadores so hai dúas posibilidades: do(s) formato(s) de código; ou do(s) editor(es) de código\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://ambosass.com/megaboot/uf1841/axi-Editores-de-codigo.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"DAW\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Editores de código\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"Editores de código Estas tomando unha cervexa cuns amigos e dous deles parecen non estar presentes, pero entre eles a conversa vese moi animada. De que estarán a falar? Se son programadores so hai dúas posibilidades: do(s) formato(s) de código; ou do(s) editor(es) de código\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Editores de código\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[]}\"]]},\"headers\":[{\"level\":2,\"title\":\"Cal era o mellor, logo?\",\"slug\":\"cal-era-o-mellor-logo\",\"link\":\"#cal-era-o-mellor-logo\",\"children\":[]},{\"level\":2,\"title\":\"Un editor de código non é un IDE\",\"slug\":\"un-editor-de-codigo-non-e-un-ide\",\"link\":\"#un-editor-de-codigo-non-e-un-ide\",\"children\":[]},{\"level\":2,\"title\":\"Cal instalo para encetar?\",\"slug\":\"cal-instalo-para-encetar\",\"link\":\"#cal-instalo-para-encetar\",\"children\":[]},{\"level\":2,\"title\":\"... nunca é suficiente\",\"slug\":\"nunca-e-suficiente\",\"link\":\"#nunca-e-suficiente\",\"children\":[]},{\"level\":2,\"title\":\"🍺+🍺+🍺+...​\",\"slug\":\"​\",\"link\":\"#​\",\"children\":[]}],\"readingTime\":{\"minutes\":4.69,\"words\":1406},\"filePathRelative\":\"uf1841/axi-Editores-de-codigo.md\",\"excerpt\":\"<h1> Editores de código</h1>\\n<p>Estas tomando unha cervexa cuns amigos e dous deles parecen non estar presentes, pero entre eles a conversa vese moi animada. De que estarán a falar?</p>\\n<p>Se son programadores so hai dúas posibilidades:</p>\\n<ul>\\n<li>do(s) formato(s) de código; ou</li>\\n<li>do(s) editor(es) de código</li>\\n</ul>\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,0 +1,14 @@
+export const data = JSON.parse("{\"key\":\"v-2a9d4e8c\",\"path\":\"/mf0491_3/uf1842/\",\"title\":\"Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión.\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión.\",\"index\":true,\"icon\":\"discover\",\"category\":[\"Guide\"],\"tag\":[\"entorna cliente\",\"html\",\"css\",\"javascript\"],\"description\":\"UF1842 Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://ambosass.com/megaboot/mf0491_3/uf1842/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"DAW\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión.\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"UF1842 Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"en-US\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"entorna cliente\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"html\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"css\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"javascript\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión.\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[]}\"]]},\"headers\":[{\"level\":2,\"title\":\"UF1842\",\"slug\":\"uf1842\",\"link\":\"#uf1842\",\"children\":[]},{\"level\":2,\"title\":\"Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión\",\"slug\":\"desenvolvemento-e-reutilizacion-de-componentes-software-e-multimedia-mediante-linguaxes-de-guion\",\"link\":\"#desenvolvemento-e-reutilizacion-de-componentes-software-e-multimedia-mediante-linguaxes-de-guion\",\"children\":[]}],\"readingTime\":{\"minutes\":0.13,\"words\":38},\"filePathRelative\":\"mf0491_3/uf1842/README.md\",\"excerpt\":\"<h2> UF1842</h2>\\n<h2> Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión</h2>\\n\",\"autoDesc\":true}")
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,0 +1,36 @@
+---
+title: Elaboración de documentos web mediante linguaxes de marcas.
+index: true
+# layout: 
+icon: discover
+category:
+  - Guide
+tag:
+  - entorna cliente
+  - html
+  - css
+  - javascript
+
+---
+<!-- ## UF1841 -->
+## Elaboración de documentos web mediante linguaxes de marcas.
+
+- [Introdución](00-introducion.md)
+- [Linguaxes de programación](01-linguaxes-de-programacion.md)
+- [Ferramentas do lado cliente](ferramentas-do-lado-do-cliente.md)
+  - [Navegadores](axii-Navegadores.md)
+    - [Ferramentas do Desenvolvedor](Ferramentas-do-Desenvolvedor.md)
+  - [Editores de código](axi-Editores-de-codigo.md)  
+  - [HTML con VSCode](axvii-HTML-con-VSCode.md)
+  - [Emmet](axv-Emmet-exemplos.md)
+- [Fases do deseño web](Fases-do-Deseno-Web.md)
+- [Creación de paxinas web accesibles](03-creacion-de-paxinas-web-accesibles.md)
+- [HTML](04-HTML5.md)
+  - [Elementos](axi-Elementos-HTML5.md)
+- [Wireframes](axvi-wireframes.md)
+- [Deseño/Estrutura/Optimización](Deseno-estrutura-optimizacion-contidos.md)
+- [Imaxes e elementos multimedia](Imaxes-e-elementos-multimedia.md)
+
+
+
+

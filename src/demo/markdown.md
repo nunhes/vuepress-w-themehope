@@ -94,9 +94,9 @@ A custom details container
 
 Apple
 
-@tab banana
+@tab javascript
 
-Banana
+javascript
 
 @tab orange
 

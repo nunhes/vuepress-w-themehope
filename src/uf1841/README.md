@@ -1,8 +1,8 @@
 # UF1841
 
-### Elaboración de documentos web mediante linguaxes de marca 60h
+### Elaboración de documentos web mediante linguaxes de marca
 
-<!-- ### 02/01/23-18/01/23 -->
+<!-- ### 60h 02/01/23-18/01/23 -->
 
 ### UD1. DESEÑO WEB
 
@@ -16,11 +16,7 @@
 3. [Estrutura xeral dun documento con linguaxe de marcado.](https://www.mindomo.com/es/mindmap/estructura-de-un-documento-creado-con-lenguaje-de-marcas-64db39389f6e160d99836e6de3f29bf6)
 4. [Documentos válidos e ben formados](https://www.sistrix.com/ask-sistrix/onpage-optimisation/what-is-html-validation). [Esquemas](https://vistoenlared.es/estructura-del-codigo-html5-anatomia-de-una-pagina-web/).
 
-### UD 3. LINGUAXES DE MARCADO PARA CREACIÓN DE PÁXINAS WEB
-
-https://www.educba.com/introduction-to-html/
-
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started
+### UD3. LINGUAXES DE MARCADO PARA CREACIÓN DE PÁXINAS WEB
 
 1. [Historia de HTML](https://vertex-academy.com/tutorials/en/html-history/). [Diferencias entre versións](https://www.educba.com/versions-of-html/).
 2. [Estrutura dun documento.](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
@@ -31,13 +27,13 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting
 7. [Listas.](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#lists)
 8. [Táboas.](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables)
 9. [Vídeo e son](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content)
-10. [Marcos (frames)]().
-11. [Formularios](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form).
+10. [Marcos (frames)](https://html.com/frames/).
+11. [Formularios](https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form).[2](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling)
 12. [Descrición xeral e uso de formularios](https://developer.mozilla.org/en-US/docs/Learn/Forms).
 13. [Elementos específicos para tecnoloxías móbiles](https://www.freecodecamp.org/news/responsive-web-design-how-to-make-a-website-look-good-on-phones-and-tablets/).
 14. [Elementos en desuso (*deprecated*)](https://www.w3.org/TR/2014/REC-html5-20141028/obsolete.html).
 
-### UD 4. [FOLLAS DE ESTILO](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
+### UD4. [FOLLAS DE ESTILO](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics)
 
 1. [Tipos](https://www.w3schools.com/htmL/html_css.asp) de [follas de estilo](https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/3-terrarium/2-intro-to-css/README.md): estáticas e [dinámicas](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Using_dynamic_styling_information).
 2. [Elementos e estrutura dunha folla de estilo](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured).
@@ -47,6 +43,13 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting
 
 
 ### [GLOSARIO WEB](https://developer.mozilla.org/en-US/docs/Glossary)
+
+
+::: info
+
+[Lecturas complementarias](UF1841.md)
+
+:::
 
 ---
 FEB 2023

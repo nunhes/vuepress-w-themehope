@@ -23,17 +23,17 @@ export const enNavbar = navbar([
         ],
       },
       {
-        text: "Banana",
+        text: "javascript",
         icon: "edit",
-        prefix: "banana/",
+        prefix: "javascript/",
         children: [
           {
-            text: "Banana 1",
+            text: "javascript 1",
             icon: "edit",
             link: "1",
           },
           {
-            text: "Banana 2",
+            text: "javascript 2",
             icon: "edit",
             link: "2",
           },

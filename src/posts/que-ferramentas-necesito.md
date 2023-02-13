@@ -1,3 +1,15 @@
+---
+icon: edit
+date: 2023-01-12
+category:
+  - elemental
+tag:
+  - deseño web
+  - elemental
+star: true
+sticky: true
+---
+
 # Que ferramentas necesito para comezar no desenvolvemento web? 🤔
 
 ## Editor(es) de código

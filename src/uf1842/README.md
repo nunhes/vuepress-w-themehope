@@ -1,8 +1,8 @@
 # UF1842
 
-### Desenvolvemento e reutilización de compoñentes software e  multimedia mediante linguaxes de guión 90h
+### Desenvolvemento e reutilización de compoñentes software e  multimedia mediante linguaxes de guión
 
-### 19/01/23-13/02/23
+<!-- ### 90h 19/01/23-13/02/23 -->
 
 ### UD 1. [ARQUITECTURAS](https://www.disrupciontecnologica.com/capas-y-niveles-diseno-y-confusion/) DE APLICACIÓNS WEB
 
@@ -20,16 +20,18 @@
    - Módulos auxiliares: [persistencia](https://www.sitepoint.com/client-side-storage-options-comparison/), interface de rede, intérprete de scripts, infraestrutura de presentación.
 2.  [Navegadores](https://www.osi.es/es/navegadores) de [uso común](https://kinsta.com/es/cuota-mercado-mundial-navegadores/). [Comparativa](https://www.mozilla.org/es-ES/firefox/browsers/compare/).
 3.  [Seguridade en navegadores](https://www.osi.es/es/navegadores).[Test de navegadores seguros: ¿qué navegador es el más seguro?](https://www.ionos.es/digitalguide/online-marketing/vender-en-internet/comparativa-de-navegadores-seguros/)
-4.  Integración de aplicacións en navegadores. Adaptadores (plugins).
-   - Adaptadores comúns en diferentes navegadores.
-   - Configuración de tipos de arquivo e adaptadores.
-5.  Conformidade a estándares.
+4.  [Integración de aplicacións en navegadores](https://www.astera.com/es/tipo/blog/integraci%C3%B3n-de-aplicaciones/). [Adaptadores (plugins)](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/como-instalar-add-ons/).
+   - [Adaptadores comúns en diferentes navegadores](https://protege.la/5-complementos-plugins-basicos-para-tu-navegador/)
+   - [Configuración de tipos de arquivo e adaptadores](https://dinahosting.com/blog/que-es-un-plugin-y-para-que-sirve/).
+5. [Conformidade a estándares](https://www.inesem.es/revistadigital/informatica-y-tics/estandares-web/).
 
 https://www.sitepoint.com/client-side-storage-options-comparison/
 
+https://www.google.com/chrome/browser-features/
+
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage
 
-### UD 3. CREACIÓN DE CONTIDO WEB DINÁMICO
+### UD 3. CREACIÓN DE [CONTIDO WEB DINÁMICO](https://www.wearecontent.com/blog/marketing-de-contenidos/contenidos-dinamicos)
 
 https://learn.microsoft.com/en-us/training/modules/web-development-101-introduction-programming/2-what-is-programming
 
@@ -41,34 +43,34 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
    - Tipos de parámetros.
    - Chamadas a funcións. Recursividade.
    - Nocións de orientación a obxectos: clases e obxectos. Herda.
-   - Principais metodoloxías de programación.
-2. Linguaxes para o desenvolvemento de contido dinámico.
-   - Linguaxes de guión. Características xerais.
-   - Comparativa de linguaxes de guión. Criterios para a selección dunha linguaxe de guión.
+   - [Principais metodoloxías de programación](https://www.obsbusiness.school/blog/metodologia-de-programacion-definicion-tipos-y-aplicacion). [2](https://asana.com/es/resources/project-management-methodologies)
+2. [Linguaxes para o desenvolvemento de contido dinámico](https://www.um.es/docencia/barzana/DAWEB/2017-18/daweb-tema-13-paginas-web-dinamicas.html).
+   - [Linguaxes de guión](https://kinsta.com/es/blog/lenguajes-script/). Características xerais.
+   - Comparativa de linguaxes de guión. [Criterios para a selección dunha linguaxe de guión](https://blog.educacionit.com/2018/04/10/4-criterios-para-elegir-tu-primer-lenguaje-de-programacion/#:~:text=Existen%204%20cuatro%20criterios%20principales%20que%20se%20deben,mismo.%20...%203%20Geograf%C3%ADa.%20...%204%20Popularidad.%20).
    - Máquinas virtuais en navegadores. Miniaplicacións (applets).
    - Outras linguaxes para o desenvolvemento de aplicacións web enriquecidas (RIA).
 
-### UD 4. LINGUAXES DE GUIÓN DE USO XERAL
+### UD 4. [LINGUAXES DE GUIÓN DE USO XERAL](https://kinsta.com/es/blog/lenguajes-script/)
 
 1. Integración de linguaxes de guión en navegadores web.
    - Comparativa e compatibilidade con navegadores.
    - Diferencias entre versións.
-2. Estrutura xeral dun programa nunha linguaxe de guión.
-   - Variables e tipos de datos.
-   - Operadores.
-   - Obxectos.
+2. [Estrutura xeral dun programa nunha linguaxe de guión](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics).
+   - [Variables](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables) e tipos de datos.
+   - [Operadores](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators).
+   - [Obxectos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects).
    - Sentencias. Aniñado.
-   -  Estruturas de control e condicionais.
+   - [Estruturas de control e condicionais](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks).
    - Bucles. 
    - Comentarios
-3. Funcións.
+3. [Funcións](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions).
    - Parámetros.
    - Variables locais e globais.
    - Bibliotecas de funcións
 4. Manipulación de texto.
    - Funcións básicas para manipulación de texto.
    - Introdución e validación de texto.
-5. Listas (arrays).
+5. [Listas (arrays)](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays).
    - Creación de arrays básicos.
    - Arrays multidimensionais. 
    - Tratamento de arrays mediante bucles.
@@ -79,7 +81,7 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
 7. Obxectos.
    - Creación de obxectos: métodos e estruturas de datos.
    - Bibliotecas de obxectos
-8. O modelo de documento web.   https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+8. [O modelo de documento web](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
    - Estrutura de documento.
    - Navegación polas propiedades dun documento.
    - Cambio de propiedades mediante linguaxes de guión.
@@ -118,7 +120,7 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
    - Adaptadores para recursos multimedia.
    - Enlace a diferentes recursos desde páxinas web.
    - Incrustación de contido multimedia.
-   - Formatos de arquivo web. El estándar MIME.
+   - Formatos de arquivo web. [El estándar MIME](https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_Types).
    - Tipos de reprodución. Streaming e carga progresiva.
    - Comparativa do tratamento de contido multimedia en diferentes versións de linguaxes de marcado de páxinas.
 3. Gráficos multimedia.
@@ -127,13 +129,13 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
    - Tipos de gráficos: fotografías, imaxes vectorizadas e iconas.
    - Ferramentas para o tratamento gráfico. Filtros e tratamento de imaxes
    - Conversión de formatos gráficos.
-4. Son.
+4. [Son](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs).
    - Formatos de son. Comparativa.
    - Reprodutores de son. Inserción en navegadores web.
    - Enlace o inserción de canles de son.
    - Conversión de formatos de son.
    - Ferramentas para o tratamento de son. Edición de fragmentos de son.
-5. Vídeo.
+5. [Vídeo](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs).
    - Formatos de vídeo. Calidade de vídeo e comparativa.
    - Repositorios de vídeo.
    - Reprodutores de vídeo. Inserción en navegadores web.
@@ -141,9 +143,9 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
    - Conversión de formatos de vídeo. Optimización.
    - Ferramentas de edición de vídeo. Creación de efectos e composición.
 6. Animacións multimedia.
-   - Principios da animación.
-   - Ferramentas para creación de animacións.
-   - Formatos de animacións.
+   - [Principios da animación](https://www.adobe.com/es/creativecloud/animation/discover/principles-of-animation.html).
+   - [Ferramentas para creación de animacións](https://fixthephoto.com/best-free-2d-animation-software.html).
+   - [Formatos de animacións](https://graphicdesign.stackexchange.com/questions/39613/whats-the-best-way-to-animate-an-illustration-for-the-web).
    - Inclusión en páxinas web.
    - Boas prácticas no uso de animacións
 7. Elementos interactivos
@@ -155,7 +157,7 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
 
 
 
----
+<!--
 
 ## DATOS IDENTIFICATIVOS DA UNIDADE FORMATIVA
 
@@ -261,4 +263,4 @@ Despois de realizar distintos exemplos de paxina web o alumnado debe poder reali
 
   - Crear elementos interactivos, responsivos, accesibles,
   
-    
+    -->

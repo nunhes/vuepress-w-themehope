@@ -1,17 +1,20 @@
 ---
-title: Features Demo
-index: false
+title: Códigos de exemplo
+index: true
 icon: discover
 category:
-  - Guide
+  - exemplo
 ---
 
-## Catalog
+## Códigos de exemplo
+Aquí podes atopar moitos do exemplos que realizamos durante o taller, para que sigas praticando:
 
-- [Markdown Enhance](markdown.md)
+- [HTML, CSS e JS](1.md)
+
+<!-- [Markdown Enhance](markdown.md)
 
 - [Page Config](page.md)
 
 - [Function Disable](disable.md)
 
-- [Encryption Demo](encrypt.md)
+- [Encryption Demo](encrypt.md)-->

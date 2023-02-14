@@ -28,10 +28,10 @@
 3. [Diferencias entre accesibilidade e usabilidade](https://dev.to/yuridevat/usability-accessibility-commonalities-and-differences-108d).
 4. [Avantaxes e problemas na combinación de accesibilidade e usabilidade](https://blog.usablenet.com/accessibility-vs-usability-what-is-the-difference-to-the-disability-community).
 5. [Avantaxes e dificultades na implantación de sitios web usables](https://medium.com/@eliseohdez/m%C3%A9todos-y-t%C3%A9cnicas-de-evaluaci%C3%B3n-de-la-usabilidad-sin-personas-usuarias-e8f7b03c8654).
-6. Métodos de usabilidade.
-7. Análises de requirimentos de usuario.
+6. [Métodos de usabilidade](https://medium.com/@eliseohdez/m%C3%A9todos-y-t%C3%A9cnicas-de-evaluaci%C3%B3n-de-la-usabilidad-sin-personas-usuarias-e8f7b03c8654).
+7. [Análises de requirimentos de usuario](https://colorvivo.com/los-9-requisitos-para-crear-un-proyecto-web/).[2](https://bgan.es/blog-marketing-digital/tecnicas-de-ux-la-clave-esta-en-una-buena-captura-de-requisitos/)
 8. [Principios](https://xd.adobe.com/ideas/principles/web-design/) do deseño conceptual. [Creación de prototipos orientados ao usuario](https://www.iebschool.com/blog/herramientas-prototipado-analitica-usabilidad/).
-9. Pautas para a creación de sitios web usables.
+9. [Pautas para a creación de sitios web usables](https://es.semrush.com/blog/usabilidad-web-principios-jakob-nielsen/).
 10. [Avaliación da usabilidad](https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/).
 
 **Máis info**:

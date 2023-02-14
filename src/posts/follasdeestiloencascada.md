@@ -1,4 +1,16 @@
-# CSS
+---
+icon: edit
+date: 2023-01-09
+category:
+  - CSS
+tag:
+  - css
+sticky: true
+# this page will appear in starred articles
+star: true
+---
+
+# Follas de estilo en cascada. CSS
 
 CSS, abreviatura de follas de estilo en cascada, é un dos principais bloques de construción da web. A súa historia remóntase aos anos 90 e xunto co HTML cambiou moito dende os seus humildes inicios.
 

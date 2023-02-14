@@ -1,3 +1,15 @@
+---
+# This control sidebar order
+order: 1
+# Set writing time
+date: 2023-01-01
+# A page can have multiple categories
+category:
+  - Modulos
+  - Unidades
+---
+
+
 # UF1842
 
 ### Desenvolvemento e reutilización de compoñentes software e  multimedia mediante linguaxes de guión
@@ -9,7 +21,7 @@
 1. [Esquema xeral](https://www.educba.com/layered-architecture/).
 2. [Arquitectura en capas](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/).
 3. [Interacción entras capas cliente e servidor](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview).
-4. [Arquitectura](https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/) da capa cliente.
+4. [Arquitectura](https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/)[ da capa cliente](https://www.disrupciontecnologica.com/arquitectura-de-servicios-web/).
 
 ### UD 2. [NAVEGADORES WEB](https://web.dev/howbrowserswork/)
 
@@ -36,19 +48,21 @@ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/C
 https://learn.microsoft.com/en-us/training/modules/web-development-101-introduction-programming/2-what-is-programming
 
 1. [Fundamentos da programación](https://www.codealo.dev/cursos/fundamentos-de-programacion).
-   - Constantes, variables. Tipos de datos simples e estruturados.
-   - Expresións e sentencias. Operadores básicos.
-   - Control de fluxo: secuencial, bucles e condicionais.
-   - Subprogramas: procedementos e funcións. Librerías.
-   - Tipos de parámetros.
-   - Chamadas a funcións. Recursividade.
-   - Nocións de orientación a obxectos: clases e obxectos. Herda.
+   - [Constantes, variables](https://www.freecodecamp.org/news/differences-between-var-let-const-javascript/). [Tipos de datos simples e estruturados](https://desarrolloweb.com/articulos/tipos-datos-programacion.html).
+   - [Expresións e sentencias](https://desarrolloweb.com/articulos/expresiones-instruccion-programacion.html). [Operadores básicos.](https://desarrolloweb.com/articulos/operadores-operandos-programacion)
+   - Control de fluxo: [secuencial](https://desarrolloweb.com/articulos/2199.php), [bucles](https://desarrolloweb.com/articulos/2249.php) e [condicionais](https://desarrolloweb.com/articulos/2225.php).
+   - [Subprogramas: procedementos e funcións](https://desarrolloweb.com/articulos/subprogramacion-funciones.html). [Librarías](https://desarrolloweb.com/articulos/listado-distintos-framework-javascript.html).
+   - [Tipos de parámetros](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures.)
+   - Chamadas a [funcións](https://www.freecodecamp.org/news/understanding-functions-in-javascript/). [Recursividade](https://desarrolloweb.com/articulos/funciones-recursivas-recursividad.html).
+   - [Nocións de orientación a obxectos: clases e obxectos](https://www.freecodecamp.org/news/object-oriented-programming-javascript/). [Herda](https://desarrolloweb.com/articulos/herencia-en-programacion-orientada-objetos.html).
    - [Principais metodoloxías de programación](https://www.obsbusiness.school/blog/metodologia-de-programacion-definicion-tipos-y-aplicacion). [2](https://asana.com/es/resources/project-management-methodologies)
 2. [Linguaxes para o desenvolvemento de contido dinámico](https://www.um.es/docencia/barzana/DAWEB/2017-18/daweb-tema-13-paginas-web-dinamicas.html).
-   - [Linguaxes de guión](https://kinsta.com/es/blog/lenguajes-script/). Características xerais.
-   - Comparativa de linguaxes de guión. [Criterios para a selección dunha linguaxe de guión](https://blog.educacionit.com/2018/04/10/4-criterios-para-elegir-tu-primer-lenguaje-de-programacion/#:~:text=Existen%204%20cuatro%20criterios%20principales%20que%20se%20deben,mismo.%20...%203%20Geograf%C3%ADa.%20...%204%20Popularidad.%20).
+   - [Linguaxes de guión](https://kinsta.com/es/blog/lenguajes-script/). [Características xerais](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/).
+   - Comparativa de linguaxes de guión. [Criterios para a selección dunha linguaxe de guión](https://blog.educacionit.com/2018/04/10/4-criterios-para-elegir-tu-primer-lenguaje-de-programacion/).
    - Máquinas virtuais en navegadores. Miniaplicacións (applets).
-   - Outras linguaxes para o desenvolvemento de aplicacións web enriquecidas (RIA).
+   - Outras linguaxes para o desenvolvemento de [aplicacións web enriquecidas (RIA)](https://es.wikipedia.org/wiki/Rich_Internet_application).
+
+   - https://www.freecodecamp.org/news/what-is-F-js/
 
 ### UD 4. [LINGUAXES DE GUIÓN DE USO XERAL](https://kinsta.com/es/blog/lenguajes-script/)
 
@@ -78,7 +92,7 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
    - Comparativa. 
    - Tratamento de formatos estándar.
    - Dicionarios de datos.
-7. Obxectos.
+7. [Obxectos](https://www.freecodecamp.org/news/object-oriented-programming-javascript/).
    - Creación de obxectos: métodos e estruturas de datos.
    - Bibliotecas de obxectos
 8. [O modelo de documento web](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)

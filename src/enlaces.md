@@ -65,6 +65,9 @@ icon: info
 
 - **Javascript**
   - [Learn to Program (stanford.edu)](http://stanford.edu/~cpiech/karel/learn.html)
+  - **Javascript**
+  - [Javascript en freecodecamp](https://www.freecodecamp.org/espanol/news/tag/javascript/)
+  - [Aprende JavaScript: Curso JS gratis para principiantes](https://www.freecodecamp.org/espanol/news/aprende-javascript-curso-js-gratis-para-principiantes/)
   - [Escribir JavaScript consistente e idiomático](https://github.com/rwaldron/idiomatic.js/tree/master/translations/es_ES)
   - [Obxectos globais](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects)
   - [Clases](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)

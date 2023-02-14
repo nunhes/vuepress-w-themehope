@@ -2,7 +2,6 @@ import { navbar } from "vuepress-theme-hope";
 
 export const enNavbar = navbar([
   "/",
-  { text: "Demo", icon: "discover", link: "/demo/" },
   { text: "Módulo 1", icon: "discover", link: "/mf0491_3/" },
   { text: "Módulo 2", icon: "discover", link: "/mf0492_3/" },
   { text: "Módulo 3", icon: "discover", link: "/mf0493_3/" },
@@ -16,10 +15,7 @@ export const enNavbar = navbar([
         icon: "edit",
         prefix: "html/",
         children: [
-          { text: "Html1", icon: "edit", link: "1" },
-          { text: "Html2", icon: "edit", link: "2" },
-          "3",
-          "4",
+          { text: "Html1", icon: "edit", link: "1" }
         ],
       },
       {
@@ -37,16 +33,16 @@ export const enNavbar = navbar([
             icon: "edit",
             link: "2",
           },
-          "3",
-          "4",
         ],
       },
-      { text: "Flexbox vs Grid", icon: "edit", link: "flexvsgrid" },
-      { text: "Dragon Fruit", icon: "edit", link: "dragonfruit" },
+      { text: "Html", icon: "edit", link: "linguaxehtml" },
+      { text: "CSS", icon: "edit", link: "follasdeestiloencascada" },
+      { text: "Javascript", icon: "edit", link: "javascript" },
       "tomato",
       "NPM",
     ],
   },
+  { text: "Demo", icon: "discover", link: "/demo/" },
   {
     text: "V2 Docs",
     icon: "note",

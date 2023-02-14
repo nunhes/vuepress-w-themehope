@@ -1,3 +1,17 @@
+---
+icon: edit
+date: 2023-02-09
+category:
+  - Javascript
+tag:
+  - javascript
+  
+sticky: true
+# this page will appear in starred articles
+star: true
+---
+---
+
 # Javascript
 
 ## 1. Introdución a JavaScript

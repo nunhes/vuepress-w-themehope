@@ -15,7 +15,7 @@ export const enNavbar = navbar([
         icon: "edit",
         prefix: "html/",
         children: [
-          { text: "Html1", icon: "edit", link: "1" }
+          { text: "Usar Parcel", icon: "edit", link: "1" }
         ],
       },
       {
@@ -24,25 +24,28 @@ export const enNavbar = navbar([
         prefix: "javascript/",
         children: [
           {
-            text: "javascript 1",
+            text: "Relo dixital",
             icon: "edit",
             link: "1",
           },
           {
-            text: "javascript 2",
+            text: "Conta atrás",
             icon: "edit",
             link: "2",
+          },
+          {
+            text: "NPM",
+            icon: "edit",
+            link: "npm",
           },
         ],
       },
       { text: "Html", icon: "edit", link: "linguaxehtml" },
       { text: "CSS", icon: "edit", link: "follasdeestiloencascada" },
-      { text: "Javascript", icon: "edit", link: "javascript" },
-      "tomato",
-      "NPM",
+      { text: "Javascript", icon: "edit", link: "intro-js" },
     ],
   },
-  { text: "Demo", icon: "discover", link: "/demo/" },
+  { text: "Exemplos", icon: "discover", link: "/demo/" },
   {
     text: "V2 Docs",
     icon: "note",

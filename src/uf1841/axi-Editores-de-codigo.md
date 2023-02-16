@@ -51,7 +51,7 @@ Vexamos algunhas posibilidades:
 
 2. **[Sublime Text](https://www.sublimetext.com/)**: O candidato de sempre. Unha aplicación moi lixeira que sinalou o camiño a outras e cun considerable e incondicional número de adeptos.
 
-   ![SublimeText](assets/sublimetext-full.jpg)
+   ![SublimeText](./assets/sublimetext-full.jpg)
 
    Con varios complementos moi prácticos, destaca polos atallos de teclado - fácil integración con Emmet-, unha interface moi sinxela e fácil de usar.
 
@@ -59,7 +59,7 @@ Vexamos algunhas posibilidades:
 
 3. **[Atom](https://atom.io/)**: outro editor de código aberto dispoñible tanto para Linux coma para Windows ou Mac. Atom é compatible co control de versións de Git e dispón de centos de plugins - escritos en JavaScript-.
 
-   ![Atom](https://flight-manual.atom.io/getting-started/images/windows-downloads.png)
+   ![Atom](./assets/windows-downloads.png)
 
    Permite compartir o progreso do proxecto con colaboradores. E empregando Teletype para Atom (‎que permite tanto compartir coñecementos coma ensinalos‎) o converte nun moi interesante proxecto.
 
@@ -67,7 +67,7 @@ Vexamos algunhas posibilidades:
 
 4. [NetBeans](https://netbeans.org/): seguramente un dos preferidos polos deseñadores web. Sendo un editor de texto é o que máis se presenta coma un complexo IDE. Versátil e moi completo é compatible con diferentes linguaxes de programación. Moi interesante para o desenvolvemento con Angular e tamén para traballar con Node.js.
 
-   ![NetBeans](https://pbs.twimg.com/media/CZF2vWTUsAETj28.png)
+   ![NetBeans](./assets/CZF2vWTUsAETj28.png)
 
    Dispoñible para Mac, Windows e Linux
 

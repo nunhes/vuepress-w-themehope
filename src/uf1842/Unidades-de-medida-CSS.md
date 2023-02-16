@@ -54,7 +54,7 @@ Aínda que sexan as máis axeitadas **para imprimir**, xa que os medios impresos
 ---
 
 
-![Madidas absolutas](/assets/css/unidades-absolutas.png)
+![Madidas absolutas](./assets/css/unidades-absolutas.png)
 
  
 ---
@@ -104,7 +104,7 @@ Estes valores establécense tomando como referencia:
    ---
 
 
-   ![Medidas ex](/assets/css/x-height.png)
+   ![Medidas ex](./assets/css/x-height.png)
 
 
    ---
@@ -118,7 +118,7 @@ Estes valores establécense tomando como referencia:
    ---
 
 
-   ![img](/assets/css/o3h1avbum3sw47a3coch.jpeg)
+   ![img](./assets/css/o3h1avbum3sw47a3coch.jpeg)
 
 
    ---
@@ -144,7 +144,7 @@ Estes valores establécense tomando como referencia:
 
 ---
 
-![bg fit](/assets/css/unidades-relativas-em.png)
+![bg fit](./assets/css/unidades-relativas-em.png)
 
 ---
 
@@ -166,7 +166,7 @@ As **medidas relativas son máis vantaxosas para traballar en pantalla porque so
 
 ---
 
-![img](/assets/css/em-ex-normal-font.png)
+![img](./assets/css/em-ex-normal-font.png)
 
 ---
 
@@ -176,7 +176,7 @@ Elixir unha ou outra depende de ti: a que te faga sentir máis cómodo e por sup
 
 ---
 
-![img](/assets/css/vmin.png)
+![img](./assets/css/vmin.png)
 
 
 
@@ -195,13 +195,13 @@ Os atributos **width** e **height** definen o ancho e o alto dos elementos HTML,
 Imos explicar o caso do **ancho** co seguinte esquema (a **altura** sería similar):
 
 
-![Modelo de caixa CSS.  Anchura total box-sizing: content-box](/assets/css/modelo_cajas_anchos.svg)
+![Modelo de caixa CSS.  Anchura total box-sizing: content-box](./assets/css/modelo_cajas_anchos.svg)
 
 
 ---
 
 
- <img src="/assets/css/screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35.png" alt="screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35" style="zoom:50%;">
+ <img src="./assets/css/screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35.png" alt="screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35" style="zoom:50%;">
 
 
  ---
@@ -235,7 +235,7 @@ A propiedad **box-sizing** indica cómo se calcula el ancho y alto de la etiquet
 
 El caso de **content-box** lo hemos explicado en el punto anterior, ahora vamos a ver un esquema para ver el caso de **border-box**:
 
-![Modelo de caja CSS. Anchura total box-sizing: border-box](/assets/css/modelo_cajas_anchos_border.svg+xml)
+![Modelo de caja CSS. Anchura total box-sizing: border-box](./assets/css/modelo_cajas_anchos_border.svg+xml)
 
 El esquema corresponde a la definición de un contenedor (por ejemplo div) con estos atributos:
 

@@ -3,7 +3,7 @@ home: true
 layout: BlogHome
 icon: home
 title: DAW
-bgImage: /assets/hero1.webp
+bgImage: /hero1.webp
 heroImage: /logo.svg
 heroText: DAW2023
 tagline: Desenvolvemento de aplicacións con tecnoloxías web

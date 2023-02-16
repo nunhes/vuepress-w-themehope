@@ -238,7 +238,7 @@ Toma este HTML e reescribío para que sexa o máis accesible posible, dadas as e
     <title>
       Example
     </title>
-    <link href='../assets/style.css' rel='stylesheet' type='text/css'>
+    <link href='./assets/style.css' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="site-header">

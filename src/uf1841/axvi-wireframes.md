@@ -14,11 +14,11 @@ O obxectivo dos esquemas visuais é definir a distribución de contidos e a posi
 
 Nos wireframes ou esquemas visuais non tes porque empregar cores, nin tipografías nin ningún outro elemento gráfico. O importante é centrarse na **funcionalidade do sitio** e a **experiencia de usuario**. 
 
-![Funcionalidade do sitio e experiencia de usuario](assets/wireframe_site_web_2.jpg)
+<!-- [Funcionalidade do sitio e experiencia de usuario](axii-Navegadores.md/assets/wireframe_site_web_2.jpg) -->
 
 Ao ser representacións sinxelas, podes crear diferentes versións dun mesmo sitio de xeito moi rápido, ou aplicar cambios ou novas ideas sobre a marcha. O importante é facerse cunha idea clara da estrutura da web ou aplicación. E coñecer de antemán que dependencias - de código, tecnoloxías, imaxes, textos,...- vai a precisar o teu proxecto.
 
-![wireframes](assets/wireframes.jpg)
+<!-- [wireframes](./assets/wireframes.jpg)-->
 
 ...
 

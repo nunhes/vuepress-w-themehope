@@ -33,8 +33,8 @@ Non se trata só de agradar aos visitantes, que tamén. Unha boa, ou mala, compo
 
 ---
 
-![1.Balance](F:\2023\mega\bootcamp\MF0491_3-ContornaCliente\assets\desenoweb-p1.gif)
-
+<!--[1.Balance](./assets/desenoweb-p1.gif)
+-->
 ---
 
 ### 1. Equilibrio

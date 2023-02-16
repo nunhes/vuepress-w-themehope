@@ -63,7 +63,7 @@ Ser desenvolvedor web é participar de cheo nunha practica profesional profundam
 
 Se es produtor de contidos quererás a mellor difusión para as túas producións. Se es usuario de tecnoloxías da información -quen non?- quererás a mellor usabilidade e accesibilidade desde calquera dos teus dispositivos. E se es desenvolvedor/deseñador web quererás que productores de contidos e consumidores de medios estean contentos de como se difunden e se accede aos contidos grazas a túa participación como especialista en desenvolvemento con tecnoloxías web.
 
-![Benvid@s a aventura!](/assets/welcometothjungle.png)
+<!--[Benvid@s a aventura!](./assets/welcometothjungle.png)-->
 
 
 

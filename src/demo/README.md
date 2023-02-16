@@ -7,7 +7,7 @@ category:
 ---
 
 ## Códigos de exemplo
-Aquí podes atopar moitos do exemplos que realizamos durante o taller, para que sigas praticando:
+Aquí podes atopar os exemplos que realizamos durante o taller, para que sigas praticando:
 
 - [HTML, CSS e JS](1.md)
 
@@ -17,4 +17,4 @@ Aquí podes atopar moitos do exemplos que realizamos durante o taller, para que 
 
 - [Function Disable](disable.md)
 
-- [Encryption Demo](encrypt.md)-->
+- [Encryption Demo](encrypt.md)  -->

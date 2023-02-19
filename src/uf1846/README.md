@@ -3,7 +3,8 @@ title: Desenvolvemento de aplicacións web distribuidas
 index: true
 icon: discover
 category:
-  - Guide
+  - Guías
+  - Unidade
 ---
 
 ## UF1846

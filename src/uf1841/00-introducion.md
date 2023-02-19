@@ -1,12 +1,8 @@
----
-headerDepth: 2
----
-
-## Desenvolvemento web
+# Desenvolvemento web
 
 Un **desenvolvedor web** é a persoa encargada de crear sitios web a través de código complexo e lograr que os usuarios dun sitio poidan levar a termo diferentes accións en el.
 
-# 1,2,3, WebDev
+## 1,2,3, WebDev
 
 Queres aprender desenvolvemento web pero non tes inda moi claro por onde comezar?
 
@@ -62,12 +58,3 @@ O certo é que aínda que completes o percorrido e fagas un a un tódolos pasos,
 Ser desenvolvedor web é participar de cheo nunha practica profesional profundamente vinculada as industrias da comunicación. Vas a traballar na xeración, selección, formatado e difusión de contido e información.
 
 Se es produtor de contidos quererás a mellor difusión para as túas producións. Se es usuario de tecnoloxías da información -quen non?- quererás a mellor usabilidade e accesibilidade desde calquera dos teus dispositivos. E se es desenvolvedor/deseñador web quererás que productores de contidos e consumidores de medios estean contentos de como se difunden e se accede aos contidos grazas a túa participación como especialista en desenvolvemento con tecnoloxías web.
-
-<!--[Benvid@s a aventura!](./assets/welcometothjungle.png)-->
-
-
-
-OUT 2021
-
-
-

@@ -235,7 +235,7 @@ A propiedad **box-sizing** indica cómo se calcula el ancho y alto de la etiquet
 
 El caso de **content-box** lo hemos explicado en el punto anterior, ahora vamos a ver un esquema para ver el caso de **border-box**:
 
-![Modelo de caja CSS. Anchura total box-sizing: border-box](./assets/css/modelo_cajas_anchos_border.svg+xml)
+![Modelo de caja CSS. Anchura total box-sizing: border-box](./assets/css/modelo_cajas_anchos_border.svg)
 
 El esquema corresponde a la definición de un contenedor (por ejemplo div) con estos atributos:
 

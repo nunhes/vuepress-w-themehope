@@ -59,7 +59,7 @@ Vexamos algunhas posibilidades:
 
 3. **[Atom](https://atom.io/)**: outro editor de código aberto dispoñible tanto para Linux coma para Windows ou Mac. Atom é compatible co control de versións de Git e dispón de centos de plugins - escritos en JavaScript-.
 
-   ![Atom](./assets/windows-downloads.png)
+   <!--[Atom](./assets/windows-downloads.png)-->
 
    Permite compartir o progreso do proxecto con colaboradores. E empregando Teletype para Atom (‎que permite tanto compartir coñecementos coma ensinalos‎) o converte nun moi interesante proxecto.
 

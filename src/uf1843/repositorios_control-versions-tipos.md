@@ -1,6 +1,6 @@
 # Sistemas de control de versións (VCS): por que tan importante?
 
-![img](./assets/0LCkFLFG0Os2HPd9l.png)
+![img](./assets/0_LCkFLFG0Os2HPd9l.webp)
 
 ## Que é un sistema de control de versións (VCS)?
 
@@ -36,7 +36,7 @@ Entón, había dous problemas principais, o primeiro era a documentación e o se
 
 ***Sistema de control de versións distribuídas:\*** en Distributed VCS o usuario clona completamente unha copia dos ficheiros do servidor no seu repositorio local. Polo tanto, cada usuario ten unha copia de seguridade dos ficheiros do servidor. Polo tanto, isto supera o inconveniente do Control centralizado de versións, xa que aínda que o servidor caia ou falla ou morre, cada usuario ten unha copia de seguridade que se pode restaurar de novo no servidor.
 
-![Esta imaxe mostra o funcionamento do Control de versións distribuídas](./assets/0yJX7HSw9IdNqLYpn.jpg)
+![Esta imaxe mostra o funcionamento do Control de versións distribuídas](./assets/0_yJX7HSw9IdNqLYpn.webp)
 
 ## 5 Ferramentas VCS de código aberto gratuítas para comprobar
 

@@ -26,7 +26,9 @@ Máis en detalle, velaí como xestionaría unha solicitude unha *aplicación web
 6. Despois de recoller os resultados nun só lugar, o servidor devolve a resposta ao equilibrador de carga.
 7. O equilibrador de carga devolve a resposta á pasarela da API, que á súa vez envíalla ao usuario no cliente frontend. A solicitude márcase entón como completa.
 
----![bg](./assets/arquitectura-aplicaciones-web-1024x512.png)
+---
+
+![bg](./assets/arquitectura-aplicaciones-web-1024x512.png)
 
 ---
 
@@ -54,19 +56,19 @@ Pode ser tan simple como definir a relación entre o cliente e o servidor. Ou ta
 
 ---
 
-![bg Arquitectura de 3 niveis](./assets/Arquitectura-Tres-Niveles-Aplicación-Web.jpg)
+![bg Arquitectura de 3 niveis](./assets/tres-capas.jpg)
 
-<small>*Arquitectura de 3 capas*</small>
+<small>Arquitectura de 3 capas</small>
 
 ---
 
-![bg Arquitectura de alta dispoñibilidade](./assets/identityMgr_high_availability.gif)
+![bg Arquitectura de alta dispoñibilidade](/assets/identityMgr_high_availability.gif)
 
 <small>*[Arquitectura](https://ws001.sspa.juntadeandalucia.es/confluence/display/GOBP/Soluciones+web%2C+arquitectura+de+referencia) de alta dispoñibilidade*</small>
 
 ---
 
-![bg Diagrama de componentes de una aplicación web de recomendación que muestra cómo interactúan los distintos componentes, como los clientes, las instancias de la base de datos, los servicios, etc.](./assets/web-app-architecture-components.jpg)
+![bg Diagrama de componentes de una aplicación web de recomendación que muestra cómo interactúan los distintos componentes, como los clientes, las instancias de la base de datos, los servicios, etc.](/assets/web-app-architecture-components.jpg)
 
 <small>*Diagrama de arquitectura dunha aplicación de recomendación. (Fonte: [Wikipedia](https://www.wikipedia.org/))*</small>
 
@@ -78,7 +80,7 @@ E cada aplicación requirirá unha arquitectura específica.
 
 ---
 
-![bg](./assets/google2.gif)
+![bg](/assets/google2.gif)
 
 ---
 

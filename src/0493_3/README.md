@@ -23,5 +23,9 @@ bgImage: /hero3.jpg
 #     desc: Desenvolvemento de aplicacións web distribuidas
 #     link: /0493_3
 category:
-  - Guide
+  - Guías
+  - Módulos
 ---
+
+
+- [Fluxo de traballo moderno](https://medium.com/ui-farm/how-we-work-a-modern-workflow-for-the-multi-device-web-4e0dcb081b5b)

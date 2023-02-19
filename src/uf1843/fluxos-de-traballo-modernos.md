@@ -32,7 +32,7 @@ Os ficheiros fonte cárganse no navegador a medida que se gardan no  disco, polo
 
 É só unha lixeira variación do primeiro.  Para aforrar tempo na configuración do proxecto, o programador ten ficheiros  preparados como modelos e cópiaos a un novo cartafol do proxecto.  Poden ter varios modelos preparados para varios tipos de proxectos.  O resto  do fluxo de traballo é o mesmo que o primeiro fluxo de traballo. 
 
-![Fluxo de traballo da vella escola con modelos](F:\wrks_vrs\aprendendo_cousas\assets\02-old-school-with-templates.png)
+![Fluxo de traballo da vella escola con modelos](./assets/02-old-school-with-templates.png)
 
 Pode parecer que este pequeno cambio non supón unha modificación substancial do fluxo de  traballo.  Non obstante, esta idea inicial dos modelos van a ser unha parte importante do concepto de xerador, que acabará incorporándose a moderna optimización  dos fluxos de traballo. 
 
@@ -40,7 +40,7 @@ Pode parecer que este pequeno cambio non supón unha modificación substancial d
 
 Os fluxos de traballo de desenvolvemento web modernos xurdiron cando  apareceron novas extensións ás linguaxes de desenvolvemento web, por  exemplo, [Sass ](http://sass-lang.com/)como extensión a CSS. Como os navegadores non entenden Sass, necesitamos **transformar** o ficheiro Sass orixinal en CSS antes de envialo ao navegador. En vez de  facer esta transformación manualmente usando ferramentas externas,  podemos **configurar**  **ferramentas** como parte do noso proxecto e **definir tarefas** que se encargarán destes cambios. 
 
-![Fluxo de traballo de desenvolvemento web moderno](F:\wrks_vrs\aprendendo_cousas\assets\03-modern-workflow-v2.png)
+![Fluxo de traballo de desenvolvemento web moderno](./assets/03-modern-workflow-v2.png)
 
 As ferramentas adoitan ser varios [Node.js. ](https://nodejs.org/en/)módulos **Node.js** é un **tempo de execución de JavaScript** que necesitamos instalar no noso ordenador para poder usar os módulos Node. Podemos instalar módulos de nodo usando o xestor de paquetes de nodos - [npm ](https://www.npmjs.com/). Hai miles de módulos para varias tarefas, por exemplo, o [gulp-sass ](https://www.npmjs.com/package/gulp-sass)módulo que transforma Sass en CSS. 
 
@@ -92,7 +92,7 @@ Hai unha variación deste fluxo de traballo. Aplicacións como [Prepros ](https:
 
 Este fluxo de traballo é como o anterior, pero usamos modelos para  aforrar tempo e evitar configurar o noso proxecto desde cero.  Esta vez  tamén empregamos modelos para a definición de tarefas e ferramentas. 
 
-![Fluxo de traballo moderno con modelos](F:\wrks_vrs\aprendendo_cousas\assets\04-modern-workflow-with-templates-v2.png)
+![Fluxo de traballo moderno con modelos](./assets/04-modern-workflow-with-templates-v2.png)
 
 Unha vez que copiamos os ficheiros necesarios, podemos editalos e axustalos ás necesidades específicas do proxecto. 
 
@@ -104,7 +104,7 @@ Nós **executar o xerador na liña de comandos** na nova carpeta de proxecto. O 
 
 Un **xerador ten modelos** almacenados nel e ademais de copialos no cartafol do proxecto pode **procesar o seu contido en** función das nosas respostas. Así, por exemplo, pode encher os nomes dos  proxectos nos ficheiros. Ou pode crear determinados ficheiros e tarefas  dependendo das nosas respostas. 
 
-![Fluxo de traballo moderno cun xerador](F:\wrks_vrs\aprendendo_cousas\assets\05-modern-workflow-with-a-generator-v2.png)
+![Fluxo de traballo moderno cun xerador](./assets/05-modern-workflow-with-a-generator-v2.png)
 
 Un xerador tamén pode ter comandos individuais que nos permiten  realizar novas modificacións do proxecto incluso unha vez que o proxecto xa está configurado, por exemplo, para engadir novas páxinas ao noso  proxecto. 
 
@@ -131,7 +131,7 @@ Algunhas das bibliotecas de desenvolvemento web máis populares, como **React** 
 
 Compare todos os fluxos de traballo uns ao lado dos outros nunha imaxe. 
 
-![https://www.xfivecdn.com/xfive/wp-content/uploads/2017/03/21113854/web-development-workflows-v2.png](F:\wrks_vrs\aprendendo_cousas\assets\web-development-workflows-v2.png)
+![https://www.xfivecdn.com/xfive/wp-content/uploads/2017/03/21113854/web-development-workflows-v2.png](./assets/web-development-workflows-v2.png)
 
 ### Xeradores modernos
 

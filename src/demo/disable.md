@@ -3,7 +3,7 @@ title: Disabling layout and features
 icon: config
 order: 3
 category:
-  - Guide
+  - Guías
 tag:
   - disable
 

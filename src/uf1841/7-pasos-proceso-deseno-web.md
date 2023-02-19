@@ -1,6 +1,6 @@
 # Algúns pasos esenciais para deseñar un sitio web
 
-![Various screenshots of Kasturi's Miro board showing different variation of webpage layouts, color schemes, and sticky notes with instructions](./assets/62c6f7990c1fad6b17b68482_ne3I7KCoAPmtR3Zyz3kMYeVouI6ZmhBNcqltd4Z-VAVDUNoSxgfkcgEKoUGxTvbGJWD4Dac0KgDETX5sxniS-tdaRbKw2ibJsjXgQ_nwVUU8sZOOofOTk3ZC9gypweJAbtRtJUyO7vKI94DLVA.jpeg)
+![Various screenshots of Kasturi's Miro board showing different variation of webpage layouts, color schemes, and sticky notes with instructions](./assets/62c6f7990c.jpg)
 
 Por moitos elementos comúns que atopemos no desenvolvemento de distintos sitios web, cada sitio é un mundo.
 

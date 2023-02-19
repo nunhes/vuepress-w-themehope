@@ -54,11 +54,11 @@ Vexamos algúns exemplos de **tipos de datos básicos de uso común** e que se p
 
 - *unha variable en programación se pode entender como un nome que representa un valor e se utiliza de forma periódica para almacenar diversos tipos de datos. Datos que se utilizarán nas operacións posteriores de codificación*.
 
-- *unha variable ~~en Java~~ é como unha caixa en onde podemos almacenar o que queiramos, como, por exemplo, nomes, números, funcións, etc.*
+- *unha variable é como unha caixa en onde podemos almacenar o que queiramos, como, por exemplo, nomes, números, funcións, etc.*
 
 ---
 
-  ![bg fit](./assets/AYEnBjStamps-CJ6HPv.png)
+  <!-- [bg fit](./assets/AYEnBjStamps-CJ6HPv.png) -->
 
 ---
 

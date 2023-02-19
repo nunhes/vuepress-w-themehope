@@ -1,4 +1,4 @@
-D:\odin\complete\11. The Document Object Model (DOM)
+<!-- D:\odin\complete\11. The Document Object Model (DOM)
 
 https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/A_first_splash :star:
 
@@ -24,7 +24,7 @@ https://www.simplilearn.com/tutorials/javascript-tutorial/javascript-examples
 
 [dangconnie/movie-app: A movie app made with HTML, CSS, Javascript, jQuery and Bootstrap using API calls from The Movie Database (github.com)](https://github.com/dangconnie/movie-app)
 
-
+-->
 
 O navegador crea un modelo da estrutura do documento e utiliza este modelo para debuxar a páxina na pantalla.
 
@@ -53,9 +53,9 @@ Podes imaxinar un documento HTML como un conxunto anidado de caixas. Etiquetas c
 </html>
 ```
 
-Esta páxina ten a seguinte estrutura:
+<!-- Esta páxina ten a seguinte estrutura:
 
-![Documento HTML como caixas anidadas](./assets/html-boxes.svg)
+![Documento HTML como caixas anidadas](./assets/html-boxes.svg)-->
 
 A estrutura de datos que usa o navegador para representar o documento segue esta forma. Para cada caixa, hai un obxecto, co que podemos interactuar para descubrir cousas como que etiqueta HTML representa e que caixas e texto contén. Esta representación chámase *Modelo* de obxectos de documento ou DOM para abreviar.
 
@@ -63,16 +63,14 @@ A vinculación global `document`dános acceso a estes obxectos. A súa `document
 
 ---
 
-Outra forma de visualizar a nosa árbore de documentos é a seguinte:
+<!--Outra forma de visualizar a nosa árbore de documentos é a seguinte:
 
-![Documento HTML como árbore](./assets/html-tree.svg)
+![Documento HTML como árbore](./assets/html-tree.svg)-->
 
-Os nós DOM conteñen unha gran cantidade de ligazóns a outros nós próximos. O seguinte diagrama ilustra isto:
-
-![Ligazóns entre nodos DOM](./assets/html-links.svg)
+Os nós DOM conteñen unha gran cantidade de ligazóns a outros nós próximos.<!-- O seguinte diagrama ilustra isto: ![Ligazóns entre nodos DOM](./assets/html-links.svg) -->
 
 Aínda que o diagrama mostra só unha ligazón de cada tipo, cada nodo ten unha propiedade `parentNode` que apunta ao nodo do que forma parte, se é o caso. Do mesmo xeito, cada nodo de elementos (tipo de nodo 1) ten unha propiedade `childNodes` que apunta a un obxecto tipo matriz que mantén os seus fillos.
 
 En teoría, podes moverte a calquera parte da árbore usando só estas ligazóns para pais e fillos. Pero JavaScript tamén che dá acceso a unha serie de ligazóns de conveniencia adicionais. As propiedades `firstChild`e `lastChild` apuntan ao primeiro e último elementos fillos ou teñen o valor `null`para nodos sen fillos. Do mesmo xeito, `previousSibling` e `nextSibling`apunta a nós adxacentes, que son nós co mesmo pai que aparecen inmediatamente antes ou despois do propio nodo. Para un primeiro fillo, `previousSibling` será nulo, e para o último fillo, `nextSibling` será nulo
 
-https://skillcrush.com/blog/projects-you-can-do-with-javascript/
+<!-- https://skillcrush.com/blog/projects-you-can-do-with-javascript/ -->

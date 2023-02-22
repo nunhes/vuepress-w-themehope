@@ -17,7 +17,7 @@ Hai moitos **tipos de requisitos do usuario** a considerar:
 
 - **Tecnolóxico** : especificando a tecnoloxía de desenvolvemento, a forma de comunicación con outros equipos, etc.
 - **Ordenador** : detalle a plataforma de software (sistemas operativos e bases de  datos), características do servidor, virtualización e tamén interfaces  con outros sistemas informáticos.
-- **Funcional** : determina as áreas de actuación do sistema, [os procesos a informatizar](https://www-oqotech-com.translate.goog/servicios/automatizacion-de-procesos/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) e as principais funcionalidades. Especificando o seu grao de automatización, controis e verificacións no proceso a  realizar, procesos que se poidan desencadear como alertas, impresión de  informes ou etiquetas, comunicación con outros sistemas, etc.
+- **Funcional** : determina as áreas de actuación do sistema, [os procesos a informatizar](https://www.oqotech.com/servicios/automatizacion-de-procesos/) e as principais funcionalidades. Especificando o seu grao de automatización, controis e verificacións no proceso a  realizar, procesos que se poidan desencadear como alertas, impresión de  informes ou etiquetas, comunicación con outros sistemas, etc.
 - **Normativa** : ao longo do ciclo de vida dos datos, para garantir a trazabilidade, a seguridade e os procesos informatizados segundo a normativa aplicable.
 - **Integridade dos datos** : centrada en todo o ciclo de vida dos datos, garantindo que sexan atribuíbles, lexibles, simultáneos, orixinais, exactos, consistentes, completos, duradeiros e tamén dispoñibles.
 

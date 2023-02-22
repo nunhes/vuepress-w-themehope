@@ -80,4 +80,4 @@
 
 ## Lecturas adicionais
 
-- " [Engadir un arquivo a un repositorio](https://docs-github-com.translate.goog/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es#adding-a-file-to-a-repository-using-the-command-line) "
+- " [Engadir un arquivo a un repositorio](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository#adding-a-file-to-a-repository-using-the-command-line) "

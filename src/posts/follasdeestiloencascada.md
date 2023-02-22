@@ -1372,7 +1372,7 @@ Os principais beneficios destas tecnoloxías son, na miña opinión:
 
 CSS moderno ten unha función nova e poderosa chamada **CSS Custom Properties** , tamén coñecida como **CSS Variables** .
 
-CSS non é unha linguaxe de programación como [JavaScript](https://flaviocopes-com.translate.goog/javascript/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) , Python, PHP, Ruby ou Go onde as variables son clave para facer algo útil. CSS é moi limitado no que pode facer, e é principalmente unha sintaxe  declarativa para indicar aos navegadores como deben mostrar unha páxina  HTML.
+CSS non é unha linguaxe de programación como [JavaScript](https://flaviocopes.com/javascript/) , Python, PHP, Ruby ou Go onde as variables son clave para facer algo útil. CSS é moi limitado no que pode facer, e é principalmente unha sintaxe  declarativa para indicar aos navegadores como deben mostrar unha páxina  HTML.
 
 Pero unha variable é unha variable: un nome que fai referencia a un valor e  as variables en CSS axudan a reducir a repetición e as inconsistencias  no teu CSS, ao centralizar a definición de valores.
 
@@ -1534,7 +1534,7 @@ O soporte do navegador para as variables CSS é **moi bo** , [segundo Can I Use]
 
 As variables CSS están aquí para quedarse, e podes usalas hoxe se non  precisas admitir Internet Explorer e as versións antigas dos outros  navegadores.
 
-Se precisas admitir navegadores máis antigos, podes usar bibliotecas como [PostCSS](https://flaviocopes-com.translate.goog/postcss/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) ou [Myth](http://www.myth.io/) , pero perderás a capacidade de interactuar coas variables a través de  JavaScript ou as ferramentas para desenvolvedores do navegador, xa que  se transfiren a un bo CSS antigo sen variables (e como tal , perde a  maior parte do poder das variables CSS).
+Se precisas admitir navegadores máis antigos, podes usar bibliotecas como [PostCSS](https://flaviocopes.com/postcss/) ou [Myth](http://www.myth.io/) , pero perderás a capacidade de interactuar coas variables a través de  JavaScript ou as ferramentas para desenvolvedores do navegador, xa que  se transfiren a un bo CSS antigo sen variables (e como tal , perde a  maior parte do poder das variables CSS).
 
 ### 19.7. As variables CSS distinguen entre maiúsculas e minúsculas
 
@@ -2497,7 +2497,7 @@ margin: 0 auto;
 
 Como se dixo anteriormente, usar 2 valores aplícase o primeiro á **parte inferior e superior** e o segundo á **esquerda e á dereita** .
 
-A forma moderna de centrar elementos é usar [Flexbox](https://flaviocopes-com.translate.goog/flexbox/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) e a súa `justify-content: center;`directiva.
+A forma moderna de centrar elementos é usar [Flexbox](https://flaviocopes.com/flexbox/) e a súa `justify-content: center;`directiva.
 
 Os navegadores máis antigos, por suposto, non implementan Flexbox, e se precisas admitilos `margin: 0 auto;`aínda é unha boa opción.
 
@@ -3727,7 +3727,7 @@ Se engades `border-collapse: collapse;`ao elemento da táboa, todos os bordos co
 
 Centrar cousas en CSS é unha tarefa moi diferente se necesitas centrar horizontal ou verticalmente.
 
-Neste post explico os escenarios máis habituais e como resolvelos. [Se Flexbox](https://flaviocopes-com.translate.goog/flexbox/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) proporciona unha nova solución, ignoro as técnicas antigas porque hai que avanzar, e Flexbox é compatible con navegadores dende hai anos, incluído IE10.
+Neste post explico os escenarios máis habituais e como resolvelos. [Se Flexbox](https://flaviocopes.com/flexbox/) proporciona unha nova solución, ignoro as técnicas antigas porque hai que avanzar, e Flexbox é compatible con navegadores dende hai anos, incluído IE10.
 
 ### 34.1. Centrar horizontalmente
 
@@ -3809,7 +3809,7 @@ As técnicas de Flexbox para centrar vertical e horizontalmente pódense  combin
 
 ![img](./assets/flexbox-center.png)
 
-O mesmo pódese facer usando [CSS Grid](https://flaviocopes-com.translate.goog/css-grid/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) :
+O mesmo pódese facer usando [CSS Grid](https://flaviocopes.com/css-grid/) :
 
 ```
 body {
@@ -4405,7 +4405,7 @@ Podes crear unha función de cronometraxe completamente personalizada usando [cu
 
 ### 40.3. Transicións CSS en Browser DevTools
 
-As [ferramentas de desenvolvemento do navegador](https://flaviocopes-com.translate.goog/browser-devtools/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) ofrecen unha boa forma de visualizar as transicións.
+As [ferramentas de desenvolvemento do navegador](https://flaviocopes.com/browser-devtools/) ofrecen unha boa forma de visualizar as transicións.
 
 Isto é Chrome:
 

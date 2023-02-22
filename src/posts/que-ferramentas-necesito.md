@@ -23,7 +23,7 @@ Os navegadores axudarannos a probar cada un dos nosos avances no desenvolvemento
 
 ## Git
 
-Algunha vez che ten pasado que.. accidentalmente eliminas un arquivo dun proxecto ou un dos teus colaboradores edita unha tarefa que xa estaba lista e non sabes qué facer para corrixila? 
+Algunha vez che ten pasado que accidentalmente eliminas un arquivo dun proxecto ou un dos teus colaboradores edita unha tarefa que xa estaba lista e non sabes qué facer para corrixila? 
 Git, sirve para solucionar ese tipo de problemas, ao ir tomando un rexistro dos cambios que se realizan dentro dun arquivo/proxecto e permite poder movernos entre as diferentes versións dos arquivos, como se nos movéramos dentro dunha liña do tempo e puder resvisitar cambios anteriores. A este tipo de programas se os coñoce como **control de versiones**. Git, un dos máis populares, tamén é un dos máis empregados no campo laboral. Normalmente o utilizaremos para verificar que os nosos cambios se garden e administrar os avances
  do poxecto.
 

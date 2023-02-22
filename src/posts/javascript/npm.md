@@ -115,7 +115,7 @@ Este é o comando máis usado na actualidade cando desenvolvemos aplicacións Ja
 
 Por defecto, `npm install <package-name>` instalará a última versión dun paquete co sinal  `^` de versión. No contexto dun proxecto npm, `npm install` descargará paquetes no cartafol `node_modules` do proxecto segundo as especificacións de `package.json`, actualizando a versión do paquete (e á súa vez rexenerando `package-lock.json`) sempre que poida en función da coincidencia de versións `^` ou `~`
 
-Podes especificar unha marca global `-g` se queres instalar un paquete no contexto global e poder usalo en  calquera lugar da túa máquina (isto é común para paquetes de ferramentas de liña de comandos como [live-server](https://translate.google.com/website?sl=auto&tl=gl&hl=es&u=https://github.com/tapio/live-server), pero pouco satisfactorio para maioría dos paquetes ).
+Podes especificar unha marca global `-g` se queres instalar un paquete no contexto global e poder usalo en  calquera lugar da túa máquina (isto é común para paquetes de ferramentas de liña de comandos como [live-server](https://github.com/tapio/live-server), pero pouco satisfactorio para maioría dos paquetes ).
 
 npm fixo que a instalación de paquetes JavaScript sexa tan fácil que este comando adoita usarse incorrectamente. Isto fai que npm sexa o foco de moitas bromas de programadores como estas:
 

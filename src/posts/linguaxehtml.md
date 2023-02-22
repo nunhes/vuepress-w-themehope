@@ -587,7 +587,7 @@ Tamén podes dicirlle a Google en lugar de apuntar a *todos os* motores de busca
 
 E outros motores de busca tamén poden ter a súa propia metaetiqueta.
 
-Falando diso, podemos dicirlle a Google que desactive algunhas funcións. Isto impide a funcionalidade de tradución nos resultados do buscador:
+Falando diso, podemos dicirslle a Google que desactive algunhas funcións. Isto impide a funcionalidade de tradución nos resultados do buscador:
 
 ```html
 <meta name="google" content="notranslate" />

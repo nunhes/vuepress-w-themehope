@@ -247,7 +247,7 @@ O meu consello é que use sempre `const`e só use `let`cando saiba que terá que
 
 Agora que vimos como traballar con `const`e `let`, quero mencionar `var`.
 
-Ata 2015, `var`era a única forma en que podíamos declarar unha variable en JavaScript. Hoxe, unha base de código moderna probablemente só use `const`e `let`. Hai algunhas diferenzas fundamentais que detallo [nesta publicación](https://flaviocopes-com.translate.goog/javascript-difference-let-var/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) , pero se estás comezando, quizais non che importen. Só usa `const`e `let`.
+Ata 2015, `var`era a única forma en que podíamos declarar unha variable en JavaScript. Hoxe, unha base de código moderna probablemente só use `const`e `let`. Hai algunhas diferenzas fundamentais que detallo [nesta publicación](https://flaviocopes.com/javascript-difference-let-var/) , pero se estás comezando, quizais non che importen. Só usa `const`e `let`.
 
 ## 8. Tipos
 
@@ -1572,7 +1572,7 @@ A función de devolución de chamada execútase de forma asíncrona.
 
 Este é un patrón moi común cando se traballa co sistema de ficheiros, a rede, os eventos ou o DOM no navegador.
 
-Todas as cousas que mencionei non son JavaScript "esenciais", polo que non se explican neste manual, pero atoparás moitos exemplos nos meus outros  manuais dispoñibles en [flaviocopes.com](https://flaviocopes-com.translate.goog/book/read/js/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) .
+Todas as cousas que mencionei non son JavaScript "esenciais", polo que non se explican neste manual, pero atoparás moitos exemplos nos meus outros  manuais dispoñibles en [flaviocopes.com](https://flaviocopes.com/book/read/js/) .
 
 Así é como podemos implementar as devolucións de chamada no noso código.
 

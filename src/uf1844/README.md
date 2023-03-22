@@ -13,7 +13,7 @@ category:
 - [Lecturas complementarias](uf1844.md)
 
 ### 1. O [proceso de desenvolvemento de software](https://es.wikipedia.org/wiki/Systems_Development_Life_Cycle) [2](https://www.tutorialspoint.com/business_analysis/business_analysis_software_development_life_cycle.htm)
-- [Modelos do ciclo de vida do software](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm).
+- [Modelos do ciclo de vida do software](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm). [2](https://asana.com/es/resources/project-management-methodologies)
   - En cascada ([waterfall](https://www.tutorialspoint.com/sdlc/sdlc_waterfall_model.htm)).
   -  [Iterativo](https://www.tutorialspoint.com/sdlc/sdlc_iterative_model.htm).
   -  [En espiral](https://www.tutorialspoint.com/sdlc/sdlc_spiral_model.htm).
@@ -28,13 +28,16 @@ category:
     - Documentación de requisitos.
     - Validación de requisitos.
     - Xestión de requisitos.
+
 - Deseño.
     - Modelos para el deseño de sistemas.
     - Diagramas de deseño. O estándar UML.
     - Documentación.
+    
 - Implementación. Conceptos generales de desenvolvemento de software.
     - Principios básicos do desenvolvemento de software.
     - Técnicas de desenvolvemento de software.
+
 - Validación e verificación de sistemas.
     - Planificación.
     - Métodos formales de verificación.
@@ -82,8 +85,8 @@ category:
 
 ### 2. [A orientación a obxectos](https://es.wikipedia.org/wiki/Programación_orientada_a_objetos)
 
-- [Principios da orientación a obxectos](https://desarrolloweb.com/articulos/499.php). Comparación con la programación
-  estructurada.
+- [Principios da orientación a obxectos](https://desarrolloweb.com/articulos/499.php). Comparación coa programación
+  estruturada.
   - Ocultación de información (information hiding).
     – O tipo abstracto de datos (ADT). Encapsulado de datos.
     – Paso de mensajes.

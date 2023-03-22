@@ -22,7 +22,7 @@ Antes de poñer en marcha un proxecto web o equipo implicado xunto co cliente de
 
   
 
-### PROCEDIMENTOS
+### PROCEDEMENTOS
 
   BASE DE DATOS SOFTWARE
   HARDWAREDOCUMENTOS
@@ -30,33 +30,23 @@ Antes de poñer en marcha un proxecto web o equipo implicado xunto co cliente de
   METODOLOGÍA
 
 
-Para cumprir cos puntos que determinan o alcance dun análise de sistemas, é necesario prepararnos adecuadamente.
-Isto implica a agrupación de toda a información relevante acerca de la organización y de
-sus objetivos, misma que servirá para que el analista se forme una imagen de la organización
-e identifique la cultura organizacional bajo la cual se labora; lo anterior con el fin de que
-conozca las normas laborales de la organización.
-La gran utilidade da análise es la IDENTIFICACIÓN DE:
+Para cumprir cos puntos que determinan o alcance dun análise de sistemas, é necesario prepararnos axeitadamente.
 
-1. Problemas, la etapa crítica para el éxito del resto del proyecto: se requiere la observación
+Isto implica agrupar toda a información relevante acerca da organización e dos seus obxectivos, mesmo aquela que serva para que o analista se forme unha imaxe da organización e identifique a cultura organizacional baixo a cal se opera e que coñeza as normas laborales da organización.
+Será pois de gran utilidade a identificación de:
 
-honesta del analista, cuyo trabajo es resaltar los problemas.
+1. Problemas, a etapa crítica para o éxito do resto do proxecto: se require a observación honesta do analista, que ten ese traballo: resaltar os problemas.
 
-2. Oportunidades, situaciones que el analista cree que pueden mejorarse: permite que el
+2. Oportunidades, situacións que o analista cree que poden mellorarse: permite que o negocio gañe valor competitivo.
 
-negocio gane un avance competitivo y que ponga un estándar de la industria.
-
-3. Objetivo, componente importante de la primera fase: el analista debe descubrir lo que
-
-está tratando de hacer el negocio; así como ser capaz de identificar si una aplicación de
-sistema de información pude ayudar al sistema y al negocio para alcanzar sus objetivos,
-atacando problemas específicos y oportunidades.
-La información esencial al respecto es la siguiente:
-• La actividad de la organización (Qué).
-• Las personas involucradas (Quiénes).
-• De qué manera se desarrolla la comunicación y la interacción con los usuarios (Cómo).
-• En cuál momento (Cuándo).
-• Los gastos que involucra (Cuánto).
-• El ambiente donde se lleva a cabo el trabajo (Dónde).
+3. Obxectivo: o analista debe descubrir o que está tratando de facer o negocio; así como ser capaz de identificar si unha aplicación de sistema de información pode axudar ao sistema e ao negocio para alcanzar os seus obxectivos, atacando problemas específicos e oportunidades.
+A información esencial ao respecto é a seguinte:
+- A actividad da organización (Que).
+- As persoas involucradas (Quen).
+- De qué manera se desarrolla a comunicación e a interacción con os usuarios (Cómo).
+- En cuál momento (Cuándo).
+- Los gastos que involucra (Canto).
+- O ambiente donde se lleva a cabo o trabajo (Dónde).
 
 
 
@@ -64,102 +54,115 @@ La información esencial al respecto es la siguiente:
 
 #### Ambiente físico
 
-¿Cuál es el equipo que el sistema necesita para funcionar? Móvil, tablet, laptop
-o desktop, web TV, otro.
-¿Cuántos usuarios simultáneos debe atender?
-¿Hay restricciones ambientales como falta de acceso a internet o aspectos de
+¿Cal é o equipo que o sistema necesita para funcionar? Móbil, tablet, laptop ou desktop, web TV, outro.
+
+¿Cantos usuarios simultáneos debe atender?
+
+¿Hay restriccións ambientales como falta de acceso a internet o aspectos de
 seguridad?
+
 Interface
-¿Las entradas de información provienen de usuarios o de uno o más sistemas?
-¿La salida va a uno o a más sistemas?
-¿Existe una manera preestablecida en que deben formatearse los datos?
+
+¿As entradas de información proveñen de usuarios ou dun ou máis sistemas?
+
+¿A saída vai a un ou a máis sistemas?
+
+¿Existe unha manera preestablecida en que deben formatarse os datos?
 
 
 
 #### Usuarios e factores humanos
 
-¿Quién usará el sistema?
+¿Quién usará o sistema?
+
 ¿Habrá varios tipos de usuario?
-¿Cuál es el nivel de habilidad de cada tipo de usuario?
-¿Qué clase de entrenamiento requerirá cada tipo de usuario?
-¿Cuán fácil le será al usuario comprender y utilizar el sistema?
-¿Cuán difícil le resultará al usuario hacer uso indebido del sistema?
+
+¿Cal é o nivel de habilidad de cada tipo de usuario?
+
+¿Que clase de entrenamiento requerirá cada tipo de usuario?
+
+¿Como de fácil lle será ao usuario comprender e utilizar o sistema?
+
+¿Como de difícil lle resultará ao usuario facer uso indebido do sistema?
+
 Funcionalidad
-¿Qué hará el sistema?
-¿Cuándo lo hará?
+
+¿Que fará o sistema?
+
+¿Cuándo o fará?
+
 ¿Existen varios modos de operación?
-¿Cómo y cuándo puede cambiarse o mejorarse un sistema?
-¿Existen restricciones de la velocidad de ejecución, tiempo de respuesta o
-rendimiento?
+
+¿Cómo e cando pode cambiarse ou mellorarse un sistema?
+
+¿Existen restricións da velocidade de execución, tempo de resposta ou rendemento?
 
 
 
 #### Análises e Documentación
 
 ¿Existe un análise documentado?
-¿Requieres documentación de la aplicación?
+¿Requieres documentación da aplicación?
 
 #### Recursos
 
-¿Qué recursos materiales, personales o de otro tipo se requieren para construir, utilizar y
-mantener el sistema?
-¿Qué habilidades deben tener los desarrolladores?
-¿Cuánto espacio físico será ocupado por el sistema?
-¿Cuáles son los requerimientos de energía, calefacción o acondicionamiento de aire?
-¿Existe un cronograma prescrito para el desarrollo?
-¿Existe un límite sobre la cantidad de dinero a gastar en el desarrollo o en hardware y
+¿Que recursos materiales, personales o de outro tipo se requieren para construir, utilizar y
+mantener o sistema?
+¿Que habilidades deben tener os desarrolladores?
+¿Canto espacio físico será ocupado por o sistema?
+¿Cales son os requerimientos de energía, calefacción o acondicionamiento de aire?
+¿Existe un cronograma prescrito para o desarrollo?
+¿Existe un límite sobre a cantidad de dinero a gastar en o desarrollo o en hardware y
 software?
 
 #### Seguridad
 
-¿Debe controlarse el acceso al sistema o a la información?
-¿Cómo se podrán aislar los datos de un usuario de los de otros?
-¿Cómo podrán aislarse los programas de usuario de los otros programas y del
+¿Debe controlarse o acceso ao sistema o a a información?
+¿Cómo se podrán aislar os datos de un usuario dos de outros?
+¿Cómo poderán aislarse os programas de usuario dos outros programas e del
 sistema operativo?
-¿Con qué frecuencia deben hacerse copias de respaldo?
-¿Las copias de respaldo deben almacenarse en un lugar diferente?
-¿Deben tomarse precauciones contra el fuego, el daño provocado por agua o el
+¿Con qué frecuencia deben facerse copias de respaldo?
+¿As copias de respaldo deben almacenarse en un lugar diferente?
+¿Deben tomarse precaucións contra o fuego, o dano provocado por agua o el
 robo?
 
 #### Datos
 
-¿Cuál será el formato de los datos, tanto para la entrada como para la salida?
+¿Cal será o formato dos datos, tanto para a entrada como para a saída?
 ¿Cuán a menudo serán recibidos o enviados?
 ¿Cuán exactos deben ser?
-¿Con qué grado de precisión deben hacerse los cálculos?
-¿Cuántos datos fluyen a través del sistema?
-¿Debe retenerse algún dato por un periodo de tiempo?
+¿Con qué grado de precisión deben facerse os cálculos?
+¿Cantos datos fluyen a través do sistema?
+¿Debe retenerse algún dato por un periodo de tempo?
 
 
 
 #### Aseguramento da calidade
 
-¿Cuáles son los requerimientos para la confiabilidad, disponibilidad, facilidad de
-mantenimiento, seguridad y demás atributos de calidad?
-¿Cómo deben demostrarse las características del sistema a terceros?
-¿El sistema debe detectar y aislar defectos?
-¿Cuál es el promedio de tiempo prescrito entre fallas?
-¿Existe un tiempo máximo permitido para la recuperación del sistema después
-de una falla?
-¿El mantenimiento corregirá los errores o incluirá también el mejoramiento del
+¿Cales son os requerimientos para a confiabilidad, disponibilidad, facilidad de
+mantenimiento, seguridad e demás atributos de calidad?
+¿Cómo deben demostrarse las características do sistema a terceros?
+¿O sistema debe detectar e aislar defectos?
+¿Cal é o promedio de tempo prescrito entre fallas?
+¿Existe un tempo máximo permitido para a recuperación do sistema después
+de unha falla?
+¿O mantenimiento corregirá os errores o incluirá también o mejoramiento del
 sistema?
-¿Qué medidas de eficiencia se aplicarán al uso de recursos y al tiempo de
-respuesta?
-¿Cuán fácil debe ser mover el sistema de una ubicación a otra o de un tipo de
-computadora a otro?
+¿Que medidas de eficiencia se aplicarán ao uso de recursos e ao tempo de resposta?
+¿Como de fácil debe ser mover o sistema dunha ubicación a outra ou dun tipo de computadora a outro?
 
 
 
 Son moitos os desafíos que se poden atopar mentres pos a andar un proxecto web: o tempo, as malas prácticas, as decisións custosas :smile:, os costes imprevistos, ...
-Para todos estes desafíos, la clave del
-éxito es una estrecha colabora ción
+Para todos estes desafíos, a clave del
+éxito é unha estrecha colabora ción
 con un proveedor profesional, con una
 metodología bien establecida, con
-experiencia y que pueda ofrecer servicios
+experiencia e que pueda ofrecer servicios
 integrales.
-Sólo al hacer una cuidadosa planeación y
-trabajando estrechamente como equipo,
-se puede obtener un producto final que
-dé frente a necesidades y requerimientos
+Só ao facer unha cuidadosa planeación y
+traballando estreitamente como equipo,
+se pode obtener un producto final que
+dé frente a necesidades e requerimientos
 reales.
 Esperam

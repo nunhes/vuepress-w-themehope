@@ -1,3 +1,16 @@
+---
+icon: edit
+date: 2023-02-09
+category:
+  - NodeJS
+tag:
+  - node
+  
+sticky: true
+# this page will appear in starred articles
+star: true
+---
+
 # NodeJS
 
 ## 1. Introdución a Node.js
@@ -352,23 +365,23 @@ Para executar o comando, asegúrate de estar no directorio que contén o arquivo
 
 ### 7.1. Reinicie a aplicación automaticamente
 
-O `node`comando ten que ser executado de novo en bash sempre que haxa un cambio na  aplicación, para reiniciar a aplicación automaticamente, `nodemon`utilízase o módulo.
+O comando `node` ten que ser executado de novo en bash sempre que haxa un cambio na aplicación, para reiniciar a aplicación automaticamente, utilízase o módulo `nodemon`.
 
-Instale o módulo nodemon globalmente na ruta do sistema
+Instala o módulo ``nodemon`` globalmente na ruta do sistema
 
 ```bash
 npm i -g nodemon
-```bash
+```
 
-Tamén pode instalar nodemon como unha dependencia do desenvolvemento
+Tamén podes instalar ``nodemon`` como unha dependencia de desenvolvemento
 
 ```bash
 npm i -D nodemon
 ```
 
-Esta instalación local de nodemon pódese executar chamándoa desde o script npm, como npm start ou usando npx nodemon.
+Esta instalación local de ``nodemon`` pódese executar chamándoa desde o script ``npm``, como ``npm start`` ou usando  ``npx nodemon``.
 
-Execute a aplicación usando nodemon seguido do nome do arquivo da aplicación.
+Execute a aplicación usando ``nodemon`` seguido do nome do arquivo da aplicación.
 
 ```bash
 nodemon app.js
@@ -382,11 +395,11 @@ Cando se executa un programa na consola pode pechalo con `ctrl-C`, pero o que qu
 
 Comecemos polo máis drástico e vexamos por que é mellor *non* usalo.
 
-O `process`módulo principal ofrece un método práctico que che permite saír mediante programación dun programa Node.js: `process.exit()`.
+O módulo principal `process` ofrece un método práctico que che permite saír mediante programación dun programa Node.js: `process.exit()`.
 
 Cando Node.js executa esta liña, o proceso vese obrigado a finalizar inmediatamente.
 
-Isto significa que calquera devolución de chamada pendente, calquera  solicitude de rede que aínda se está enviando, calquera acceso ao  sistema de arquivos ou procesos que escriben en `stdout`ou `stderr`- todo vai ser rematado sen gracia de inmediato.
+Isto significa que calquera devolución de chamada pendente, calquera solicitude de rede que aínda se está enviando, calquera acceso ao sistema de arquivos ou procesos que escriben en `stdout` ou `stderr`- todo vai ser rematado sen gracia e de inmediato.
 
 Se isto che parece ben, podes pasar un número enteiro que indique ao sistema operativo o código de saída:
 
@@ -394,11 +407,11 @@ Se isto che parece ben, podes pasar un número enteiro que indique ao sistema op
 process.exit(1)
 ```
 
-Por defecto o código de saída é `0`, o que significa éxito. Os diferentes códigos de saída teñen un significado diferente, que pode  querer usar no seu propio sistema para que o programa se comunique con  outros programas.
+Por defecto o código de saída é `0`, o que significa éxito. Os diferentes códigos de saída teñen un significado diferente, que podes querer usar no teu propio sistema para que o programa se comunique con outros programas.
 
 Podes ler máis sobre os códigos de saída en [https://nodejs.org/api/process.html#process_exit_codes](https://nodejs.org/api/process.html%23process_exit_codes)
 
-Tamén pode definir a `process.exitCode`propiedade:
+Tamén pode definir a propiedade `process.exitCode`:
 
 ```bash
 process.exitCode = 1
@@ -422,13 +435,13 @@ app.get('/', (req, res) => {
 app.listen(3000, () => console.log('Server ready'))
 ```
 
-*Express é un framework que usa o módulo http baixo o capó, app.listen() devolve unha instancia de http. Usarías https.createServer se necesitases servir a túa aplicación mediante HTTPS, xa que app.listen só usa o módulo http.*
+*Express é un framework que usa o módulo http baixo o capó, ``app.listen()`` devolve unha instancia de http. Usarías ``https.createServer`` se necesitases servir a túa aplicación mediante HTTPS, xa que ``app.listen`` só usa o módulo http.*
 
-Este programa nunca vai rematar. Se chamas a `process.exit()`, abortarase calquera solicitude pendente ou en execución. Isto *non é bo* .
+Este programa nunca vai rematar. Se chamas a `process.exit()`, abortarase calquera solicitude pendente ou en execución. Isto *non é bo*.
 
 É mellor permitir que se complete a solicitude en execución antes de finalizar. Neste caso, cómpre enviar ao comando un sinal SIGTERM e xestionalo co controlador de sinal de proceso:
 
-*:pencil: `process`non require un "require", está dispoñible automaticamente.*
+*:pencil: `process` non require un "require", está dispoñible automaticamente.*
 
 ```javascript
 const express = require('express')
@@ -448,11 +461,11 @@ process.on('SIGTERM', () => {
 })
 ```
 
-*:pencil: Que son os sinais? Os sinais son un sistema de intercomunicación POSIX: unha notificación  enviada a un proceso co fin de notificarlle un suceso que ocorreu.*
+*:pencil: Que son os sinais? Os sinais son un sistema de intercomunicación POSIX: unha notificación enviada a un proceso co fin de notificarlle un suceso que ocorreu.*
 
-`SIGKILL`é o sinal que indica que un proceso remate inmediatamente, e que idealmente actuaría como `process.exit()`.
+`SIGKILL` é o sinal que indica que un proceso remate inmediatamente, e que idealmente actuaría como `process.exit()`.
 
-`SIGTERM`é o sinal que indica que un proceso remate con gracia. É o sinal que envían os xestores de procesos como `upstart`ou `supervisord`e moitos outros.
+`SIGTERM` é o sinal que indica que un proceso remate con gracia. É o sinal que envían os xestores de procesos como `upstart` ou `supervisord` e moitos outros.
 
 Podes enviar este sinal desde dentro do programa, noutra función:
 
@@ -460,23 +473,23 @@ Podes enviar este sinal desde dentro do programa, noutra función:
 process.kill(process.pid, 'SIGTERM')
 ```
 
-Ou doutro programa en execución de Node.js ou calquera outra aplicación en execución no teu sistema que coñeza o PID do proceso que queres  finalizar.
+Ou doutro programa en execución de Node.js ou calquera outra aplicación en execución no teu sistema que coñeza o PID do proceso que queres finalizar.
 
 ## 9. Como ler as variables de ambiente de Node.js
 
 O módulo principal de Node.js `process` proporciona a propiedade `env` que aloxa todas as variables de ambiente que se estableceron no momento en que se iniciou o proceso.
 
-O seguinte código execútase `app.js` e establece `USER_ID`e `USER_KEY`.
+O seguinte código execútase `app.js` e establece `USER_ID` e `USER_KEY`.
 
 ```js
 USER_ID=239482 USER_KEY=foobar node app.js
 ```
 
-Isto pasará ao usuario `USER_ID` como **239482** e `USER_KEY`  como **foobar** . Isto é adecuado para probas, pero para produción, probablemente estará configurando algúns scripts bash para exportar variables.
+Isto pasará ao usuario `USER_ID` como **239482** e `USER_KEY`  como **foobar**. Isto é axeitado para probas, pero para produción, probablemente deberás configurar algúns scripts bash para exportar variables.
 
-:pencil: `process`non require un "require", está dispoñible automaticamente.
+:pencil: `process` non require un "require", está dispoñible automaticamente.
 
-Aquí tes un exemplo que accede ás variables de ambiente `USER_ID`e `USER_KEY`, que establecemos no código anterior.
+Aquí tes un exemplo que accede ás variables de ambiente `USER_ID` e `USER_KEY`, que establecemos no código anterior.
 
 ```js
 process.env.USER_ID // "239482"
@@ -508,19 +521,19 @@ process.env.NODE_ENV // "development"
 
 ## 10. Onde aloxar unha aplicación Node.js
 
-Aquí tes unha lista non exhaustiva das opcións que podes explorar cando  queres implementar a túa aplicación e facela accesible ao público.
+Aquí tes unha lista non exhaustiva das opcións que podes explorar cando queres implementar a túa aplicación e facela accesible ao público.
 
-Listarei as opcións desde as máis simples e restrinxidas ata as máis complexas e poderosas.
+Listarémolas opcións desde as máis simples e restrinxidas ata as máis complexas e poderosas.
 
 ### 10.1. A opción máis sinxela de sempre: túnel local
 
-Aínda que teñas unha IP dinámica ou teñas un NAT, podes implementar a túa  aplicación e atender as solicitudes directamente desde o teu ordenador  mediante un túnel local.
+Aínda que teñas unha IP dinámica ou teñas un NAT, podes implementar a túa aplicación e atender as solicitudes directamente desde o teu ordenador mediante un túnel local.
 
-Esta opción é adecuada para probas rápidas, demostración dun produto ou para compartir unha aplicación cun grupo moi reducido de persoas.
+Esta opción é axeitada para probas rápidas, demostración dun produto ou para compartir unha aplicación cun grupo moi reducido de persoas.
 
-Unha ferramenta moi agradable para iso, dispoñible en todas as plataformas, é [**ngrok**](https://ngrok.com/) .
+Unha ferramenta eficiente para iso, e dispoñible en todas as plataformas, é [**ngrok**](https://ngrok.com/) .
 
-Ao usalo, só tes que escribir `ngrok PORT` e o PORT que queres estará exposto a Internet. Recibirás un dominio ngrok.io, pero cunha subscrición de pago podes obter un URL  personalizado e máis opcións de seguranza (lembra que estás abrindo a  túa máquina á Internet pública).
+Ao usalo, só tes que escribir `ngrok PORT` e o PORT que queres estará exposto a Internet. Recibirás un dominio ngrok.io, pero cunha subscrición de pago podes obter unha URL personalizado e máis opcións de seguranza (lembra que estás abrindo a  túa máquina á Internet pública).
 
 Outro servizo que podes usar é [https://github.com/localtunnel/localtunnel](https://github.com/localtunnel/localtunnel)
 
@@ -2332,7 +2345,7 @@ npx node@12 -v #v12.14.1
 
 Isto axuda a evitar ferramentas como `nvm`ou outras ferramentas de xestión de versións de Node.js.
 
-### 27.4. Executar fragmentos de código arbitrarios directamente desde un URL
+### 27.4. Executar fragmentos de código arbitrarios directamente desde unha URL
 
 `npx` non o limita aos paquetes publicados no rexistro npm.
 
@@ -2661,7 +2674,7 @@ setInterval(() => {
 }, 2000)
 ```
 
-A función anterior execútase cada 2 segundos a menos que lle indiques que pare, usando `clearInterval`, pasándolle o ID de intervalo que `setInterval`devolveu:
+A función anterior execútase cada 2 segundos a menos que lle indiques que pare, usando `clearInterval`, pasándolle o ID de intervalo que `setInterval` devolveu:
 
 ```js
 const id = setInterval(() => {
@@ -2671,7 +2684,7 @@ const id = setInterval(() => {
 clearInterval(id)
 ```
 
-É común chamar `clearInterval`dentro da función de devolución de chamada setInterval, para que decida automaticamente se debe executarse de novo ou parar. Por exemplo, este código executa algo a menos que App.somethingIWait teña o valor `arrived`:
+É común chamar `clearInterval` dentro da función de devolución de chamada ``setInterval``, para que decida automaticamente se debe executarse de novo ou parar. Por exemplo, este código executa algo a menos que App.somethingIWait teña o valor `arrived`:
 
 ```js
 const interval = setInterval(() => {
@@ -3963,7 +3976,7 @@ O módulo proporciona algunhas propiedades e métodos e algunhas clases.
 Esta propiedade enumera todos os métodos HTTP admitidos:
 
 ```bash
-> require('http').METHODS
+require('http').METHODS
 [ 'ACL',
   'BIND',
   'CHECKOUT',
@@ -4004,8 +4017,9 @@ Esta propiedade enumera todos os métodos HTTP admitidos:
 Esta propiedade enumera todos os códigos de estado HTTP e a súa descrición:
 
 ```bash
-> require('http').STATUS_CODES
-{ '100': 'Continue',
+require('http').STATUS_CODES
+  {
+  '100': 'Continue',
   '101': 'Switching Protocols',
   '102': 'Processing',
   '200': 'OK',
@@ -4066,7 +4080,8 @@ Esta propiedade enumera todos os códigos de estado HTTP e a súa descrición:
   '508': 'Loop Detected',
   '509': 'Bandwidth Limit Exceeded',
   '510': 'Not Extended',
-  '511': 'Network Authentication Required' }
+  '511': 'Network Authentication Required'
+  }
 ```
 
 #### 43.1.3.`http.globalAgent`
@@ -4791,15 +4806,15 @@ req.write(data)
 req.end()
 ```
 
-### 48.3. POÑER e BORRAR
+### 48.3. PUT e DELETE
 
-As solicitudes PUT e DELETE usan o mesmo formato de solicitude POST; só tes que cambiar o `options.method`valor polo método adecuado.
+As solicitudes PUT e DELETE usan o mesmo formato de solicitude POST; só tes que cambiar o valor `options.method` polo método axeitado.
 
 ## 49. Obter datos do corpo da solicitude HTTP
 
-Aquí é como pode extraer os datos que se enviaron como JSON no corpo da solicitude.
+Como se poden extraer os datos que se enviaron como JSON no corpo da solicitude?
 
-Se está a usar Express, é moi sinxelo: use o `express.json()`middleware que está dispoñible en Express v4.16.0 en diante.
+Se estás a usar Express, é moi sinxelo: use o middleware `express.json()` que está dispoñible con Express v4.16.0 en diante.
 
 Por exemplo, para obter o corpo desta solicitude:
 
@@ -4831,15 +4846,15 @@ app.post('/todos', (req, res) => {
 })
 ```
 
-Se non estás usando Express e queres facelo en vanilla Node.js, tes que  traballar un pouco máis, por suposto, xa que Express resume moito disto  para ti.
+Se non estás usando Express e queres facelo en Node.js vanilla, vas ter que traballar algo máis, por suposto, xa que Express resume moito disto para ti.
 
-A clave para entender é que cando inicializa o servidor HTTP mediante `http.createServer()`, chámase a devolución de chamada cando o servidor obtivo todas as cabeceiras HTTP, pero non o corpo da solicitude.
+A clave para entender é que cando se inicializa o servidor HTTP mediante `http.createServer()`, chámase a devolución de chamada cando o servidor obtivo todas as cabeceiras HTTP, pero non o corpo da solicitude.
 
-O `request`obxecto pasado na devolución de chamada da conexión é un fluxo.
+O obxecto `request` pasado na devolución de chamada da conexión é un fluxo.
 
 Polo tanto, debemos escoitar o contido do corpo que se procesa e procesalo en anacos.
 
-Primeiro obtemos os datos escoitando os `data`eventos de fluxo e, cando rematan os datos, `end`chámase o evento de fluxo unha vez:
+Primeiro obtemos os datos escoitando os eventos de fluxo `data` e, cando rematan os datos, chámase o evento de fluxo `end` unha vez:
 
 ```js
 const server = http.createServer((req, res) => {
@@ -4853,7 +4868,7 @@ const server = http.createServer((req, res) => {
 })
 ```
 
-Polo tanto, para acceder aos datos, supoñendo que esperamos recibir unha  cadea, debemos concatenar os anacos nunha cadea cando escoitamos o fluxo `data`, e cando o fluxo `end`, analizamos a cadea en JSON:
+Polo tanto, para acceder aos datos, supoñendo que esperamos recibir unha cadea, debemos concatenar os anacos nunha cadea cando escoitamos o fluxo `data`, e cando o fluxo `end`, analizamos a cadea en JSON:
 
 ```js
 const server = http.createServer((req, res) => {
@@ -4868,7 +4883,7 @@ const server = http.createServer((req, res) => {
 })
 ```
 
-A partir de Node.js v10 `for await .. of`hai unha sintaxe dispoñible para o seu uso. Simplifica o exemplo anterior e fai que pareza máis lineal:
+A partir de Node.js v10 hai unha sintaxe `for await .. of` dispoñible para o seu uso. Simplifica o exemplo anterior e fai que pareza máis lineal:
 
 ```js
 const server = http.createServer(async (req, res) => {

@@ -46,9 +46,4 @@ export const enNavbar = navbar([
     ],
   },
   { text: "Exemplos", icon: "discover", link: "/demo/" },
-  /* {
-    text: "V2 Docs",
-    icon: "note",
-    link: "https://theme-hope.vuejs.vuepress/",
-  }, */
 ]);

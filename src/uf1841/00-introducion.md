@@ -39,7 +39,7 @@ O paso 1 vai ser un paso recorrente, xa que convén ver o que fan outros para me
 
 Fai os pasos 2, 3 e 4 en orde. Despois, vainos mesturando en calquera orde. E practica, practica, practica,
 
-Mentres te vas afianzando nos pasos 2, 3 e 4 vai poñendo atención nos recursos que empregas -editor de código, fontes de información,-, as tecnoloxías que usas - follas de estilo, marcos de traballo(*frameworks*),-, e as necesidades que te atopas - desenvolvemento continuo, DRY, obsolescencia, compatibilidade,- e daquela terás avanzado tamén nos pasos 5 e 6.
+Mentres te vas afianzando nos pasos 2, 3 e 4 vai poñendo atención nos recursos que empregas -editor de código, fontes de información,-, as tecnoloxías que usas - follas de estilo, marcos de traballo(*frameworks*)- e as necesidades que te atopas - desenvolvemento continuo, DRY, obsolescencia, compatibilidade,- e daquela terás avanzado tamén nos pasos 5 e 6.
 
 Se chegas ata aquí xa te podes presentar en sociedade coma *desenvolvedor junior*. 
 

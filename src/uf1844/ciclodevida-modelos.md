@@ -73,7 +73,7 @@ Aínda que pareza contraditorio, canto mellor sexa o software, máis tempo tes q
 
 ## Modelos de ciclo de vida do software
 
-Co fin de facilitar unha metodoloxía común entre o cliente e a empresa de software, actualizáronse modelos de ciclo de vida (ou [paradigmas de desenvolvemento de software como a programación orientada a obxectos](https://intelequia-com.translate.goog/blog/post/3072/qué-es-la-programación-orientada-a-objetos?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) ) para recoller as fases de desenvolvemento implicadas e a  documentación necesaria, para que cada fase sexa validado antes de  continuar co seguinte.
+Co fin de facilitar unha metodoloxía común entre o cliente e a empresa de software, actualizáronse modelos de ciclo de vida (ou [paradigmas de desenvolvemento de software como a programación orientada a obxectos](https://intelequia.com/blog/post/3072/qué-es-la-programación-orientada-a-objetos) ) para recoller as fases de desenvolvemento implicadas e a  documentación necesaria, para que cada fase sexa validado antes de  continuar co seguinte.
 
 ### **modelo de fervenza**
 

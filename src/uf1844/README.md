@@ -11,10 +11,11 @@ category:
 ## Desenvolvemento de aplicacións web na entorna servidor.
 
 - [Lecturas complementarias](uf1844.md)
+- [Glosario](https://www.edix.com/es/instituto/formacion/significados/)
 
 ### 1. O [proceso de desenvolvemento de software](https://es.wikipedia.org/wiki/Systems_Development_Life_Cycle) [2](https://www.tutorialspoint.com/business_analysis/business_analysis_software_development_life_cycle.htm)
 - [Modelos do ciclo de vida do software](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm). [2](https://asana.com/es/resources/project-management-methodologies)
-  - En cascada ([waterfall](https://www.tutorialspoint.com/sdlc/sdlc_waterfall_model.htm)).
+  - En [cascada](https://asana.com/es/resources/waterfall-project-management-methodology) ([waterfall](https://www.tutorialspoint.com/sdlc/sdlc_waterfall_model.htm)).
   -  [Iterativo](https://www.tutorialspoint.com/sdlc/sdlc_iterative_model.htm).
   -  [En espiral](https://www.tutorialspoint.com/sdlc/sdlc_spiral_model.htm).
   - [En V](https://www.tutorialspoint.com/sdlc/sdlc_v_model.htm).
@@ -76,17 +77,16 @@ category:
    - De distribución de software.
    - Xestores de actualización de software.
    - De control de versións.
-   - Entornas integradas de desenvolvemento (IDE) de uso común.
+   - [Entornas integradas de desenvolvemento (IDE) de uso común](https://www.diarlu.com/entornos-de-desarrollo-integrado/).
 -  Xestión de proxectos de desenvolvemento de software.
-     - Planificación de proyectos.
+     - [Planificación de proyectos](https://www.edix.com/es/instituto/planificacion-de-proyectos/). [2](https://asana.com/es/resources/best-project-planning-software)
      - Control de proyectos.
      - Ejecución de proyectos.
-     - Ferramentas de uso común para la gestión de proyectos.
+     - [Ferramentas de uso común para la gestión de proyectos](https://asana.com/es/resources/best-project-management-software) [2](https://gitnux.com/es/catalog/kanban-software).
 
 ### 2. [A orientación a obxectos](https://es.wikipedia.org/wiki/Programación_orientada_a_objetos)
 
-- [Principios da orientación a obxectos](https://desarrolloweb.com/articulos/499.php). Comparación coa programación
-  estruturada.
+- [Principios da orientación a obxectos](https://desarrolloweb.com/articulos/499.php). [Comparación coa programación estruturada](https://blog.educacionit.com/2018/05/21/programacion-orientada-a-objetos-vs-programacion-estructurada/).
   - Ocultación de información (information hiding).
     – O tipo abstracto de datos (ADT). Encapsulado de datos.
     – Paso de mensajes.

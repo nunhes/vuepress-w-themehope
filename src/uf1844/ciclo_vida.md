@@ -152,4 +152,4 @@ Non obstante, probablemente notaches que non hai documentación en ningún lado,
 
 ## conclusións
 
-**Como se pode ver, os ciclos de vida do software son moi diversos**. Ao final, unha das cousas coas que hai que contar é o sentido da adaptación, e a falta de directrices claras ou método específico para traballar, saber cal pode adaptarse mellor a un proxecto concreto. **Por iso xestionar un modelo de programación extremo e acostumarse a el é unha excelente alternativa** , deste xeito estarás dominando cada unha das metodoloxías do ciclo de software de antano e poderás afrontar calquera situación complicada na que te atopes.
+**Como se pode ver, os ciclos de vida do software son moi diversos**. Ao final, unha das cousas coas que hai que contar é o sentido da adaptación. A falta de directrices claras ou método específico para traballar, é bo coñecelos para saber cal pode adaptarse mellor a un proxecto concreto.

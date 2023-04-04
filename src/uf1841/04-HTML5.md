@@ -1,6 +1,6 @@
 # HTML5
 
-<img src="./assets/HTML5.png" alt="HTML5" style="zoom:150%;" />
+<img src="./assets/HTML5.png" alt="HTML5" style="transform-origin: 0 0; transform: scale(1.5);" />
 
 
 

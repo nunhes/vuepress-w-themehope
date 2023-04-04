@@ -201,7 +201,7 @@ Imos explicar o caso do **ancho** co seguinte esquema (a **altura** sería simil
 ---
 
 
- <img src="./assets/css/screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35.png" alt="screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35" style="zoom:50%;">
+ <img src="./assets/css/screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35.png" alt="screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35" style="transform-origin: 0 0; transform: scale(0.5);">
 
 
  ---

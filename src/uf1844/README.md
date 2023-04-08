@@ -20,8 +20,8 @@ category:
 2. [Análisis e especificación de requisitos](https://www.tutorialspoint.com/business_analysis/business_analysis_tools_techniques.htm).
 3. [Deseño](https://es.wikipedia.org/wiki/Dise%C3%B1o_de_software).
 4. [Implementación](https://www.captio.net/blog/errores-comunes-implementacion-software) [2](https://www.getapp.es/blog/2373/tips-plan-de-implantacion-de-software). [Conceptos xerais de desenvolvemento de software](https://www.ibm.com/es-es/topics/software-development).
-5. Validación e verificación de sistemas.
-6. Probas de software.
+5. [Validación e verificación de sistemas](https://geekflare.com/es/verification-vs-validation-software-testing/).
+6. [Probas de software](https://es.wikipedia.org/wiki/Pruebas_de_software) [2](https://www.atlassian.com/es/continuous-delivery/software-testing/types-of-software-testing).
 7. Calidade do software.
 8. Ferramentas de uso común para o desenvolvemento de software + [Entornas integradas de desenvolvemento (IDE) de uso común](https://www.diarlu.com/entornos-de-desarrollo-integrado/).
 9. Xestión de proxectos de desenvolvemento de software. + [Planificación de proyectos](https://www.edix.com/es/instituto/planificacion-de-proyectos/). [2](https://asana.com/es/resources/best-project-planning-software) + [Ferramentas de uso común para la gestión de proyectos](https://asana.com/es/resources/best-project-management-software) [2](https://gitnux.com/es/catalog/kanban-software)

@@ -9,7 +9,7 @@ category:
 
 ## UF1844
 
-## Desenvolvemento de aplicacións web na entorna servidor
+## Desenvolvemento de [aplicacións web na entorna servidor](https://developer.mozilla.org/es/docs/Learn/Server-side)
 
 - [Lecturas complementarias](uf1844.md)
 - [Glosario](https://www.edix.com/es/instituto/formacion/significados/)
@@ -29,32 +29,36 @@ category:
 ## 2. [A orientación a obxectos](https://es.wikipedia.org/wiki/Programación_orientada_a_objetos)
 
 1. [Principios da orientación a obxectos](https://desarrolloweb.com/articulos/499.php). [Comparación coa programación estruturada](https://blog.educacionit.com/2018/05/21/programacion-orientada-a-objetos-vs-programacion-estructurada/).
-2. Clases de obxectos.
-3. Obxectos.
-4. Herdanza.
-5. Modularidade.
-6. Xenericidade  e sobrecarga
-7. [Desarrollo orientado a obxectos](https://www.w3schools.com/php/php_oop_what_is.asp). [Con Js](https://mauriciogc.medium.com/javascript-poo-programación-basada-en-prototipos-1c174b28aba2)
-8. Linguaxes de desenvolvemento orientado a obxectos de uso común. [2](https://en.wikibooks.org/wiki/PHP_Programming)
+2. [Clases de obxectos](https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/Nivel2/6_ClasesYObjetos.html). [2](https://www.fdi.ucm.es/profesor/jpavon/poo/1.1.objetos%20y%20clases.pdf)
+3. [Obxectos](https://desarrolloweb.com/articulos/objetos-lenguaje-informatico-introduccion.html). [2](https://portalacademico.cch.unam.mx/cibernetica1/analisis-y-diseno-en-poo/clases-y-objetos)
+4. [Herdanza](https://desarrolloweb.com/articulos/herencia-en-programacion-orientada-objetos.html).
+5. [Modularidade](https://desarrolloweb.com/articulos/beneficios-poo-resumen.html).
+6. [Xenericidade](https://codingornot.com/04-poo-polimorfismo) [2](https://aprenderly.com/doc/2312283/poo_genericidad)  e [sobrecarga](https://desarrolloweb.com/articulos/sobrecarga-constructores-php.html)
+7. [Desenvolvemento orientado a obxectos](https://www.w3schools.com/php/php_oop_what_is.asp). [Con Js](https://mauriciogc.medium.com/javascript-poo-programación-basada-en-prototipos-1c174b28aba2)
+8. [Linguaxes de desenvolvemento orientado a obxectos de uso común](https://assemblerinstitute.com/blog/programacion-orientada-objetos/). [2](https://www.tecnologia-informatica.com/lenguajes-de-programacion-orientada-a-objetos/) [3](https://en.wikibooks.org/wiki/PHP_Programming)
 
-## 3. Arquitecturas web
+## 3. [Arquitecturas web](https://learn.microsoft.com/es-es/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures) [2](https://www.nextu.com/blog/arquitectura-web-rc22/) [3](https://pleybast.com/sitio-web/que-es-la-arquitectura-web/) [3](https://rockcontent.com/es/blog/arquitectura-web/)
 
-1. Concepto de arquitectura web.
-2. O modelo de capas.
-3. Plataformas para o desenvolvemento nas capas servidor.
-4. Ferramentas de desenvolvemento orientadas ao servidor de aplicacións web.  [2](https://en.wikibooks.org/wiki/PHP_Programming) + [Tipos de herramientas](https://blog.techliance.com/50-extremely-useful-php-tools/). [2](https://stackify.com/php-tools-developers/)
+1. [Concepto de arquitectura web](https://www.redhat.com/es/topics/cloud-native-apps/what-is-an-application-architecture) [2](https://dossetenta.com/arquitectura-web/).
+2. [O modelo de capas](https://reactiveprogramming.io/blog/es/estilos-arquitectonicos/capas).
+3. Plataformas para o desenvolvemento nas capas servidor. [1](https://developer.mozilla.org/es/docs/Learn/Server-side/First_steps/Introduction) [2](https://www.ibm.com/es-es/topics/infrastructure) [3](https://www.intel.es/content/www/es/es/cloud-computing/cloud-architecture.html)
+4. [Ferramentas](https://blog.back4app.com/es/las-20-mejores-herramientas-del-lado-del-servidor-que-le-encantaran/) de desenvolvemento orientadas ao servidor de aplicacións web.  [2](https://en.wikibooks.org/wiki/PHP_Programming) + [Tipos de ferramentas](https://blog.techliance.com/50-extremely-useful-php-tools/). [2](https://stackify.com/php-tools-developers/)
 
 ## 4. [Linguaxes de programación de aplicacións web no lado servidor](https://www.orientsoftware.com/blog/server-side-scripting-languages/) [2](https://axarnet.es/blog/lenguajes-del-lado-del-servidor)
 
-1. Características das linguaxes de programación web no servidor.
-2. Tipos e características das linguaxes de uso común.
-3. Criterios na elección dunha linguaxe de programación web no servidor.
+1. [Características das linguaxes de programación web no servidor](https://devxdev.net/programacion-lado-servidor/).
+2. [Tipos](https://desarrolloweb.com/articulos/2358.php) e [características](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/lenguajes-del-lado-servidor-o-del-cliente-diferencias/) das [linguaxes de uso común](https://blog.back4app.com/es/los-10-mejores-lengu  ajes-de-codificacion-del-lado-del-servidor/).
+3. [Criterios na elección dunha linguaxe de programación web no servidor](https://www.arsys.es/blog/elegir-lenguaje-programacion-web).
 4. Avantaxes e inconvenientes.
-5. Características xerais.
-6. Xestión da configuración.
-7. Xestión da seguridade.
-8. Xestión de erros.
-9. Transaccións e persistencia.
+5. [Características xerais](https://desarrolloweb.com/articulos/paradigmas-programacion).
+6. [Xestión da configuración](https://desarrolloweb.com/manuales/administracion-servidores-linux.html).
+7. [Xestión da seguridade](https://desarrolloweb.com/articulos/instalar-certificado-ssl-lets-encrypt.html).
+8. [Xestión de erros](http://www.w3big.com/es/php/php-error.html#gsc.tab=0). [2](https://devtia.com/post/codigo-limpio-gestion-de-errores) [3](https://kinsta.com/es/blog/errores-en-javascript/)
+9. Transaccións e [persistencia](https://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/818).  [2](https://desarrolloweb.com/articulos/intro-indexeddb-html5.html) [3](https://sites.google.com/site/estrategiasdepersistencia/home)
 10. Compoñentes en servidor. Avantaxes e inconvenientes no uso de contedores de compoñentes.
 11. Modelos de desenvolvemento. O modelo vista controlador.
 12. Documentación do software. Inclusión no código fonte. Xeradores de documentación
+
+### Lecturas complementarias
+
+- [Fundamentos de programación](https://universidad-de-los-andes.gitbooks.io/fundamentos-de-programacion/content/)

@@ -2,7 +2,7 @@
 icon: edit
 date: 2022-01-11
 category:
-  - Fruit
+  - JS
   - NodeJS
 tag:
   - npm
@@ -23,13 +23,13 @@ NPM consta de dúas partes principais:
 
 Podemos entender o repositorio [npmjs.com](https://npmjs.com) como un centro que recibe paquetes de produtos dos autores de paquetes npm e distribúe estes produtos aos usuarios de paquetes npm.
 
-Os comandos npm son o exercito de traballadores que podemos requirir como asistentes persoais cando os solicitamos como dependencias dun proxecto: 
+Os comandos npm son o exercito de traballadores que podemos requirir como asistentes persoais cando os solicitamos como dependencias dun proxecto:
 
-​          ![wombat-install](./assets/wombat-install.png)         
+​          ![wombat-install](./assets/wombat-install.png)
 
 O proceso de publicación dun paquete para os teus compañeiros de JS sería algo así:
 
-​          ![wombat-publicar](./assets/wombat-publish.png)         
+​          ![wombat-publicar](./assets/wombat-publish.png)
 
 Vexamos como este exército axuda aos desenvolvedores que queren usar paquetes JavaScript nos seus proxectos.
 
@@ -92,7 +92,7 @@ Estas dúas propiedades se mostran en forma de obxectos clave-valor cos nomes da
 }
 ```
 
-Estas dependencias instálanse mediante o comando `npm install` coas marcas `--save` ou `--save-dev` que indican se o paquete vai destinado ao ambiente de produción, a primeira marcas, ou desenvolvemento, a segunda.  Están destinados a ser usados para ambientes de produción e desenvolvemento/proba respectivamente. 
+Estas dependencias instálanse mediante o comando `npm install` coas marcas `--save` ou `--save-dev` que indican se o paquete vai destinado ao ambiente de produción, a primeira marcas, ou desenvolvemento, a segunda.  Están destinados a ser usados para ambientes de produción e desenvolvemento/proba respectivamente.
 
 É importante comprender os posibles signos de versionado semántico (supoñendoenón podes ler sobre o modelo `major.minor.patch` de [semver]([V 2.0.0 | Semantic Versioning (semver.org)](https://semver.org/lang/es/)) ):
 
@@ -119,7 +119,7 @@ Podes especificar unha marca global `-g` se queres instalar un paquete no contex
 
 npm fixo que a instalación de paquetes JavaScript sexa tan fácil que este comando adoita usarse incorrectamente. Isto fai que npm sexa o foco de moitas bromas de programadores como estas:
 
-​          ![npm-bromas](./assets/npm-jokes.png)         
+​          ![npm-bromas](./assets/npm-jokes.png)
 
 Aquí é onde a marca `--production`  vén ao rescate! Xa vimos como pódense ter `dependencies` e  `devDependencies` para o seu uso na produción e na contorna de desenvolvemento respectivamente. A bandeira `--production`  é como se crean as diferenzas en `node_modules`.
 
@@ -135,11 +135,11 @@ Así é como podemos asegurarnos de que o contexto do noso proxecto segue sendo 
 
 ### npm audit
 
-Coa enorme cantidade de paquetes que se publicaron e que se poden instalar facilmente, os paquetes npm son susceptibles a malos autores con intencións maliciosas como [estas](hhttps://medium.com/@jsoverson/how-two-malicious-npm-packages-targeted-sabotaged-one-other-fed7199099c8) .
+Coa enorme cantidade de paquetes que se publicaron e que se poden instalar facilmente, os paquetes npm son susceptibles a malos autores con intencións maliciosas como [estas](https://medium.com/@jsoverson/how-two-malicious-npm-packages-targeted-sabotaged-one-other-fed7199099c8).
 
 Ao entender que había un problema no ecosistema, a organización npm.js tivo a [idea](https://blog.npmjs.org/post/173719309445/npm-audit-identify-and-fix-insecure) de crear `npm audit`.   `npm audit` ofrece aos desenvolvedores información sobre as vulnerabilidades e se hai versións con solucións para actualizar. Por exemplo,
 
-​          ![npm-resultado-auditoría](./assets/npm-audit-result.png)         
+​          ![npm-resultado-auditoría](./assets/npm-audit-result.png)
 
 Se as correccións están dispoñibles nas próximas actualizacións de versións sen ruptura, pódese empregar `npm audit fix`  para actualizar automaticamente as versións das dependencias afectadas.
 

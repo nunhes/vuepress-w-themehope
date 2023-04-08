@@ -6,13 +6,13 @@ marp: true
 
 ---
 
-Internet é unha rede xigante que conecta miles de ordenadores en todo o mundo. E, permítenos acceder e compartir información con persoas de todo o mundo en segundos. 
+Internet é unha rede xigante que conecta miles de ordenadores en todo o mundo. E, permítenos acceder e compartir información con persoas de todo o mundo en segundos.
 
 ---
 
-Probablemente utilizaches Internet para visitar sitios web, ver vídeos, enviar correos electrónicos, escoitar música ou xogar. 
+Probablemente utilizaches Internet para visitar sitios web, ver vídeos, enviar correos electrónicos, escoitar música ou xogar.
 
-Pero, sabes que cando te conectas a Internet e miras un sitio web estás usando un cadea de diferentes programas informáticos? 
+Pero, sabes que cando te conectas a Internet e miras un sitio web estás usando un cadea de diferentes programas informáticos?
 
 ---
 
@@ -25,7 +25,7 @@ Para ver un sitio web, ou consumir calquera outro servizo en Internet, uns progr
 ---
 
 Internet está formada por moitas redes máis pequenas.
-A World Wide Web (ou "a web") é unha rede que conecta moitos dos ordenadores, e outros dispositivos, usados a diario por millóns de persoas. 
+A World Wide Web (ou "a web") é unha rede que conecta moitos dos ordenadores, e outros dispositivos, usados a diario por millóns de persoas.
 
 ---
 
@@ -33,7 +33,7 @@ A web está formada por moitas páxinas web individuais.
 
 ---
 
-Unha páxina web é un arquivo escrito en código informático por un programador. 
+Unha páxina web é un arquivo escrito en código informático por un programador.
 
 ---
 
@@ -41,7 +41,7 @@ As páxinas web están (case todas) escritas en HTML. Cada documento HTML conté
 
 ---
 
-Cando un grupo de páxinas web están ligadas entre si formando un grupo distintivo falamos de **sitio web**. 
+Cando un grupo de páxinas web están ligadas entre si formando un grupo distintivo falamos de **sitio web**.
 
 ---
 
@@ -53,7 +53,7 @@ Para ver/acceder ás páxinas web publicadas utilizamos un tipo de programa cham
 
 ---
 
-Os navegadores web son programas informáticos que nos permiten ver páxinas web. 
+Os navegadores web son programas informáticos que nos permiten ver páxinas web.
 
 ---
 
@@ -65,7 +65,7 @@ Pode que xa teñas oído falar dalgúns deles: Google Chrome, Microsoft Internet
 
 ---
 
-Para atopar a páxina web que buscas na web, o teu navegador web usa un enderezo web. 
+Para atopar a páxina web que buscas na web, o teu navegador web usa un enderezo web.
 
 ---
 
@@ -77,7 +77,7 @@ Con ese enderezo se accede á información da páxina web desexada usando un pro
 
 ---
 
-Os servidores son ordenadores que proven a outros ordenadores coa información que aqueles solicitan. 
+Os servidores son ordenadores que proven a outros ordenadores coa información que aqueles solicitan.
 
 ---
 
@@ -85,7 +85,7 @@ Un servidor web pode ser hardware (unha computadora) ou software (un programa). 
 
 ---
 
-Para acceder a unha páxina web, o navegador web ten que conectarse ao servidor web onde se garda ou *aloxa* esa páxina. 
+Para acceder a unha páxina web, o navegador web ten que conectarse ao servidor web onde se garda ou *aloxa* esa páxina.
 
 ---
 
@@ -121,7 +121,8 @@ Unha URL ou enderezo web divídese en diferentes partes que indican, cada unha, 
 ---
 
 ### Páxinas web
-Cando o servidor web envía ao teu navegador web unha páxina web, envía a información nun documento HTML. 
+
+Cando o servidor web envía ao teu navegador web unha páxina web, envía a información nun documento HTML.
 
 ---
 
@@ -130,11 +131,11 @@ e situar os elementos na pantalla.
 
 ---
 
-Cando un navegador web le as instrucións do arquivo en código HTML, dicimos que o navegador *parses* - *parsea* &rarr; analiza- o documento HTML. 
+Cando un navegador web le as instrucións do arquivo en código HTML, dicimos que o navegador *parses* - *parsea* &rarr; analiza- o documento HTML.
 
 ---
 
-A medida que analiza e descodifica as instrucións, o navegador debuxa cada elemento do documento na pantalla. 
+A medida que analiza e descodifica as instrucións, o navegador debuxa cada elemento do documento na pantalla.
 
 ---
 
@@ -170,7 +171,7 @@ O navegador web solicita, recolle e representa os distintos elementos de cada si
 
 ---
 
-É o medio a través do cal podemos visitar e ver blogs, vídeos en liña, atender as nosas redes sociais, e moito máis. 
+É o medio a través do cal podemos visitar e ver blogs, vídeos en liña, atender as nosas redes sociais, e moito máis.
 
 ---
 
@@ -202,20 +203,20 @@ En realidade para un programador unha páxina web só é un arquivo de texto.
 
 ---
 
-##### Avantaxes:
+##### Avantaxes i
 
 * Rápido, cunha interface lixeira, sinxela, fácil de usar, aínda que leva o seu tempo acostumarse a tódalas opcións que ten, sobre todo cando se trata das configuracións máis avanzadas.
 
-* Dispón de **centos de extensións** que amplían a experiencia e un completo arsenal de ferramentas de desenvolvemento para programadores do lado cliente,... 
+* Dispón de **centos de extensións** que amplían a experiencia e un completo arsenal de ferramentas de desenvolvemento para programadores do lado cliente,...
 
 * Compatible con todos os sistemas operativos.
 
 ---
 
-#####  Inconvenientes:
+##### Inconvenientes i
 
-- O principal problema que presenta é o alto consumo de memoria RAM. Hai quen di que **é un dos que máis RAM consume**. Isto non é moi conveniente se non dispós dunha boa cantidade de memoria no equipo ou se a ocupas con outras tarefas.
-- A súa combinación cos perfís de Google de moitas persoas que o usan, convérteno para moitos no "Gran Irmán Global".
+* O principal problema que presenta é o alto consumo de memoria RAM. Hai quen di que **é un dos que máis RAM consume**. Isto non é moi conveniente se non dispós dunha boa cantidade de memoria no equipo ou se a ocupas con outras tarefas.
+* A súa combinación cos perfís de Google de moitas persoas que o usan, convérteno para moitos no "Gran Irmán Global".
 
 ---
 
@@ -227,18 +228,18 @@ Herdeiro dunha longa saga de navegadores que encetou nos 1990 con Netscape, é o
 
 ---
 
-#####  Avantaxes:
+##### Avantaxes ii
 
-- Non é o máis rápido pero tampouco é lento.
-- É un dos que máis liberdade ofrece de persoalización no modo de navegar por Internet, estéticamente falando.
-- Ten un rendemento bastante decente e non consome moita memoria RAM, polo que se pode usar en calquera ordenador sen problemas.
-- Dispón moitas extensións e aplicacións adicionais que o fan bastante completo.
+* Non é o máis rápido pero tampouco é lento.
+* É un dos que máis liberdade ofrece de persoalización no modo de navegar por Internet, estéticamente falando.
+* Ten un rendemento bastante decente e non consome moita memoria RAM, polo que se pode usar en calquera ordenador sen problemas.
+* Dispón moitas extensións e aplicacións adicionais que o fan bastante completo.
 
 ---
 
-#####  Inconvenientes:
+##### Inconvenientes ii
 
-- Unha interface que non acaba de ser todo o apetecible que poden resultar outras.
-- Non é o máis lento pero tampouco o máis rápido.
+* Unha interface que non acaba de ser todo o apetecible que poden resultar outras.
+* Non é o máis lento pero tampouco o máis rápido.
 
 ---

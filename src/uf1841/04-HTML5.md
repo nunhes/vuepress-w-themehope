@@ -2,8 +2,6 @@
 
 <img src="./assets/HTML5.png" alt="HTML5" style="transform-origin: 0 0; transform: scale(1.5);" />
 
-
-
 Se denomina HTML5 á nova xeración de HTML que ven a converterse no novo estándar para HTML, XHTML e HTML DOM. A versión anterior de HTML databa do ano 1999. E a web cambiou moito dende ese ano.
 
 HTML segue evolucionando, aínda que con outra filosofía disposta a ampliar o estandar e ir dandolle tempo aos diferentes navegadores a adaptarse as novas tecnoloxias que se despreguen. E sempre permitindo a compatibilidade cos estandares anteriores.
@@ -118,11 +116,11 @@ A etiqueta input ten novos tipos de atributos para xestionar mellor a entrada de
 
 O HTML5 proporciona un estándar que permite amosar vídeo sen recorrer a complementos ou complexos scripts. Ata agora non había un estándar para amosar vídeos nunha páxina web.  Hoxe en día a maior parte dos vídeos amosábanse empregando plugins (como no seu día Flash), sen embargo non todos os navegadores usan os mesmos plugins.
 
-**Formatos de vídeo**
+&rarr; **Formatos de vídeo**
 
 Actualmente, a etiqueta video soporta dous formatos de vídeo: Ogg e MPEG 4.
 
-- **Ogg**: Emprega o codec Theodora para imaxe e Vorbis para o audio. 
+- **Ogg**: Emprega o codec Theodora para imaxe e Vorbis para o audio.
 
 - **MPEG4**: Emprega vídeo en formato H.264 e audio en formato AAC.
 
@@ -135,9 +133,9 @@ Para amosar un vídeo en HTML5 o único que necesitamos é:
 </video>
 ```
 
-O atributo control é para engadir os botóns de play, pause e volume.  Tamén é unha boa idea o incluír os atributos width e height. 
+O atributo control é para engadir os botóns de play, pause e volume.  Tamén é unha boa idea o incluír os atributos width e height.
 
-Entre as etiquetas <video> </video> inseriremos a  mensaxe para aqueles navegadores que non soporten o elemento video de  HTML5.
+Entre as etiquetas `<video> </video>` inseriremos a mensaxe para aqueles navegadores que non soporten o elemento video de HTML5.
 
 **Exemplo 1:**
 
@@ -177,7 +175,7 @@ Ata agora non había un estándar para amosar audio nunha páxina  web. Hoxe en 
 
 HTML 5 especifica a forma de incluír audio na páxina web, coa etiqueta audio.
 
-**Formatos de audio**
+&rarr; **Formatos de audio**
 
 Actualmente, a etiqueta audio soporta tres formatos de audio: Ogg Vorbis, MP3 e WAV.
 
@@ -192,7 +190,7 @@ Para reproducir audio en HTML5 o único que necesitamos é crear o marcado corre
 
 O atributo `controls` é para engadir os botóns de play, pause en volume.
 
-Entre as etiquetas de <audio> e </audio> inseriremos a mensaxe para aqueles navegadores que non soporten o elemento video de  HTML5.
+Entre as etiquetas de `<audio> </audio>` inseriremos a mensaxe para aqueles navegadores que non soporten o elemento vídeo de HTML5.
 
 **Exemplo 1:** Este exemplo funcionará correctamente en Safari, Firefox, Chrome e Opera.
 
@@ -202,8 +200,7 @@ O seu navegador non soporta audio en HTML 5.
 </audio>
 ```
 
-
- **Exemplo 2:** O elemento audio soporta múltiples elementos orixe. O navegador  empregará o primeiro deles que recoñeza da lista e comezará a  reproducilo.
+**Exemplo 2:** O elemento audio soporta múltiples elementos orixe. O navegador  empregará o primeiro deles que recoñeza da lista e comezará a  reproducilo.
 
 ```html
 <audio controls="controls">
@@ -239,10 +236,10 @@ Para engadir un elemento canvas indicando o seu id, largo e alto faremos:
 
 ```javascript
 <script type="text/javascript">
-	var c=document.getElementById("areadebuxo");
-	var cxt=c.getContext("2d");
-	cxt.fillStyle="#FF0000";
-	cxt.fillRect(0,0,150,75);
+    var c=document.getElementById("areadebuxo");
+    var cxt=c.getContext("2d");
+    cxt.fillStyle="#FF0000";
+    cxt.fillRect(0,0,150,75);
 </script>
 ```
 
@@ -294,15 +291,14 @@ HTML5 emprega JavaScript para almacenar e acceder ós datos.
 
 O método **`localStorage`**  almacena os datos sen limitación de tempo. Os datos estarán dispoñibles o seguinte día, semana ou ano.
 
-
  **Como crear e acceder a `localStorage`:**
 
 **Exemplo:**
 
 ```javascript
 <script type="text/javascript">
-	localStorage.lastname="Smith";
-	document.write(localStorage.lastname);
+    localStorage.lastname="Smith";
+    document.write(localStorage.lastname);
 </script>
 ```
 
@@ -310,19 +306,17 @@ O seguinte exemplo conta o número de veces cun usuario visitou unha páxina: Ex
 
 ```javascript
 <script type="text/javascript">
-	if (localStorage.pagecount)
+    if (localStorage.pagecount)
       {
-  		localStorage.pagecount=Number(localStorage.pagecount) +1;
-  	  }
-	else
-  	  {
-  		localStorage.pagecount=1;
+          localStorage.pagecount=Number(localStorage.pagecount) +1;
+      }
+    else
+      {
+          localStorage.pagecount=1;
       }
     document.write("Visits "+ localStorage.pagecount + " time(s).");
 </script>
 ```
-
-
 
 **O método `sessionStorage`:**
 
@@ -334,8 +328,8 @@ O método `sessionStorage` almacena os datos durante unha sesión. Os datos ser�
 
 ```javascript
 <script type="text/javascript">
-	sessionStorage.lastname="Smith";
-	document.write(sessionStorage.lastname);
+    sessionStorage.lastname="Smith";
+    document.write(sessionStorage.lastname);
 </script>
 ```
 
@@ -343,15 +337,15 @@ O seguinte exemplo conta o número de veces cun usuario visitou unha páxina, na
 
 ```javascript
 <script type="text/javascript">
-	if (sessionStorage.pagecount)
-  		{
-  		sessionStorage.pagecount=Number(sessionStorage.pagecount) +1;
-  		}
-	else
-  		{
-  		sessionStorage.pagecount=1;
-  		}
-	document.write("Visits "+sessionStorage.pagecount+" time(s) this session.");
+    if (sessionStorage.pagecount)
+        {
+            sessionStorage.pagecount=Number(sessionStorage.pagecount) +1;
+        }
+    else
+        {
+            sessionStorage.pagecount=1;
+        }
+    document.write("Visits "+sessionStorage.pagecount+" time(s) this session.");
 </script>
 ```
 
@@ -359,35 +353,33 @@ O seguinte exemplo conta o número de veces cun usuario visitou unha páxina, na
 
 Nos seguintes artigos podes ler información sobre intercambio de  mensaxes entre dominios diferentes, semellante ao envío de mensaxes en  Ajax pero coa vantaxe de poder facerse entre dominios distintos (cousa que non permitía Ajax).
 
-https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+[https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
 
-
-
-http://davidwalsh.name/window-postmessage
+[http://davidwalsh.name/window-postmessage](http://davidwalsh.name/window-postmessage)
 
 ## Demos e exemplos de HTML5
 
 Visita esta páxina para ver máis demostracións e exemplos de HTML5.
 
-http://html5demos.com/
+[http://html5demos.com/](http://html5demos.com/)
 
 Outro titorial sobre HTML5 moi interesante:
 
-http://diveintohtml5.org/
+[http://diveintohtml5.org/](http://diveintohtml5.org/)
 
 ## Plantilla para un arquivo novo en HTML5
 
 ```html
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<title></title>
-	</head>
-	<body>
+    <head>
+        <meta charset="UTF-8" />
+        <title></title>
+    </head>
+    <body>
 
 
-	</body>
+    </body>
 </html>
 ```
 
@@ -395,4 +387,4 @@ http://diveintohtml5.org/
 
 ___
 
-_*ref:*_ https://manuais.iessanclemente.net/index.php/HTML5
+***ref:*** [https://manuais.iessanclemente.net/index.php/HTML5](https://manuais.iessanclemente.net/index.php/HTML5)

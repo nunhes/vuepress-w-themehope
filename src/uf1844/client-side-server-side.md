@@ -11,7 +11,7 @@ Este tipo de desenvolvemento céntrase na parte frontal dunha aplicación, ou se
 - Creación de deseños de sitios web. Wireframes e mockups.
 - Deseño de interfaces de usuario. Follas de estilo e uso de cores e fontes.
 - Control do DOM, como por exemplo engadindo validación de formularios
-- Revisión do rendemento dos sitios web 
+- Revisión do rendemento dos sitios web
 - Planeamento da responsividade
 - Solucións de accesibilidade
 - Elaboración e optimización de elementos de deseño visual como imaxes, vídeos, animacións,...
@@ -102,10 +102,8 @@ Mentres tanto, o desenvolvemento do servidor procesa esta entrada. Por exemplo, 
 
 Os programas do lado do cliente e do servidor tamén teñen diferentes niveis de seguridade. Os programas do cliente adoitan ser menos seguros, xa que os usuarios adoitan poder velos e interactuar con eles. Os programas do lado do servidor adoitan ter niveis de seguridade máis altos que os programas do lado do cliente porque os usuarios non poden ver nin interactuar co código fonte do lado do servidor.
 
-
-
 ---
 
 Feb 2023
 
-ref: https://www.indeed.com/
+ref: [https://www.indeed.com/](https://www.indeed.com/)

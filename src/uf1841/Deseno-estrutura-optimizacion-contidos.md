@@ -7,7 +7,7 @@ marp: true
 
 ---
 
-## :rocket: Apaga o ordenador e séntate fronte dunha folla en branco para planear o proxecto.
+## :rocket: Apaga o ordenador e séntate fronte dunha folla en branco para planear o proxecto
 
 ---
 
@@ -23,7 +23,7 @@ O diagrama funcional dun sitio é un documento técnico onde se especifican todo
 
 ---
 
-O diagrama funcional se elabora coa participación do cliente, que é  quen coñece con detalle os obxectivos do proxecto. 
+O diagrama funcional se elabora coa participación do cliente, que é  quen coñece con detalle os obxectivos do proxecto.
 
 ---
 
@@ -35,7 +35,7 @@ Existen diversos procedementos para crear este esquema funcional ou wireframe. A
 
 ---
 
-Os [wireframes](https://balsamiq.com/learn/articles/what-are-wireframes/) son diagramas de pantalla que se utilizan para definir a información, a estrutura e o comportamento dunha interface. 
+Os [wireframes](https://balsamiq.com/learn/articles/what-are-wireframes/) son diagramas de pantalla que se utilizan para definir a información, a estrutura e o comportamento dunha interface.
 
 Nos wireframes non se busca mostrar características visuais so observar e comunicar con liñas esquemáticas e sinxelas  os aspectos estruturais que requiren as funcionalidades previstas da aplicación.
 
@@ -61,7 +61,7 @@ As principais vantaxes de [facer wireframes](https://interactius.com/10-buenas-p
 - Todas as iteracións seguirán tendo as vantaxes do punto anterior.
 - Permite unha comunicación moito máis eficiente entre os actores implicados.
 - Podes visualizar as interaccións e os fluxos de navegación ou interactividade funcional.
-- Anticipar posibles problemas 
+- Anticipar posibles problemas
 
 ---
 
@@ -85,7 +85,7 @@ Os wireframes se poden crear perfectamente a man, ...ou empregando algún softwa
 
 ---
 
-Cando o proxecto web adquire unha complexidade elevada - por exemplo unha tenda online, onde hanse de considerar un amplo abanico de opcións e funcionalidades- se poden empregar técnicas de [UML](https://diagramasuml.com/) (*Unified Modeling Language*) mediante ás que se poden xerar **diagramas de casos de uso**, cos que analizar e deseñar as solucións a todas as funcións que pode ter o sitio web ou software en cuestión. 
+Cando o proxecto web adquire unha complexidade elevada - por exemplo unha tenda online, onde hanse de considerar un amplo abanico de opcións e funcionalidades- se poden empregar técnicas de [UML](https://diagramasuml.com/) (*Unified Modeling Language*) mediante ás que se poden xerar **diagramas de casos de uso**, cos que analizar e deseñar as solucións a todas as funcións que pode ter o sitio web ou software en cuestión.
 
 ---
 
@@ -101,7 +101,7 @@ Deste modo, e grazas ao esquema resultante, podemos observar como se desenvolve 
 
 ---
 
-UML se estableceu como un modelo estandarizado para describir un enfoque de programación orientada a obxectos (POO). 
+UML se estableceu como un modelo estandarizado para describir un enfoque de programación orientada a obxectos (POO).
 
 ---
 
@@ -121,24 +121,21 @@ Os diagramas UML se poden empregar para:
 
 ---
 
-[![bg draw.io](./assets/draw.io_.png)](https://draw.io)
+[![bg 97% draw.io](./assets/draw.io_.png)](https://draw.io)
 
 ---
 
-[![Lucidchart](./assets/lucid.png)](https://www.lucidchart.com/pages/es/tutorial-de-diagrama-de-clases-uml))
+[![bg 97% Lucidchart](./assets/lucid.png)](https://www.lucidchart.com/pages/es/tutorial-de-diagrama-de-clases-uml))
 
 ---
 
-https://www.figma.com/
+[https://www.figma.com/](https://www.figma.com/)
 
-https://miro.com/templates/wireframe/
+[https://miro.com/templates/wireframe/](https://miro.com/templates/wireframe/)
 
----
+[https://diagramasuml.com/](https://diagramasuml.com/)
 
-https://diagramasuml.com/
-
-https://www.lucidchart.com/pages/examples/uml_diagram_tool
+[https://www.lucidchart.com/pages/examples/uml_diagram_tool](https://www.lucidchart.com/pages/examples/uml_diagram_tool)
 
 ---
-
 XAN 2023

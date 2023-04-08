@@ -159,7 +159,7 @@ A `link`etiqueta é a forma de incluír un ficheiro CSS. Esta é a forma preferi
 
 Para usar este método, engade unha `link`etiqueta co `href`atributo que apunte ao ficheiro CSS que quere incluír. Engádeo dentro da `head`etiqueta do sitio (non dentro da `body`etiqueta):
 
-```
+```css
 <link rel="stylesheet" type="text/css" href="myfile.css" />
 ```
 
@@ -169,9 +169,9 @@ Os atributos `rel`e `type`tamén son obrigatorios, xa que indican ao navegador a
 
 En lugar de usar a `link`etiqueta para apuntar a folla de estilo separada que contén o noso CSS, podemos engadir o CSS directamente dentro dunha `style`etiqueta. Esta é a sintaxe:
 
-```
+```html
 <style>
-  ...our CSS...;
+  //our CSS
 </style>
 ```
 
@@ -181,13 +181,13 @@ Usando este método podemos evitar crear un ficheiro CSS separado. Creo que esta
 
 Os estilos en liña son a terceira forma de engadir CSS a unha páxina. Podemos engadir un `style`atributo a calquera etiqueta HTML e engadirlle CSS.
 
-```
+```html
 <div style="">...</div>
 ```
 
 Exemplo:
 
-```
+```html
 <div style="background-color: yellow">...</div>
 ```
 
@@ -201,7 +201,7 @@ Supoñamos que temos un `p`elemento na páxina e queremos mostrar as palabras ne
 
 Podemos **apuntar** a ese elemento usando este selector `p`, que apunta a todo o elemento usando a `p`etiqueta da páxina. Unha simple regra CSS para conseguir o que queremos é:
 
-```
+```css
 p {
   color: yellow;
 }
@@ -219,8 +219,11 @@ As clases identifícanse mediante o `.`símbolo, mentres que os identificadores 
 
 Exemplo usando unha clase:
 
-```
+```html
 <p class="dog-name">Roger</p>
+```
+
+```css
 .dog-name {
   color: yellow;
 }
@@ -228,8 +231,11 @@ Exemplo usando unha clase:
 
 Exemplo usando un ID:
 
-```
+```html
 <p id="dog-name">Roger</p>
+```
+
+```css
 #dog-name {
   color: yellow;
 }
@@ -245,8 +251,11 @@ Podes apuntar a un elemento específico que teña unha clase ou identificador ad
 
 Exemplo usando unha clase:
 
-```
+```html
 <p class="dog-name">Roger</p>
+```
+
+```css
 p.dog-name {
   color: yellow;
 }
@@ -254,8 +263,11 @@ p.dog-name {
 
 Exemplo usando un ID:
 
-```
+```html
 <p id="dog-name">Roger</p>
+```
+
+```css
 p#dog-name {
   color: yellow;
 }
@@ -269,8 +281,11 @@ Podes orientar un elemento cunha clase específica usando `.class-name`, como vi
 
 Exemplo:
 
-```
+```html
 <p class="dog-name roger">Roger</p>
+```
+
+```css
 .dog-name.roger {
   color: yellow;
 }
@@ -282,8 +297,11 @@ Do mesmo xeito, podes combinar unha clase e unha identificación.
 
 Exemplo:
 
-```
+```html
 <p class="dog-name" id="roger">Roger</p>
+```
+
+```css
 .dog-name#roger {
   color: yellow;
 }
@@ -295,9 +313,12 @@ Pode combinar selectores para aplicar as mesmas declaracións a varios selectore
 
 Exemplo:
 
-```
+```html
 <p>My dog name is:</p>
 <span class="dog-name"> Roger </span>
+```
+
+```css
 p,
 .dog-name {
   color: yellow;
@@ -306,7 +327,7 @@ p,
 
 Podes engadir espazos nesas declaracións para que sexan máis claras:
 
-```
+```css
 p,
 .dog-name {
   color: yellow;
@@ -319,34 +340,37 @@ Vimos como orientar un elemento da páxina mediante un nome de etiqueta, unha cl
 
 Podes crear un selector máis específico combinando varios elementos para seguir a estrutura da árbore do documento. Por exemplo, se tes unha `span`etiqueta aniñada dentro dunha `p`etiqueta, podes apuntar a esa sen aplicar o estilo a unha `span`etiqueta non incluída nunha `p`etiqueta:
 
-```
+```html
 <span> Hello! </span>
 <p>
   My dog name is:
   <span class="dog-name"> Roger </span>
 </p>
+```
+
+```css
 p span {
   color: yellow;
 }
 ```
 
-Mira como usamos un espazo entre as dúas fichas `p`e `span`.
+Mira como usamos un espazo entre as dúas fichas `p` e `span`.
 
 Isto funciona aínda que o elemento da dereita teña varios niveis de profundidade.
 
-Para facer a dependencia estrita no primeiro nivel, podes usar o `>`símbolo entre as dúas fichas:
+Para facer a dependencia estrita no primeiro nivel, podes usar o `>` símbolo entre as dúas fichas:
 
-```
+```css
 p > span {
   color: yellow;
 }
 ```
 
-Neste caso, se a `span`non é un primeiro fillo do `p`elemento, non se lle aplicará a nova cor.
+Neste caso, se a `span` non é un primeiro fillo do `p` elemento, non se lle aplicará a nova cor.
 
 Os nenos directos terán o estilo aplicado:
 
-```
+```html
 <p>
   <span> This is yellow </span>
   <strong>
@@ -359,7 +383,7 @@ Os selectores de irmáns adxacentes permítennos estilizar un elemento só se es
 
 Exemplo:
 
-```
+```css
 p + span {
   color: yellow;
 }
@@ -367,7 +391,7 @@ p + span {
 
 Isto asignará a cor amarela a todos os elementos de span precedidos dun `p`elemento:
 
-```
+```html
 <p>This is a paragraph</p>
 <span>This is a yellow span</span>
 ```
@@ -1338,27 +1362,27 @@ Exemplo:
 
 #name {
   display: block; /*
-	color: red;
-	*/
+   color: red;
+   */
 }
 ```
 
-CSS non ten comentarios en liña, como `//`en C ou JavaScript.
+CSS non ten comentarios en liña, como `//` en C ou JavaScript.
 
-Pero preste atención: se engades `//`antes dunha regra, a regra non se aplicará, parecendo que o comentario funcionou. En realidade, CSS detectou un erro de sintaxe e debido ao seu  funcionamento ignorou a liña co erro e pasou directamente á seguinte  liña.
+Pero preste atención: se engades `//` antes dunha regra, a regra non se aplicará, parecendo que o comentario funcionou. En realidade, CSS detectou un erro de sintaxe e debido ao seu  funcionamento ignorou a liña co erro e pasou directamente á seguinte  liña.
 
 Coñecer este enfoque permíteche escribir comentarios en liña a propósito, aínda que tes que ter coidado porque non podes engadir texto aleatorio como  se pode facer nun comentario de bloque.
 
 Por exemplo:
 
 ```css
-// Nice rule!
+// Nice rule
 #name {
   display: block;
 }
 ```
 
-Neste caso, debido a como funciona CSS, a `#name`regra é realmente comentada. Podes atopar máis detalles [aquí](https://www.xanthir.com/b4U10) se che parece interesante. Para evitar dispararte no pé, simplemente evita usar comentarios en liña e confía nos comentarios bloqueados.
+Neste caso, debido a como funciona CSS, a regra `#name` é realmente comentada. Podes atopar máis detalles [aquí](https://www.xanthir.com/b4U10) se che parece interesante. Para evitar dispararte no pé, simplemente evita usar comentarios en liña e confía nos comentarios bloqueados.
 
 ## 19. Propiedades personalizadas
 
@@ -1412,7 +1436,7 @@ O valor da variable pode ser calquera valor CSS válido, por exemplo:
 
 As variables CSS pódense definir dentro de calquera elemento. Algúns exemplos:
 
-```
+```css
 :root {
   --default-color: red;
 }
@@ -1446,7 +1470,7 @@ Engadir variables a un selector fai que estes dispoñibles para todos os fillos 
 
 No exemplo anterior viu o uso de `:root`cando se define unha variable CSS:
 
-```
+```css
 :root {
   --primary-color: yellow;
 }
@@ -1462,7 +1486,7 @@ Engadir unha propiedade personalizada CSS para que `:root`estea dispoñible para
 
 Se engades unha variable dentro dun `.container`selector, só estará dispoñible para os fillos de `.container`:
 
-```
+```css
 .container {
   --secondary-color: yellow;
 }
@@ -1472,7 +1496,7 @@ e usalo fóra deste elemento non vai funcionar.
 
 As variables pódense **reasignar** :
 
-```
+```css
 :root {
   --primary-color: yellow;
 }
@@ -1486,7 +1510,7 @@ Por fóra `.container`, `--primary-color`será *amarelo* , pero por dentro será
 
 Tamén pode asignar ou sobrescribir unha variable dentro do HTML usando **estilos en liña** :
 
-```
+```html
 <main style="--primary-color: orange;">
   <!-- ... -->
 </main>
@@ -1500,21 +1524,21 @@ O máis interesante das variables CSS é a posibilidade de acceder a elas e edit
 
 Así é como estableces un valor variable usando JavaScript simple:
 
-```
+```js
 const element = document.getElementById('my-element')
 element.style.setProperty('--variable-name', 'a-value')
 ```
 
 Este código a continuación pódese usar para acceder a un valor de variable, no caso de que a variable estea definida en `:root`:
 
-```
+```js
 const styles = getComputedStyle(document.documentElement)
 const value = String(styles.getPropertyValue('--variable-name')).trim()
 ```
 
 Ou, para aplicar o estilo a un elemento específico, no caso de establecer variables cun ámbito diferente:
 
-```
+```js
 const element = document.getElementById('my-element')
 const styles = getComputedStyle(element)
 const value = String(styles.getPropertyValue('--variable-name')).trim()
@@ -1540,13 +1564,13 @@ Se precisas admitir navegadores máis antigos, podes usar bibliotecas como [Post
 
 Esta variable:
 
-```
+```css
 --width: 100px;
 ```
 
 é diferente de:
 
-```
+```css
 --Width: 100px;
 ```
 
@@ -1554,7 +1578,7 @@ Esta variable:
 
 Para facer matemáticas en Variables CSS, cómpre usar `calc()`, por exemplo:
 
-```
+```css
 :root {
   --default-left-padding: calc(10px * 2);
 }
@@ -1564,7 +1588,7 @@ Para facer matemáticas en Variables CSS, cómpre usar `calc()`, por exemplo:
 
 Nada especial aquí. As variables CSS normalmente aplícanse ás consultas multimedia:
 
-```
+```css
 body {
   --width: 500px;
 }
@@ -1580,9 +1604,9 @@ body {
 
 ### 19.10. Establecendo un valor alternativo para var()
 
-`var()`acepta un segundo parámetro, que é o valor alternativo predeterminado cando o valor da variable non está definido:
+`var()` acepta un segundo parámetro, que é o valor alternativo predeterminado cando o valor da variable non está definido:
 
-```
+```css
 .container {
   margin: var(--default-margin, 30px);
 }
@@ -1620,7 +1644,7 @@ Aquí tes un exemplo da aplicación Font Book do meu Mac: a familia de fontes Fi
 
 Esta propiedade permítelle seleccionar un tipo de letra específico, por exemplo:
 
-```
+```css
 body {
   font-family: Helvetica;
 }
@@ -1628,7 +1652,7 @@ body {
 
 Podes establecer varios valores, polo que se utilizará a segunda opción se a  primeira non se pode usar por algún motivo (se non se atopa na máquina  ou fallou a conexión de rede para descargar a fonte, por exemplo):
 
-```
+```css
 body {
   font-family: Helvetica, Arial;
 }
@@ -1638,45 +1662,45 @@ Usei ata agora algunhas fontes específicas, as que chamamos **Web Safe Fonts** 
 
 Dividímolos en fontes Serif, Sans-Serif e Monospace. Aquí tes unha lista dalgúns dos máis populares:
 
-**Serif**
+#### Serif
 
-- Xeorxia
+- Georgia
 - Palatino
 - Times New Roman
-- Veces
+- Times
 
-**Sans Serif**
+#### Sans Serif
 
 - Arial
-- Helvética
+- Helvetica
 - Verdana
-- Xenebra
+- Genebra
 - Tahoma
-- Lucida Grande
-- Impacto
+- Lucida
+- Impact
 - Trebuchet MS
-- Arial Negro
+- Arial Black
 
-**Monoespacial**
+#### Monospace
 
-- Courier Novo
-- Correo
-- Consola Lucida
+- Courier New
+- Courier
+- Lucida Console
 - Mónaco
 
-Podes usar todas esas `font-family`propiedades, pero non se garante que estean aí para todos os sistemas. Tamén existen outros con diferentes niveis de apoio.
+Podes usar todas esas propiedades `font-family`, pero non se garante que estean aí para todos os sistemas. Tamén existen outros con diferentes niveis de apoio.
 
 Tamén podes usar nomes xenéricos:
 
-- `sans-serif`unha fonte sen ligaduras
-- `serif`unha fonte con ligaduras
-- `monospace`unha fonte especialmente boa para o código
-- `cursive`usado para simular pezas manuscritas
-- `fantasy`o nome o di todo
+- `sans-serif` unha fonte sen ligaduras
+- `serif` unha fonte con ligaduras
+- `monospace` unha fonte especialmente boa para o código
+- `cursive` usado para simular pezas manuscritas
+- `fantasy` o nome o di todo
 
-Estes úsanse normalmente ao final dunha `font-family`definición, para proporcionar un valor alternativo no caso de que non se poida aplicar nada máis:
+Estes úsanse normalmente ao final dunha definición `font-family`, para proporcionar un valor alternativo no caso de que non se poida aplicar nada máis:
 
-```
+```css
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -1688,22 +1712,22 @@ Esta propiedade define o ancho dunha fonte. Podes usar eses valores predefinidos
 
 - normal
 - negriña
-- máis negra (relativo ao elemento pai)
-- máis lixeiro (relativo ao elemento principal)
+- máis grosa (relativo ao elemento pai)
+- máis fina (relativo ao elemento principal)
 
 Ou usando as palabras clave numéricas
 
 - 100
 - 200
 - 300
-- 400, asignado a`normal`
+- 400 asignado a `normal`
 - 500
 - 600
-- 700 asignados a`bold`
+- 700 asignado a `bold`
 - 800
 - 900
 
-onde 100 é a fonte máis clara e 900 é a máis negra.
+onde 100 é a fonte máis fina e 900 é a máis grosa.
 
 Algúns deses valores numéricos poden non corresponder a unha fonte, porque debe proporcionarse na familia de fontes. Cando falta un, CSS fai que ese número sexa polo menos tan en negra como o  anterior, polo que pode ter números que apunten á mesma fonte.
 
@@ -1716,7 +1740,6 @@ Isto é importante: a fonte debe estar equipada con diferentes caras.
 Os valores permitidos son, de máis estreito a máis amplo:
 
 - `ultra-condensed`
-
 - `extra-condensed`
 - `condensed`
 - `semi-condensed`
@@ -1730,7 +1753,7 @@ Os valores permitidos son, de máis estreito a máis amplo:
 
 Permite aplicar un estilo cursiva a unha fonte:
 
-```
+```css
 p {
   font-style: italic;
 }
@@ -1761,7 +1784,7 @@ No segundo caso, os valores que podes usar son:
 
 Uso:
 
-```
+```css
 p {
   font-size: 20px;
 }
@@ -1787,7 +1810,7 @@ A `font`propiedade permítelle aplicar diferentes propiedades de tipo de letra n
 
 Debemos establecer polo menos 2 propiedades, `font-size`e `font-family`as outras son opcionais:
 
-```
+```css
 body {
   font: 20px Helvetica;
 }
@@ -1797,14 +1820,14 @@ Se engadimos outras propiedades, hai que poñelas na orde correcta.
 
 Esta é a orde:
 
-```
+```css
 font: <font-stretch> <font-style> <font-variant> <font-weight> <font-size>
   <line-height> <font-family>;
 ```
 
 Exemplo:
 
-```
+```css
 body {
   font: italic bold 20px Helvetica;
 }
@@ -1884,7 +1907,7 @@ Hai 4 valores válidos:
 
 Exemplo:
 
-```
+```css
 p {
   text-transform: uppercase;
 }
@@ -1902,7 +1925,7 @@ Esta propiedade está destinada a engadir decoración ao texto, incluíndo
 
 Exemplo:
 
-```
+```css
 p {
   text-decoration: underline;
 }
@@ -1912,7 +1935,7 @@ Tamén pode definir o estilo da decoración e a cor.
 
 Exemplo:
 
-```
+```css
 p {
   text-decoration: underline dashed yellow;
 }
@@ -1928,7 +1951,7 @@ Podes facer todo nunha liña ou usar as propiedades específicas:
 
 Exemplo:
 
-```
+```css
 p {
   text-decoration-line: underline;
   text-decoration-color: yellow;
@@ -1942,7 +1965,7 @@ Por defecto, aliñar texto ten o `start`valor, é dicir, o texto comeza no "inic
 
 Os valores posibles son `start`, `end`, `left`, `right`, `center`, `justify`(boa ter un espazo coherente nos extremos das liñas):
 
-```
+```css
 p {
   text-align: right;
 }
@@ -1969,7 +1992,7 @@ Despois temos as palabras clave:
 
 Isto permítelle cambiar a altura dunha liña. Cada liña de texto ten unha certa altura de fonte, pero despois hai un espazo adicional vertical entre as liñas. Esta é a altura da liña:
 
-```
+```css
 p {
   line-height: 0.9rem;
 }
@@ -1979,7 +2002,7 @@ p {
 
 Sangrar a primeira liña dun parágrafo por unha lonxitude definida ou unha porcentaxe do ancho do parágrafo:
 
-```
+```css
 p {
   text-indent: -10px;
 }
@@ -1989,7 +2012,7 @@ p {
 
 Por defecto, a última liña dun parágrafo está aliñada seguindo o `text-align`valor. Use esta propiedade para cambiar ese comportamento:
 
-```
+```css
 p {
   text-align-last: right;
 }
@@ -2001,7 +2024,7 @@ Modifica o espazo entre cada palabra.
 
 Podes usar a `normal`palabra clave para restablecer os valores herdados ou usar un valor de lonxitude:
 
-```
+```css
 p {
   word-spacing: 2px;
 }
@@ -2017,7 +2040,7 @@ Modifica o espazo entre cada letra.
 
 Podes usar a `normal`palabra clave para restablecer os valores herdados ou usar un valor de lonxitude:
 
-```
+```css
 p {
   letter-spacing: 0.2px;
 }
@@ -2041,7 +2064,7 @@ Se non se especifica a cor, a sombra usará a cor do texto.
 
 Exemplos:
 
-```
+```css
 p {
   text-shadow: 0.2px 2px;
 }
@@ -2070,7 +2093,7 @@ Os valores válidos que conservan espazos en branco son:
 
 Establece o ancho do carácter de tabulación. De forma predeterminada, é 8, e podes establecer un valor enteiro que  estableza os espazos de caracteres que necesita ou un valor de  lonxitude:
 
-```
+```css
 p {
   tab-size: 2;
 }
@@ -2114,7 +2137,7 @@ Os valores válidos son
 
 Establece a dirección do texto. Os valores válidos son `ltr`e `rtl`:
 
-```
+```css
 p {
   direction: rtl;
 }
@@ -2140,7 +2163,7 @@ Este é o comportamento predeterminado ( `overflow-wrap: normal;`).
 
 Podemos usar:
 
-```
+```css
 p {
   overflow-wrap: break-word;
 }
@@ -2148,7 +2171,7 @@ p {
 
 para rompelo na lonxitude exacta da liña, ou
 
-```
+```css
 p {
   overflow-wrap: anywhere;
 }
@@ -2238,7 +2261,7 @@ Podes establecer un estilo diferente para cada bordo usando as propiedades
 
 ou pode usalos `border-style`con varios valores para definilos, usando a orde habitual Arriba-Dereita-Abaixo-Esquerda:
 
-```
+```css
 p {
   border-style: solid dotted solid dotted;
 }
@@ -2258,7 +2281,7 @@ ou expresar un valor en píxeles, em ou rem ou calquera outro valor de lonxitude
 
 Exemplo:
 
-```
+```css
 p {
   border-width: 2px;
 }
@@ -2266,7 +2289,7 @@ p {
 
 Podes establecer o ancho de cada bordo (arriba-dereita-inferior-esquerda) por separado usando 4 valores:
 
-```
+```css
 p {
   border-width: 2px 1px 2px 1px;
 }
@@ -2284,7 +2307,7 @@ Podes pasar calquera valor de cor válido a `border-color`.
 
 Exemplo:
 
-```
+```css
 p {
   border-color: yellow;
 }
@@ -2292,17 +2315,17 @@ p {
 
 Podes establecer a cor de cada bordo (arriba-dereita-inferior-esquerda) por separado usando 4 valores:
 
-```
+```css
 p {
   border-color: black red yellow blue;
 }
 ```
 
-ou pode usar as propiedades de bordo específicas `border-top-color `, `border-right-color `, `border-bottom-color `, `border-left-color `.
+ou podes usar as propiedades de bordo específicas `border-top-color`, `border-right-color`, `border-bottom-color`, `border-left-color`.
 
-### 23.4. A propiedade de taquigrafía fronteira
+### 23.4. A propiedade en taquigrafía abreviada
 
-Esas 3 propiedades mencionadas, `border-width`, `border-style`e `border-color`pódense definir usando a propiedade abreviatura `border`.
+Esas 3 propiedades mencionadas, `border-width`, `border-style`e `border-color` pódense definir usando a propiedade abreviatura `border`.
 
 Exemplo:
 
@@ -2316,7 +2339,7 @@ Tamén pode usar as propiedades específicas do bordo `border-top`, `border-righ
 
 Exemplo:
 
-```
+```css
 p {
   border-left: 2px black solid;
   border-right: 3px red dashed;
@@ -2329,7 +2352,7 @@ p {
 
 Uso:
 
-```
+```css
 p {
   border-radius: 3px;
 }
@@ -2371,7 +2394,7 @@ Lembra:
 
 O uso destes é moi sinxelo e non se pode confundir, por exemplo:
 
-```
+```css
 padding-left: 30px;
 padding-right: 3em;
 ```
@@ -2384,7 +2407,7 @@ padding-right: 3em;
 
 Usar un único valor aplícase a **todos** os recheos: arriba, dereita, inferior, esquerda.
 
-```
+```css
 padding: 20px;
 ```
 
@@ -2392,7 +2415,7 @@ padding: 20px;
 
 Usando 2 valores aplícase o primeiro á **parte inferior e superior** , e o segundo á **esquerda e á dereita** .
 
-```
+```css
 padding: 20px 10px;
 ```
 
@@ -2400,7 +2423,7 @@ padding: 20px 10px;
 
 Usando 3 valores aplícase o primeiro á **parte superior** , o segundo á **esquerda e á dereita** , o terceiro á **parte inferior** .
 
-```
+```css
 padding: 20px 10px 30px;
 ```
 
@@ -2408,7 +2431,7 @@ padding: 20px 10px 30px;
 
 Usando 4 valores aplícase o primeiro á **parte superior** , o segundo á **dereita** , o terceiro á **parte inferior** e o cuarto á **esquerda** .
 
-```
+```css
 padding: 20px 10px 5px 0px;
 ```
 
@@ -2416,7 +2439,7 @@ Polo tanto, a orde é *arriba-dereita-abaixo-esquerda* .
 
 ### 24.3. Valores aceptados
 
-`padding `acepta valores expresados en calquera tipo de unidade de lonxitude, os máis comúns son px, em, rem, pero [existen moitos outros](https://developer.mozilla.org/en-US/docs/Web/CSS/length) .
+`padding` acepta valores expresados en calquera tipo de unidade de lonxitude, os máis comúns son px, em, rem, pero [existen moitos outros](https://developer.mozilla.org/en-US/docs/Web/CSS/length) .
 
 ## 25. Marxe
 
@@ -2424,12 +2447,12 @@ A `margin`propiedade CSS úsase habitualmente en CSS para engadir espazo ao redo
 
 Lembra:
 
-- `margin`engade espazo fóra do bordo dun elemento
-- `padding`engade espazo dentro do bordo dun elemento
+- `margin` engade espazo fóra do bordo dun elemento
+- `padding` engade espazo dentro do bordo dun elemento
 
 ### 25.1. Propiedades específicas da marxe
 
-`margin`ten 4 propiedades relacionadas que alteran a marxe dunha única aresta á vez:
+`margin` ten 4 propiedades relacionadas que alteran a marxe dunha única aresta á vez:
 
 - `margin-top`
 - `margin-right`
@@ -2438,7 +2461,7 @@ Lembra:
 
 O uso destes é moi sinxelo e non se pode confundir, por exemplo:
 
-```
+```css
 margin-left: 30px;
 margin-right: 3em;
 ```
@@ -2451,7 +2474,7 @@ margin-right: 3em;
 
 Usar un único valor aplícase a **todas** as marxes: arriba, dereita, inferior, esquerda.
 
-```
+```css
 margin: 20px;
 ```
 
@@ -2459,7 +2482,7 @@ margin: 20px;
 
 Usando 2 valores aplícase o primeiro á **parte inferior e superior** , e o segundo á **esquerda e á dereita** .
 
-```
+```css
 margin: 20px 10px;
 ```
 
@@ -2467,7 +2490,7 @@ margin: 20px 10px;
 
 Usando 3 valores aplícase o primeiro á **parte superior** , o segundo á **esquerda e á dereita** , o terceiro á **parte inferior** .
 
-```
+```css
 margin: 20px 10px 30px;
 ```
 
@@ -2475,7 +2498,7 @@ margin: 20px 10px 30px;
 
 Usando 4 valores aplícase o primeiro á **parte superior** , o segundo á **dereita** , o terceiro á **parte inferior** e o cuarto á **esquerda** .
 
-```
+```css
 margin: 20px 10px 5px 0px;
 ```
 
@@ -2491,7 +2514,7 @@ Tamén acepta valores porcentuais e o valor especial `auto`.
 
 `auto`pódese usar para indicarlle ao navegador que seleccione automaticamente unha  marxe, e úsase máis habitualmente para centrar un elemento deste xeito:
 
-```
+```css
 margin: 0 auto;
 ```
 
@@ -2499,12 +2522,11 @@ Como se dixo anteriormente, usar 2 valores aplícase o primeiro á **parte infer
 
 A forma moderna de centrar elementos é usar [Flexbox](https://flaviocopes.com/flexbox/) e a súa `justify-content: center;`directiva.
 
-Os navegadores máis antigos, por suposto, non implementan Flexbox, e se precisas admitilos `margin: 0 auto;`aínda é unha boa opción.
+Os navegadores máis antigos, por suposto, non implementan Flexbox, e se precisas admitilos `margin: 0 auto;`    aínda é unha boa opción.
 
 ### 25.5. Usando unha marxe negativa
 
-`margin`é a única propiedade relacionada co tamaño que pode ter un valor negativo. Tamén é moi útil. Establecer unha marxe superior negativa fai que un elemento se mova sobre os  elementos anteriores e, dado un valor negativo suficiente, sairá da  páxina.
-
+`margin` é a única propiedade relacionada co tamaño que pode ter un valor negativo. Tamén é moi útil. Establecer unha marxe superior negativa fai que un elemento se mova sobre oselementos anteriores.
 Unha marxe inferior negativa move cara arriba os elementos despois dela.
 
 Unha marxe dereita negativa fai que o contido do elemento se expanda máis aló do seu tamaño de contido permitido.
@@ -2528,7 +2550,7 @@ A `box-sizing`propiedade é unha gran axuda. Ten 2 valores:
 
 `border-box`é o novo e xenial que buscamos. Se o configuras nun elemento:
 
-```
+```css
 .my-div {
   box-sizing: border-box;
 }
@@ -2538,7 +2560,7 @@ o cálculo de ancho e alto inclúe o recheo e o bordo. Só se deixa fóra a marx
 
 Esta propiedade é un pequeno cambio pero ten un gran impacto. CSS Tricks incluso declarou un [día internacional de concienciación sobre o tamaño das caixas](https://css-tricks.com/international-box-sizing-awareness-day/) , só dicindo, e recoméndase aplicalo a todos os elementos da páxina, fóra da caixa, con isto:
 
-```
+```css
 *,
 *:before,
 *:after {
@@ -2653,7 +2675,7 @@ que se denominan **propiedades de compensación** . Aceptan un valor de lonxitud
 
 Tome [este exemplo que fixen en Codepen](https://codepen.io/flaviocopes/pen/WWGgrR) . Creo un contenedor principal, un contenedor fillo e unha caixa interior con algún texto:
 
-```
+```html
 <div class="parent">
   <div class="child">
     <div class="box">
@@ -2665,7 +2687,7 @@ Tome [este exemplo que fixen en Codepen](https://codepen.io/flaviocopes/pen/WWGg
 
 con algúns CSS para dar algunhas cores e recheo, pero non afecta o posicionamento:
 
-```
+```css
 .parent {
   background-color: #af47ff;
   padding: 30px;
@@ -2698,7 +2720,7 @@ Agora, se nos poñemos `position: relative`na caixa, ao principio ao parecer nad
 
 Por exemplo:
 
-```
+```css
 .box {
   /* ... */
   position: relative;
@@ -2712,7 +2734,7 @@ Un valor negativo de `top`fará que a caixa se mueva en relación ao seu recipie
 
 Ou
 
-```
+```css
 .box {
   /* ... */
   position: relative;
@@ -2735,7 +2757,7 @@ Lembras no posicionamento relativo que observamos que se conservaba o espazo  qu
 
 Co posicionamento absoluto, tan pronto como poñemos `position: absolute`en `.box`, o seu espazo orixinal está agora colapsado e só a orixe (coordenadas x, y) permanece igual.
 
-```
+```css
 .box {
   /* ... */
   position: absolute;
@@ -2746,7 +2768,7 @@ Co posicionamento absoluto, tan pronto como poñemos `position: absolute`en `.bo
 
 Agora podemos mover a caixa como queiramos, usando as propiedades `top`, `right`, `bottom`, `left`:
 
-```
+```css
 .box {
   /* ... */
   position: absolute;
@@ -2759,7 +2781,7 @@ Agora podemos mover a caixa como queiramos, usando as propiedades `top`, `right`
 
 ou
 
-```
+```css
 .box {
   /* ... */
   position: absolute;
@@ -2774,7 +2796,7 @@ As coordenadas son relativas ao contedor máis próximo que non é `static`.
 
 Isto significa que se engadimos `position: relative`ao `.child`elemento e poñemos `top`e `left`a 0, a caixa non se situará na marxe superior esquerda da *xanela* , senón que se situará nas coordenadas 0, 0 de `.child`:
 
-```
+```css
 .child {
   /* ... */
   position: relative;
@@ -2792,7 +2814,7 @@ Isto significa que se engadimos `position: relative`ao `.child`elemento e poñem
 
 Isto é o que ocorre se `.child`é estático (o predeterminado):
 
-```
+```css
 .child {
   /* ... */
   position: static;
@@ -2816,7 +2838,7 @@ Do mesmo xeito que co posicionamento absoluto, cando se asigna un elemento `posi
 
 A diferenza co posicionamento absoluto é a seguinte: agora os elementos  sempre sitúanse en relación á xanela, en lugar do primeiro contedor non  estático.
 
-```
+```css
 .box {
   /* ... */
   position: fixed;
@@ -2825,7 +2847,7 @@ A diferenza co posicionamento absoluto é a seguinte: agora os elementos  sempre
 
 ![img](./assets/Screen Shot 2019-04-08 at 10.04.34.png)
 
-```
+```css
 .box {
   /* ... */
   position: fixed;
@@ -2864,7 +2886,7 @@ Digamos que temos un cadro que contén un parágrafo con algún texto e que o pa
 
 Aquí tes algún código:
 
-```
+```html
 <div class="parent">
   <div class="child">
     <div class="box">
@@ -2880,6 +2902,9 @@ Aquí tes algún código:
     </div>
   </div>
 </div>
+```
+
+```css
 .parent {
   background-color: #af47ff;
   padding: 30px;
@@ -2910,7 +2935,7 @@ Como podes ver, o fluxo normal por defecto considera a imaxe en liña e fai espa
 
 Se engadimos `float: left`á imaxe, e algún recheo:
 
-```
+```css
 img {
   float: left;
   padding: 20px 20px 0px 0px;
@@ -2923,7 +2948,7 @@ este é o resultado:
 
 e isto é o que obtemos aplicando un flotador: correcto, axustando o recheo en consecuencia:
 
-```
+```css
 img {
   float: right;
   padding: 20px 0px 20px 20px;
@@ -2938,7 +2963,7 @@ Un elemento flotante elimínase do fluxo normal da páxina e o outro contido fl�
 
 Non está limitado a imaxes flotantes, tamén. Aquí cambiamos a imaxe cun `span`elemento:
 
-```
+```html
 <div class="parent">
   <div class="child">
     <div class="box">
@@ -2954,6 +2979,9 @@ Non está limitado a imaxes flotantes, tamén. Aquí cambiamos a imaxe cun `span
     </div>
   </div>
 </div>
+```
+
+```css
 span {
   float: right;
   margin: 20px 0px 20px 20px;
@@ -2976,9 +3004,9 @@ Digamos que tiñamos 3 imaxes en liña dentro dunha `p`etiqueta:
 
 ![img](./assets/Screen Shot 2019-04-08 at 15.10.42.png)
 
-`float: left`Se a esas imaxes engadimos :
+Se a esas imaxes engadimos `float: left`:
 
-```
+```css
 img {
   float: left;
   padding: 20px 20px 0px 0px;
@@ -2993,14 +3021,15 @@ se engades `clear: left`imaxes, estas vanse apilar verticalmente e non horizonta
 
 ![img](./assets/Screen Shot 2019-04-08 at 15.17.10.png)
 
-Usei o `left`valor para `clear`. Permite
+Usando o valor `left` para `clear`.
+Se permite:
 
-- `left`para limpar os flotadores esquerdos
-- `right`para limpar flotadores dereita
-- `both`para limpar os flotadores esquerdo e dereito
-- `none`(predeterminado) desactiva o borrado
+- `left` para limpar os flotadores esquerdos
+- `right` para limpar flotadores dereita
+- `both` para limpar os flotadores esquerdo e dereito
+- `none` (predeterminado) desactiva o borrado
 
-## 30. índice z
+## 30. z-index
 
 Cando falamos de posicionamento, mencionei que pode usar a `z-index`propiedade para controlar o posicionamento do eixe Z dos elementos.
 
@@ -3018,7 +3047,7 @@ Por defecto, os elementos teñen o `static`valor da `position`propiedade. Neste 
 
 Exemplo:
 
-```
+```ccss
 .my-first-div {
   position: absolute;
   top: 0;
@@ -3038,7 +3067,7 @@ Exemplo:
 }
 ```
 
-`.my-second-div`Mostrarase o elemento con clase , e detrás del `.my-first-div`.
+Mostrarase o elemento con clase `.my-second-div`, e detrás del `.my-first-div`.
 
 Aquí usamos 10 e 20, pero podes usar calquera número. Tamén os números negativos. É habitual escoller números non consecutivos, polo que podes colocar elementos no medio. Se usa números consecutivos no seu lugar, necesitaría volver calcular o índice z de cada elemento implicado no posicionamento.
 
@@ -3086,7 +3115,7 @@ Esas propiedades definen o número de columnas e filas da grade e tamén definen
 
 O seguinte fragmento define unha grade con 4 columnas de 200 píxeles de  ancho cada unha e 2 filas cunha altura de 300 píxeles cada unha.
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
@@ -3098,7 +3127,7 @@ O seguinte fragmento define unha grade con 4 columnas de 200 píxeles de  ancho 
 
 Aquí tes outro exemplo de grade con 2 columnas e 2 filas:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 200px 200px;
@@ -3112,7 +3141,7 @@ Aquí tes outro exemplo de grade con 2 columnas e 2 filas:
 
 Moitas veces pode ter un tamaño de cabeceira fixo, un tamaño de pé de páxina  fixo e o contido principal que é flexible en altura, dependendo da súa  lonxitude. Neste caso pode usar a `auto`palabra clave:
 
-```
+```css
 .container {
   display: grid;
   grid-template-rows: 100px auto 100px;
@@ -3125,7 +3154,7 @@ Nos exemplos anteriores fixemos cuadrículas regulares usando os mesmos  valores
 
 Podes especificar calquera valor para cada fila/columna, para crear moitos deseños diferentes:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 100px 200px;
@@ -3137,7 +3166,7 @@ Podes especificar calquera valor para cada fila/columna, para crear moitos dese�
 
 Outro exemplo:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 10px 100px;
@@ -3160,7 +3189,7 @@ ou a sintaxe taquigráfica `grid-gap`.
 
 Exemplo:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 100px 200px;
@@ -3174,7 +3203,7 @@ Exemplo:
 
 O mesmo esquema usando a taquigrafía:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 100px 200px;
@@ -3196,7 +3225,7 @@ Estas son as propiedades que usaremos para iso:
 
 Exemplo:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
@@ -3229,7 +3258,7 @@ Esas propiedades teñen unha sintaxe abreviada proporcionada por:
 
 O uso é sinxelo, aquí tes como replicar o deseño anterior:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
@@ -3245,7 +3274,7 @@ O uso é sinxelo, aquí tes como replicar o deseño anterior:
 
 Outro enfoque é establecer a columna/fila de inicio e establecer cantas debería ocupar usando `span`:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
@@ -3269,7 +3298,7 @@ Unha fracción é unha unidade de espazo.
 
 O seguinte exemplo divide unha grade en 3 columnas co mesmo ancho, 1/3 do espazo dispoñible cada unha.
 
-```
+```css
 .container {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -3279,7 +3308,7 @@ O seguinte exemplo divide unha grade en 3 columnas co mesmo ancho, 1/3 do espazo
 
 Tamén podes usar porcentaxes e mesturar e combinar fraccións, píxeles, rem e porcentaxes:
 
-```
+```css
 .container {
   grid-template-columns: 3rem 15% 1fr 2fr;
 }
@@ -3291,7 +3320,7 @@ Tamén podes usar porcentaxes e mesturar e combinar fraccións, píxeles, rem e 
 
 Se todas as columnas teñen o mesmo ancho, pode especificar o deseño usando esta sintaxe:
 
-```
+```css
 .container {
   grid-template-columns: repeat(4, 100px);
 }
@@ -3301,7 +3330,7 @@ Isto crea 4 columnas co mesmo ancho.
 
 Ou usando fraccións:
 
-```
+```css
 .container {
   grid-template-columns: repeat(4, 1fr);
 }
@@ -3313,7 +3342,7 @@ Caso de uso común: ten unha barra lateral que nunca se contrae máis que unha d
 
 Aquí tes un exemplo no que a barra lateral ocupa 1/4 da pantalla e nunca leva menos de 200 píxeles:
 
-```
+```css
 .container {
   grid-template-columns: minmax(200px, 3fr) 9fr;
 }
@@ -3321,7 +3350,7 @@ Aquí tes un exemplo no que a barra lateral ocupa 1/4 da pantalla e nunca leva m
 
 Tamén pode establecer só un valor máximo usando a `auto`palabra clave:
 
-```
+```css
 .container {
   grid-template-columns: minmax(auto, 50%) 9fr;
 }
@@ -3329,7 +3358,7 @@ Tamén pode establecer só un valor máximo usando a `auto`palabra clave:
 
 ou só un valor mínimo:
 
-```
+```css
 .container {
   grid-template-columns: minmax(100px, auto) 9fr;
 }
@@ -3339,17 +3368,20 @@ ou só un valor mínimo:
 
 Por defecto, os elementos colócanse na grade utilizando a súa orde na estrutura HTML.
 
-Usando `grid-template-areas`Pode definir áreas de modelo para movelas na grade e tamén para xerar un elemento en varias filas/columnas en lugar de usar `grid-column`.
+Usando `grid-template-areas` pódense definir áreas de modelo para movelas na grade e tamén para xerar un elemento en varias filas/columnas en lugar de usar `grid-column`.
 
 Aquí tes un exemplo:
 
-```
+```html
 <div class="container">
   <main>...</main>
   <aside>...</aside>
   <header>...</header>
   <footer>...</footer>
 </div>
+```
+
+```css
 .container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
@@ -3379,7 +3411,7 @@ A pesar da súa orde orixinal, os elementos colócanse onde `grid-template-areas
 
 Podes establecer unha cela baleira usando o punto `.`en lugar do nome da área en `grid-template-areas`:
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
@@ -3395,7 +3427,7 @@ Podes establecer unha cela baleira usando o punto `.`en lugar do nome da área e
 
 Podes facer que unha grella estenda para encher a páxina usando `fr`:
 
-```
+```css
 .container {
   display: grid;
   height: 100vh;
@@ -3412,7 +3444,7 @@ Aquí tes un exemplo sinxelo de usar CSS Grid para crear un deseño do sitio  qu
 
 Aquí está o marcado:
 
-```
+```html
 <div class="wrapper">
   <header>Header</header>
   <article>
@@ -3430,7 +3462,7 @@ Aquí está o marcado:
 
 e aquí está o CSS:
 
-```
+```css
 header {
   grid-area: header;
   background-color: #fed330;
@@ -3465,7 +3497,7 @@ Engadín algunhas cores para facelo máis bonito, pero basicamente asigna un `gr
 
 Cando o deseño é máis pequeno podemos poñer a barra lateral debaixo do contido mediante unha consulta multimedia:
 
-```
+```css
 @media (max-width: 500px) {
   .wrapper {
     grid-template-columns: 4fr;
@@ -3495,15 +3527,15 @@ O obxectivo principal de flexbox é permitir que os elementos enchen todo o espa
 A non ser que necesites admitir navegadores antigos como IE8 e IE9, Flexbox é a ferramenta que che permite esquecerche de usar
 
 - Disposicións de táboas
-- Flotadores
+- Floats
 - hacks clearfix
-- `display: table`hacks
+- hacks `display: table`
 
-Mergullémonos no flexbox e convertémonos nun mestre del en moi pouco tempo.
+Mergullémonos no flexbox e convertámonos en mestres del, levarache pouco tempo.
 
 ### 32.1. Soporte de navegador
 
-No momento de escribir este artigo (febreiro de 2018), é compatible co  97,66% dos usuarios, todos os navegadores máis importantes  implementárono desde hai anos, polo que ata os navegadores máis antigos  (incluído IE10+) están cubertos:
+No momento traducir este artigo (xaneiro 2023), é compatible co 99,23% dos usuarios, e xa todos os navegadores máis importantes implementárono desde fai anos:
 
 ![img](./assets/caniuse.png)
 
@@ -3513,13 +3545,13 @@ Aínda que debemos esperar uns anos para que os usuarios se poñan ao día de  C
 
 Un deseño de caixa flexible aplícase a un contedor mediante a configuración
 
-```
+```css
 display: flex;
 ```
 
 ou
 
-```
+```css
 display: inline-flex;
 ```
 
@@ -3664,7 +3696,7 @@ Hoxe con Grid e Flexbox podemos mover as táboas de novo ao traballo que estaban
 
 Imos comezar polo HTML. Esta é unha táboa básica:
 
-```
+```html
 <table>
   <thead>
     <tr>
@@ -3695,7 +3727,7 @@ Comecemos pola fronteira. Unha bonita fronteira pode percorrer un longo camiño.
 
 Podemos aplicalo no `table`elemento, e tamén nos elementos internos, como `th`e `td`:
 
-```
+```css
 table,
 th,
 td {
@@ -3709,7 +3741,7 @@ Se o combinamos con algunha marxe, obtemos un bo resultado:
 
 Unha cousa común coas táboas é a posibilidade de engadir unha cor a unha fila e unha cor diferente a outra. Isto é posible usando o selector `:nth-child(odd)`ou `:nth-child(even)`:
 
-```
+```css
 tbody tr:nth-child(odd) {
   background-color: #af47ff;
 }
@@ -3735,7 +3767,7 @@ Neste post explico os escenarios máis habituais e como resolvelos. [Se Flexbox]
 
 O texto é moi sinxelo de centrar horizontalmente usando a `text-align`propiedade definida en `center`:
 
-```
+```css
 p {
   text-align: center;
 }
@@ -3745,7 +3777,7 @@ p {
 
 A forma moderna de centrar calquera cousa que non sexa texto é usar Flexbox:
 
-```
+```css
 #mysection {
   display: flex;
   justify-content: center;
@@ -3760,7 +3792,7 @@ Aquí tes o enfoque alternativo se non queres usar Flexbox.
 
 Calquera cousa que non sexa texto pódese centrar aplicando unha marxe automática á esquerda e á dereita e configurando o ancho do elemento:
 
-```
+```css
 section {
   margin: 0 auto;
   width: 50%;
@@ -3769,7 +3801,7 @@ section {
 
 o anterior `margin: 0 auto;`é unha abreviatura de:
 
-```
+```css
 section {
   margin-top: 0;
   margin-bottom: 0;
@@ -3784,7 +3816,7 @@ Lembra establecer o elemento en `display: block`se é un elemento en liña.
 
 Tradicionalmente esta sempre foi unha tarefa difícil. Agora Flexbox ofrécenos unha boa forma de facelo do xeito máis sinxelo posible:
 
-```
+```css
 #mysection {
   display: flex;
   align-items: center;
@@ -3799,7 +3831,7 @@ calquera elemento do seu interior `#mysection`estará centrado verticalmente.
 
 As técnicas de Flexbox para centrar vertical e horizontalmente pódense  combinar para centrar completamente un elemento na páxina.
 
-```
+```css
 #mysection {
   display: flex;
   align-items: center;
@@ -3811,7 +3843,7 @@ As técnicas de Flexbox para centrar vertical e horizontalmente pódense  combin
 
 O mesmo pódese facer usando [CSS Grid](https://flaviocopes.com/css-grid/) :
 
-```
+```css
 body {
   display: grid;
   place-items: center;
@@ -3827,7 +3859,7 @@ CSS pode estilolos usando varias propiedades.
 
 `list-style-type`úsase para establecer un marcador predefinido para ser usado pola lista:
 
-```
+```css
 li {
   list-style-type: square;
 }
@@ -3837,7 +3869,7 @@ Temos moitos valores posibles, que podes ver aquí [https://developer.mozilla.or
 
 `list-style-image`úsase para usar un marcador personalizado cando un marcador predefinido non é apropiado:
 
-```
+```css
 li {
   list-style-image: url(list-image.png);
 }
@@ -3845,7 +3877,7 @@ li {
 
 `list-style-position`permítelle engadir o marcador `outside`(o predeterminado) ou `inside`do contido da lista, no fluxo da páxina e non fóra dela
 
-```
+```css
 li {
   list-style-position: inside;
 }
@@ -3853,7 +3885,7 @@ li {
 
 A `list-style`propiedade abreviada permítenos especificar todas esas propiedades na mesma liña:
 
-```
+```css
 li {
   list-style: url(list-image.png) inside;
 }
@@ -3880,20 +3912,20 @@ No pasado tiñamos máis deles, pero a maioría están obsoletos porque  demostr
 
 Podemos usalos en declaracións @import como esta:
 
-```
+```css
 @import url(myfile.css) screen;
 @import url(myfile-print.css) print;
 ```
 
 Podemos cargar un ficheiro CSS en varios tipos de medios separando cada un cunha coma:
 
-```
+```css
 @import url(myfile.css) screen, print;
 ```
 
 O mesmo funciona para a `link`etiqueta en HTML:
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="myfile.css" media="screen" />
 <link
   rel="stylesheet"
@@ -3925,7 +3957,7 @@ Aquí está a lista deles:
 - `scan`
 - `grid`
 
-Cada un deles ten un min-_ e un max-_ correspondentes, por exemplo:
+Cada un deles ten un min-\_  e un max-\_  correspondentes, por exemplo:
 
 - `min-width`,`max-width`
 - `min-device-width`,`max-device-width`
@@ -3936,7 +3968,7 @@ Algúns deles aceptan un valor de lonxitude que se pode expresar en `px`ou `rem`
 
 Por exemplo:
 
-```
+```css
 @import url(myfile.css) screen and (max-width: 800px);
 ```
 
@@ -3946,7 +3978,7 @@ Algúns aceptan un valor fixo. `orientation`, usado para detectar a orientación
 
 Exemplo:
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="myfile.css" media="screen and (orientation: portrait)" />
 ```
 
@@ -3960,7 +3992,7 @@ Como `color`que inspecciona o número de bits por compoñente de cor utilizado p
 
 Exemplo:
 
-```
+```css
 @import url(myfile.css) screen and (aspect-ratio: 4/3);
 ```
 
@@ -3968,7 +4000,7 @@ Exemplo:
 
 Exemplo:
 
-```
+```css
 @import url(myfile.css) screen and (min-resolution: 100dpi);
 ```
 
@@ -3976,19 +4008,19 @@ Exemplo:
 
 Podemos combinar regras usando `and`:
 
-```
+```html
 <link rel="stylesheet" type="text/css" href="myfile.css" media="screen and (max-width: 800px)" />
 ```
 
 Podemos realizar un tipo de operación lóxica "ou" usando comas, que combina varias consultas multimedia:
 
-```
+```css
 @import url(myfile.css) screen, print;
 ```
 
 Podemos usar `not`para negar unha consulta de medios:
 
-```
+```css
 @import url(myfile.css) not screen;
 ```
 
@@ -4002,7 +4034,7 @@ Debes envolvelos nunha `@media () {}`estrutura.
 
 Exemplo:
 
-```
+```css
 @media screen and (max-width: 800px) {
   /* enter some CSS */
 }
@@ -4012,7 +4044,7 @@ e esta é a base para **o deseño responsive** .
 
 As consultas de medios poden ser bastante complexas. Este exemplo só aplica o CSS se é un dispositivo de pantalla, a anchura está entre 600 e 800 píxeles e a orientación é horizontal:
 
-```
+```css
 @media screen and (max-width: 800px) and (min-width: 600px) and (orientation: landscape) {
   /* enter some CSS */
 }
@@ -4026,7 +4058,7 @@ Podemos usalo para comprobar se unha función é compatible co navegador mediant
 
 Por exemplo, creo que isto é especialmente útil, no momento de escribir,  para comprobar se un navegador admite a grella CSS, por exemplo, o que  se pode facer usando:
 
-```
+```css
 @supports (display: grid) {
   /* apply this CSS */
 }
@@ -4038,7 +4070,7 @@ Podemos usalo `@supports`para calquera propiedade CSS, para comprobar calquera v
 
 Tamén podemos usar os operadores lóxicos `and`e `or`para `not`construír consultas de características complexas:
 
-```
+```css
 @supports (display: grid) and (display: flex) {
   /* apply this CSS */
 }
@@ -4052,7 +4084,7 @@ Cousas que normalmente fas con Photoshop ou outro software de edición de fotos,
 
 Vostede usa a `filter`propiedade. Aquí tes un exemplo aplicado a unha imaxe, pero esta propiedade pódese usar en *calquera* elemento:
 
-```
+```css
 img {
   filter: <something>;
 }
@@ -4076,7 +4108,7 @@ Observe as parénteses despois de cada opción, porque todas requiren un paráme
 
 Por exemplo:
 
-```
+```css
 img {
   filter: opacity(0.5);
 }
@@ -4086,7 +4118,7 @@ significa que a imaxe será 50 % transparente, porque `opacity()`toma un valor d
 
 Tamén podes aplicar varios filtros á vez:
 
-```
+```css
 img {
   filter: opacity(0.5) blur(2px);
 }
@@ -4094,13 +4126,13 @@ img {
 
 Falemos agora de cada filtro en detalles.
 
-#### 38.0.1.`blur()`
+### 38.0.1.`blur()`
 
 Desenfoca o contido dun elemento. Pásalle un valor, expresado en `px`ou `em`ou `rem`que se utilizará para determinar o raio de desenfoque.
 
 Exemplo:
 
-```
+```css
 img {
   filter: blur(4px);
 }
@@ -4114,7 +4146,7 @@ img {
 
 Exemplo:
 
-```
+```css
 img {
   filter: opacity(0.5);
 }
@@ -4138,7 +4170,7 @@ Podes establecer a cor sen establecer o raio de propagación ou o raio de desenf
 
 Exemplo:
 
-```
+```css
 img {
   filter: drop-shadow(10px 10px 5px orange);
 }
@@ -4158,7 +4190,7 @@ Pasa un valor de 0 a 1 ou de 0% a 100%, onde 1 e 100% significan  completamente 
 
 Exemplo:
 
-```
+```css
 img {
   filter: grayscale(50%);
 }
@@ -4172,7 +4204,7 @@ Pasa un valor de 0 a 1 ou de 0% a 100%, onde 1 e 100% significan  completamente 
 
 Exemplo:
 
-```
+```css
 img {
   filter: sepia(50%);
 }
@@ -4188,7 +4220,7 @@ O 0,5 ou o 50% sempre representará unha cor gris ao 50%, porque sempre acabas n
 
 Exemplo:
 
-```
+```css
 img {
   filter: invert(50%);
 }
@@ -4202,7 +4234,7 @@ A función acepta un `deg`valor.
 
 Exemplo:
 
-```
+```css
 img {
   filter: hue-rotate(90deg);
 }
@@ -4218,7 +4250,7 @@ Os valores superiores ao 1 ou ao 100 % fan que a imaxe sexa máis brillante ata 
 
 Exemplo:
 
-```
+```css
 img {
   filter: brightness(50%);
 }
@@ -4234,7 +4266,7 @@ Valores superiores a 1 ou 100% dan máis contraste.
 
 Exemplo:
 
-```
+```css
 img {
   filter: contrast(150%);
 }
@@ -4250,7 +4282,7 @@ Valores superiores a 1 ou 100% dan máis saturación.
 
 Exemplo:
 
-```
+```css
 img {
   filter: saturate();
 }
@@ -4262,7 +4294,7 @@ Este filtro permite aplicar un filtro definido nun ficheiro SVG. Apuntas á loca
 
 Exemplo:
 
-```
+```css
 img {
   filter: url(filter.svg);
 }
@@ -4295,7 +4327,7 @@ Tamén temos funcións específicas de eixes:
 
 Aquí tes un exemplo de transformación que cambia o `.box`ancho do elemento en 2 (duplicándoo) e a altura en 0,5 (reducíndoo á metade):
 
-```
+```css
 .box {
   transform: scale(2, 0.5);
 }
@@ -4309,7 +4341,7 @@ Podes combinar varias transformacións separando cada función cun espazo.
 
 Por exemplo:
 
-```
+```css
 transform: rotateY(20deg) scaleX(3) translateY(100px);
 ```
 
@@ -4321,7 +4353,7 @@ Usando a `perspective`propiedade podes especificar a que distancia está o obxec
 
 Exemplo:
 
-```
+```css
 .3delement {
   perspective: 100px;
 }
@@ -4356,7 +4388,7 @@ As transicións CSS están definidas por estas propiedades:
 
 A `transition`propiedade é unha abreviatura útil:
 
-```
+```css
 .container {
   transition: property duration timing-function delay;
 }
@@ -4366,7 +4398,7 @@ A `transition`propiedade é unha abreviatura útil:
 
 Este código implementa unha transición CSS:
 
-```
+```css
 .one,
 .three {
   background: rgba(142, 92, 205, 0.75);
@@ -4536,7 +4568,7 @@ As animacións CSS son unha boa forma de crear animacións visuais, non  limitad
 
 Aplícase unha animación a un elemento mediante a `animation`propiedade.
 
-```
+```css
 .container {
   animation: spin 10s linear infinite;
 }
@@ -4546,7 +4578,7 @@ Aplícase unha animación a un elemento mediante a `animation`propiedade.
 
 Debes **definir como funciona a túa animación** usando **fotogramas clave** . Exemplo de animación que xira un elemento:
 
-```
+```css
 @keyframes spin {
   0% {
     transform: rotateZ(0);
@@ -4569,13 +4601,16 @@ Observe como isto non dita nada sobre o intervalo temporal que debe tomar a anim
 
 Quero debuxar catro círculos, todos cun punto de partida en común, todos a 90 graos de distancia entre si.
 
-```
+```html
 <div class="container">
   <div class="circle one"></div>
   <div class="circle two"></div>
   <div class="circle three"></div>
   <div class="circle four"></div>
 </div>
+```
+
+```css
 body {
   display: grid;
   place-items: center;
@@ -4954,7 +4989,7 @@ Quizais queiras usar un tipo de letra diferente para imprimir, que é totalmente
 
 Se tes un CSS grande para imprimir, é mellor que uses un ficheiro separado para iso. Os navegadores só o descargarán ao imprimir:
 
-```
+```html
 <link rel="stylesheet" src="print.css" type="text/css" media="print" />
 ```
 
@@ -4962,7 +4997,7 @@ Se tes un CSS grande para imprimir, é mellor que uses un ficheiro separado para
 
 Unha alternativa ao enfoque anterior son as consultas de medios. Calquera cousa que engadas dentro deste bloque:
 
-```
+```css
 @media print {
   /* ... */
 }
@@ -4976,7 +5011,7 @@ HTML é xenial debido ás ligazóns. Chámase HyperText por unha boa razón. Ao 
 
 CSS ofrece unha boa forma de resolver este problema editando o contido, engadindo a ligazón despois do `<a>`texto da etiqueta, usando:
 
-```
+```css
 @media print {
   a[href*='//']:after
   {
@@ -4988,7 +5023,7 @@ CSS ofrece unha boa forma de resolver este problema editando o contido, engadind
 
 Pretende `a[href*='//']`facelo só para ligazóns externas. Podería ter ligazóns internas para fins de navegación e indexación interna, que serían inútiles na maioría dos meus casos de uso. Se tamén queres que se impriman ligazóns internas, só tes que facer:
 
-```
+```css
 @media print {
   a:after {
     content: ' (' attr(href) ') ';
@@ -5001,7 +5036,7 @@ Pretende `a[href*='//']`facelo só para ligazóns externas. Podería ter ligazó
 
 Podes engadir marxes a cada páxina. `cm`ou `in`é unha boa unidade para a impresión en papel.
 
-```
+```css
 @page {
   margin-top: 2cm;
   margin-bottom: 2cm;
@@ -5016,7 +5051,7 @@ Podes engadir marxes a cada páxina. `cm`ou `in`é unha boa unidade para a impre
 
 Quizais queira engadir un salto de páxina despois dalgúns elementos ou antes deles. Use `page-break-after`e `page-break-before`:
 
-```
+```css
 .book-date {
   page-break-after: always;
 }
@@ -5034,7 +5069,7 @@ Eu experimentei isto con Firefox: as imaxes por defecto córtanse no medio e con
 
 Use
 
-```
+```css
 p {
   page-break-inside: avoid;
 }
@@ -5050,10 +5085,10 @@ As ferramentas de desenvolvemento de Chrome ofrecen formas de emular o deseño d
 
 ![img](./assets/chrome-devtools-rendering.png)
 
-Unha vez que se abra o panel, cambie a emulación de renderizado a `print`:
+Unha vez que se abra o panel, cambia a emulación de renderizado a `print`:
 
 ![img](./assets/chrome-devtools-print-render.png)
 
 ...
 
-*in progress*
+\* *in progress*

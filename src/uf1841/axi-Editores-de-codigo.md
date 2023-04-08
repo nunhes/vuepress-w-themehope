@@ -19,10 +19,10 @@ A lista é interminable. E se actualiza cada pouco.
 
 Algún coma [Backets](https://brackets.io/) ou VSCode permiten incluso que creemos clons dende os seus repositorios en GitHub e dende aí fornecer o noso propio entorno de traballo.
 
-**Como recoñecer un bo editor de código?** 
+**Como recoñecer un bo editor de código?**
 
 - **Curva de aprendizaxe** - non é determinante, pero para os que teñan certa presa polo resultado, non é un mal comezo.
-- **Comunidade de usuarios** - si, aquí o número de formigas amoreadas sobre o pastel ten moita importancia. Que un editor teña certo numero de usuarios e contando con que unha alta porcentaxe deles si saiba o que está a facer... 
+- **Comunidade de usuarios** - si, aquí o número de formigas amoreadas sobre o pastel ten moita importancia. Que un editor teña certo numero de usuarios e contando con que unha alta porcentaxe deles si saiba o que está a facer...
 - **Desenvolvemento continuo** - estamos cheos de ver como os candidatos caen polo camiño[^1],. Todos queremos duración no tempo, actualizacións e melloras dos recursos, un desenvolvemento comprometido a resolver os problemas dos usuarios,...
 - **Personalización** - algo do que todos, ou case todos, presumen; pero que, coma o peiteado ou a delimitación da comida lixo, cada quen entende a súa maneira.
 - **Persistencia** - ás veces as grandes ondas de usuarios dun determinado editor poden ser unha moda pasaxeira; daquela é importante ver tamén o tempo que unha entorna leva no mercado, como se adapta, mellora, e inda que o mellor cun bloque de adeptos menor pero moi activo e estable, non perde o pulso das cambiantes necesidades dos seus usuarios.
@@ -45,7 +45,7 @@ Vexamos algunhas posibilidades:
 
    É un editor ben áxil do que obter avantaxes dende o inicio; e o que, grazas a innumerable cantidade de complementos, máis se pode achegar a ser un IDE. Dispón dunha **terminal integrada**, coa que completar moitas tarefas dende a liña de comandos; e total compatibilidade e integración con Git, para o control de versións.
 
-   Contras: require un tempo considerable para a posta en marcha. 
+   Contras: require un tempo considerable para a posta en marcha.
 
    Até o de agora gratuíto.
 
@@ -101,32 +101,23 @@ Seguro que un desenvolvedor podería argumentar que o acordo depende de moitas v
 
 E, pensándoo ben: dous desenvolvedores na mesma oficina configuraran os seus editores de igual xeito?, poranse de acordo na constelación de complementos oportunos?... e si en vez de dous son tres ou catro, pode que máis, gardarán certa disciplina nos empaquetadores, minimizadores e dependencias de desenvolvemento, compiladores, manexadores de paquetes,... ?
 
-# Un editor en liña é unha xoia
+## Un editor en liña é unha xoia
 
 Inda que dependa de que teñas conexión ou non, sempre che permitirá decidir a configuración dos proxectos (até o formato do código), e simplemente se negará a aceptar o traballo ata que se adhira a tódolos estándares. Duro co usuario? Pode que si, pero garante para o proxecto: sen dubida!
 
 Vexamos algúns editores de código en liña especialmente aptos para o desenvolvemento web.
 
-
-
 [9 Best Online IDE and Code Editors to Develop Web Applications (geekflare.com)](https://geekflare.com/online-code-editors/)
-
-
 
 _____
 
-
-
 *Máis información*:
 
-- https://geekflare.com/code-text-editors/
+- [https://geekflare.com/code-text-editors/](https://geekflare.com/code-text-editors/)
 
-  
+### NOTAS
 
-###### NOTAS:
+[*1]:  - o seguinte na lista: [Brackets](https://brackets.io/) de Adobe, empapelado xa para o lixo cibernético a menos que a comunidade consiga chegar a cita en Novembro 2021.
 
-[*1]:  - o seguinte na lista: [Backets](https://brackets.io/) de Adobe, empapelado xa para o lixo cibernético a menos que a comunidade consiga chegar a cita en Novembro 2021. 
-
-
-
+_____
 OUT 2021

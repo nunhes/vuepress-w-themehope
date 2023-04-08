@@ -99,4 +99,4 @@ Este é probablemente o modelo máis sinxelo, xa que require pouca planificació
 
 ## Solucións para ciclos de vida de desenvolvemento de software
 
-As novas prácticas de integración e desenvolvemento continuos (CI/CD) favorecidas por entornos permanentemente conectados incorpóran a **automatización continua e o control permanente do ciclo de vida** do software, un conxunto de prácticas soportadas por entornos [DevOps](https://www.querysurge.com/solutions/devops-for-data?utm_source=bing&utm_medium=ad&utm_campaign=DevOp-for-Data-article) 
+As novas prácticas de integración e desenvolvemento continuos (CI/CD) favorecidas por entornos permanentemente conectados incorpóran a **automatización continua e o control permanente do ciclo de vida** do software, un conxunto de prácticas soportadas por entornos [DevOps](https://www.querysurge.com/solutions/devops-for-data?utm_source=bing&utm_medium=ad&utm_campaign=DevOp-for-Data-article)

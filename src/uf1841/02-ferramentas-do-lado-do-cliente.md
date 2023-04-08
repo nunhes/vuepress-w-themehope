@@ -1,21 +1,21 @@
-###### Obxectivos
+# Ferramentas do lado do cliente
+
+&rarr; **Obxectivos:**
 
 - *Visión xeral das ferramentas web modernas*
 - *Tipos de ferramentas dispoñibles e onde atopalas*
 - *Ciclo de vida do desenvolvemento de aplicacións web*
 - *Como atopar axuda coas ferramentas individuais.*
 
-
-
-# Ferramentas do lado do cliente
+---
 
 O software de escritura para a web fíxose cada vez máis sofisticado. Pero aínda é totalmente razoable escribir HTML, CSS e JavaScript "a man",  hoxe en día existen unha gran cantidade de ferramentas que os desenvolvedores poden usar para acelerar o proceso de creación dun sitio web ou aplicación.
 
 Hai algunhas ferramentas ben asentadas que co tempo se converteron en "denominadores" comúns entre os desenvolvedores. Ao tempo, cada día se están escribindo e lanzando novas ferramentas para resolver vellos e novos problemas específicos.
 
-É doado sentirse abraiado pola gran cantidade de ferramentas que se poden incluír nun único proxecto. 
+É doado sentirse abraiado pola gran cantidade de ferramentas que se poden incluír nun único proxecto.
 
-De cando en vez, incluso os desenvolvedores web máis experimentados quedan atrapados nun problema coas ferramentas de desenvolvemento; é posible perder horas intentando que unha estrutura de ferramentas funcione antes de tocar unha soa liña de código de aplicación. 
+De cando en vez, incluso os desenvolvedores web máis experimentados quedan atrapados nun problema coas ferramentas de desenvolvemento; é posible perder horas intentando que unha estrutura de ferramentas funcione antes de tocar unha soa liña de código de aplicación.
 
 Aquí non atoparas respostas a todas as preguntas sobre ferramentas web, pero intentaremos proporcionarche un punto de partida útil para comprender os fundamentos, a partir dos cales poder **construír o teu proceso de aprendizaxe**. Como ocorre con calquera tema complexo, é bo comezar pouco a pouco e ir avanzando gradualmente cara a usos máis avanzados.
 
@@ -27,9 +27,9 @@ A elección final dun ou outro editor de código é algo persoal, pero máis alo
 
 Desde unha visión aberta, podemos agrupar as ferramentas do lado do cliente en tres grandes categorías segundo o problema que tratan de resolver:
 
-- **Rede de seguridade** (**_Safety net_**) — Ferramentas útiles durante o desenvolvemento do teu código.
-- **Transformación** (**_Transformation_**) — Ferramentas que transforman o código dalgún xeito, por exemplo, convertendo unha linguaxe intermedia en JavaScript que un navegador poida entender.
-- **Post-desenvolvemento** (**_Post-development_**) — Ferramentas que son útiles despois de escribir o código, como ferramentas de proba e implementación.
+- **Rede de seguridade** (***Safety net***) — Ferramentas útiles durante o desenvolvemento do teu código.
+- **Transformación** (***Transformation***) — Ferramentas que transforman o código dalgún xeito, por exemplo, convertendo unha linguaxe intermedia en JavaScript que un navegador poida entender.
+- **Post-desenvolvemento** (***Post-development***) — Ferramentas que son útiles despois de escribir o código, como ferramentas de proba e implementación.
 
 Vexamos cada grupo con máis detalle.
 
@@ -53,9 +53,9 @@ Outra ferramenta deste tipo que tamén vale a pena ollear é [webhint](https://w
 
 #### Control do código - *Source code control*
 
-Tamén coñecido como **sistema de control de versións** (*VCS*/SCV), o **control de código** é esencial para facer copias de seguridade do traballo e traballar en equipo. Un VCS típico implica ter unha versión local do código na que se fan os cambios. Unha vez rematadas as tarefas se "empuxan" - **_push_**- os cambios a unha versión "mestra" - **_master_** ou **_main_** - do noso código nun repositorio remoto almacenado nun servidor. Normalmente hai unha forma de controlar e coordinar que cambios se fan na copia "mestra" do código, e cando.  Así un equipo de desenvolvedores pode colaborar e compartir un repositorio sen acabar sobreescribindo o traballo duns e doutros.
+Tamén coñecido como **sistema de control de versións** (*VCS*/SCV), o **control de código** é esencial para facer copias de seguridade do traballo e traballar en equipo. Un VCS típico implica ter unha versión local do código na que se fan os cambios. Unha vez rematadas as tarefas se "empuxan" - ***push***- os cambios a unha versión "mestra" - ***master*** ou ***main*** - do noso código nun repositorio remoto almacenado nun servidor. Normalmente hai unha forma de controlar e coordinar que cambios se fan na copia "mestra" do código, e cando.  Así un equipo de desenvolvedores pode colaborar e compartir un repositorio sen acabar sobreescribindo o traballo duns e doutros.
 
-[Git](https://git-scm.com/) é o sistema de control de código fonte que usa agora moita xente. Accédese principalmente a través da liña de comandos, pero tamén se pode acceder a través de [interfaces de usuario amigables](https://desktop.github.com/). 
+[Git](https://git-scm.com/) é o sistema de control de código fonte que usa agora moita xente. Accédese principalmente a través da liña de comandos, pero tamén se pode acceder a través de [interfaces de usuario amigables](https://desktop.github.com/).
 
 Se tes o teu código nun **repositorio git**, podes envialo á túa propia instancia de servidor ou usar un sitio web de control de fontes aloxado como [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/), ou [BitBucket](https://bitbucket.org/product/features).
 
@@ -81,7 +81,7 @@ Estas son ferramentas que preparan o teu código para a produción, por exemplo,
 
 Estes procedementos permiten codificar en "código futuro" (como as funcións CSS ou JavaScript máis recentes ou outras tecnoloxías que poden non ser aínda compatibles de forma nativa con algúns navegadores); ou que escribas o teu código utilizando algunha outra linguaxe coma [TypeScript](https://www.typescriptlang.org/). As ferramentas de transformación se ocuparan de xerar o código compatible co navegador e para poidas empregalas para produción.
 
-En xeral, o desenvolvemento web considérase dominio de tres linguaxes: [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) , [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) e [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) , e hai ferramentas de transformación para todas elas. 
+En xeral, o desenvolvemento web considérase dominio de tres linguaxes: [HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) , [CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) e [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) , e hai ferramentas de transformación para todas elas.
 
 A transformación ofrece dous **beneficios principais** (entre outros):
 
@@ -122,11 +122,11 @@ Sen dúbida, hai unha orde na que se poden aplicar cada un dos tipos de ferramen
 
 Moitas veces, as novas ferramentas para desenvolvedores tardan algún tempo en axustar a súa complexidade. Unha das ferramentas máis coñecidas, Webpack, ten fama de ser demasiado complicada para traballar, inda que na última versión houbo un importante impulso co fin de simplificar o seu uso e reducir a configuración necesaria absolutamente ao mínimo.
 
-Definitivamente non hai ningunha solución que garanta o éxito coas ferramentas, pero a medida que aumente a túa experiencia atoparás fluxos de traballo que funcionen *para ti* ou para o teu equipo. So a experimentación practica pode ofrecerche unha visión de cada unha destas, e outras, ferramentas; e se che solucionan algún proceso de desenvolvemento, poderás adoptalas para a tua entorna de desenvolvemento. 
+Definitivamente non hai ningunha solución que garanta o éxito coas ferramentas, pero a medida que aumente a túa experiencia atoparás fluxos de traballo que funcionen *para ti* ou para o teu equipo. So a experimentación practica pode ofrecerche unha visión de cada unha destas, e outras, ferramentas; e se che solucionan algún proceso de desenvolvemento, poderás adoptalas para a tua entorna de desenvolvemento.
 
 ## Como elixir e obter axuda cunha ferramenta concreta
 
-A maioría das ferramentas adoitan escribirse e publicarse de forma illada, polo que, aínda que case seguramente hai axuda dispoñible, nunca está no mesmo lugar nin no mesmo formato. Pode ser difícil atopar axuda relevante de como usar unha ferramenta ou mesmo escoller a ferramenta que queres utilizar. O coñecemento sobre cales son as mellores ferramentas para usar é un pouco tribal, o que significa que, se aínda non estás na comunidade web, é difícil descubrir exactamente cales buscar. 
+A maioría das ferramentas adoitan escribirse e publicarse de forma illada, polo que, aínda que case seguramente hai axuda dispoñible, nunca está no mesmo lugar nin no mesmo formato. Pode ser difícil atopar axuda relevante de como usar unha ferramenta ou mesmo escoller a ferramenta que queres utilizar. O coñecemento sobre cales son as mellores ferramentas para usar é un pouco tribal, o que significa que, se aínda non estás na comunidade web, é difícil descubrir exactamente cales buscar.
 
 Probablemente necesites unha combinación das seguintes cousas:
 
@@ -136,16 +136,15 @@ Probablemente necesites unha combinación das seguintes cousas:
   - Se está a buscar un complemento para integrar a funcionalidade da ferramenta no seu editor de código, consulte a páxina de complementos/extensións do editor de código; consulte [Paquetes Atom](https://atom.io/packages) e [Extensións de VSCode](https://marketplace.visualstudio.com/VSCode), por exemplo. Bótalle un ollo ás extensións destacadas na páxina principal e, de novo, tenta buscar o tipo de extensión que quere (ou o nome da ferramenta, por exemplo, busque "eslint" na páxina de extensións de VSCode). Cando obteñas resultados, bótalle unha ollada a información como cantas estrelas ou descargas ten a extensión, como indicador da súa calidade.
 - Foros relacionados co desenvolvemento para facer preguntas sobre que ferramentas utilizar, por exemplo [MDN Learn Discourse](https://discourse.mozilla.org/c/mdn/learn), ou [Stackoverflow](https://stackoverflow.com/).
 
-Cando escolles unha ferramenta para usar, o primeiro punto a visitar debería ser a páxina de inicio do proxecto da ferramenta. 
+Cando escolles unha ferramenta para usar, o primeiro punto a visitar debería ser a páxina de inicio do proxecto da ferramenta.
 
 Tamén podes querer atopar algúns titoriais dedicados a comezar con determinados tipos de ferramentas. Algún bos sitios para encetar[CSS Tricks](https://css-tricks.com/), [Dev.to](https://dev.to/), [freeCodeCamp](https://www.freecodecamp.org/), e [Revista Smashing](https://www.smashingmagazine.com/), xa que están adaptados á industria do desenvolvemento web.
 
-Seguramente probarás diferentes ferramentas mentres buscas as máis axeitadas para ti. Só probándoas saberás se teñen sentido, se están ben documentadas e teñen un soporte preocupado por mellorar a ferramenta; e ante todo  se fan o que queres que fagan. 
+Seguramente probarás diferentes ferramentas mentres buscas as máis axeitadas para ti. Só probándoas saberás se teñen sentido, se están ben documentadas e teñen un soporte preocupado por mellorar a ferramenta; e ante todo  se fan o que queres que fagan.
 
 Isto só acaba de encetar. E está é só unha visión ampla e a ollo de paxaro sobre as **ferramentas web do lado cliente**.
 
-
-
+---
 OUT 2021
 
-_**ref:**_  https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview
+***ref:***  [https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Overview)

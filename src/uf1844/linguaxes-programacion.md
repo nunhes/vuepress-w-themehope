@@ -1,6 +1,13 @@
-# Linguaxes de programación
+---
+title: Linguaxes de programación
+sidebar: heading
+tag:
+ - programación
+---
 
-Unha linguaxe de programación é unha linguaxe formal (ou artificial, é  dicir, unha linguaxe con regras gramaticais ben definidas) que  proporciona as persoas, ou programadores, a capacidade de  escribir (programar) unha serie de instrucións ou secuencias de  ordes - algoritmos-, co fin de controlar o comportamento físico e/ou lóxico dun ordenador. Este conxunto completo de ordes escritos usando unha linguaxe de programación chámase programa ou aplicación. Os programas ou aplicacións soen deseñarse para manexar diversos tipos de  datos. 
+## Linguaxes de programación
+
+Unha linguaxe de programación é unha linguaxe formal (ou artificial, é  dicir, unha linguaxe con regras gramaticais ben definidas) que  proporciona as persoas, ou programadores, a capacidade de  escribir (programar) unha serie de instrucións ou secuencias de  ordes - algoritmos-, co fin de controlar o comportamento físico e/ou lóxico dun ordenador. Este conxunto completo de ordes escritos usando unha linguaxe de programación chámase programa ou aplicación. Os programas ou aplicacións soen deseñarse para manexar diversos tipos de  datos.
 
 ## Primeiros pasos na lóxica de programación
 
@@ -14,9 +21,9 @@ A lóxica de programación é a técnica utilizada para **desenvolver instrució
 
 > ***A lóxica da programación é a organización coherente das instrucións do programa para que se consiga o seu obxectivo.\***
 
-### Desafío de programador:
+### Desafío de programador
 
-O gran reto para o programador é entón montar a estrutura do programa para que poida ser executado polo ordenador. 
+O gran reto para o programador é entón montar a estrutura do programa para que poida ser executado polo ordenador.
 
 Cómpre partir do principio de que **o ordenador non pensa** do mesmo xeito que o ser humano, **nin é intelixente**, nin sabe o que ten que facer, nin  comprender as mensaxes subxectivas ou sen estrutura.
 
@@ -36,21 +43,19 @@ Por iso é fundamental **organizar a información** con claridade e na orde corr
 
 **Un algoritmo non é máis que un conxunto de operacións ordenadas e finitas  que realizamos co único propósito de atopar unha solución a un problema. Comeza a practicar con problemas sinxelos que te ensinen os fundamentos lóxicos. E practica, practica, practica,... aumentando progresivamente a complexidade e as esixencias lóxicas.**
 
-
-
 ## Linguaxes de programación máis empregados
 
 ### 1. PHP
 
 [PHP](http://php.net/manual/es/intro-whatis.php)  é un código aberto moi utilizado no desenvolvemento web. Pódese incorporar en HTML. **O código execútase no servidor, xera HTML e envíao ao cliente** .
 
--  **Moi doado de usar** se estás comezando na programación, pero moi completo para programadores profesionais.
+- **Moi doado de usar** se estás comezando na programación, pero moi completo para programadores profesionais.
 - Está orientado ao **desenvolvemento de aplicacións web dinámicas** .
 - É un **código seguro e fiable** , xa que o código fonte está oculto do navegador e do cliente.
 - Licenza de uso aberta.
 - As últimas versións fan de PHP unha **linguaxe orientada a obxectos** moi poderosa cun **rendemento moito mellorado** .
 
--  **Necesitas un servidor web** para executar unha aplicación, aínda que as últimas versións veñen cun servidor incorporado.
+- **Necesitas un servidor web** para executar unha aplicación, aínda que as últimas versións veñen cun servidor incorporado.
 - Debes ter un **coñecemento xenérico de HTML** para traballar con PHP e/ou con JSON.
 
 ### 2. Perl
@@ -69,7 +74,7 @@ Por iso é fundamental **organizar a información** con claridade e na orde corr
 
 ### 3. Java
 
-**É unha das linguaxes de programación de código aberto máis populares** . [Java ](https://java.com/es/download/) foi comercializado por primeira vez en 1995 por Sun Microsystems. Está detrás de moitos sitios web e aplicacións, consolas e supercomputadoras, teléfonos móbiles e o mesmo Internet.
+**É unha das linguaxes de programación de código aberto máis populares** . [Java](https://java.com/es/download/) foi comercializado por primeira vez en 1995 por Sun Microsystems. Está detrás de moitos sitios web e aplicacións, consolas e supercomputadoras, teléfonos móbiles e o mesmo Internet.
 
 De feito, Java é o que alimenta Android, o sistema operativo máis utilizado no mundo.
 
@@ -94,7 +99,7 @@ De feito, Java é o que alimenta Android, o sistema operativo máis utilizado no
 - **Bases de datos de programación complexa** .
 - **Máis pesado** que outros programas similares.
 
-### 5. C#
+### 5. C\#
 
 [C#](https://github.com/getsentry/examples/tree/master/c-sharp) é unha linguaxe orientada a obxectos segura **creada por Microsoft.** **Deseñado para executarse na plataforma .NET**. C# úsase para o desenvolvemento de xogos, servizos web XML, compoñentes distribuídos, aplicacións cliente-servidor, etc. **A sintaxe C# é ben recoñecida**, polo que se estás familiarizado con Java ou C++ non debería ser difícil para ti aprendela.
 
@@ -145,7 +150,7 @@ De feito, Java é o que alimenta Android, o sistema operativo máis utilizado no
 
 ### 9. R
 
-[R ](https://www.r-project.org/) **forma parte dun proxecto colaborativo e aberto** e funciona mediante comandos. Ofrece unha ampla gama de ferramentas estatísticas coas que pode xerar gráficos de alta calidade, polo que foi moi ben recibido en entornas **Big Data** e ao crecente número de traballos de minería de datos, polo que lle fará ben aprender este idioma. 
+[R](https://www.r-project.org/) **forma parte dun proxecto colaborativo e aberto** e funciona mediante comandos. Ofrece unha ampla gama de ferramentas estatísticas coas que pode xerar gráficos de alta calidade, polo que foi moi ben recibido en entornas **Big Data** e ao crecente número de traballos de minería de datos, polo que lle fará ben aprender este idioma.
 
 - **É un software de código aberto gratuíto** , polo que terás unha gran comunidade detrás que che apoiará en caso de dúbida.
 - **Multiplataforma** . Funciona en Mac, Windows...
@@ -154,8 +159,6 @@ De feito, Java é o que alimenta Android, o sistema operativo máis utilizado no
 - É difícil atopar información concreta dada a ampla documentación que circula.
 - **As mensaxes de erro que nos mostra non especifican os erros** .
 - Se non sabes moito sobre programación, **é complexo de usar** .
-
-### 
 
 ### 10. Rust
 
@@ -218,7 +221,7 @@ document.write('Ola mundo!');
 
 main()
 {
-	std::cout << "Ola mundo.";
+ std::cout << "Ola mundo.";
 }
 ```
 
@@ -237,7 +240,7 @@ package main
  import "fmt"
 
  func main() {
-	fmt.Printf("Hola, Mundo\n")
+ fmt.Printf("Hola, Mundo\n")
  }
 ```
 
@@ -248,11 +251,7 @@ package main
  echo "Ola mundo!"
 ```
 
-
-
 [:tv:](https://www.youtube.com/watch?v=epOiNseceOM)
-
-
 
 Se estás a inicialo teu camiño como programador ten en conta que **aprender unha linguaxe de programación é algo que require un número relativamente elevado de horas** , polo que canto maior sexa a calidade do tempo que lle dediques, mellores serán os resultados.
 
@@ -293,8 +292,6 @@ Hai moitos foros de programación onde podemos facer as nosas preguntas. Un dos 
 ## Escribir e escribir código
 
 Non teñas medo e practica, escribe código. Ter presente un pouco de deseño e análise, pero non sen medo de poñerse diante do editor de código e comezar a crear as túas propias funcións. Dálle voltas e refactoriza ata que esteas orgulloso do teu código. Un bo código é o que é bonito de ler e tamén fai o que se pretende facer correctamente.
-
-   
 
 ---
 

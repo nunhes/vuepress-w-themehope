@@ -1,10 +1,10 @@
-## Wireframes
+# Wireframes
 
 ![Wireframes](./assets/wireframe_1.jpg)
 
-Imaxina como será a túa páxina web e empeza a creala. 
+Imaxina como será a túa páxina web e empeza a creala.
 
-**Tanto si creas unha web para ti, como si a creas para outro, non te esquezas de planificar, anticipándote aos posibles problemas e estudando os posibles recursos a mobilizar para levar o proxecto a bo fin.** 
+&rarr; **Tanto si creas unha web para ti, como si a creas para outro, non te esquezas de planificar, anticipándote aos posibles problemas e estudando os posibles recursos a mobilizar para levar o proxecto a bo fin.**
 
 Os wireframes ou prototipos son bosquexos esquemáticos da estrutura visual, e funcional, dunha páxina web.
 
@@ -12,7 +12,7 @@ O obxectivo dos esquemas visuais é definir a distribución de contidos e a posi
 
 ![Bosquexos esquemáticos da estrutura visual](./assets/drawingboard-large-opt.jpg)
 
-Nos wireframes ou esquemas visuais non tes porque empregar cores, nin tipografías nin ningún outro elemento gráfico. O importante é centrarse na **funcionalidade do sitio** e a **experiencia de usuario**. 
+Nos wireframes ou esquemas visuais non tes porque empregar cores, nin tipografías nin ningún outro elemento gráfico. O importante é centrarse na **funcionalidade do sitio** e a **experiencia de usuario**.
 
 <!-- [Funcionalidade do sitio e experiencia de usuario](axii-Navegadores.md/assets/wireframe_site_web_2.jpg) -->
 
@@ -22,8 +22,7 @@ Ao ser representacións sinxelas, podes crear diferentes versións dun mesmo sit
 
 ...
 
-
-
+____
 OUT.2021
 
-https://webdesdecero.com/wireframes-que-son-y-como-crearlos/
+[https://webdesdecero.com/wireframes-que-son-y-como-crearlos/](https://webdesdecero.com/wireframes-que-son-y-como-crearlos/)

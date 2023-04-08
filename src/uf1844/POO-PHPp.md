@@ -115,7 +115,7 @@ echo $obj->prop1;
 
 Dado que poden existir múltiples instancias dunha clase, se o obxecto individual non está referenciado, o script sería incapaz de determinar que obxecto leer. O uso da flecha ( `->`) é unha construción da POO que accede ás propiedades e métodos contidos dun obxecto dado.
 
-Modifica o script en `test.php` para leer a propiedade no lugar de volcar o contido enteiro da clase modificando o código como se mostra: 
+Modifica o script en `test.php` para leer a propiedade no lugar de volcar o contido enteiro da clase modificando o código como se mostra:
 
 ```php
 <?php
@@ -545,7 +545,7 @@ Fin do arquivo.
 
 ## Usando Herencia de Clase
 
-**As clases poden heredar os métodos e propiedades de outra clase** usando a palabra reservada `extends`. Por exemplo, para crear unha segunda clase que extenda `MyClass ` e engada un método, engadirías o seguinte no teu arquivo test:
+**As clases poden heredar os métodos e propiedades de outra clase** usando a palabra reservada `extends`. Por exemplo, para crear unha segunda clase que extenda `MyClass` e engada un método, engadirías o seguinte no teu arquivo test:
 
 ```php
 <?php
@@ -1096,7 +1096,7 @@ os desenvolvedores para escribir código, tamén foi adoptado por moitos dos kit
 
 Un DocBlock se define usando un bloque de comentario que empieza cun asterisco adicional:
 
-```
+```php
 /**
  * Este é un DocBlock moi básico
  */
@@ -1192,7 +1192,7 @@ Ademais, *dado que poden existir simultáneamente múltiples instancias da mesma
 
 Aquí temos a aproximación procedimental ao noso exemplo:
 
-```
+```php
 <?php
 
 función cambioJob($persoa, $novo traballo)
@@ -1239,7 +1239,7 @@ echo "<pre>Persoa 2: ", print_r($persoa2, TRUE), "</pre>";
 
 Cando o executemos, o código mostra o seguinte:
 
-```
+```php
 Persoa 1: Array
 (
   [nome] => Tom
@@ -1272,11 +1272,11 @@ Para reformar este exemplo, sería desexable **deixar o mínimo de cousas para o
 
 **Aquí é onde a POO impón e che axuda a depurar as cousas.**
 
-### La Aproximación con POO
+### A aproximación con POO
 
 Aquí está a aproximación con POO ao noso exemplo:
 
-```
+```php
 <?php
 
 Persoa de clase
@@ -1327,7 +1327,7 @@ echo "<pre>Persoa 2: ", print_r($persoa2, TRUE), "</pre>";
 
 Amosa a seguinte saída no navegador:
 
-```
+```php
 Persoa 1: Persoa Obxecto
 (
   [_name:private] => Tom
@@ -1373,7 +1373,7 @@ Asume que tens unha aplicación con 150 clases que son chamadas dinámicamente a
 
 O controlador pode implementar a función de PHP `_autoload()`para acceder dinámicamente só ás clases que necesitan chamar, no lugar de incluír todas as 150 clases no arquivo do controlador por si acaso ou con algunha forma intelixente de incluír os arquivos no seu propio código:
 
-```
+```php
 <?php
   función __autoload($class_name)
   {
@@ -1396,8 +1396,8 @@ Moitos dos beneficios que comentaremos son froito dunha **POO combinada con prá
 
 ## Resumo
 
-En este punto, deberías sentirte cómodo co estilo de programación orientado a obxectos. Aprender POO é unha gran maneira de levar a túa programación ao seguinte nivel. Cando se implemente apropiadamente, a POO axudará a producir un código fácil de leer, manter e portátil que che aforrará (xa os desenvolvedores con outros traballos) horas de traballo extra. ¿Estás atascado en algo que non se teña cuberto neste artigo? ¿Ya utilizas POO e tes algún consello para principiantes? ¡Compártelos nos comentarios!![]()
+Neste punto, deberías sentirte cómodo co estilo de programación orientado a obxectos. Aprender POO é unha gran maneira de levar a túa programación ao seguinte nivel. Cando se implemente apropiadamente, a POO axudará a producir un código fácil de leer, manter e portátil que che aforrará (xa os desenvolvedores con outros traballos) horas de traballo extra.
 
 [Jason Lengstorf](https://tutsplus.com/authors/jason-lengstorf)Última actualización 24 de febreiro de 2022
 
-[ *Pro PHP y jQuery* ] é unha boa referenza da combinación de bos hábitos de codificación xunto á POO para xerar código que sea fácil de ler e manter.
+[ *Pro PHP y jQuery* ] é unha boa referencia da combinación de bos hábitos de codificación xunto á POO para xerar código que sexa fácil de ler e manter.

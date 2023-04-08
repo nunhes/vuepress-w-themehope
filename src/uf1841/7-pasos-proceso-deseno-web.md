@@ -4,7 +4,7 @@
 
 Por moitos elementos comúns que atopemos no desenvolvemento de distintos sitios web, cada sitio é un mundo.
 
-Os deseñadores web adoitan pensar no proceso de deseño web centrándose en cuestións técnicas como os wireframes, o código ou a xestión de contidos. Pero un bo deseño web debe ir máis alo de deseñar e integrar uns botóns ou poñer unhas bonitas iconas de redes sociais ou facer unha boa escolla de imaxes. Boa parte do éxito final vai partir da nosa capacidade de moldear **un proceso de creación que se aliñe coa estratexia global do sitio** que imos crear. 
+Os deseñadores web adoitan pensar no proceso de deseño web centrándose en cuestións técnicas como os wireframes, o código ou a xestión de contidos. Pero un bo deseño web debe ir máis alo de deseñar e integrar uns botóns ou poñer unhas bonitas iconas de redes sociais ou facer unha boa escolla de imaxes. Boa parte do éxito final vai partir da nosa capacidade de moldear **un proceso de creación que se aliñe coa estratexia global do sitio** que imos crear.
 
 A pouco que nos deteñamos nalgún sitio web ==ben deseñado== enseguida percibimos que ofrece moito máis que a súa estética. Mediante unha variedade de indicadores, que inclúen - por suposto - elementos visuais, texto e interacción atraen visitantes e axudan á xente a comprender un produto, unha empresa e/ou unha marca. Isto significa que cada elemento do sitio debe traballar de xeito conxunto para acadar un obxectivo definido.
 
@@ -22,9 +22,9 @@ Para min, a realización dun sitio web require - alo menos- 7 pasos:
 
    É vital que teñas contido real co que traballar canto antes, pero resultará imprescindible para as seguintes etapas.
 
-4. **Creación de contido**: agora que temos unha imaxe máis completa do sitio en mente, podemos comezar a crear contido para as páxinas individuais, sempre tendo presente a optimización de motores de busca (SEO) e a continuidade de estilo e linguaxe de marca. 
+4. **Creación de contido**: agora que temos unha imaxe máis completa do sitio en mente, podemos comezar a crear contido para as páxinas individuais, sempre tendo presente a optimización de motores de busca (SEO) e a continuidade de estilo e linguaxe de marca.
 
-5. **Elementos visuais e interactividade**: coa arquitectura do sitio definida e parte dos contidos xa inseridos, podemos comezar a traballar na marca visual. Dependendo do cliente, isto xa pode estar definido - logotipo, cores corporativas, libro de estilo,... da empresa ou marca-, ou pode que o teñamos que definir expresamente e dende cero. Aínda así, moitas decisións de deseño xa deberían estar tomadas durante a fase 3: estrutura de contidos, paleta de cores, tipografía, chamadas a acción e botóns,... 
+5. **Elementos visuais e interactividade**: coa arquitectura do sitio definida e parte dos contidos xa inseridos, podemos comezar a traballar na marca visual. Dependendo do cliente, isto xa pode estar definido - logotipo, cores corporativas, libro de estilo,... da empresa ou marca-, ou pode que o teñamos que definir expresamente e dende cero. Aínda así, moitas decisións de deseño xa deberían estar tomadas durante a fase 3: estrutura de contidos, paleta de cores, tipografía, chamadas a acción e botóns,...
 
 6. **Probar**: xa temos todas as páxinas e xa está definido como se mostran ao visitante, así que é hora de asegurarnos de que todo funciona. Combina a navegación manual do sitio en distintos navegadores e dispositivos e o uso de rastrexadores automatizados para avaliar cada detalle, desde problemas de experiencia do usuario ata simples rutas ou ligazóns rotas.
 
@@ -41,7 +41,5 @@ O proxecto está publicado e visible ao mundo conectado,... pero agora virá o m
 XAN 2023
 
 ---
-
-
 
 <!-- ref: https://webflow.com/blog/the-web-design-process-in-7-simple-steps -->

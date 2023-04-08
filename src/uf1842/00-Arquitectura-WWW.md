@@ -33,7 +33,7 @@ A arquitectura da [WWW](https://www.cloudflare.com/es-es/learning/network-layer/
 
 ---
 
-**Tipos de conexión a Internet**
+&rarr; **Tipos de conexión a Internet**
 
  As [formas de conexión](https://tarify.win/guias/tipos-conexion-internet/) poden ser:
 
@@ -74,7 +74,7 @@ A arquitectura da [WWW](https://www.cloudflare.com/es-es/learning/network-layer/
 
 ---
 
-**Redes de área local (LAN)**
+&rarr; **Redes de área local (LAN)**
 
 - Utilízase para enlazar ordenadores situados xeralmente nun mesmo edificio ou grupo de edificios.
 
@@ -90,11 +90,11 @@ A arquitectura da [WWW](https://www.cloudflare.com/es-es/learning/network-layer/
 
 ---
 
-### Arquitectura lóxica de Internet.
+## Arquitectura lóxica de Internet
 
 ---
 
-Normalmente en Internet utilízase a arquitectura cliente-servidor. Este tipo de organización baséase en que: entre todos os equipos que están na rede, uns ofrecen servizos (os denominados servidores) e outros utilizan eses servizos (os denominados clientes). Cando o cliente visita unha páxina, accede a un servizo ofrecido polo servidor de páxinas web. 
+Normalmente en Internet utilízase a arquitectura cliente-servidor. Este tipo de organización baséase en que: entre todos os equipos que están na rede, uns ofrecen servizos (os denominados servidores) e outros utilizan eses servizos (os denominados clientes). Cando o cliente visita unha páxina, accede a un servizo ofrecido polo servidor de páxinas web.
 
 ---
 
@@ -106,11 +106,11 @@ A arquitectura de Internet a nivel lóxico está estruturada polo que se coñece
 
 ---
 
-#### Modelo OSI de 7 capas:
+### Modelo OSI de 7 capas
 
 ---
 
-**Capa física**: a capa física do modelo de referencia OSI é a responsable das conexións físicas do ordenador á rede, tanto no que se refire ao medio físico (medios guiados: [cable coaxial](http://es.wikipedia.org/wiki/Cable_coaxial) l, [cable de par trenzado, ](http://es.wikipedia.org/wiki/Par_trenzado)[fibra óptica](http://es.wikipedia.org/wiki/Fibra_óptica) e outros ). tipos de [cables](http://es.wikipedia.org/wiki/Cableado_estructurado) ; medios non guiados: [radio](http://es.wikipedia.org/wiki/Red_por_radio) , [infravermellos](http://es.wikipedia.org/wiki/Red_por_infrarrojos) , [microondas](http://es.wikipedia.org/wiki/Red_por_microondas) , [láser e](http://es.wikipedia.org/w/index.php?title=Red_por_láser&action=edit) outras [redes sen fíos](http://es.wikipedia.org/wiki/Red_inalámbrica) );
+**Capa física**: a capa física do modelo de referencia OSI é a responsable das conexións físicas do ordenador á rede, tanto no que se refire ao medio físico (medios guiados: [cable coaxial](http://es.wikipedia.org/wiki/Cable_coaxial), [cable de par trenzado,](http://es.wikipedia.org/wiki/Par_trenzado) [fibra óptica](http://es.wikipedia.org/wiki/Fibra_óptica) e outros ); tipos de [cables](http://es.wikipedia.org/wiki/Cableado_estructurado); medios non guiados: [radio](http://es.wikipedia.org/wiki/Red_por_radio) , [infravermellos](http://es.wikipedia.org/wiki/Red_por_infrarrojos), [microondas](http://es.wikipedia.org/wiki/Red_por_microondas), [láser e](http://es.wikipedia.org/w/index.php?title=Red_por_láser&action=edit) outras [redes sen fíos](http://es.wikipedia.org/wiki/Red_inalámbrica)\);
 
 ---
 
@@ -134,19 +134,17 @@ A arquitectura de Internet a nivel lóxico está estruturada polo que se coñece
 
 ---
 
-**Capa de presentación**: a finalidade da capa de presentación é coidar a representación da información, de xeito que aínda que diferentes ordenadores poidan ter diferentes representacións internas de caracteres ( [ASCII, ](http://es.wikipedia.org/wiki/ASCII)[Unicode](http://es.wikipedia.org/wiki/Unicode) , [EBCDIC)](http://es.wikipedia.org/wiki/EBCDIC) , números ( tipo Intel [little-endian , ](http://es.wikipedia.org/wiki/Little-endian)[big -endian tipo](http://es.wikipedia.org/wiki/Big-endian) Motorola), son ou imaxes, os datos chegan dun xeito recoñecible.
+**Capa de presentación**: a finalidade da capa de presentación é coidar a representación da información, de xeito que aínda que diferentes ordenadores poidan ter diferentes representacións internas de caracteres ( [ASCII,](http://es.wikipedia.org/wiki/ASCII) [Unicode](http://es.wikipedia.org/wiki/Unicode), [EBCDIC)](http://es.wikipedia.org/wiki/EBCDIC), números ( tipo Intel [little-endian,](http://es.wikipedia.org/wiki/Little-endian) [big -endian tipo](http://es.wikipedia.org/wiki/Big-endian) Motorola), son ou imaxes, os datos chegan dun xeito recoñecible.
 
 ---
 
-**Capa de aplicación**: ofrece ás aplicacións (usuario ou non) a posibilidade de acceder aos servizos das outras capas e define os protocolos que utilizan as aplicacións para intercambiar datos, como [correo electrónico ](http://es.wikipedia.org/wiki/Correo_electrónico)[(POP e ](http://es.wikipedia.org/wiki/POP)[SMTP),](http://es.wikipedia.org/wiki/SMTP) xestores de mensaxes, etc. bases de datos e [servidor de ficheiros ( ](http://es.wikipedia.org/w/index.php?title=Servidor_de_ficheros&action=edit)[FTP](http://es.wikipedia.org/wiki/FTP) ).
+**Capa de aplicación**: ofrece ás aplicacións (usuario ou non) a posibilidade de acceder aos servizos das outras capas e define os protocolos que utilizan as aplicacións para intercambiar datos, como [correo electrónico [(POP e](http://es.wikipedia.org/wiki/POP) [SMTP),](http://es.wikipedia.org/wiki/SMTP) xestores de mensaxes, etc. bases de datos e [servidor de arquivos](http://es.wikipedia.org/w/index.php?title=Servidor_de_ficheros&action=edit) [FTP](http://es.wikipedia.org/wiki/FTP).
 
 ---
-
-
 
 ...
 
-https://www.cloudflare.com/learning/
+[https://www.cloudflare.com/learning/](https://www.cloudflare.com/learning/)
 
 ---
 

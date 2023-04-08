@@ -8,9 +8,10 @@ category:
 ---
 
 ## UF1846
-## Desenvolvemento de aplicacións web distribuídas. 
 
-#### UD1. ARQUITECTURAS DISTRIBUIDAS ORIENTADAS A SERVIZOS
+## Desenvolvemento de aplicacións web distribuídas
+
+### UD1. ARQUITECTURAS DISTRIBUIDAS ORIENTADAS A SERVIZOS
 
 1. Características xerais das arquitecturas de servizos distribuídos
 2. Modelo conceptual das arquitecturas orientadas a servizos
@@ -19,7 +20,7 @@ category:
 5. Implementación da seguridade en arquitecturas orientadas a servizos
 6. Directorios de servizos
 
-#### UD2. PROGRAMACIÓN DE SERVIZOS WEB EN ENTORNAS DISTRIBUIDAS
+### UD2. PROGRAMACIÓN DE SERVIZOS WEB EN ENTORNAS DISTRIBUIDAS
 
 1. Compoñentes software para o acceso a servizos distribuídos
 2. Programación de diferentes tipos de acceso a servizos

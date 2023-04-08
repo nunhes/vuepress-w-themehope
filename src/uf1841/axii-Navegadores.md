@@ -4,8 +4,6 @@
 
 > Ilustración de  [Wassim Chegham](https://dev.to/wassimchegham/ever-wondered-what-happens-when-you-type-in-a-url-in-an-address-bar-in-a-browser-3dob) para [Web Dev For Beginners](https://github.com/microsoft/Web-Dev-For-Beginners)
 
-
-
 Que é exactamente un navegador? É unha aplicación de software que permite a un usuario final acceder ao contido dun servidor e visualizalo en páxinas web.
 
 ✅ Un pouco de historia: o primeiro navegador chamábase 'WorldWideWeb' e foi creado por Sir Timothy Berners-Lee en 1990.
@@ -20,7 +18,7 @@ Neste punto, o motor de renderizado do navegador móstrao no dispositivo do usua
 
 Os navegadores tamén teñen a capacidade de almacenar contido na **caché** para que non teña que ser recuperado do servidor cada vez. Poden rexistrar o **historial da actividade de navegación** dun usuario, almacenar **'cookies'**, que son pequenos anacos de datos que conteñen información utilizada para almacenar a actividade dun usuario, etc.
 
-Unha cousa moi importante a ter en conta dos navegadores é que non son todos iguais! 
+Unha cousa moi importante a ter en conta dos navegadores é que non son todos iguais!
 
 Cada navegador ten os seus puntos fortes e débiles, e o desenvolvedor web debe entender como facer que as páxinas web funcionen ben nos diferentes navegadores. Isto inclúe o manexo de pantallas gráficas pequenas, como as dun teléfono móbil, así como a posibilidade do uso da aplicación sen conexión.
 
@@ -34,13 +32,10 @@ Un sitio web moi útil que probablemente deberías marcar no teu navegador favor
 
 [Máis información sobre as extensións do navegador](https://www.osi.es/es/actualidad/blog/2019/11/20/extensiones-superpoderes-para-los-navegadores)
 
-
-
 Amplía os teus coñecementos sobre os navegadores, a súa historia e a mesma historia de Internet:
 
 - [Historia dos navegadores](https://www.mozilla.org/es-ES/firefox/browsers/browser-history/)
 - [Historia da web](https://webfoundation.org/about/vision/history-of-the-web/)
 
-
-
+___
 XAN 2023

@@ -6,15 +6,15 @@ marp: true
 
 ---
 
-# 1
+## 1
 
 ---
 
-## Datos: Tipos de datos.
+## Datos: Tipos de datos
 
 ---
 
-> ##### *Para computar usamos datos. Programamos para empregar datos, analizar datos, amosar datos, estudar datos, extraer datos de outros datos,... Os datos son a substancia sobre a que imos a programar.*
+> ***Para computar usamos datos. Programamos para empregar datos, analizar datos, amosar datos, estudar datos, extraer datos de outros datos,... Os datos son a substancia sobre a que imos a programar.***
 
 ---
 
@@ -44,7 +44,7 @@ Vexamos algúns exemplos de **tipos de datos básicos de uso común** e que se p
 
 ---
 
-> ##### *Para tratar cos datos, usar datos e empregalos en programación debemos declaralos usando variables*. 
+> ***Para tratar cos datos, usar datos e empregalos en programación debemos declaralos usando variables***
 
 ---
 
@@ -64,7 +64,7 @@ Vexamos algúns exemplos de **tipos de datos básicos de uso común** e que se p
 
 ### Variables
 
-Unha variable é unha peza de código que **almacena un valor**. 
+Unha variable é unha peza de código que **almacena un valor**.
 
 As regras e restricións dependerán do **tipo de variable** utilizada, entre elas:
 
@@ -110,7 +110,7 @@ E tamén podes ver unha letra F ou D para distinguir si é **`float`** ou é **`
 
 **`char`** é un carácter Unicode e normalmente escribirase entre comiñas simples (' ').
 
-Úsase **`string`** cunha cadea de caracteres, é dicir, caracteres seguidos un tras outro formando unha secuencia, 
+Úsase **`string`** cunha cadea de caracteres, é dicir, caracteres seguidos un tras outro formando unha secuencia,
 
 O tipo **`string`** escríbese normalmente entre comiñas dobres (" "), aínda que pode variar dependendo da linguaxe.
 
@@ -292,10 +292,10 @@ En xeral, se hai varias declaracións que avaliar, agrúpanse con chaves `{ }`:
 ```js
 if (condicion)
 {
-	 instruccion1;
-	 instruccion2;
-	 ...
-	 instruccionX;
+    instruccion1;
+    instruccion2;
+    ...
+    instruccionX;
 }
 ```
 
@@ -311,6 +311,7 @@ A estrutura sinxela sería:
 if (condicion) instruccion1;
 else instruccion2;
 ```
+
 ---
 
 - `instruccion1` é un bloque de código que se executará se a expresión avaliada é `true`.
@@ -327,13 +328,13 @@ Do mesmo xeito que `if`, a expresión `else` ten a mesma posibilidade de agrupar
 ```js
 if (condicion)
 {
-	 instruccion1;
-	 instruccion2;
+     instruccion1;
+     instruccion2;
 }
 else
 {
-	 instruccion3;
-	 instruccion4;
+     instruccion3;
+     instruccion4;
 }
 ```
 
@@ -350,17 +351,17 @@ Ex.:
 ```js
 if (a > 25)
 {
-	 instruccion1;
-	 if (b < 25);
-	 {
-	 instruccion2;
-	 }
+     instruccion1;
+     if (b < 25);
+     {
+     instruccion2;
+     }
 }
 ```
 
 ---
 
-### Do exemplo anterior:
+### Do exemplo anterior
 
 - Se o valor da variable `a` é maior que 25, executará unha instrución.
 - A continuación, avaliará se `b` é menor que 25 e, se é verdade, executará outra instrución.
@@ -374,13 +375,13 @@ Algunhas linguaxes permítennos unir varias `if` dentro dunha mesma estrutura, r
 
 ```js
 if (condicion1)
-	 instruccion1;
+     instruccion1;
 else if (condicion2)
-	 instruccion2;
+     instruccion2;
 else if (condicion3)
-	 instruccion3;
+     instruccion3;
 else
-	 instruccion4;
+     instruccion4;
 ```
 
 `if else` Utilízase na programación, por exemplo ao avaliar a mesma variable de xeito secuencial e dunha vez. Se vemos a estrutura, tal e como se está a avaliar, se ( `if`) o resultado é certo, executaría a instrución, se non ( `else`) valorará a seguinte opción, etc.
@@ -466,7 +467,7 @@ Estes son algúns dos exemplos comúns que se ven na maioría das linguaxes de p
 
 ---
 
-## Resumo:
+## Resumo
 
 - Estas palabras NON SE PODEN usar para nomear variables, xa que provocarían un erro no código.
 - Unha vez escollida linguaxe de programación, deberías aprender as diferentes palabras reservadas desa linguaxe.
@@ -500,7 +501,7 @@ Figura[] cuadrados; // Donde “Figura” é unha clase
 
 ---
 
-### Outra forma de declarar...
+### Outra forma de declarar
 
 Tamén se pode declarar do seguinte xeito - máis convencional-, o exemplo sería:
 
@@ -525,7 +526,7 @@ Na programación orientada a obxectos, os arrays considéranse obxectos, isto qu
 
 ---
 
-### Como configurar o tamaño da matriz...
+### Como configurar o tamaño da matriz
 
 Para inicializar unha matriz, úsase a palabra reservada `new`. (Nalgúns idiomas non é necesario `new`.)
 
@@ -545,7 +546,7 @@ Se queremos ver os números do 1 ao 30.
 ```js
 for (int i = 0; i < 30; i++)
 {
-	 s[i] = i + 1;
+     s[i] = i + 1;
 }
 // i: índice, é a posición dentro do array para localizar o valor que conten
 ```
@@ -556,7 +557,7 @@ Case todas as linguaxes de programación usan `length` para indicar o tamaño da
 
 ---
 
-### Outro exemplo...
+### Outro exemplo
 
 Outra forma máis sinxela de crear matrices:
 
@@ -609,7 +610,7 @@ Para crealos:
 cadros = new Figuras[10];
 for (int i = 0; i < 10; i++)
 {
-	 cadros[i] = new Figura();
+    cadros[i] = new Figura();
 }
 ```
 
@@ -621,7 +622,7 @@ Existen linguaxes de programación que permiten crear matrices bidimensionais (b
 
 Exemplo con Python: Supoña que as temperaturas se rexistran durante 4 días consecutivos:
 
-```
+```markdown
 Dia 1: 11 12 5 2
 Dia 2: 15 6 10
 Dia 3: 10 8 12 5
@@ -631,7 +632,7 @@ Dia 4: 12 15 8 6
 Represéntase como unha matriz bidimensional:
 
 ```python
-T = [[11, 12, 5, 2], [15, 6,10], [10, 8, 12, 5], [12,15,8,6]]
+T = [[11, 12, 5, 2], [15, 6, 10], [10, 8, 12, 5], [12, 15, 8, 6]]
 ```
 
 ---
@@ -652,7 +653,7 @@ Os tres ciclo más utilizados en programación son:
 
 ---
 
-### Ciclo ``while`` 
+### Ciclo ``while``
 
 O ciclo `while` itera ou repite un bloque de código mentres unha condición ten o valor **`true`**.
 
@@ -661,7 +662,7 @@ Pódese escribir:
 ```js
 while (condicion)
 {
-	 instruccions;
+    instruccions;
 }
 ```
 
@@ -685,12 +686,12 @@ col = 0;
 row = 0;
 while ( row < 3)
 {
-	 while (col < 5)
-	 {
-		  print("#");
-		  col++;
-	 }
-	 row++;
+    while (col < 5)
+    {
+        print("#");
+        col++;
+    }
+    row++;
 }
 ```
 
@@ -709,7 +710,7 @@ Un exemplo de como escribir:
 ```js
 for (i = 0; i < TOTAL; i++)
 {
-	 instruccions;
+    instruccions;
 }
 ```
 
@@ -746,13 +747,13 @@ Un exemplo de cada un:
 
 ```c
 for(i = 10; i >= 0; --i) {
-	if(i > 5) {
+    if(i > 5) {
     continue; // Non seguimos si i é maior a 5
   }
   if(i == 2){
     break; // Saimos si i é igual a 2
   }
-	console.log(i + 3); // Imprimimos o valor de i máis 3
+    console.log(i + 3); // Imprimimos o valor de i máis 3
 }  
 ```
 
@@ -780,9 +781,8 @@ Sino avaliándoa xusto despois de executar por primeira vez o bloque de instruci
 Dependendo da linguaxe de programación, se pode escribir:
 
 ```js
-do
-{
-	 instruccions;
+do {
+   instruccions;
 } while (condicion)
 ```
 
@@ -839,7 +839,7 @@ A forma de declarar unha función sería:
 ```js
 [Modificadores] tipo_retorno nombre_funcion ([argumentos])
 {
-	 bloque_código;
+    bloque_código;
 }
 ```
 
@@ -869,7 +869,7 @@ Algunos ejemplos: **`public`**, **`private`**, **`protected`**, **`virtual`**, *
 
 ---
 
-#### Exemplo de funcións
+### Exemplo de funcións
 
 ```js
 public void hola(nombre) {
@@ -878,7 +878,7 @@ public void hola(nombre) {
 
 public int suma(int num1, int num2)
 {
-	 return num1 + num2;
+    return num1 + num2;
 }
 ```
 
@@ -903,7 +903,6 @@ return result;
 ## Que facer cos valores devoltos?
 
 ---
-
 
 No caso anterior, se invocou unha función que devolveu un valor. Se pode utilizar o valor devolto desde a función de onde foi chamado.
 
@@ -989,7 +988,7 @@ d = dict()
 
 ---
 
-# Que ven despois?
+## Que ven despois?
 
 ---
 
@@ -1003,7 +1002,6 @@ Unha vez que teñamos aprendido estes fundamentos básicos de programación:
 - Videoxogos &rarr; *C#*
 - Data Science &rarr; *Python*
 
-
 ---
 
 XAN 2023
@@ -1012,4 +1010,4 @@ XAN 2023
 
 <!-- https://www.codealo.dev/curso/fundamentos-de-programacion?leccion=introduccion-fundamentos-de-programacion -->
 
-https://learn.microsoft.com/en-us/training/modules/introduction-to-github-visual-studio-code/
+[https://learn.microsoft.com/en-us/training/modules/introduction-to-github-visual-studio-code/](https://www.codementor.io/learn-development/javascript-css-html-tutorial-front-end-development-tools)

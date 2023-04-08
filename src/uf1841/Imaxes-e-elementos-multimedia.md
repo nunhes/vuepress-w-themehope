@@ -11,7 +11,7 @@ Unha das principais decisións á hora de incluír gráficos na web vai ser **el
 
 As imaxes ofrecen un evidente **valor engadido,** revalorizando os proxectos ao tempo que destacan a información exposta nos textos, aclaran os contidos, ofrecen datos adicionais (no caso, por exemplo, das infografías) ou actúan como elementos que invitan á reflexión.
 
-<p style="background: #000; color: #fff; padding: .5rem;">Aínda que tamén poden supor un problema de accesibilidade a ter en consideración en algúns contextos.</p>
+Aínda que tamén poden supor un problema de accesibilidade a ter en consideración en algúns contextos.
 
 ---
 
@@ -59,10 +59,6 @@ Na ampliación, podemos ver como o formato PNG mantén unha calidade moito mello
 
 ---
 
+[https://blog.scaleflex.com/es/los-formatos-de-imagen-para-sitios-web-mas-populares/](https://blog.scaleflex.com/es/los-formatos-de-imagen-para-sitios-web-mas-populares/)
 
-
-
-
-https://blog.scaleflex.com/es/los-formatos-de-imagen-para-sitios-web-mas-populares/
-
-https://okbinteractive.studio/insights/webp-y-avif-los-nuevos-formatos-de-imagen-que-deberias-usar-en-tu-web
+[https://okbinteractive.studio/insights/webp-y-avif-los-nuevos-formatos-de-imagen-que-deberias-usar-en-tu-web](https://okbinteractive.studio/insights/webp-y-avif-los-nuevos-formatos-de-imagen-que-deberias-usar-en-tu-web)

@@ -21,15 +21,15 @@ Neste módulo:
 - Describe un fork de repositorio e como se diferencia dun clon
 - Explica a funcionalidade das etiquetas do repositorio e onde aplicalas en problemas e solicitudes de extracción
 
-# Que é GitHub?
+## Que é GitHub?
 
 Aquí, discutimos as principais funcións de GitHub que usas a diario para xestionar e contribuír a proxectos de software.
 
-## O fluxo de GitHub
+### O fluxo de GitHub
 
 Ademais de ofrecer unha plataforma para o desenvolvemento de software colaborativo, GitHub tamén ofrece un fluxo de traballo deseñado para optimizar o uso das súas diversas funcións. Aínda que esta unidade ofrece unha visión xeral dos compoñentes importantes da plataforma, recoméndase que revise primeiro [Comprensión do fluxo de GitHub](https://guides.github.com/introduction/flow/) .
 
-## Git e GitHub
+### Git e GitHub
 
 Mentres traballas con **Git** e **GitHub** , podes preguntarte cal é a diferenza entre ambos.
 
@@ -56,7 +56,7 @@ As funcións principais proporcionadas por GitHub inclúen:
 
 Para obter máis información sobre **GitHub** , consulte [Primeiros pasos con GitHub](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github) .
 
-## Problemas
+### Problemas
 
 **Os problemas** son onde se produce a maior parte da comunicación entre os consumidores e o equipo de desenvolvemento dun proxecto. Pódese crear un *problema* para discutir un amplo conxunto de temas, incluíndo informes de erros, solicitudes de funcións, aclaracións de documentación e moito máis. Unha vez que se crea un problema, pódese asignar a propietarios, etiquetas, proxectos e fitos. Tamén podes asociar problemas con solicitudes de extracción e outros elementos de GitHub para ofrecer unha trazabilidade futura.
 
@@ -64,7 +64,7 @@ Para obter máis información sobre **GitHub** , consulte [Primeiros pasos con G
 
 Para obter máis información sobre os problemas de GitHub, consulte [Problemas de dominio](https://guides.github.com/features/issues/) .
 
-## Notificacións
+### Notificacións
 
 Como plataforma colaborativa, GitHub ofrece **notificacións** para practicamente todos os eventos que teñen lugar nun fluxo de traballo determinado. Estas notificacións pódense axustar finamente para satisfacer as túas preferencias. Por exemplo, pode subscribirse a todas as creacións e edicións de problemas nun proxecto, ou pode simplemente recibir notificacións dos problemas nos que se mencione. Tamén podes decidir se recibes notificacións por correo electrónico, web e móbil, ou ambos. Para facer un seguimento de todas as túas notificacións en diferentes proxectos, usa o [panel de notificacións de GitHub](https://github.com/notifications) .
 
@@ -72,7 +72,7 @@ Como plataforma colaborativa, GitHub ofrece **notificacións** para practicament
 
 Para obter máis información sobre as notificacións de GitHub, consulta [Configurar notificacións](https://help.github.com/github/managing-subscriptions-and-notifications-on-github/configuring-notifications) .
 
-## Ramas
+### Ramas
 
 **As ramas** son a forma preferida de crear cambios no [fluxo de GitHub](https://guides.github.com/introduction/flow/) . Proporcionan illamento para que varias persoas poidan traballar simultaneamente no mesmo código de forma controlada. Este modelo permite a estabilidade entre ramas críticas, como `main`, ao tempo que permite aos desenvolvedores unha total liberdade para realizar os cambios que precisen para cumprir os seus obxectivos. Unha vez que o código dunha rama estea listo para formar parte da `main`rama, pódese fusionar mediante a solicitude de extracción.
 
@@ -80,7 +80,7 @@ Para obter máis información sobre as notificacións de GitHub, consulta [Confi
 
 Para obter máis información sobre as ramas de GitHub, consulta [Acerca das ramas](https://help.github.com/github/collaborating-with-issues-and-pull-requests/about-branches) .
 
-## Compromete
+### Compromete
 
 Unha **confirmación** é un cambio nun ou máis ficheiros nunha rama. Cada vez que se crea un commit, asígnaselle un ID único e fai un seguimento, xunto co tempo e o colaborador. Isto proporciona unha pista de auditoría clara para quen revise o historial dun ficheiro ou elemento ligado, como un problema ou unha solicitude de extracción.
 
@@ -96,7 +96,7 @@ Unha **solicitude de extracción** é o mecanismo usado para sinalar que as conf
 
 Para obter máis información sobre as solicitudes de extracción de GitHub, consulte [Acerca das solicitudes de extracción](https://help.github.com/github/collaborating-with-issues-and-pull-requests/about-pull-requests) .
 
-## Etiquetas
+### Etiquetas
 
 As etiquetas proporcionan unha forma de categorizar e organizar **problemas** e **extraer solicitudes** nun repositorio. Ao crear un repositorio de GitHub, engadiranse automaticamente varias etiquetas e tamén se poden crear outras novas.
 
@@ -113,7 +113,7 @@ Exemplos de etiquetas inclúen:
 
 Para obter máis información sobre as etiquetas de GitHub, consulta [Acerca das etiquetas](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/about-labels) .
 
-## Accións
+### Accións
 
 **As accións de GitHub** proporcionan automatización de tarefas e funcionalidade de fluxo de traballo nun repositorio. As accións pódense utilizar para axilizar os procesos no seu ciclo de vida de desenvolvemento de software e implementar a integración continua e a implantación continua (CI/CD).
 
@@ -130,7 +130,7 @@ As accións de GitHub componse dos seguintes compoñentes:
 
 Para obter máis información sobre as accións de GitHub, consulte [Introdución ás](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions) accións [de GitHub](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions) .
 
-## Clonación e bifurcación
+### Clonación e bifurcación
 
 GitHub ofrece varias formas de copiar un repositorio para que poidas traballar nel.
 
@@ -149,7 +149,7 @@ Pódense facer cambios na súa copia local de `githubtraining/example`e despois 
 
 Para obter máis información, consulte [Fork a repo](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) .
 
-## Páxinas de GitHub
+### Páxinas de GitHub
 
 **GitHub Pages** é un motor de hospedaxe que está integrado directamente na túa conta de GitHub. Seguindo algunhas convencións e activando a función, podes crear o teu propio sitio estático xerado a partir de HTML e código de rebaixa sacado directamente do teu repositorio.
 
@@ -157,9 +157,7 @@ Para obter máis información, consulte [Fork a repo](https://docs.github.com/en
 
 Para obter máis información, consulta [Páxinas de GitHub](https://pages.github.com/) .
 
-
-
-# Ampliar coñecementos: unha visita guiada a GitHub
+## Ampliar coñecementos: unha visita guiada a GitHub
 
 Podes utilizar GitHub Learning Lab para coñecer as principais funcións de GitHub, incluíndo problemas, notificacións, ramas, confirmacións e solicitudes de extracción.
 
@@ -174,15 +172,9 @@ Aquí tes algunhas suxestións para que o exercicio de Learning Lab sexa máis a
 - Cando se che proporcione unha ligazón para crear ou editar un ficheiro ou se che indique que abra unha pestana, **asegúrate de abrila noutra pestana do teu navegador** . Deste xeito, pode volver ás instrucións sen saír do ficheiro.
 - Os comentarios e as instrucións continuarán na túa solicitude de extracción ou nun problema do teu repositorio.
 
-
-
 [Inicia o laboratorio de aprendizaxe en GitHub](https://lab.github.com/githubtraining/introduction-to-github)
 
-
-
-
-
-## Colabora con outras persoas con Markdown e GitHub Pages
+### Colabora con outras persoas con Markdown e GitHub Pages
 
 Queres comunicarte de forma máis eficaz con outros usuarios de GitHub? Buscas unha forma gratuíta de promocionar o teu proxecto GitHub?
 
@@ -194,11 +186,9 @@ Neste camiño de aprendizaxe, aprenderás como:
 - GitHub-Flavored Markdown (GFM) permite o resaltado de sintaxe para linguaxes de programación populares e permítelle vincular problemas, solicitudes de extracción e confirmacións.
 - As páxinas de GitHub axúdanche a crear páxinas de proxectos e publicacións de blog que inclúan temas personalizados.
 
-## Requisitos previos
+### Requisitos previos
 
 - Unha conta de [GitHub](https://github.com/?azure-portal=true)
-
-
 
 Podes percorrer diferentes modos de aprender a empregar GitHub:
 
@@ -206,9 +196,4 @@ Podes percorrer diferentes modos de aprender a empregar GitHub:
 - [Git-it-Win-ia32](https://github.com/jlord/git-it-electron/releases/download/4.4.0/Git-it-Win-ia32.zip)
 - [Documentación oficial en español](https://docs.github.com/es)
 
-
-
-***ref:*** https://docs.microsoft.com/gl-es/learn/modules/introduction-to-github/
-
-
-
+***\_ref:*** [https://docs.microsoft.com/gl-es/learn/modules/introduction-to-github/](https://docs.microsoft.com/gl-es/learn/modules/introduction-to-github/)

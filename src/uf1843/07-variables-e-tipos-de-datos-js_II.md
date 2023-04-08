@@ -1,24 +1,20 @@
 # Operacións de ensaio
 
-Como propietario da xeadería e posto que ha adquirido algunas aptitudes de programación, ha decidido desarrollar un software para su negocio. Puede que un día convierta la heladería en unha cadena.
+Como propietario dunha xeadería e posto que xa adquiriches algunhas aptitudes de programación, decides desenvolver un software para o teu negocio. Pode que un día convértala xeadería nunha cadea.
 
-En primer lugar, quiere codificar todo lo que sabe sobre su negocio, como los distintos helados y los precios. A continuación, quiere simular interacciones de clientes. Por último, quiere calcular los beneficios y obtener más información útil.
+En primeiro lugar, queres codificar todo o que sabe sobre o teu negocio, como os distintos xeados e os prezos. A continuación, queres simular interaccións de clientes. Por último, queres calcular os beneficios e obter máis información útil.
 
-## Crear negocio
+## Crear o negocio
 
-En primer lugar, inicie su imperio de heladerías mediante la codificación de todos los sabores de los que dispone.
+En primeiro lugar, inicia teu imperio de xeaderías mediante a codificación de todos os sabores dos que dispós.
 
-1. Cree un arquivo, llámelo *app.js* y agregue el siguiente contenido:
-
-   
+1. Crea un arquivo, e chámao *app.js* e engádelle o seguinte contido:
 
    ```javascript
    let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip", "Raspberry"];
    ```
 
-2. A continuación, quiere clasificar los sabores por tipo y asignarle un precio a cada uno. Acaba por modificar el código de la siguiente manera:
-
-   
+2. A continuación, queres clasificar os sabores por tipo e asignarlle un prezo a cada un. Acaba por modificar o código da seguinte maneira:
 
    ```javascript
    let iceCreamFlavors = [
@@ -32,24 +28,20 @@ En primer lugar, inicie su imperio de heladerías mediante la codificación de t
    ];
    ```
 
-   Ahora el elemento de la matriz ha pasado de cadenas a objetos. Ha realizado este cambio para anticiparse a los clientes que consultan los precios o los tipos de helado que tiene.
+   Agora o elemento da matriz pasou de cadea a obxecto. Realiza este cambio para anticiparse aos clientes que consultan os prezos o os tipos de xeado que tes.
 
 ## Recepción de clientes
 
-Quiere simular algunos escenarios de clientes en el código, para asegurarse de que la manera en que clasificó el inventario é lo suficientemente flexible.
+Queres simular algúns escenarios de clientes no código, para asegurarse de que a maneira en que clasificaches o inventario é o suficientemente flexible.
 
-1. Antes de la primera transacción de cliente, se da cuenta de que necesita unha matriz `transactions`. Empieza a pensar en qué información desea guardar en cada transacción. El precio é definitivamente algo que debe guardar y probablemente también lo que compran los clientes. Agrega el código siguiente:
-
-   
+1. Antes da primeira transacción de cliente, dáste conta de que necesitas unha matriz `transactions`. Empeza a pensar en que información desexas gardar en cada transacción. O prezo é definitivamente algo que debes gardar e probablemente tamén o que compran os clientes. Agrega o código seguinte:
 
    ```javascript
    // { scoops: [], total: }
    let transactions = []
    ```
 
-2. A continuación, decide codificar transacciones mediante la adición del código siguiente:
-
-   
+2. A continuación, decide codificar transaccións mediante a adición do código seguinte:
 
    ```javascript
    transactions.push({ scoops: ["Chocolate", "Vanilla", "Mint Chip"], total: 5.5 })
@@ -57,24 +49,20 @@ Quiere simular algunos escenarios de clientes en el código, para asegurarse de 
    transactions.push({ scoops: ["Vanilla", "Vanilla"], total: 4 })
    ```
 
-   Esto simula tres interacciones de clientes. A continuación, desea analizar el resultado.
+   Isto simula tres interaccións de clientes. A continuación, desexas analizar o resultado.
 
-## Analizar el negocio
+## Analizar o negocio
 
-Cuando se tiene un negocio, los beneficios son importantes, pero no son lo único que importa. ¿Qué é aquello que se vende tanto que necesita asegurarse de que haya existencias suficientes? También, ¿qué é lo que no se vende tanto, por lo que no é necesario tener tantas existencias?
+Cando se ten un negocio, os beneficios son importantes, pero non son o único que importa. Que é aquilo que se vende tanto que necesita asegurarse de que haia existencias suficientes? Tamén, que é o que non se vende tanto, polo que non é necesario ter tantas existencias?
 
-1. Para calcular las ganancias, agregue el código siguiente:
-
-   
+1. Para calcular as ganancias, agrega o código seguinte:
 
    ```javascript
    const total = transactions.reduce((acc, curr) => acc + curr.total, 0);
    console.log(`You've made ${total} $ today`); // You've made 11.5 $ today
    ```
 
-2. Para averiguar cuánto ha vendido de cada sabor, agregue el código siguiente:
-
-   
+2. Para saber canto se vendeu de cada sabor, agrega o código:
 
    ```javascript
    let flavorDistribution = transactions.reduce((acc, curr) => {
@@ -88,60 +76,44 @@ Cuando se tiene un negocio, los beneficios son importantes, pero no son lo únic
    }, {}) // { Chocolate: 1, Vanilla: 3, Mint Chip: 1, Raspberry: 1, StrawBerry: 1 }
    ```
 
-   El código anterior repasa todas las transacciones. Para cada transacción, comprueba la cantidad de bolas de helado y actualiza un diccionario con la frecuencia de compra de cada sabor. Si estas ventas fueran reales, é probable que tuviera que tener más existencias de vainilla.
+   O código anterior repasa todas as transaccións. Para cada transacción, comproba a cantidade de bolas de xeado e actualiza un dicionario coa frecuencia de compra de cada sabor. Si estas ventas foran reais, é probable que tiveras que ter máis existencias de vainilla.
 
-Enhorabuena, ha abierto unha heladería. Ya sabe cómo codificar sabores y transacciones mediante matrices y objetos. También ha aprendido a hacer un resumen de sus ganancias y a identificar la cantidad de helado que ha vendido de cada sabor.
+Noraboa, abriches unha xeadería. Xa sabes como codificar sabores e transaccións mediante matrices e obxectos. Tamén aprendeches a facer un resumo das ganancias e a identificar a cantidade de xeado que se vendeu de cada sabor.
 
+## Resumo
 
+Agora que coñeces as matrices e bucles de JavaScript, podes empezar a pensar en formas de estruturar e organizar os datos no código JavaScript.
 
-# Resumen
+Para practicar o que aprendeches, visita algúns dos teus sitios web favoritos e ten en conta os tipos de datos que usan. Por exemplo, considere a forma en que se agregan e quitan elementos dun carro da compra en liña, ou  a forma como o equipo e as existencias dun xogador se agregan e quitan nun xogo baseado no explorador. Ten en conta por que e como se usan os bucles e matrices.
 
-Agora que conoce las matrices y bucles de JavaScript, puede empezar a pensar en formas de estructurar y organizar los datos en el código JavaScript.
-
-Para practicar lo que ha aprendido, visite algunos de sus sitios web favoritos y tenga en cuenta los tipos de datos que usan. Por exemplo, considere la forma en que se agregan y quitan elementos de un carro de la compra en línea, o la forma como el equipo y las existencias de un jugador se agregan y quitan en un juego basado en explorador. Tenga en cuenta por qué y cómo se usan los bucles y matrices.
-
-A medida que adquiera más conocimientos sobre matrices y bucles, empezará a tener en cuenta estos tipos de datos y métodos de almacenamiento en los sitios web que usa cada día.
+A medida que adquires máis coñecementos sobre matrices e bucles, empezarás a ter en conta estes tipos de datos e métodos de almacenamento nos sitios web que usas cada día.
 
  :pencil2: Suxestión:
 
-Las matrices de JavaScript tienen muchos métodos asociados que son útiles para la manipulación de datos. [Lea estos métodos](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/) y pruebe algunos de ellos (como `push`, `pop`, `slice` y `splice`) en unha matriz que haya creado.
-
-
-
-
-
-
-
-
+As matrices de JavaScript teñen moitos métodos asociados que son útiles para a manipulación de datos. [Le estes métodos](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/) e proba algúns deles (como `push`, `pop`, `slice` e `splice`) nunha matriz que teñas creado.
 
 _______
 
+## Suposto con variables
 
+Como novo programador de xogos, se te encarga a tarefa de crear xogos recreativos para Internet. A primeira tarefa consiste en empezar a traballar no xogo de cartas *Texas Hold'em*. En lugar de que os xogadores aposten diñeiro, se usarán puntos para representar as fichas de póker.
 
-# Suposto con variables
+## Modelado do estado do xogo
 
-Como novo desarrollador de juegos, se le ha encargado la tarea de crear juegos recreativos para Internet. Su primera tarea consiste en  empezar a trabajar en el juego de cartas Texas Hold'em. En lugar de que  los jugadores apuesten dinero, usará puntos para representar las fichas  de póker.
+Debes tomar o que sabes do *Texas Hold'em* e crear variables para almacenar valores de cartas. Ao facelo, debes pensar nos *valores de inicio* e nos valores que cambiarán co tempo.
 
-## Modelado del estado del juego
+Sabes que no *Texas Hold'em* hai xogadores, cartas iniciais e puntos. Intenta montar unha estrutura de xogo básica mediante variables.
 
-Debe tomar lo que sabe de Texas Hold'em y crear variables para almacenar valores de cartas. Al hacerlo, debe pensar en los *valores de inicio* y en los valores que cambiarán con el tiempo.
-
-Sabe que en el Texas Hold'em hay jugadores, cartas iniciales y  puntos. Intente montar unha estructura de juego básica mediante  variables.
-
-1. Cree un arquivo denominado *app.js*:
-
-   Bash
+1. Crea un arquivo denominado *app.js*:
 
 ```bash
 touch app.js
 code .
 ```
 
-Ahora debería tener un editor abierto en el shell.
+Agora deberías ter un editor aberto no shell.
 
-Agregue el siguiente código al arquivo:
-
-JavaScript
+Engade o seguinte código ao arquivo:
 
 ```javascript
 let startingPokerChips = 100; // points
@@ -149,11 +121,9 @@ let players = 3;
 let noOfStarterCards = 2;
 ```
 
-Ahora tiene tres variables para representar el estado inicial del juego.
+Agora tes tres variables para representar o estado inicial do xogo.
 
-Cree variables que representen a jugadores concretos. Agregue el código siguiente:
-
-JavaScript
+Crea variables que representen a xogadores concretos. Agrega o código seguinte:
 
 ```javascript
 let playerOnePoints = startingPokerChips;
@@ -161,31 +131,27 @@ let playerTwoPoints = startingPokerChips;
 let playerThreePoints = startingPokerChips;
 ```
 
-Ha creado los puntos de partida de tres jugadores asignándoles la variable `startingPokerChips`, que contiene el valor `100`.
+Creaches os puntos de partida de tres xogadores asignándolles a variable `startingPokerChips`, que conten o valor `100`.
 
-Muestre unha ronda del juego específica y cómo unha asignación  puede representar un estado del juego. Agregue las siguientes líneas al  código:
-
-JavaScript
+Mostra unha ronda do xogo específica e como unha asignación pode representar un estado do xogo. Agrega as seguintes liñas ao código:
 
 1. ```javascript
    playerOnePoints -= 50;
    playerTwoPoints -=25;
-   playerThreePoints +=75; 
+   playerThreePoints +=75;
    ```
 
-Ha simulado correctamente unha ronda del juego en la que el primer y  el segundo jugador han apostado 50 y 25 puntos respectivamente. Dado que el tercer jugador tiene unha mejor mano, este termina ganando la ronda.  El juego toma los puntos del primer y el segundo jugador y los agrega al bote del tercer jugador.
+Simulaches correctamente unha ronda do xogo na que o primeiro e o segundo xogador apostaron 50 e 25 puntos respectivamente. Dado que o terceiro xogador ten unha mellor man, este termina gañando a ronda. O xogo toma os puntos do primeiro e o segundo xogador e agrégaos ao bote do terceiro xogador.
 
 ## Refactorización a constantes
 
-En este punto, tiene algunas variables que representan partes del  juego de cartas. Recuerde que tiene constantes disponibles, que son  variables que no deben cambiar su valor. Veamos qué variables se podrían prestar para representarse mejor como constantes en el código fuente.
+Neste punto, tes algunhas variables que representan partes do xogo de cartas. Lembra que tes constantes dispoñibles, que son variables que no deben cambiar o seu valor. Vexamos que variables se poderían prestar para representarse mellor como constantes no código fonte.
 
  :pencil2: Suxestión:
 
-Dedique uno o dos minutos a pensar en qué variables no deben cambiar y qué variables podrían tener valores cambiantes. A continuación,  desplácese hacia abajo para ver la solución.
+Dedica un ou dos minutos a pensar en que variables non deben cambiar e que variables poderían ter valores cambiantes. A continuación, desprázate cara abaixo para ver a solución.
 
-1. En la parte superior del arquivo, cambie el código siguiente:
-
-   JavaScript
+1. Na parte superior do arquivo, cambia o código seguinte:
 
 ```javascript
 let startingPokerChips = 100; // points
@@ -193,9 +159,7 @@ let players = 3;
 let noOfStarterCards = 2;
 ```
 
-... por este código:
-
-JavaScript
+... por este outro código:
 
 ```javascript
 const STARTING_POKER_CHIPS = 100; // points
@@ -203,15 +167,13 @@ const PLAYERS = 3;
 const NO_OF_STARTER_CARDS = 2;
 ```
 
-Ha identificado correctamente qué variables son importantes para el  juego. También describen cómo se juega. Las fichas iniciales de un  jugador no cambiarán, incluso si el bote de un jugador determinado  cambia durante el juego. El número de jugadores también é constante, a  menos que imagine que podría recompilar el juego de forma que un jugador pueda unirse en cualquier momento. El número de cartas iniciales  siempre é dos en el Texas Hold'em. Como desarrollador de juegos, tiene  la capacidad de decidir en última instancia qué debe ser modificable y  qué debe ser constante.
+Identificaches correctamente que variables son importantes para o xogo. Tamén describen como se xoga. As fichas iniciais dun xogador non cambiarán, incluso si o bote dun xogador determinado cambia durante o xogo. O número de xogadores tamén é constante, a menos que imaxines que poderías recompilar o xogo de forma que un xogador poida unirse en calquera momento. O número de cartas iniciais sempre son dúas no *Texas Hold'em*. Como programador de xogos, tes a capacidade de decidir en última instancia que debe ser modificable e que debe ser constante.
 
  :pencil2: Suxestión:
 
-Una excelente manera de pensar en las variables é convertir todas  las variables en constantes para empezar. A continuación, decida si el  valor de unha variable tendrá que cambiar en el futuro. En tal caso,  cámbiela de `const` a `let`.
+Unha excelente maneira de pensar nas variables é converter todas as variables en constantes para empezar. A continuación, decide si o valor dunha variable terá que cambiar no futuro. Nese caso, cámbiaa de `const` a `let`.
 
-Asegúrese de cambiar el código dependiente, para que el código se siga compilando:
-
-JavaScript
+Asegúrate de cambiar o código dependente, para que o código se siga compilando:
 
 1. ```javascript
    let playerOnePoints = STARTING_POKER_CHIPS;
@@ -219,31 +181,31 @@ JavaScript
    let playerThreePoints = STARTING_POKER_CHIPS;
    ```
 
-¡Enhorabuena! Ha empezado a trabajar en unha base de código de  JavaScript que implementa Texas Hold'em. Al hacerlo, ha determinado  cuáles son los valores de inicio, qué valores pueden cambiar y cómo  cambiar los valores.
+Noraboa! Empezaches a traballar nunha base de código de JavaScript que desenvolve *Texas Hold'em*. Ao facelo, determinaches cales son os valores de inicio, que valores poden cambiar e como cambiar eses valores.
 
-------
+_______
 
-## Siguiente unidad: Tipos de datos
+## Tipos de datos
 
-# Ejercicio - Tipos de datos
+## Exercicio - Tipos de datos
 
-​				 				Completado 			 			100 XP 		
+​         Completado        100 XP
 
 - 3 minutos
 
 Espacio aislado activado Tiempo restante:
 
-​			
+​
 
-​			 	
+​
 
-Ha usado 1 de los 10 espacios aislados de hoy. Mañana habrá disponibles más espacios aislados.
+Ha usado 1 dos 10 espacios aislados de hoy. Mañana habrá disponibles máis espacios aislados.
 
-Su empresa está satisfecha con el modelado anterior del Texas  Hold'em y desea ver que sigue trabajando en su implementación. Ya sabe  más sobre los tipos de datos, así que vamos a poner esos conocimientos  en práctica.
+Su empresa está satisfecha con o modelado anterior do Texas  Hold'em e desea ver que sigue trabajando en su implementación. Xa sabes máis sobre os tipos de datos, así que imos a poñer eses coñecementos  en práctica.
 
 ## Adición de tipos de datos
 
-Para empezar, vamos a revisar el código siguiente que ha creado hasta ahora:
+Para empezar, vamos a revisar o código seguinte que ha creado hasta ahora:
 
 JavaScript
 
@@ -261,11 +223,9 @@ playerTwoPoints -=25;
 playerThreePoints +=75; 
 ```
 
-Tiene ciertos aspectos del juego representados como variables, pero  carece de otros aspectos, como saber si el juego ha finalizado. Además,  sería bueno que los jugadores tuvieran nombres.
+Ten certos aspectos do xogo representados como variables, pero carece doutros aspectos, como saber si o xogo ha finalizado. Ademais, sería bo que os xogadores tiveran nomes.
 
-1. Después de las tres constantes, agregue el siguiente código:
-
-   JavaScript
+1. Despois das tres constantes, agrega o seguinte código:
 
 ```javascript
 let playerOneName = "Chloe";
@@ -273,9 +233,7 @@ let playerTwoName = "Jasmine";
 let playerThreeName = "Jen";
 ```
 
-Ahora tiene tres variables para representar los nombres de los  jugadores. Vamos a agregar texto de introducción para que se note que é un juego. Después del código siguiente:
-
-JavaScript
+Agora tes tres variables para representar os nomes dos xogadores. Vamos a agregar o texto de introdución para que se note que é un xogo. Despois do código seguinte:
 
 ```javascript
 let playerOnePoints = STARTING_POKER_CHIPS;
@@ -283,31 +241,25 @@ let playerTwoPoints = STARTING_POKER_CHIPS;
 let playerThreePoints = STARTING_POKER_CHIPS;
 ```
 
-... agregue código para representar el inicio del juego:
-
-JavaScript
+... engade o código para representar o inicio do xogo:
 
 1. ```javascript
    console.log(`Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: ${playerOneName}, ${playerTwoName} and ${playerThreeName}. Each player has ${STARTING_POKER_CHIPS} in their pot. We have an exciting game ahead of us. May the best player win!`)
    ```
 
-## Adición de unha condición de fin
+## Adición dunha condición de fin
 
-Una partida de Texas Hold'em puede alargarse durante muchas rondas y  normalmente finaliza cuando un jugador tiene todas las fichas y los  demás jugadores han perdido las suyas. Debe agregar código para  representar este estado. En esta situación conviene confiar en los  operadores y usar un tipo de datos booleano.
+Unha partida de *Texas Hold'em* pode alargarse durante moitas rondas e normalmente finaliza cando un xogador ten todalas fichas e os demais xogadores perderon as súas. Debe agregar código para representar este estado. Nesta situación convén confiar nos  operadores e usar un tipo de datos booleano.
 
-1. Agregue el código siguiente en la parte superior del arquivo:
-
-   JavaScript
+1. Agrega o código seguinte na parte superior do arquivo:
 
 ```javascript
 let gameHasEnded = false;
 ```
 
-Ya tiene unha variable para representar el final del juego. Más  adelante, deberá encontrar unha manera de volver a evaluar el valor de  esta variable y determinar si se debe detener el juego y designar un  ganador.
+Xa tes unha variable para representar o final do xogo. Máis adiante, deberás atopar unha maneira de volver a avaliar o valor desta variable e determinar si se debe deter o xogo e designar un gañador.
 
-Agregue el código siguiente para evaluar el estado del juego:
-
-JavaScript
+Engade o código seguinte para avaliar o estado do xogo:
 
 ```javascript
 gameHasEnded = ((playerOnePoints + playerTwoPoints) == 0) || // three has won
@@ -316,9 +268,7 @@ gameHasEnded = ((playerOnePoints + playerTwoPoints) == 0) || // three has won
 console.log("Game has ended: ", gameHasEnded);
 ```
 
-El código completo debe ser similar al siguiente:
-
-JavaScript
+O código completo debe ser similar ao seguinte:
 
 ```javascript
 const STARTING_POKER_CHIPS = 100; // points
@@ -347,17 +297,13 @@ gameHasEnded = ((playerOnePoints + playerTwoPoints) == 0) || // three has one
 console.log("Game has ended: ", gameHasEnded);
 ```
 
-Para ejecutar el juego, escriba el código siguiente en el terminal:
-
-JavaScript
+Para executar o xogo, escribe o código seguinte na terminal:
 
 ```javascript
 node app.js
 ```
 
-Debería aparecer la salida siguiente:
-
-Resultados
+Debería aparecer a saída seguinte:
 
 1. ```output
    Welcome to Texas Hold'em. The championship title will be awarded to one of these three players: Chloe, Jasmine, and Jen. Each player has 100 in their pot. We have an exciting game ahead of us. May the best player win!
@@ -366,8 +312,6 @@ Resultados
 
  :pencil2: Suxestión:
 
-Pruebe a cambiar `playerOnePoints` y `playerTwoPoints` a `0` y vuelva a ejecutar la aplicación. ¿Hay alguna diferencia en el resultado?
+Proba a cambiar `playerOnePoints` e `playerTwoPoints` a `0` e volve a executar a aplicación. Hai alguna diferencia no resultado?
 
-------
-
-## Siguiente unidad: Resumen
+_______

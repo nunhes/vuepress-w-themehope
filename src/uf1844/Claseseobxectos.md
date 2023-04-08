@@ -1,4 +1,4 @@
-Claseseobxectos
+# Clases e obxectos
 
 **Por que necesitamos clases e obxectos?**
 
@@ -35,8 +35,6 @@ Para crear unha nova instancia dun obxecto temos a nova palabra clave:
 $person1 = new Person('Duilio','Palacios');
 ```
 
-
-
 Agora vexamos que función cumpre o método construtor:
 
 ```php
@@ -46,8 +44,6 @@ function __construct($firstName, $lastName)
     $this->lastName  = $lastName;
 }
 ```
-
-
 
 Dentro do código dun constructor, adoitan asignarse os valores dalgunhas ou de todas as propiedades do devandito obxecto, co fin de garantir que o obxecto se crea con valores iniciais. Así, execútase un método construtor cada vez que se crea unha instancia da clase. Non é obrigatorio ter un, pero adoitan ser bastante útiles. No noso exemplo, cando se inicia un obxecto de tipo Persoa, asignará as propiedades $firstName e $lastName cos datos que colocamos cando creamos unha instancia do noso obxecto.
 
@@ -100,16 +96,12 @@ class Phone
 $nokia = new Phone('Nokia', 'Blanco', 'Movistar');
 ```
 
-
-
 Como se puido observar, as características forman parte das propiedades do obxecto, definidas en variables, e as funcións son as accións ou métodos que pode levar a cabo dito obxecto. Temos que usar o símbolo `->` para interactuar con estas propiedades e métodos:
 
 ```php
 echo $nokia->call(); // Estoy llamando a otro móvil
 echo $nokia->color; // Imprimirá Blanco
 ```
-
-
 
 #### Exercicios propostos
 

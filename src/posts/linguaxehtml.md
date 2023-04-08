@@ -13,7 +13,7 @@ star: true
 
 # HTML
 
-## 1. 
+## 1
 
 HTML, unha abreviatura de Hyper Text Markup Language, é un dos bloques de construción máis fundamentais da web.
 
@@ -329,8 +329,7 @@ As etiquetas anidadas deben estar sangradas con 2 ou 4 caracteres, dependendo da
 ```
 
 > Nota: esta función de "espazo en branco non é relevante" significa que se queres engadir espazo adicional, podes enloquecer. Suxiro que use CSS para facer máis espazo cando sexa necesario.
-
-> Nota: en casos especiais, podes usar a ` ` entidade HTML (un acrónimo que significa *espazo que non se rompe* ) - máis sobre as entidades HTML máis adiante. Creo que isto non se debe abusar. Sempre se prefire CSS para alterar a presentación visual.
+> Nota: en casos especiais, podes usar a entidade HTML `&nbsp;` (un acrónimo que significa *espazo que non se rompe* ) - máis sobre as entidades HTML máis adiante. Creo que isto non se debe abusar. Sempre se prefire CSS para alterar a presentación visual.
 
 ## 3. O encabezamento do documento - `head`
 
@@ -1018,7 +1017,7 @@ A etiqueta `header` representa unha parte da páxina que é a introdución. Por 
 ```html
 <article>
   <header>
-	  <h1>Article title</h1>
+    <h1>Article title</h1>
   </header>
   ...
 </div>
@@ -1088,7 +1087,7 @@ Podes especificar o URL mediante o `action`parámetro:
 
 Isto fará que o navegador envíe os datos do formulario mediante POST ao `/new-contact`URL da mesma orixe.
 
-Se a orixe (protocolo + dominio + porto) é `https://ambosass.com`(o porto 80 é o predeterminado), isto significa que os datos do formulario enviaranse a `https://ambosass.com/new-contact `.
+Se a orixe (protocolo + dominio + porto) é `https://ambosass.com`(o porto 80 é o predeterminado), isto significa que os datos do formulario enviaranse a `https://ambosass.com/new-contact`.
 
 Falei de datos. Que datos?
 
@@ -2021,7 +2020,7 @@ Xa que o facemos, tamén necesitamos usar o atributo `sizes`:
 
 Neste exemplo, a `(max-width: 500px) 100vw, (max-width: 900px) 50vw, 800px`cadea do atributo `sizes` describe o tamaño da imaxe en relación coa ventana gráfica, con varias condicións separadas por coma.
 
-A condición do medio `max-width: 500px ` establece o tamaño da imaxe en correlación co ancho da ventana gráfica. En resumo, se o tamaño da xanela é < 500px, renderiza a imaxe ao 100% do tamaño da xanela.
+A condición do medio `max-width: 500px` establece o tamaño da imaxe en correlación co ancho da ventana gráfica. En resumo, se o tamaño da xanela é < 500px, renderiza a imaxe ao 100% do tamaño da xanela.
 
 Se o tamaño da xanela é maior pero < `900px`, renderiza a imaxe ao 50 % do tamaño da xanela.
 
@@ -2227,8 +2226,6 @@ Este atributo permítenos asociar un elemento con outro elemento que serve de de
 Gústame un deseño minimalista nos meus sitios. O meu blog, por exemplo, é principalmente contido, con algunhas ligazóns na barra lateral. Pero algunhas cousas da barra lateral son só elementos visuais que non se  suman á experiencia dunha persoa que non pode ver a páxina. Como a imaxe do meu logotipo ou o selector de temas escuros/brillantes.
 
 Engadir o atributo `aria-hidden="true"` indicará aos lectores de pantalla que ignoren ese elemento.
-
-
 ....
 
-*in progress*
+\* *in progress*

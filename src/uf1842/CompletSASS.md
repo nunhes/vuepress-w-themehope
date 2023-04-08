@@ -6,7 +6,7 @@ Segundo a definición do [Glosario de Mozilla](https://developer.mozilla.org/en-
 
 *Un **preprocesador CSS** é un programa que permite xerar [CSS](https://developer.mozilla.org/en-US/docs/Glossary/CSS) a partir da [sintaxe](https://developer.mozilla.org/en-US/docs/Glossary/Syntax) propia do preprocesador*. Hai moitos preprocesadores CSS entre os que escoller: [Sass](https://sass-lang.com/), [Less](https://lesscss.org/), [Stylus](https://stylus-lang.com/),…
 
-Os preprocesadores, asemade, amplían as capacidades predeterminadas de CSS con características como mixins, selector de aniñado, selector de herdanza, funcións, operacións matemáticas, etc. 
+Os preprocesadores, asemade, amplían as capacidades predeterminadas de CSS con características como mixins, selector de aniñado, selector de herdanza, funcións, operacións matemáticas, etc.
 
 O que non ten dubida é que **os preprocesadores contribúen a elaborar un código CSS con maior lóxica estrutural, máis lexible e máis fácil de manter e de escalar**.
 
@@ -14,17 +14,13 @@ Os preprocesadores CSS facilitan a automatización de tarefas repetitivas, reduc
 
 Para usar un preprocesador CSS, debes dispor dun compilador CSS operativo no teu [servidor](https://developer.mozilla.org/en-US/docs/Glossary/Server) web. Ou usar un preprocesador CSS para compilar no contorno de desenvolvemento e logo cargar o **arquivo CSS compilado** no servidor web.
 
-
-
 *Moitos coñecidos frameworks de CSS engaden nas súas distribucións o código precompilado. Coñecer estas linguaxes abre a posibilidade de traballar con estes frameworks dun xeito máis intelixente e produtivo.*
-
-
 
 ## Sass: Syntactically Awesome Style Sheet
 
 ![Syntactically Awesome Style Sheet](./assets/sass-lang-site.png)
 
-[Sass](https://sass-lang.com/) foi lanzado no 2006, polo que é o preprocesador CSS máis antigo. Os seus creadores, Natalie Weizenbaum e Hampton Catlin, inspiráronse na linguaxe de modelos [Haml](http://haml.info/) que engade características dinámicas ao HTML. O obxectivo era atopar unha funcionalidade dinámica similar para CSS. 
+[Sass](https://sass-lang.com/) foi lanzado no 2006, polo que é o preprocesador CSS máis antigo. Os seus creadores, Natalie Weizenbaum e Hampton Catlin, inspiráronse na linguaxe de modelos [Haml](http://haml.info/) que engade características dinámicas ao HTML. O obxectivo era atopar unha funcionalidade dinámica similar para CSS.
 
 Cando deron co seu preprocesador CSS chamárono *follas de estilo sinteticamente impresionantes*: Syntactically Awesome Style Sheets. Sass permite aos desenvolvedores de frontend usar variables, instrucións ``if/else``, bucles ``for/while/each``, herdanza e lóxica computacional no noso código CSS.
 
@@ -49,9 +45,7 @@ Sass ten dúas sintaxes:
     background: $primary-bg
   ```
 
-  
-
-- E outra sintaxe máis recente, máis utilizada, e que permite unha sintaxe CSS estándar con chaves, puntos e comas. E se garda en arquivos coa extensión **`.scss`**. 
+- E outra sintaxe máis recente, máis utilizada, e que permite unha sintaxe CSS estándar con chaves, puntos e comas. E se garda en arquivos coa extensión **`.scss`**.
 
   ```scss
   /* SCSS */
@@ -64,8 +58,6 @@ Sass ten dúas sintaxes:
     background: $primary-bg;
   }
   ```
-
-  
 
 O código simplemente declara dúas variables, `$primary-color` e `$primary-bg` e como aplica-las no elemento `body`.
 
@@ -88,27 +80,27 @@ Vexamos outro exemplo:
 /Sass*/
 
 .container
-	float: left
-	width: 100%
-	p
-		color: #222
+ float: left
+ width: 100%
+ p
+  color: #222
 ```
 
 ```SCSS
 /SCSS*/
 
 .container{
-	float: left;
-	width: 100%;
+ float: left;
+ width: 100%;
         p {
-		color: #222;
+  color: #222;
     }
 }
 ```
 
 *Proponte adiviñar o resultado da compilación.*
 
-*Par comprobar de xeito rápido a efectividade de Sass/SCSS podes empregar https://codepen.io/. Entre as características de configuración dispón da posibilidade de activar calquera dos preprocesadores CSS máis coñecidos: Less, SCSS, Sass, Stylus ou PostCSS*.
+*Par comprobar de xeito rápido a efectividade de Sass/SCSS podes empregar <https://codepen.io/>. Entre as características de configuración dispón da posibilidade de activar calquera dos preprocesadores CSS máis coñecidos: Less, SCSS, Sass, Stylus ou PostCSS*.
 
 ### Características
 
@@ -229,11 +221,11 @@ As follas de estilo son cada vez máis grandes, máis complexas e máis difícil
 
 O poder inicial de Sass radica na liña de comandos.
 
-**Instalar en calquera lugar (autónomo)**
+&rarr; **Instalar en calquera lugar (autónomo)**
 
-Podes instalar Sass en Windows, Mac ou Linux descargando o paquete para o teu sistema operativo [desde GitHub](https://github.com/sass/dart-sass/releases/tag/1.38.0) e [engadíndoo ao teu`PATH`](https://katiek2.github.io/path-doc/) 
+Podes instalar Sass en Windows, Mac ou Linux descargando o paquete para o teu sistema operativo [desde GitHub](https://github.com/sass/dart-sass/releases/tag/1.38.0) e [engadíndoo ao teu`PATH`](https://katiek2.github.io/path-doc/)
 
-**Instalar en calquera lugar (npm)**
+&rarr; **Instalar en calquera lugar (npm)**
 
 Se usas Node.js, tamén podes instalar Sass usando [npm](https://www.npmjs.com/) executando
 
@@ -247,15 +239,13 @@ Se usas [o xestor de paquetes Chocolatey](https://chocolatey.org/) para Windows,
 choco install sass
 ```
 
-**Instalar en Mac OS X ou Linux (Homebrew)**
+&rarr; **Instalar en Mac OS X ou Linux (Homebrew)**
 
 Se usas [o xestor de paquetes Homebrew](https://brew.sh/) para Mac OS X ou Linux, podes instalar Dart Sass executando
 
 ```bash
 brew install sass/sass/sass
 ```
-
-
 
 Unha vez instalado Sass, poderás compilar o teu Sass en CSS usando o comando `sass` . Só terás que indicarlle a Sass desde que arquivo construír e onde darlle saída ao CSS compilado. Desde a túa terminal pode facelo:
 
@@ -265,15 +255,15 @@ sass input.scss output.css
 
 E así Sass compilaría `input.scss` , o arquivo orixe, devolvendo o CSS compilado no arquivo `output.css`.
 
-Tamén podemos empregar o marcador `--watch`  para vixiar os cambios nos arquivos de orixe e que se volvan a compilar cada vez que gardamos o Sass. 
+Tamén podemos empregar o marcador `--watch`  para vixiar os cambios nos arquivos de orixe e que se volvan a compilar cada vez que gardamos o Sass.
 
-```
+```json
 sass --watch input.scss output.css
 ```
 
 Por suposto se poden compilar e dar saída a directorios. So temos que empregar os camiños de cartafol de entrada e de saída, separándoos con dous puntos. Neste exemplo:
 
-```
+```json
 sass --watch app/sass:public/stylesheets
 ```
 
@@ -408,8 +398,6 @@ body
   color: white
 ```
 
-
-
 ```SCSS
 // _base.scss
 $font-stack:    Helvetica, sans-serif;
@@ -445,8 +433,6 @@ body {
 ```
 
 :eye:  Como se ve, estamos a usar `@use 'base';` no arquivo `styles.scss`. Cando usamos un arquivo non se precisa incluír a extensión do mesmo. Sass descubrirao sen máis.
-
-
 
 ### Mixins
 
@@ -510,9 +496,9 @@ En CSS, algunhas cousas son un pouco teimosas de escribir. Con CSS3 e os moitos 
 
 Como se ve no exemplo, para crear un *mixin* se usa a directiva `@mixin` e se lle da un nome. Aquí chamamos ao *mixin*: `theme`. Tamén estamos a usar a variable `$theme` entre parénteses para poder pasar a `theme` todo o que queiramos. Despois de crear o seu mixin, pode usalo como declaración CSS QUE comeza `@include`seguido do nome do mixin.
 
-###  *Extend/Inheritance*
+### *Extend/Inheritance*
 
-Pode que esta sexa unha das características máis útiles de Sass. Usar `@extend` permite compartir un conxunto de propiedades CSS dun selector con outro. 
+Pode que esta sexa unha das características máis útiles de Sass. Usar `@extend` permite compartir un conxunto de propiedades CSS dun selector con outro.
 
 No seguinte exemplo, se crea unha sinxela serie de mensaxes para erros, avisos e éxitos usando outra característica que vai parella ás clases de marcador de posición ampliadas. Unha clase de marcador de posición é un tipo de clase especial que só imprime cando se amplía e pode axudarnos a manter o CSS compilado ordenado e limpo.
 
@@ -737,14 +723,9 @@ Agora, no noso `custom.scss`, importaremos os arquivos Sass de orixe de Bootstra
   // 5. Engade aquí o código personalizado adicional
   ```
 
-
-
-
-
 __
 
-###### RECURSOS:
+\_ ***RECURSOS***
 
-- Ferramentas: 
-  - https://scout-app.io/   Preprocesador GUI
-
+- Ferramentas:
+  - <https://scout-app.io/>   Preprocesador GUI

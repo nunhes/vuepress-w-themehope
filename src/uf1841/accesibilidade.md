@@ -1,4 +1,4 @@
-Accessible Rich Internet Applications **(ARIA)** é unha colección de atributos que definen como realizar contido e  aplicacións web (especialmente as desenvoltas con Javascript) máis  accesibles para as persoas con discapacidades.
+# Accesibilidade
 
 Complementa HTML para que as interaccións e os widgets[^1] que se usan nas aplicacións poidan ser correctamente interpretadas polas tecnoloxías de asistencia.
 
@@ -56,13 +56,13 @@ O atributo `aria-label` especifica unha cadea que etiqueta o elemento actual. Ax
 
 Como sabemos, as etiquetas son importantes, xa que nos axudan a crear unha  conexión lóxica entre un elemento e a súa descrición. Por exemplo, no caso dos elementos HTML podemos usar a súa etiqueta para especificar que se trata dun `<p>`, un  `<input>`, ou outros. Non obstante, cando non hai unha etiqueta que indique o cometido do elemento ou que poida funcionar como etiqueta, daquela podemos usar o atributo ``aria-label`` .
 
-Por defecto, un elemento HTML usa o seu contido de texto como etiqueta de accesibilidade. 
+Por defecto, un elemento HTML usa o seu contido de texto como etiqueta de accesibilidade.
 
 *``<p>`` &rarr; ``p`` &rarr; ``p`` é a etiqueta de accesibilidade que indica que isto é un paragrafo.*
 
 Cando o elemento ten o atributo ``aria-label`` , a súa cadea de valor convértese na etiqueta de accesibilidade.
 
-Se hai unha cadea visible que etiquete o elemento, en lugar de ``aria-label ``, podes usar o atributo ``aria-labelledby`` .  
+Se hai unha cadea visible que etiquete o elemento, en lugar de ``aria-label``, podes usar o atributo ``aria-labelledby`` .  
 
 ## Como usar ``aria-label``
 
@@ -98,7 +98,7 @@ Vexamos outro exemplo, onde usamos o atributo ``aria-label`` na etiqueta ``<a>``
 </html>
 ```
 
-- https://developer.mozilla.org/en-US/docs/Web/Accessibility
-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes
+- [https://developer.mozilla.org/en-US/docs/Web/Accessibility](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+- [https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes)
 
 [^1]: aplicación ou compoñente de software relativamente sinxelo e fácil de usar.

@@ -4,15 +4,13 @@
 
 Imos revisar unha interesante ferramenta:
 
-- que é compatible con todos os sistemas operativos que se  empregan nestes días, 
+- que é compatible con todos os sistemas operativos que se  empregan nestes días,
 
-- que permite a usuarios de todo o mundo realizar operacións nun proxecto de xeito remoto, 
+- que permite a usuarios de todo o mundo realizar operacións nun proxecto de xeito remoto,
 
-- é lixeira, segura e fiable (a lista continúa ) 
+- é lixeira, segura e fiable (a lista continúa )
 
   pero, semella que resulta algo difícil de comprender. Falamos de **Git
-
-  
 
 [![imaxe](https://res.cloudinary.com/practicaldev/image/fetch/s--n6W9zrpD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ibup0b2uyveisalcmczs.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--n6W9zrpD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ibup0b2uyveisalcmczs.png)
 
@@ -145,7 +143,7 @@ Para ignorar os arquivos que non desexa que se rastrexe nin se engada á área *
 
 Dentro do arquivo, pode listar o nome de todos os arquivos e cartafoles dos que non quere seguir (cada arquivo e cartafol ignorado debería ir a unha nova liña dentro do arquivo **.gitignore** ).
 
-Para profundizar na ignoración de arquivos, podes consultar este artigo de GitHub: https://docs.github.com/en/github/using-git/ignoring-files
+Para profundizar na ignoración de arquivos, podes consultar este artigo de GitHub: [https://docs.github.com/en/github/using-git/ignoring-files](https://docs.github.com/en/github/using-git/ignoring-files)
 
 ## Pólas
 
@@ -199,19 +197,19 @@ Para eliminar unha rama, pode executar o comando git branch coa bandeira -d:
 
 [![carbono (6)](https://res.cloudinary.com/practicaldev/image/fetch/s--z9E2w45m--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wf1zuw102c78pwr4t50x.png)](https://res.cloudinary.com/practicaldev/image/fetch/s--z9E2w45m--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wf1zuw102c78pwr4t50x.png)
 
-### Está ben, este artigo remata aquí.
+### Está ben, este artigo remata aquí
 
 Así é todo para este artigo, hai moito máis de Git do que non falamos (definitivamente farémolo ás veces máis tarde).
 
 Deixándovos algúns recursos👇:
 
-Documentación oficial de Git: https://git-scm.com/doc
-O libro gratuíto de Pro Git: https://git-scm.com/book/en/v2
-Máis información sobre GitHub: https://guides.github.com/
-Libro electrónico sobre como comezar con Git e GitHub (suxerido polo usuario Bobby Iliev): https://github.com/bobbyiliev/introduction-to-git-and-github-ebook
+Documentación oficial de Git: [https://git-scm.com/doc](https://git-scm.com/doc)
+O libro gratuíto de Pro Git: [https://git-scm.com/book/en/v2](https://git-scm.com/book/en/v2)
+Máis información sobre GitHub: [https://guides.github.com/](https://guides.github.com/)
+Libro electrónico sobre como comezar con Git e GitHub (suxerido polo usuario Bobby Iliev): [https://github.com/bobbyiliev/introduction-to-git-and-github-ebook](https://github.com/bobbyiliev/introduction-to-git-and-github-ebook)
 
 Paz
 
 ____
 
-ref.: https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85
+***\_ref.:*** [https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85](https://dev.to/exwhyzed/how-to-git-a-complete-beginners-guide-1h85)

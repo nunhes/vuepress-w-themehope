@@ -1,4 +1,6 @@
-###### Obxectivos
+# Creación de páxinas web accesibles
+
+&rarr; **Obxectivos**
 
 - *Dereito a accesibilidade*
 - *Importancia da accesibilidade*
@@ -7,10 +9,6 @@
 - Tools that users use to browse through webpages.
 - Tools that developers use to ensure accessibility.
 - Skills for ensuring that your pages are accessible.
-
-
-
-# Creación de páxinas web accesibles
 
 [![Todo sobre a accesibilidade](https://github.com/microsoft/Web-Dev-For-Beginners/raw/main/sketchnotes/webdev101-a11y.png)](https://github.com/microsoft/Web-Dev-For-Beginners/blob/main/sketchnotes/webdev101-a11y.png)
 
@@ -34,7 +32,7 @@ Obtén máis información sobre os [principios reitores de POUR (WebAIM)](http:/
 >
 > Tim Berners-Lee, director do W3C e inventor da World Wide Web
 
-Esta cita destaca perfectamente a importancia de crear sitios web accesibles. Unha aplicación á que non todos poden acceder é por definición excluínte. **Como desenvolvedores web, debemos ter sempre presente a accesibilidade**. Ao ter este interese desde o principio, estarás ben encamiñado para asegurarte de que todos poidan acceder ás páxinas que crees. 
+Esta cita destaca perfectamente a importancia de crear sitios web accesibles. Unha aplicación á que non todos poden acceder é por definición excluínte. **Como desenvolvedores web, debemos ter sempre presente a accesibilidade**. Ao ter este interese desde o principio, estarás ben encamiñado para asegurarte de que todos poidan acceder ás páxinas que crees.
 
 ## Ferramentas a utilizar
 
@@ -72,6 +70,8 @@ Na área de ferramentas para desenvolvedores do teu navegador, atoparás a ferra
 
 #### Xeración de puntuación de accesibilidade dunha páxina con Lighthouse
 
+![Captura de pantalla das ferramentas de desenvolvemento có botón de contido adicional resaltado.](./assets/choose-tab.png)
+
 Proba Lighthouse no explorador. Nas capturas de pantalla seguintes úsase Edge, pero podes seguir os mesmos pasos en Chrome e outros navegadores.
 
 1. Abre o explorador e vai até á páxina web principal de Microsoft.
@@ -80,21 +80,19 @@ Proba Lighthouse no explorador. Nas capturas de pantalla seguintes úsase Edge, 
 
 3. Na parte superior, selecciona o botón de contido adicional (>>) para abrir a lista de pestanas ocultas.
 
-![Captura de pantalla das ferramentas de desenvolvemento có botón de contido adicional resaltado.](./assets/choose-tab.png)
-
 4. Selecciona Lighthouse na lista.
 
 5. En Categories (Categorías), desactiva tódolos elementos, excepto Accessibility (Accesibilidade).
 
 6. En Device (Dispositivo), selecciona Desktop (Escritorio).
 
-![Captura de pantalla de Lighthouse con Accessibility (Accesibilidad) seleccionado en Categories (Categorías), e Desktop (Escritorio) seleccionado en Device (Dispositivo).](./assets/lighthouse-option-selection.png)
-
 7. Selecciona 'Generate report' (Xerar informe).
 
 8. Observa a puntuación e a información asociada sobre a páxina.
 
 9. Para probar outras páxinas, selecciona Clear all (Borrar todo) en Lighthouse, vai a outra páxina e, a continuación, selecciona Generate report (Xerar informe).
+
+![Captura de pantalla de Lighthouse con Accessibility (Accesibilidad) seleccionado en Categories (Categorías), e Desktop (Escritorio) seleccionado en Device (Dispositivo).](./assets/lighthouse-option-selection.png)
 
 ![Captura de pantalla da sección de URL de Lighthouse, có botón para borrar todos os elementos resaltado.](./assets/lighthouse-clear.png)
 
@@ -106,7 +104,7 @@ A accesibilidade é un tema ben extenso. Para axudarche a entedela hai moitos re
 
 - [U accesible - Universidade de Minnesota](https://accessibility.umn.edu/your-role/web-developers) (é un sitio para encetar)
 
-Aínda que non poderemos cubrir todos os aspectos da creación de sitios accesibles, alo menos vexamos algúns dos principios fundamentais que é importante coñecer e implementar. 
+Aínda que non poderemos cubrir todos os aspectos da creación de sitios accesibles, alo menos vexamos algúns dos principios fundamentais que é importante coñecer e implementar.
 
 **Deseñar unha páxina accesible desde o principio sempre é máis fácil que volver a unha páxina existente para facela accesible.**
 
@@ -143,9 +141,7 @@ Os hipervínculos son fundamentais para navegar pola web. Como resultado, garant
 Os lectores de pantalla len o texto das ligazóns do mesmo xeito que lerían calquera outro texto da páxina. Tendo isto en conta, o texto que se mostra a continuación pode parecer perfectamente aceptable.
 
 > O pingüín pequeno, ás veces coñecido como o pingüín das fadas, é o pingüín máis pequeno do mundo. [Fai clic aquí](https://en.wikipedia.org/wiki/Little_penguin) para obter máis información.
-
 > O pingüín pequeno, ás veces coñecido como o pingüín das fadas, é o pingüín máis pequeno do mundo. Visita [en.wikipedia.org/wiki/Little_penguin](https://en.wikipedia.org/wiki/Little_penguin) para obter máis información.
-
 > **NOTA** Como estás a piques de ler, **nunca** debes crear ligazóns que se parezan ás anteriores.
 
 **Lembra que os lectores de pantalla son unha interface diferente dos navegadores cun conxunto de funcións diferente.**
@@ -168,7 +164,7 @@ Un bo texto da ligazón describe brevemente o que hai no outro lado da ligazón.
 
 #### Unha mellora dobre
 
-Garantir que o teu sitio sexa accesible para todos, axudará aos motores de busca a navegar polo teu sitio tamén. Os motores de busca usan o texto das ligazóns para coñecer os temas das páxinas. Entón, usar un bo texto nos enlaces resulta asemade unha moi boa estratexía de SEO orgánico. 
+Garantir que o teu sitio sexa accesible para todos, axudará aos motores de busca a navegar polo teu sitio tamén. Os motores de busca usan o texto das ligazóns para coñecer os temas das páxinas. Entón, usar un bo texto nos enlaces resulta asemade unha moi boa estratexía de SEO orgánico.
 
 ### ARIA
 
@@ -187,7 +183,7 @@ Neste tipo de escenarios, HTML admite un conxunto de atributos coñecidos como [
 
 Podes usar `aria-label` para describir unha ligazón cando o formato da páxina non o permita. A descrición do widget podería establecerse como
 
-```
+```html
 < a href =" # " aria-label =" Descrición do widget " > descrición </ a >   
 ```
 
@@ -202,7 +198,7 @@ Podes usar `aria-label` para describir unha ligazón cando o formato da páxina 
 
 ## Imaxes
 
-Os lectores de pantalla non poden ler automaticamente o que hai nunha imaxe. Asegurar que as imaxes sexan accesibles non leva moito traballo; é para o que serve o atributo  `alt`. **Todas as imaxes significativas deben ter un `alt` para describir o que son**. 
+Os lectores de pantalla non poden ler automaticamente o que hai nunha imaxe. Asegurar que as imaxes sexan accesibles non leva moito traballo; é para o que serve o atributo  `alt`. **Todas as imaxes significativas deben ter un `alt` para describir o que son**.
 
 As imaxes que sexan puramente decorativas deberían ter o seu atributo `alt` definido cunha cadea baleira: `alt=""`. Isto evita que os lectores de pantalla anuncien innecesariamente a imaxe decorativa.
 
@@ -216,20 +212,15 @@ Algúns usuarios non poden usar un rato ou un panel táctil, e confían no tecla
 
 ## Lembra
 
-Unha web accesible só para un poucos non é unha "web mundial". 
+Unha web accesible só para un poucos non é unha "web mundial".
 
 A mellor forma de garantir que os sitios que creas sexan accesibles é incorporar as mellores prácticas de accesibilidade desde o principio. Aínda que teñas que escribir algo máis de código, e aprender a incorporar estas habilidades ao teu fluxo de traballo, facer as túas páxinas accesibles significará moito para moita xente.
 
 E demostrará que sabes resolver dous problemas dunha vez. :champagne:
 
-
-
-
-
 ## 🚀 Desafío
 
 Toma este HTML e reescribío para que sexa o máis accesible posible, dadas as estratexias que aprendeches.
-
 
 ```html
 <!DOCTYPE html>
@@ -255,7 +246,7 @@ Toma este HTML e reescribío para que sexa o máis accesible posible, dadas as e
     </div>
     <div class="main-content">
       <div>
-        <p class="page-title">Welcome to Turtle Ipsum. 
+        <p class="page-title">Welcome to Turtle Ipsum.
             <a href="">Click here</a> to learn more.
         </p>
         <p class="article-text">
@@ -281,19 +272,11 @@ Toma este HTML e reescribío para que sexa o máis accesible posible, dadas as e
 </html>
 ```
 
-
-
-
-
 ## :book: Revisión e autoestudo
 
 Moitos gobernos teñen leis sobre requisitos de accesibilidade. Consulta as leis de accesibilidade do teu país de orixe. Que está cuberto e que non? Un exemplo é [este sitio web do goberno](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2018-12699) .
 
-
-
-**.ref**: https://accessibility.umn.edu/your-role/web-developers
-
-
+**.ref**: [https://accessibility.umn.edu/your-role/web-developers](https://accessibility.umn.edu/your-role/web-developers)
 
 ## Desenvolver un sitio accesible. Plan de Acción
 
@@ -329,13 +312,11 @@ Estamos codificando para que a información sexa accesible ás persoas que usan 
 
 **No proceso desordenado para conseguir codificar un sitio web** ou unha aplicación web, é fácil esquecer ou renunciar á accesibilidade. Recomendamos estas estratexias:
 
-- Crea e utiliza unha lista de verificación para programadores mentres traballas. 
-    - [Listas de verificación de exemplo](http://webaim.org/standards/wcag/checklist): lista de verificación [WebAIM](http://webaim.org/standards/wcag/checklist) e [lista de verificación do proxecto A11y](http://a11yproject.com/checklist.html)
-- Fai unha [declaración de accesibilidade como parte do teu modelo de confirmación de código](https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template).  
+- Crea e utiliza unha lista de verificación para programadores mentres traballas.
+  - [Listas de verificación de exemplo](http://webaim.org/standards/wcag/checklist): lista de verificación [WebAIM](http://webaim.org/standards/wcag/checklist) e [lista de verificación do proxecto A11y](http://a11yproject.com/checklist.html)
+- Fai unha [declaración de accesibilidade como parte do teu modelo de confirmación de código](https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template).
 - Fai que as [probas](https://accessibility.umn.edu/node/296) básicas de [accesibilidade](https://accessibility.umn.edu/node/296) formen parte do proceso de garantía de calidade ou de aceptación do usuario.
 - Fai da accesibilidade un requisito creando unha [historia de usuario](http://www.interactiveaccessibility.com/blog/how-write-user-stories-accessibility-requirements) para cada proxecto.xº
-
-
 
 ## Proba
 
@@ -345,8 +326,6 @@ Desprázate por un par de páxinas mediante un lector de pantalla. Abre un sitio
 
 ![Fai a túa web accesible](./assets/make-compliant-website.png)
 
-
-
 Máis información: [interactiveaccessibility](https://interactiveaccessibility.com/blog/how-write-user-stories-accessibility-requirements)
 
 [Fai a túa web accesible](https://www.webfx.com/blog/marketing/do-websites-have-to-be-ada-compliant/)
@@ -355,10 +334,8 @@ Máis información: [interactiveaccessibility](https://interactiveaccessibility.
 
 [Accesibilidade segundo Google](https://developers.google.com/web/fundamentals/accessibility)
 
-
 Podes tomar esta lección en [Microsoft Learn](https://docs.microsoft.com/learn/modules/web-development-101/accessibility?WT.mc_id=academic-13441-cxa)
 
-
-
+---
 OUT 2021
 Revisión Nov 2021

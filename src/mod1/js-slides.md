@@ -177,7 +177,7 @@ Creado inicialmente como unha linguaxe só para o navegador, pero agora se empre
 
 <!-- .slide: data-auto-animate -->
 
-## 2.
+## 2
 
 ---
 
@@ -187,15 +187,15 @@ Creado inicialmente como unha linguaxe só para o navegador, pero agora se empre
 
 [A especificación ECMA-262](https://www.ecma-international.org/publications/standards/Ecma-262.htm) conten a información máis exhaustiva, detallada e formal sobre JavaScript. Nela se define a linguaxe. Polo se estilo formal, é difícil de entender de primeiras. É a fonte de información máis fiable sobre os detalles da linguaxe, pero non para o uso diario.
 
-Cada ano se publica unha nova especificación. Mentres, o último borrador da especificación se pode consultar en https://tc39.es/ecma262/.
+Cada ano se publica unha nova especificación. Mentres, o último borrador da especificación se pode consultar en [https://tc39.es/ecma262/](https://tc39.es/ecma262/).
 
-Para ler acerca das novas prestacións de vangarda da linguaxe, incluíndo aquelas que son “casi-estándar” (o denominado “stage 3”): https://github.com/tc39/proposals.
+Para ler acerca das novas prestacións de vangarda da linguaxe, incluíndo aquelas que son “case-estándar” (o denominado “stage 3”): [https://github.com/tc39/proposals](https://github.com/tc39/proposals).
 
 <!-- .element: class="r-fit-text" -->
 
-#### Manuais
+### Manuais
 
-**[MDN (Mozilla) JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference.)** é o manual principal, con exemplos e outras informacións. 
+**[MDN (Mozilla) JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference.)** é o manual principal, con exemplos e outras informacións.
 
 <!-- .slide: data-auto-animate  -->
 
@@ -205,8 +205,8 @@ JavaScript é unha linguaxe en evolución, regularmente se agregan novas caracte
 
 Para ver a compatibilidade cos navegadores e outros motores, consultar:
 
-- https://caniuse.com – táboas de compatibilidade por característica. Por exemplo, para comprobar que motores soportan funcións modernas de criptografía: https://caniuse.com/#feat=cryptography.
-- https://kangax.github.io/compat-table – táboa de compatibilidade das prestacións da linguaxe por motor.
+- [https://caniuse.com](https://caniuse.com) – táboas de compatibilidade por característica. Por exemplo, para comprobar que motores soportan funcións modernas de criptografía: [https://caniuse.com/#feat=cryptography](https://caniuse.com/#feat=cryptography).
+- [https://kangax.github.io/compat-table](https://kangax.github.io/compat-table) – táboa de compatibilidade das prestacións da linguaxe por motor.
 
 <!-- .element: class="r-fit-text" -->
 
@@ -216,7 +216,7 @@ Para ver a compatibilidade cos navegadores e outros motores, consultar:
 
 <!-- .slide: data-auto-animate  -->
 
-## O código é propenso a erros. Así que *definitivamente* vas a cometer erros.
+## O código é propenso a erros. Así que *definitivamente* vas a cometer erros
 
 ![Logo](/logo.svg)
 
@@ -226,7 +226,7 @@ Pero o navegador, de forma predeterminada, non mostra os errores ao usuario. Daq
 
 Para ver os erros, e obter outra moita información útil sobre os scripts, se incorporaron as **ferramentas de desenvolvemento** nos navegadores.
 
-Moitos desenvolvedores se inclinan por Chrome ou Firefox, porque teñen as mellores ferramentas. Pero os outros navegadores tamén proporcionan ferramentas de desenvolvemento, as veces con características especiais, aínda que xogando a poñerse ao par con Chrome ou Firefox. 
+Moitos desenvolvedores se inclinan por Chrome ou Firefox, porque teñen as mellores ferramentas. Pero os outros navegadores tamén proporcionan ferramentas de desenvolvemento, as veces con características especiais, aínda que xogando a poñerse ao par con Chrome ou Firefox.
 
 - As ferramentas para desenvolvedores nos permiten ver erros, executar comandos, examinar variables e moito máis.
 - Se poden abrir con F12 na maioría dos navegadores de Windows. Ou seleccionando *Inspeccionar* no menú contextual - botón dereito do rato na pantalla do navegador-.
@@ -291,36 +291,32 @@ Así que para que funcione usaríamos dous scripts:
 
 <!-- .element: class="r-fit-text" -->
 
-# Estrutura do código
+## Estrutura do código
 
-O primeiro que estudiaremos son os bloques de construción do código.
+O primeiro que veremos son os bloques de construción do código.
 
----
+### Sentenzas
 
----
+As sentenzas son construcións sintácticas e comandos que realizan accións.
 
-## Sentenzas
-
-As sentencias son construcións sintácticas e comandos que realizan accións.
-
-Unha sentencia: 
+Unha sentenza:
 
 ```js
 alert('Ola mundo!');
 ```
 
-Podemos ter tantas sentencias no código como queiramos. E se poden separar cun punto e coma.
+Podemos ter tantas sentenzas no código como queiramos. E pódense separar cun punto e coma.
 
 ---
 
- Por exemplo, aquí separamos “Ola Mundo” en dúas alertas:                     
+Por exemplo, aquí separamos “Ola Mundo” en dúas alertas:
 
 ```javascript
 alert('Ola');
 alert('Mundo');
 ```
 
-Xeralmente, as sentencias se escriben en liñas separadas para facer que o código máis lexible:     
+Xeralmente, as sentencias se escriben en liñas separadas para facer que o código máis lexible:
 
 ```javascript
 alert('Ola');
@@ -328,8 +324,6 @@ alert('Mundo');
 ```
 
 ---
-
-
 
 <!-- .slide: data-auto-animate -->
 
@@ -337,7 +331,7 @@ alert('Mundo');
 
 Se pode omitir un punto e coma na maioría dos casos cando existe un salto de líña.
 
-Isto tamén funcionaría: 
+Isto tamén funcionaría:
 
 ```javascript
 alert('Ola')
@@ -364,7 +358,7 @@ O código da como resultado `6` porque JavaScript no enxerta punto e coma aquí.
 
 **Pero hai situacións nas que JavaScript “falla” ao asumir un punto e coma onde realmente se necesita.** Os erros que ocorren neses casos son bastante difíciles de atopar e corrixir.
 
-Por curiosidade aquí vese un exemplo concreto de tal erro, mira este código:    
+Por curiosidade aquí vese un exemplo concreto de tal erro, mira este código:
 
 ```javascript
 alert("Ola");
@@ -394,7 +388,7 @@ Esta vez, se executamos o código, só se ve o primeiro `Ola` (e un erro! pero n
 
 Isto ocorre porque JavaScript non asume un punto e coma antes dos corchetes `[...]`, entón o código do primeiro exemplo se trata como unha soa sentencia.
 
-Así é como o ve o motor:   
+Así é como o ve o motor:
 
 ```javascript
 alert("Hello")[1, 2].forEach(alert);
@@ -441,7 +435,7 @@ alert('Ola');
 alert('Mundo');
 ```
 
-O contido dos comentarios se ignora. 
+O contido dos comentarios se ignora.
 
 ---
 
@@ -460,7 +454,7 @@ Moitos editores, usan *Ctrl+/* , para un comentario de liña e algo como *Ctrl+S
 
 Non se permiten os comentarios aniñados!
 
-Non pode haber `/*...*/` dentro doutro `/*...*/`.     
+Non pode haber `/*...*/` dentro doutro `/*...*/`.
 
 ```javascript
 /*
@@ -475,7 +469,7 @@ alert( 'Mundo' );
 
 ---
 
-# O modo *moderno*, "use strict"
+## O modo *moderno*, "use strict"
 
 Durante moito tempo, JavaScript evolucionou sen problemas de compatibilidade. Engadíanse novas características á linguaxe sen que a funcionalidade existente cambiase.
 
@@ -504,7 +498,7 @@ Veremos as funcións (unha maneira de agrupar comandos) en breve, pero adiantemo
 
 ---
 
-#### Asegúrate de que “use strict” está ao inicio
+### Asegúrate de que “use strict” está ao inicio
 
 Por favor, asegúrate de que `"use strict"` está ao principio dos teus scripts. Se non, o modo estrito podería non activarse.
 
@@ -523,7 +517,7 @@ alert("algo de código");
 
 - Por encima de `"use strict"` só  poden aparecer comentarios .
 
-- Unha vez declarado, non hai maneira de cancelar `use strict. 
+- Unha vez declarado, non hai maneira de cancelar `use strict.
 
 - Unha vez entramos en modo estrito, non hai volta atrás.
 
@@ -581,7 +575,7 @@ Tódolos exemplos nesta titoría asumen o modo estrito salvo que (moi raramente)
 
 ---
 
-# Variables
+## Variables
 
 A maioría do tempo, unha aplicación de JavaScript necesita traballar con información. Aquí hai 2 exemplos:
 
@@ -614,7 +608,7 @@ let message;
 message = 'Ola'; // almacenar a cadea 'Ola' na variable chamada message
 ```
 
-A cadea agora está almacenada no área da memoria asociada coa variable. E podemos acceder a ela utilizando o nome da variable:                   
+A cadea agora está almacenada no área da memoria asociada coa variable. E podemos acceder a ela utilizando o nome da variable:
 
 ```javascript
 let message;
@@ -675,9 +669,7 @@ Tecnicamente, todas estas variantes fan o mesmo. Así que, é cuestión de gusto
 
 ---
 
----
-
-```
+```js
 var` en vez de `let
 ```
 
@@ -736,7 +728,7 @@ Declarar dúas veces lanza un erro.
 
 Unha variable debe ser declarada só unha vez.
 
-Unha declaración repetida da mesma variable é un erro:                      
+Unha declaración repetida da mesma variable é un erro:
 
 ```javascript
 let message = "Isto";
@@ -749,7 +741,7 @@ Debemos declarar unha variable unha sola vez e desde entón referirnos a ela sen
 
 ---
 
-#### Linguaxes funcionais
+### Linguaxes funcionais
 
 É interesante notar a existencia da [programación funcional](https://es.wikipedia.org/wiki/Programación_funcional). As linguaxes funcionais “puras”, como [Haskell](https://es.wikipedia.org/wiki/Haskell), prohiben cambiar o valor das variables.
 
@@ -779,7 +771,7 @@ Cando o nome conten varias palabras, se soe usar o estilo [camelCase](https://es
 
 É interesante notar que o símbolo do dólar `'$'` e o guión baixo `'_'` tamén se utilizan en nomes. Son símbolos comúns, tal como as letras, sen ningún significado especial.
 
-Os seguintes nomes son válidos:    
+Os seguintes nomes son válidos:
 
 ```javascript
 let $ = 1; // Declara unha variable co nome "$"
@@ -819,7 +811,7 @@ Tecnicamente, non existe ningún erro aquí. Tales nomes  están permitidos, per
 
 ---
 
-#### Nomes reservados
+### Nomes reservados
 
 ...
 

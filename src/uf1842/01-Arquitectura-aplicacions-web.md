@@ -2,7 +2,7 @@
 marp: true
 ---
 
-## Arquitectura das aplicacións web
+# Arquitectura das aplicacións web
 
 Antes de falar sobre arquitectura web, vexamos - de xeito sinxelo - como funciona a web:
 
@@ -36,7 +36,7 @@ Do mesmo xeito que un edificio precisa dunha planificación baseada en **criteri
 
 ---
 
-O mundo se amplía en Internet: **as aplicacións web son os novos lugares de traballo, comercio e ocio**. 
+O mundo se amplía en Internet: **as aplicacións web son os novos lugares de traballo, comercio e ocio**.
 
 ---
 
@@ -44,7 +44,7 @@ Para dar cabida á variedade de propósitos aos que serven as aplicacións web a
 
 ---
 
-A(s) arquitectura(s) da(s) aplicación(s) web resolven este problema definindo como se estruturan os distintos compoñentes dunha aplicación baseada na web. 
+A(s) arquitectura(s) da(s) aplicación(s) web resolven este problema definindo como se estruturan os distintos compoñentes dunha aplicación baseada na web.
 
 ---
 
@@ -62,47 +62,47 @@ Pode ser tan simple como definir a relación entre o cliente e o servidor. Ou ta
 
 ---
 
-![bg Arquitectura de alta dispoñibilidade](/assets/identityMgr_high_availability.gif)
+![bg Arquitectura de alta dispoñibilidade](./assets/identityMgr_high_availability.gif)
 
 <small>*[Arquitectura](https://ws001.sspa.juntadeandalucia.es/confluence/display/GOBP/Soluciones+web%2C+arquitectura+de+referencia) de alta dispoñibilidade*</small>
 
 ---
 
-![bg Diagrama de componentes de una aplicación web de recomendación que muestra cómo interactúan los distintos componentes, como los clientes, las instancias de la base de datos, los servicios, etc.](/assets/web-app-architecture-components.jpg)
+![bg Diagrama de componentes de una aplicación web de recomendación que muestra cómo interactúan los distintos componentes, como los clientes, las instancias de la base de datos, los servicios, etc.](./assets/web-app-architecture-components.jpg)
 
 <small>*Diagrama de arquitectura dunha aplicación de recomendación. (Fonte: [Wikipedia](https://www.wikipedia.org/))*</small>
 
 ---
 
-A arquitectura dunha aplicación web é, sen dubida, unha das partes máis importantes da produción dunha aplicación web. 
+A arquitectura dunha aplicación web é, sen dubida, unha das partes máis importantes da produción dunha aplicación web.
 
-E cada aplicación requirirá unha arquitectura específica. 
-
----
-
-![bg](/assets/google2.gif)
+E cada aplicación requirirá unha arquitectura específica.
 
 ---
 
-## <span style="font-size: 3.8rem">:eye:</span> Sen dubida trátase de algo máis relevante que escoller o framework ou editor de código a empregar.
+![bg](./assets/google2.gif)
+
+---
+
+## <span style="font-size: 3.8rem">:eye:</span> Sen dubida trátase de algo máis relevante que escoller o framework ou editor de código a empregar
 
 ---
 
 ![bg ](./assets/1000_F_350175156_9EiYwgPigBnOg7wlO55f9fqWBtqVVdYU.jpg)
 
-## *Fagamos unha aproximación rápida!* 
+## *Fagamos unha aproximación rápida!*
 
 ---
 
 Unha aplicación web é dispensada por un servidor web e usada polos usuarios que se conectan, desde calquera punto, a través de clientes web (navegadores). Daquela: toda arquitectura web ten (alo menos) 3 actores ou capas:
 
--  un servidor web
--  unha conexión de rede
--  un (ou máis) cliente(s)
+- un servidor web
+- unha conexión de rede
+- un (ou máis) cliente(s)
 
 ---
 
-O servidor web distribúe páxinas de información **con formato** aos clientes que as soliciten. 
+O servidor web distribúe páxinas de información **con formato** aos clientes que as soliciten.
 
 ---
 
@@ -126,7 +126,7 @@ As páxinas web son o compoñente principal dunha aplicación ou sitio web.
 
 ---
 
-Os navegadores solicitan páxinas (almacenadas ou creadas de forma dinámica\*) con información aos servidores web. 
+Os navegadores solicitan páxinas (almacenadas ou creadas de forma dinámica\*) con información aos servidores web.
 
 \* *Nalgunhas contornas de desenvolvemento de aplicacións web, as páxinas conteñen, ademais ou xunto ao código HTML, scripts dinámicos que son executados polo servidor antes de entregar a páxina. Falamos entón de [paxinas dinamicas](https://blog.hubspot.es/website/paginas-web-dinamicas-y-estaticas), en oposición a aquelas que so dispensan contidos previamente marcados e almacenados e que non requiren a participación das linguaxes de guión*.
 
@@ -134,7 +134,7 @@ Os navegadores solicitan páxinas (almacenadas ou creadas de forma dinámica\*) 
 
 Unha vez entregada a páxina ou documento solicitado, rómpese a conexión entre o navegador e o servidor web.
 
-É dicir, a lóxica de negocio no servidor só se activa coa execución dos scripts das páxinas solicitadas polo navegador (no servidor, non no cliente). 
+É dicir, a lóxica de negocio no servidor só se activa coa execución dos scripts das páxinas solicitadas polo navegador (no servidor, non no cliente).
 
 ---
 
@@ -142,7 +142,7 @@ Cando o navegador executa un script no cliente, o cliente non ten acceso directo
 
 ---
 
-Hai outros compoñentes que non son scripts, como as miniaplicacións (unha aplicación especial que se executa dentro dun navegador) ou os compoñentes ActiveX(:skull:). 
+Hai outros compoñentes que non son scripts, como as miniaplicacións (unha aplicación especial que se executa dentro dun navegador) ou os compoñentes ActiveX(:skull:).
 
 ---
 
@@ -158,35 +158,35 @@ O acceso ás páxinas tamén se asocia ao tempo que un usuario permanece interac
 
 ---
 
-### Compoñentes dunha aplicación web:
+### Compoñentes dunha aplicación web
 
 ---
 
-#### 1. Lóxica de negocio.
+#### 1. Lóxica de negocio
 
--  Define os procesos implicados na funcionalidade da aplicación.
--  Conxunto de operacións necesarias para prestar o servizo.
+- Define os procesos implicados na funcionalidade da aplicación.
+- Conxunto de operacións necesarias para prestar o servizo.
 
 ---
 
-#### 2. Xestión de datos.
+#### 2. Xestión de datos
 
--  Manexo da información,  bases de datos, compoñentes e arquivos.
+- Manexo da información,  bases de datos, compoñentes e arquivos.
 
 ---
 
 #### 3. Interface (UI/UX)
 
--  Os usuarios acceden a través de navegadores, móbiles, PDA, etc. &rarr; *Responsividade*
--  Funcionalidade accesible a través do navegador. &rarr; *Accesibilidade*
--  Limitado e dirixido pola aplicación. &rarr; *Usabilidade*
+- Os usuarios acceden a través de navegadores, móbiles, PDA, etc. &rarr; *Responsividade*
+- Funcionalidade accesible a través do navegador. &rarr; *Accesibilidade*
+- Limitado e dirixido pola aplicación. &rarr; *Usabilidade*
 
 ---
 
 As aplicacións web modélanse mediante o que se coñece como **modelo de capa**. Unha capa representa un elemento que procesa ou trata información. Segundo as capas que interveñen nunha aplicación atopamos:
 
--  Modelo de dúas capas: a información atravesa dúas capas entre a interface e a administración dos datos.
--  Modelo n-capa: A información pasa por varias capas - por exemplo no modelo de tres capas.
+- Modelo de dúas capas: a información atravesa dúas capas entre a interface e a administración dos datos.
+- Modelo n-capa: A información pasa por varias capas - por exemplo no modelo de tres capas.
 
 ---
 
@@ -200,18 +200,18 @@ Gran parte da aplicación execútase no lado do cliente (*fat client*).
 
 As capas son:
 
--  Cliente (*fat client*): a lóxica de negocio está incrustada dentro da aplicación que presenta a interface de usuario no lado do cliente.
--  Servidor: xestiona os datos.
+- Cliente (*fat client*): a lóxica de negocio está incrustada dentro da aplicación que presenta a interface de usuario no lado do cliente.
+- Servidor: xestiona os datos.
 
 ---
 
 As limitacións deste modelo son
 
--  Escasa *escalabilidade*
--  Permite un número reducido de conexións simultáneas
--  Alta carga de rede
--  Flexibilidade restrinxida
--  Funcionalidade limitada
+- Escasa *escalabilidade*
+- Permite un número reducido de conexións simultáneas
+- Alta carga de rede
+- Flexibilidade restrinxida
+- Funcionalidade limitada
 
 ---
 
@@ -225,7 +225,7 @@ As limitacións deste modelo son
 
 ---
 
-- **Capa da aplicación**: 
+- **Capa da aplicación**:
 
   É onde se atopa a interface do sistema e é da que o usuario pode dispoñer para realizar a súa actividade co sistema.
 
@@ -263,34 +263,32 @@ As capas deste modelo son:
 
 ### 1. Capa de presentación (parte no cliente e parte no servidor)
 
--  Recolle a información do usuario e envíaa ao servidor (cliente)
--  Envía información á capa de proceso para procesala
--  Recibe os resultados da capa de proceso
--  Xerar a presentación
--  Ver a presentación ao usuario (cliente)
+- Recolle a información do usuario e envíaa ao servidor (cliente)
+- Envía información á capa de proceso para procesala
+- Recibe os resultados da capa de proceso
+- Xerar a presentación
+- Ver a presentación ao usuario (cliente)
 
 ---
 
 ### 2. Capa de proceso (servidor web)
 
--  Recibe entrada de datos da capa de presentación
--  Interactúa coa capa de datos para realizar operacións
--  Envía os resultados procesados á capa de presentación
+- Recibe entrada de datos da capa de presentación
+- Interactúa coa capa de datos para realizar operacións
+- Envía os resultados procesados á capa de presentación
 
 ---
 
 ### **3. Capa de datos (servidor de datos)**
 
--  Almacena os datos
--  recuperar datos
--  Mantén os datos
--  protexer a integridade dos datos
+- Almacena os datos
+- recuperar datos
+- Mantén os datos
+- protexer a integridade dos datos
 
 ---
 
 ![bg 3 cap](./assets/3cap.png)
-
-
 
 ---
 
@@ -298,6 +296,6 @@ XAN 2023
 
 ---
 
-https://cynoteck.com/es/blog-post/reasons-to-treat-web-application-architecture-seriously/ :star:
+<https://cynoteck.com/es/blog-post/reasons-to-treat-web-application-architecture-seriously/> :star:
 
-https://kinsta.com/es/blog/arquitectura-aplicaciones-web/#qu-es-la-arquitectura-de-las-aplicaciones-web
+<https://kinsta.com/es/blog/arquitectura-aplicaciones-web/#qu-es-la-arquitectura-de-las-aplicaciones-web>

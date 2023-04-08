@@ -41,8 +41,6 @@ Move o rato sobre as etiquetas HTML ou estilos incrustados e JavaScript para obt
 
 ![Hover HTML](./assets/htmlhover.png)
 
-
-
 ## Validación
 
 O soporte de linguaxe HTML realiza a validación de todos os JavaScript e CSS incorporados.
@@ -61,7 +59,7 @@ Podes desactivar esa validación cos seguintes axustes:
 
 Podes pregar rexións do código usando as iconas de dobrado da beira entre os números de liña e o inicio da liña.
 
-Tamén podes crear os teus propios marcadores con comentarios para definir unha rexión para pregar: 
+Tamén podes crear os teus propios marcadores con comentarios para definir unha rexión para pregar:
 
 `<!-- #region -->`  ........... `<!-- endregion -->`
 
@@ -77,19 +75,14 @@ VS Code admite a expansión de [fragmentos de Emmet](https://emmet.io/) . As abr
 
 > **Consello:** consulta a sección HTML da [folla de trucos de Emmet](https://docs.emmet.io/cheat-sheet) para obter abreviaturas válidas.
 
-
-
 ### Próximos pasos
 
 - [Emmet](https://code.visualstudio.com/docs/editor/emmet) : aprende sobre o poderoso soporte integrado de Emmet de VS Code.
 - [Documentación oficial de Emmet](https://docs.emmet.io/) - Emmet, o conxunto de ferramentas esencial para desenvolvedores web.
 
-
-
+____
 NOV 2021
 
-___
+&rarr; **REFERENCIA**
 
-###### REFERENCIA
-
-- https://code.visualstudio.com/docs/languages/html
+- [https://code.visualstudio.com/docs/languages/html](https://code.visualstudio.com/docs/languages/html)

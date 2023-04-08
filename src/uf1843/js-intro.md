@@ -2,7 +2,7 @@
 
 Benvido, estás a piques de comezar a aprender JavaScript, e este é só un repaso rápido para ensinarache a leer/escribir código.
 
-Para crear aplicacións web con **HTML, CSS, JavaScript**. JavaScript é a linguaxe de programación que permite crear aplicacións web (páxinas web, sitio web), engadir interactividade e enriquecer a experiencia de usuario xa que permite facer un seguimento das accións dunha persoa no nosos sitio. JS non soe actuar soa. Para empregar JavaScript tamén imos ter que empregar , dun xeito ou outro, HTML e CSS. 
+Para crear aplicacións web con **HTML, CSS, JavaScript**. JavaScript é a linguaxe de programación que permite crear aplicacións web (páxinas web, sitio web), engadir interactividade e enriquecer a experiencia de usuario xa que permite facer un seguimento das accións dunha persoa no nosos sitio. JS non soe actuar soa. Para empregar JavaScript tamén imos ter que empregar , dun xeito ou outro, HTML e CSS.
 
 Se empregas JavaScript desde o propio documento HTML escribe código JavaScript dentro de **``<script></script>``**:
 
@@ -12,21 +12,15 @@ Se empregas JavaScript desde o propio documento HTML escribe código JavaScript 
 </script>
 ```
 
-
-
 Se non, enlaza o teu arquivo *\*.js*, na cabeceira da páxina ou antes do peche de `</body>` e sempre despois das follas de estilos, por se tiveras algunha dependencia alí.
 
 ```HTML
 <script type="text/javascript" src="path-to-javascript-file.js"></script>
 ```
 
-
-
 ## Variables
 
 As variables son o primeiro que necesitamos entender, as variables axúdan a declarar o tipo de información que vas almacenar, podes almacenar: **Números, Texto, Obxectos**,... As variables se declaran usando as palabras clave **var** ou **let**.
-
-
 
 ***String* (cadea)** :  
 almacena datos de tipo texto. Coma nos seguintes exemplos:
@@ -35,15 +29,11 @@ almacena datos de tipo texto. Coma nos seguintes exemplos:
 var fullName = "Auterpio Lumbreras";
 ```
 
-
-
 ```js
 let country = "Nova Caledonia";
 ```
 
-
-
-***Number*(número)** : 
+***Number*(número)** :
 calquera número, coma nos seguintes exemplos:
 
 ```js
@@ -54,20 +44,18 @@ var productQty = 10;
 var productPrice = 2,50;
 ```
 
-
-
-**Booleano** : 
+**Booleano** :
 podese usar cando se requira resolver unha decisión, o booleano é unha decisión que se resolve coma `true` (verdadeira) ou `false` (falsa). Os seguintes son exemplos de tipos de datos **booleanos** .
 
-``var isValid = true;``  
+``var isValid = true;``
 
 ``var isDone = false;``
 
-***Object* (obxecto)** : o  
+***Object* (obxecto)** : o
 un obxecto úsase para almacenar outros contidos de referencia como propiedades de matrices. O seguinte é un exemplo do tipo de datos **Object** .
 
-```
-var Produto = {  
+```js
+var Produto = {
        "Name": "Apple",
     "Price": 1.50,
     "Quantity": 2,
@@ -80,7 +68,7 @@ Nome, Prezo e Cantidade son propiedades seguidas do seu valor. Propiedade e valo
 
 ## Comentarios
 
-Os comentarios son partes de texto que podes incluír en calquera parte do teu código para documentar o que estas a facer, para que serve,... . Podes usar **`//  `** para comentar unha soa liña de texto no teu código ou **``/* */``** para comentar varias liñas. O comentario non se executará aínda que teñas código nel, JavaScript ignora o bloque de comentarios, a sintaxe é a seguinte.
+Os comentarios son partes de texto que podes incluír en calquera parte do teu código para documentar o que estas a facer, para que serve,... . Podes usar **`//`** para comentar unha soa liña de texto no teu código ou **``/* */``** para comentar varias liñas. O comentario non se executará aínda que teñas código nel, JavaScript ignora o bloque de comentarios, a sintaxe é a seguinte.
 
 ``//Este é un comentario nunha soa liña.``
 
@@ -97,12 +85,12 @@ Os operadores poden ser de tipo **Numeric, Boolean, String, Assignment** **(*num
 Os **operadores numéricos** úsanse no cálculo matemático **`+`(sumar) `-`(restar) `*`(multiplicar) `/`(dividir)** . :eye: O signo **`+`** tamén se usa como concatenación de cadeas(*string*). Os seguintes son exemplos de operadores numéricos:
 
 ```js
-	var addiction = 5 + 2;
-	var subtraction = 6 - 2;
-	var multiplication = 8 * 3;
-	var division = 4 / 2;
-	var increment +=1;
-	var decrement -=1; 
+ var addiction = 5 + 2;
+ var subtraction = 6 - 2;
+ var multiplication = 8 * 3;
+ var division = 4 / 2;
+ var increment +=1;
+ var decrement -=1; 
 ```
 
 ## Concatenación de cadeas (*strings*)
@@ -140,11 +128,11 @@ document.write(inputPrice == price );
 ## Operadores de comparación
 
 Os operadores de comparación úsanse cando necesitamos comparar valores de números ou valores de cadea, usamos  
-***<** 	*(menor que)*  
-**<=**  	*(menor que ou igual)*  
+**<**  *(menor que)*  
+**<=**   *(menor que ou igual)*  
 
-**\>**   	*(maior que)*  
-**\> =** 	*(maior que ou igual)*
+**\>**    *(maior que)*  
+**\> =**  *(maior que ou igual)*
 
 O seguinte exemplo compara **num1** con **num2** e **num3** o valor de saída é verdadeiro ou falso dependendo da comparación solicitada.
 
@@ -164,14 +152,12 @@ document.write(num1 < num3);
 document.write(num1 <= num3); 
 ```
 
-
-
 ## Operadores lóxicos
 
 Os operadores lóxicos utilízanse cando necesitamos comparar valores entre 2 ou máis valores.  
-**&& 		   *(descrito como "AND")*  
-|| 			*(descrito como "OR")*  
-!     			*(descrito como "NON")***  
+**&&      *(descrito como "AND")*  
+||    *(descrito como "OR")*  
+!        *(descrito como "NON")***  
 
 Exemplo de cando utilizar operadores lóxicos pódese facer como segue: Tes unha lista de produtos cos seus respectivos prezos:  
 **produto1 = "Mazá", Prezo = 1,99**  
@@ -251,8 +237,6 @@ document.write("The product price is lower.");
 }
 ```
 
-
-
 ## A declaración de cambio - *switch statement*
 
 A instrución switch permíte seleccionar un valor entre moitos resultados posibles do código que queremos analizar. A sintaxe sería algo así:
@@ -327,8 +311,6 @@ i++;
 document.write(text); 
 ```
 
-
-
 ## A declaración do/while
 
 A instrución **do/while** é case a mesma que **mentres** o diferente é que o **while se** executa primeiro e despois realiza a condición, a sintaxe do/while é a seguinte.
@@ -353,8 +335,6 @@ i++;
 while (i < 10);
 document.write(text); 
 ```
-
-
 
 ## A declaración *for* - para
 
@@ -387,8 +367,6 @@ write1000lines += "I don't have to forget my homework <br>";
 document.write(write1000lines); 
 ```
 
-
-
 ## A declaración `for/in`
 
 A instrución **``for/in``** é case a mesma que a instrución **for** , pero **for/in** non require un número de inicio, un número final, un incremento, senón que usa o **in** onde vai para contar o número de elementos que están na **matriz,** a sintaxe é como acompañamento.
@@ -398,8 +376,6 @@ for (variable in elements_array) {
 //code to execute
 }; 
 ```
-
-
 
 O seguinte exemplo mostra como usar a instrución **for/in**
 
@@ -425,8 +401,6 @@ text += abc[i] + "<br>";
 document.write(text); 
 ```
 
-
-
 ## Obxectos
 
 Os obxectos son unha colección de nomes coñecidos como **Propiedades.** Calquera propiedade pode ter o seu propio tipo de datos, vostede declara o obxecto do mesmo xeito que se declara variables. Os obxectos adoitan facer referencia a un **espazo de nomes** , accede ás propiedades mediante a súa declaración, poden aniñarse noutros obxectos. a sintaxe é a seguinte.
@@ -438,8 +412,6 @@ var namespace = {
 "oject3":value,
 } 
 ```
-
-
 
 O seguinte exemplo crea un obxecto con propiedades e recuperamos o valor das propiedades.
 
@@ -453,8 +425,6 @@ var Product = {
 //Get product information
 document.write(Product.Name +" is priced at "+ Product.Price); 
 ```
-
-
 
 ## Obxectos con obxectos aniñados
 
@@ -480,8 +450,6 @@ document.write(Product.Name +" is priced at "+ Product.Price);
 document.write("<br>" + Product.CannedFruit.Description + " with UPC "+ Product.CannedFruit.UPC +" is priced at "+ Product.CannedFruit.Price); 
 ```
 
-
-
 ## Obxectos con `arrays`
 
 ````js
@@ -503,8 +471,6 @@ document.write(GroceryStore.Departments.Produce[i] + "<br><br>");
 } 
 ````
 
-
-
 ## Obxectos con métodos
 
 ```js
@@ -520,8 +486,6 @@ return this.Name + " " + this.LastName;
 //Get full name
 document.write(Customer.GetFullName()); 
 ```
-
-
 
 ## Propiedades dos obxectos dinámicos
 
@@ -544,8 +508,6 @@ document.write("<br><br>");
 document.write("Type: " + Device.Type); 
 ```
 
-
-
 ## Construtor de obxectos
 
 O construtor de obxectos créase coa palabra clave **new** , o seguinte exemplo crea un **obxecto Coche** e engadimos propiedades **Marca, Cor, Portas** e un método **GetDescription()** .
@@ -566,8 +528,6 @@ return "The " + Car.Brand + " car is color " + Car.Color + " and has "+ Car.Door
 document.write(Car.GetDescription()); 
 ```
 
-
-
 ```js
 //Object
 var Car = function(brand, color, doors){
@@ -587,8 +547,6 @@ document.write(teslaCar.GetDescription());
 document.write("<br><br>");
 document.write(bmwCar.GetDescription()); 
 ```
-
-
 
 ## Arrays
 
@@ -627,8 +585,6 @@ función functionName(){
 }
 ```
 
-
-
 ```js
 función functionName(parametro1, parametro2,..){  
 //Bloque de código  
@@ -666,11 +622,7 @@ return languages;
 document.write(programmingLanguages("JavaScript, C#, VB.NET")); 
 ```
 
-
-
-##  cont. (?)
-
- 
+## cont. (?)
 
 ### JavaScript Frameworks
 
@@ -685,7 +637,4 @@ Marcos JavaScript comúns:
 
 Destes frameworks, jQuery é actualmente o máis popular.
 
-
-
 NOV 2021
-

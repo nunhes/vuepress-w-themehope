@@ -27,5 +27,4 @@ category:
   - Módulos
 ---
 
-
 - [Fluxo de traballo moderno](https://medium.com/ui-farm/how-we-work-a-modern-workflow-for-the-multi-device-web-4e0dcb081b5b)

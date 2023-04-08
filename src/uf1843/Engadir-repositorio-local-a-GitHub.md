@@ -1,4 +1,4 @@
-## Engadir un repositorio local a GitHub con GitHub CLI
+# Engadir un repositorio local a GitHub con GitHub CLI
 
 1. Na liña de comandos, navega ata o directorio raíz do teu proxecto.
 
@@ -35,13 +35,13 @@
    Se estás a usar Git 2.28.0 ou unha versión posterior, podes definir o nome da rama predeterminada usando `-b`.
 
    ```shell
-   $ git init -b main
+   git init -b main
    ```
 
    Se estás a usar Git 2.27.1 ou unha versión anterior, podes definir o nome da rama predeterminada usando `&& git symbolic-ref HEAD refs/heads/main`.
 
    ```shell
-   $ git init && git symbolic-ref HEAD refs/heads/main
+   git init && git symbolic-ref HEAD refs/heads/main
    ```
 
 5. Engade os arquivos no teu novo repositorio local. Isto os organiza para o primeiro compromiso.
@@ -58,7 +58,7 @@
    # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
    ```
 
-7. Na parte superior do teu repositorio na páxina de configuración rápida de GitHub.com, fai clic para copiar o URL do repositorio remoto.                
+7. Na parte superior do teu repositorio na páxina de configuración rápida de GitHub.com, fai clic para copiar o URL do repositorio remoto.
 
 ​         ![Copiar campo URL do repositorio remoto](./assets/copy-remote-repository-url-quick-setup.png)
 

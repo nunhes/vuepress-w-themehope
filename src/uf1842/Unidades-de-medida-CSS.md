@@ -14,7 +14,7 @@ layout: Slide
 
 ---
 
-En CSS hai distintos tipos de datos, os tipos de datos basicamente son o valor que asignamos a calquera propiedade. 
+En CSS hai distintos tipos de datos, os tipos de datos basicamente son o valor que asignamos a calquera propiedade.
 
 ---
 
@@ -43,9 +43,9 @@ De xeito xenérico podemos distribuílos en dous grandes grupos: **medidas absol
 <!-- .slide: data-auto-animate -->
 ## medidas absolutas
 
-As **medidas absolutas** son *medidas físicas* (``cm, in, mm, pc, pt``) e a unidade ``px``. 
+As **medidas absolutas** son *medidas físicas* (``cm, in, mm, pc, pt``) e a unidade ``px``.
 
-Estas unidades se representan exactamente no tamaño que se lle da. O valor dado é o que se aplica sen mediar calculo ou referencia algunha. 
+Estas unidades se representan exactamente no tamaño que se lle da. O valor dado é o que se aplica sen mediar calculo ou referencia algunha.
 
 ---
 
@@ -53,15 +53,13 @@ Aínda que sexan as máis axeitadas **para imprimir**, xa que os medios impresos
 
 ---
 
-
 ![Madidas absolutas](./assets/css/unidades-absolutas.png)
 
- 
 ---
 
 Só para facernos unha idea, a relación entre as medidas físicas absolutas é a seguinte:
 
-####  **1in = 2.54cm = 25.4mm = 72pt = 6pc**<!-- .element: class="fragment highlight-red" -->
+## **1in = 2.54cm = 25.4mm = 72pt = 6pc**<!-- .element: class="fragment highlight-red" -->
 
 ---
 
@@ -103,26 +101,19 @@ Estes valores establécense tomando como referencia:
 
    ---
 
-
    ![Medidas ex](./assets/css/x-height.png)
 
-
    ---
-
 
 4. **cap:** Baseada na altura das letras maiúsculas da fonte actual do elemento.
 
 5. **ch:** Baseada na anchura do glifo “0” da letra do elemento.
 
-
    ---
-
 
    ![img](./assets/css/o3h1avbum3sw47a3coch.jpeg)
 
-
    ---
-
 
 6. **ic:** É unha medida nova que ten que ver coa anchura dos glifos. Para máis información pode consultar a especificación do w3c.
 
@@ -130,9 +121,7 @@ Estes valores establécense tomando como referencia:
 
 8. **rlh:** Altura de liña do elemento raíz (html).
 
-
 ---
-
 
 ### b) o viewport - fiestra ou pantalla de visualización
 
@@ -140,7 +129,6 @@ Estes valores establécense tomando como referencia:
 2. **vh** – Relativo á altura da pantalla.
 3. **vmin** – Toma como referencia o valor máis pequeno entre vw e vh.
 4. **vmax** – Toma como referencia o maior valor entre vw e vh.
-
 
 ---
 
@@ -162,7 +150,7 @@ Estes valores establécense tomando como referencia:
 
 ---
 
-As **medidas relativas son máis vantaxosas para traballar en pantalla porque son escalables e flexibles** . Máis se se busca adaptar o deseño a calquera dispositivo ( **responsivo** ). 
+As **medidas relativas son máis vantaxosas para traballar en pantalla porque son escalables e flexibles** . Máis se se busca adaptar o deseño a calquera dispositivo ( **responsivo** ).
 
 ---
 
@@ -172,13 +160,9 @@ As **medidas relativas son máis vantaxosas para traballar en pantalla porque so
 
 Elixir unha ou outra depende de ti: a que te faga sentir máis cómodo e por suposto, a que mellor se adapte ao tipo de proxecto no que estás a traballar será unha boa opción.
 
-
-
 ---
 
 ![img](./assets/css/vmin.png)
-
-
 
 ---
 
@@ -194,18 +178,13 @@ Os atributos **width** e **height** definen o ancho e o alto dos elementos HTML,
 
 Imos explicar o caso do **ancho** co seguinte esquema (a **altura** sería similar):
 
-
 ![Modelo de caixa CSS.  Anchura total box-sizing: content-box](./assets/css/modelo_cajas_anchos.svg)
-
 
 ---
 
-
  <img src="./assets/css/screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35.png" alt="screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35" style="transform-origin: 0 0; transform: scale(0.5);">
 
-
  ---
-
 
 O esquema corresponde á definición dun contedor (por exemplo div ) con estes atributos:
 
@@ -252,8 +231,6 @@ El espacio que debemos reservar en nuestro diseño de la página es de 400 px., 
 
 A continuación puedes ver un primer ejemplo con box-sizing: border-box y un segundo ejemplo con el valor por defecto, box-sizing: content-box.
 
-
-
 El resto de valores son igual para ambos ejemplos: border-width: 5px; border-style: solid; border-color: royalblue; padding: 20px; width: 200px; margin-left: 100px; margin-right: 100px;
 
 Observa la diferencia de anchura.
@@ -266,24 +243,16 @@ Ejemplo con box-sizing: content-box :
 
 Párrafo uno. Lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi porro ius soluta in voluptates voluptatem, nesciunt dolorem obcaecati nemo eligendi porro iusto, earum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
-
-
 ---
 
 XAN2023
-
-
 
 ---
 
 [Tipos de unidades de medida en CSS. Recomendaciones para trabajar. (pensandoenweb.es)](https://pensandoenweb.es/unidades-medida-css/)
 
-https://dev.to/lupitacode/unidades-de-medida-en-css-fundamentos-4n0g
+<https://dev.to/lupitacode/unidades-de-medida-en-css-fundamentos-4n0g>
 
-
-
-
-
-https://www.freecodecamp.org/news/html-role-attribute/
+<https://www.freecodecamp.org/news/html-role-attribute/>
 
 @slideend

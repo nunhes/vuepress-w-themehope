@@ -6,26 +6,26 @@ icon: info
 
 ## Deseño e programación de paxinas web
 
-- https://www.submarinecablemap.com
+- <https://www.submarinecablemap.com>
 - [Como funciona Internet?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
   - [The OSI Model – The 7 Layers of Networking Explained](https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/)
 
 - **[Navegadores](https://www.mozilla.org/es-ES/firefox/browsers/browser-history/)**/**[Ferramentas de desenvolvedores](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)**
-  - https://www.google.com/chrome/
-    - https://developer.chrome.com/docs/devtools/overview/
+  - <https://www.google.com/chrome/>
+    - <https://developer.chrome.com/docs/devtools/overview/>
     - [:tv:](https://www.youtube.com/watch?v=VYyQv0CSZOE&t=318s)
-  - https://www.opera.com/es
-    - http://devtoolsecrets.com
-  - https://www.mozilla.org/es-ES/firefox/
-    - https://firefox-dev.tools
-  - https://www.microsoft.com/es-es/edge
-    - https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/overview
+  - <https://www.opera.com/es>
+    - <http://devtoolsecrets.com>
+  - <https://www.mozilla.org/es-ES/firefox/>
+    - <https://firefox-dev.tools>
+  - <https://www.microsoft.com/es-es/edge>
+    - <https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/overview>
 
 - **Editores de código**
-  - https://www.sublimetext.com
-  - https://notepad-plus-plus.org
-  - https://code.visualstudio.com
-  - https://replit.com (online)
+  - <https://www.sublimetext.com>
+  - <https://notepad-plus-plus.org>
+  - <https://code.visualstudio.com>
+  - <https://replit.com> (online)
 
 - **Control de versións**
   - [Introdución a Git e Github](https://git.bobby.sh/)
@@ -61,7 +61,7 @@ icon: info
   - [CSS values and units - Learn web development | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)+[Unidades CSS - CSS en español - Lenguaje CSS](https://lenguajecss.com/css/modelo-de-cajas/unidades-css/)
   - [Imaxes, media e formularios elementos   | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements)
   - CSS AVANZADO:
-    -  [inuitcss](http://www.inuitcss.com/) [Open-source, Sass-based, OOCSS framework](https://github.com/inuitcss/inuitcss)
+    - [inuitcss](http://www.inuitcss.com/) [Open-source, Sass-based, OOCSS framework](https://github.com/inuitcss/inuitcss)
 
 - **Javascript**
   - [Learn to Program (stanford.edu)](http://stanford.edu/~cpiech/karel/learn.html)
@@ -72,30 +72,26 @@ icon: info
   - [Obxectos globais](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects)
   - [Clases](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
-
-
-
 - **Diseño UI**
   - [Principios da Gestalt e deseño web](https://www.smashingmagazine.com/2019/04/spaces-web-design-gestalt-principles/)
   - [Learn Web Development Basics – HTML, CSS, and JavaScript Explained for Beginners (freecodecamp.org)](https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/)
   - [Wireframes](https://looka.com/blog/wireframe-examples/)
 
 - **Marketing**
-  - [Open Graph](https://www.ionos.es/digitalguide/online-marketing/redes-sociales/open-graph/) + https://www.opengraph.xyz/
+  - [Open Graph](https://www.ionos.es/digitalguide/online-marketing/redes-sociales/open-graph/) + <https://www.opengraph.xyz/>
   - [How to Create a Brand Style Guide](https://offers.hubspot.com/create-brand-style-guide?hubs_signup-url=www.hubspot.com%2Fresources%2Fkit&hubs_signup-cta=directories__link&hubs_post=blog.hubspot.com%25252Fcustomers%25252Fdesign-updates-in-browser-guide&hubs_post-cta=blog-nav-card--media-card#)
 
-#### Vídeo
+### Vídeo
 
--   **Silicon Valley - The Untold Story**, serie de documentais do Discovery Channel sobre o val do silicio.
+- **Silicon Valley - The Untold Story**, serie de documentais do Discovery Channel sobre o val do silicio.
 
-#### Cursos en liña
+### Cursos en liña
 
 - [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) :star:
 
 - [TheOdinProject](https://www.theodinproject.com/paths/full-stack-javascript)
-	
+
 - [JavaScript.Info](https://javascript.info/) :star:
-	
 
 ---
 

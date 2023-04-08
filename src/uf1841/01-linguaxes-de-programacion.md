@@ -1,5 +1,5 @@
 ---
-sidebar: "structure"
+sidebar: heading
 ---
 
 

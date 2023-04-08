@@ -1,19 +1,19 @@
+# Que hai de novo en HTML
+
 **HTML5 engadiu novos recursos á túa caixa de ferramentas, é probable que queiras crear un modelo HTML para comezar todos os proxectos futuros. Definitivamente paga a pena facelo, e hai moitos puntos de partida en liña para axudarche a crear o teu propio modelo HTML5.**
 
 ~~Neste artigo, veremos como comezar a construír o teu propio modelo HTML5. Percorreremos os elementos esenciais dun modelo HTML, rematando cun modelo básico que podes levar contigo e construír.~~
 
 ~~Se prefires coller o código agora e ler este artigo máis tarde, [**aquí tes o noso modelo HTML5 rematado**](https://www.sitepoint.com/a-basic-html5-template/#thecompletehtml5boilerplate) .~~
 
-
-
 ## Anatomía dun documento HTML5
 
 Un modelo HTML normalmente componse das seguintes partes:
 
-1. [A declaración do tipo de documento](#thehtml5doctype) (ou doctype)
-2. [O elemento `html`](#thehtmlelement)
-3. [A codificación de caracteres](#htmldocumentcharacterencoding)
-4. [O metaelemento da vista](#theviewportmetaelement)
+1. [A declaración do tipo de documento] ou doctype
+2. [O elemento `html`]
+3. [A codificación de caracteres]
+4. [O metaelemento da vista]
 5. [`title`, `description`e`author`](https://www.sitepoint.com/a-basic-html5-template/#thetitledescriptionandauthor)
 6. [Metaelementos Open Graph para tarxetas sociais](https://www.sitepoint.com/a-basic-html5-template/#opengraphmetaelementsforsocialcards)
 7. [Favicons e iconas táctiles](https://www.sitepoint.com/a-basic-html5-template/#faviconsandtouchicons)
@@ -23,17 +23,19 @@ Ademais da declaración do tipo de documento e do elemento `<html>` os elementos
 
 ## O tipo de documento HTML5
 
-O teu modelo HTML5 debe comezar cunha declaración de tipo de documento ou *doctype* . Un doctype é simplemente un xeito de indicarlle ao navegador, ou a calquera outro analizador, que tipo de documento está mirando. 
+O teu modelo HTML5 debe comezar cunha declaración de tipo de documento ou *doctype* . Un doctype é simplemente un xeito de indicarlle ao navegador, ou a calquera outro analizador, que tipo de documento está mirando.
 
 No caso dos arquivos HTML, está etiqueta indica a versión específica e o *sabor* HTML. Está declaración do tipo de documento debe ser sempre o primeiro elemento na parte superior de calquera arquivo HTML. Fai uns anos, a declaración doctype era bastante engedellada e dificil de completar.
 
 Declaración para os documentos XHTML:
+
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 ```
 
 Declaración para os documentos HTML 4:
+
 ```html
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
             "http://www.w3.org/TR/html4/loose.dtd">
@@ -51,45 +53,37 @@ Dado que os navegadores están obrigados a admitir contidos máis antigos que in
 
 En realidad, es el navegador el que debe determinar la compatibilidad de las características caso por caso, independientemente del doctype utilizado. De hecho, puedes utilizar uno de los doctypes más antiguos con los nuevos elementos de HTML5 en una página y la página se renderizará igual que si utilizaras el nuevo doctype.
 
-
-
-
-
-## O `<html>`Elemento
+## O elemento `<html>`
 
 Despois do doctype en calquera documento HTML está o elemento `<html>`:
 
-```markup
-<html lang="en">
+```html
+<html lang="gl">
 ```
 
 Isto non sufriu ningún cambio significativo desde a aparición de HTML5. No fragmento de código anterior, incluímos o atributo `lang` cun valor de `en`, que especifica que o documento está en inglés. Isto non é necesario para que unha páxina se valide, pero recibirás unha advertencia da maioría dos validadores de código se non o inclúes.
 
-O `<html>`elemento divídese en dúas partes, o `<head>`e `<body>`seccións. A `<head>`sección contén información importante sobre o documento que non se mostra ao usuario final, como a [codificación de caracteres](https://www.sitepoint.com/a-basic-html5-template/#htmldocumentcharacterencoding) e [ligazóns a arquivos CSS e posiblemente JavaScript](https://www.sitepoint.com/a-basic-html5-template/#includingastylesheetandscripts) . A `<body>`sección contén todo o que se mostra no navegador: texto, imaxes, etc.
+O elemento `<html>` divídese en dúas partes ou seccións, o `<head>` e o `<body>`. A sección `<head>` contén información importante sobre o documento que non se mostra ao usuario final, como a [codificación de caracteres](https://www.sitepoint.com/a-basic-html5-template/#htmldocumentcharacterencoding) e [ligazóns a arquivos CSS e posiblemente JavaScript](https://www.sitepoint.com/a-basic-html5-template/#includingastylesheetandscripts) . A sección `<body>` contén todo o que se mostra no navegador: texto, imaxes, etc.
 
 ## Codificación de caracteres de documentos HTML
 
 A primeira liña dentro da sección `<head>` dun documento HTML é a que define a codificación de caracteres para o documento. Esta é unha función opcional e non causará avisos nos validadores, pero recoméndase para a maioría das páxinas HTML:
 
-```markup
+```html
 <meta charset="utf-8">
 ```
 
 En case todos os casos, se emprega o valor  `utf-8`. Unha explicación completa da codificación de caracteres está fóra do alcance deste artigo, e probablemente tampouco che resulte tan interesante. Non obstante, se queres profundizar un pouco máis, podes [ler sobre a codificación de caracteres na especificación HTML](https://html.spec.whatwg.org/multipage/infrastructure.html#encoding-terminology) .
 
-<iframe frameborder="0" src="https://8a3a1affd7b9f05dbfd70710ff677661.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/5376056,7448792/sitepoint_dynamic/dynamic_1_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="d" data-load-complete="true" style="box-sizing: border-box !important; border: 0px; vertical-align: bottom;"></iframe>
-
-
-
-*Nota: para garantir que certos navegadores máis antigos lean correctamente a codificación de caracteres, a declaración de codificación de caracteres completa debe incluírse nalgún lugar dentro dos primeiros 512 caracteres do documento. Tamén debería aparecer antes de calquera elemento baseado no contido (como o `<title>`elemento que aparece máis adiante no noso exemplo)* .
+*Nota: para garantir que certos navegadores máis antigos lean correctamente a codificación de caracteres, a declaración de codificación de caracteres completa debe incluírse nalgún lugar dentro dos primeiros 512 caracteres do documento. Tamén debería aparecer antes de calquera elemento baseado no contido (como o elemento `<title>` que aparece máis adiante no exemplo)*.
 
 Poderiamos escribir moito máis sobre este tema, pero de momento, conformámonos con aceptar esta declaración simplificada e pasar á seguinte parte do noso documento.
 
-## O Meta Elemento Viewport
+## O meta elemento viewport
 
-O metaelemento viewport é unha característica que verás en case todos os modelos HTML5. É importante para o deseño web responsive e o deseño para móbiles:
+O meta elemento viewport é unha característica que verás en case todos os modelos HTML5. É importante para o deseño web responsive e o deseño para móbiles:
 
-```markup
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
@@ -139,10 +133,6 @@ Os que incluímos aquí mellorarán a aparencia da páxina web cando estea ligad
 Cando ves unha publicación compartida nas redes sociais, moitas veces verás estes datos engadidos automaticamente á publicación das redes sociais. Por exemplo, a continuación móstrase o que aparecería nun tweet se incluíses unha ligazón á páxina de inicio de GitHub:
 
 ![Tarxeta GitHub](https://uploads.sitepoint.com/wp-content/uploads/2021/06/1624432100github-card.png)
-
-<iframe frameborder="0" src="https://8a3a1affd7b9f05dbfd70710ff677661.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html" id="google_ads_iframe_/5376056,7448792/sitepoint_dynamic/dynamic_2_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="728" height="90" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="e" data-load-complete="true" style="box-sizing: border-box !important; border: 0px; vertical-align: bottom;"></iframe>
-
-
 
 [Fonte da imaxe: GitHub](https://user-images.githubusercontent.com/558709/121095418-5218c200-c7be-11eb-97d3-75bbaf52e244.png)
 
@@ -237,7 +227,6 @@ Para mellorar os teus coñecementos de CSS, o noso currículo de [proxectos CSS 
 
 Máis aló dese punto, pode levar o desenvolvemento do seu sitio web ou aplicación web ao seguinte nivel con interactividade e interfaces de usuario programáticas e reactivas. Consulte os amplos recursos de SitePoint sobre [JavaScript](https://www.sitepoint.com/javascript/) e [React](https://www.sitepoint.com/javascript/react/) , por exemplo. E descubre como [comezar novos proxectos máis rápido](https://www.sitepoint.com/start-new-projects-faster/) coa nosa guía das mellores ferramentas e bibliotecas web de andamios. Alternativamente, se queres crear experiencias web sen aprender a codificar, le o noso manual sobre o [movemento sen código](https://www.sitepoint.com/the-rise-of-the-no-code-movement/) . As últimas ferramentas sen código cambiaron o xogo. Por primeira vez, son o suficientemente potentes como para ofrecer unha alternativa seria á codificación en moitas situacións.
 
-
------
-_ref:
-https://www.sitepoint.com/a-basic-html5-template/
+---
+\_ ***ref:***
+[https://www.sitepoint.com/a-basic-html5-template/](https://www.sitepoint.com/a-basic-html5-template/)

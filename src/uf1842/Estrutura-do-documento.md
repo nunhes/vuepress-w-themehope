@@ -4,13 +4,9 @@ https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/A_first_splas
 
 [JavaScript Countdown Timer - Build a Countdown Timer from Scratch (javascripttutorial.net)](https://www.javascripttutorial.net/javascript-dom/javascript-countdown-timer/) :star:
 
-
-
 [40 JavaScript Projects for Beginners – Easy Ideas to Get Started Coding JS (freecodecamp.org)](https://www.freecodecamp.org/news/javascript-projects-for-beginners/)
 
 [Top 50 Javascript Projects For Beginners With Source Code | by JavaScript projects for beginners | Medium](https://medium.com/@tanoydadu/top-50-javascript-projects-for-beginners-with-source-code-351b54b88e3d)
-
-
 
 [Practical Code Examples using JavaScript (guru99.com)](https://www.guru99.com/practical-code-examples-using-javascript.html)
 
@@ -25,14 +21,11 @@ https://www.simplilearn.com/tutorials/javascript-tutorial/javascript-examples
 [dangconnie/movie-app: A movie app made with HTML, CSS, Javascript, jQuery and Bootstrap using API calls from The Movie Database (github.com)](https://github.com/dangconnie/movie-app)
 
 -->
+# O DOM, o código que amosa o navegador
 
 O navegador crea un modelo da estrutura do documento e utiliza este modelo para debuxar a páxina na pantalla.
 
-
-
 Esta representación do documento é un dos xoguetes que un programa JavaScript ten dispoñible no seu sandbox. É unha estrutura de datos que podes ler ou modificar. Actúa como unha estrutura de datos *en directo* : cando se modifica, a páxina da pantalla actualízase para reflectir os cambios.
-
-
 
 ## Estrutura do documento
 

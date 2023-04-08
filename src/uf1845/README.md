@@ -8,8 +8,10 @@ category:
 ---
 
 ## UF1845
-## Acceso a datos en aplicacións web da entorna servidor.  
-#### UD1. MODELOS DE DATOS
+
+## Acceso a datos en aplicacións web da entorna servidor  
+
+### UD1. MODELOS DE DATOS
 
 1. Concepto de dato. Ciclo de vida dos datos.
 2. Tipos de datos.
@@ -20,7 +22,7 @@ category:
 7. Transformación dun modelo lógico nun modelo físico de datos.
 8. Ferramentas para realización de modelos de datos.
 
-#### UD2. SISTEMAS DE XESTIÓN DE BASES DE DATOS (SGBD)
+### UD2. SISTEMAS DE XESTIÓN DE BASES DE DATOS (SGBD)
 
 1. Definición de SGBD.
 2. Compoñentes dun SGDB. Estrutura.
@@ -30,7 +32,7 @@ category:
 6. Solucións de SGBD.
 7. Criterios para selección de SGBD comerciais.
 
-#### UD3. LINGUAXES DE XESTIÓN DE BASES DE DATOS. O ESTÁNDAR SQL
+### UD3. LINGUAXES DE XESTIÓN DE BASES DE DATOS. O ESTÁNDAR SQL
 
 1. Descripción do estándar SQL.
 2. Creación de bases de datos.
@@ -42,7 +44,7 @@ category:
 8. Vistas.
 9. Funcións avanzadas.
 
-#### UD4. LINGUAXES DE MARCAS DE USO COMÚN NO LADO SERVIDOR
+### UD4. LINGUAXES DE MARCAS DE USO COMÚN NO LADO SERVIDOR
 
 1. Orixe e historia das linguaxes de marcas. O estándar XML.
 2. Características de XML.

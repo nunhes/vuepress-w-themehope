@@ -4,11 +4,11 @@ Comecemos por algo que pouco ten que ver coa programación: **os sistemas de xes
 
 Un CMS é unha aplicación web que permite configurar e manter sitios web sen necesidade de escribir nin unha liña de código.
 
-Son dalgún xeito as navallas suizas da publicación web. En xeral contan con suficiente enxeñería coma para ser fáciles de usar por un usuario adestrado, e sen necesidade inmediata de escribir calquera tipo de código. 
+Son dalgún xeito as navallas suizas da publicación web. En xeral contan con suficiente enxeñería coma para ser fáciles de usar por un usuario adestrado, e sen necesidade inmediata de escribir calquera tipo de código.
 
 Aínda así se ademais sabes programar existen sección nas que poderás intervir sen apenas restricións máis ala de seguir os modelos de codificación do corazón da aplicación. Se supón que un programador fullstack podería prescindir destas ferramentas ou tamén amplialas con novos plugins, temas,.... Pero hai que coñecer cada CMS bastante a fondo para sacarlle todo o potencial.
 
-Como desenvolvedor, aínda que esteas ao comezo da túa carreira profesional, convén que coñezas estas ferramentas. Saber como instalar, configurar e usar algúns dos CMS máis populares, como Wordpress, Drupal ou Prestashop, para publicar os teus propios sitios web ou o dos teus clientes. E a medida que os vais coñecendo non estaría demais atreverte coa creación dalgún complemento o tema. 
+Como desenvolvedor, aínda que esteas ao comezo da túa carreira profesional, convén que coñezas estas ferramentas. Saber como instalar, configurar e usar algúns dos CMS máis populares, como Wordpress, Drupal ou Prestashop, para publicar os teus propios sitios web ou o dos teus clientes. E a medida que os vais coñecendo non estaría demais atreverte coa creación dalgún complemento o tema.
 
 Animo e ao choio!
 

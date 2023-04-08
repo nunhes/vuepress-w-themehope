@@ -1,6 +1,6 @@
 # UF1841
 
-### Elaboración de documentos web mediante linguaxes de marca
+## Elaboración de documentos web mediante linguaxes de marca
 
 <!-- ### 60h 02/01/23-18/01/23 -->
 
@@ -40,10 +40,7 @@
 3. [Deseño de estilos](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design) para [diferentes dispositivos](https://www.w3schools.com/css/css_rwd_intro.asp).
 4. [Boas prácticas](https://x-team.com/blog/css-best-practices/) no [uso das follas de estilo](https://medium.com/before-semicolon/50-css-best-practices-guidelines-to-write-better-css-c60807e9eee2).
 
-
-
 ### [GLOSARIO WEB](https://developer.mozilla.org/en-US/docs/Glossary)
-
 
 ::: info
 

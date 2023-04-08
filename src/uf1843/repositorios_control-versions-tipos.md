@@ -66,6 +66,6 @@ Se queres obter máis información sobre calquera ferramenta concreta da lista a
 
 ---
 
-_ref:_
+***\_ref:***
 
-- https://medium.com/@knoldus/version-control-systems-vcs-why-so-important-64dde62944b7
+- [https://medium.com/@knoldus/version-control-systems-vcs-why-so-important-64dde62944b7](https://medium.com/@knoldus/version-control-systems-vcs-why-so-important-64dde62944b7)

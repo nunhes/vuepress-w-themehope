@@ -1,7 +1,5 @@
 # Proceso de desenvolvemento de software: modelo cascada
 
-
-
 ![5 etapas do proceso de desenvolvemento de software](./assets/5-etapas-del-proceso-de-desarrollo-de-software-1678308402445-3.jpg)
 
 Coñeces o proceso de **desenvolvemento de software** en cascada? Vexamos en que consiste e cales son as súas fases.
@@ -9,7 +7,6 @@ Coñeces o proceso de **desenvolvemento de software** en cascada? Vexamos en que
 Cada día son máis as empresas que se lanzan á creación de software, pero son moitas as ocasións nas que o proxecto queda no camiño.
 
 Cal é a razón de que isto suceda? En moitas ocasións non seguimos un proceso estruturado e metodolóxico. Isto axudaranos a conseguir un software que sirva como solución específica, ao tempo que aforraremos tempo e diñeiro.
-                                
 
 ## **Que é unha cascada de fases de desenvolvemento de software?**
 
@@ -20,8 +17,6 @@ Deste xeito, diferenciamos cinco etapas diferentes, creando un fluxo de  traball
 É necesario rematar cada etapa para comezar a seguinte. Así, antes de iniciar unha nova fase, revísase a anterior, comprobando que non hai erros e que é posible continuar.
 
 Con isto conseguimos ter un maior control, evitando chegar ao final cunha  serie de erros maiores que implican un maior redeseño que podería  aumentar os custos.
-
- 
 
 ## **As 5 fases do proceso de desenvolvemento de software**
 
@@ -61,6 +56,5 @@ E chegamos á última etapa do proceso de desenvolvemento de software. Unha vez 
 
 Os recursos deben asignarse para o mantemento unha vez que estea instalado polo usuario final. Podemos modificar, corrixir erros ou mellorar determinados aspectos para que cumpra todas as expectativas.
 
-
 ---
-__ref: https://www.solbyte.com/blog/5-etapas-del-proceso-de-desarrollo-de-software/   28/03/2021
+__ref: <https://www.solbyte.com/blog/5-etapas-del-proceso-de-desarrollo-de-software/>   28/03/2021

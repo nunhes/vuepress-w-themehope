@@ -53,7 +53,7 @@ No caso de proxectos máis complexos que usan bases de datos ou sistemas reactiv
 
 ### Fase 4: Desenvolvemento
 
-Unha vez que o cliente amosa a súa satisfacción co deseño proposto, o equipo pode pórse en marcha e comezar a programar a páxina web. 
+Unha vez que o cliente amosa a súa satisfacción co deseño proposto, o equipo pode pórse en marcha e comezar a programar a páxina web.
 
 Debido á gran carga de traballo que supón a construción dunha páxina web é recomendable planificar con detalle os paos desta fase.
 
@@ -67,7 +67,7 @@ Dependendo da complexidade do proxecto, a estas alturas xa sabemos que temos que
 
 ![fases de deseño](https://xn--master-diseo-khb.com/wp-content/uploads/2022/01/fases-del-dise%C3%B1o-png.jpg)
 
-- Outras linguaxes que podes ir incorporando ás túas habilidades como desenvolvedor web son: 
+- Outras linguaxes que podes ir incorporando ás túas habilidades como desenvolvedor web son:
   - **SQL**: este código permite ao deseñador web realizar consultas directas á base de datos e obter respostas moi precisas. Por este motivo, é un tipo de linguaxe que os bos deseñadores web deben dominar.
   - **PHP**
   - **Python**

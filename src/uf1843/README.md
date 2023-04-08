@@ -1,6 +1,6 @@
 # UF1843
 
-### Aplicacións técnicas de usabilidade e accesibilidade na contorna cliente
+## Aplicacións técnicas de usabilidade e accesibilidade na contorna cliente
 
 <!-- ### 30h 14/02/23-21/02/23 -->
 
@@ -10,7 +10,7 @@
 
 ::::
 
-#### UD 1. [ACCESIBILIDADE WEB](https://www.formate.es/curso/accesibilidad-web/)
+### UD 1. [ACCESIBILIDADE WEB](https://www.formate.es/curso/accesibilidad-web/)
 
 1. [Definición de accesibilidade web](https://www.w3.org/WAI/fundamentals/accessibility-intro/).
 2. [Avantaxes e dificultades na implantación da accesibilidade web](https://programaraciegas.net/?p=178).
@@ -21,7 +21,7 @@
 7. [Ferramentas para a validación da accesibilidade](https://www.w3.org/WAI/ER/tools/).[2](https://wave.webaim.org/)
 8. [Evolución da accesibilidade](https://blog.adobe.com/en/publish/2021/05/20/the-evolution-of-digital-accessibility-over-the-decades). [Novas tendencias](https://www.youtube.com/playlist?list=PLfCFZkKjngqrnEaIymHKvsym025w0cOF3).
 
-#### UD 2. [USABILIDADE WEB](https://99designs.es/blog/web-digital/website-usability-principles/)
+### UD 2. [USABILIDADE WEB](https://99designs.es/blog/web-digital/website-usability-principles/)
 
 1. [Definición de usabilidade](https://usabilitygeek.com/an-introduction-to-website-usability-testing/).
 2. [Importancia do deseño web centrado no usuario](https://www.interaction-design.org/literature/topics/user-centered-design).
@@ -35,10 +35,11 @@
 10. [Avaliación da usabilidad](https://xd.adobe.com/ideas/process/user-testing/top-7-usability-testing-methods/).
 
 **Máis info**:
-- https://blog.ida.cl/accesibilidad/estandares-minimos-sitio-web-accesible/
-- https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/
-- https://www.accessibilitychecker.org/
-- https://www.classcentral.com/provider/freecodecamp?subject=art-and-design
+
+- [https://blog.ida.cl/accesibilidad/estandares-minimos-sitio-web-accesible/](https://blog.ida.cl/accesibilidad/estandares-minimos-sitio-web-accesible/)
+- [https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/](https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/)
+- [https://www.accessibilitychecker.org/](https://www.accessibilitychecker.org/)
+- [https://www.classcentral.com/provider/freecodecamp?subject=art-and-design](https://www.classcentral.com/provider/freecodecamp?subject=art-and-design)
 
 ---
 <!--
@@ -56,8 +57,6 @@ Capacidades e Criterios de Avaliación:
 
 ---
 
-
-
 #### Febreiro
 
 | L                                                            | M                                                            | W                                                            | X                                                            | V                                                            | s    | d    |
@@ -73,4 +72,4 @@ Despois de realizar distintos exemplos de paxina web o alumnado debe poder reali
 
   - Recoñecer as linguaxes de marcado e empregalas para estruturar e difundir contidos web.
 
-   --> 
+   -->

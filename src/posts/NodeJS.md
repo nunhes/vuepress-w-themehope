@@ -101,7 +101,7 @@ Moitos deses establecéronse ao longo do tempo como opcións populares. Aquí te
 - [**Express**](https://expressjs.com/), unha das formas máis sinxelas pero poderosas de crear un servidor web. O seu enfoque minimalista, sen opinión, centrado nas características fundamentais dun servidor, é clave para o seu éxito.
 - [**Meteor**](https://www.meteor.com/), unha estrutura de pila completa incriblemente poderosa, que che  proporciona un enfoque isomórfico para crear aplicacións con JavaScript, compartir código no cliente e no servidor. Unha vez que era unha ferramenta estándar que proporcionaba todo, agora intégrase coas bibliotecas de frontend React, [Vue](https://vuejs.org/) e Angular. Tamén se pode usar para crear aplicacións móbiles.
 - [**koa**](https://koajs.com/) , construído polo mesmo equipo que está detrás de Express, pretende ser aínda máis sinxelo e pequeno, a partir de anos de coñecemento. O novo proxecto nace da necesidade de crear cambios incompatibles sen perturbar a comunidade existente.
-- [**Next.js**](https://nextjs.org/) , un marco para renderizar[ aplicacións React](https://es.reactjs.org/) renderizadas no lado do servidor .
+- [**Next.js**](https://nextjs.org/) , un marco para renderizar [aplicacións React](https://es.reactjs.org/) renderizadas no lado do servidor .
 - [**Micro**](https://github.com/zeit/micro) , un servidor moi lixeiro para crear microservizos HTTP asíncronos.
 - [**Socket.io**](https://socket.io/) , un motor de comunicación en tempo real para crear aplicacións de rede.
 - [**SvelteKit**](https://kit.svelte.dev/) : Sapper é un marco para construír aplicacións web de todos os tamaños, cunha fermosa experiencia de desenvolvemento e un enrutamento flexible  baseado no sistema de arquivos. Ofrece SSR e moito máis!
@@ -110,7 +110,7 @@ Moitos deses establecéronse ao longo do tempo como opcións populares. Aquí te
 
 ## 2. Unha breve historia de Node.js
 
-Node.js ten poucos anos. 13 en concreto. 
+Node.js ten poucos anos. 13 en concreto.
 
 Pola súa banda, JavaScript ten 26 anos e a Web 33.
 
@@ -126,47 +126,47 @@ A competencia entre os distintos navegadores por ofrecer aos usuarios o mellor r
 
 Node.js foi construído no lugar e no momento axeitados, pero non se fixo popular só por casualidade. O seu exito ten máis que ver coa gran cantidade de ideas e enfoques innovadores para o desenvolvemento do servidor JavaScript que introduce e que cambio o mundo dos desenvolvedores.
 
-**2009**
+\- **2009**
 
 - Nace Node.js
 - Dende a versión 0.6.3 se incorpora [npm](https://www.npmjs.com/)
 
-**2010**
+\- **2010**
 
 - Nace [Express](https://flaviocopes.com/express/)
 - Nace [Socket.io](https://socket.io)
 
-**2011**
+\- **2011**
 
 - npm alcanza a versión 1.0
 - As grandes empresas comezan a adoptar Node: LinkedIn, Uber, etc
 
-**2012**
+\- **2012**
 
 - A adopción da nova tecnoloxía se acelera
 
-**2013**
+\- **2013**
 
 - Primeira gran plataforma de blogs usando Node: Ghost
 - Nace [Koa](https://koajs.com/)
 
-**2014**
+\- **2014**
 
 - The Big Fork: [io.js](https://iojs.org/) é un gran fork de Node.js, co obxectivo de introducir compatibilidade con ES6 e avanzar máis rápido
 
-**2015**
+\- **2015**
 
 - Nace a [Fundación Node.js](https://foundation.nodejs.org/)
 - io.js volve fusionarse con Node.js
 - Chega a versión 4
 
-**2016**
+\- **2016**
 
 - O [incidente de leftpad](https://blog.npmjs.org/post/141577284765/kik-left-pad-and-npm)
 - Nace [Yarn](https://yarnpkg.com/)
 - Node v.6
 
-**2017**
+\- **2017**
 
 - npm céntrase máis na seguridade
 - Node v.8 e v.9
@@ -174,26 +174,26 @@ Node.js foi construído no lugar e no momento axeitados, pero non se fixo popula
 - [V8](https://v8.dev/) presenta Node na súa suite de probas, convertendo oficialmente a Node nun destino para o motor JS, ademais de Chrome
 - 3.000 millóns de descargas por minuto cada semana
 
-**2018**
+\- **2018**
 
 - Node v.10 e v.11
 - Soporte experimental [de módulos ES .mjs](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 
-**2019**
+\- **2019**
 
 - Node v.12 e v.13
 
-**2020**
+\- **2020**
 
 - Node v.14 3 v.15
 - [GitHub](https://www.github.com/) (propiedade de Microsoft) adquire [NPM](https://www.npmjs.com/)
 
-**2021**
+\- **2021**
 
 - Node.js 16
 - Node.js 17
 
-**2022**
+\- **2022**
 
 - Node.js 18
 
@@ -215,7 +215,7 @@ En macOS, [Homebrew](https://brew.sh/) é o estándar de facto e, unha vez insta
 
 Outros xestores de paquetes para Linux e Windows están listados en [https://nodejs.org/gl/download/package-manager/](https://nodejs.org/gl/download/package-manager/)
 
-`nvm` é unha forma popular de executar Node. Permíte instalar novas versións e tamén cambiar facilmente entre distintas versións de Node se algo se rompe ao avanzar. Tamén resulta moi útil para probar o noso código con distintas versións - antigas- de Node. 
+`nvm` é unha forma popular de executar Node. Permíte instalar novas versións e tamén cambiar facilmente entre distintas versións de Node se algo se rompe ao avanzar. Tamén resulta moi útil para probar o noso código con distintas versións - antigas- de Node.
 
 Para obter máis información sobre esta ferramenta podes consultar [https://github.com/nvm-sh/nvm](https://github.com/nvm-sh/nvm).
 
@@ -339,7 +339,7 @@ Se o arquivo principal da aplicación Node.js é `app.js`, podes chamalo escribi
  node app.js
 ```
 
-Así, estás dicindo explícitamente ao shell que execute o teu script con `node`. Tamén podes inserir esta información no teu arquivo JavaScript cunha liña "shebang". 
+Así, estás dicindo explícitamente ao shell que execute o teu script con `node`. Tamén podes inserir esta información no teu arquivo JavaScript cunha liña "shebang".
 
 O "shebang" é a primeira liña do arquivo e indica ao SO que intérprete debe usar para executar o script. Abaixo está a primeira liña de JavaScript:
 
@@ -1174,7 +1174,7 @@ Comezou como unha forma de descargar e xestionar as dependencias dos paquetes  N
 
 Hai moitas cousas que `npm`fai.
 
-*[**Yarn**](https://yarnpkg.com/en/) e[ **pnpm**](https://pnpm.io) son alternativas a npm cli. Tamén podes consultalos.*
+*[**Yarn**](https://yarnpkg.com/en/) e [**pnpm**](https://pnpm.io) son alternativas a npm cli. Tamén podes consultalos.*
 
 ### 15.2. Descargas
 
@@ -1279,9 +1279,9 @@ Por exemplo:
 Entón, en lugar de escribir eses comandos longos, que son fáciles de esquecer ou escribir mal, pode executar
 
 ```bash
-$ npm run watch
-$ npm run dev
-$ npm run prod
+npm run watch
+npm run dev
+npm run prod
 ```
 
 ## 16. Onde instala npm os paquetes?
@@ -1844,7 +1844,7 @@ As versións das dependencias actualizaranse no `package-lock.json`arquivo cando
 
 Esta é unha estrutura de exemplo dun `package-lock.json`arquivo que obtemos cando executamos `npm install cowsay`nun cartafol baleiro:
 
-```
+```json
 {
   "requires": true,
   "lockfileVersion": 1,
@@ -3521,7 +3521,7 @@ Este módulo proporciona `path.sep` o que proporciona o separador de segmentos d
 
 Estes son os métodos `path`:
 
-#### 40.0.1.`path.basename()`
+### 40.0.1.`path.basename()`
 
 Devolve a última parte dun camiño. Un segundo parámetro pode filtrar a extensión do arquivo:
 
@@ -3531,7 +3531,7 @@ require('path').basename('/test/something.txt') // something.txt
 require('path').basename('/test/something.txt', '.txt') // something
 ```
 
-#### 40.0.2.`path.dirname()`
+### 40.0.2.`path.dirname()`
 
 Devolve a parte do directorio dunha ruta:
 
@@ -3540,7 +3540,7 @@ require('path').dirname('/test/something') // /test
 require('path').dirname('/test/something/file.txt') // /test/something
 ```
 
-#### 40.0.3.`path.extname()`
+### 40.0.3.`path.extname()`
 
 Devolve a parte de extensión dun camiño
 
@@ -3549,7 +3549,7 @@ require('path').extname('/test/something') // ''
 require('path').extname('/test/something/file.txt') // '.txt'
 ```
 
-#### 40.0.4.`path.format()`
+### 40.0.4.`path.format()`
 
 Devolve unha cadea de ruta desde un obxecto. Isto é o contrario de `path.parse`
  `path.format` acepta un obxecto como argumento coas seguintes claves:
@@ -3560,7 +3560,7 @@ Devolve unha cadea de ruta desde un obxecto. Isto é o contrario de `path.parse`
 - `name`: o nome do arquivo
 - `ext`: a extensión do arquivo
 
-ignórase `root` se se proporciona `dir` 
+ignórase `root` se se proporciona `dir`
  `ext` e `name` ignórase se `base` existe
 
 ```js
@@ -3573,7 +3573,7 @@ require('path').format({ root: '/Users/joe', name: 'test', ext: '.txt' }) //  '/
 require('path').format({ dir: 'C:\\Users\\joe', base: 'test.txt' }) //  'C:\\Users\\joe\\test.txt'
 ```
 
-#### 40.0.5.`path.isAbsolute()`
+### 40.0.5.`path.isAbsolute()`
 
 Devolve verdadeiro se é un camiño absoluto
 
@@ -3582,7 +3582,7 @@ require('path').isAbsolute('/test/something') // true
 require('path').isAbsolute('./test/something') // false
 ```
 
-#### 40.0.6.`path.join()`
+### 40.0.6.`path.join()`
 
 Une dúas ou máis partes dun camiño:
 
@@ -3591,7 +3591,7 @@ const name = 'joe'
 require('path').join('/', 'users', name, 'notes.txt') // '/users/joe/notes.txt'
 ```
 
-#### 40.0.7.`path.normalize()`
+### 40.0.7.`path.normalize()`
 
 Intenta calcular o camiño real cando contén especificadores relativos como `.` ou `..`, ou barras inclinadas dobres `//`:
 
@@ -3599,7 +3599,7 @@ Intenta calcular o camiño real cando contén especificadores relativos como `.`
 require('path').normalize('/users/joe/..//test.txt') // '/users/test.txt'
 ```
 
-#### 40.0.8.`path.parse()`
+### 40.0.8.`path.parse()`
 
 Analiza un camiño a un obxecto cos segmentos que o compoñen:
 
@@ -3627,7 +3627,7 @@ resulta en
 }
 ```
 
-#### 40.0.9.`path.relative()`
+### 40.0.9.`path.relative()`
 
 Acepta 2 camiños como argumentos. Devolve a ruta relativa do primeiro ao segundo, en función do directorio de traballo actual.
 
@@ -3638,7 +3638,7 @@ require('path').relative('/Users/joe', '/Users/joe/test.txt') // 'test.txt'
 require('path').relative('/Users/joe', '/Users/joe/something/test.txt') // 'something/test.txt'
 ```
 
-#### 40.0.10.`path.resolve()`
+### 40.0.10.`path.resolve()`
 
 Podes obter o cálculo da ruta absoluta dunha ruta relativa usando `path.resolve()`:
 
@@ -4329,7 +4329,7 @@ despois implementar `_read`:
 readableStream._read = () => {}
 ```
 
-Tamén podes implementar `_read ` usando a opción `read`:
+Tamén podes implementar `read` usando a opción `read`:
 
 ```js
 const readableStream = new Stream.Readable({

@@ -1,12 +1,12 @@
 <!--Páxina 1: Información e comunicación en liña -->
 
-### Información e comunicación en liña
+# Información e comunicación en liña
 
 ![servizos de Internet.](./assets/servinternet_xl.png)
 
 **Internet é unha rede enorme que conecta ordenadores e outro tipo de dispositivos**, como teléfonos móbiles e táboas, **pero son os ==servizos== aloxados dentro desta rede os que definen o que se pode facer alí**. Vexamos algúns destes servizos:
 
-#### Correo electrónico
+## Correo electrónico
 
 Aínda que normalmente comprobamos o correo electrónico a través de sitios web\*, son dúas cousas diferentes. O correo electrónico ten os seus propios protocolos de comunicación e un software específico para enviar e recibir mensaxes de correo electrónico.
 
@@ -14,15 +14,15 @@ Aínda que normalmente comprobamos o correo electrónico a través de sitios web
 
 ![Correo electrónico](./assets/i_02_06_l_xl.png)
 
-#### Transmisión multimedia
+### Transmisión multimedia
 
-Podemos non só acceder e consultar senón tamén descargar arquivos (cURL, p2p,...). Ao descargar un arquivo sabemos o seu tamaño, o seu nome e o tipo de arquivo do que se trata. E cando remata a descarga podemos abrilo. 
+Podemos non só acceder e consultar senón tamén descargar arquivos (cURL, p2p,...). Ao descargar un arquivo sabemos o seu tamaño, o seu nome e o tipo de arquivo do que se trata. E cando remata a descarga podemos abrilo.
 
 Pola contra, cando accedemos a un servizo de *streaming* non descargamos nin un só arquivo nin sabemos o seu tamaño, senón que é un fluxo constante de información que se reproduce a medida que chega. Isto aplícase cando estás vendo unha película ou escoitando música en liña.
 
 #### Chamadas e conferencias
 
-A telefonía tradicional utiliza a súa propia infraestrutura e cabreado para interconectar aparellos telefónicos. 
+A telefonía tradicional utiliza a súa propia infraestrutura e cabreado para interconectar aparellos telefónicos.
 
 A **telefonía IP**, pola súa banda, utiliza Internet como infraestrutura para facer posibles as chamadas de voz tradicionais. Do mesmo xeito, as videoconferencias pódense realizar a través de Internet con protocolos e software especializados. Skype é un claro exemplo disto.
 
@@ -32,21 +32,15 @@ A **telefonía IP**, pola súa banda, utiliza Internet como infraestrutura para 
 
 A transferencia de arquivos entre ordenadores é posible mediante protocolos e aplicacións especializadas. Tamén é posible descargar arquivos a través da web. (FTP, SFTP)
 
-
-
 #### Mensaxería instantánea
 
 A mensaxería instantánea ou o chat permítenos enviar mensaxes de texto inmediatos a outras persoas conectadas. Aínda que moitos deles funcionan como parte dun sitio web como Google Hangouts, outros traballan de forma autónoma cos seus propios protocolos e software específico. Por exemplo, Whatsapp, [Skype](https://edu.gcfglobal.org/es/tecnologia/curso/skype/que_es_y_como_se_crea_una_cuenta_en_skype/1.do) , Viber, entre outros.
-
-
 
 ![chat](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/i_02_07_l_xl.png)
 
 #### Web
 
 Por último, pero non menos importante, a web é un servizo que nos permite consultar textos, imaxes, vídeos ou son de forma remota dende o noso ordenador ou dispositivo, accedendo a outros equipos que tamén deben estar conectados a Internet. Usar a web é o que chamamos informalmente *navegar por Internet.*
-
-
 
 <!--Páxina 2: Que é a web?-->
 
@@ -60,11 +54,11 @@ A **web** mundial **ou**, simplemente, web é un dos servizos que funcionan en I
 
 Esa información debe estar organizada dalgún xeito para que os ordenadores poidan procesala e a xente entendela. Tal organización fíxose arredor do concepto de **hipertexto**, que basicamente propón que un texto pode superar o seu carácter secuencial ou lineal e pode ter enlaces ou ligazóns directas a outros textos.
 
-Imaxina que hai varios textos dixitais no teu ordenador e que cada un deles ten ligazóns aos demais. Poderías ler un dos textos, pasar ao seguinte ou nalgún momento saltar ao último ou volver ao primeiro. Iso é, de xeito sinxelo, o hipertexto. 
+Imaxina que hai varios textos dixitais no teu ordenador e que cada un deles ten ligazóns aos demais. Poderías ler un dos textos, pasar ao seguinte ou nalgún momento saltar ao último ou volver ao primeiro. Iso é, de xeito sinxelo, o hipertexto.
 
 Agora imaxina que eses textos xa non están no teu ordenador senón noutro, noutra parte do mundo. Como acceder a eles?
 
-Grazas á web podes acceder a aqueles textos que están noutro ordenador coma se estivesen no teu. E non só iso. Podes ler millóns e millóns de textos, ver imaxes e vídeos que están en miles e miles de ordenadores conectados a Internet en todo o mundo. Xenial non? 
+Grazas á web podes acceder a aqueles textos que están noutro ordenador coma se estivesen no teu. E non só iso. Podes ler millóns e millóns de textos, ver imaxes e vídeos que están en miles e miles de ordenadores conectados a Internet en todo o mundo. Xenial non?
 
 Chamámoslle *páxina web* a cada un destes textos ou documentos estruturados dixitais; e/ou a un grupo coordinado deles. E cada un destes grupos tamén se os denomina *sitio web*.
 
@@ -132,8 +126,6 @@ Grazas á posibilidade de transmitir son e vídeo a través da web, existen siti
 
 ![necesito un sitio web](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/intertt_xl.png)
 
-
-
 - se ti ou a túa empresa fabrican un ***produto\***, é posible que necesites un sitio web para darlle publicidade. A través dun sitio web podes describir as características do produto e, mellor aínda, engadir fotos e vídeos para promocionalo. Incluso podes vendelo directamente a través do teu sitio web.
 
 - se o que ofreces é un ***servizo***, podes dalo a coñecer a través dunha páxina web. Alí podes presentar de que se trata o teu servizo, algúns casos de éxito, incluso as tarifas e modalidades do servizo que prestas.
@@ -147,7 +139,7 @@ E estes son só algúns dos motivos polos que quizais ti ou alguén que coñezas
 
 <!-- Páxina 5: Conceptos web -->
 
-### Algúns conceptos xerais   
+### Algúns conceptos xerais
 
 Moitos dos conceptos técnicos da web son palabras en inglés. Outras son palabras comúns pero que adquiren un significado diferente no contexto TIC.
 
@@ -157,9 +149,9 @@ Por exemplo, cando se fala dun ***servidor***, pode significar varias cousas. O 
 
 Aqueles ordenadores que realizan solicitudes a un servidor denomínanse ***clientes***. Os clientes fan solicitudes ao servidor a través do ***navegador*** - axente de usuario-. O navegador ou navegador web é unha aplicación que nos permite contactar co servidor, recibir a súa resposta e visualizala.
 
-As solicitudes que executan os clientes realízanse mediante un ***protocolo\***: unha definición dos pasos necesarios para establecer unha comunicación entre dúas máquinas. O protocolo que se emprega para *servir as páxinas web* e o de transferencia de hipertexto, ou HTTP. É o protocolo usado na web.
+As solicitudes que executan os clientes realízanse mediante un **protocolo\***: unha definición dos pasos necesarios para establecer unha comunicación entre dúas máquinas. O protocolo que se emprega para *servir as páxinas web* e o de transferencia de hipertexto, ou HTTP. É o protocolo usado na web.
 
-As solicitudes poden ter ***respostas*** diferentes. Por exemplo, a resposta pode ser unha páxina web, unha folla de estilo ou un guión, entre outros. 
+As solicitudes poden ter ***respostas*** diferentes. Por exemplo, a resposta pode ser unha páxina web, unha folla de estilo ou un guión, entre outros.
 
 Unha páxina ***web*** é un documento de texto en linguaxe HTML, unha folla de ***estilo*** é un documento de texto en linguaxe CSS e un ***script*** ou guión é un documento de texto en linguaxe Javascript.
 
@@ -167,9 +159,9 @@ Todo isto parece un trabalinguas, non? Non te preocupes, volveremos a estas cond
 
 <!-- Páxina 6: Linguaxes web -->
 
-### Linguaxes web 
+### Linguaxes web
 
-Como xa vimos, un servidor web pode devolver como resposta unha páxina web, unha folla de estilo ou un script, entre outros tipos de arquivo. Para crear estes arquivos se utilizan linguaxes especializadas: as linguaxes web. Destas linguaxes as máis importantes son **HTML**, **CSS** e **Javascript**. 
+Como xa vimos, un servidor web pode devolver como resposta unha páxina web, unha folla de estilo ou un script, entre outros tipos de arquivo. Para crear estes arquivos se utilizan linguaxes especializadas: as linguaxes web. Destas linguaxes as máis importantes son **HTML**, **CSS** e **Javascript**.
 
 ![CSS3, Javascript e HTML5](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/siglasmedia_xl.png)
 
@@ -213,7 +205,7 @@ Por miúdo que sexa o teu proxecto web recomendariámosche alo menos un modelo d
 
 Nesta fase se determinarán os obxectivos xerais, recursos necesarios e tempo dispoñible e/ou requirido para levar a cabo a realización do proxecto.
 
-#### 2. Análise e planificación 
+#### 2. Análise e planificación
 
 Estudo da funcionalidade do teu sitio, dos usuarios, do aspecto e os requisitos técnicos do sitio web. Aquí se deciden cales son as opcións máis convenientes para crear o sitio web.
 
@@ -243,13 +235,13 @@ Por exemplo, se estás a fabricar un produto e o teu obxectivo é aumentar as ve
 
 Cando un sitio web se publica en Internet comeza a competir cunha cantidade inmensa de portais. Para que os contidos do sitio sexan visibles e aparezan como primeira opción ofrecida aos usuarios polos buscadores como Google, Yahoo ou Bing non só basta publicar o sitio. A loita polo posicionamento require planificación e estratexias ben definidas, que poden abarcar desde accións en canles ou redes sociais, até melloras no desempeño funcional ou os contidos... Para ter éxito nesta competición é moi importante ter unha excelente estratexia web definida e planificada ao detalle.
 
-Continuando co exemplo anterior, supoñamos que cando fas un estudo en profundidade dos potenciais compradores do teu produto, descobres que a maioría deles realizan as súas compras nunha tenda online especializada que ten gran prestixio nese sector do mercado. Nese caso, sería unha boa idea modificar a túa estratexia, deixando a creación da túa tenda en liña para unha segunda fase e buscar primeiro a forma de distribuír o teu produto con esa tenda existente. Por outra banda, o deseño do teu sitio web podería estar enfocado, nun primeiro momento, a mostrar información do produto e proporcionar aos usuarios a información de contacto da túa empresa. 
+Continuando co exemplo anterior, supoñamos que cando fas un estudo en profundidade dos potenciais compradores do teu produto, descobres que a maioría deles realizan as súas compras nunha tenda online especializada que ten gran prestixio nese sector do mercado. Nese caso, sería unha boa idea modificar a túa estratexia, deixando a creación da túa tenda en liña para unha segunda fase e buscar primeiro a forma de distribuír o teu produto con esa tenda existente. Por outra banda, o deseño do teu sitio web podería estar enfocado, nun primeiro momento, a mostrar información do produto e proporcionar aos usuarios a información de contacto da túa empresa.
 
-> A estratexia web máis eficaz non comeza coa creación dun sitio web. 
+> A estratexia web máis eficaz non comeza coa creación dun sitio web.
 >
 > Pola contra, a creación dun sitio web debería ser o resultado dunha boa estratexia web.
 
-A hora de establecer unha estratexia web, sería conveniente pensar nas respostas ás seguintes preguntas: 
+A hora de establecer unha estratexia web, sería conveniente pensar nas respostas ás seguintes preguntas:
 
 - **Cales son os obxectivos que se esperan conseguir creando un sitio web?**
 
@@ -281,8 +273,6 @@ Agora que debuxaches o teu plan, crea o teu proxecto na web seguindo os pasos qu
 
 <!-- Páxina 9: Que é un URL? -->
 
-
-
 ### Que é unha URL?
 
 Un sitio web estático está formado por unha serie de directorios e arquivos situados nun servidor e accesibles desde o teu ordenador a través dun navegador.
@@ -299,15 +289,13 @@ Unha URL absoluta é unha cadea de texto que describe completamente a localizaci
 
 Os URL relativos só conteñen unha parte dos absolutos: só os directorios e o nome do arquivo. O navegador cubrirá a información que falta para que só se utilice nos documentos html.
 
-
-
 ![URL relativos e absolutos](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/imgscursoweb-02_xl.png)
 
 As url non só se usan na barra de enderezos do navegador, tamén se escriben dentro dos documentos html para referirse a outros arquivos como imaxes, follas de estilo, scripts, sons, vídeos e en xeral calquera arquivo que se publique na Web. .
 
 <!-- Páxina 10: HTML - Linguaxe de marcado de hipertexto -->
 
-### HTML - Linguaxe de marcado de hipertexto
+### HTML - Linguaxe de marcado de hipertexto ii
 
 HTML é unha linguaxe que describe un documento de hipertexto.
 
@@ -329,15 +317,11 @@ A etiqueta html é a primeira etiqueta que aparece nun documento, marca precisam
 
 Na etiqueta head describimos as cousas que son comúns ao documento como o título, as follas de estilo e os guións.
 
-
-
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/head.svg)
 
 #### ``body``
 
 Dentro desta etiqueta escribimos o contido do documento como tal.
-
-
 
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/body.svg)
 
@@ -349,15 +333,11 @@ Estas etiquetas deben ir dentro da etiqueta da cabeza. Describen metadatos e rec
 
 Dentro da etiqueta title debemos escribir o título do documento, este estará visible na pestana do navegador.
 
-
-
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/title.svg)
 
 #### ``meta``
 
 A metaetiqueta úsase para describir información do documento, como o autor, unha breve descrición e algunhas palabras clave. Esta información é importante para que os buscadores e as redes sociais poidan saber de que trata a páxina.
-
-
 
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/meta.svg)
 
@@ -365,15 +345,11 @@ A metaetiqueta úsase para describir información do documento, como o autor, un
 
 Coa etiqueta de ligazón podemos facer referencia a un recurso externo, o seu uso máis habitual é asociar unha ou varias follas de estilo a un documento HTML.
 
-
-
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/link.svg)
 
 #### ``script``
 
 A etiqueta de script úsase para facer referencia a arquivos de código externos ou tamén pode incluír código directamente nel. Deste xeito asociamos código JavaScript aos documentos HTML.
-
-
 
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/script.svg)
 
@@ -385,15 +361,11 @@ Estas etiquetas non teñen unha visualización particular, pero son útiles para
 
 O obxectivo da etiqueta div é agrupar diferentes elementos nun só bloque, isto é útil por exemplo cando se aplican estilos css, xa que podemos aplicar un estilo a todos os elementos que están dentro do mesmo bloque div.
 
-
-
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/div.svg)
 
 #### ``span``
 
 Coa etiqueta span tamén é posible agrupar elementos, pero non dentro dun bloque, senón linealmente.
-
-
 
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/span.svg)
 
@@ -401,15 +373,11 @@ Coa etiqueta span tamén é posible agrupar elementos, pero non dentro dun bloqu
 
 A etiqueta de cabeceira permítenos definir a cabeceira do documento, xeralmente alí atopamos o logotipo e o menú dun sitio web.
 
-
-
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/header.svg)
 
 #### ``footer``
 
 Coa etiqueta de pé de páxina definimos o pé de páxina do documento, normalmente temos aquí os enlaces a información corporativa, preguntas frecuentes e información de contacto.
-
-
 
 ![img](https://media.gcflearnfree.org/content/5b10435b6d5ad52ca4b6efad_6_4_2016/footer.svg)
 
@@ -419,15 +387,15 @@ Estas etiquetas presentan controis visuais no documento, empregámolas para reci
 
 #### ``select``
 
-A etiqueta select presenta unha lista despregable de opcións. Podes facer clic nas frechas da parte de visualización para poder probar o seu funcionamento. 
+A etiqueta select presenta unha lista despregable de opcións. Podes facer clic nas frechas da parte de visualización para poder probar o seu funcionamento.
 
 #### ``button``
 
-Como o seu nome indica, esta etiqueta ten un botón. 
+Como o seu nome indica, esta etiqueta ten un botón.
 
 #### ``checkbox``
 
-Esta etiqueta presenta un botón de tipo de verificación. Este tipo de botóns úsanse a miúdo en grupos para mostrar varias opcións. 
+Esta etiqueta presenta un botón de tipo de verificación. Este tipo de botóns úsanse a miúdo en grupos para mostrar varias opcións.
 
 #### ``button radio``
 
@@ -435,11 +403,11 @@ Esta etiqueta presenta un botón de tipo de radio. Este tipo de botóns adoitan 
 
 #### ``input``
 
-Esta etiqueta úsase para presentar ao usuario un campo de entrada de datos que pode ser texto, numérico, data ou outro. Podes escribir no campo para comprobar o seu funcionamento. 
+Esta etiqueta úsase para presentar ao usuario un campo de entrada de datos que pode ser texto, numérico, data ou outro. Podes escribir no campo para comprobar o seu funcionamento.
 
 #### ``textarea``
 
-Esta etiqueta presenta unha zona que permite a entrada dunha maior cantidade de texto. Podes escribir un parágrafo dentro do campo para comprobar o seu funcionamento. 
+Esta etiqueta presenta unha zona que permite a entrada dunha maior cantidade de texto. Podes escribir un parágrafo dentro do campo para comprobar o seu funcionamento.
 
 ### Etiquetas multimedia
 
@@ -451,15 +419,15 @@ A través da etiqueta img podemos incluír imaxes estáticas ou animadas no noso
 
 #### ``audio``
 
-Coa etiqueta de son podemos incluír arquivos de son no documento e reproducilos directamente a través do navegador. 
+Coa etiqueta de son podemos incluír arquivos de son no documento e reproducilos directamente a través do navegador.
 
 #### ``video``
 
-Coa etiqueta de vídeo podemos incluír vídeos no documento, coa posibilidade de mostrar controis de reprodución, como pausa, avance e visualización en pantalla completa. 
+Coa etiqueta de vídeo podemos incluír vídeos no documento, coa posibilidade de mostrar controis de reprodución, como pausa, avance e visualización en pantalla completa.
 
 #### ``canvas``
 
-A etiqueta canvas permítenos incluír gráficos personalizados en 2D ou 3D, é unha zona do documento onde podemos debuxar mediante código. 
+A etiqueta canvas permítenos incluír gráficos personalizados en 2D ou 3D, é unha zona do documento onde podemos debuxar mediante código.
 
 ### Etiquetas de formato
 
@@ -471,11 +439,11 @@ Os títulos van dende os máis importantes (1) ata os menos (6), con etiquetas d
 
 #### Parágrafo
 
-Os parágrafos enmárcanse entre a etiqueta **``p``**, agrupando un texto que teña todo o sentido. 
+Os parágrafos enmárcanse entre a etiqueta **``p``**, agrupando un texto que teña todo o sentido.
 
 #### Listas
 
-Existen dous tipos de listas: listas ordenadas que se numeran automaticamente - `1., 2.,...`- coa etiqueta **``ol``**. E listas con elementos sen numerar coa etiqueta **``ul``**. 
+Existen dous tipos de listas: listas ordenadas que se numeran automaticamente - `1., 2.,...`- coa etiqueta **``ol``**. E listas con elementos sen numerar coa etiqueta **``ul``**.
 
 ### Etiquetas de hipertexto
 
@@ -483,7 +451,7 @@ Estas etiquetas son as que permiten navegar dun documento a outro no modelo de l
 
 #### Ligazón
 
-A etiqueta ``a`` representa as ligazóns a outros documentos html na web, están formadas polo texto visible e o URL de destino. 
+A etiqueta ``a`` representa as ligazóns a outros documentos html na web, están formadas polo texto visible e o URL de destino.
 
 > **Un documento html é un arquivo de texto simple coa extensión *.html***
 
@@ -519,8 +487,6 @@ Este selector **corresponde aos nomes das etiquetas dos elementos html**, por ex
 
 Os elementos HTML poden ter un atributo chamado ***id*** que debe ser único e serve para identificalo dentro do documento. O selector debe comezar co símbolo ***#*** seguido do nome ou ID do elemento e a regra aplicarase só a ese elemento. É útil para estilizar elementos que queremos destacar.
 
-
-
 ![img](https://media.gcflearnfree.org/content/5b1043776d5ad52ca4b6f00a_8_2_2016/selector-por-id.svg)
 
 #### Selector por clase
@@ -529,11 +495,9 @@ Os elementos html poden ter un atributo chamado ***class***, que se usa para agr
 
 ![img](https://media.gcflearnfree.org/content/5b1043776d5ad52ca4b6f00a_8_2_2016/selector-por-clasea.svg)
 
-
-
 #### Selector de estado
 
-Algúns elementos html poden ter estados diferentes, un botón pode estar desactivado, unha ligazón pode estar xa visitada ou o punteiro do rato pode estar sobre un texto. O selector de estados permite aplicar regras diferentes dependendo do estado dos elementos. Este selector colócase despois doutro selector separado polo símbolo **``:``** No exemplo seguinte cambiamos a cor do bordo cando se selecciona un ou outro campo de texto. 
+Algúns elementos html poden ter estados diferentes, un botón pode estar desactivado, unha ligazón pode estar xa visitada ou o punteiro do rato pode estar sobre un texto. O selector de estados permite aplicar regras diferentes dependendo do estado dos elementos. Este selector colócase despois doutro selector separado polo símbolo **``:``** No exemplo seguinte cambiamos a cor do bordo cando se selecciona un ou outro campo de texto.
 
 #### Selector de atributo
 
@@ -585,7 +549,7 @@ O número de propiedades dos elementos html é amplo, podes consultar a referenc
 
 ### Animacións
 
-Actualmente é posible declarar animacións para elementos html. As animacións comezan co símbolo ***@\*** seguido da palabra **``keyframes``**, despois aparece o nome da animación, seguido dos estados da animación e as súas propiedades correspondentes. Tamén debes asignar a animación nas regras do elemento a animar. Fíxate no seguinte exemplo. 
+Actualmente é posible declarar animacións para elementos html. As animacións comezan co símbolo ***@\*** seguido da palabra **``keyframes``**, despois aparece o nome da animación, seguido dos estados da animación e as súas propiedades correspondentes. Tamén debes asignar a animación nas regras do elemento a animar. Fíxate no seguinte exemplo.
 
 Especifícanse varias regras nunha folla de estilo que é un arquivo de texto simple cunha extensión css. Debe asociar a folla de estilo ao documento html mediante a etiqueta de *ligazón* .
 
@@ -665,8 +629,6 @@ Os elementos multimedia en particular teñen atributos e eventos especiais que o
 
 A través de JavaScript é posible asociar funcións con eventos do documento html, deste xeito podemos xerar unha maior interacción cos usuarios. No exemplo asociamos unha función que se executará ao final dun vídeo.
 
-
-
 ![img](https://media.gcflearnfree.org/content/5b10437a6d5ad52ca4b6f015_8_2_2016/eventos-2.svg)
 
 O código JavaScript está implementado como un arquivo de texto simple cunha extensión js. Debe asociar o arquivo js co documento html mediante a etiqueta de *script* .
@@ -683,7 +645,7 @@ En páxinas anteriores introducimos as tres tecnoloxías fundamentais da web: HT
 
 #### Librarías
 
-No software, unha *biblioteca* é un compoñente reutilizable que facilita determinadas tarefas de programación. Segundo a tecnoloxía, pode ser un conxunto de funcións ou obxectos. Ao integrar unha biblioteca no noso proxecto teremos acceso a funcións que nos levarían moito tempo e que foron ben deseñadas e probadas na biblioteca. 
+No software, unha *biblioteca* é un compoñente reutilizable que facilita determinadas tarefas de programación. Segundo a tecnoloxía, pode ser un conxunto de funcións ou obxectos. Ao integrar unha biblioteca no noso proxecto teremos acceso a funcións que nos levarían moito tempo e que foron ben deseñadas e probadas na biblioteca.
 
 #### Modelos
 
@@ -717,7 +679,7 @@ Na práctica, non é tan doado distinguir entre bibliotecas, modelos e framework
 
 [BackboneJS](http://backbonejs.org/) é un framework enfocado a sincronizar os cambios de datos coa forma en que se presentan e co seu envío ao servidor no caso dun sitio web dinámico.
 
-#### Deseño Responsivo
+#### Deseño Responsivo ii
 
 [Amazium](http://www.amazium.co.uk/) e [Gridism](http://cobyism.com/gridism/) son marcos CSS para o deseño responsive, proporcionan unha estrutura HTML e algúns estilos predefinidos para deseñar un sitio baixo un ***modelo*** de cuadrícula .
 
@@ -747,17 +709,15 @@ Ao consultar a web, é o navegador o que se encarga de conectarse cos servidores
 
 O noso sitio web debe ser accesible a través dun dominio, para iso é necesario mercalo a unha entidade administradora de dominios, trátase de empresas denominadas *rexistradores* dedicadas a vender, precisamente, nomes de dominio. Debido ao espírito aberto da web, hai moitas destas empresas e os prezos non están regulados, senón que se axustan á oferta e á demanda. Podes mercar un dominio por menos de 5 dólares ao ano, ou podes atopar algúns moi caros porque son moi altos ou fáciles de lembrar.
 
- 
-
 [GoDaddy](https://co.godaddy.com/) , [Dynadot](https://www.dynadot.com/) ou [MediaTemple](https://mediatemple.net/) son só algúns exemplos deste tipo de empresas, só tes que buscar na web e atoparás moitas máis, normalmente o proceso de compra consiste en ir á páxina, averiguar se o dominio que queres está dispoñible, crear unha conta en o sitio e pagar, normalmente con tarxeta de crédito. Unha vez realizado o pago terás acceso á configuración DNS do teu dominio.
 
 ### Aloxamento - Aloxamento
 
 Agora que tes o teu dominio, preguntarásche e onde podo os arquivos do meu sitio web? Vexamos.
 
-Aínda que técnicamente é posible configurar o teu dominio para que *apunte* ao teu ordenador, esta non é a mellor das ideas por varias razóns: o teu ordenador debería estar aceso todo o tempo, mesmo con cortes de enerxía, deberías ter un sistema de copia de seguridade, debería Tamén ten boas características de hardware para atender aos visitantes do teu sitio e bos equipos de rede para responder rapidamente ao tráfico, debería ter un sistema operativo seguro e ben configurado e, finalmente, o máis probable é que o teu provedor de Internet asigne automaticamente un enderezo diferente ao teu ordenador cada vez , o que fai inviable a configuración de DNS. 
+Aínda que técnicamente é posible configurar o teu dominio para que *apunte* ao teu ordenador, esta non é a mellor das ideas por varias razóns: o teu ordenador debería estar aceso todo o tempo, mesmo con cortes de enerxía, deberías ter un sistema de copia de seguridade, debería Tamén ten boas características de hardware para atender aos visitantes do teu sitio e bos equipos de rede para responder rapidamente ao tráfico, debería ter un sistema operativo seguro e ben configurado e, finalmente, o máis probable é que o teu provedor de Internet asigne automaticamente un enderezo diferente ao teu ordenador cada vez , o que fai inviable a configuración de DNS.
 
-É bastante o que hai que ter en conta, non? Para iso é mellor mercar un servizo dunha empresa de *hospedaxe web* , estas son empresas que se encargan de todos os detalles mencionados e por unha cota mensual ofrecen espazo nun servidor nun centro de datos e acceso remoto para que poida subir os arquivos do seu sitio. . 
+É bastante o que hai que ter en conta, non? Para iso é mellor mercar un servizo dunha empresa de *hospedaxe web* , estas son empresas que se encargan de todos os detalles mencionados e por unha cota mensual ofrecen espazo nun servidor nun centro de datos e acceso remoto para que poida subir os arquivos do seu sitio. .
 
 Xeralmente, as mesmas empresas que ofrecen nomes de dominio tamén ofrecen plans de hospedaxe. Para decidir un plan, a recomendación máis xeral é comezar polo máis pequeno e barato. A medida que xorde a necesidade de crecemento, pode aumentar a capacidade do servidor por un custo adicional.
 
@@ -786,8 +746,6 @@ A continuación mostrarémosche tres opcións de sitios onde podes crear a túa 
 #### Jimdo
 
 De xeito similar aos anteriores, [Jimdo](http://www.jimdo.com/) ofrece plans de *hospedaxe* de dominios  , conta con modelos e compoñentes para sitios empresariais, carteiras, tendas en liña ou música.
-
-
 
 ![logotipo de jimdo](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/jimdo-logo_xl.png)
 
@@ -891,11 +849,7 @@ Requírese un servidor Microsoft IIS para executar páxinas ASP.NET. Entre os se
 
 [Explora](https://edu.gcfglobal.org/es/creacion-de-sitios-web/paginas-para-aprender-a-programar/1/#)
 
-
-
 *O uso de frameworks e sistemas de modelos evita mesturar o código de programación con etiquetas html, o que mellora o mantemento dos grandes proxectos.*
-
-
 
 ### Alternativas
 
@@ -919,7 +873,7 @@ Existen varios modelos de bases de datos, mencionaremos un deles que se utiliza 
 
 ![Diagrama de relacións entidades](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/diagrama_er_xl.png)
 
-*Diagrama de relacións entidades*
+**Diagrama de relacións entidades*
 
 ### Entidades
 
@@ -937,7 +891,7 @@ Para implementar as relacións, utilízase o concepto de ***chave estranxeira\**
 
 ### Procuras
 
-Unha das vantaxes de ter un modelo matemático para bases de datos relacionais é que facilitou a creación dunha linguaxe de consulta estruturada coñecida como ***SQL\*** ( *Structured Query Language)* . A través deste podemos executar actualizacións e consultas sobre os datos. Por exemplo, actualizar atributos dalgunha entidade, buscar entidades que cumpran determinadas condicións ou atopar grupos de entidades asociadas, entre outras moitas opcións.
+Unha das vantaxes de ter un modelo matemático para bases de datos relacionais é que facilitou a creación dunha linguaxe de consulta estruturada coñecida como ***SQL\*** (*Structured Query Language)* . A través deste podemos executar actualizacións e consultas sobre os datos. Por exemplo, actualizar atributos dalgunha entidade, buscar entidades que cumpran determinadas condicións ou atopar grupos de entidades asociadas, entre outras moitas opcións.
 
 ### Implementación informática
 
@@ -945,21 +899,13 @@ Os sistemas de xestión de bases de datos relacionais, *RDBMS* polas súas sigla
 
 ![táboa de autores](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/tabla-autor_xl.png)
 
-
-
 *Exemplo de táboa "AUTHOR".*
-
-
 
 Ademais, estes sistemas ofrecen funcionalidades como xestión de usuarios e permisos, acceso simultáneo a través da rede, creación de copias de seguridade e análise de rendemento, entre outras. No mercado atopamos moitos destes sistemas, podemos citar a [MySQL](http://www.mysql.com/) , [Oracle](https://www.oracle.com/database/index.html) e [PostgreSQL](https://www.postgresql.org/) entre os máis coñecidos.
 
 ![táboa de artigos](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/tabla-articulo_xl.png)
 
-
-
-*Exemplo de táboa "ARTIGO"*
-
-
+\* *Exemplo de táboa "ARTIGO"*
 
 ### Alternativas
 
@@ -975,29 +921,29 @@ Como mostramos en páxinas anteriores, o desenvolvemento dun sitio web dinámico
 
 ![Equipo de traballo](https://aprendelibvrefiles.blob.core.windows.net/aprendelibvre-container/course/creacion_de_sitios_web/image/webb3_xl.png)
 
-#### Fai un bo equipo.
+#### Fai un bo equipo
 
-O desenvolvemento de sitios web implica diversas tecnoloxías, polo que necesitamos un equipo de traballo con coñecementos e habilidades diversas. 
+O desenvolvemento de sitios web implica diversas tecnoloxías, polo que necesitamos un equipo de traballo con coñecementos e habilidades diversas.
 
 Algúns membros do equipo centraranse no *frontend* : facer que o sitio sexa visualmente agradable, que teña un bo aspecto en diferentes dispositivos e que a experiencia do usuario sexa a mellor posible. Outros centraranse no *backend* : que o sitio sexa rápido, que sexa escalable, seguro e ofreza a funcionalidade esperada.
 
-#### Use un sistema de control de versións.
+#### Use un sistema de control de versións
 
 Un sitio web consiste nunha colección de arquivos, algúns serán código fonte, outros texto HTML, outros arquivos de estilo, algún código JavaScript, etc. Para xestionar o proxecto é necesario un sistema de control de versións como [Git](https://git-scm.com/) ou [Subversion](https://subversion.apache.org/) , sistemas que permiten o acceso e control de versións do grupo de arquivos que forman parte do proxecto.
 
-#### Configura o teu ambiente de desenvolvemento.
+#### Configura o teu ambiente de desenvolvemento
 
-Segundo a tecnoloxía escollida, o desenvolvemento implica a instalación e configuración de software: un servidor web, servidores de bases de datos, algún entorno de *execución* ou de execución, ferramentas de compilación e un entorno de desenvolvemento integrado ou IDE. 
+Segundo a tecnoloxía escollida, o desenvolvemento implica a instalación e configuración de software: un servidor web, servidores de bases de datos, algún entorno de *execución* ou de execución, ferramentas de compilación e un entorno de desenvolvemento integrado ou IDE.
 
 Un IDE é unha aplicación que nos permite xestionar e editar arquivos de proxecto, previsualizar o contido, iniciar e deter servidores, acceder a bases de datos, ver arquivos de rexistro e outras utilidades necesarias para o desenvolvemento de software.
 
 #### Alternativas
 
-Non sempre é necesario que abordes o desenvolvemento web desde cero, tes alternativas como instalar e configurar un sistema de xestión de contidos ou CMS. Estes sistemas poden ser xestionados por usuarios con coñecementos básicos de informática. 
+Non sempre é necesario que abordes o desenvolvemento web desde cero, tes alternativas como instalar e configurar un sistema de xestión de contidos ou CMS. Estes sistemas poden ser xestionados por usuarios con coñecementos básicos de informática.
 
 Con eles podes construír un sitio web rapidamente, grazas a que estes sistemas incorporan interfaces visuais para editar e configurar o sitio, paquetes temáticos personalizables e *complementos* ou extensións que se adaptan ás túas necesidades, por exemplo, galerías de imaxes ou formularios de enquisas. Tamén contan con funcionalidades de xestión de usuarios e unha base de datos preconfigurada.
 
-Exemplos destes sistemas son [WordPress ](https://es.wordpress.org/), [Joomla ](https://www.joomla.org/), [Drupal ](https://www.drupal.org/)ou [Moodle ](https://moodle.org/?lang=es), este último orientado a cursos en liña.
+Exemplos destes sistemas son [WordPress](https://es.wordpress.org/), [Joomla](https://www.joomla.org/), [Drupal](https://www.drupal.org/)ou [Moodle](https://moodle.org/?lang=es), este último orientado a cursos en liña.
 
 Este é só o comezo. Podes afondar en cada tecnoloxía pola túa conta, por exemplo, [aprender a codificar sitios web](https://edu.gcfglobal.org/es/recomendaciones-tecnologicas/sitios-web-para-aprender-a-programar/print/) ou consultando referencias técnicas como [w3schools](http://www.w3schools.com/) e [Mozilla Developer Network](https://developer.mozilla.org/es/) . Se che interesa a tecnoloxía podes dirixir os teus [estudos superiores](https://edu.gcfglobal.org/es/vida_diaria/curso/acceso_a_la_educacion_superior/perfil_del_estudiante/1.do) á área de informática. Ou se o teu é o [emprendemento](https://edu.gcfglobal.org/es/vida_diaria/curso/emprendimiento/inicio_de_un_negocio/1.do) , podes pensar en crear o teu propio negocio en liña, para o que será útil unha estratexia web.
 
@@ -1012,8 +958,6 @@ Programar é escribir instrucións definidas nunha linguaxe de programación det
 Se vas á universidade e estás a explorar opcións de carreira, se xa tes experiencia e queres aprender unha nova linguaxe de programación ou só tes curiosidade sobre a programación, estes sitios poden axudar.
 
 #### MDN
-
-
 
 #### MOOC'S
 
@@ -1055,7 +999,7 @@ Podes atopar cursos na sección [Aprender](http://code.org/learn)
 
 #### w3schools
 
-Podes atopar [titoriais](http://www.w3schools.com/) sobre as linguaxes máis utilizadas para o desenvolvemento web. 
+Podes atopar [titoriais](http://www.w3schools.com/) sobre as linguaxes máis utilizadas para o desenvolvemento web.
 
 Algúns dos cursos son gratuítos, outros teñen un custo. Algúns dan certificación, outros non. Revisa as condicións de cada sitio en detalle.
 

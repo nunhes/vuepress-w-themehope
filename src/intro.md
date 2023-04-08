@@ -23,8 +23,8 @@ Vaia que non hai tempo para aburrirse. Que tamén, pero pouco ;)
 Se fuches quen de ler até aquí, imos ver que cousas si deberás coñecer e aprender se aínda estás a ir polo camiño incerto do desenvolvemento web:
 
 - Conceptos básicos sobre a www. Cousas como o que é Internet, o que é a web, como funcionan as solicitudes de rede, porque, como e para que se emprega.
-- Como funciona HTTP - e o resto de protocolos empregados nas comunicacións en rede: SMTP, FTP,…-. Non se trata tanto de aprender esas tecnoloxías como si de entender como se aplican, as condicionantes destas entornas e as implicacións que isto supón para o deseño e produción de produtos distribuídos a través desas canles. E, entender, pois, como se producen e como se distribúen as páxinas HTML desde un servidor ate o teu navegador. 
-- Aprende o que é un servidor. 
+- Como funciona HTTP - e o resto de protocolos empregados nas comunicacións en rede: SMTP, FTP,…-. Non se trata tanto de aprender esas tecnoloxías como si de entender como se aplican, as condicionantes destas entornas e as implicacións que isto supón para o deseño e produción de produtos distribuídos a través desas canles. E, entender, pois, como se producen e como se distribúen as páxinas HTML desde un servidor ate o teu navegador.
+- Aprende o que é un servidor.
 - Coñece como funciona un navegador web. E que clase de navegadores hai.
 
 Claro que se o teu é programar terás que aprender algunha linguaxe que che permita tal:
@@ -51,7 +51,7 @@ Chegado aquí xa seguramente terás visto que:
 - [Codepen](codepen.io) é un sitio para experimentar co código, para facelos teus ensaios e para aprender de outros. Sería bo que tiveras unha conta, é gratis.
 - Hai moitos editores de código e todos moi bos. Probar é a mellor maneira de saír de dubidas. Atom, SublimeText, Notepad++ e o -ultimamente preferido. Code de MS. Quédate co que che resulte máis práctico, ou co que máis noxo che dea.
 
-Outra cousa que seguro que xa empezas a notar é que hai moitas tarefas que poden resultar repetitivas. E que os proxectos parecen non ter vocación de rematares. Algo que enseguida te vai a ser de utilidade é ter un control sobre os cambios que se van producindo no teu traballo de programación: ter un control de versións. Logo deberás 
+Outra cousa que seguro que xa empezas a notar é que hai moitas tarefas que poden resultar repetitivas. E que os proxectos parecen non ter vocación de rematares. Algo que enseguida te vai a ser de utilidade é ter un control sobre os cambios que se van producindo no teu traballo de programación: ter un control de versións. Logo deberás
 
 - Aprender que é e como usar un conttrolador de versións
   - Aprender que é Git e que é GitHub.
@@ -71,17 +71,17 @@ E o momento de tomar un respiro:
 
 Pero se aínda non encetaches.
 
-- Agora é o momento de comezar con JavaScript. 
+- Agora é o momento de comezar con JavaScript.
 
-  - Aprende primeiro o básico. 
+  - Aprende primeiro o básico.
 
-  - Fai moitos pequenos proxectos e pequenas aplicacións para axudarche a entedelo todo pouco a pouco. 
+  - Fai moitos pequenos proxectos e pequenas aplicacións para axudarche a entedelo todo pouco a pouco.
 
   - Debes respirar JavaScript, sentirte JavaScript, transpirar Javascript se queres converterte nun mestre.
 
     Functions. Objects. Arrays. Loops. Conditionals. Callbacks. Promises. Async/Await. Closures. Recursion. Modules. Isto é só o comezo.
 
-- Coñece o que é o DOM. 
+- Coñece o que é o DOM.
 - Aprende a interactuar co DOM desde JavaScript.
 
 Esgotador, non si? Pois ben, podes agocharte caladamente nun recuncho e laiarte alí ou seguir adiante. Só acabamos de encetar.
@@ -90,7 +90,7 @@ Esgotador, non si? Pois ben, podes agocharte caladamente nun recuncho e laiarte 
 - Aprende como a industria avanza usando CSS. Aprende a usar algún framework: Bootstrap, PureCSS, Tailwind CSS….
 - Tamén che pode interesar coñecer preporcesadores coma Sass, Less ou Stylus
 - Ou linguaxes alternativas coma .pug, .haml, .slim
-- Aprende Markdown. Sobre todo se manexas documentación textual. E unha alternativa lixeira aos editores de texto que asemade se pode exportar facilmente a HTML, Word ou PDF, entre outros moitos formatos. 
+- Aprende Markdown. Sobre todo se manexas documentación textual. E unha alternativa lixeira aos editores de texto que asemade se pode exportar facilmente a HTML, Word ou PDF, entre outros moitos formatos.
 
 E seguimos:
 
@@ -106,16 +106,14 @@ E aprende a manexar datos.
 - Aprende a facer todas as aplicacións que fixeches con JavaScript, esta vez en React.
 - Aprende Next.js para axudarche a crear sitios con React.
 - Crea algúns sitios. Desprégaos en Vercel.
-- Aprende a usar unha base de datos. 
-  - MongoDB é unha boa opción. 
+- Aprende a usar unha base de datos.
+  - MongoDB é unha boa opción.
   - PostgreSQL é outra.
 
 - Aprende a interactuar cunha base de datos a través de Next.js e Prisma.
 - Aprende a facer autenticación con Next.js e proporciona páxinas privadas dispoñibles despois do inicio de sesión.
 
-Segue creando. Segue mellorando. Facendo diferentes sitios, inda que só sexa para practicar. 
-
-
+Segue creando. Segue mellorando. Facendo diferentes sitios, inda que só sexa para practicar.
 
 ## Onde encetar
 
@@ -134,4 +132,4 @@ ref.:
 
 https://flaviocopes.com/become-web-developer-2021/ -->
 
-<AutoCatalog base='/' />
+<!--AutoCatalog base='/' /-->

@@ -1,3 +1,5 @@
+# Análise de requirimentos do usuario
+
 A creación e análise dos **requisitos dos usuarios** permite concretar o alcance actual e futuro do sistema informatizado a nivel **operativo** (para os usuarios finais que o utilizan), **funcional** (rexistros xerados, controis en proceso, resultados obtidos e valores) e finalmente o **regulamentario** (segundo as normas correctas de fabricación e implantación).
 
 A definición dos requisitos do usuario, por exemplo para unha empresa de fabricación, divídese nos seguintes procesos:
@@ -43,11 +45,11 @@ O obradoiro precisa poucas ferramentas, será de predominancia visual. Tamén se
 
 1. Coa presenza do equipo multidisciplinar, xérase unha relación de procesos que tamén debemos coñecer. Xérase un panel para cada un. O panel identifica o proceso, determina o piloto (persoa con máis xestión do proceso) e finalmente establécense límites:
 
-![img](./assets/Pasos-del-taller.png)                 
+![img](./assets/Pasos-del-taller.png)
 
-2. A continuación, identifícanse os roles implicados no proceso, que o equipo identifica ao comezo. Despois pintase o proceso, diferenciando tarefas manuais (post-it en amarelo) e informáticas (post-it en rosa), os fluxos de información e os SOPs que  detallan o proceso (post-it en verde).
+1. A continuación, identifícanse os roles implicados no proceso, que o equipo identifica ao comezo. Despois pintase o proceso, diferenciando tarefas manuais (post-it en amarelo) e informáticas (post-it en rosa), os fluxos de información e os SOPs que  detallan o proceso (post-it en verde).
 
-![Análise dos requisitos dos usuarios](./assets/Analisis-de-requerimientos-de-usuario.jpg)                 
+![Análise dos requisitos dos usuarios](./assets/Analisis-de-requerimientos-de-usuario.jpg)
 
 Por iso, este obradoiro **fomenta o coñecemento entre departamentos, a análise colectiva de procesos e é  posible detectar desviacións, reprocesamentos e falta de documentación.**
 
@@ -61,8 +63,8 @@ A partir dos obradoiros realizados para os procesos analizados, pódese emitir u
 - Avisos e informes necesarios para xerar.
 - En primeiro lugar, hai que recoller todos os requisitos, desde todos os puntos de vista do equipo de validación. Posteriormente, deberán **clasificarse segundo a súa criticidade** en imprescindibles, recomendables e prescindibles. Así como establecer o peso de prioridade dentro do mesmo nivel de  clasificación, utilizando unha escala numérica do 1 ao 9, sendo o 9 a  máxima prioridade:
 
-![img](./assets/Analisis-de-requerimientos-de-usuario-SGA.png)                 
+![img](./assets/Analisis-de-requerimientos-de-usuario-SGA.png)
 
-![img](./assets/Analisis-de-requerimientos-de-usuario-SGA-2.png)                 
+![img](./assets/Analisis-de-requerimientos-de-usuario-SGA-2.png)
 
 O resultado da aplicación dos pasos anteriores é **unha lista de requisitos cuantificables** , priorizados por consenso, aprobados e valorados polo persoal das  distintas áreas da organización a través dun equipo de validación.

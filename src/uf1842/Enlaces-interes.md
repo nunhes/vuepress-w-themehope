@@ -1,24 +1,24 @@
 # Deseño e programación de paxinas web
 
-- https://www.submarinecablemap.com
+- [https://www.submarinecablemap.com](https://www.submarinecablemap.com)
 - [Como funciona Internet?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
   - [The OSI Model – The 7 Layers of Networking Explained](https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/)
 
 - **[Navegadores](https://www.mozilla.org/es-ES/firefox/browsers/browser-history/)**/**[Ferramentas de desenvolvedores](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)**
-  - https://www.google.com/chrome/
-    - https://developer.chrome.com/docs/devtools/overview/
+  - [https://www.google.com/chrome/](https://www.google.com/chrome/)
+    - [https://developer.chrome.com/docs/devtools/overview/](https://developer.chrome.com/docs/devtools/overview/)
     - [:tv:](https://www.youtube.com/watch?v=VYyQv0CSZOE&t=318s)
-  - https://www.opera.com/es
-    - http://devtoolsecrets.com
-  - https://www.mozilla.org/es-ES/firefox/
-    - https://firefox-dev.tools
-  - https://www.microsoft.com/es-es/edge
-    - https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/overview
+  - [https://www.opera.com/es](https://www.opera.com/es)
+    - [http://devtoolsecrets.com](http://devtoolsecrets.com)
+  - [https://www.mozilla.org/es-ES/firefox/](https://www.mozilla.org/es-ES/firefox/)
+    - [https://firefox-dev.tools](https://firefox-dev.tools)
+  - [https://www.microsoft.com/es-es/edge](https://www.microsoft.com/es-es/edge)
+    - [https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/overview](https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/overview)
 - **Editores de código**
-  - https://www.sublimetext.com
-  - https://notepad-plus-plus.org
-  - https://code.visualstudio.com
-  - https://replit.com (online)
+  - [https://www.sublimetext.com](https://www.sublimetext.com)
+  - [https://notepad-plus-plus.org](https://notepad-plus-plus.org)
+  - [https://code.visualstudio.com](https://code.visualstudio.com)
+  - [https://replit.com](https://replit.com) (online)
 - **HTML**
   - [HTML Cheat Sheet 📃 - The best interactive cheat sheet](https://htmlcheatsheet.com/)
   - Experimenta co código HTML en [codepen.io](https://codepen.io/)
@@ -52,40 +52,26 @@
   - [Learn to Program (stanford.edu)](http://stanford.edu/~cpiech/karel/learn.html)
   - [Escribir JavaScript consistente e idiomático](https://github.com/rwaldron/idiomatic.js/tree/master/translations/es_ES)
 
-
-
-
 - **Diseño UI**
   - [Principios da Gestalt e deseño web](https://www.smashingmagazine.com/2019/04/spaces-web-design-gestalt-principles/)
   - [Learn Web Development Basics – HTML, CSS, and JavaScript Explained for Beginners (freecodecamp.org)](https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/)
 - **Marketing**
-  - [Open Graph](https://www.ionos.es/digitalguide/online-marketing/redes-sociales/open-graph/) + https://www.opengraph.xyz/
+  - [Open Graph](https://www.ionos.es/digitalguide/online-marketing/redes-sociales/open-graph/) + [https://www.opengraph.xyz/](https://www.opengraph.xyz/)
   - [How to Create a Brand Style Guide](https://offers.hubspot.com/create-brand-style-guide?hubs_signup-url=www.hubspot.com%2Fresources%2Fkit&hubs_signup-cta=directories__link&hubs_post=blog.hubspot.com%25252Fcustomers%25252Fdesign-updates-in-browser-guide&hubs_post-cta=blog-nav-card--media-card#)
 
-
-
----
+___
 
 xan2023
 
-
-
-
-
-
-
-- 
 - [Algúns exemplos prácticos / CodePen](https://codepen.io/nunhes/pens/public)
 
 [Frontend Web Development Bootcamp Course (JavaScript, HTML, CSS) 21h. Vídeo](https://www.youtube.com/watch?v=zJSY8tbf_ys)
 
-
-
 [JavaScript Tutorials for Web Design by Envato Tuts+ (tutsplus.com)](https://webdesign.tutsplus.com/categories/javascript)
 
-**VSCode Extensions**
+&rarr; **VSCode Extensions**
 
-# Recommended
+## Recommended
 
 1. esbenp.prettier-vscode
 2. formulahendry.auto-close-tag
@@ -94,37 +80,25 @@ xan2023
 5. naumovs.color-highlight
 6. DigitalBrainstem.javascript-ejs-support
 
-# Optional
+## Optional
 
 1. ritwickdey.LiveServer
 2. erikphansen.vscode-toggle-column-selection
 3. file-icons
 
-
-
-
-
-
-
 [Cómo crear un formulario responsivo usando TailwindCSS (tutsplus.com)](https://webdesign.tutsplus.com/es/tutorials/how-to-create-a-responsive-form-using-tailwindcss--cms-34128)
 
 [Tailwind CSS Components - Tailwind UI](https://tailwindui.com/components)
 
-
-
-1. [Responsive Registration Form in HTML and CSS (codinglabweb.com)](https://www.codinglabweb.com/2021/01/responsive-registration-form-in-html-css.html)
+[Responsive Registration Form in HTML and CSS (codinglabweb.com)](https://www.codinglabweb.com/2021/01/responsive-registration-form-in-html-css.html)
 
 [HTML5 Form Validation With the “pattern” Attribute (tutsplus.com)](https://webdesign.tutsplus.com/tutorials/html5-form-validation-with-the-pattern-attribute--cms-25145)
 
-2. [How to Build a Multi Step Form Wizard with JavaScript (tutsplus.com)](https://webdesign.tutsplus.com/tutorials/how-to-build-a-multi-step-form-wizard-with-javascript--cms-93342)
+[How to Build a Multi Step Form Wizard with JavaScript (tutsplus.com)](https://webdesign.tutsplus.com/tutorials/how-to-build-a-multi-step-form-wizard-with-javascript--cms-93342)
 
 [Learn JavaScript: The Complete Guide - Envato Tuts+ Code Tutorials (tutsplus.com)](https://code.tutsplus.com/series/learn-javascript-the-complete-guide--cms-1112?_ga=2.217861590.1966183403.1674498009-285254619.1674498009)
 
 [3 JavaScript Projects for Beginners (tutsplus.com)](https://webdesign.tutsplus.com/courses/3-javascript-projects-for-beginners?_ga=2.255143112.1966183403.1674498009-285254619.1674498009)
-
-
-
-
 
 [Build a Custom HTML Music Player, Using JavaScript and the Web Audio API (tutsplus.com)](https://webdesign.tutsplus.com/tutorials/build-a-custom-html-music-player-using-javascript-and-the-web-audio-api--cms-93300)
 
@@ -132,35 +106,19 @@ xan2023
 
 [HTML CSS JavaScript - Free Online Editors and Tools (html-css-js.com)](https://html-css-js.com/)
 
-
-
-### Exercicios básicos con JS:
+### Exercicios básicos con JS
 
 - [HTML CSS & JavaScript Projects with Source Code | Top 20 JavaScript Projects (codinglabweb.com)](https://www.codinglabweb.com/2022/09/html-css-javascript-projects.html)
 
 - [HTML-CSS-JavaScript-projects-for-beginners/projects/weight-converter at main · sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners · GitHub](https://github.com/sahandghavidel/HTML-CSS-JavaScript-projects-for-beginners)  revisar!!
 
+[Unidades CSS](https://lenguajecss.com/css/modelo-de-cajas/unidades-css/) &rarr; [https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units)
 
+[Que é a capa de rede?](https://www.cloudflare.com/es-es/learning/network-layer/what-is-the-network-layer/)
 
-[Unidades CSS](https://lenguajecss.com/css/modelo-de-cajas/unidades-css/) &rarr; https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Values_and_units
-
-
-
-
-
-[Que é a capa de rede?](https://www.cloudflare.com/es-es/learning/network-layer/what-is-the-network-layer/) 
-
-
-
-
-
-https://www.cloudflare.com/learning/
-
-
+[https://www.cloudflare.com/learning/](https://www.cloudflare.com/learning/)
 
 [Introducing a complete toolchain - Learn web development | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Introducing_complete_toolchain)
-
-
 
 hUBSPOT ACADEMY  
 
@@ -174,28 +132,20 @@ hUBSPOT ACADEMY
 
 ## ¿Cuáles de las siguientes opciones son ciertas acerca de los servidores y clientes?
 
-- 
+- Os servidores e os clientes utilizan algún tipo de protocolo, como HTTP, para comunicarse entre eles.
 
-  Los servidores y los clientes utilizan algún tipo de protocolo, como HTTP, para comunicarse entre sí.
+- Os clientes solicitan páxinas web, documentos e datos.
 
-- 
+- Os servidores reciben, analizan e responden ás solicitudes.
 
-  Los clientes solicitan páginas web, documentos y datos; Los servidores reciben, analizan y responden a las solicitudes.
+- Os servidores e os clientes son equipos.
 
-- 
-
-  Los servidores y los clientes son equipos.
-
-- 
-
-  Todo lo anterior
+- Todo o de antes:
 
   - Sitio web: [Registro en GitHub](https://github.com/join)
   - Sitio web: [Herramientas de línea de comandos de Git](https://git-scm.com/)
   - Sitio web: [Descarga de nodos](https://nodejs.org/en/download/)
-  - Sitio web: [Código de Visual Studio
+  - Sitio web: [Visual Studio Code](https://code.visualstudio.com/)
   - Sitio web: [Introducción a git y GitHub para principiantes](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
-
-
 
 [Introducing a complete toolchain - Learn web development | MDN (mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Introducing_complete_toolchain)

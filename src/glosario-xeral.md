@@ -10,7 +10,6 @@ title: Glosario xeral
   mayúsculas y minúsculas”.
 - **Comentario** : Os comentarios no código son fragmentos de texto ou anotacións que o navegador ignora e non afectan ao programa. Serven para anotar detalles importantes para o programador. É un bo costume comentar o máximo posible o noso código.
 
-
 - **Constante**: é unha variable, agás que neste caso, a información que contén é sempre a mesma ( *non pode variar* ).
 
 - **Consola de JavaScript**: Ferramenta do programador que permite comunicarse cos teus programa JavaScript e verificala saída. Na consola, se poden escribir literais e tamén valores de variables.
@@ -36,26 +35,27 @@ title: Glosario xeral
 - **Loop** : Cando estamos programando, moitas veces teremos que realizar tarefas repetitivas. Unha das vantaxes da programación é que permite automatizar accións e non é necesario facelas varias veces. Os bucles permítenche indicar o número de veces que se repetirá unha acción. Deste xeito, só o escribimos unha vez no noso código, e simplemente indicamos o número de veces que queremos que se repita.
 
 - **Operador aritmético**: tódalas linguaxes de programación teñen operadores e, xeralmente, soen coincidir (salvo os operadores incremento e decremento que apareceron con C++).
-	
-	| Operador | Descrición |
-	| :-: |  --- |
-	|  \+  |   Suma |
-	|   \-  |   Resta |
-	|  \*  |   Multiplicación |
-	|   /   |   División |
-	|   %  |  Módulo |
-	|   ++  |  Incremento |
-	|   --   |   Decremento |
-	
+
+ | Operador | Descrición |
+ | :-: |  --- |
+ |  \+  |   Suma |
+ |   \-  |   Resta |
+ |  \*  |   Multiplicación |
+ |   /   |   División |
+ |   %  |  Módulo |
+ |   ++  |  Incremento |
+ |   --   |   Decremento |
+
 - **Operadores de asignación**: Operadores básicos de asignación de JavaScript.
-	|  Operador	|    Exemplo de uso  |
-	| :-: |  --- |
-	|  ``=``  |  ``x = y;`` |
-	|  ``+=`` |  ``x += y; // igual que (x = x + y)`` |
-	|  ``-=`` |  ``x -= y; // igual que (x = x – y)`` |
-	 | ``*=`` |   ``x *= y; // igual que (x = x * y)`` |
-	| ``/=`` |  ``x /= y; // igual que (x = x / y)`` |
-	| ``%=`` |  ``x %= y; // igual que (x = x % y)`` |
+
+ |  Operador |    Exemplo de uso  |
+ | :-: |  --------- |
+ |  ``=``  |  ``x = y;`` |
+ |  ``+=`` |  ``x += y; // igual que (x = x + y)`` |
+ |  ``-=`` |  ``x -= y; // igual que (x = x – y)`` |
+ | ``*=`` |   ``x *= y; // igual que (x = x * y)`` |
+ | ``/=`` |  ``x /= y; // igual que (x = x / y)`` |
+ | ``%=`` |  ``x %= y; // igual que (x = x % y)`` |
 
 - **Operador ternario**: Operador que toma tres argumentos e permite resolver tarefas que doutro xeito obrigarían ao programador a crear estruturas de control máis complexas, e escribir máis código. Permite reducir proposicións de varias liñas de código a unha soa liña.
 
@@ -75,14 +75,11 @@ title: Glosario xeral
   meuXogo = "tetris"; // nome: meuXogo, valor: metetris, tipo de dato: texto
   ```
   
-  A partir da especificación ES6 (ECMAScript 2015),  ademais de ``var`` se poden empregar as palabras reservadas `let` e `const`. 
+  A partir da especificación ES6 (ECMAScript 2015),  ademais de ``var`` se poden empregar as palabras reservadas `let` e `const`.
   
-  Empregaremos ``let`` nas máis das ocasións: ``let saudo="agur"``. 
+  Empregaremos ``let`` nas máis das ocasións: ``let saudo="agur"``.
   
   A xeito de *sinónimo* de ``var saudo="agur"``.
   
   A non ser que se trate dun valor a conservar ou inmutable: ``var pi = 3.141592;``
   Para o que se aconsella empregar:  ``const pi= 3.141592;``
-
-
-

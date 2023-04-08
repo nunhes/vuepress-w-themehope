@@ -10,8 +10,7 @@ En CSS tamén hai tipos de datos, as unidades de medida en CSS son un tipo de da
 
 ---
 
-Os tipos de datos basicamente son o valor que asignamos a calquera propiedade. 
-
+Os tipos de datos basicamente son o valor que asignamos a calquera propiedade.
 
 ---
 
@@ -41,9 +40,9 @@ De xeito xenérico podemos distribuílos en dous grandes grupos: **medidas absol
 
 ## medidas absolutas
 
-As **medidas absolutas** son *medidas físicas* (``cm, in, mm, pc, pt``) e a unidade ``px``. 
+As **medidas absolutas** son *medidas físicas* (``cm, in, mm, pc, pt``) e a unidade ``px``.
 
-Estas unidades se representan exactamente no tamaño que se lle da. O valor dado é o que se aplica sen mediar calculo ou referencia algunha. 
+Estas unidades se representan exactamente no tamaño que se lle da. O valor dado é o que se aplica sen mediar calculo ou referencia algunha.
 
 As medidas absolutas,  **non son nada recomendables para a pantalla** . Aínda que sexan as máis axeitadas **para imprimir**, xa que os medios impresos adoitan medirse nesas unidades.
 
@@ -55,7 +54,7 @@ As medidas absolutas,  **non son nada recomendables para a pantalla** . Aínda q
 
 Só para facernos unha idea, a relación entre as medidas físicas absolutas é a seguinte:
 
-##  **1in = 2.54cm = 25.4mm = 72pt = 6pc**
+## **1in = 2.54cm = 25.4mm = 72pt = 6pc**
 
 ---
 
@@ -142,7 +141,7 @@ Estes valores establécense tomando como referencia:
 |                                                              | **vmax** <br>Toma como referencia o maior valor existente entre ``vw`` e ``vh``. <br>**1vmax = 1 % do valor máis grande na pantalla (``vw`` ou ``vh``)**. |
 |                                                              | **%** porcentaxe <br>Relativo á medida da mesma propiedade do seu elemento pai. <br>Por exemplo, se un elemento ten un ancho ancho: 1200px; e o seu fillo ten un ancho: 50%; o valor será igual á metade de 1200px. |
 
-As **medidas relativas son máis vantaxosas para traballar en pantalla porque son escalables e flexibles** . Máis se se busca adaptar o deseño a calquera dispositivo ( **responsivo** ). 
+As **medidas relativas son máis vantaxosas para traballar en pantalla porque son escalables e flexibles** . Máis se se busca adaptar o deseño a calquera dispositivo ( **responsivo** ).
 
 ---
 
@@ -152,13 +151,9 @@ As **medidas relativas son máis vantaxosas para traballar en pantalla porque so
 
 Elixir unha ou outra depende de ti: a que te faga sentir máis cómodo e por suposto, a que mellor se adapte ao tipo de proxecto no que estás a traballar será unha boa opción.
 
-
-
 ---
 
 ![img](./assets/vmin.png)
-
-
 
 ---
 
@@ -176,7 +171,7 @@ Imos explicar o caso do **ancho** co seguinte esquema (a **altura** sería simil
 
 O esquema corresponde á definición dun contedor (por exemplo div ) con estes atributos:
 
-```
+```css
 div {ancho: 200px; ancho do bordo: 5px; acolchado: 20px; marxe: 100px }
 ```
 
@@ -215,8 +210,6 @@ El espacio que debemos reservar en nuestro diseño de la página es de 400 px., 
 
 A continuación puedes ver un primer ejemplo con box-sizing: border-box y un segundo ejemplo con el valor por defecto, box-sizing: content-box.
 
-
-
 El resto de valores son igual para ambos ejemplos: border-width: 5px; border-style: solid; border-color: royalblue; padding: 20px; width: 200px; margin-left: 100px; margin-right: 100px;
 
 Observa la diferencia de anchura.
@@ -229,22 +222,14 @@ Ejemplo con box-sizing: content-box :
 
 Párrafo uno. Lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi porro ius soluta in voluptates voluptatem, nesciunt dolorem obcaecati nemo eligendi porro iusto, earum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 
-
-
 ---
 
 XAN2023
-
-
 
 ---
 
 [Tipos de unidades de medida en CSS. Recomendaciones para trabajar. (pensandoenweb.es)](https://pensandoenweb.es/unidades-medida-css/)
 
-https://dev.to/lupitacode/unidades-de-medida-en-css-fundamentos-4n0g
+<https://dev.to/lupitacode/unidades-de-medida-en-css-fundamentos-4n0g>
 
-
-
-
-
-https://www.freecodecamp.org/news/html-role-attribute/
+<https://www.freecodecamp.org/news/html-role-attribute/>

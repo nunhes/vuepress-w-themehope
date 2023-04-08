@@ -4,9 +4,9 @@
 
 > Sketchnote de [Tomomi Imura](https://twitter.com/girlie_mac)
 
-### Introdución
+## Introdución
 
-A manipulación do DOM, ou "Document Object Model", é un aspecto clave do desenvolvemento web. 
+A manipulación do DOM, ou "Document Object Model", é un aspecto clave do desenvolvemento web.
 
 Segundo [MDN](https://developer.mozilla.org/docs/Web/API/Document_Object_Model/Introduction) , o **"Document Object Model (DOM) é a representación de datos dos obxectos que compoñen a estrutura e o contido dun documento na web"**. Os desafíos en torno á manipulación de DOM na web foron moitas veces o impulso detrás do uso de marcos JavaScript en lugar de vainila JavaScript para xestionar o DOM. Pero os dous metodos seguen sendo viables.
 
@@ -22,7 +22,7 @@ Pensa no DOM coma unha árbore, que representa todas as formas en que se pode ma
 
 ### Requisito previo
 
-Deberías ter o HTML e o CSS perfectamente construídos. 
+Deberías ter o HTML e o CSS perfectamente construídos.
 
 > **Nota:** usa o atributo `defer` ao importar un arquivo Javascript externo no arquivo html para permitir que o Javascript se execute só despois de que todo o HTML estea completamente cargado. Tamén podes usar o atributo `async`, se o que queres é permitir que o script si se execute mentres se analiza o arquivo HTML. Dependendo do cometido e ámbito do script usaríase un ou o outro atributo.
 
@@ -30,11 +30,9 @@ Deberías ter o HTML e o CSS perfectamente construídos.
 
 ## Elementos DOM
 
-O primeiro que debes facer é crear referencias aos elementos que queres manipular no DOM. 
+O primeiro que debes facer é crear referencias aos elementos que queres manipular no DOM.
 
 Despois de identificar cada elemento, se lle pasa ese elemento a unha función. Así, o elemento HTML queda a disposición da linguaxe de guión para realizar nel as manipulacións que queiras.
-
-
 
 ## As funcións elementDrag e stopElementDrag
 
@@ -50,8 +48,5 @@ Atopa máis información sobre eventos de punteiro nos [documentos](https://www.
 
 Comprobe sempre as capacidades do navegador usando [CanIUse.com](https://caniuse.com/) .
 
-
-
-
-
+------
 OUT 2021

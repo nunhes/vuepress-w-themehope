@@ -1,8 +1,6 @@
 # Variables e tipos de datos de JavaScript
 
-_*ref:*_ https://docs.microsoft.com/es-es/learn/modules/web-development-101-variables/
-
-
+***\_ref:*** [https://docs.microsoft.com/es-es/learn/modules/web-development-101-variables/](https://docs.microsoft.com/es-es/learn/modules/web-development-101-variables/)
 
 > Unha linguaxe de programación consta de moitos conceptos. Podes empregar eses conceptos para crear calquera cousa, desde unha pequena aplicación de liña de comandos ata un sistema empresarial a gran escala. Antes de crear unha aplicación, debes coñecer os aspectos básicos da linguaxe.
 
@@ -18,13 +16,11 @@ Imos ver:
 - Cando usar constantes.
 - Como almacenar valores como tipos diferentes pode aportar claridade no código.
 
-
-
-# Introdución ás variables
+## Introdución ás variables
 
 Para comprender correctamente JavaScript (a linguaxe que proporciona interactividade en Internet), primeiro debes comprender os tipos de datos e variables da linguaxe e como se crean. E inda máis importante é comprender cando, onde e como usalos.
 
-## Interactividade
+### Interactividade
 
 Mediante o uso de variables, poderás realizar un **seguimento do estado**. Quizás necesites lembrar o valor da selección dun usuario ou gardar o resultado dun cálculo. Situacións como estas exixen o uso de variables.
 
@@ -34,13 +30,11 @@ Se xa aprendiches unha linguaxe de programación antes, é posible que observes 
 
  :pencil2: ***Suxestión***: mira agora este [vídeo](https://youtu.be/JNIXfGiDWM8/) de introducción.
 
-
-
-# Uso de variables para lembrar valores
+## Uso de variables para lembrar valores
 
 Saber como usar correctamente variables e tipos de datos é esencial para escribir código en JavaScript. **As variables almacenan valores que se poden usar e cambiar** en todo o código, e **os tipos de datos axudan a describir que tipo de datos se almacena nesas variables**.
 
-## Variables
+### Variables
 
 Imaxina que tes un valor no código que queres lembrar para un uso futuro. Ao almacenar o valor, podes facer referencia a el máis adiante no código.
 
@@ -148,9 +142,7 @@ Vexamos algúns exemplos:
 
 :triangular_flag_on_post: **Nota:** A presencia de `const` significa que a referencia non se pode reasignar. Sen embargo, o valor non é *inmutable* e pode cambiar, especialmente se se trata dunha construcción complexa como un obxecto.
 
-
-
-# Tipos de datos
+## Tipos de datos
 
 As variables poden almacenar moitos tipos diferentes de valores, como números e texto. Estes valores se denominan *tipos de datos*.
 
@@ -160,11 +152,11 @@ Os tipos de datos tamén se denominan *primitivas de datos de JavaScript*, xa qu
 
  :pencil2: ***Suxestión***: Dedica un minuto a visualizar o que podería representar cada unha destes tipos primitivos. Que é unha cebra? E se se executa `0`? E se se executa `true`?
 
-## Números
+### Números
 
 Na sección anterior, o valor de `myVariable` era un tipo de datos `number`:
 
-```
+```js
 let myVariable = 123;
 ```
 
@@ -182,7 +174,7 @@ Estes son algúns tipos de operadores que podes usar ao realizar funcións aritm
 
  :pencil2: ***Suxestión***: Proba unha operación aritmética na consola do explorador. Que che parecen os resultados?
 
-## Cadeas - *String*
+### Cadeas - *String*
 
 As cadeas son conxuntos de caracteres que residen entre comiñas simples ou dobres.
 
@@ -217,7 +209,7 @@ let myString2 = "World";
 `${myString1}, ${myString2}!` //Hello, World!
 ```
 
-Podes empregar calquera método para aplicar o formato que queiras, pero os literais de modelo respectarán todos os espazos e saltos de líña.
+Podes empregar calquera método para aplicar o formato que queiras, pero os literais de modelo respectarán todos os espazos e saltos de liña.
 
  :pencil2: ***Suxestión***: Dedica un momento a pensar nos casos de uso de diferentes tipos de cadea. Cando usarías un literal de modelo en lugar dunha cadea sen formato?
 
@@ -232,17 +224,13 @@ Unha variable se pode considerar "verdadeira" se se evalúa como un valor boolea
 
  :pencil2: ***Suxestión***: Explora os problemas comúns de JavaScript. Lembra que podes escribir JavaScript directamente no explorador. Abre unha xanela do explorador e vai a **Ferramentas de desenvolvemento**. Na consola, atoparás unha solicitude. Este código se resolve como `false`: `let age = 1`; `let Age = 2`; `age == Age`. Por que crees que é así e que outros problemas comúns pode atopar?
 
-
-
 ***
 
-
-
-# Creación de código modular mediante funcións en JavaScript
+## Creación de código modular mediante funcións en JavaScript
 
 **As funcións son os bloques de creación de calquera aplicación que se vaia a crear**. Coas funcións podes crear seccións de código con nome e reutilizables, para que sexa máis lexible e fácil de manter. Imos a explorar os conceptos básicos das funcións.
 
-## Obxectivos de aprendizaxe
+### Obxectivos de aprendizaxe
 
 Neste módulo, aprenderás:
 
@@ -251,7 +239,7 @@ Neste módulo, aprenderás:
 - Como devolver valores dunha función.
 - Como usar funcións anónimas.
 
-## Introdución
+### Introdución
 
 Cando pensamos en escribir código, sempre queremos asegurarnos de que o código sexa lexible. Aínda que pareza contraditorio, **o código se lee moitas máis veces das que se escribe**.
 
@@ -264,7 +252,7 @@ Imos agora a ver:
 - Como devolver valores dunha función.
 - Como usar funcións anónimas.
 
-# Información xeral sobre as funcións
+## Información xeral sobre as funcións
 
 As funcións son bloques de creación clave para escribir código. Una función é unha colección de liñas de código reutilizable que fai que algo suceda dentro do programa.
 
@@ -272,7 +260,7 @@ As funcións son perfectas para escenarios nos que se necesita realizar a mesma 
 
 Igual de importante é a posibilidade de asignarlle un nome a cada función. Inda que asignarlle un nome a unha función poida parecer trivial, o nome proporciona unha forma rápida de documentar unha sección de código. Pódese pensar na nomenclatura coma na etiqueta dun botón. Por exemplo, si seleccionas o botón "Cancelar temporizador", o relo deixará de correr.
 
-## Creación e chamada a unha función
+### Creación e chamada a unha función
 
 Unha función toma algunha entrada e logo devolve unha saída que transforma de algún modo a entrada. Por exemplo, unha función de suma pode tomar dous números enteiros e devolver a suma dos seus valores.
 
@@ -314,11 +302,11 @@ displayGreeting();
 Ao crear funcións, ten en conta algúns procedementos recomendados:
 
 - Usa nomes descritivos que indiquen o que pretenden facer as funcións. Por exemplo, o nome `displayGreeting` deixa claro que o propósito da función é mostrar un saúdo. Un nome como `greet`, para unha función que realiza esa mesma tarefa, é un pouco ambiguo. Podería mostrar un saúdo, pero tamén podería realizar unha operación diferente.
-- Use unha mistura de maiúsculas e minúsculas para combinar palabras. Para escribir combinando maiúsculas e minúsculas, mantén a primeira palabra da variable ou función en minúsculas e escribe con maiúscula inicial cada palabra posterior. Dado que os nomes de función e variable non poden conter espazos, a combinación de maiúsculas e minúsculas facilita a lectura do código. Por exemplo, `displayGreeting` é máis fácil de ler que `displaygreeting`.
+- Use unha mestura de maiúsculas e minúsculas para combinar palabras. Para escribir combinando maiúsculas e minúsculas, mantén a primeira palabra da variable ou función en minúsculas e escribe con maiúscula inicial cada palabra posterior. Dado que os nomes de función e variable non poden conter espazos, a combinación de maiúsculas e minúsculas facilita a lectura do código. Por exemplo, `displayGreeting` é máis fácil de ler que `displaygreeting`.
 - Mantén as funcións centradas nunha tarefa específica. Isto non só facilita a reutilización dunha función nun programa, senón que tamén facilita a depuración do código. Se tes unha incidencia cunha función que non realiza a tarefa que considerabas que faría, saberás que o problema está dentro desa función.
 - Usa texto comentado para anotar o código e describir o que fan as funcións. Para mellorar a lectura do código, inclúe no comentario unha breve descrición da tarefa de cada función. Para crear comentarios, escribe unha barra diagonal dobre (`//`), seguida da descrición. O comentario finaliza cando se inicia unha nova líña.
 
-# Parámetros de función
+## Parámetros de función
 
 Para que unha función sexa máis reutilizable, a miúdo quererás pasarlle información. Este tipo de entrada de información, a información en si, se denomina *parámetro*. Un parámetro, a veces tamén denominado "argumento", é información adicional que se envía a unha función.
 
@@ -351,7 +339,7 @@ displayGreeting('Christopher');
 // displays "Hello, Christopher!" when run
 ```
 
-## Valores predeterminados
+### Valores predeterminados
 
 Podes facer que a función sexa inda máis flexible, engadindo máis parámetros. E que acontece se non queres requirir que se especifiquen tódolos valores? Se seguimos có exemplo do saúdo, podes manter `name`, segundo sexa necesario (debes saber a quen estás saudando), pero queres permitir que o saúdo se personalice. Se alguén non quere personalizalo, pode proporcionar un valor predeterminado no seu lugar. Para iso, establece o valor da mesma maneira que estableces un valor para unha variable: `parameterName = 'defaultValue'`. Por exemplo:
 
@@ -371,9 +359,9 @@ displayGreeting('Christopher', 'Hi');
 // displays "Hi, Christopher"
 ```
 
-------
+***
 
-# Valores devoltos
+## Valores devoltos
 
 Ata este punto, as funcións que levas creado teñen saída na [consola](https://developer.mozilla.org/docs/Web/API/console). Isto pode ser exactamente o que buscas, especialmente cando se crean funcións que chaman a outros servizos. E que ocorre se queres crear unha función auxiliar para realizar un cálculo e despois proporcionar un valor que poida usarse noutro lugar?
 
@@ -406,17 +394,13 @@ function createGreetingMessage(name) {
 
 Cando se chama a esta función, se almacena o valor nunha variable. Isto faise da mesma maneira que se establecería unha variable nun valor estático (por exemplo, `let name = 'Christopher'`), da seguinte maneira:
 
-
-
 ```javascript
 let greetingMessage = createGreetingMessage('Christopher');
 ```
 
 Os valores devoltos axudan a demostrar outra das razóns polas que as funcións son unha parte tan importante de JavaScript. Podes reutilizar a mesma función con argumentos diferentes para xerar varios valores devoltos.
 
-
-
-# Exercicio: Crear unha función
+## Exercicio: Crear unha función
 
 Ao escribir código estarás creando funcións con frecuencia. Neste exemplo práctico imos crear unha función para mostrar un nome nunha páxina web. A función tomará un parámetro, o nome da persoa á que desexas saudar e despois devolverá a mensaxe. Logo chamará a esta función para mostrar a mensaxe.
 
@@ -426,7 +410,7 @@ Ao escribir código estarás creando funcións con frecuencia. Neste exemplo pr�
 
 Empeza por crear unha nova páxina en Visual Studio Code.
 
-1. Abre unha terminal ou ventana de comandos de Visual Studio Code.
+1. Abre unha terminal ou xanela de comandos de Visual Studio Code.
 
 2. Para crear un novo directorio e cambiar a este, executa un dos seguintes comandos:
 
@@ -437,20 +421,20 @@ Empeza por crear unha nova páxina en Visual Studio Code.
    # macOS or Linux
    mkdir functions && cd functions
    ```
-   
+
 3. Para abrir o novo directorio en Visual Studio Code, executa o seguinte comando:
 
    ```bash
    code .
    ```
-   
-4. No panel **Explorador,** mantén punteiro sobre **funcións** e logo selecciona ó icono **Novo arquivo**.
 
-   ![Captura de pantalla del panel del Explorador con el icono Nuevo arquivo resaltado](https://docs.microsoft.com/es-es/learn/modules/web-development-101-functions/media/functions-create-file.png) .
+4. No panel **Explorador,** mantén punteiro sobre **funcións** e logo selecciona a icona **Novo arquivo**.
 
-5. Asignalle o nome *index.html* ao novo arquivo e, logo, abreo no editor.
+   ![Captura de pantalla do panel do Explorador coa icona Novo arquivo resaltado](https://docs.microsoft.com/es-es/learn/modules/web-development-101-functions/media/functions-create-file.png) .
 
-## Agregar o código para amosar a mensaxe
+5. Asígnalle o nome *index.html* ao novo arquivo e, logo, ábreo no editor.
+
+## Agregar o código
 
 Agora podes agregar o código que servirá para amosar a mensaxe.
 
@@ -492,7 +476,7 @@ Agora podes agregar o código que servirá para amosar a mensaxe.
    const message = getMessage('Ornella');
    document.write(message);
    ```
-   
+
 4. Garda o arquivo seleccionando **Archivo** > **Guardar**.
 
 ## Visualización da páxina
@@ -513,7 +497,7 @@ Agora que xa creaches e chamaches a unha función para mostrar unha mensaxe. Pod
 
 :pill: **Importante:** Manter Visual Studio Code e o explorador abertos para usalos na próxima unidade.
 
-## Código completo
+## Código completo i
 
 ```html
 <!DOCTYPE html>
@@ -537,13 +521,13 @@ Agora que xa creaches e chamaches a unha función para mostrar unha mensaxe. Pod
 </html>
 ```
 
-# funcións anónimas
+## Funcións anónimas
 
 Como ves, podes chamar a unha función a petición mediante o seu nome e pasando os parámetros axeitados. Pero, as veces, é imposible que queira permitir que outro proceso execute as funcións que creaches.
 
 Imaxina a creación dunha páxina web con varios temporizadores. Cando finalice un temporizador, quererás executar código para mostrar unha mensaxe. O problema é que sabes que o temporizador expirará, pero, dado que a lonxitude do temporizador pode cambiar, non sabes exactamente *cando* expirará. Polo tanto, non sabes exactamente *cando* quere que se execute o código. Para admitir este tipo de escenario, podes usar unha *devolución de chamada*.
 
-## Introdución ás devolucións de chamada
+### Introdución ás devolucións de chamada
 
 Basicamente, unha devolución de chamada é unha maneira de pasar unha función a outra función como parámetro. Este parámetro se comporta da mesma maneira que calquera outro parámetro, como unha cadea ou un número, salvo que se pode chamar por el porque é unha función.
 
@@ -555,7 +539,7 @@ Na programación, esta situación se pode representar mediante unha devolución 
 
 As devolucións de chamada se usan con frecuencia nunha variedade de marcos e librerías para indicar o código que desexas executar cando algo sucede ou finaliza. Usarás unha devolución de chamada para indicar o que debe ocorrer cando, por exemplo, un usuario selecciona un botón, finaliza unha operación de execución longa ou expira un temporizador.
 
-## Utilización dunha devolución de chamada
+### Utilización dunha devolución de chamada
 
 Unha devolución de chamada é unha función normal e podes creala como o farías con calquera función que teñas escrito no pasado. No exemplo `displayDone` seguinte, observarás que é unha función normal sen parámetros.
 
@@ -565,30 +549,22 @@ function displayDone() {
 }
 ```
 
-
-
 Podes pasala a unha función, que acepta unha devolución de chamada como `setTimeout`. A devolución de chamada `setTimeout` é unha función integrada que permite crear un temporizador. Cando finaliza o temporizador, chama á función que se pasa como primeiro parámetro. O segundo parámetro indica o número de microsegundos que se esperarán ata que chame á función.
 
 Se desexas establecer un tempo de espera de 3 segundos e facer que o código amose "Listo" ao rematar de executarse, poderías usar `setTimeout` da seguinte forma:
-
-
 
 ```javascript
 // timer value is in milliseconds
 setTimeout(displayDone, 3000);
 ```
 
- ?>**Importante**: Observa que `displayDone` non vai seguido dun par vacío de parénteses (`()`) cando se pasa coma un parámetro a `setTimeout`. Se escribes `setTimeout(displayDone(), 3000)`, estás indicando a JavaScript que execute `displayDone` inmediatamente. Dado que desexas pasar a función a `setTimeout` para chamar `setTimeout` cando transcorra o temporizador, só se usa `displayDone`.
-
-## funcións anónimas
+ ?>**Importante**: Observa que `displayDone` non vai seguido dun par baleiro de parénteses (`()`) cando se pasa coma un parámetro a `setTimeout`. Se escribes `setTimeout(displayDone(), 3000)`, estás indicando a JavaScript que execute `displayDone` inmediatamente. Dado que desexas pasar a función a `setTimeout` para chamar `setTimeout` cando transcorra o temporizador, só se usa `displayDone`.
 
 Inda que o código anterior é válido, este código pode crear o que algúns desenvolvedores chaman a "contaminación do espazo de nomes". É dicir, cando escribes código con numerosas variables, funcións e outras entidades con nomes, pode resultar confuso coñecer o propósito de cada unha delas e, as veces, pode que te quedes sen nomes axeitados. Neste exemplo, se o único lugar `displayDone` que se usará é con `setTimeout`, non é necesario darlle un nome. Podes crear unha *función anónima*.
 
 Unha función anónima é unha función sen nome. As funcións anónimas se comportan da mesma maneira que as funcións normais e son a forma en que os desenvolvedores normalmente establecen as devolucións de chamada.
 
 Podes crear unha función anónima coa mesma sintaxe que usarías para crear unha función normal, salvo que se omite o nome. Por exemplo:
-
-
 
 ```javascript
 setTimeout(
@@ -599,13 +575,11 @@ setTimeout(
 )
 ```
 
-Este código realiza exactamente a mesma tarefa que o código anterior coa función `displayDone`. A diferencia clave é que se crea a función inserida (é dicir, dentro da chamada a `setTimeout`), sen un nome. Ao facelo así, o código se limpa un pouco.
+Este código realiza exactamente a mesma tarefa que o código anterior coa función `displayDone`. A diferencia clave é que se crea a función inserida (é dicir, dentro da chamada a `setTimeout`), sen un nome. Ao facelo así, o código límpase un pouco.
 
 ## funcións de frecha
 
 As funcións de *frecha* ou as de *frecha grosa*, son unha forma lixeiramente diferente de crear funcións anónimas. As funcións de frecha usan o operador `=>` para indicar o inicio do corpo da función. Podes volver a escribir o exemplo de función anónima anterior mediante a sintaxe de frechas grosas:
-
-
 
 ```javascript
 setTimeout(
@@ -618,7 +592,7 @@ setTimeout(
 
 Este código fai exactamente o mesmo que antes. A única diferencia é o uso do operador `=>`. Verás que moitos desenvolvedores prefiren a sintaxe concisa que proporcionan as funcións de frecha.
 
-# Exercicio: Creación dunha función anónima
+## Exercicio: Creación dunha función anónima
 
 Neste exercicio usarás `setTimer` cunha función anónima para amosar unha mensaxe nunha páxina web. Crearás código que amosa a mensaxe despois dun retardo de 2 segundos.
 
@@ -634,8 +608,6 @@ Agora agregarás o código para amosar a mensaxe, que terá un retardo de 2 segu
 
 2. Debaixo da liña comentada `// TODO: Add setTimeout code`, agrega o código seguinte:
 
-   
-
    ```javascript
    setTimeout(
        () => { document.write('...Hello again!')},
@@ -645,7 +617,7 @@ Agora agregarás o código para amosar a mensaxe, que terá un retardo de 2 segu
 
 3. Garda o arquivo seleccionando **Arquivo** > **Gardar**. LiveServer actualiza automaticamente a páxina ao gardar o arquivo.
 
-## Visualización da páxina
+## Visualización
 
 Vexamos os resultados.
 
@@ -659,7 +631,7 @@ Vexamos os resultados.
 
 Agora xa usaches unha función anónima para que apareza unha mensaxe despois dun retardo.
 
-## Código completo
+## Código completo ii
 
 ```html
 <!DOCTYPE html>
@@ -686,7 +658,7 @@ Agora xa usaches unha función anónima para que apareza unha mensaxe despois du
 </html>
 ```
 
-# Resumo
+## Resumo
 
 Ata agora exploraches como crear funcións en JavaScript. **Unha función é unha abstracción** excelente que se pode usar cando se necesita realizar a mesma tarefa varias veces e se quere evitar ter que duplicar o código. Tamén aprendiches a diferenza entre unha función e un método. Estes dous tipos son funcións, pero unha función está flotando libre e un método se asenta nun obxecto.
 
@@ -696,22 +668,22 @@ Seguidamente, aprendiches sobre as variables de devolución. Un valor devolto so
 
 Por último, aprendiches sobre as funcións anónimas. Unha función anónima non ten un nome, pero é unha función que se pode pasar. Se usa normalmente nun contexto onde é necesario realizar unha tarefa que é asincrónica e finalizará nalgún momento no futuro. Os exemplos poden ser un tempo de espera ou a captura de datos a través da rede. Unha vez que finaliza a tarefa, se invoca a función anónima.
 
-*****************
+***
 
-# Toma de decisións con JavaScript
+## Toma de decisións con JS
 
 Nesta lección, se tratan os conceptos básicos da toma de decisións `if/else` de JavaScript. Aprenderás como comparar variables e o uso de valores booleanos, e o uso de instrucións `if/else`  te permiten tomar decisións no código.
 
-## Obxectivos de aprendizaxe
+## Obxectivos da aprendizaxe
 
 Agora, imos a:
 
 - Revisar os valores booleanos.
 - Aprender sobre os operadores de comparación.
-- Explorar como se usan `if ` e  `else` en JavaScript.
+- Explorar como se usan `if` e  `else` en JavaScript.
 - Descubrir como formar condiciones e tomar decisións con operadores lóxicos.
 
-# Introdución
+## Introdución iii
 
 Algúns programas que se escriben se executan de arriba a abaixo. A miúdo, terás aplicacións cuxas rutas no código están determinadas polas diferentes condicións que configures.
 
@@ -719,7 +691,7 @@ Supoñamos que tes un programa para crear un arquivo de copia de seguridade de t
 
 Imos agora a traballar cos diferentes operadores que podes usar para expresar lóxica para crear varias rutas nos programas.
 
-## Obxectivos da aprendizaxe
+## Obxectivos da titoría
 
 En este módulo, aprenderá a:
 
@@ -728,11 +700,11 @@ En este módulo, aprenderá a:
 - Explorar como se usan ``if`` e ``else`` en JavaScript.
 - Descubrir como formar condicións e tomar decisións con operadores lóxicos.
 
-# Operadores lóxicos
+## Operadores lóxicos
 
 As decisións poden requirir máis dunha comparación e se poden combinar con operadores lóxicos para xerar un valor booleano.
 
-## Operadores lóxicos e valores booleanos
+### Operadores lóxicos e valores booleanos
 
 Hai operadores específicos que nos permiten conectar varias instrucións booleanas. O resultado é unha instrución máis complexa que en calquera caso se avalía como `true` ou `false`. Pode usar o seguinte conxunto de operadores para construír estas comparacións máis complexas:
 
@@ -742,11 +714,11 @@ Hai operadores específicos que nos permiten conectar varias instrucións boolea
 | `||`    | **OR lóxico**: compara dúas expresións booleanas. Devolve true se alo menos un lado é verdadeiro -true. | `(5 > 6) || (5 < 6) //One side is false, other is true. Returns true` |
 | `!`     | **NOT lóxico**: devolve o valor oposto dunha expresión booleana. | `!(5 > 6) // 5 is not greater than 6, but "!" will return true` |
 
-## Condicións e decisións con operadores lóxicos
+### Condicións e decisións con operadores lóxicos
 
 Podes usar estes operadores complexos con ambas asignacións, pero tamén coas cláusulas `if` e `else`.
 
-### Nas asignacións
+#### Nas asignacións
 
 Como parte da asignación dun valor a unha variable, podes usar un operador OR (`||`).
 
@@ -758,11 +730,9 @@ let hasDiscount = isHoliday || isMember;
 
 Co código anterior, se expresa se un cliente pode ter un desconto ou non. Só é necesario que unha das variables, `isMember` ou `hasDiscount`, teña un valor verdadeiro para que se asigne `true` á variable `hasDiscount`.
 
-### En `if...else`
+#### En `if...else`
 
 Tamén podes usar este tipo de operador lóxico nunha instrucción `if/else`. No exemplo de código que segue, dáse unha situación na que hai dous portátiles, un con desconto e outro vendido a prezo completo. Mediante o uso dun operador `||`, podes construír unha cláusula `if` de aspecto máis complexo.
-
-
 
 ```javascript
 let currentMoney= 800;
@@ -781,9 +751,7 @@ else {
 
  :pencil2: ***Suxestión***: Lembras que falamos sobre aprender a ler código? Que nos di o código? Vas poder obter un equipo portátil novo? Podes probar o código por exemplo en [JSBin](https://jsbin.com) e ver o resultado.
 
-
-
-## Operador de negación
+### Operador de negación
 
 Acabas de ver como se pode usar unha instrucción `if...else` para crear lóxica condicional. Todo o que vai a unha instrucción `if` se debe avaliar como `true` ou `false`. Mediante o operador `!`, podes *negar* a expresión. E terías algo similar ao que segue:
 
@@ -795,7 +763,7 @@ if (!condition) {
 }
 ```
 
-## Expresións ternarias
+### Expresións ternarias
 
 O uso de `if...else` non é a única maneira de expresar a lóxica de decisión. Tamén podes usar algo chamado operador *ternario*. A sintaxe ten un aspecto similar ao seguinte:
 
@@ -830,23 +798,17 @@ if (firstNumber > secondNumber) {
 
  :pencil2: ***Suxestión***: Tómate un momento para reflexionar. Cal dos dous enfoques, expresións ternarias ou `if/else`, foi más fácil de entender?
 
+## Proba con: If...else
 
-
-# Proba con: If...else
-
-Para completar este módulo, podes seguir a lección en [Microsoft Learn]( https://docs.microsoft.com/es-es/learn/modules/web-development-101-variables/). Desde aí podes activar un espazo illado en Azure para completar o exercicio. Un [espazo illado](https://docs.microsoft.com/en-us/learn/support/faq?pivots=sandbox) dáche acceso a recursos gratuítos. A subscrición persoal non se che cobrará. O espazo illado só se pode usar para realizar os cursos de Microsoft Learn. 
-
-
+Para completar este módulo, podes seguir a lección en [Microsoft Learn]( https://docs.microsoft.com/es-es/learn/modules/web-development-101-variables/). Desde aí podes activar un espazo illado en Azure para completar o exercicio. Un [espazo illado](https://docs.microsoft.com/en-us/learn/support/faq?pivots=sandbox) dáche acceso a recursos gratuítos. A subscrición persoal non se che cobrará. O espazo illado só se pode usar para realizar os cursos de Microsoft Learn.
 
 :carrot: Parabéns!
 
-
-
-# Matrices e bucles de JavaScript
+## Matrices e bucles de JavaScript
 
 Aprende a manipular e almacenar datos en JavaScript.
 
-## Obxectivos da aprendizaxe
+### Obxectivos
 
 Vexamos agora:
 
@@ -854,7 +816,7 @@ Vexamos agora:
 - Como usar bucles para traballar con matrices.
 - Como aplicar operacións de matriz.
 
-# Introdución
+## Introdución iv
 
 JavaScript é unha das principais tecnoloxías da World Wide Web. Os desenvolvedores o usan para crear contido interactivo en sitios web.
 
@@ -864,7 +826,7 @@ Imaxina ter que volver a cargar unha páxina web cada vez que cambias a informac
 
 Nesta sección obterás información do formato estrutural e os usos das matrices en JavaScript, e de como os bucles poden axudarche con tarefas repetitivas que implican aos datos de ditas matrices.
 
-## Obxectivos da aprendizaxe
+## Obxectivos a alcanzar
 
 Imos coñecer:
 
@@ -872,11 +834,11 @@ Imos coñecer:
 - Como usar bucles para traballar con matrices.
 - Como aplicar operacións de matriz.
 
-# Manipulación de matrices
+## Manipulación de matrices
 
 Para que os datos e información dos teus sitios web sexan interactivos, debes poder manipular e almacenar os datos no código. Por sorte, en JavaScript se poden almacenar varios elementos nunha *matriz*. O uso de matrices axudarache, entre outras cousas, a non ter que declarar moitas variables.
 
-## Acerca das matrices
+### Acerca das matrices
 
 Unha matriz é un tipo de estrutura de datos que conten máis dun elemento. Imaxina un pedido de compra que conten varios artigos ou unha xeadería onde podes elixir entre varios sabores. En vez de almacenar, por exemplo, oito sabores diferentes de xeado como oito variables diferentes, podes usar unha soa matriz para almacenar toda esa información, como se ve a continuación:
 
@@ -886,7 +848,7 @@ let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapo
 
 Neste código, ao encerrar todo o contido entre corchetes (`[]`), se esta a declarar unha matriz.
 
-### Acceso a un elemento
+#### Acceso a un elemento
 
 O contido dunha matriz se soe coñecer como *elemento*. A miúdo se necesita acceder a un elemento específico para ler o valor, actualizalo ou quitalo incluso. Para acceder a un elemento específico, se usan corchetes máis a posición que interesa. Mira de que forma:
 
@@ -900,7 +862,7 @@ O primeiro elemento dunha matriz comenza por 0 e o último elemento é a lonxitu
 iceCreamFlavors[3] // Pistachio
 ```
 
-### Cambiar un valor
+#### Cambiar un valor
 
 Para cambiar un valor nunha matriz, debes seleccionar o índice do elemento e asignarlle un novo valor mediante o operador de asignación de signo igual (`=`) e un valor á dereita do operador. A xeadería quedou sen "Napolitano", pero non te preocupes, atopaches "xeado de noz":
 
@@ -908,7 +870,7 @@ Para cambiar un valor nunha matriz, debes seleccionar o índice do elemento e as
 iceCreamFlavors[4] = "Butter Pecan"; //Changes "Neapolitan" to "Butter Pecan"
 ```
 
-### Engade máis valores
+#### Engade máis valores
 
 O negocio de xeados medra e queres ofrecer máis sabores. Que pode facer? Podes usar o método `push()` para agregar máis sabores. O método `push()` toma un elemento como entrada e agrega o elemento á matriz orixinal. Por exemplo, para agregar "Menta con chocolate" como sabor, usarías o seguinte código:
 
@@ -916,7 +878,7 @@ O negocio de xeados medra e queres ofrecer máis sabores. Que pode facer? Podes 
 iceCreamFlavors.push("Mint Chip");
 ```
 
-### Uso da lonxitude da matriz
+#### Uso da lonxitude da matriz
 
 Supón que alguén che pregunta, cantos sabores de xeado tes? Botas unha ollada ao almacén e todo o que ves é un mar de sabores que vas tardar moito tempo en contar. Pero, un momento, na matriz, existe o campo `length` que se pode usar para contar todos os sabores:
 
@@ -926,7 +888,7 @@ iceCreamFlavors.length // 6 flavors, because you recently added "Mint Chip"
 
  :pencil2: ***Suxestión:*** Usa a consola do explorador para crear e manipular unha matriz da túa propia creación. Lembra que podes escribir código JavaScript directamente no explorador. Para facelo, abre unha xanela do navegador e diríxase a "Herramientas de desarrollo". Na consola, atoparás unha solicitude `>`. Experimenta coa manipulación dunha matriz con índices e propiedades como a que acabamos de ver.
 
-### Quitar un valor
+#### Quitar un valor
 
 Para quitar un valor dunha matriz, podes usar `delete`. Supón que quedaches sen o sabor de "Menta con chocolate". O envase segue aí, pero xa non queda xeado de "Menta con chocolate". O código ten este aspecto:
 
@@ -942,7 +904,7 @@ Tódolos elementos seguen aí, pero o envase, onde estaba o xeado de "Menta con 
 iceCreamFlavor[iceCreamFlavor.length-1] = "your choice";
 ```
 
-### Quitar un elemento
+#### Quitar un elemento
 
 As veces, non basta con quitar o valor. Debes quitar o envase tamén. É posible que non tenas suficiente espazo na casa? Decides comerte todo o xeado de "vainilla" (probablemente haste de arrepentir) e tiras o envase. Para esa operación, usarás o método de matrices `splice()`. Toma unha posición e indica os elementos que hay que quitar, como se ve neste código:
 
@@ -957,36 +919,32 @@ iceCreamFlavor.splice(2,1);
 iceCreamFlavor // [ 'Chocolate', 'Strawberry', 'Pistachio', 'Neapolitan', 'Mint Chip' ]
 ```
 
-
-
-
-
-# Recorrer en iteración os elementos dunha matriz mediante bucles
+## Recorrer en iteración os elementos dunha matriz mediante bucles
 
 Tes unha matriz, e agora que? Podes usar *bucles* para levar a cabo iteracións con cada elemento da mesma. Podes realizar operacións como imprimir cada elemento, sumalo ou buscar elementos específicos dada unha condición.
 
-## Acerca dos bucles
+### Acerca dos bucles
 
 Os bucles permiten tarefas repetitivas o *iterativas*, e poden aforrarche moito tempo e código. Unha iteración pode variar nas súas variables, valores e condicións. Hai diferentes tipos de bucles en JavaScript, cada un ten pequenas diferencias. Pero todos fan basicamente o mesmo: executan un bucle nos datos.
 
-### Bucles `For`
+#### Bucles `For`
 
-Un bucle `for` requiere tres partes para iterar:
+Un bucle `for` require tres partes para iterar:
 
 - **Contador**: variable que normalmente se inicializa cun número que conta o número de iteracións. Este é un exemplo:
 
-  ```javascript
+```javascript
 let i = 0;
-  ```
-  
+```
+
   Normalmente, este valor úsase como a primeira posición á que se quere acceder nunha matriz.
 
 - **Condición**: expresión que usa operadores de comparación para facer que o bucle se deteña cando `true`. Este é un exemplo dunha condición que se detén cando a matriz no ten índices:
 
-  ```javascript
-i < 10;   
-  ```
-  
+```javascript
+i < 10;
+```
+
   Neste exemplo, a expresión será `false` cando `i` sexa igual a `array.length`. Se se está recorrendo en bucle unha matriz, este é o resultado correcto. Non se recomenda abordar un índice fora dos límites da matriz.
 
 - **Expresión de incremento**: expresión que se executa ao final de cada iteración, normalmente para cambiar o valor do contador. Podes incrementar tanto como queiras por cada iteración, pero é habitual aumentar de unha en una, como se mostra neste exemplo:
@@ -1014,8 +972,6 @@ As condiciones dos bucles soen basearse noutros valores, coma os contadores, e d
 
 Os valores iniciais dos contadores deben crearse fora do bucle e calquera expresión que cumpra unha condición, incluído o cambio do contador, debe manterse dentro do bucle. No exemplo seguinte, o bucle `while` se executa para 10 iteracións.
 
-
-
 ```javascript
 //Counting up to 10
 let i = 0;
@@ -1038,8 +994,6 @@ i < 10
 ```
 
 A matriz de sabores de xeado ten unha lonxitude arbitraria, o que significa que pode quitar o agregar elementos en calquera momento. Sabes que tes seis tipos de xeado, pero tamén podes usar o operador `length` na matriz, podes fiarse de el:
-
-
 
 ```javascript
 let iceCreamFlavors = ["Chocolate", "Strawberry", "Vanilla", "Pistachio", "Neapolitan", "Mint Chip"];
@@ -1086,17 +1040,15 @@ Agregar `break` fai que o bucle se deteña nun elemento negativo. O bucle `forEa
 
  :pencil2: ***Suxestión***: Experimenta con bucles nunha matriz propia na consola do explorador. Se queres un desafío, hai outras maneiras de percorrer en bucle matrices que non sexan os bucles `for` e `while`. Hai bucles [`forEach`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach), [`for-of`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/for...of/) e [`map`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array/map/). Proba a reescribir o bucle de matriz mediante unha destas técnicas.
 
-
-
-# Uso de operacións para consultar matrices
+## Uso de operacións para consultar matrices
 
 Xa tes moita información, inda así, as matrices son moito máis complexas que simplemente iterar por elas ou quitar e agregar elementos. Tamén podes consultalas ou realizar operacións en elas.
 
-## Filtrado
+### Filtrado
 
 Podes realizar moitas operacións útiles nunha matriz. Buscar e filtrar aquilo que necesitas son operacións que é probable que realices con frecuencia.
 
-### Buscar un elemento mediante `find()`
+#### Buscar un elemento mediante `find()`
 
 Imaxina que alguén che pregunta, tes xeado de "Chocolate"? e, se o tes, posme un? E neste punto, podes usar o método `find()` na matriz, como se mostra aquí:
 
@@ -1111,8 +1063,6 @@ A operación `find()` executa a función que proporcionaches como entrada para c
 
 Que ocorre se o cliente di: quero un xeado que *conteña* "Chocolate", que tes? Debes reordenar un pouco a xeadería e empezar a organizala por categorías. A consulta deste cliente debe devolver "Chocolate", "Napolitano" e "Menta con chocolate" como sabores que conteñen "Chocolate". Tendo isto en conta, opta por almacenar a matriz da seguinte maneira:
 
-
-
 ```javascript
 let iceCreamFlavors = [
   { name: "Chocolate", type: "Chocolate" }, 
@@ -1126,13 +1076,11 @@ let iceCreamFlavors = [
 
 Xa reorganizáchela oferta. O cliente pide un xeado que conteña chocolate e parece que quere unha bola de cada un dos tres sabores devoltos pola consulta. O mellor método para usar neste caso é a operación `filter()`. Toma unha expresión de filtro (unha función) e devolve calquera elemento que coincida coa expresión. Para axudarlle ao cliente a atopar o que quere, usa o seguinte código:
 
-
-
 ```javascript
 iceCreamFlavors.filter(flavor => flavor.type === "Chocolate") // [{ name: "Chocolate", type: "Chocolate" }, { name: "Neapolitan", type: "Chocolate"}, { name: "Mint Chip", type: "Chocolate"}]
 ```
 
-### Comprobación dunha condición mediante `some()`
+#### Comprobación dunha condición mediante `some()`
 
 Un dos clientes é alérxico ás "Noces" e primeiro quere saber sa algún dos xeados contén "Noces". Comproba o inventario mediante o método `some()`. O método usa unha función que comproba se alo menos un elemento cumpre unha condición.
 
@@ -1146,7 +1094,7 @@ Dado que o xeado de "Pistacho" contén noces, o método `some()` devolve *true*.
 iceCreamFlavors.filter(flavor => flavor.type !== "Nuts") // returns everything except for Pistachio.
 ```
 
-## Asignación de proxeccións
+### Asignación de proxeccións
 
 Unha proxección é intentar cambiar a matriz de algunha maneira. Imaxina, por exemplo, que toma a matriz orixinal `iceCreamFlavor` e desexas agregar unha propiedade `price` a cada sabor. Esta situación é axeitada para un método de proxección chamado `map()`. Imaxínate que fai bo día e decides que cada bola de xeado que vendes debe valer 1€. Escribes o código para que isto aconteza. Algún código como o que se mostra a continuación:
 
@@ -1167,7 +1115,7 @@ iceCreamFlavors.map(flavor => {
 
 O código pasa por cada elemento da lista, adxunta a propiedade `price`, proporciónalle o valor `1` e, a continuación, devolve o elemento.
 
-## Agregacións
+### Agregacións
 
 O negocio funciona. Hoxe fai máis sol e vendiches moitos xeados. Os recibos da caixa están almacenados nunha longa matriz, que se parece ao seguinte código:
 
@@ -1203,17 +1151,9 @@ sales.reduce((acc, curr) => acc + curr.amount, 0);
 
 Como podes ver, non se necesita unha variable `sum`. Pode que tardes un pouco en acostumarte a esta estratexia, pero é eficaz e pódese usar en moitas situacións.
 
-
-
-> Probas os pedazos de código que atopas no texto. Intenta facerte coas estratexias de guión - accións orientadas ao cambio- propias da linguaxe JavaScript
-
-
+> Proba os cachos de código que vas atopando no texto. Intenta facerte coas estratexias de guión - accións orientadas ao cambio- propias da linguaxe JavaScript
 
 ### ...continuará
 
-
-
-Formaweb IV
-
+***
 NOV 2021
-

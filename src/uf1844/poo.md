@@ -14,7 +14,7 @@ Un programador deseña un programa de software organizando pezas de información
 
 ## Clases, obxectos e instancias
 
-As clases, que constitúen o modelo a partir do que se estruturan os datos e comportamentos, permiten a instantación que facilita a creación de obxectos a partir desa clase. 
+As clases, que constitúen o modelo a partir do que se estruturan os datos e comportamentos, permiten a instantación que facilita a creación de obxectos a partir desa clase.
 
 Unha clase é un modelo, que define xenericamente como serán os obxectos dun determinado tipo. Por exemplo, unha clase para representar animais pódese chamar "animal" e  ter unha serie de atributos, como "nome" ou "idade" (que normalmente son propiedades), e unha serie cos comportamentos que poden ter estes, como camiñar ou comer, e que á súa vez se implementan como métodos da clase  (funcións).
 
@@ -69,8 +69,6 @@ O polimorfismo reside en deseñar obxectos para compartir comportamentos,  permi
 ● Protexe a información mediante o encapsulamento, xa que só se pode  acceder aos datos do obxecto a través de propiedades e métodos privados.
 
 ● A abstracción permítenos construír sistemas máis complexos dun xeito máis sinxelo e organizado.
-
- 
 
 **Hoxe, OOP é o paradigma máis utilizado para deseñar software e aplicacións.** As súas vantaxes son obvias, especialmente cando se precisa resolver complexos desafíos de programación. Ademais, permite unha mellor estrutura de datos e reutilización do código, facilitando aforrar tempo a longo prazo.
 

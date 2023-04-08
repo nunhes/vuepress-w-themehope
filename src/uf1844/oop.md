@@ -56,7 +56,7 @@ O principio de segregación de interfaces tamén está relacionado cun concepto 
 
 Pondo esta frase en contexto, os clientes son as clases que implementan as nosas interfaces e clases abstractas. O problema aquí é que se temos, por exemplo, unha interface para asinar métodos dun mecanismo de comunicación cifrado, poderiamos ter, por exemplo:
 
-```
+```js
 interface Comunicador {
     encriptar(mensaje): String
     enviar(mensaje, destino): Boolean
@@ -67,7 +67,7 @@ interface Comunicador {
 
 Esta interface utilízase para que unha clase a implemente e para poder enviar e recibir mensaxes cifradas, pero que pasa se queremos ter unha clase que implemente só os métodos de cifrado e descifrado, para ser usada nun contexto diferente ao dun mecanismo de comunicación?, e ademais unha clase que envía e recibe mensaxes sen cifrar?. Estas clases non poden implementar esta interface, xa que se verían obrigadas a implementar métodos adicionais aos que realmente usan, polo que un mellor enfoque sería descompoñer esta interface en dúas interfaces separadas e especializadas (recorde o principio de responsabilidade única)
 
-```
+```js
 interface Comunicador {
     enviar(mensaje, destino): Boolean
     recibir(): Boolean
@@ -93,5 +93,5 @@ Unha vez entendidos os conceptos SOLID, é bo practicalos e reforzalos, xa que e
 - [Programación Orientada a Obxectos: Patrón Singleton](https://medium.com/@pabloulloacastro/programación-orientada-a-objetos-patrón-singleton-423e2755614b)
 - [Programación Orientada a Obxectos: Patron Builder](https://medium.com/@pabloulloacastro/programación-orientada-a-objetos-patrón-builder-7fb20fe17bd8)
 
-Orixinal: 
-&rarr; https://medium.com/@pabloulloacastro/programaci%C3%B3n-orientada-a-objetos-patr%C3%B3n-builder-7fb20fe17bd8
+Orixinal:
+&rarr; [https://medium.com/@pabloulloacastro/programaci%C3%B3n-orientada-a-objetos-patr%C3%B3n-builder-7fb20fe17bd8](https://medium.com/@pabloulloacastro/programaci%C3%B3n-orientada-a-objetos-patr%C3%B3n-builder-7fb20fe17bd8)

@@ -8,7 +8,7 @@ marp: true
 
 ---
 
-### Como funcionan os navegadores web?
+## Como funcionan os navegadores web?
 
 ---
 
@@ -16,7 +16,7 @@ marp: true
 
 ---
 
-#### Interface de usuario
+### Interface de usuario
 
 É a interface de usuario do navegador. Inclúe a barra de enderezos, o botón Atrás, as opcións de marcadores, o botón Actualizar, etc.
 
@@ -28,7 +28,7 @@ Como resultado, **todos os navegadores teñen interfaces de usuario moi similare
 
 ---
 
-#### O motor do navegador:
+#### O motor do navegador
 
 O motor do navegador organiza as accións entre a interface de usuario do navegador e o motor de renderizado do navegador.
 
@@ -36,7 +36,7 @@ Cando escriba un novo sitio web e prema a tecla Intro, a IU do navegador indicar
 
 ---
 
-#### O motor de renderizado:
+#### O motor de renderizado
 
 O motor de renderizado é o responsable de mostrar o contido solicitado.
 
@@ -66,8 +66,6 @@ A continuación, o motor de renderizado usa o backend da IU para mostrar o sitio
 
 ![Rendering engine basic flow](./assets/bPlYx9xODQH4X1KuUNpc.png)
 
-
-
 Todo o proceso polo que atravesa o motor de renderizado chámase Ruta crítica de renderizado.
 
 ---
@@ -76,7 +74,7 @@ Todo o proceso polo que atravesa o motor de renderizado chámase Ruta crítica d
 
 ---
 
-##### Exemplos de motor de renderizado inclúen:
+##### Exemplos de motor de renderizado inclúen
 
 - **Safari** - Motor de renderizado WebKit
 - **Chrome** - Blink Rendering Engine (Blink é un fork de WebKit)
@@ -88,8 +86,6 @@ Todo o proceso polo que atravesa o motor de renderizado chámase Ruta crítica d
 
 ![bg ](./assets/abc2e67154bbe50d5208ebed99865c6f.png)
 
-
-
 Detalle do fluxo de WebKit
 
 ---
@@ -98,9 +94,7 @@ Detalle do fluxo de WebKit
 
 ![Mozilla's Gecko rendering engine main flow.](./assets/Tbif2mUJCUVyPdyXntZk.jpg)
 
-
-
- Mozilla's Gecko rendering engine main flow
+Mozilla's Gecko rendering engine main flow
 
 ---
 
@@ -130,7 +124,7 @@ Os primeiros navegadores usaban intérpretes de JavaScript, pero os motores Java
 
 ---
 
-#### IU da Backend:
+#### IU da Backend
 
 Esta capa é a responsable de debuxar os widgets básicos como caixas de selección ou entrada e ventás. Debaixo usa métodos de IU do sistema operativo.
 
@@ -138,7 +132,7 @@ O motor de renderizado usa a capa de fondo da IU durante as fases de deseño e p
 
 ---
 
-#### Almacenamento de datos:
+#### Almacenamento de datos
 
 O navegador necesita gardar datos localmente (cookies, caché, etc.) polo que o compoñente de almacenamento de datos xestiona esta parte.
 
@@ -148,6 +142,6 @@ Acabamos de cubrir o nivel de superficie aquí, se quere afondar sobre como func
 
 ---
 
-https://dev.to/mahmoudessam/the-architecture-of-web-browsers-1o1k
+[https://dev.to/mahmoudessam/the-architecture-of-web-browsers-1o1k](https://dev.to/mahmoudessam/the-architecture-of-web-browsers-1o1k)
 
-https://web.dev/howbrowserswork/
+[https://web.dev/howbrowserswork/](https://web.dev/howbrowserswork/)

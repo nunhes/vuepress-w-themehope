@@ -12,7 +12,7 @@ category:
 
 # UF1842
 
-### Desenvolvemento e reutilización de compoñentes software e  multimedia mediante linguaxes de guión
+## Desenvolvemento e reutilización de compoñentes software e  multimedia mediante linguaxes de guión
 
 <!-- ### 90h 19/01/23-13/02/23 -->
 
@@ -21,31 +21,35 @@ category:
 1. [Esquema xeral](https://www.educba.com/layered-architecture/).
 2. [Arquitectura en capas](https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/).
 3. [Interacción entras capas cliente e servidor](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview).
-4. [Arquitectura](https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/)[ da capa cliente](https://www.disrupciontecnologica.com/arquitectura-de-servicios-web/).
+4. [Arquitectura](https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/) [da capa cliente](https://www.disrupciontecnologica.com/arquitectura-de-servicios-web/).
 
 ### UD 2. [NAVEGADORES WEB](https://web.dev/howbrowserswork/)
 
-1.  [Arquitectura dun navegador](https://dev.to/mahmoudessam/the-architecture-of-web-browsers-1o1k).
+1. [Arquitectura dun navegador](https://dev.to/mahmoudessam/the-architecture-of-web-browsers-1o1k).
+
    - Interface de usuario.
    - Motor de exploración.
    - Motor de presentación.
    - Módulos auxiliares: [persistencia](https://www.sitepoint.com/client-side-storage-options-comparison/), interface de rede, intérprete de scripts, infraestrutura de presentación.
-2.  [Navegadores](https://www.osi.es/es/navegadores) de [uso común](https://kinsta.com/es/cuota-mercado-mundial-navegadores/). [Comparativa](https://www.mozilla.org/es-ES/firefox/browsers/compare/).
-3.  [Seguridade en navegadores](https://www.osi.es/es/navegadores).[Test de navegadores seguros: ¿qué navegador es el más seguro?](https://www.ionos.es/digitalguide/online-marketing/vender-en-internet/comparativa-de-navegadores-seguros/)
-4.  [Integración de aplicacións en navegadores](https://www.astera.com/es/tipo/blog/integraci%C3%B3n-de-aplicaciones/). [Adaptadores (plugins)](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/como-instalar-add-ons/).
-   - [Adaptadores comúns en diferentes navegadores](https://protege.la/5-complementos-plugins-basicos-para-tu-navegador/)
-   - [Configuración de tipos de arquivo e adaptadores](https://dinahosting.com/blog/que-es-un-plugin-y-para-que-sirve/).
+
+2. [Navegadores](https://www.osi.es/es/navegadores) de [uso común](https://kinsta.com/es/cuota-mercado-mundial-navegadores/). [Comparativa](https://www.mozilla.org/es-ES/firefox/browsers/compare/).
+3. [Seguridade en navegadores](https://www.osi.es/es/navegadores).[Test de navegadores seguros: ¿qué navegador es el más seguro?](https://www.ionos.es/digitalguide/online-marketing/vender-en-internet/comparativa-de-navegadores-seguros/)
+4. [Integración de aplicacións en navegadores](https://www.astera.com/es/tipo/blog/integraci%C3%B3n-de-aplicaciones/). [Adaptadores (plugins)](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/como-instalar-add-ons/).
+
+    - [Adaptadores comúns en diferentes navegadores](https://protege.la/5-complementos-plugins-basicos-para-tu-navegador/)
+    - [Configuración de tipos de arquivo e adaptadores](https://dinahosting.com/blog/que-es-un-plugin-y-para-que-sirve/).
+
 5. [Conformidade a estándares](https://www.inesem.es/revistadigital/informatica-y-tics/estandares-web/).
 
-https://www.sitepoint.com/client-side-storage-options-comparison/
+<https://www.sitepoint.com/client-side-storage-options-comparison/>
 
-https://www.google.com/chrome/browser-features/
+<https://www.google.com/chrome/browser-features/>
 
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage
+<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage>
 
 ### UD 3. CREACIÓN DE [CONTIDO WEB DINÁMICO](https://www.wearecontent.com/blog/marketing-de-contenidos/contenidos-dinamicos)
 
-https://learn.microsoft.com/en-us/training/modules/web-development-101-introduction-programming/2-what-is-programming
+<https://learn.microsoft.com/en-us/training/modules/web-development-101-introduction-programming/2-what-is-programming>
 
 1. [Fundamentos da programación](https://www.codealo.dev/cursos/fundamentos-de-programacion).
    - [Constantes, variables](https://www.freecodecamp.org/news/differences-between-var-let-const-javascript/). [Tipos de datos simples e estruturados](https://desarrolloweb.com/articulos/tipos-datos-programacion.html).
@@ -62,7 +66,7 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
    - Máquinas virtuais en navegadores. Miniaplicacións (applets).
    - Outras linguaxes para o desenvolvemento de [aplicacións web enriquecidas (RIA)](https://es.wikipedia.org/wiki/Rich_Internet_application).
 
-   - https://www.freecodecamp.org/news/what-is-F-js/
+   - <https://www.freecodecamp.org/news/what-is-F-js/>
 
 ### UD 4. [LINGUAXES DE GUIÓN DE USO XERAL](https://kinsta.com/es/blog/lenguajes-script/)
 
@@ -75,7 +79,7 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
    - [Obxectos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects).
    - Sentencias. Aniñado.
    - [Estruturas de control e condicionais](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks).
-   - Bucles. 
+   - Bucles.
    - Comentarios
 3. [Funcións](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions).
    - Parámetros.
@@ -86,10 +90,10 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
    - Introdución e validación de texto.
 5. [Listas (arrays)](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays).
    - Creación de arrays básicos.
-   - Arrays multidimensionais. 
+   - Arrays multidimensionais.
    - Tratamento de arrays mediante bucles.
 6. Formatos estándar de almacenamento de datos en linguaxes de guión.
-   - Comparativa. 
+   - Comparativa.
    - Tratamento de formatos estándar.
    - Dicionarios de datos.
 7. [Obxectos](https://www.freecodecamp.org/news/object-oriented-programming-javascript/).
@@ -169,8 +173,6 @@ https://learn.microsoft.com/en-us/training/modules/web-development-101-introduct
 
 ![img](https://miso-4208-labs.gitlab.io/book/assets/browser-arch.png)
 
-
-
 <!--
 
 ## DATOS IDENTIFICATIVOS DA UNIDADE FORMATIVA
@@ -187,8 +189,6 @@ Certificado de profesionalidad DESARROLLO DE APLICACIÓNS CON TECNOLOXÍAS WEB. 
 ### UF1842: DESENVOLVEMENTO E REUTILIZACIÓN DE COMPOÑENTE SOFTWARE E MULTIMEDIA MEDIANTE LINGUAXES DE GUIÓN
 
 DURACIÓN 90h 
-
-
 
 Resto de unidades formativas que completan o módulo:
 
@@ -239,13 +239,7 @@ Apartado A: REFERENTE DE COMPETENCIA
   – Verificar que as funcionalidades provistas polo compoñente coinciden coas esperadas e que non se producen conflitos
   co resto dos compoñentes do sistema.
 
-
-
-
-
 ---
-
-
 
 #### Xaneiro
 

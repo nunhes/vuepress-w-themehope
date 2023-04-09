@@ -69,14 +69,14 @@ export default hopeTheme({
 
       displayFooter: true,
 
-      blog: {
-        description: "A FrontEnd programmer",
-        intro: "/intro.html",
-      },
+      //blog: {
+      //  description: "A FrontEnd programmer",
+      //  intro: "/intro.html",
+      //},
 
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
+      //metaLocales: {
+      //  editLink: "Edit this page on GitHub",
+      //},
     },
 
     /**
@@ -130,12 +130,12 @@ export default hopeTheme({
     }, */
   },
 
-  encrypt: {
+  /* encrypt: {
     config: {
       "/demo/encrypt.html": ["1234"],
       "/gl/demo/encrypt.html": ["1234"],
     },
-  },
+  }, */
 
   plugins: {
     blog: true,

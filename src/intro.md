@@ -12,11 +12,11 @@ Hai tantas cousas, que **é difícil aprendelo todo**. Coma tampouco é facil ap
 
 Intentarei o mellor para dar unha boa estrutura.
 
-Eu non son programador, alo menos non fixen formación regrada algunha aprol desa materia. Pero a miña actividade profesional me motivou e me foi levando aos poucos cara una limbo indeterminado entre a miña profesión de orixe, o deseño multimedia aplicado, e o que agora se lle chama desenvolvedor fullstack.  Bo, middlestack developer está ben para min, e de feito nas entrevistas sempre deixo ben claro que eu non son programador, ao mellor un deseñador avantaxado en practicas de desenvolvemento e programación web.
+Eu non son programador, alo menos non fixen formación regrada algunha aprol desa materia. Pero a miña actividade profesional me motivou e me foi levando aos poucos cara un limbo indeterminado entre a miña profesión de orixe, o deseño multimedia aplicado, e o que agora se lle chama desenvolvedor fullstack.  Bo, middlestack developer está ben para min, e de feito nas entrevistas sempre deixo ben claro que eu non son programador, ao mellor un deseñador avantaxado en practicas de desenvolvemento e programación web.
 
 De onde veño, a prehistoria dos servicios na rede, era evidente que o percorrido por vir ía a ser unha carreira de especialización. A inxente cantidade de información e calculo que se xeraba a redor de calquera proxecto mostraba as claras que os gañadores serían aqueles equipos capaces de integrar nas súas filas a profesionais de diferentes ámbitos poñendo cada quen o mellor de si para obter un produto final. Claro que a natureza da tecnoloxía dos *personal computers* tamén favoreceu a iniciativa individual, e xa son moitos os que de xeito particular crearon, e crean, recursos que acaban por ser aceptados pola comunidade e incorporados ao interminable fío do que si deberías coñecer.
 
-Por iso son tan grandes as conversas entre os que gustan destas cousas: sempre hai algunha novidade, algo que comentar, algo novo que xa aprendiches e algo inda máis novo que deberas aprender.
+Por iso son tan grandes as conversas entre os que gustan destas cousas: sempre hai algunha novidade, algo que comentar, algo novo que aprendiches e algo inda máis novo que deberas aprender.
 
 Vaia que non hai tempo para aburrirse. Que tamén, pero pouco ;)
 

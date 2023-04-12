@@ -11,7 +11,7 @@ category:
 
 ## Acceso a datos en aplicacións web da entorna servidor
 
-&rarr; [**Lecturas adicionais**](uf1844.md)
+&rarr; [**Lecturas adicionais**](uf1845.md)
 
 ### UD1. MODELOS DE DATOS
 
@@ -26,7 +26,7 @@ category:
 
 ### UD2. [SISTEMAS DE XESTIÓN DE BASES DE DATOS (SGBD)](https://www.ionos.es/digitalguide/hosting/cuestiones-tecnicas/sistema-gestor-de-base-de-datos-sgbd/)
 
-1. Definición de SGBD.
+1. [Definición de SGBD](https://www.ayuware.es/blog/que-es-un-sgbd/).
 2. Compoñentes dun SGDB. Estrutura.
 3. [Terminoloxía do SGDB](https://support.microsoft.com/es-es/office/conceptos-básicos-sobre-bases-de-datos-a849ac16-07c7-4a31-9948-3c8c94a7c204).
 4. [Administración dun SGDB](https://sites.google.com/site/basesdedatosss2015/1-introduccion-a-las-bases-de-datos/7-administracion-de-bd) [2](https://www.internetizado.com/programas-de-base-de-datos).
@@ -52,5 +52,5 @@ category:
 2. [Características de XML](https://es.wikipedia.org/wiki/Extensible_Markup_Language) [3](https://aws.amazon.com/es/what-is/xml/).
 3. [Estrutura de XML](https://www.w3schools.com/xml/xml_tree.asp).
 4. [Estándares baseados en XML](https://es.wikipedia.org/wiki/Categoría:Estándares_basados_en_XML).
-5. [Análise XML](https://www.tutorialspoint.com/es/xml/xml_parsers.htm).
+5. [Análise XML](https://www.tutorialspoint.com/es/xml/xml_parsers.htm) [2](https://www.ibm.com/docs/es/i/7.2?topic=data-xml-parsing).
 6. [Uso de XML no intercambio de información](https://tecnologia-facil.com/que-es/que-es-xml-para-que-sirve-caracteristicas-y-ventajas).

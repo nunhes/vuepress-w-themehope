@@ -47,8 +47,6 @@ Unha interface de programación de aplicacións (API) é un software que utiliza
 Aínda que todas as API utilizan a integración de software para aumentar o intercambio de datos e o fluxo de traballo, deséñanse diferentes tipos para optimizar operacións específicas, dependendo das necesidades da organización.
 
 ### 4 Tipos de API web
-tipos de API web 1594939178 8869
-
 Unha gran categoría desta solución de integración son as API web. Este método usa o protocolo de transferencia de hipertexto (HTTP) para acceder aos datos na World Wide Web. Non obstante, hai varias subcategorías de API web que difieren en termos de seguridade, relación cliente-servidor e política. Os 4 tipos principais de API web inclúen-
 
 #### 1. API abertas
@@ -60,12 +58,10 @@ Do mesmo xeito que o método aberto, as API de socios están destinadas a promov
 #### 3. API internas
 Tamén coñecidas como privadas, as API internas están ocultas a terceiros e úsanse para mellorar a comunicación dentro dunha organización. Con este método, as empresas poden optimizar o intercambio de datos entre departamentos e todas as localizacións comerciais. Aínda que o acceso está limitado ás operacións internas, as API internas aínda proporcionan medidas de seguridade para verificar a identidade dos empregados antes de conceder a entrada ao sistema.
 
-#### 4.API
-Composite O deseño da API Composite pode soportar varios sistemas de integración e combinar todos os datos. Esta funcionalidade aumentada fai que as API compostas sexan o método ideal nos microservizos, onde se necesitan varios servizos para realizar unha operación. Tamén permite aos desenvolvedores acceder a numerosos puntos finais, incluíndo API web e/ou outras aplicacións, nunha chamada de procedemento. A robusta infraestrutura de API composta mellora o rendemento do servizo de datos e ofrece unha solución todo en un.
+#### 4.API Composite
+O deseño da API Composite pode soportar varios sistemas de integración e combinar todos os datos. Esta funcionalidade aumentada fai que as API compostas sexan o método ideal nos microservizos, onde se necesitan varios servizos para realizar unha operación. Tamén permite aos desenvolvedores acceder a numerosos puntos finais, incluíndo API web e/ou outras aplicacións, nunha chamada de procedemento. A robusta infraestrutura de API composta mellora o rendemento do servizo de datos e ofrece unha solución todo en un.
 
 ### 4 protocolos API
-protocolos api 1594939178 3341
-
 Ademais da especificación de seguridade e rede, as diferentes API tamén seguen un conxunto específico de protocolos que determinan que comandos e formatos de datos poden aceptar. Os catro conxuntos principais de protocolos utilizados polas API web inclúen-
 
 #### 1. REST

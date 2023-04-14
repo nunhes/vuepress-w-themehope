@@ -2,8 +2,8 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/", 
-  // base: "/megaboot/", 
+  //   base: "/",
+  base: "/megaboot/",
 
   locales: {
     "/": {
@@ -11,7 +11,7 @@ export default defineUserConfig({
       title: "DAW",
       description: "Deseño e programación web agora",
     },
-   /* "/gl/": {
+/* "/gl/": {
       lang: "gl-ES",
       title: "Galego",
       description: "vuepress-theme-hope demo blog",
@@ -24,6 +24,6 @@ export default defineUserConfig({
   },
 
   theme,
-  
+
   shouldPrefetch: false,
 });

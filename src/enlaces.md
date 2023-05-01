@@ -84,15 +84,31 @@ icon: info
 ### Vídeo
 
 - **Silicon Valley - The Untold Story**, serie de documentais do Discovery Channel sobre o val do silicio.
+- [The Coding Train](https://www.youtube.com/@TheCodingTrain)
+- [AmigosCode](https://www.youtube.com/@amigoscode)
+- [NetNinja](https://www.youtube.com/@NetNinja)
+- [LearnCode](https://www.youtube.com/@learncodeacademy)
+- [Traversy Media](https://www.youtube.com/c/TraversyMedia/featured)
+- [Kevin Powell](https://www.youtube.com/kepowob/playlists), 
+- [DevTips](https://www.youtube.com/c/DevTipsForDesigners/videos)
+- [TheNewBoston](https://www.youtube.com/user/thenewboston/videos)
+- [Programming with Mosh](https://www.youtube.com/c/programmingwithmosh)
 
 ### Cursos en liña
 
-- [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) :star:
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) :star:ç
+
+- [W3Schools](https://www.w3schools.com/) :star:
 
 - [TheOdinProject](https://www.theodinproject.com/paths/full-stack-javascript)
 
 - [JavaScript.Info](https://javascript.info/) :star:
 
+---
+
+- [CodingGame](https://www.codingame.com/start)
+
+- [Topcoder](https://platform-ui.topcoder.com/learn/tca-certifications/web-development-fundamentals)
 ---
 
 xan2023

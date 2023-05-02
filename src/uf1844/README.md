@@ -11,9 +11,6 @@ category:
 
 ## Desenvolvemento de [aplicacións web na entorna servidor](https://developer.mozilla.org/es/docs/Learn/Server-side)
 
-- [Lecturas complementarias](uf1844.md)
-- [Glosario](https://www.edix.com/es/instituto/formacion/significados/)
-
 ## 1. [O proceso de desenvolvemento de software](https://es.wikipedia.org/wiki/Systems_Development_Life_Cycle) [2](https://www.tutorialspoint.com/business_analysis/business_analysis_software_development_life_cycle.htm) [3](https://es.wikipedia.org/wiki/Ciclo_de_vida_del_lanzamiento_de_software)
 
 1. [Modelos do ciclo de vida do software](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm). [2](https://asana.com/es/resources/project-management-methodologies) [3](https://aws.amazon.com/es/what-is/sdlc/)
@@ -58,3 +55,8 @@ category:
 10. [Compoñentes](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/web-components/) en servidor. Avantaxes e inconvenientes no uso de [contedores](https://azure.microsoft.com/es-es/resources/cloud-computing-dictionary/what-is-a-container/) de compoñentes. [1](https://developer.mozilla.org/es/docs/Web/Web_Components) [2](https://www.intel.es/content/www/es/es/cloud-computing/containers.html) [3](https://www.atlassian.com/es/microservices/cloud-computing/containers-vs-vms)
 11. [Modelos de desenvolvemento](https://cynoteck.com/es/blog-post/top-software-development-models-to-choose-from/) [2](https://www.abatic.es/arquitecturas-de-software-mvc-y-mvvm/). [O modelo vista controlador](https://www.freecodecamp.org/espanol/news/el-modelo-de-arquitectura-view-controller-pattern/) [2](https://desarrolloweb.com/articulos/que-es-mvc.html).
 12. [Documentación do software](https://es.wikihow.com/escribir-documentación-de-software) [2](https://coderslink.com/talento/blog/recomendaciones-para-documentar-codigo/). [Inclusión no código fonte](https://codedoc.dev/es/como-documentar). [Xeradores de documentación](https://zonaphp.com/generadores-de-documentacion/) [2](https://historiadelaempresa.com/documentacion-para-el-desarrollo-de-software) [3](https://asana.com/es/resources/software-requirement-document-template) [4](https://es.community.intersystems.com/post/generadores-de-documentación-estática)
+
+---
+
+- [Lecturas complementarias](uf1844.md)
+- [Glosario](https://www.edix.com/es/instituto/formacion/significados/)

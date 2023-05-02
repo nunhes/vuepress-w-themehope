@@ -3,13 +3,6 @@
 ## Aplicacións técnicas de usabilidade e accesibilidade na contorna cliente
 
 <!-- ### 30h 14/02/23-21/02/23 -->
-
-:::: info
-
-[Lecturas complementarias](UF1843.md)
-
-::::
-
 ### UD 1. [ACCESIBILIDADE WEB](https://www.formate.es/curso/accesibilidad-web/)
 
 1. [Definición de accesibilidade web](https://www.w3.org/WAI/fundamentals/accessibility-intro/).
@@ -40,6 +33,12 @@
 - [https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/](https://www.w3.org/WAI/fundamentals/accessibility-usability-inclusion/)
 - [https://www.accessibilitychecker.org/](https://www.accessibilitychecker.org/)
 - [https://www.classcentral.com/provider/freecodecamp?subject=art-and-design](https://www.classcentral.com/provider/freecodecamp?subject=art-and-design)
+
+:::: info
+
+[Lecturas complementarias](UF1843.md)
+
+::::
 
 ---
 <!--

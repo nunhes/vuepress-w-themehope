@@ -173,6 +173,11 @@ category:
 
 ![img](https://miso-4208-labs.gitlab.io/book/assets/browser-arch.png)
 
+---
+
+### Libros:
+- [Eloquent JavaScript](https://eloquentjavascript.net/)
+
 <!--
 
 ## DATOS IDENTIFICATIVOS DA UNIDADE FORMATIVA

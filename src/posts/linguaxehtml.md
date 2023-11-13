@@ -15,7 +15,7 @@ star: true
 
 ## 1
 
-HTML, unha abreviatura de Hyper Text Markup Language, é un dos bloques de construción máis fundamentais da web.
+HTML, a abreviatura de *HyperText Markup Language*, é un dos bloques de construción máis fundamentais da web.
 
 HTML naceu oficialmente en 1993 e desde entón evolucionou ata o seu estado actual, pasando de simples documentos de texto a potenciar aplicacións web de todo tipo.
 
@@ -61,7 +61,7 @@ En todo caso, o obxectivo do libro é que che sexa de utilidade, e espero que te
 
 ## 2. Conceptos básicos de HTML
 
-HTML é un estándar definido polo **WHATWG** , un acrónimo de Web Hypertext Application Technology Working Group, unha organización formada por persoas que traballan no navegador web máis popular. Isto significa que está basicamente controlado por Google, Mozilla, Apple e Microsoft.
+HTML é un estándar definido polo **WHATWG**, un acrónimo de Web Hypertext Application Technology Working Group, unha organización formada por persoas que traballan no navegador web máis popular. Isto significa que está basicamente controlado por Google, Mozilla, Apple e Microsoft.
 
 No pasado o **W3C** (World Wide Web Consortium) era a organización encargada de crear o estándar HTML.
 
@@ -163,7 +163,7 @@ Despois temos o elemento `html`, que ten unha etiqueta de apertura e peche:
 A maioría das etiquetas veñen en pares cunha etiqueta de apertura e unha etiqueta de peche. A etiqueta de peche escríbese igual que a etiqueta de apertura, pero cun `/`:
 
 ```html
-<sometag>some content</sometag>
+<unhaetiqueta>algún contido</unhaetiqueta>
 ```
 
 Hai algunhas etiquetas de peche automático, o que significa que non necesitan unha etiqueta de peche separada xa que non conteñen nada *nelas* .
@@ -538,7 +538,7 @@ Esta etiqueta úsase para establecer un URL base para todos os URL relativos con
 <html>
   <head>
     ...
-    <base href="https://ambosass.com/" />
+    <base href="https://bitsolto.com/" />
     ...
   </head>
   ...

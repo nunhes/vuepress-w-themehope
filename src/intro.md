@@ -122,7 +122,9 @@ Todo está na rede! O que pasa é que na rede hai moito ruido e non sempre é f�
 Inda así hai certos puntos de referencia aos que sempre has de volver.
 
 - [MDN](https://developer.mozilla.org/es/)
-- [W3Schools](https://www.w3schools.com/)
+
+
+<!-- W3Schools https://www.w3schools.com/ -->
 
 <!-- WP --- https://knowthecode.io. Enceta polo [principio](https://knowthecode.io/series/absolute-beginner-series) e logo segue adiante! -->
 

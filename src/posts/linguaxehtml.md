@@ -61,7 +61,7 @@ En todo caso, o obxectivo do libro é que che sexa de utilidade, e espero que te
 
 ## 2. Conceptos básicos de HTML
 
-HTML é un estándar definido polo **WHATWG**, un acrónimo de Web Hypertext Application Technology Working Group, unha organización formada por persoas que traballan no navegador web máis popular. Isto significa que está basicamente controlado por Google, Mozilla, Apple e Microsoft.
+HTML é un estándar definido polo **WHATWG**, un acrónimo de *Web Hypertext Application Technology Working Group*, unha organización formada por persoas que traballan no navegador web máis popular. Isto significa que está basicamente controlado por Google, Mozilla, Apple e Microsoft.
 
 No pasado o **W3C** (World Wide Web Consortium) era a organización encargada de crear o estándar HTML.
 
@@ -538,7 +538,7 @@ Esta etiqueta úsase para establecer un URL base para todos os URL relativos con
 <html>
   <head>
     ...
-    <base href="https://bitsolto.com/" />
+    <base href="https://www.bitsolto.com/" />
     ...
   </head>
   ...
@@ -861,7 +861,7 @@ As ligazóns defínense mediante a etiqueta `a`. O destino da ligazón establéc
 **Exemplo**:
 
 ```html
-<a href="https://ambosass.com">click here</a>
+<a href="https://www.bitsolto.com">click here</a>
 ```
 
 Entre a etiqueta de inicio e a de peche temos o texto da ligazón.
@@ -872,19 +872,19 @@ O exemplo anterior é un URL absoluto. As ligazóns tamén funcionan con URL rel
 <a href="/test">click here</a>
 ```
 
-Neste caso, ao facer clic na ligazón o usuario móvese ao `/test`URL da orixe actual.
+Neste caso, ao facer clic na ligazón o usuario móvese á URL `/test` da orixe actual.
 
-Teña coidado co `/`personaxe. Se se omite, en lugar de comezar desde a orixe, o navegador só engadirá a `test`cadea ao URL actual.
+Teña coidado co carácter `/`. Se se omite, en lugar de comezar desde a orixe, o navegador só engadirá a `test`cadea ao URL actual.
 
-Exemplo, estou na páxina `https://ambosass.com/axios/` e teño estas ligazóns:
+Exemplo, estou na páxina `https://www.bitsolto.com/axios/` e teño estas ligazóns:
 
-- `/test` unha vez que se fai clic lévame a`https://ambosass.com/test`
-- `test` unha vez que se fai clic lévame a`https://ambosass.com/axios/test`
+- `/test` unha vez que se fai clic lévame a `https://www.bitsolto.com/test`
+- `test` unha vez que se fai clic lévame a `https://www.bitsolto.com/axios/test`
 
 As etiquetas de ligazón poden incluír outras cousas no seu interior, non só texto. Por exemplo, imaxes:
 
 ```html
-<a href="https://ambosass.com">
+<a href="https://www.bitsolto.com">
   <img src="test.jpg" />
 </a>
 ```
@@ -1087,7 +1087,7 @@ Podes especificar o URL mediante o `action`parámetro:
 
 Isto fará que o navegador envíe os datos do formulario mediante POST ao `/new-contact`URL da mesma orixe.
 
-Se a orixe (protocolo + dominio + porto) é `https://ambosass.com`(o porto 80 é o predeterminado), isto significa que os datos do formulario enviaranse a `https://ambosass.com/new-contact`.
+Se a orixe (protocolo + dominio + porto) é `https://www.bitsolto.com`(o porto 80 é o predeterminado), isto significa que os datos do formulario enviaranse a `https://www.bitsolto.com/new-contact`.
 
 Falei de datos. Que datos?
 

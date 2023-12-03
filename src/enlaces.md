@@ -10,22 +10,26 @@ icon: info
 - [Como funciona Internet?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
   - [The OSI Model – The 7 Layers of Networking Explained](https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/)
 
+- [Frontend roadmap](https://roadmap.sh/frontend)
+
 - **[Navegadores](https://www.mozilla.org/es-ES/firefox/browsers/browser-history/)**/**[Ferramentas de desenvolvedores](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)**
-  - <https://www.google.com/chrome/>
+  - [Google Chrome](https://www.google.com/chrome/)
     - <https://developer.chrome.com/docs/devtools/overview/>
     - [:tv:](https://www.youtube.com/watch?v=VYyQv0CSZOE&t=318s)
-  - <https://www.opera.com/es>
+  - [Opera](https://www.opera.com/es)
     - <http://devtoolsecrets.com>
-  - <https://www.mozilla.org/es-ES/firefox/>
+  - [Firefox](https://www.mozilla.org/es-ES/firefox/)
     - <https://firefox-dev.tools>
-  - <https://www.microsoft.com/es-es/edge>
+  - [MS Edge](https://www.microsoft.com/es-es/edge)
     - <https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/overview>
 
 - **Editores de código**
-  - <https://www.sublimetext.com>
-  - <https://notepad-plus-plus.org>
-  - <https://code.visualstudio.com>
-  - <https://replit.com> (online)
+  - [SublimeText](https://www.sublimetext.com)
+  - [Notepad++](https://notepad-plus-plus.org)
+  - [VSCode](https://code.visualstudio.com)
+  - [Replit](https://replit.com) (online)
+  - [Brackets](https://brackets.io/) (:skull:)
+  - [Phoenix](https://phcode.dev/) (un clon de Brackets, online)
 
 - **Control de versións**
   - [Introdución a Git e Github](https://git.bobby.sh/)
@@ -69,6 +73,7 @@ icon: info
   - [Javascript en freecodecamp](https://www.freecodecamp.org/espanol/news/tag/javascript/)
   - [Aprende JavaScript: Curso JS gratis para principiantes](https://www.freecodecamp.org/espanol/news/aprende-javascript-curso-js-gratis-para-principiantes/)
   - [Escribir JavaScript consistente e idiomático](https://github.com/rwaldron/idiomatic.js/tree/master/translations/es_ES)
+- [MDN - Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   - [Obxectos globais](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects)
   - [Clases](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
@@ -111,4 +116,4 @@ icon: info
 - [Topcoder](https://platform-ui.topcoder.com/learn/tca-certifications/web-development-fundamentals)
 ---
 
-xan2023
+out2023

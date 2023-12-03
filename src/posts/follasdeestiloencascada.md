@@ -273,7 +273,7 @@ p#dog-name {
 }
 ```
 
-Por que queres facelo, se a clase ou o identificador xa proporciona unha forma de orientar ese elemento? Pode que teñas que facelo para ter máis especificidade. Veremos o que significa máis adiante.
+Por que queres facelo, se a clase ou o identificador xa proporciona unha forma de orientar ese elemento? Pode que teñas que facelo para ter máis especificidade. Veremos o que isto significa máis adiante.
 
 #### 5.2.2. Orientado a varias clases
 

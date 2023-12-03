@@ -23,17 +23,17 @@ category:
 3. [Interacción entras capas cliente e servidor](https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview).
 4. [Arquitectura](https://www.freecodecamp.org/news/osi-model-networking-layers-explained-in-plain-english/) [da capa cliente](https://www.disrupciontecnologica.com/arquitectura-de-servicios-web/).
 
-### UD 2. [NAVEGADORES WEB](https://web.dev/howbrowserswork/)
+### UD 2. [NAVEGADORES WEB](https://web.dev/howbrowserswork/) + [1](https://www.avast.com/es-es/c-what-is-a-web-browser)
 
-1. [Arquitectura dun navegador](https://dev.to/mahmoudessam/the-architecture-of-web-browsers-1o1k).
+1. [Arquitectura dun navegador](https://dev.to/sanskrati01/how-modern-web-browser-works-55jb) + [1](https://dev.to/itshugo/the-components-of-a-browser-23mn).
 
-   - Interface de usuario.
-   - Motor de exploración.
-   - Motor de presentación.
-   - Módulos auxiliares: [persistencia](https://www.sitepoint.com/client-side-storage-options-comparison/), interface de rede, intérprete de scripts, infraestrutura de presentación.
+   - [Interface de usuario](https://developer.mozilla.org/es/docs/Mozilla/Add-ons/WebExtensions/user_interface).
+   - [Motor de exploración](https://www.isolated.es/blog/diferencia-entre-navegador-y-buscador/).
+   - [Motor de presentación](https://es.wikipedia.org/wiki/Motor_de_renderizado) + [1](https://es.wikipedia.org/wiki/Anexo:Comparativa_de_motores_de_renderizado).
+   - [Módulos auxiliares](https://javascript.info/browser-environment): [persistencia](https://www.sitepoint.com/client-side-storage-options-comparison/) + [1](https://web.dev/articles/persistent-storage?hl=es), interface de rede, intérprete de scripts, infraestrutura de presentación.
 
-2. [Navegadores](https://www.osi.es/es/navegadores) de [uso común](https://kinsta.com/es/cuota-mercado-mundial-navegadores/). [Comparativa](https://www.mozilla.org/es-ES/firefox/browsers/compare/).
-3. [Seguridade en navegadores](https://www.osi.es/es/navegadores).[Test de navegadores seguros: ¿qué navegador es el más seguro?](https://www.ionos.es/digitalguide/online-marketing/vender-en-internet/comparativa-de-navegadores-seguros/)
+2. [Navegadores](https://www.incibe.es/incibe/solr-search/content?resultado=navegadores) de [uso común](https://kinsta.com/es/cuota-mercado-mundial-navegadores/). [Comparativa](https://www.mozilla.org/es-ES/firefox/browsers/compare/).
+3. [Seguridade en navegadores](https://developer.mozilla.org/en-US/docs/Web/Security).[Test de navegadores seguros: ¿qué navegador es el más seguro?](https://www.ionos.es/digitalguide/online-marketing/vender-en-internet/comparativa-de-navegadores-seguros/)
 4. [Integración de aplicacións en navegadores](https://www.astera.com/es/tipo/blog/integraci%C3%B3n-de-aplicaciones/). [Adaptadores (plugins)](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/como-instalar-add-ons/).
 
     - [Adaptadores comúns en diferentes navegadores](https://protege.la/5-complementos-plugins-basicos-para-tu-navegador/)
@@ -41,15 +41,9 @@ category:
 
 5. [Conformidade a estándares](https://www.inesem.es/revistadigital/informatica-y-tics/estandares-web/).
 
-<https://www.sitepoint.com/client-side-storage-options-comparison/>
 
-<https://www.google.com/chrome/browser-features/>
 
-<https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage>
-
-### UD 3. CREACIÓN DE [CONTIDO WEB DINÁMICO](https://www.wearecontent.com/blog/marketing-de-contenidos/contenidos-dinamicos)
-
-<https://learn.microsoft.com/en-us/training/modules/web-development-101-introduction-programming/2-what-is-programming>
+### UD 3. [CREACIÓN](https://learn.microsoft.com/en-us/training/modules/web-development-101-introduction-programming/2-what-is-programming) DE [CONTIDO WEB DINÁMICO](https://www.wearecontent.com/blog/marketing-de-contenidos/contenidos-dinamicos)
 
 1. [Fundamentos da programación](https://www.codealo.dev/cursos/fundamentos-de-programacion).
    - [Constantes, variables](https://www.freecodecamp.org/news/differences-between-var-let-const-javascript/). [Tipos de datos simples e estruturados](https://desarrolloweb.com/articulos/tipos-datos-programacion.html).
@@ -66,24 +60,23 @@ category:
    - Máquinas virtuais en navegadores. Miniaplicacións (applets).
    - Outras linguaxes para o desenvolvemento de [aplicacións web enriquecidas (RIA)](https://es.wikipedia.org/wiki/Rich_Internet_application).
 
-   - <https://www.freecodecamp.org/news/what-is-F-js/>
 
 ### UD 4. [LINGUAXES DE GUIÓN DE USO XERAL](https://kinsta.com/es/blog/lenguajes-script/)
 
-1. Integración de linguaxes de guión en navegadores web.
-   - Comparativa e compatibilidade con navegadores.
-   - Diferencias entre versións.
+1. [Integración de linguaxes de guión en navegadores web.](https://www.crampete.com/blogs/client-side-scripting-top-languages-to-learn/)
+   - [Comparativa e compatibilidade con navegadores](https://crampeteb.medium.com/client-side-scripting-top-languages-to-learn-4c8d736fa19a).
+   - [Diferencias entre versións](https://madasamy.medium.com/javascript-brief-history-and-ecmascript-es6-es7-es8-features-673973394df4).
 2. [Estrutura xeral dun programa nunha linguaxe de guión](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics).
    - [Variables](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables) e tipos de datos.
    - [Operadores](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators).
    - [Obxectos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects).
-   - Sentencias. Aniñado.
+   - [Sentencias](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements). [Aniñado](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/conditionals).
    - [Estruturas de control e condicionais](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks).
-   - Bucles.
+   - [Bucles](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Looping_code).
    - Comentarios
 3. [Funcións](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions).
    - Parámetros.
-   - Variables locais e globais.
+   - [Variables locais e globais](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables).
    - Bibliotecas de funcións
 4. Manipulación de texto.
    - Funcións básicas para manipulación de texto.
@@ -97,7 +90,7 @@ category:
    - Tratamento de formatos estándar.
    - Dicionarios de datos.
 7. [Obxectos](https://www.freecodecamp.org/news/object-oriented-programming-javascript/).
-   - Creación de obxectos: métodos e estruturas de datos.
+   - [Creación de obxectos: métodos e estruturas de datos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Basics) + [1](https://www.freecodecamp.org/espanol/news/javascript-crear-objecto-como-definir-objetos-en-js/)
    - Bibliotecas de obxectos
 8. [O modelo de documento web](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
    - Estrutura de documento.
@@ -109,7 +102,7 @@ category:
    - Manexadores de eventos.
    - Eventos de carga inicial.
    - Delegación e propagación de eventos.
-10. Xestión de errores.
+10. [Xestión de errores](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_went_wrong).
     - Manexo de erro «Linguaxes de guión non habilitados» (no script).
     - Comprobación de erros en funcións.
     - Captura de errores.

@@ -861,7 +861,7 @@ As ligazóns defínense mediante a etiqueta `a`. O destino da ligazón establéc
 **Exemplo**:
 
 ```html
-<a href="https://www.bitsolto.com">click here</a>
+<a href="https://bitsolto.com">click here</a>
 ```
 
 Entre a etiqueta de inicio e a de peche temos o texto da ligazón.
@@ -876,15 +876,15 @@ Neste caso, ao facer clic na ligazón o usuario móvese á URL `/test` da orixe 
 
 Teña coidado co carácter `/`. Se se omite, en lugar de comezar desde a orixe, o navegador só engadirá a `test`cadea ao URL actual.
 
-Exemplo, estou na páxina `https://www.bitsolto.com/axios/` e teño estas ligazóns:
+Exemplo, estou na páxina `https://ambosass.com/axios/` e teño estas ligazóns:
 
-- `/test` unha vez que se fai clic lévame a `https://www.bitsolto.com/test`
-- `test` unha vez que se fai clic lévame a `https://www.bitsolto.com/axios/test`
+- `/test` unha vez que se fai clic lévame a`https://ambosass.com/test`
+- `test` unha vez que se fai clic lévame a`https://ambosass.com/axios/test`
 
 As etiquetas de ligazón poden incluír outras cousas no seu interior, non só texto. Por exemplo, imaxes:
 
 ```html
-<a href="https://www.bitsolto.com">
+<a href="https://ambosass.com">
   <img src="test.jpg" />
 </a>
 ```
@@ -894,7 +894,7 @@ ou calquera outro elemento, agás outras etiquetas  `<a>`.
 Se queres abrir a ligazón nunha nova pestana, podes usar o atributo `target`:
 
 ```html
-<a href="https://ambosass.com" target="_blank">open in new tab</a>
+<a href="https://bitsolto.com" target="_blank">open in new tab</a>
 ```
 
 ## 7. Etiquetas de contedores e estrutura da páxina HTML
@@ -1087,7 +1087,7 @@ Podes especificar o URL mediante o `action`parámetro:
 
 Isto fará que o navegador envíe os datos do formulario mediante POST ao `/new-contact`URL da mesma orixe.
 
-Se a orixe (protocolo + dominio + porto) é `https://www.bitsolto.com`(o porto 80 é o predeterminado), isto significa que os datos do formulario enviaranse a `https://www.bitsolto.com/new-contact`.
+Se a orixe (protocolo + dominio + porto) é `https://ambosass.com`(o porto 80 é o predeterminado), isto significa que os datos do formulario enviaranse a `https://ambosass.com/new-contact`.
 
 Falei de datos. Que datos?
 

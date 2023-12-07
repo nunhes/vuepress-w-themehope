@@ -82,7 +82,7 @@ Para obter máis información sobre as ramas de GitHub, consulta [Acerca das ram
 
 ### Compromete
 
-Unha **confirmación** é un cambio nun ou máis ficheiros nunha rama. Cada vez que se crea un commit, asígnaselle un ID único e fai un seguimento, xunto co tempo e o colaborador. Isto proporciona unha pista de auditoría clara para quen revise o historial dun ficheiro ou elemento ligado, como un problema ou unha solicitude de extracción.
+Unha **confirmación - commit-** é un cambio nun ou máis ficheiros nunha rama. Cada vez que se crea un commit, asígnaselle un ID único e fai un seguimento, xunto co tempo e o colaborador. Isto proporciona unha pista de auditoría clara para quen revise o historial dun ficheiro ou elemento ligado, como un problema ou unha solicitude de extracción.
 
 ![Unha lista de compromisos de GitHub cunha rama principal.](https://docs.microsoft.com/gl-es/learn/github/introduction-to-github/media/2-commits.png)
 

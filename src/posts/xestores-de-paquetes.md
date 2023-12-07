@@ -30,7 +30,7 @@ NPM dispón dunha interface de liña de comandos sinxela e intuitiva que permite
 - É moi utilizado e apoiado pola comunidade JavaScript.
 - Ten unha colección grande e diversa de paquetes para case calquera caso de uso.
 - Ten un rico conxunto de funcións e opcións para personalizar o teu proxecto.
-- Ten unha ferramenta de auditoría de seguridade integrada que comproba se hai vulnerabilidades nas  dependencias do teu proxecto.
+- Ten unha ferramenta de auditoría de seguridade integrada que comproba se hai vulnerabilidades nas dependencias do teu proxecto.
 
 ### Desvantaxes
 
@@ -78,21 +78,22 @@ PNPM ten unha interface de liña de comandos semellante a NPM e YARN, pero con a
 
 ## Comparativa
 
-| Característica              | NPM    | YARN     | PNPM                                                         |
-| --------------------------- | ------ | -------- | ------------------------------------------------------------ |
-| **Velocidade**              | Lento  | Rápido   | Moi rápido                                                   |
-| **Espazo en disco**         | Moito  | Pouco    | Moi pouco                                                    |
-| **Seguridade**              | Baixa  | Alta     | Moi alta                                                     |
-| **Compatibilidade**         | Alta   | Media    | Media                                                        |
-| **Popularidade**            | Alta   | Media    | Baixa                                                        |
-| **Ecosistema**              | Rico   | Medio    | Medio                                                        |
-| **CLI**                     | Simple | Complexo | Similar a NPM                                                |
+| Característica              | NPM    | YARN     | PNPM                                                                                   |
+| --------------------------- | ------ | -------- | -------------------------------------------------------------------------------------- |
+| **Velocidade**              | Lento  | Rápido   | Moi rápido                                                                             |
+| **Espazo en disco**         | Moito  | Pouco    | Moi pouco                                                                              |
+| **Seguridade**              | Baixa  | Alta     | Moi alta                                                                               |
+| **Compatibilidade**         | Alta   | Media    | Media                                                                                  |
+| **Popularidade**            | Alta   | Media    | Baixa                                                                                  |
+| **Ecosistema**              | Rico   | Medio    | Medio                                                                                  |
+| **CLI**                     | Simple | Complexo | Similar a NPM                                                                          |
 | **Cartafol `node_modules`** | Plano  | Plano    | Enlaces simbólicos para ser 100% compatible co estándar de resolución do módulo NodeJS |
+
 <center><small>Características dos manexadores de paquetes de NodeJS</small></center>
 
 ### Rendemento
 
-Un dos aspectos máis importantes dun xestor de paquetes é a rapidez con que pode instalar e actualizar as dependencias do teu proxecto. Isto pode afectar ao fluxo de traballo de desenvolvemento, así como ao teu proceso de implantación. 
+Un dos aspectos máis importantes dun xestor de paquetes é a rapidez con que pode instalar e actualizar as dependencias do teu proxecto. Isto pode afectar ao fluxo de traballo de desenvolvemento, así como ao teu proceso de implantación.
 
 Vexamos os resultados de medir o rendemento de NPM, YARN e PNPM, nun proxecto de mostra con máis ou menos 1000 dependencias:
 
@@ -118,9 +119,9 @@ Outro aspecto dun xestor de paquetes son as funcións que ofrece para facilitarc
 
 | Package Manager | Workspaces | Lockfiles | Scripts | Hooks | Audit |
 | --------------- | ---------- | --------- | ------- | ----- | ----- |
-| NPM             | Si        | Si       | Si     | Non    | Si   |
-| YARN            | Si        | Si       | Si     | Si   | Si   |
-| PNPM            | Si        | Si       | Si     | Si   | Non    |
+| NPM             | Si         | Si        | Si      | Non   | Si    |
+| YARN            | Si         | Si        | Si      | Si    | Si    |
+| PNPM            | Si         | Si        | Si      | Si    | Non   |
 
 <center><small>Táboa de resumo de características para xestores de paquetes NPM, YARN e PNPM</small></center>
 
@@ -134,11 +135,12 @@ Outro aspecto importante dun xestor de paquetes é a compatibilidade con outras 
 - **CLI**: esta é a interface de liña de comandos que proporciona o xestor de paquetes para interactuar con el. A CLI máis común é npm-cli, que se inclúe con Node.js. Non obstante, tamén hai outros CLI que podes usar para diferentes fins, como yarn-cli, que é unha ferramenta autónoma que se pode instalar por separado, ou pnpm-cli, que é un envoltorio arredor de npm-cli que engade algunhas funcións adicionais.
 - **Ecosistema**: este é o conxunto de ferramentas e plataformas coas que se integra ou admite o xestor de paquetes, como bundlers, transpilers, linters, test runners, frameworks ou servizos na nube. O ecosistema máis común é o ecosistema NodeJS, que inclúe ferramentas como webpack, babel, eslint, mocha, express ou AWS. Non obstante, tamén hai outros ecosistemas que podes usar para diferentes fins, como o ecosistema do navegador, que inclúe ferramentas como browserify, rollup, typescript, prettier, jest, react ou firebase.
 
-| Package Manager | Rexistro  | CLI      | Ecosistema |
-| --------------- | --------- | -------- | --------- |
-| NPM             | npmjs.com | npm-cli  | Node.js   |
-| YARN            | npmjs.com | yarn-cli | Node.js   |
-| PNPM            | npmjs.com | pnpm-cli | Node.js   |
+| Package Manager | Rexistro    | CLI      | Ecosistema |
+| --------------- | ----------- | -------- | ---------- |
+| NPM             | npmjs.com   | npm-cli  | Node.js    |
+| YARN            | yarnpkg.com | yarn-cli | Node.js    |
+| PNPM            | pnpm.io     | pnpm-cli | Node.js    |
+
 <center><small>Táboa de resumo da compatibilidade dos xestores de paquetes NPM, YARN e PNPM</small></center>
 Os tres xestores de paquetes son compatibles co mesmo rexistro e ecosistema. Non obstante, teñen diferentes CLI que ofrecen diferentes comandos e opcións. Por exemplo, YARN ten un comando chamado "yarn workspaces" que che permite xestionar os teus espazos de traballo con máis facilidade. PNPM ten un comando chamado "pnpm recursive" que che permite executar comandos en varios subproxectos á vez.
 
@@ -152,22 +154,23 @@ Un aspecto máis dun xestor de paquetes que compararei é o seguro que resulta. 
 
 | Package Manager | Verificación | Illamento | Resolución |
 | --------------- | ------------ | --------- | ---------- |
-| NPM             | SHA-512      | Non        | Semver     |
-| YARN            | SHA-1        | Non        | Semver     |
-| PNPM            | SHA-512      | Si     | Strict     |
+| NPM             | SHA-512      | Non       | Semver     |
+| YARN            | SHA-1        | Non       | Semver     |
+| PNPM            | SHA-512      | Si        | Strict     |
+
 <center><small>Táboa de resumo para a seguridade dos xestores de paquetes NPM, YARN e PNPM</small></center>
 
 Os tres xestores de paquetes usan algún tipo de verificación para garantir a integridade e autenticidade dos paquetes. NPM e YARN usan o mesmo algoritmo (SHA-1). PNPM usa un algoritmo máis forte (SHA-512), o que o fai máis resistente ás colisións e aos ataques de forza bruta.
 
-Non obstante, só PNPM usa o illamento para limitar o acceso e os permisos dos paquetes. Faino creando un cartafol ``node_modules`` separado para cada paquete e usando ligazóns simbólicas para vinculalos. Isto impide que os paquetes accedan ou modifiquen os arquivos ou módulos doutros paquetes sen permiso explícito. NPM e YARN non usan ningún mecanismo de illamento, polo que permiten que os paquetes accedan ou modifiquen calquera arquivo ou módulo dentro do cartafol ``node_modules``.
+Non obstante, só PNPM usa o illamento para limitar o acceso e os permisos dos paquetes. Faino creando un cartafol `node_modules` separado para cada paquete e usando ligazóns simbólicas para vinculalos. Isto impide que os paquetes accedan ou modifiquen os arquivos ou módulos doutros paquetes sen permiso explícito. NPM e YARN non usan ningún mecanismo de illamento, polo que permiten que os paquetes accedan ou modifiquen calquera arquivo ou módulo dentro do cartafol `node_modules`.
 
-Ademais, só PNPM utiliza unha resolución estrita para seleccionar as mellores versións dos paquetes. Faino seguindo as versións exactas especificadas nos arquivos ``package.json`` e creando unha árbore de dependencia plana. Isto evita que se instalen ou actualicen versións duplicadas ou incompatibles dos paquetes. NPM e YARN usan a resolución ``semver``, que permite certa flexibilidade na elección das versións en función de intervalos ou modificadores. Isto pode provocar que se instalen ou se actualicen versións duplicadas ou incompatibles dos paquetes.
+Ademais, só PNPM utiliza unha resolución estrita para seleccionar as mellores versións dos paquetes. Faino seguindo as versións exactas especificadas nos arquivos `package.json` e creando unha árbore de dependencia plana. Isto evita que se instalen ou actualicen versións duplicadas ou incompatibles dos paquetes. NPM e YARN usan a resolución `semver`, que permite certa flexibilidade na elección das versións en función de intervalos ou modificadores. Isto pode provocar que se instalen ou se actualicen versións duplicadas ou incompatibles dos paquetes.
 
 ## Mellores prácticas
 
-- Escolle o xestor de paquetes que mellor se adapte aos requisitos, preferencias e limitacións do teu proxecto. Non hai unha solución única e cada xestor de paquetes ten os seus pros e contras. Tamén pode cambiar entre eles se o precisas, sempre que elimines o cartafol ``node_modules`` existente e o arquivo de bloqueo antes de instalar as dependencias cun xestor de paquetes diferente
-- Usa un arquivo de bloqueo para garantir instalacións reproducibles en diferentes máquinas e ambientes. Un arquivo de bloqueo é un arquivo que rexistra as versións e fontes exactas dos paquetes dos que depende o teu proxecto, para que poidas instalalos de forma consistente cada vez. NPM usa un arquivo ``package-lock.json``, YARN utiliza un arquivo ``yarn.lock`` e PNPM utiliza un arquivo ``pnpm-lock.yaml``. Debes enviar estes arquivos ao teu sistema de control de versións e actualizalos sempre que engadas, elimines ou actualices un paquete.
-- Usa un arquivo ``.npmrc`` para configurar o comportamento do xestor de paquetes. Un arquivo ``.npmrc`` é un arquivo que contén pares clave-valor de opcións de configuración para o xestor de paquetes, como o URL do rexistro, a configuración do proxy, a localización da caché, etc. Podes crear este arquivo no directorio raíz do proxecto ou no directorio de inicio; dependendo de se queres aplicar a configuración de forma global ou local. Tamén podes usar variables de ambiente ou marcas de liña de comandos para anular as opcións de configuración.
+- Escolle o xestor de paquetes que mellor se adapte aos requisitos, preferencias e limitacións do teu proxecto. Non hai unha solución única e cada xestor de paquetes ten os seus pros e contras. Tamén pode cambiar entre eles se o precisas, sempre que elimines o cartafol `node_modules` existente e o arquivo de bloqueo antes de instalar as dependencias cun xestor de paquetes diferente
+- Usa un arquivo de bloqueo para garantir instalacións reproducibles en diferentes máquinas e ambientes. Un arquivo de bloqueo é un arquivo que rexistra as versións e fontes exactas dos paquetes dos que depende o teu proxecto, para que poidas instalalos de forma consistente cada vez. NPM usa un arquivo `package-lock.json`, YARN utiliza un arquivo `yarn.lock` e PNPM utiliza un arquivo `pnpm-lock.yaml`. Debes enviar estes arquivos ao teu sistema de control de versións e actualizalos sempre que engadas, elimines ou actualices un paquete.
+- Usa un arquivo `.npmrc` para configurar o comportamento do xestor de paquetes. Un arquivo `.npmrc` é un arquivo que contén pares clave-valor de opcións de configuración para o xestor de paquetes, como o URL do rexistro, a configuración do proxy, a localización da caché, etc. Podes crear este arquivo no directorio raíz do proxecto ou no directorio de inicio; dependendo de se queres aplicar a configuración de forma global ou local. Tamén podes usar variables de ambiente ou marcas de liña de comandos para anular as opcións de configuración.
 - Use scripts para automatizar tarefas e fluxos de traballo comúns co seu xestor de paquetes. Os scripts son comandos que podes definir no teu arquivo package.json baixo a propiedade “scripts”, como “iniciar”, “probar”, “construír”, etc. Podes executar estes scripts coa CLI do xestor de paquetes, como por exemplo npm run start, yarn start ou pnpm start. Tamén pode usar os ganchos previos e posteriores para executar scripts antes ou despois doutro script, como pretest ou postbuild
 - Use espazos de traballo para xestionar varios proxectos ou paquetes dentro dun só repositorio. Os espazos de traballo son cartafoles que conteñen os seus propios arquivos package.json e dependencias, pero comparten un cartafol común node_modules e un arquivo de bloqueo no nivel raíz. Deste xeito, pode evitar a duplicación e simplificar a xestión de dependencias nos seus proxectos ou paquetes. NPM admite espazos de traballo desde a versión 7, YARN admite espazos de traballo desde a versión 1 e PNPM admite espazos de traballo desde a versión 2
 

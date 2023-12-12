@@ -5,7 +5,7 @@ category:
   - HTML
 tag:
   - html
-  
+
 sticky: true
 # this page will appear in starred articles
 star: true
@@ -13,85 +13,83 @@ star: true
 
 # HTML
 
-## 1
+> Escribín este manual breve para axudarme a comprender o tema, xa que cando necesito explicar algo, é mellor que primeiro me asegure de coñecer a cousa por dentro.
 
-HTML, a abreviatura de *HyperText Markup Language*, é un dos bloques de construción máis fundamentais da web.
+## 1. Introdución
+
+HTML, a abreviatura de _HyperText Markup Language_, é un dos bloques de construción máis fundamentais da web.
 
 HTML naceu oficialmente en 1993 e desde entón evolucionou ata o seu estado actual, pasando de simples documentos de texto a potenciar aplicacións web de todo tipo.
 
-<!-- Este manual está dirixido a un público amplo. -- Primeiro, o principiante. Explico HTML desde cero dunha forma sucinta pero completa, para que poidas usar este libro para aprender HTML dende o básico. -- Despois, o profesional. A miúdo considérase HTML como algo secundario para aprender. Podería darse por feito. -- Con todo, moitas cousas son escuras para moita xente. Eu incluído.--> Escribín este manual para axudarme a comprender o tema, porque cando necesito explicar algo, é mellor que me asegure de que primeiro coñezo a cousa por dentro.
+<!-- Este manual está dirixido a un público amplo. -- Primeiro, o principiante. Explico HTML desde cero dunha forma sucinta pero completa, para que poidas usar este libro para aprender HTML dende o básico. -- Despois, o profesional. A miúdo considérase HTML como algo secundario para aprender. Podería darse por feito. -- Con todo, moitas cousas son escuras para moita xente. Eu incluído.--> 
 
-Aínda que non escribas HTML no teu traballo diario, saber como funciona o HTML pode axudarche a aforrarche algúns dores de cabeza cando precisas entendelo de cando en vez, por exemplo mentres modificas unha páxina web.
+Aínda que non escribas HTML no teu traballo diario, saber como funciona o HTML nunca está de máis. Aforrarache algúns dores de cabeza cando precises entendelo para comunicarte co equipo de desenvolvemento, cando detectas unha interface mellorable ou mentres modificas unha páxina web.
 
-HTML é a base da Web.
+HTML é a base da Web. E é que baixo o seu breve conxunto de regras hai un gran poder.  
 
-Hai un poder incrible debaixo deste conxunto de regras bastante sinxelo e limitado, que nos permite (desenvolvedores, creadores, deseñadores, escritores e retocadores) crear documentos, aplicacións e experiencias para persoas de todo o mundo.
+HTML pode parecer, ademais de sinxelo,  limitado, pero permite que desenvolvedores, creadores, deseñadores, escritores e retocadores... creemos documentos, aplicacións e experiencias para persoas de todo o mundo.
 
-O meu primeiro libro HTML saíu en 1997 e chamábase "HTML Unleashed". Un tomo longo e de moitas páxinas.
+O meu primeiro contacto con HTML foi alo por 1994. 
 
-Pasaron máis de 20 anos e HTML segue sendo a base da web, con cambios mínimos desde entón.
+Despois de máis de 20 anos, HTML segue sendo a base da web. De como a coñecín até agora, a linguaxe cambiou moi pouco en esencia, malia que os pequenos cambios foron bastante significativos.
 
-Por suposto, temos máis etiquetas semánticas, o HTML de presentación xa non se emprega e CSS encargase do deseño das cousas.
+Hoxe dispoñemos de máis etiquetas semánticas,  xa non se emprega o HTML de presentación e CSS encargase agora do deseño das cousas.
 
-O éxito de HTML baséase na sinxeleza .
+Logo de resistirse a ser reducido a un complexo dialecto da XML, a través de XHTML, porque a xente  se decatou de que a cousa se estaba a volver demasiado complexa. É claro que o éxito de HTML baséase na súa sinxeleza.
 
-Resistiuse a ser reducido a un dialecto XML a través de XHTML, cando finalmente a xente se decatou de que a cousa era demasiado complexa.
+Outra das claves do seu éxito é outra das súas características fundacionais: **o perdón**. Hai _algunhas_ regras, certo, pero despois de que as aprendes, atopas que tes moita liberdade e modos de recombinalas con éxito.
 
-Fíxoo por outra característica que nos proporciona: **o perdón** . Hai *algunhas* regras, certo, pero despois de aprendelas, tes moita liberdade.
+Ademais os navegadores aprenderon a ser resistentes a algunhas liberdades e inconsistencias e a intentar facer o mellor cando analizan e presentan HTML aos usuarios.
 
-Os navegadores aprenderon a ser resistentes e a intentar sempre facer o mellor cando analizan e presentan HTML aos usuarios.
+E toda a plataforma web fixo moi ben unha cousa: nunca rompeu a compatibilidade con versións anteriores. Aínda que pareza incrible, podemos volver aos documentos HTML escritos en 1991, e se mostran máis ou menos como antes.
 
-E toda a plataforma web fixo unha cousa ben: nunca rompeu a compatibilidade con versións anteriores. Moi incriblemente, podemos volver aos documentos HTML escritos en 1991, e parecen máis ou menos como antes.
+Mesmo sabemos cal foi a primeira páxina web: [http://info.cern.ch/hypertext/WWW/TheProject.html](http://info.cern.ch/hypertext/WWW/TheProject.html)
 
-Mesmo sabemos cal foi a primeira páxina web. É isto: [http://info.cern.ch/hypertext/WWW/TheProject.html](http://info.cern.ch/hypertext/WWW/TheProject.html)
-
-E podes ver a fonte da páxina, grazas a outra gran característica da Web e do HTML: **podemos inspeccionar o HTML de calquera páxina web** .
+Outra gran característica da web e do HTML é que podes ver o código fonte de cada páxina. E isto non é algo que aconteza coa maioría das linguaxes e plataformas ás que nos imos afacendo. **Podemos inspeccionar o HTML de calquera páxina web** .
 
 Non deas isto por feito. Non coñezo ningunha outra plataforma que nos dea esta capacidade.
 
-As excepcionales ferramentas para programadores integradas en calquera navegador permítennos inspeccionar e inspirarnos en HTML escrito por calquera persoa do mundo.
+As excepcionales **ferramentas para programadores** integradas en calquera navegador permítennos inspeccionar e inspirarnos co HTML escrito por calquera persoa do mundo.
 
-Se es novo en HTML, este libro pretende axudarche a comezar. Se es un programador web experimentado, este libro mellorará os teus coñecementos.
+Se es novo en HTML, este artigo pretende axudarche a comezar. 
 
-Aprendín moito mentres o escribín, aínda que levo máis de 20 anos traballando coa web e seguro que tamén atoparás algo novo.
+Se es un programador web experimentado, este libro seguro poderá tamén axudarche e mellorará os teus coñecementos. Eu mesmo aínda estou aprendendo, e aprendín moito mentres o escribín, aínda que levo máis de 20 anos traballando coa web.
 
-Ou volverás aprender algo vello que esqueciches.
-
-En todo caso, o obxectivo do libro é que che sexa de utilidade, e espero que teña éxito.
+En todo caso, o meu obxectivo é crear un manual rápido e espero que che sexa de utilidade.
 
 ## 2. Conceptos básicos de HTML
 
-HTML é un estándar definido polo **WHATWG**, un acrónimo de *Web Hypertext Application Technology Working Group*, unha organización formada por persoas que traballan no navegador web máis popular. Isto significa que está basicamente controlado por Google, Mozilla, Apple e Microsoft.
+HTML é un estándar definido polo **WHATWG**, un acrónimo de _Web Hypertext Application Technology Working Group_, unha organización formada por persoas que traballan no navegador web máis popular. Isto significa que está basicamente controlado por Google, Mozilla, Apple e Microsoft.
 
 No pasado o **W3C** (World Wide Web Consortium) era a organización encargada de crear o estándar HTML.
 
 O control pasou informalmente do W3C a WHATWG cando quedou claro que o impulso do W3C cara a XHTML non era unha boa idea.
 
-Se nunca escoitou falar de XHTML, resúmoa aquí: A principios dos anos 2000, todos críamos que o futuro da web era XML :smirk: . Así que HTML pasou de ser unha linguaxe de autoría baseada na SGML a unha linguaxe de marcado XML.
+Se nunca escoitaches falar de XHTML, resúmocho aquí: A principios dos anos 2000, todos críamos que o futuro da web era XML :smirk:. Así que HTML pasou de ser unha linguaxe de autoría baseada na SGML a unha linguaxe de marcado XML.
 
 Foi un gran cambio. Había que coñecer, e respectar, máis regras. Regras máis estritas.
 
 Finalmente, os vendedores de navegadores decatáronse de que este non era o camiño correcto para a web e retrocederon, creando o que agora se coñece como HTML5.
 
-O W3C non estaba de acordo en renunciar ao control de HTML, e durante anos tivemos 2 estándares competidores, cada un deles que pretendía ser o oficial. Finalmente, o 28 de maio de 2019, o W3C oficializou que a versión HTML "verdadeira" era a publicada por WHATWG.
+O W3C non estaba de acordo en renunciar ao control de HTML, e durante anos tivemos 2 estándares competidores. Cada un deles pretendía ser o estándar oficial. Finalmente, o 28 de maio de 2019, o W3C oficializou que a versión HTML "verdadeira" era a publicada por WHATWG.
 
-Mencionei HTML5. Déixame explicar esta pequena historia. Seino, é algo confuso ata agora, como ocorre con moitas cousas da vida cando están implicados moitos actores, pero tamén é fascinante.
+Vexamos esta pequena historia. HTML, XHTML, HTML5.... parece algo confuso, como ocorre con moitas cousas da vida nas que están implicados moitos actores:
 
 **A versión HTML1** publicouse en 1993. [Aquí tes o RFC orixinal](https://tools.ietf.org/html/rfc1983) .
 
 **HTML2** seguiuno en 1995.
 
-**HTML 3** apareceu en xaneiro de 1997 e **HTML 4** en decembro dese mesmo ano.
+**HTML3** apareceu en xaneiro de 1997 e **HTML 4** en decembro dese mesmo ano.
 
-Tempos axitados!
+Eran os novos e axitados tempos!
 
-Pasou o tempo e formulouse XHTML só para desaparecer arredado por esta "cousa" que denominamos HTML5, e que xa non é só *HTML* .
+O tempo foi pasando e formulouse XHTML, un intento de normalización que recibiu ben pouco apoio e que acabou por desaparecer arredado por esta "cousa" que denominamos HTML5, e que xa non é só HTML.
 
 HTML5 é un termo que define todo un conxunto de tecnoloxías, que inclúe HTML pero engade moitas API e estándares como WebGL, SVG e moito máis.
 
-O fundamental que hai que entender aquí é o seguinte: xa non existe (máis) unha versión HTML. É un nivel de vida. Como CSS, que se chama "3", pero en realidade é unha morea de módulos independentes desenvolvidos por separado. Como JavaScript, onde temos unha nova edición cada ano, pero hoxe en día o único que importa é que funcións individuais implementa o motor.
+O que hai que entender de toda esta carreira é que xa non existe (máis) unha versión HTML. Hoxe prefírese falar de nivel de vida. Como CSS, que agora acostumase a chamar "CSS3", pero en realidade é unha morea de módulos independentes desenvolvidos por separado. Ou como JavaScript, onde temos unha nova edición cada ano, pero hoxe en día o único que importa é que funcións permite agora este motor.
 
-Aquí é onde "vive" agora o estándar: [https://html.spec.whatwg.org/multipage](https://html.spec.whatwg.org/multipage) .
+O estándar actual da linguaxe HTML reside en [https://html.spec.whatwg.org/multipage](https://html.spec.whatwg.org/multipage) .
 
 **HTML é a linguaxe de marcado que usamos para estruturar o contido que consumimos na Rede.**
 
@@ -99,9 +97,9 @@ O HTML ofrécese ao navegador de diferentes xeitos.
 
 - Pode ser xerado por unha aplicación do servidor que o constrúe dependendo da solicitude ou dos datos da sesión, por exemplo unha aplicación Rails ou Laravel ou Django.
 - Pode ser xerado por unha aplicación do cliente de JavaScript que xera HTML sobre a marcha.
-- No caso máis sinxelo, pódese almacenar nun arquivo e ser servido ao navegador por un servidor web.
+- Ou, no caso máis sinxelo, pódese almacenar nun arquivo e ser servido ao navegador por un servidor web.
 
-Mergullémonos neste último caso. Aínda que na práctica probablemente sexa a forma menos popular de xerar HTML, aínda é esencial coñecer os bloques básicos de construción.
+Encetemos por este último caso. Aínda que na práctica probablemente sexa a forma menos popular de xerar HTML, resulta esencial para coñecer os bloques básicos de construción que empregamos con esta linguaxe.
 
 Por convención, un arquivo HTML gárdase cunha extensión `.html`ou `.htm`.
 
@@ -111,41 +109,41 @@ As etiquetas envolven o contido e cada etiqueta dá un significado especial ao t
 
 Poñamos algúns exemplos.
 
-Este fragmento HTML crea un parágrafo usando a etiqueta  `p`:
+Este fragmento HTML crea un parágrafo usando a etiqueta `p`:
 
 ```html
-<p>A paragraph of text</p>
+<p>Un parágrafo de texto</p>
 ```
 
-Este fragmento HTML crea unha lista de elementos usando a etiqueta `ul`, que significa *lista non ordenada* , e as etiquetas `li`, que significan *elemento da lista* :
+Este fragmento HTML crea unha lista de elementos usando a etiqueta `ul`, que significa _lista non ordenada_ , e as etiquetas `li` marcan cada _elemento da lista_ :
 
 ```html
 <ul>
- <li>First item</li>
- <li>Second item</li>
- <li>Third item</li>
+  <li>Primeiro item</li>
+  <li>Segundo item</li>
+  <li>Terceiro item</li>
 </ul>
 ```
 
 Cando o navegador serve unha páxina HTML, as etiquetas son interpretadas e o navegador representa os elementos segundo as regras que definen a súa aparencia visual.
 
-Algunhas desas regras están integradas, como como se representa unha lista ou como se subliña unha ligazón en azul.
+Algunhas desas regras están integradas, como cando se representa unha lista ou cando se subliña unha ligazón en azul.
 
-Algunhas outras regras as estableces ti con CSS.
+Algunhas outras regras as estableceras ti con CSS.
 
-HTML non é de presentación. Non está preocupado por como *se ven* as cousas . Pola contra, preocúpase polo que *significan* as cousas .
+HTML non é unha linguaxe de presentación. Non está preocupado por como _se ven_ as cousas . Aínda así, preocúpase polo que _significan_ as cousas .
 
-Corresponde ao navegador determinar como se ven as cousas, coas directivas definidas por quen constrúe a páxina, coa linguaxe CSS.
+Corresponde ao navegador determinar como se mostran as cousas, segundo as directivas definidas coa linguaxe CSS por quen constrúe a páxina. 
 
-Agora, eses dous exemplos que fixen son fragmentos HTML tomados fóra do contexto dunha páxina.
+Así que os dous exemplos que acabamos de ver son fragmentos HTML tomados fóra do contexto dunha páxina con fins descritivos.
 
 ### 2.1. Estrutura da páxina HTML
 
-Imos facer un exemplo dunha páxina HTML adecuada.
+Vexamos un exemplo dunha páxina HTML máis completo e axeitado.
 
-As cousas comezan coa Declaración do tipo de documento (tamén coñecido como *doctype* ), unha forma de dicirlle ao navegador que esta é unha páxina HTML e que versión de HTML estamos a usar.
+A estrutura convencional estándar comeza coa **declaración do tipo de documento** (tamén coñecido como _doctype_ ).  Esa é a forma de dicirlle ao navegador que esta é unha páxina HTML e cal é a versión de HTML estamos a usar.
 
-HTML moderno usa este tipo de documento:
+A HTML actual anunciase con este tipo de documento:
 
 ```html
 <!DOCTYPE html>
@@ -156,37 +154,37 @@ Despois temos o elemento `html`, que ten unha etiqueta de apertura e peche:
 ```html
 <!DOCTYPE html>
 <html>
- ...
+  ...
 </html>
 ```
 
-A maioría das etiquetas veñen en pares cunha etiqueta de apertura e unha etiqueta de peche. A etiqueta de peche escríbese igual que a etiqueta de apertura, pero cun `/`:
+A maioría das etiquetas HTML traballan en parellas: unha etiqueta de apertura e unha etiqueta de peche. A etiqueta de peche escríbese igual que a etiqueta de apertura, pero cun `/`  antes do nome:
 
 ```html
-<unhaetiqueta>algún contido</unhaetiqueta>
+<etiqueta>algún contido</etiqueta>
 ```
 
-Hai algunhas etiquetas de peche automático, o que significa que non necesitan unha etiqueta de peche separada xa que non conteñen nada *nelas* .
+Hai algunhas etiquetas, as menos, que [non necesitan unha etiqueta de peche](https://developer.mozilla.org/es/docs/Glossary/Void_element). Se as denomina de varias formas: de peche automático, orfas, baleiras,...  o que significa que **non poden** conter nodos secundarios (é dicir, elementos aniñados ou nodos de texto dentro delas).
 
-A etiqueta `html` de inicio úsase ao principio do documento, xusto despois da declaración do tipo de documento.
+A etiqueta `html` de inicio - `<html>`- úsase ao principio do documento, xusto despois da declaración do tipo de documento.
 
-A etiqueta `html` final é a última cousa presente nun documento HTML.
+A etiqueta `html` final - `</html>`-  é a última cousa presente nun documento HTML.
 
-Dentro do elemento `html` temos 2 elementos: `head` e `body`:
+Dentro do elemento `html` temos 2 elementos irrepetibles: `head` e `body`:
 
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-  ...
- </head>
- <body>
-  ...
- </body>
+  <head>
+    ...
+  </head>
+  <body>
+    ...
+  </body>
 </html>
 ```
 
-Dentro de `head` teremos etiquetas imprescindibles para crear unha páxina web, como o título, os metadatos e CSS e JavaScript internos ou externos. A maioría das cousas que non aparecen directamente na páxina, senón que só axudan ao navegador (ou a bots como o bot de busca de Google) a mostralo correctamente.
+Dentro de `head` se dispoñen as etiquetas imprescindibles para definir unha páxina web, coma o título e os metadatos, ou coma o CSS e o JavaScript, sexan estes internos ou externos. En realidade nesta cabeceira van a maioría das cousas que non aparecen directamente entre os contidos para amosar da páxina, pero que axudan ao navegador (ou aos bots como o bot de busca de Google) a mostrar o contido de modo correcto.
 
 Dentro de `body` teremos o contido da páxina. As **cousas visibles** .
 
@@ -197,139 +195,136 @@ Etiquetas e elementos. Cal é a diferenza?
 Os elementos teñen unha etiqueta de inicio e unha etiqueta de peche. Neste exemplo, usamos as etiquetas `p` de inicio e peche para crear un elemento `p`:
 
 ```html
-<p>A paragraph of text</p>
+<p>Un parágrafo de texto</p>
 ```
 
-Así, un elemento constitúe o *paquete* completo :
+Así, un elemento constitúe o _paquete_ completo :
 
 - etiqueta de inicio
-- contido do texto (e posiblemente outros elementos)
+- contido (texto e posiblemente outros elementos)
 - etiqueta de peche
 
-Se un elemento non ten unha etiqueta de peche, só se escribe coa etiqueta de inicio e non pode conter ningún contido de texto.
+Tamén son elementos os bloques de contido que non precisan dunha etiqueta de peche, e só necesitan a etiqueta de inicio.
 
-Dito isto, podería usar o termo de etiqueta ou elemento no libro que significa o mesmo, excepto se menciono explícitamente a etiqueta de inicio ou a de final.
+```html
+<img src="imaxe.png" alt="Imaxe">
+```
+
+Aínda que atoparás quen usa os termos etiqueta e elemento como sinónimos, non o son en realidade.
 
 ### 2.3. Atributos
 
-A etiqueta de inicio dun elemento pode ter fragmentos especiais de información que podemos anexar, chamados **atributos** .
+A etiqueta de inicio dun elemento pode ter anexos ou fragmentos especiais de información denominados **atributos** .
 
-Os atributos teñen a `key="value"`sintaxe:
-
-```html
-<p class="a-class">A paragraph of text</p>
-```
-
-> Tamén podes usar comiñas simples, pero usar comiñas dobres en HTML é unha boa convención.
-
-Podemos ter moitos deles:
+Os atributos teñen a sintaxe `key="value"`:
 
 ```html
-<p class="a-class" id="an-id">A paragraph of text</p>
+<p class="unhaclase">Un parágrafo de texto</p>
 ```
 
-e algúns atributos son booleanos, o que significa que só precisa a clave:
+> Se pode tamén usar comiñas simples, pero en HTML usar comiñas dobres é unha convención moi xeralizada.
+
+Un elemento pode ter moitos atributos:
+
+```html
+<p class="unhaclase" id="un-id">Un parágrafo de texto</p>
+```
+
+Os atributos `class` e `id` son dous dos máis comúns. Teñen un significado especial e son útiles tanto en CSS como en JavaScript.
+
+A diferenza entre ambos é que un `id` debe ser único no contexto dunha páxina web; non se pode duplicar.
+
+As clases, por outra banda, poden aparecer varias veces e en varios elementos.
+
+Ademais, o `id` terá só un valor. Mentres `class` pode conter varios valores, separados por un espazo:
+
+```html
+<p class="unhaclase outraclase">Un parágrafo de texto</p>
+```
+
+Pero estes son só dous dos posibles atributos que podemos atopar. 
+
+Hai atributos que podemos empregar dentro de distintas etiquetas. E outros atributos que só se usan para unha etiqueta determinada. 
+
+Hai tamén algúns atributos, denominados booleanos, que carecen de valor asociado, e só precisaras declaralos para que realicen a súa función:
 
 ```html
 <script defer src="file.js"></script>
 ```
 
-Os atributos `class` e `id`son dous dos máis comúns que atoparás empregados.
-
-Teñen un significado especial e son útiles tanto en CSS como en JavaScript.
-
-A diferenza entre ambos é que an `id`é único no contexto dunha páxina web; non se pode duplicar.
-
-As clases, por outra banda, poden aparecer varias veces en varios elementos.
-
-Ademais, an `id`é só un valor. `class`pode conter varios valores, separados por un espazo:
-
-```html
-<p class="a-class another-class">A paragraph of text</p>
-```
-
-É común usar o guión `-`para separar palabras nun valor de clase, pero é só unha convención.
-
-Eses son só dous dos posibles atributos que podes ter. Algúns atributos só se usan para unha etiqueta. Son altamente especializados.
-
-Outros atributos pódense usar dun xeito máis xeral. Acabas de ver `id` e `class`, pero tamén temos outras, como `style`as que se poden usar para inserir regras CSS en liña nun elemento.
-
 ### 2.4. Non sensitivo - non distingue entre maiúsculas e minúsculas
 
-HTML non distingue entre mayúsculas e minúsculas. As etiquetas pódense escribir en maiúsculas ou minúsculas. Nos primeiros tempos, as gorras eran a norma. Hoxe as minúsculas son a norma. É unha convención.
+HTML non distingue entre maiúsculas e minúsculas. As etiquetas pódense escribir en maiúsculas ou minúsculas. Nos primeiros tempos, as maiúsculas eran a norma. Hoxe as minúsculas son a norma. É unha convención.
 
 Normalmente escribes así:
 
 ```html
-<p>A paragraph of text</p>
+<p>Un parágrafo de texto</p>
 ```
 
 non así:
 
 ```html
-<P>A paragraph of text</P>
+<P>Un parágrafo de texto</P>
 ```
 
 ### 2.5. Espazo en branco
 
-Moi importante. En HTML, aínda que engadas varios espazos en branco nunha liña, está contraído polo motor CSS do navegador.
+Moi importante. En HTML, aínda que engadas varios espazos en branco nunha liña, o motor de representación do navegador vainos a ignorar e contraer.
 
 Por exemplo, a interpretación deste parágrafo
 
 ```html
-<p>A paragraph of text</p>
+<p>Un parágrafo de texto</p>
 ```
 
 é o mesmo que este:
 
 ```html
-<p>A paragraph of text   </p>
+<p>      Un parágrafo de texto     </p>
 ```
 
 e o mesmo que este:
 
 ```html
 <p>
+    
+    Un parágrafo de texto
 
-
- A paragraph of text
-
-
-
- </p>
+</p>
 ```
 
-> Usando a [`white-space`propiedade CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space) pode cambiar o comportamento das cousas. Podes atopar máis información sobre como CSS procesa o espazo en branco na [especificación CSS](https://www.w3.org/TR/CSS2/text.html%23white-space-model)
+> Usando a [propiedade CSS `white-space`](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space) pódese cambiar este comportamento. Máis información sobre como CSS procesa o espazo en branco na [especificación CSS](https://www.w3.org/TR/CSS2/text.html%23white-space-model)
 
-Eu diría que use a sintaxe que fai que as cousas sexan visualmente máis organizadas e máis fáciles de ler, pero pode usar calquera sintaxe que lle guste.
+Aínda que podes usar a sintaxe que máis che guste, cando escribas o teu código usa a sintaxe que faga que as cousas se vexan máis organizadas e máis fáciles de ler.
 
-Eu normalmente favor
+Normalmente:
 
 ```html
-<p>A paragraph of text</p>
+<p>Un parágrafo de texto</p>
 ```
 
 ou
 
 ```html
 <p>
- A paragraph of text
+    Un parágrafo de texto
 </p>
 ```
 
-As etiquetas anidadas deben estar sangradas con 2 ou 4 caracteres, dependendo da túa preferencia:
+Outras convencións poden axudarche a organizar o teu código, como por exemplo o sangrado dos elementos. Así, as etiquetas aniñadas soen estar sangradas con 2 ou 4 caracteres, dependendo da túa preferencia:
 
 ```html
 <body>
- <p>A paragraph of text</p>
- <ul>
-  <li>A list item</li>
- </ul>
+  <p>Un parágrafo de texto</p>
+  <ul>
+    <li>Un item da lista</li>
+  </ul>
 </body>
 ```
 
-> Nota: esta función de "espazo en branco non é relevante" significa que se queres engadir espazo adicional, podes enloquecer. Suxiro que use CSS para facer máis espazo cando sexa necesario.
-> Nota: en casos especiais, podes usar a entidade HTML `&nbsp;` (un acrónimo que significa *espazo que non se rompe* ) - máis sobre as entidades HTML máis adiante. Creo que isto non se debe abusar. Sempre se prefire CSS para alterar a presentación visual.
+> *Nota: esta condición HTML na que o "espazo en branco non é relevante" significa que se queres engadir espazo baleiro adicional, podes tolear. Mellor que uses CSS para crear ese espazo cando sexa necesario.
+> En casos especiais, podes usar a entidade HTML `&nbsp;` (un acrónimo que significa espazo que non se rompe ) - pero é un recurso do que é mellor non abusar e non sempre da bos resultados. Así que para alterar a presentación de contidos é mellor usar CSS.*
 
 ## 3. O encabezamento do documento - `head`
 
@@ -340,16 +335,16 @@ Sempre está escrito antes da etiqueta `body`, xusto despois da etiqueta `html` 
 ```html
 <!DOCTYPE html>
 <html>
- <head>
+  <head>
+    ...
+  </head>
   ...
- </head>
- ...
 </html>
 ```
 
-Nunca usamos atributos nesta etiqueta. E non escribimos contido nel.
+Nesta etiqueta nunca se usan atributos nin outro contido. `<head>` é só un recipiente para outras etiquetas. 
 
-É só un recipiente para outras etiquetas. No seu interior podemos ter unha gran variedade de etiquetas, dependendo do que necesites facer:
+No seu interior podemos ter unha gran variedade de etiquetas, dependendo do que necesites facer:
 
 - `title`
 - `script`
@@ -361,17 +356,17 @@ Nunca usamos atributos nesta etiqueta. E non escribimos contido nel.
 
 ### 3.1. A etiqueta `title`
 
-A etiqueta  `title` determina o título da páxina. O título móstrase no navegador, e é especialmente importante xa que é un dos factores clave para a optimización de motores de busca (SEO).
+A etiqueta `title`  determina o título da páxina. O título móstrase no navegador, e é especialmente importante xa que é un dos factores clave para a optimización dos motores de busca (SEO).
 
 ### 3.2. A etiqueta `script`
 
 Esta etiqueta úsase para engadir JavaScript á páxina.
 
-Podes incluílo en liña, usando unha etiqueta de apertura, o código JavaScript e despois a etiqueta de peche:
+Podes incluír o teu código Javascript en liña, usando unha etiqueta de apertura, o código Javascript e despois a etiqueta de peche:
 
 ```html
 <script>
- ..some JS
+  // ..algún JS
 </script>
 ```
 
@@ -381,37 +376,51 @@ Ou pode cargar un arquivo JavaScript externo usando o atributo `src`:
 <script src="file.js"></script>
 ```
 
-> O atributo `type`  por defecto está configurado en `text/javascript`, polo que é completamente opcional.
+> *Esta etiqueta dispón do atributo `type`  que por defecto será configurado en `text/javascript`. Ao ter só este valor posible é completamente opcional e podelo obviar.*
 
-Hai algo moi importante que saber sobre esta etiqueta.
+Hai un debate non pechado sobre cal é a mellor disposición para esta etiqueta.
 
 Ás veces, esta etiqueta úsase na parte inferior da páxina, xusto antes da etiqueta `</body>` de peche. Por que? Por razóns de rendemento.
 
 A carga de scripts de forma predeterminada bloquea a representación da páxina ata que o script sexa analizado e cargado.
 
-Ao poñelo na parte inferior da páxina, o script cárgase e execútase despois de que toda a páxina xa estea analizada e cargada, dándolle unha mellor experiencia ao usuario que mantelo na etiqueta `head`.
+Ao poñelo na parte inferior da páxina, o script cárgase e execútase despois de que toda a páxina xa estea analizada e cargada, proporcionándolle unha experiencia máis fluida ao usuario que se o mántemos na etiqueta `head`.
 
-A miña opinión é que agora é unha mala práctica. Deixa `script` vivir na etiqueta `head`.
+Moitos desenvolvedores toman esa decisión. Non obstante, se organizas o teu código correctamente, a posición dos scripts na paxina deixa de ser relevante.
 
-No JavaScript moderno temos unha alternativa que é máis eficaz que manter o script na parte inferior da páxina: o atributo `defer`. Este é un exemplo que carga un arquivo `file.js` en relación co URL actual:
+No JavaScript moderno hai alternativas máis eficaces que manter o script na parte inferior da páxina: o atributo `defer`. Este é un exemplo que carga un arquivo `file.js` en relación co URL actual:
 
 ```html
 <script defer src="file.js"></script>
 ```
 
-Este é o escenario que activa o camiño máis rápido a unha páxina de carga rápida e JavaScript de carga rápida.
+Neste caso a etiqueta pode estar perfectamente aloxada no `head`.
 
-> Nota: o atributo `async` é semellante, pero na miña opinión unha opción peor que `defer`. Describo por que, con máis detalle, na páxina [https://flaviocopes.com/javascript-async-defer/](https://flaviocopes.com/javascript-async-defer/)
+E, segundo moitos autores, este sería o escenario que resolve mellor a carga rápida da paxina e o camiño máis rápido a JavaScript de carga rápida.
+
+Outro caso que podería ser recomendable situar xusto antes da etiqueta `</body>` é cando estamos a usar librarías como jQuery que deben dispor de todolos elementos do DOM renderizados para poder desempeñarse axeitadamente.
+
+Pero tamén aquí cabe a posibilidade de dispor o noso script dentro de `<head>` facendo o seguinte:
+
+```js
+$(document).ready(function () {
+  // teu código aquí
+});
+```
+
+En realidade nesta discusión xuntanse as cuestións puramente estéticas coas realmente funcionais. En realidade é só cuestión de organizar axeitadamente o código, e aí os dous casos son posibles. Mais siturar os scripts na `<head>` é unha solución de marcado máis _limpa_.
+
+> *Nota: o atributo `async` é semellante, pero na miña opinión unha opción peor que `defer`. Podes ver as diferenzas con máis detalle na páxina [https://flaviocopes.com/javascript-async-defer/](https://flaviocopes.com/javascript-async-defer/)*
 
 ### 3.3. A etiqueta `noscript`
 
-Esta etiqueta úsase para detectar cando os scripts están desactivados no navegador.
+Esta etiqueta úsase para empregar cando Javascript está desactivado no navegador.
 
-> Nota: os usuarios poden optar por desactivar os scripts JavaScript na configuración do navegador. Ou é posible que o navegador non os admita por defecto.
+> *Nota: os usuarios poden optar por desactivar os scripts JavaScript na configuración do navegador. Ou é posible que o navegador non os admita por defecto.*
 
 Utilízase de forma diferente dependendo de se se coloca no encabezado do documento ou no corpo do documento.
 
-Estamos a falar da cabeza do documento agora, así que primeiro imos presentar este uso.
+Como agora estamos a falar da cabeza do documento `<head>`, imos presentar este uso.
 
 Neste caso, a etiqueta `noscript` só pode conter outras etiquetas:
 
@@ -419,15 +428,15 @@ Neste caso, a etiqueta `noscript` só pode conter outras etiquetas:
 - `style`
 - `meta`
 
-para alterar os recursos que serve a páxina, ou a `meta`información, se os scripts están desactivados.
+para alterar os recursos que serve a páxina, ou a `meta`información, para cando os scripts están desactivados.
 
-Neste exemplo, configurei un elemento coa `no-script-alert`clase para mostrar se os scripts están desactivados, como estaba `display: none`por defecto:
+Neste exemplo, configurei un elemento coa clase `no-script-alert` para empregar no caso de que os scripts esteán desactivados, e evitar o `display: none` por defecto:
 
 ```html
 <!DOCTYPE html>
 <html>
- <head>
-   ...
+  <head>
+    ...
     <noscript>
       <style>
         .no-script-alert {
@@ -442,11 +451,11 @@ Neste exemplo, configurei un elemento coa `no-script-alert`clase para mostrar se
 </html>
 ```
 
-> Resolvemos o outro caso: se se coloca no corpo, pode conter contido, como parágrafos e outras etiquetas, que se mostran na IU.
+Outro caso sería colocar esta etiqueta `<noscript>` no `<body`. Nese caso pódeselle engadir contido, como parágrafos e outras etiquetas, que se mostrarán na UI.
 
 ### 3.4. A etiqueta `link`
 
-A etiqueta  `link` úsase para establecer relacións entre un documento e outros recursos.
+A etiqueta `link` úsase para establecer relacións entre un documento e outros recursos.
 
 Úsase principalmente para ligar un arquivo CSS externo que se vai cargar.
 
@@ -475,7 +484,7 @@ O atributo `media` permite cargar diferentes follas de estilo dependendo das cap
 
 Tamén podemos enlazar con outros recursos que non sexan follas de estilo.
 
-Por exemplo podemos asociar un feed RSS usando
+Por exemplo podemos asociar un feed RSS usando:
 
 ```html
 <link rel="alternate" type="application/rss+xml" href="/index.xml" />
@@ -505,7 +514,7 @@ Ou podemos asociar un favicon usando:
 />
 ```
 
-Esta etiqueta tamén *se* utilizou para contido de varias páxinas, para indicar a páxina anterior e seguinte usando `rel="prev"` e `rel="next"`. Sobre todo para Google. A partir de 2019, [Google anunciou que xa non usa esta etiqueta](https://twitter.com/googlewmc/status/1108726443251519489) porque pode atopar a estrutura da páxina correcta sen ela.
+Esta etiqueta tamén se utilizou para  referirse ao contido de outras páxinas. En especial Google, recomendaba usar esta etiqueta para indicar a páxina anterior e seguinte usando o atributo `rel="prev"` e/ou `rel="next"`, para indicar que paxina ia antes ou despois da actual. A partir de 2019, [Google anunciou que xa non usaría esta etiqueta](https://twitter.com/googlewmc/status/1108726443251519489) porque xa aprendera a atopar a estrutura correcta da páxina sen ela.
 
 ### 3.5. A etiqueta `style`
 
@@ -515,7 +524,7 @@ Uso:
 
 ```html
 <style>
-  .some-css {
+  .estilo {
   }
 </style>
 ```
@@ -524,14 +533,14 @@ Do mesmo xeito que coa etiquetas `link`, podes usar o atributo `media` para usar
 
 ```html
 <style media="print">
-  .some-css {
+  .estilo {
   }
 </style>
 ```
 
 ### 3.6. A etiqueta `base`
 
-Esta etiqueta úsase para establecer un URL base para todos os URL relativos contidos na páxina.
+Esta etiqueta úsase para establecer unha URL base para todas as URL relativas contidas na páxina.
 
 ```html
 <!DOCTYPE html>
@@ -547,41 +556,39 @@ Esta etiqueta úsase para establecer un URL base para todos os URL relativos con
 
 ### 3.7. A etiqueta `meta`
 
-As metaetiquetas realizan unha variedade de tarefas e son moi, moi importantes.
+As etiquetas *meta* realizan unha variedade de tarefas e son moi, moi importantes. Especialmente para SEO.
 
-Especialmente para SEO.
+Os elementos `meta` só teñen unha etiqueta de inicio.
 
-Os elementos `meta` só teñen a etiqueta de inicio.
-
-A máis básica é a metaetiqueta `description`:
+Unha das máis básicas é a metaetiqueta `description`:
 
 ```html
-<meta name="description" content="A nice page" />
+<meta name="description" content="Unha bonita paxina" />
 ```
 
-Isto *pode* ser usado por Google para xerar a descrición da páxina nas súas páxinas de resultados, se considera que describe mellor a páxina que o contido  da páxina (non me preguntes como).
+Isto _pode_ ser usado por Google para xerar a descrición da páxina nas súas páxinas de resultados, se considera que describe mellor a páxina que o contido da páxina (non preguntes como!).
 
-A metaetiqueta `charset` úsase para definir a codificación de caracteres da páxina. `utf-8`na maioría dos casos:
+A metaetiqueta `charset` é das máis esenciais e úsase para definir a codificación de caracteres da páxina. `utf-8` na maioría dos casos:
 
 ```html
 <meta charset="utf-8" />
 ```
 
-A metaetiqueta `robots` indica aos robots do buscador se deben indexar unha páxina ou non:
+A metaetiqueta `robots` indícalle aos robots dos buscadores se deben indexar unha páxina ou non:
 
 ```html
 <meta name="robots" content="noindex" />
 ```
 
-Ou se deben seguir enlaces ou non:
+Ou se deben seguir os enlaces da paxina ou non:
 
 ```html
 <meta name="robots" content="nofollow" />
 ```
 
-> Tamén podes configurar nofollow en ligazóns individuais. Así é como pode configurar `nofollow`globalmente.
+> Así é como podes configurar `nofollow` globalmente, tamén podes configurar ``nofollow`` en ligazóns individuais. 
 
-Podes combinalos:
+E tamén se admite a combinación destes valores:
 
 ```html
 <meta name="robots" content="noindex, nofollow" />
@@ -591,7 +598,7 @@ O comportamento predeterminado é `index, follow`.
 
 Podes usar outras propiedades, incluíndo `nosnippet`, `noarchive`, `noimageindex` etc.
 
-Tamén podes dicirlle a Google en lugar de apuntar a *todos os* motores de busca:
+Tamén podes dirixirte a Google en lugar de apuntar a _todos os_ motores de busca:
 
 ```html
 <meta name="googlebot" content="noindex, nofollow" />
@@ -605,7 +612,7 @@ Falando diso, podemos dicirslle a Google que desactive algunhas funcións. Isto 
 <meta name="google" content="notranslate" />
 ```
 
-A metaetiqueta `viewport` úsase para indicarlle ao navegador que estableza o ancho da páxina en función do ancho do dispositivo.
+A metaetiqueta `viewport` úsase para indicarlle ao navegador que estableza o ancho da páxina en función do ancho do dispositivo. Esta é unha etiqueta moi recorrida polas súas implicacións na visualización receptiva das paxinas - `responsive design`.
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -618,19 +625,19 @@ Outra metaetiqueta bastante popular é a `http-equiv="refresh"`. Esta liña indi
 ```html
 <meta
   http-equiv="refresh"
-  content="3;url=http://flaviocopes.com/another-page"
+  content="3; url=http://bitsolto.com/outra-paxina"
 />
 ```
 
-Usando 0 en lugar de 3 redirixirase o antes posible.
+Usando 0 en lugar de 3, a redirección será máis rápida.
 
-Esta non é unha referencia completa; Existen outras metaetiquetas menos usadas.
+...
 
-Despois desta introdución do título do documento, podemos comezar a mergullarse no corpo do documento.
+> *Esta non é unha referencia completa, só se nomean as máis usadas e comúns. Existen outras [metaetiquetas](https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=es) con distintos obxectivos, pero deixo que sexas ti que indague sobre iso.*
 
 ## 4. O corpo do documento - `body`
 
-Despois da etiqueta head de peche, só podemos ter unha cousa nun documento HTML: o elemento `body`.
+Nun documento HTML, despois da etiqueta `head` de peche, só pode haber unha cousa: o elemento `body`.
 
 ```html
 <!DOCTYPE html>
@@ -644,19 +651,19 @@ Despois da etiqueta head de peche, só podemos ter unha cousa nun documento HTML
 </html>
 ```
 
-Do mesmo xeito que as etiquetas `head` e `html`, só podemos ter unha etiqueta `body` nunha páxina.
+E coma no caso das etiquetas `head` e `html`, nunha páxina só pode haber unha etiqueta `body`.
 
 Dentro da etiqueta `body` temos todas as etiquetas que definen o contido da páxina.
 
-Tecnicamente, as etiquetas de inicio e final son opcionais. Pero considero unha boa práctica engadilos. Só por claridade.
+Tecnicamente, as etiquetas de inicio e final son opcionais. Pero considero unha boa práctica engadilas. Só por claridade.
 
-Nos próximos capítulos definiremos a variedade de etiquetas que pode usar dentro do corpo da páxina.
+Nos próximos capítulos definiremos a variedade de etiquetas que se poden usar dentro do corpo da páxina.
 
-Pero antes, debemos introducir unha diferenza entre os elementos de bloque e os elementos en liña.
+Pero antes, debemos apuntar a diferenza entre os elementos de bloque e os elementos en liña.
 
 ### 4.1. Elementos de bloque vs elementos en liña
 
-Os elementos visuais, os definidos no corpo da páxina, pódense clasificar xeralmente en dúas categorías:
+Os elementos visuais, os que se usan para definir o corpo da páxina, pódense clasificar xeralmente en dúas categorías:
 
 - elementos de bloque ( `p`, `div`, elementos de título, listas e elementos de lista, ...)
 - elementos en liña ( `a`, `span`, `img`, ...)
@@ -669,9 +676,9 @@ Os elementos en liña poden estar xunto a outros elementos en liña.
 
 A diferenza tamén reside nas propiedades visuais que podemos editar usando CSS. Podemos alterar o ancho/alto, a marxe, o recheo e o bordo dos elementos do bloque. Non podemos facelo para elementos en liña.
 
-> Teña en conta que mediante CSS podemos cambiar o valor predeterminado de cada elemento, configurando unha etiqueta `p` para que estea en liña, por exemplo, ou a `span` para que sexa un elemento de bloque.
+> *Ter en conta que mediante CSS podemos cambiar o valor predeterminado de cada elemento, configurando unha etiqueta `p` para que estea en liña, por exemplo, ou a `span` para que sexa un elemento de bloque.*
 
-Outra diferenza é que os elementos en liña poden estar contidos en elementos de bloque. Non é certo o contrario.
+Outra diferenza é que os elementos en liña poden estar contidos en elementos de bloque. O contrario non é posible.
 
 Algúns elementos de bloque poden conter outros elementos de bloque, pero depende. A etiqueta `p`, por exemplo, non permite esa opción.
 
@@ -682,12 +689,12 @@ Algúns elementos de bloque poden conter outros elementos de bloque, pero depend
 Esta etiqueta define un parágrafo de texto.
 
 ```html
-<p>Some text</p>
+<p>Algún texto</p>
 ```
 
 É un elemento de bloque.
 
-Dentro dela, podemos engadir calquera elemento en liña que nos guste, como `span`ou `a`.
+Dentro dela, podemos engadir calquera elemento en liña que nos interese, como `span`, `strong` ou `a`.
 
 Non podemos engadir elementos de bloque.
 
@@ -695,14 +702,14 @@ Non podemos aniñar un elemento `p` noutro.
 
 Por defecto, os navegadores estilizan un parágrafo cunha marxe na parte superior e na parte inferior. `16px` en Chrome, pero o valor exacto pode variar entre os navegadores.
 
-Isto fai que dous parágrafos consecutivos sexan espazados, replicando o que pensamos dun "parágrafo" no texto impreso.
+Isto fai que dous parágrafos consecutivos sexan espazados, replicando o que supoñemos para un "parágrafo" no texto impreso.
 
 ### 5.2. A etiqueta `span`
 
-Esta é unha etiqueta en liña que se pode usar para crear unha sección nun parágrafo que se pode orientar mediante CSS:
+Esta é unha etiqueta en liña que se pode usar para crear unha sección nun parágrafo a que se pode dar un estilo distinto mediante CSS:
 
 ```html
-<p>A part of the text <span>and here another part</span></p>
+<p>Unha parte do texto <span>e outra parte máis</span></p>
 ```
 
 ### 5.3. A etiqueta `br`
@@ -714,18 +721,18 @@ Utilizámolo para crear unha nova liña dentro dunha etiqueta `p`, sen crear un 
 E en comparación coa creación dun novo parágrafo, non engade espazo adicional.
 
 ```html
-<p>Some text<br />A new line</p>
+<p>Algo de texto<br />Unha nova liña</p>
 ```
 
 ### 5.4. As etiquetas de título
 
-HTML ofrécenos 6 etiquetas de título. Do máis importante ao menos importante, temos `h1`, `h2`, `h3`, `h4`, `h5`, `h6`.
+HTML dispón de 6 etiquetas de título. Do máis importante ao menos importante, temos `h1`, `h2`, `h3`, `h4`, `h5`, `h6`.
 
 Normalmente, unha páxina terá un elemento `h1`, que é o título da páxina. Entón pode ter un ou máis elementos `h2`dependendo do contido da páxina.
 
-Os títulos, especialmente a organización do título, tamén son esenciais para o SEO, e os motores de busca utilízanos de varias maneiras.
+Os títulos, especialmente a xerarquía e organización dos mesmos, tamén son esenciais para o SEO, e os motores de busca utilízanos de varias maneiras.
 
-O navegador por defecto fará que a etiqueta `h1` sexa máis grande e fará que o tamaño dos elementos sexa máis pequeno a medida que o número aumente `h`:
+O navegador por defecto fará que a etiqueta `h1` sexa a máis grande e fará que o tamaño dos elementos  `h`  sexa máis pequeno a medida que o número aumenta:
 
 ![img](./assets/Screen Shot 2019-06-11 at 19.46.57.png)
 
@@ -733,23 +740,23 @@ Todos os títulos son elementos de bloque. Non poden conter outros elementos, s�
 
 ### 5.5. A etiqueta `strong`
 
-Esta etiqueta úsase para marcar o texto dentro dela como *forte* . Isto é moi importante, non é unha suxestión visual, senón unha suxestión semántica. Segundo o medio empregado, a súa interpretación variará.
+Esta etiqueta úsase para marcar o texto dentro dela como _forte_ ou negriña. Isto é moi importante, non é unha suxestión visual, senón unha suxestión semántica. Segundo o medio empregado, a súa interpretación variará.
 
-Os navegadores por defecto fan que o texto desta etiqueta sexa **en negrita** .
+Os navegadores por defecto fan que o texto desta etiqueta sexa **en negriña** .
 
 ### 5.6. A etiqueta `em`
 
-Esta etiqueta úsase para marcar o texto dentro dela como *enfatizado* . Do mesmo xeito que con `strong`, non é unha suxestión visual senón unha suxestión semántica.
+Esta etiqueta úsase para marcar o texto dentro dela como resaltado en _itálica_. Do mesmo xeito que con `strong`, non é unha suxestión visual senón unha suxestión semántica.
 
-Por defecto, os navegadores fan que o texto estea en **cursiva** .
+Por defecto, os navegadores fan que o texto estea en *cursiva* .
 
-#### 5.6.1. `Quotes`- Citas
+#### 5.6.1. `blockquote`- Citas
 
 A etiqueta `blockquote` é útil para inserir citas no texto.
 
 Os navegadores por defecto aplican unha marxe ao elemento `blockquote`. Chrome aplica unha marxe esquerda e dereita de 40px e unha marxe superior e inferior de 10px.
 
-A etiqueta HTML  `q` úsase para as comiñas en liña.
+A etiqueta HTML `q` úsase para as comiñas en liña.
 
 ### 5.7. Liña horizontal
 
@@ -759,7 +766,7 @@ Non se basea realmente no texto, pero a etiqueta `hr` úsase a miúdo dentro dun
 
 ### 5.8. Bloques de código
 
-A etiqueta  `code` é especialmente útil para mostrar código, porque os navegadores danlle un tipo de letra monoespazado.
+A etiqueta `code` é especialmente útil para mostrar código, porque os navegadores danlle un tipo de letra monoespazado.
 
 Normalmente iso é o único que fan os navegadores. Este é o CSS aplicado por Chrome:
 
@@ -796,8 +803,8 @@ As listas non ordenadas créanse mediante a etiqueta `ul`. Cada elemento da list
 
 ```html
 <ul>
-  <li>First</li>
-  <li>Second</li>
+  <li>Primeiro</li>
+  <li>Segundo</li>
 </ul>
 ```
 
@@ -805,8 +812,8 @@ As listas ordenadas son similares, só están feitas coa etiqueta `ol`:
 
 ```html
 <ol>
-  <li>First</li>
-  <li>Second</li>
+  <li>Primeiro</li>
+  <li>Segundo</li>
 </ol>
 ```
 
@@ -829,30 +836,30 @@ Así é como os navegadores adoitan representalos:
 
 ![img](./assets/Screen Shot 2019-06-12 at 09.45.21.png)
 
-Debo dicir que poucas veces os ves en estado salvaxe, seguro que non tanto como `ul` e `ol`, pero ás veces poden ser útiles.
+Debo dicir que poucas veces verás este marcado *en estado salvaxe* tal e como o devolve o teu navegador, alo menos non tanto como vemos listados  `ul` e `ol`, pero ás veces poden ser útiles.
 
 ### 5.10. Outras etiquetas de texto
 
 Hai unha serie de etiquetas con fins de presentación:
 
-- a etiqueta `mark`
-- a etiqueta `ins`
-- a etiqueta `del`
-- a etiqueta `sup`
-- a etiqueta `sub`
-- a etiqueta `small`
-- a etiqueta `i`
-- a etiqueta `b`
+-  `mark`
+-  `ins`
+-  `del`
+-  `sup`
+- `sub`
+-  `small`
+-  `i`
+-  `b`
 
 Este é un exemplo da representación visual dos mesmos que os navegadores aplican por defecto:
 
 ![img](./assets/Screen Shot 2019-06-12 at 08.43.55.png)
 
-Podes preguntarche, `b` en que é diferente `strong`? E como `i`é diferente `em`?
+Podes preguntarte, en que é diferente `b` de `strong`? Ou como de diferente é `i` de  `em`?
 
-A diferenza reside no significado semántico. Mentres que `b` e `i`son unha suxestión directa para que o navegador faga unha peza de texto en negra ou cursiva `strong` e `em`lle outorgue un significado especial ao texto, e correspóndelle ao navegador dar o estilo. O que pasa a ser exactamente o mesmo que `b` e `i`, por defecto. Aínda que podes cambialo usando CSS.
+A diferenza reside no **significado semántico**. Mentres que `b` e `i`son unha suxestión directa para que o navegador faga unha peza de texto en negriña ou en cursiva `strong` e `em` outórganlle un significado especial ao texto, e correspóndelle ao navegador dar o estilo. En realidade, por defecto, a representación pasa a ser exactamente a mesma que con `b` e `i`. Aínda que podes cambialo usando CSS. 
 
-Existen outras etiquetas menos usadas relacionadas co texto. Acabo de mencionar as que vexo máis utilizadas.
+Existen outras etiquetas relacionadas co texto. Acabo de mencionar as que vexo máis utilizadas, o resto é cousa túa.
 
 ## 6. Ligazóns
 
@@ -861,43 +868,43 @@ As ligazóns defínense mediante a etiqueta `a`. O destino da ligazón establéc
 **Exemplo**:
 
 ```html
-<a href="https://bitsolto.com">click here</a>
+<a href="https://bitsolto.com">preme aquí</a>
 ```
 
 Entre a etiqueta de inicio e a de peche temos o texto da ligazón.
 
-O exemplo anterior é un URL absoluto. As ligazóns tamén funcionan con URL relativos:
+O exemplo anterior é unha URL absoluta. As ligazóns tamén funcionan con URL relativas:
 
 ```html
-<a href="/test">click here</a>
+<a href="./test">preme aquí</a>
 ```
 
 Neste caso, ao facer clic na ligazón o usuario móvese á URL `/test` da orixe actual.
 
-Teña coidado co carácter `/`. Se se omite, en lugar de comezar desde a orixe, o navegador só engadirá a `test`cadea ao URL actual.
+Pódese omitir o marcado `./`, en calquera caso o navegador engadirá a cadea  `test` á URL actual.
 
-Exemplo, estou na páxina `https://ambosass.com/axios/` e teño estas ligazóns:
+Exemplo, estás na páxina `https://bitsolto.com/axios/` e tes estas ligazóns:
 
-- `/test` unha vez que se fai clic lévame a`https://ambosass.com/test`
-- `test` unha vez que se fai clic lévame a`https://ambosass.com/axios/test`
+- `./test` unha vez que se fai clic levarate a `https://bitsolto.com/test`
+- `test` unha vez que se fai clic levarate a`https://bitsolto.com/axios/test`
 
 As etiquetas de ligazón poden incluír outras cousas no seu interior, non só texto. Por exemplo, imaxes:
 
 ```html
-<a href="https://ambosass.com">
+<a href="https://bitsolto.com">
   <img src="test.jpg" />
 </a>
 ```
 
-ou calquera outro elemento, agás outras etiquetas  `<a>`.
+ou calquera outro elemento, agás outras etiquetas `<a>`.
 
-Se queres abrir a ligazón nunha nova pestana, podes usar o atributo `target`:
+O atributo `target` permitirache seleccionar como queres que se abra a ligazón. Se queres abrir a ligazón nunha nova pestana, podes usar:
 
 ```html
-<a href="https://bitsolto.com" target="_blank">open in new tab</a>
+<a href="https://bitsolto.com" target="_blank">abrir noutra lapela</a>
 ```
 
-## 7. Etiquetas de contedores e estrutura da páxina HTML
+## 7. Etiquetas de contedores e estrutura da páxina
 
 ### 7.1. Etiquetas de contedores
 
@@ -909,13 +916,13 @@ Temos:
 - `section`
 - `div`
 
-e pode resultar confuso entender a diferenza entre eles.
+e pode resultar confuso entender a diferenza entre elas.
 
-A ver cando usar cada un deles.
+Vexamos cando usar cada unha delas.
 
 #### 7.1.1.`article`
 
-A etiqueta do artigo identifica unha *cousa* que pode ser independente doutras *cousas* dunha páxina.
+A etiqueta `article`  identifica un contido que pode ser independente doutras partes da páxina.
 
 Por exemplo, unha lista de publicacións do blog na páxina de inicio.
 
@@ -924,36 +931,36 @@ Ou unha lista de ligazóns.
 ```html
 <div>
   <article>
-    <h2>A blog post</h2>
-    <a ...>Read more</a>
+    <h2>Unha publicación</h2>
+    <a ...>Ler máis</a>
   </article>
   <article>
-    <h2>Another blog post</h2>
-    <a ...>Read more</a>
+    <h2>Outra publicación</h2>
+    <a ...>Ler máis</a>
   </article>
 </div>
 ```
 
-Non nos limitamos a listas: un artigo pode ser o elemento principal dunha páxina.
+Non nos limitamos a listados: un `article`  pode ser o elemento principal dunha páxina.
 
 ```html
 <article>
-  <h2>A blog post</h2>
-  <p>Here is the content...</p>
+  <h2>Unha publicación</h2>
+  <p>Aquí está o seu contido...</p>
 </article>
 ```
 
-Dentro dunha etiqueta `article` deberíamos ter un título ( `h1`- `h6`) e
+Dentro dunha etiqueta `article` deberíamos ter un título ( `h1`- `h6`) e outras etiquetas de texto e imaxes. Ou aquilo que forme parte desa peza diferenciada de contido.
 
 #### 7.1.2.`section`
 
-Representa unha sección dun documento. Cada sección ten unha etiqueta de título ( `h1`- `h6`), despois o *corpo* da sección .
+Representa unha sección dun documento. Cada sección ten unha etiqueta de título ( `h1`- `h6`), e despois o _corpo_ da sección .
 
 **Exemplo**:
 
 ```html
 <section>
-  <h2>A section of the page</h2>
+  <h2>Unha sección da paxina</h2>
   <p>...</p>
   <img ... />
 </section>
@@ -961,25 +968,25 @@ Representa unha sección dun documento. Cada sección ten unha etiqueta de títu
 
 É útil dividir un artigo longo en diferentes **seccións** .
 
-Non se debe usar como elemento xenérico do contedor. `div` está feito para iso.
+~~Non se debe usar como elemento xenérico do contedor. `div` está feito para iso.~~
 
 #### 7.1.3.`div`
 
-`div`é o elemento contenedor xenérico:
+`div` é o elemento contedor xenérico:
 
 ```html
 <div>...</div>
 ```
 
-Adoita engadir un `class`ou `id`un atributo a este elemento, para permitir que se dea estilo usando CSS.
+Adoita engadir un atributo `class` ou `id`, para permitir que se dea estilo usando CSS.
 
-Usamos `div` en calquera lugar onde necesitemos un recipiente pero as etiquetas existentes non son adecuadas.
+Usamos `div` en calquera lugar onde necesitemos un recipiente e as outras etiquetas semánticas existentes non son axeitadas.
 
 ### 7.2. Etiquetas relacionadas coa páxina
 
 #### 7.2.1.`nav`
 
-Esta etiqueta úsase para crear o marcado que define a navegación da páxina. A isto normalmente engadimos unha `ul`ou `ol`lista:
+Esta etiqueta úsase para crear o marcado que define a navegación da páxina. A isto normalmente engadímoslle unha lista `ul`ou `ol`:
 
 ```html
 <nav>
@@ -992,7 +999,7 @@ Esta etiqueta úsase para crear o marcado que define a navegación da páxina. A
 
 #### 7.2.2.`aside`
 
-A etiqueta  `aside` úsase para engadir un contido relacionado co contido principal.
+A etiqueta `aside` úsase para engadir un contido relacionado co contido principal aínda que de menor relevancia.
 
 Un cadro onde engadir unha cita, por exemplo. Ou unha barra lateral.
 
@@ -1000,24 +1007,24 @@ Un cadro onde engadir unha cita, por exemplo. Ou unha barra lateral.
 
 ```html
 <div>
-  <p>some text..</p>
+  <p>algún texto..</p>
   <aside>
-    <p>A quote..</p>
+    <p>Unha cita..</p>
   </aside>
-  <p>other text...</p>
+    <p>outro texto</p>
 </div>
 ```
 
-Usar `aside`é un sinal de que as cousas que contén non forman parte do fluxo regular da sección na que vive.
+Usar `aside` é un sinal de que as cousas que contén non forman parte do fluxo regular da sección na que vive.
 
 #### 7.2.3.`header`
 
-A etiqueta `header` representa unha parte da páxina que é a introdución. Por exemplo, podes conter unha ou máis etiquetas de título ( `h1`- `h6`), o lema para o artigo, unha imaxe.
+A etiqueta `header` representa a introdución á paxina ou a unha parte da páxina. Por exemplo, podes conter unha ou máis etiquetas de título ( `h1`- `h6`), o lema para o artigo, unha imaxe.
 
 ```html
 <article>
   <header>
-    <h1>Article title</h1>
+    <h1>Título do artigo</h1>
   </header>
   ...
 </div>
@@ -1044,7 +1051,7 @@ A etiqueta `footer` úsase para determinar o pé dun artigo ou o pé da páxina:
 <article>
  ....
   <footer>
-    <p>Footer notes..</p>
+    <p>Notas ao pé..</p>
   </footer>
 </div>
 ```
@@ -1053,17 +1060,17 @@ A etiqueta `footer` úsase para determinar o pé dun artigo ou o pé da páxina:
 
 Os formularios son a forma en que podes interactuar cunha páxina ou unha aplicación creada con tecnoloxías web.
 
-Tes un conxunto de controis, e cando envías o formulario, xa sexa cun clic  nun botón "enviar" ou mediante programación, o navegador enviará os  datos ao servidor.
+Tes un conxunto de controis, e cando envías o formulario, xa sexa cun clic nun botón "enviar" ou mediante programación, o navegador enviará os datos ao servidor.
 
-De forma predeterminada, este envío de datos fai que a páxina se recargue  despois de enviar os datos, pero usando JavaScript podes alterar este  comportamento (non vai explicar como neste libro).
+De forma predeterminada, este envío de datos fai que a páxina se recargue despois de enviar os datos, pero usando Javascript podes alterar este comportamento (aínda que iso no se vai explicar neste artigo).
 
-Créase un formulario usando a etiqueta `form`:
+Un formulario créase usando a etiqueta `form`:
 
 ```html
 <form>...</form>
 ```
 
-Por defecto, os formularios envíanse mediante o método GET HTTP. O que ten os seus inconvenientes, e normalmente queres usar POST.
+Por defecto, os formularios envíanse mediante o método HTTP GET. O que ten os seus inconvenientes, e normalmente quererás usar o método POST.
 
 Podes configurar o formulario para que use POST cando se envíe usando o atributo `method`:
 
@@ -1071,39 +1078,39 @@ Podes configurar o formulario para que use POST cando se envíe usando o atribut
 <form method="POST">...</form>
 ```
 
-O formulario envíase mediante GET ou POST ao mesmo URL onde reside.
+O formulario envíase mediante GET ou POST á mesma URL onde reside.
 
-Polo tanto, se o formulario está na `https://flaviocopes.com/contacts`páxina, premendo o botón "enviar" realizarase unha solicitude a ese mesmo URL.
+Polo tanto, se o formulario está na páxina `https://bitsolto.com/contacts`, premendo o botón "enviar" realizarase unha solicitude a esa mesma URL.
 
 O que pode provocar que non pase nada.
 
-Necesitas algo do servidor para xestionar a solicitude e normalmente "escoitas"  os eventos de envío de formularios nun URL dedicado.
+Necesitas algo do servidor para xestionar a solicitude e normalmente "escoitas" os eventos de envío de formularios nunha URL dedicada.
 
-Podes especificar o URL mediante o `action`parámetro:
+Podes especificar a URL mediante o atributo `action`:
 
 ```html
 <form action="/new-contact" method="POST">...</form>
 ```
 
-Isto fará que o navegador envíe os datos do formulario mediante POST ao `/new-contact`URL da mesma orixe.
+Isto fará que o navegador envíe os datos do formulario mediante POST a URL `/new-contact` da mesma orixe.
 
-Se a orixe (protocolo + dominio + porto) é `https://ambosass.com`(o porto 80 é o predeterminado), isto significa que os datos do formulario enviaranse a `https://ambosass.com/new-contact`.
+Se a orixe (protocolo + dominio + porto) é `https://bitsolto.com`(o porto 80 é o predeterminado), isto significa que os datos do formulario enviaranse a `https://bitsolto.com/new-contact`.
 
 Falei de datos. Que datos?
 
 Os datos son proporcionados polos usuarios a través do conxunto de controis que están dispoñibles na plataforma web:
 
-- caixas de entrada (texto dunha soa liña)
-- áreas de texto (texto multiliña)
-- caixas de selección (escolla unha opción dun menú despregable)
-- botóns de opción (escolla unha opción dunha lista sempre visible)
-- caixas de verificación (escolla cero, unha ou máis opcións)
-- cargas de arquivos
-- e máis!
+- caixas de entrada (texto dunha soa liña) `input`
+- áreas de texto (texto multiliña) `textarea`
+- caixas de selección (escolla unha opción dun menú despregable) `select`
+- botóns de opción (escolla unha opción dunha lista sempre visible) `radio`
+- caixas de verificación (escolla cero, unha ou máis opcións)  `checkbox`
+- cargas de arquivos `file`
+- [e máis](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls)!
 
 Imos presentar cada un deles na seguinte descrición xeral dos campos do formulario.
 
-### 8.1. A etiqueta  `input`
+### 8.1. A etiqueta `input`
 
 O campo `input` é un dos elementos de formulario máis utilizados. Tamén é un elemento moi versátil e pode cambiar completamente o comportamento en función do atributo `type`.
 
@@ -1119,13 +1126,13 @@ Equivale a usar:
 <input type="text" />
 ```
 
-Como ocorre con todos os outros campos que seguen, cómpre darlle un nome ao  campo para que o seu contido se envíe ao servidor cando se envíe o  formulario:
+Como ocorre con todos os outros campos que seguen, cómpre darlle un nome ao campo para que o seu contido se envíe identificado ao servidor cando se envíe o formulario:
 
 ```html
 <input type="text" name="username" />
 ```
 
-O atributo `placeholder` úsase para que algún texto apareza, en gris claro, cando o campo está baleiro. Útil para engadir unha suxestión ao usuario sobre o que escribir:
+O atributo `placeholder` úsase para que apareza algún texto, cando o campo está baleiro. Útil para engadir unha suxestión ao usuario sobre o que escribir:
 
 ```html
 <input type="text" name="username" placeholder="Your username" />
@@ -1133,18 +1140,18 @@ O atributo `placeholder` úsase para que algún texto apareza, en gris claro, ca
 
 #### 8.1.1. Correo electrónico
 
-O uso `type="email"`validará un correo electrónico do lado do cliente (no navegador) para comprobar a corrección (corrección semántica, sen asegurar que o enderezo de correo electrónico exista) antes de enviar.
+O uso `type="email"` validará un correo electrónico do lado do cliente (no navegador) para comprobar a corrección (corrección semántica, sen asegurar que o enderezo de correo electrónico exista) antes de enviar.
 
 ```html
-<input type="email" name="email" placeholder="Your email" />
+<input type="email" name="email" placeholder="Teu email" />
 ```
 
 #### 8.1.2. Contrasinal
 
-Ao usar `type="password"`cada clave introducida aparecerá como un asterisco (*) ou un punto, útil para campos que albergan un contrasinal.
+Ao usar `type="password"`cada clave introducida aparecerá como un asterisco (\*) ou un punto, útil para campos que albergan un contrasinal.
 
 ```html
-<input type="password" name="password" placeholder="Your password" />
+<input type="password" name="password" placeholder="Teu contrasinal" />
 ```
 
 #### 8.1.3. Números
@@ -1152,13 +1159,13 @@ Ao usar `type="password"`cada clave introducida aparecerá como un asterisco (*)
 Pode que un elemento de entrada acepte só números:
 
 ```html
-<input type="number" name="age" placeholder="Your age" />
+<input type="number" name="age" placeholder="Túa idade" />
 ```
 
 Podes especificar un valor mínimo e máximo aceptado:
 
 ```html
-<input type="number" name="age" placeholder="Your age" min="18" max="110" />
+<input type="number" name="age" placeholder="Túa idade" min="18" max="110" />
 ```
 
 O atributo `step` axuda a identificar os pasos entre diferentes valores. Por exemplo, isto acepta un valor entre 10 e 50, en pasos de 5:
@@ -1169,15 +1176,15 @@ O atributo `step` axuda a identificar os pasos entre diferentes valores. Por exe
 
 #### 8.1.4. Campo oculto
 
-Os campos pódense ocultar ao usuario. Aínda se enviarán ao servidor cando se envíe o formulario:
+Os campos pódense ocultar ao usuario. Aínda así se enviarán ao servidor cando se envíe o formulario:
 
 ```html
 <input type="hidden" name="some-hidden-field" value="some-value" />
 ```
 
-Este úsase habitualmente para almacenar valores como un token CSRF, usado  para a seguridade e a identificación do usuario, ou mesmo para detectar  robots que envían spam, utilizando técnicas especiais.
+Este úsase habitualmente para almacenar valores como un token CSRF, usado para a seguridade e a identificación do usuario, ou mesmo para detectar robots que envían spam, utilizando técnicas especiais.
 
-Tamén se pode usar só para identificar unha forma e a súa acción.
+Tamén se pode usar só para identificar un formulario e a súa acción.
 
 #### 8.1.5. Establecer un valor predeterminado
 
@@ -1187,37 +1194,39 @@ Todos eses campos aceptan un valor predefinido. Se o usuario non o cambia, este 
 <input type="number" name="age" value="18" />
 ```
 
-Se estableces un marcador de posición, ese valor aparecerá se o usuario borra o valor do campo de entrada:
+Se estableces un marcador de posición - ``placeholder``-, ese valor aparecerá se o usuario borra o valor do campo de entrada:
 
 ```html
-<input type="number" name="age" placeholder="Your age" value="18" />
+<input type="number" name="age" placeholder="Túa idade" value="18" />
 ```
 
 ### 8.2. Enviar formulario
 
-O `type="submit"`campo é un botón que, unha vez pulsado polo usuario, envía o formulario:
+O campo `type="submit"` é un botón que, unha vez pulsado polo usuario, envía o formulario:
 
 ```html
 <input type="submit" />
 ```
 
-O atributo `value` establece o texto no botón, que se falta mostra o texto "Enviar":
+O atributo `value`  establece o texto no botón, que se falta mostra o texto "Submit":
 
 ```html
-<input type="submit" value="Click me" />
+<input type="submit" value="Preme aquí" />
 ```
+
+Pódese substituír por un botón co mesmo cometido.
 
 ### 8.3. Validación de formularios
 
 Os navegadores proporcionan funcionalidades de validación do lado do cliente aos formularios.
 
-Pode definir os campos segundo sexa necesario, asegurándose de que estean  cubertos e aplicar un formato específico para a entrada de cada campo.
+Pode definir os campos segundo sexa necesario, asegurándose de que estean cubertos e aplicar un formato específico para a entrada de cada campo.
 
-Vexamos as dúas opcións.
+Vexamos as opcións de validación do lado do cliente.
 
-#### 8.3.1. Establece os campos segundo sexa necesario
+#### 8.3.1. Establecer os campos requiridos segundo sexa necesario
 
-O atributo `required` axúdache coa validación. Se o campo non está definido, a validación do cliente falla e o navegador non envía o formulario:
+O atributo `required` axudarache coa validación. Se o campo non está definido, a validación do cliente falla e o navegador non envía o formulario:
 
 ```html
 <input type="text" name="username" required />
@@ -1225,11 +1234,11 @@ O atributo `required` axúdache coa validación. Se o campo non está definido, 
 
 #### 8.3.2. Aplicar un formato específico
 
-Describín o campo `type="email"`anterior. Valida automaticamente o enderezo de correo electrónico segundo un formato establecido na especificación.
+Especificar o tipo de eido axuda a súa validación do lado do cliente. Por exemplo ao establecer o campo como `type="email"`, o navegador valida automaticamente o enderezo de correo electrónico segundo un formato establecido na especificación.
 
-No campo `type="number"`, mencionei o `min` e `max`atribuír aos valores límite introducidos nun intervalo.
+No caso dun campo `type="number"`, os atributos  `min` e `max` activa a validación do valor introducido dentro dos límites dun intervalo.
 
-Pode aplicar un formato específico a calquera campo a través do atributo `pattern`, o que lle dá a posibilidade de establecer unha expresión regular para validar o valor.
+Tamén se pode aplicar un formato específico a calquera campo a través do atributo `pattern`, o que lle dá a posibilidade de establecer unha expresión regular para validar o valor.
 
 Podes ver a Guía de expresións regulares de [flaviocopes.com/javascript-regular-expressions/](https://flaviocopes.com/javascript-regular-expressions/) .
 
@@ -1261,7 +1270,7 @@ Podes especificar un ou máis tipos de arquivos permitidos mediante o atributo `
 <input type="file" name="secret-documents" accept="image/*" />
 ```
 
-Podes usar un tipo MIME específico, como `application/json`ou establecer unha extensión de arquivo como `.pdf`. Ou configura varias extensións de arquivo, como esta:
+Podes usar un tipo MIME específico, como `application/json`ou establecer unha extensión de arquivo como `.pdf`. Ou configurar varias extensións de arquivo, como aquí:
 
 ```html
 <input type="file" name="secret-documents" accept=".jpg, .jpeg, .png" />
@@ -1269,15 +1278,15 @@ Podes usar un tipo MIME específico, como `application/json`ou establecer unha e
 
 #### 8.4.2. Botóns
 
-Os `type="button"`campos de entrada pódense usar para engadir botóns adicionais ao formulario, que non son botóns de envío:
+Os eidos `type="button"` pódense usar para engadir botóns adicionais ao formulario, que non son botóns de envío:
 
 ```html
-<input type="button" value="Click me" />
+<input type="button" value="Prémeme" />
 ```
 
 Utilízanse para facer algo mediante programación, usando JavaScript.
 
-Hai un campo especial representado como un botón, cuxa acción especial é  borrar todo o formulario e devolver o estado dos campos ao inicial:
+Hai un campo especial representado como un botón, cuxa acción especial é borrar todo o formulario e devolver o estado dos campos ao inicial:
 
 ```html
 <input type="reset" />
@@ -1285,11 +1294,9 @@ Hai un campo especial representado como un botón, cuxa acción especial é  bor
 
 #### 8.4.3. Botóns de radio
 
-Os botóns de opción úsanse para crear un conxunto de opcións, das cales se preme unha e todas as outras están desactivadas.
+Os botóns de opción úsanse para crear un conxunto de opcións de selección única. Así, se se preme unha mentres as outras pasarán a estar desactivadas.
 
-O nome provén das antigas radios de automóbiles que tiñan este tipo de interface.
-
-Defines un conxunto de `type="radio"` entradas, todas co mesmo atributo `name` e atributo `value` diferente:
+Se define un conxunto de entradas `type="radio"` , todas co mesmo atributo `name` e un atributo `value` diferente:
 
 ```html
 <input type="radio" name="color" value="yellow" />
@@ -1297,13 +1304,13 @@ Defines un conxunto de `type="radio"` entradas, todas co mesmo atributo `name` e
 <input type="radio" name="color" value="blue" />
 ```
 
-Unha vez enviado o formulario, a `color`propiedade dos datos terá un único valor.
+Unha vez enviado o formulario, a propiedade `color` obterá un único valor.
 
 Sempre hai un elemento marcado. O primeiro elemento é o marcado por defecto.
 
 Podes establecer o valor que está preseleccionado usando o atributo `checked`. Podes usalo só unha vez por grupo de entradas de radio.
 
-#### 8.4.4. Casillas de verificación
+#### 8.4.4. Casiñas de verificación
 
 Semellante ás caixas de radio, pero permiten escoller varios valores ou ningún.
 
@@ -1315,33 +1322,33 @@ Defines un conxunto de entradas `type="checkbox"`, todas co mesmo atributo `name
 <input type="checkbox" name="color" value="blue" />
 ```
 
-Todas esas caixas de verificación estarán desmarcadas por defecto. Use o atributo `checked` para activalos na carga da páxina.
+Todas esas caixas de verificación estarán desmarcadas por defecto. Use o atributo `checked` para activalas na carga da páxina.
 
-Dado que este campo de entrada permite varios valores, ao enviar o  formulario os valores enviaranse ao servidor como unha matriz.
+Dado que este campo de entrada permite varios valores, ao enviar o formulario os valores enviaranse ao servidor como unha matriz - *array*.
 
 #### 8.4.5. Data e hora
 
-Temos algúns tipos de entrada para aceptar valores de data.
+Hai algúns tipos de entrada que aceptan valores de data.
 
-O `type="date"`campo de entrada permite ao usuario introducir unha data e, se é necesario, mostra un selector de datas:
+O eido `type="date"`permite ao usuario introducir unha data e, se é necesario, mostra un selector de datas:
 
 ```html
 <input type="date" name="birthday" />
 ```
 
-O `type="time"`campo de entrada permite ao usuario introducir unha hora e, se é necesario, mostra un selector de tempo:
+O eido `type="time"`  permite ao usuario introducir unha hora e, se é necesario, mostra un selector de tempo:
 
 ```html
 <input type="time" name="time-to-pickup" />
 ```
 
-O `type="month"`campo de entrada permite ao usuario introducir un mes e un ano:
+O eido `type="month"`  permite ao usuario introducir un mes e un ano:
 
 ```html
 <input type="month" name="choose-release-month" />
 ```
 
-O `type="week"`campo de entrada permite ao usuario introducir unha semana e un ano:
+O eido  `type="week"` permite ao usuario introducir unha semana e un ano:
 
 ```html
 <input type="week" name="choose-week" />
@@ -1349,7 +1356,7 @@ O `type="week"`campo de entrada permite ao usuario introducir unha semana e un a
 
 Todos eses campos permiten limitar o intervalo e o paso entre cada valor. Recomendo consultar MDN para obter os pequenos detalles sobre o seu uso.
 
-O `type="datetime-local"`campo permíteche escoller unha data e unha hora.
+O eido `type="datetime-local"` permíteche escoller unha data e unha hora.
 
 ```html
 <input type="datetime-local" name="date-and-time" />
@@ -1375,7 +1382,7 @@ O navegador encargarase de mostrar un selector de cores ao usuario.
 
 #### 8.4.7. Rango
 
-Este elemento de entrada mostra un elemento control deslizante. As persoas poden usalo para pasar dun valor inicial a un valor final:
+Este elemento de entrada mostra un elemento de control desprazable. As persoas poden usalo para pasar dun valor inicial a un valor final:
 
 ```html
 <input type="range" name="age" min="0" max="100" value="30" />
@@ -1389,15 +1396,15 @@ Podes proporcionar un paso opcional:
 
 #### 8.4.8. Teléfono
 
-O `type="tel"`campo de entrada úsase para introducir un número de teléfono:
+O eido `type="tel"` úsase para introducir un número de teléfono:
 
 ```html
 <input type="tel" name="telephone-number" />
 ```
 
-O principal punto de venda para usar `tel`over `text` está no móbil, onde o dispositivo pode optar por mostrar un teclado numérico.
+O principal interese para usar `tel` en vez de `text` está no móbil, onde o dispositivo pode optar por mostrar un teclado numérico.
 
-Especifique un atributo `pattern` para unha validación adicional:
+Especifica un atributo `pattern` para unha validación adicional:
 
 ```html
 <input type="tel" pattern="[0-9]{3}-[0-9]{8}" name="telephone-number" />
@@ -1405,7 +1412,7 @@ Especifique un atributo `pattern` para unha validación adicional:
 
 #### 8.4.9. URL
 
-O `type="url"`campo úsase para introducir un URL.
+O eido `type="url"` úsase para introducir unha URL.
 
 ```html
 <input type="url" name="website" />
@@ -1425,7 +1432,7 @@ O elemento `textarea` permite aos usuarios introducir texto de varias liñas. En
 <textarea></textarea>
 ```
 
-Podes establecer as dimensións usando CSS, pero tamén usando os atributos `rows` e :`cols`
+Podes establecer as dimensións usando CSS, pero tamén usando os atributos `rows` e `cols`:
 
 ```html
 <textarea rows="20" cols="10"></textarea>
@@ -1447,8 +1454,8 @@ Cada opción créase mediante a etiqueta `option`. Engades un nome á selección
 
 ```html
 <select name="color">
-  <option value="red">Red</option>
-  <option value="yellow">Yellow</option>
+  <option value="red">Vermello</option>
+  <option value="yellow">Amarelo</option>
 </select>
 ```
 
@@ -1456,8 +1463,8 @@ Podes configurar unha opción desactivada:
 
 ```html
 <select name="color">
-  <option value="red" disabled>Red</option>
-  <option value="yellow">Yellow</option>
+  <option value="red" disabled>Vermello</option>
+  <option value="yellow">Amarelo</option>
 </select>
 ```
 
@@ -1465,33 +1472,33 @@ Podes ter unha opción baleira:
 
 ```html
 <select name="color">
-  <option value="">None</option>
-  <option value="red">Red</option>
-  <option value="yellow">Yellow</option>
+  <option value="">Nada</option>
+  <option value="red">Vermello</option>
+  <option value="yellow">Amarelo</option>
 </select>
 ```
 
 As opcións pódense agrupar mediante a etiqueta `optgroup`. Cada grupo de opcións ten un atributo `label`:
 
 ```html
-<select name="color">
+<select name="cor">
   <optgroup label="Primary">
-    <option value="red">Red</option>
-    <option value="yellow">Yellow</option>
-    <option value="blue">Blue</option>
+    <option value="red">Vermello</option>
+    <option value="yellow">Amarelo</option>
+    <option value="blue">Azul</option>
   </optgroup>
   <optgroup label="Others">
-    <option value="green">Green</option>
-    <option value="pink">Pink</option>
+    <option value="green">Verde</option>
+    <option value="pink">Rosa</option>
   </optgroup>
 </select>
 ```
 
 ## 9. Táboas
 
-Nos primeiros tempos das táboas web eran unha parte moi importante dos deseños de construción.
+Nos primeiros tempos da web as táboas eran unha parte moi importante dos deseños e a construción.
 
-Máis tarde foron substituídos por CSS e as súas capacidades de deseño, e  hoxe temos poderosas ferramentas como CSS Flexbox e CSS Grid para crear  deseños. Agora as táboas úsanse só para, adiviña que, construír táboas!
+Máis tarde foron substituídos por CSS e as súas capacidades de deseño, e hoxe temos poderosas ferramentas como [CSS Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) e [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) para crear deseños. Agora as táboas úsanse só para, adiviña que, construír táboas!
 
 #### 9.0.1. A etiqueta `table`
 
@@ -1501,7 +1508,7 @@ Defines unha táboa usando a etiqueta `table`:
 <table></table>
 ```
 
-Dentro da táboa definiremos os datos. Razonamos en termos de filas, o que significa que engadimos filas nunha táboa (non columnas). Definiremos columnas dentro dunha fila.
+Dentro da táboa definiremos os datos. Engadimos filas nunha táboa e dentro delas definiremos columnas.
 
 #### 9.0.2. Filas
 
@@ -1517,13 +1524,13 @@ Engádese unha fila usando a etiqueta `tr`, e iso é o único que podemos engadi
 
 Esta é unha táboa con 3 filas.
 
-A primeira fila *pode* ocupar o papel da cabeceira.
+A primeira fila _pode_ ocupar o papel de cabeceira.
 
 #### 9.0.3. Cabeceiras das columnas
 
 A cabeceira da táboa contén o nome dunha columna, normalmente en letra negra.
 
-Pense nun documento de Excel / Google Sheets. A `A-B-C-D...`cabeceira superior.
+Pense nun documento de Excel / Google Sheets. E a cabeceira superior  `A-B-C-D...`.
 
 ![img](./assets/Screen Shot 2019-06-20 at 10.18.17.png)
 
@@ -1543,7 +1550,7 @@ Definimos a cabeceira usando a etiqueta `th`:
 
 #### 9.0.4. O contido da táboa
 
-O contido da táboa defínese mediante etiquetas `td`, dentro dos outros elementos `tr`:
+O contido da táboa defínese mediante etiquetas `td`, dentro dos elementos `tr`:
 
 ```html
 <table>
@@ -1579,7 +1586,7 @@ td {
 }
 ```
 
-fai que a táboa pareza máis a unha táboa adecuada:
+fai que a táboa pareza máis a unha táboa:
 
 ![img](./assets/Screen Shot 2019-06-20 at 10.26.15.png)
 
@@ -1655,11 +1662,11 @@ Podes engadir unha etiqueta `th` como primeiro elemento dentro dun `tr` que non 
 
 ![img](./assets/Screen Shot 2019-06-20 at 10.49.16.png)
 
-#### 9.0.7. Máis etiquetas para organizar a mesa
+#### 9.0.7. Máis etiquetas para organizar a táboa
 
-Podes engadir 3 etiquetas máis nunha táboa para organizala máis.
+Podes engadir 3 etiquetas máis nunha táboa para organizala mellor.
 
-Isto é mellor cando se usan mesas grandes. E tamén para definir correctamente un encabezado e un pé de páxina.
+Isto é mellor cando se usan táboas grandes. E tamén para definir correctamente un encabezado e un pé de páxina.
 
 Esas etiquetas son
 
@@ -1724,7 +1731,7 @@ Unha táboa debe ter unha etiqueta `caption` que describa o seu contido. Esa eti
 
 ## 10. Etiquetas multimedia: `audio` e `video`
 
-Nesta sección quero mostrarche as etiquetas `audio` e  `video`.
+Nesta sección quero mostrarche as etiquetas `audio` e `video`.
 
 ### 10.1. A etiqueta `audio`
 
@@ -1736,7 +1743,7 @@ Este elemento pode transmitir audio, quizais usando un micrófono a través de `
 <audio src="file.mp3"></audio>
 ```
 
-Por defecto o navegador non mostra ningún control para este elemento. O que significa que o audio só se reproducirá se se define como  reprodución automática (máis sobre isto máis adiante) e o usuario non  pode ver como detelo nin controlar o volume nin moverse pola pista.
+Por defecto o navegador non mostra ningún control para este elemento. O que significa que o audio só se reproducirá se se define como reprodución automática aínda que o usuario non poderá tampouco ver como detelo nin controlar o volume nin moverse pola pista.
 
 Para mostrar os controis integrados, pode engadir o atributo `controls`:
 
@@ -1758,15 +1765,15 @@ Un arquivo de audio por defecto non se reproduce automaticamente. Engade o atrib
 <audio src="file.mp3" controls autoplay></audio>
 ```
 
-> Nota: os navegadores móbiles non permiten a reprodución automática
+> *Nota: os navegadores móbiles non permiten a reprodución automática*
 
-O atributo `loop` reinicia a reprodución de audio ás 0:00 se se estableceu; en caso contrario, se non está presente, o audio detense ao final do arquivo:
+O atributo `loop` , se se estableceu, reinicia a reprodución do son ás 0:00; en caso contrario, se non está presente, o audio detense ao final do arquivo
 
 ```html
 <audio src="file.mp3" controls autoplay loop></audio>
 ```
 
-Tamén pode reproducir un arquivo de audio silenciado usando o atributo `muted` (non estou moi seguro de cal é a utilidade disto):
+Tamén podes reproducir un arquivo de audio silenciado usando o atributo `muted` (aínda que non estou moi seguro de cal é a utilidade disto):
 
 ```html
 <audio src="file.mp3" controls autoplay loop muted></audio>
@@ -1791,7 +1798,7 @@ Este elemento pode transmitir vídeo mediante unha cámara web a través `getUse
 
 Por defecto, o navegador non mostra ningún control para este elemento, só o vídeo.
 
-O que significa que o vídeo só se reproducirá se está configurado para a  reprodución automática (máis sobre isto máis adiante) e o usuario non  pode ver como detelo, deterlo, controlar o volume ou saltar a unha  posición específica do vídeo.
+O que significa que o vídeo só se reproducirá se está configurado para a reprodución automática e o usuario non pode ver como detelo, pausalo, controlar o volume ou saltar a unha posición específica do vídeo.
 
 Para mostrar os controis integrados, pode engadir o atributo `controls`:
 
@@ -1819,7 +1826,7 @@ Algúns navegadores tamén requiren o atributo `muted` para a reprodución autom
 <audio src="file.mp3" controls autoplay muted></audio>
 ```
 
-O atributo `loop` reinicia o vídeo que se reproduce ás 0:00 se se estableceu; en caso contrario, se non está presente, o vídeo detense ao final do arquivo:
+O atributo `loop` , se se estableceu, reinicia o vídeo que se reproduce ás 0:00 ; en caso contrario, se non está presente, o vídeo detense ao final do arquivo:
 
 ```html
 <video src="file.mp4" controls autoplay loop></video>
@@ -1833,7 +1840,7 @@ Podes configurar unha imaxe para que sexa a imaxe do póster:
 
 Se non está presente, o navegador mostrará o primeiro fotograma do vídeo en canto estea dispoñible.
 
-Podes establecer os atributos `width` e `height`para establecer o espazo que ocupará o elemento para que o navegador poida  ter en conta e non cambie o deseño cando finalmente se cargue. Toma un valor numérico, expresado en píxeles.
+Podes establecer os atributos `width` e `height`para establecer o espazo que ocupará o elemento para que o navegador poida ter en conta e non cambie o deseño cando finalmente se cargue. Toma un valor numérico, expresado en píxeles.
 
 Usando JavaScript pode escoitar varios eventos que ocorren nun elemento `video`, os máis básicos dos cales son:
 
@@ -1848,7 +1855,7 @@ A etiqueta `iframe` permítenos incorporar contido procedente doutras orixes (ou
 
 Tecnicamente, un iframe crea un novo contexto de navegación anidado. Isto significa que calquera cousa no iframe non interfire coa páxina principal e viceversa. JavaScript e CSS non "filtran" a/desde iframes.
 
-Moitos sitios usan iframes para realizar varias cousas. Quizais esteas familiarizado con Codepen, Glitch ou outros sitios que che  permitan codificar nunha parte da páxina e vexas o resultado nunha  caixa. Iso é un iframe.
+Moitos sitios usan iframes para realizar varias cousas. Quizais esteas familiarizado con Codepen, Glitch ou outros sitios que che permitan codificar nunha parte da páxina e vexas o resultado nunha caixa. Iso é un iframe.
 
 Crea un deste xeito:
 
@@ -1856,21 +1863,23 @@ Crea un deste xeito:
 <iframe src="page.html"></iframe>
 ```
 
-Tamén podes cargar un URL absoluto:
+Tamén podes cargar unha URL absoluta:
 
 ```html
 <iframe src="https://site.com/page.html"></iframe>
 ```
 
-Podes establecer un conxunto de parámetros de ancho e alto (ou configuralos  mediante CSS), se non, o iframe usará os valores predeterminados, unha  caixa de 300x150 píxeles:
+Podes establecer un conxunto de parámetros de ancho e alto (ou configuralos mediante CSS), se non, o iframe usará os valores predeterminados, unha caixa de 300x150 píxeles:
 
 ```html
 <iframe src="page.html" width="800" height="400"></iframe>
 ```
 
+`iframe` ten algunhas [contraindicacións de seguridade](https://www.reflectiz.com/blog/iframe-security/).
+
 ### 11.1. Srcdoc
 
-O atributo `srcdoc` permítelle especificar algún HTML en liña para mostrar. É unha alternativa a `src`, pero recente e non admitida en Edge 18 e anteriores, e en IE:
+O atributo `srcdoc` permítelle especificar algún HTML en liña para mostrar. É unha alternativa a `src`:
 
 ```html
 <iframe srcdoc="<p>My dog is a good dog</p>"></iframe>
@@ -1904,7 +1913,7 @@ Podemos seleccionar o que queremos permitir engadindo opcións no atributo `sand
 
 ### 11.3. Permitir
 
-Actualmente experimental e só é compatible con navegadores baseados en Chromium,  este é o futuro do uso compartido de recursos entre a xanela principal e o iframe.
+Actualmente experimental e só é compatible con navegadores baseados en Chromium, este é o futuro do uso compartido de recursos entre a xanela principal e o iframe.
 
 É semellante ao atributo `sandbox`, pero permítenos permitir funcións específicas, incluíndo:
 
@@ -1929,7 +1938,7 @@ Actualmente experimental e só é compatible con navegadores baseados en Chromiu
 
 Ao cargar un iframe, o navegador envíalle información importante sobre quen o está cargando na `Referer`cabeceira (nótese no single `r`, un erro de tipografía co que debemos convivir).
 
-> A falta de ortografía do referente orixinouse na proposta orixinal do  científico informático Phillip Hallam-Baker para incorporar o campo á  especificación HTTP. A falta de ortografía foi gravada no momento da súa incorporación ao documento de normas de solicitude de comentarios RFC 1945
+> A falta de ortografía do referente orixinouse na proposta orixinal do científico informático Phillip Hallam-Baker para incorporar o campo á especificación HTTP. A falta de ortografía foi gravada no momento da súa incorporación ao documento de normas de solicitude de comentarios RFC 1945
 
 O atributo `referrerpolicy` permítenos configurar o referente para enviar ao iframe ao cargalo. O referente é unha cabeceira HTTP que fai saber á páxina quen a está cargando. Estes son os valores permitidos:
 
@@ -1960,13 +1969,13 @@ O estándar HTML require `alt`que estea presente un atributo para describir a im
 <img src="dog.png" alt="A picture of a dog" />
 ```
 
-Podes establecer os atributos `width` e `height`para establecer o espazo que ocupará o elemento, para que o navegador poida  ter en conta e non cambie o deseño cando estea completamente cargado. Toma un valor numérico, expresado en píxeles.
+Podes establecer os atributos `width` e `height`para establecer o espazo que ocupará o elemento, para que o navegador poida ter en conta e non cambie o deseño cando estea completamente cargado. Toma un valor numérico, expresado en píxeles.
 
 ```html
 <img src="dog.png" alt="A picture of a dog" width="300" height="200" />
 ```
 
-### 12.1. A etiqueta  `figure`
+### 12.1. A etiqueta `figure`
 
 A etiqueta `figure` úsase a miúdo xunto coa etiqueta `img`.
 
@@ -1981,9 +1990,9 @@ A etiqueta `figure` úsase a miúdo xunto coa etiqueta `img`.
 
 A etiqueta `figcaption` envolve o texto do subtítulo.
 
-### 12.2. Usando imaxes sensibles`srcset`
+### 12.2. Usando imaxes sensibles `srcset`
 
-O atributo `srcset` permítelle configurar imaxes sensibles que o navegador pode usar  dependendo da densidade de píxeles ou do ancho da xanela, segundo as  súas preferencias. Deste  xeito, só pode descargar os recursos necesarios para renderizar a  páxina, sen descargar unha imaxe máis grande se está nun dispositivo  móbil, por exemplo.
+O atributo `srcset` permítelle configurar imaxes sensibles que o navegador pode usar dependendo da densidade de píxeles ou do ancho da xanela, segundo as súas preferencias. Deste xeito, só pode descargar os recursos necesarios para renderizar a páxina, sen descargar unha imaxe máis grande se está nun dispositivo móbil, por exemplo.
 
 Aquí tes un exemplo, onde damos 4 imaxes adicionais para 4 tamaños de pantalla diferentes:
 
@@ -2036,7 +2045,7 @@ HTML tamén nos dá a etiqueta `picture`, que fai un traballo moi similar a `src
 
 Usas `picture`cando en lugar de servir só unha versión máis pequena dun arquivo, queres cambialo por completo. Ou ofrece un formato de imaxe diferente.
 
-O mellor caso de uso que atopei é ao servir unha imaxe WebP, que é un formato que aínda non é moi compatible. Na etiqueta `picture` especificas unha lista de imaxes, e utilizaranse en orde, polo que no  seguinte exemplo, os navegadores que admiten WebP usarán a primeira  imaxe e, se non, volverán a JPG:
+O mellor caso de uso que atopei é ao servir unha imaxe WebP, que é un formato que aínda non é moi compatible. Na etiqueta `picture` especificas unha lista de imaxes, e utilizaranse en orde, polo que no seguinte exemplo, os navegadores que admiten WebP usarán a primeira imaxe e, se non, volverán a JPG:
 
 ```html
 <picture>
@@ -2069,13 +2078,13 @@ A etiqueta `picture` é recente pero agora é [compatible](https://caniuse.com/%
 
 É importante que deseñamos o noso HTML tendo en conta a accesibilidade.
 
-Ter HTML accesible significa que as persoas con discapacidade poden usar a Web. Hai usuarios totalmente cegos ou con discapacidade visual, persoas con  problemas de perda auditiva e multitude doutras discapacidades  diferentes.
+Ter HTML accesible significa que as persoas con discapacidade poden usar a Web. Hai usuarios totalmente cegos ou con discapacidade visual, persoas con problemas de perda auditiva e multitude doutras discapacidades diferentes.
 
 Desafortunadamente, este tema non cobra a importancia que precisa, e non parece tan xenial coma outros.
 
-E se unha persoa non pode *ver* a túa páxina, pero aínda así quere consumir o seu contido? En primeiro lugar, como o fan? Non poden usar o rato, usan algo chamado **lector de pantalla** . Non tes que imaxinar iso. Podes probar un agora: Google ofrece a [extensión gratuíta de ChromeVox Chrome](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn/) . A accesibilidade tamén debe encargarse de que as ferramentas poidan seleccionar facilmente elementos ou navegar polas páxinas.
+E se unha persoa non pode _ver_ a túa páxina, pero aínda así quere consumir o seu contido? En primeiro lugar, como o fan? Non poden usar o rato, usan algo chamado **lector de pantalla** . Non tes que imaxinar iso. Podes probar un agora: Google ofrece a [extensión gratuíta de ChromeVox Chrome](https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn/) . A accesibilidade tamén debe encargarse de que as ferramentas poidan seleccionar facilmente elementos ou navegar polas páxinas.
 
-As páxinas web e as aplicacións web non sempre se crean coa accesibilidade como un dos seus primeiros obxectivos, e quizais a versión 1 non sexa  accesible, pero é posible facer accesible unha páxina web despois do  feito. Antes é mellor, pero nunca é tarde.
+As páxinas web e as aplicacións web non sempre se crean coa accesibilidade como un dos seus primeiros obxectivos, e quizais a versión 1 non sexa accesible, pero é posible facer accesible unha páxina web despois do feito. Antes é mellor, pero nunca é tarde.
 
 É importante e no meu país, os sitios web creados polo goberno ou outras organizacións públicas deben ser accesibles.
 
@@ -2087,7 +2096,7 @@ Que significa isto para facer accesible un HTML? Permíteme ilustrar as principa
 
 O HTML semántico é moi importante e é unha das principais cousas que debes coidar. Permítanme ilustrar algúns escenarios comúns.
 
-É importante utilizar a estrutura correcta para as etiquetas de título. O máis importante é `h1`, e usa números máis altos para os menos importantes, pero todos os  títulos do mesmo nivel deberían ter o mesmo significado (pénsao como  unha estrutura en árbore)
+É importante utilizar a estrutura correcta para as etiquetas de título. O máis importante é `h1`, e usa números máis altos para os menos importantes, pero todos os títulos do mesmo nivel deberían ter o mesmo significado (pénsao como unha estrutura en árbore)
 
 ```css
 h1
@@ -2101,7 +2110,7 @@ h4
 
 Use `strong` e `em`no canto de `b` e`i` . Visualmente teñen o mesmo aspecto, pero os 2 primeiros teñen máis significado asociado a eles. `b` e `i`son elementos máis visuais.
 
-As listas son importantes. Un lector de pantalla pode detectar unha lista e proporcionar unha visión  xeral e, a continuación, permitir que o usuario elixa entrar na lista ou non.
+As listas son importantes. Un lector de pantalla pode detectar unha lista e proporcionar unha visión xeral e, a continuación, permitir que o usuario elixa entrar na lista ou non.
 
 Unha táboa debe ter unha etiqueta `caption` que describa o seu contido:
 
@@ -2135,7 +2144,7 @@ Tamén é bo para os buscadores, se iso é un incentivo para que o engadas.
 
 O`role` atributo permíteche asignar roles específicos aos distintos elementos da túa páxina.
 
-Podes asignar moitos roles diferentes: complementario, lista, elemento de  lista, principal, navegación, rexión, pestana, alerta, aplicación,  artigo, banner, botón, cela, caixa de verificación, información de  contido, diálogo, documento, fonte, figura, formulario, cuadrícula,  celda de cuadrícula, encabezado, img, caixa de lista, fila, grupo de  filas, busca, interruptor, táboa, panel de pestanas, caixa de texto,  temporizador.
+Podes asignar moitos roles diferentes: complementario, lista, elemento de lista, principal, navegación, rexión, pestana, alerta, aplicación, artigo, banner, botón, cela, caixa de verificación, información de contido, diálogo, documento, fonte, figura, formulario, cuadrícula, celda de cuadrícula, encabezado, img, caixa de lista, fila, grupo de filas, busca, interruptor, táboa, panel de pestanas, caixa de texto, temporizador.
 
 É moito e para a referencia completa de cada un deles déixovos [esta ligazón MDN](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles) . Pero non precisa asignar un rol a cada elemento da páxina. Os lectores de pantalla poden inferir a partir da etiqueta HTML na maioría dos casos. Por exemplo, non precisa engadir unha etiqueta de rol ás etiquetas semánticas como `nav`, `button`, `form`.
 
@@ -2150,7 +2159,7 @@ Poñamos o exemplo da etiqueta `nav`. Podes usalo para definir a navegación da 
 </nav>
 ```
 
-Se estiveses *obrigado* a usar unha `div` etiqueta en lugar de `nav`, usarías o `navigation`rol:
+Se estiveses _obrigado_ a usar unha `div` etiqueta en lugar de `nav`, usarías o `navigation`rol:
 
 ```html
 <div role="navigation">
@@ -2165,7 +2174,7 @@ Entón, aquí tes un exemplo práctico: `role`úsase para asignar un valor signi
 
 ### 13.4. Usa o atributo `tabindex`
 
-O atributo `tabindex` permítelle cambiar a orde de como se preme a tecla Tabulador selecciona os elementos "seleccionables". De forma predeterminada, só se poden "seleccionar" as ligazóns e os  elementos do formulario mediante a navegación mediante a tecla Tabulador (e non é necesario configuralos `tabindex`).
+O atributo `tabindex` permítelle cambiar a orde de como se preme a tecla Tabulador selecciona os elementos "seleccionables". De forma predeterminada, só se poden "seleccionar" as ligazóns e os elementos do formulario mediante a navegación mediante a tecla Tabulador (e non é necesario configuralos `tabindex`).
 
 Engadindo `tabindex="0"` fai seleccionable un elemento:
 
@@ -2177,7 +2186,7 @@ Usando`tabindex="-1"` elimina un elemento desta navegación baseada en pestanas 
 
 ### 13.5. Usa os atributos `aria`
 
-ARIA é un acrónimo que significa Aplicacións de Internet enriquecidas  accesibles e define a semántica que se pode aplicar aos elementos.
+ARIA é un acrónimo que significa Aplicacións de Internet enriquecidas accesibles e define a semántica que se pode aplicar aos elementos.
 
 #### 13.5.1.`aria-label`
 
@@ -2189,7 +2198,7 @@ Este atributo úsase para engadir unha cadea para describir un elemento.
 <p aria-label="The description of the product">...</p>
 ```
 
-Utilizo este atributo na barra lateral do meu blog, onde teño unha caixa de  entrada para a busca sen unha etiqueta explícita, xa que ten un atributo de marcador de posición.
+Utilizo este atributo na barra lateral do meu blog, onde teño unha caixa de entrada para a busca sen unha etiqueta explícita, xa que ten un atributo de marcador de posición.
 
 #### 13.5.2.`aria-labelledby`
 
@@ -2223,9 +2232,13 @@ Este atributo permítenos asociar un elemento con outro elemento que serve de de
 
 #### 13.5.4. Usa aria-hidden para ocultar contido
 
-Gústame un deseño minimalista nos meus sitios. O meu blog, por exemplo, é principalmente contido, con algunhas ligazóns na barra lateral. Pero algunhas cousas da barra lateral son só elementos visuais que non se  suman á experiencia dunha persoa que non pode ver a páxina. Como a imaxe do meu logotipo ou o selector de temas escuros/brillantes.
+Gústame un deseño minimalista nos meus sitios. O meu blog, por exemplo, é principalmente contido, con algunhas ligazóns na barra lateral. Pero algunhas cousas da barra lateral son só elementos visuais que non se suman á experiencia dunha persoa que non pode ver a páxina. Como a imaxe do meu logotipo ou o selector de temas escuros/brillantes.
 
 Engadir o atributo `aria-hidden="true"` indicará aos lectores de pantalla que ignoren ese elemento.
 ....
 
-\* *in progress*
+\* _in progress_
+
+---
+
+- "HTML Unleashed" de Flavio Copes, 1997

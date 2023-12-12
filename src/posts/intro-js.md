@@ -33,14 +33,14 @@ Basicamente pode facer calquera cousa. É tan popular que todo o novo que aparez
 
 JavaScript é unha linguaxe de programación:
 
-- de **nivel alto** : proporciona abstraccións que che permiten ignorar os detalles da máquina onde se está a executar. Xestiona a memoria automaticamente cun recolector de lixo, polo que podes centrarte no código en lugar de xestionar a memoria como necesitarían outras linguaxes como C, e ofrece moitas construcións que che permiten tratar con variables e obxectos moi poderosos.
-- **dinámico** : a diferenza das linguaxes de programación estáticas, unha linguaxe dinámica executa en tempo de execución moitas das cousas que fai unha linguaxe estática no momento da compilación. Isto ten pros e contras, e ofrécenos poderosas funcións como dixitación dinámica, encadernación tardía, reflexión, programación funcional, alteración do tempo de execución de obxectos, peches e moito máis. Non te preocupes se estas cousas son descoñecidas para ti, saberás todas elas ao final do curso.
-- **tecleado dinámicamente** : unha variable non aplica un tipo. Pode reasignar calquera tipo a unha variable, por exemplo, asignando un número enteiro a unha variable que contén unha cadea.
-- **escritos de forma vaga** : en oposición á dixitación forte, as linguaxes de tecleo laxa (ou débilmente) non aplican o tipo dun obxecto, o que permite máis flexibilidade, pero negándonos a seguridade e a comprobación de tipos (algo que ofrece TypeScript, que se constrúe enriba de JavaScript).
-- **interpretado** : coñécese comunmente como linguaxe interpretada, o que significa que non precisa dunha fase de compilación para que un programa poida executarse, a diferenza de C, Java ou Go, por exemplo. Na práctica, os navegadores compilan JavaScript antes de executalo, por razóns de rendemento, pero isto é transparente para ti: non hai ningún paso adicional.
-- **multiparadigma** : a linguaxe non aplica ningún paradigma de programación en particular, a diferenza de Java, por exemplo, que obriga ao uso de programación orientada a obxectos, ou C que obriga a programación imperativa. Podes escribir JavaScript usando un paradigma orientado a obxectos, usando prototipos e a nova sintaxe de clases (a partir de ES6). Podes escribir JavaScript nun estilo de programación funcional, coas súas funcións de primeira clase, ou mesmo nun estilo imperativo (como C).
+- de **alto nivel**: proporciona abstraccións que che permiten ignorar os detalles da máquina onde se está a executar. Xestiona a memoria automaticamente cun recolector de lixo, polo que podes centrarte no código en lugar de xestionar a memoria como necesitarían outras linguaxes como C, e ofrece moitas construcións que che permiten tratar con variables e obxectos moi poderosos.
+- **dinámico**: a diferenza das linguaxes de programación estáticas, unha linguaxe dinámica executa en tempo de execución moitas das cousas que fai unha linguaxe estática no momento da compilación. Isto ten pros e contras, e ofrécenos poderosas funcións como dixitación dinámica, encadernación tardía, reflexión, programación funcional, alteración do tempo de execución de obxectos, peches e moito máis. Non te preocupes se estas cousas son descoñecidas para ti, saberás todas elas ao final do curso.
+- de **tipo dinámico**:  non aplica un tipo a unha variable. E pode reasignar calquera tipo a unha variable, por exemplo, asignando un número enteiro a unha variable que contén unha cadea.
+- **escrito de forma vaga**: en oposición á dixitación forte, as linguaxes de tecleo laxo (ou debilmente tipados) non aplican o tipo dun obxecto, o que permite máis flexibilidade, pero negándonos a seguridade e a comprobación de tipos (algo que ofrece TypeScript, que se constrúe enriba de JavaScript).
+- **interpretado**: coñécese comunmente como linguaxe interpretada, o que significa que non precisa dunha fase de compilación para que un programa poida executarse, a diferenza de C, Java ou Go, por exemplo. Na práctica, os navegadores compilan JavaScript antes de executalo, por razóns de rendemento, pero isto é transparente para ti: non hai ningún paso adicional.
+- **multiparadigma**: a linguaxe non aplica ningún paradigma de programación en particular, a diferenza de Java, por exemplo, que obriga ao uso de programación orientada a obxectos, ou C que obriga a programación imperativa. Podes escribir JavaScript usando un paradigma orientado a obxectos, usando prototipos e a nova sintaxe de clases (a partir de ES6). Podes escribir JavaScript nun estilo de programación funcional, coas súas funcións de primeira clase, ou mesmo nun estilo imperativo (como C).
 
-Por se estás a preguntar, _JavaScript non ten nada que ver con Java_ , é unha mala elección de nome pero temos que vivir con el.
+Por se te estás a preguntar se _JavaScript ten algo que ver con Java_, a verdade é que non; só se trata dunha mala elección de nome, pero hai que vivir con el.
 
 ## 2. Un pouco de historia
 
@@ -62,11 +62,11 @@ Agora JavaScript tamén é a linguaxe que alimenta as bases de datos e moitas m�
 
 Ás veces é difícil separar JavaScript das características do entorno no que se usa.
 
-Por exemplo, a `console.log()`liña que podes atopar en moitos exemplos de código non é JavaScript. Pola contra, forma parte da vasta biblioteca de API que nos proporciona o navegador. Do mesmo xeito, no servidor, ás veces pode ser difícil separar as funcións da linguaxe JavaScript das API proporcionadas por Node.js.
+Por exemplo, a liña `console.log()` que podes atopar en moitos exemplos de código non é JavaScript. Pola contra, forma parte da vasta biblioteca de API que nos proporciona o navegador. Do mesmo xeito, no servidor, ás veces pode ser difícil separar as funcións da linguaxe JavaScript das API proporcionadas por Node.js.
 
-React ou Vue proporcionan unha función en particular? Ou é "JavaScript simple" ou "JavaScript vainilla", como se chama a miúdo?
+React ou Vue proporcionan unha función en particular? Ou é "JavaScript simple" ou "JavaScript vainilla", como se lle chama a miúdo?
 
-Neste libro falo de JavaScript, a linguaxe, sen complicar o teu proceso de aprendizaxe con cousas que están fóra dela, e proporcionadas por ecosistemas externos.
+Neste artigo falaremos de JavaScript, a linguaxe sen complicar e o seu proceso de aprendizaxe, e tamén de cousas que están fóra dela, e son proporcionadas por ecosistemas externos.
 
 ## 4. Unha breve introdución á sintaxe de JavaScript
 
@@ -80,17 +80,17 @@ Nesta pequena introdución quero falarvos de 5 conceptos:
 
 ### 4.1. Espazo en branco
 
-JavaScript non considera que os espazos en branco sexan significativos. Pódense engadir espazos e saltos de liña do xeito que che guste, aínda que isto sexa _en teoría_ .
+JavaScript non considera que os espazos en branco sexan significativos. Pódense engadir espazos e saltos de liña do xeito que che guste, aínda que isto sexa só _en teoría_.
 
-Na práctica, o máis probable é que manteña un estilo ben definido e se adhira ao que a xente usa habitualmente, e o faga cumprir mediante un linter ou unha ferramenta de estilo como _Prettier_ .
+Na práctica, o máis probable é que manteñas un estilo ben definido e te adhiras ao que a xente usa habitualmente. E seguramente o fagas mediante un linter ou unha ferramenta de estilo como _Prettier_. 
 
-Por exemplo, gústame usar sempre 2 caracteres para sangrar.
+E iso está ben, así que deixa que as ferramentas fagan ese traballo para ti.
 
 ### 4.2. Sensible a maiúsculas e minúsculas
 
-JavaScript distingue entre maiúsculas e minúsculas. Unha variable nomeada `something`é diferente de `Something`.
+JavaScript distingue entre maiúsculas e minúsculas. Unha variable nomeada `something` é diferente de outra chamada `Something`.
 
-O mesmo ocorre con calquera identificador.
+E o mesmo ocorre con calquera outro identificador.
 
 ### 4.3. Literais
 
@@ -106,7 +106,7 @@ true
 
 ### 4.4. Identificadores
 
-Un **identificador** é unha secuencia de caracteres que se pode usar para identificar unha variable, unha función ou un obxecto. Pode comezar cunha letra, o signo de dólar `$` ou un guión baixo `_` e pode conter díxitos. Usando Unicode, unha letra pode ser calquera carácter permitido, por exemplo, un emoji 😄.
+Un **identificador** é unha secuencia de caracteres que se pode usar para identificar unha variable, unha función ou un obxecto. Pode comezar cunha letra, o signo de dólar `$` ou un guión baixo `_` , e pode conter díxitos. Usando Unicode, unha letra pode ser calquera carácter permitido, por exemplo, un emoji 😄.
 
 ```js
 Test;
@@ -119,30 +119,30 @@ $test;
 
 O signo de dólar úsase habitualmente para facer referencia a elementos DOM.
 
-Algúns nomes están reservados para uso interno de JavaScript e non podemos utilizalos como identificadores.
+Algunhas palabras están reservadas para uso interno de JavaScript e non se poden usar como identificadores.
 
 ### 4.5. Comentarios
 
-Os comentarios son unha das partes máis importantes de calquera programa. En calquera linguaxe de programación. Son importantes porque nos permiten anotar o código e engadir información importante que, doutro xeito, non estaría dispoñible para outras persoas (ou para nós mesmos) lendo o código.
+Os comentarios son unha das partes máis importantes de calquera programa. En calquera linguaxe de programación son importantes porque nos permiten anotar o código e engadir información importante que, doutro xeito, non estaría dispoñible para outras persoas (ou para nós mesmos) cando lemos o código.
 
-En JavaScript, podemos escribir un comentario nunha única liña usando `//`. Todo o que segue `//`non se considera código polo intérprete de JavaScript.
+En JavaScript, podemos escribir un comentario nunha única liña usando `//`. O  intérprete de JavaScript ignorará todo o que segue a `//`, e non será considerado código.
 
 Como isto:
 
 ```js
-// a comment
-true; //another comment
+// un comentario
+true; // outro comentario
 ```
 
-Outro tipo de comentario é un comentario de varias liñas. Comeza `/*`e remata con `*/`.
+Tamén se pode crear un comentario de varias liñas. Comezando con `/*` e rematándoo con `*/`.
 
-Todo o intermedio non se considera código:
+Todo o  contido intermedio non se considera código:
 
 ```js
-/* some kind
-of
-comment
-
+/* algún tipo
+de
+comentario
+de varias liñas
 */
 ```
 
@@ -152,27 +152,27 @@ Cada liña dun programa JavaScript termina opcionalmente usando puntos e coma.
 
 Dixen opcionalmente, porque o intérprete de JavaScript é o suficientemente intelixente como para introducir puntos e comas para ti.
 
-Na maioría dos casos, pode omitir os puntos e coma por completo dos seus programas.
+Na maioría dos casos, poderías omitir por completo os puntos e coma dos seus programas.
 
-Este feito é moi controvertido, e sempre atoparás código que usa punto e coma e código que non.
+Este é un caso ben debatido, e seguro atoparás código que usa punto e coma tras cada sentenza e código que non o usa en absoluto. As preferencias son varias.
 
-A miña preferencia persoal é evitar sempre o punto e coma a non ser que sexa estritamente necesario.
+O meu consello é que empregues o punto e coma mentres estás aprendendo, axudarache a ler mellor o código e entender onde acaba unha sentenza e enceta outra. Co tempo aprenderás a obviar esta regra e evitar o punto e coma a non ser que sexa estritamente necesario.
 
 ## 6. Valores
 
-Unha `hello`cadea é un **valor** . Un número como `12`é un **valor** .
+Unha cadea `hello` é un **valor** . Un número como `12`é un **valor** .
 
-`hello`e `12`son valores. `string`e `number`son os **tipos** deses valores.
+`hello`  e `12`  son valores. `string` e `number`son os **tipos** deses valores.
 
 O **tipo** é o tipo de valor, a súa categoría. Temos moitos tipos diferentes en JavaScript, e falaremos deles en detalle máis adiante. Cada tipo ten as súas propias características.
 
-Cando necesitamos ter unha referencia a un valor, asignámolo a unha **variable** . A variable pode ter un nome e o valor é o que se almacena nunha variable, polo que despois podemos acceder a ese valor a través do nome da variable.
+Cando necesitamos ter unha referencia a un valor, asignámolo a unha **variable**. A variable pode ter un nome, e o valor é o que se almacena nunha variable, polo que despois podemos acceder a ese valor a través do nome da variable. 
 
 ## 7. Variables
 
-Unha variable é un valor asignado a un identificador, polo que podes referencialo e utilizalo máis tarde no programa.
+Unha variable é un valor asignado a un identificador, polo que poderás usar ese valor máis tarde con só referencialo polo nome da variable.
 
-Isto débese a que JavaScript está **escrito de forma vaga** , un concepto do que escoitarás falar con frecuencia.
+JavaScript está **escrito de forma vaga**, polo que as variables non teñen un tipo concreto. E o contido desa variable o que aclara de que tipo de dato se trata cada unha. 
 
 Unha variable debe ser declarada antes de poder usala.
 
@@ -190,9 +190,9 @@ let a = 0;
 
 Cal é a diferenza?
 
-`const`define unha referencia constante a un valor. Isto significa que a referencia non se pode cambiar. Non pode reasignarlle un valor novo.
+`const`define unha referencia constante a un valor. Isto significa que a referencia non se pode cambiar. Non se lle pode resignar un valor novo.
 
-Usando `let`pode asignarlle un novo valor.
+Usando `let` o valor asignado pode cambiar e pódese asignar un novo valor.
 
 Por exemplo, non podes facer isto:
 
@@ -203,22 +203,22 @@ a = 1;
 
 Porque recibirá un erro: `TypeError: Assignment to constant variable.`.
 
-Por outra banda, podes facelo usando `let`:
+Por outra banda, podes facer iso usando `let`:
 
 ```js
 let a = 0;
 a = 1;
 ```
 
-`const`non significa "constante" como significan outras linguas como C. En particular, non significa que o valor non poida cambiar, senón que non se pode reasignar. Se a variable apunta a un obxecto ou unha matriz (veremos máis sobre obxectos e matrices máis tarde) o contido do obxecto ou da matriz pode cambiar libremente.
+`const`non significa "constante" como noutras linguaxes, como C. En particular, non significa que o valor non poida cambiar, senón que non se pode reasignar. Se a variable apunta a un obxecto ou unha matriz (veremos máis sobre obxectos e matrices máis tarde) o contido do obxecto ou da matriz pode cambiar libremente.
 
-As variables constantes deben inicializarse no momento da declaración:
+As variables constantes deben inicializarse no momento da declaración, isto é que deben ter un valor:
 
 ```js
 const a = 0;
 ```
 
-pero `let`os valores pódense inicializar máis tarde:
+pero con `let `os valores pódense asignar máis tarde:
 
 ```js
 let a;
@@ -234,7 +234,7 @@ let c = 1,
   d = 2;
 ```
 
-Pero non pode volver declarar a mesma variable máis dunha vez:
+Pero non se pode volver declarar a mesma variable máis dunha vez:
 
 ```js
 let a = 1;
@@ -243,11 +243,11 @@ let a = 2;
 
 ou recibiría un erro de "declaración duplicada".
 
-O meu consello é que use sempre `const`e só use `let`cando saiba que terá que reasignar un valor a esa variable. Por que? Porque canto menos poder teña o noso código, mellor. Se sabemos que un valor non se pode reasignar, é unha fonte menos de erros.
+O meu consello é que sempre uses `const` e só uses `let` cando saibas que vas ter que reasignarlle un valor a esa variable. Se sabemos que un valor non se pode reasignar, é unha fonte menos de erros.
 
-Agora que vimos como traballar con `const`e `let`, quero mencionar `var`.
+Agora que vimos como traballar con `const` e `let`, imos mencionar `var`.
 
-Ata 2015, `var`era a única forma en que podíamos declarar unha variable en JavaScript. Hoxe, unha base de código moderna probablemente só use `const`e `let`. Hai algunhas diferenzas fundamentais que detallo [nesta publicación](https://flaviocopes.com/javascript-difference-let-var/) , pero se estás comezando, quizais non che importen. Só usa `const`e `let`.
+Ata 2015, `var` era a única forma en que podíamos declarar unha variable en JavaScript. Hoxe, unha base de código moderna probablemente só use `const` e `let`. Hai algunhas diferenzas fundamentais que se detallan [nesta publicación](https://flaviocopes.com/javascript-difference-let-var/) , pero se estás comezando, quizais non che importe. Así que ti só usa `const` e `let` a partir de agora.
 
 ## 8. Tipos
 
@@ -255,9 +255,9 @@ As variables en JavaScript non teñen ningún tipo adxunto.
 
 Están _sen escribir_ .
 
-Unha vez que lle asigne un valor con algún tipo a unha variable, posteriormente pode reasignar a variable para aloxar un valor de calquera outro tipo, sen ningún problema.
+Unha vez que lle asigne un valor ou dato de algún tipo a unha variable, ese será o tipo da variable. Aínda que posteriormente poderás reasignarlle a variable un valor ou dato de calquera outro tipo, sen ningún problema. Así se cambia o tipo de dato tamén o fai o tipo de variable, pero iso non debe preocuparte.
 
-En JavaScript temos 2 tipos principais de tipos: **tipos primitivos** e **tipos de obxectos** .
+En JavaScript temos 2 tipos principais de datos: **tipos primitivos** e **tipos de obxectos**.
 
 ### 8.1. Tipos primitivos
 
@@ -292,7 +292,7 @@ Partimos das moi sinxelas, chamadas expresións primarias:
 ("something");
 true;
 false;
-this; //the current scope
+this; // the current scope - ámbito actual
 undefined;
 i; //where i is a variable or a constant
 ```
@@ -324,13 +324,15 @@ As expresións máis avanzadas inclúen obxectos, funcións e matrices, e presen
 
 ## 10. Operadores
 
-Os operadores permítenche obter dúas expresións sinxelas e combinalas para formar unha expresión máis complexa.
+Os operadores permítenche usar dúas expresións sinxelas e combinalas para formar unha expresión máis complexa.
 
 Podemos clasificar os operadores en función dos operandos cos que traballan. Algúns operadores traballan con 1 operando. A maioría con 2 operandos. Só un operador funciona con 3 operandos.
 
 Nesta primeira introdución aos operadores, presentaremos os operadores cos que probablemente estea familiarizado: os operadores binarios.
 
-Xa vimos un operador cando falamos de variables: o operador de asignación `=`. Usa `=` para asignar un valor a unha variable:
+Xa vimos un operador cando falamos de variables: o operador de asignación `=`. 
+
+Usamos `=` para asignar un valor a unha variable:
 
 ```js
 let b = 2;
@@ -345,7 +347,7 @@ const three = 1 + 2;
 const four = three + 1;
 ```
 
-O operador `+` tamén serve como concatenación de cadeas se usa cadeas, así que presta atención:
+O operador `+` tamén serve para a concatenación de cadeas - *strings*-. Así que presta atención se usas cadeas:
 
 ```js
 const three = 1 + 2;
@@ -361,7 +363,7 @@ const two = 4 - 2;
 
 ### 10.3. O operador de división (/)
 
-Devolve o cociente do primeiro operador e do segundo:
+Devolve o cociente de dividir o primeiro operador entre o segundo:
 
 ```js
 const result = 20 / 5; //result === 4
@@ -371,13 +373,13 @@ const result = 20 / 7; //result === 2.857142857142857
 Se divides entre cero, JavaScript non xera ningún erro pero devolve o valor `Infinity` (ou `-Infinity` se o valor é negativo).
 
 ```js
-1 / 0 - //Infinity
-  1 / 0; //-Infinity
+1 / 0  //Infinity
+-1 / 0; //-Infinity
 ```
 
-### 10.4. O operador restante (%)
+### 10.4. O operador resto (%)
 
-O resto é un cálculo moi útil en moitos casos de uso:
+Devolve o resto de dividir o primeiro operador entre o segundo. O resto é un cálculo moi útil en moitos casos de uso:
 
 ```js
 const result = 20 % 5; //result === 0
@@ -401,7 +403,7 @@ Multiplica dous números
 
 ### 10.6. O operador de exponenciación (\*\*)
 
-Eleve o primeiro operando á potencia do segundo operando
+Eleva o primeiro operando á potencia do segundo operando
 
 ```js
 1 ** 2; //1
@@ -423,7 +425,7 @@ let a = 1 * 2 + ((5 / 2) % 2);
 
 O resultado é 2,5, pero por que?
 
-Que operacións se executan primeiro e cales hai que esperar?
+*Que operacións se executan primeiro e cales hai que esperar?*
 
 Algunhas operacións teñen máis prioridade que outras. As regras de precedencia están listadas nesta táboa:
 
@@ -447,18 +449,18 @@ let a = 2.5;
 
 ## 12. Operadores de comparación
 
-Despois dos operadores de asignación e matemáticos, o terceiro conxunto de operadores que quero introducir son os operadores de comparación.
+Despois dos operadores de asignación e matemáticos, o terceiro conxunto de operadores que imos ver son os operadores de comparación.
 
 Podes usar os seguintes operadores para comparar dous números ou dúas cadeas.
 
-Os operadores de comparación sempre devolven un booleano, un valor que é `true`ou `false`).
+Os operadores de comparación sempre devolven un booleano, un valor que só pode ser `true` ou `false`.
 
-Estes son **operadores de comparación de desigualdade** :
+Estes son **operadores de comparación de desigualdade**:
 
-- `<`significa "menos de"
-- `<=`significa "menos que ou igual a"
-- `>`significa "maior que"
-- `>=`significa "maior que ou igual a"
+- `<`    significa "menos de"
+- `<=`  significa "menos que ou igual a"
+- `>`    significa "maior que"
+- `>=`  significa "maior que ou igual a"
 
 Exemplo:
 
@@ -467,18 +469,18 @@ let a = 2;
 a >= 1; //true
 ```
 
-Ademais destes, temos 4 **operadores de igualdade** . Aceptan dous valores e devolven un booleano:
+Ademais destes 4, temos outro 2 **operadores de igualdade** . Aceptan dous valores e devolven un booleano:
 
 - `===`comproba a igualdade
 - `!==`comproba a desigualdade
 
-Teña en conta que tamén temos `==`e `!=`en JavaScript, pero suxiro encarecidamente usar só `===`e `!==`porque poden evitar algúns problemas sutís.
+Ter en conta que en JavaScript tamén temos `==` e `!=`, aínda que se  suxire usar só, ou preferentemente, `===` e `!==` porque poden evitar algúns problemas, complexos aínda que sutís.
 
 ## 13. Condicionais
 
-Cos operadores de comparación existentes, podemos falar de condicionais.
+Cos operadores de comparación existentes podemos compoñer estruturas condicionais.
 
-Unha `if`instrución úsase para facer que o programa tome unha ruta, ou outra, dependendo do resultado dunha avaliación de expresións.
+Unha instrución `if` úsase para facer que o programa tome unha ruta, ou outra, dependendo do resultado dunha avaliación de expresións.
 
 Este é o exemplo máis sinxelo, que sempre executa:
 
@@ -496,9 +498,9 @@ if (false) {
 }
 ```
 
-O condicional verifica a expresión que lle pasa por un valor verdadeiro ou falso. Se pasas un número, sempre se avalía como verdadeiro a menos que sexa 0. Se pasas unha cadea, sempre se avalía como verdadeiro a menos que sexa unha cadea baleira. Esas son regras xerais de tipos de casting a un booleano.
+O condicional verifica un valor verdadeiro ou falso en base á expresión que se lle pasa. Se pasas un número, sempre se avalía como verdadeiro a menos que sexa 0. Se pasas unha cadea, sempre se avalía como verdadeiro a menos que sexa unha cadea baleira. Esas son regras xerais de tipos de avaliación - *casting* -  a un booleano.
 
-Notaches as llaves rizadas? Iso chámase **bloque** e úsase para agrupar unha lista de instrucións diferentes.
+Notaches os corchetes ou chaves rizadas? Iso chámase **bloque** e úsase para agrupar unha lista de instrucións diferentes.
 
 Pódese poñer un bloque onde poida ter unha única declaración. E se tes unha única instrución para executar despois dos condicionais, podes omitir o bloque e simplemente escribir a instrución:
 
@@ -506,13 +508,19 @@ Pódese poñer un bloque onde poida ter unha única declaración. E se tes unha 
 if (true) doSomething();
 ```
 
-Pero sempre me gusta usar llaves para ser máis claro.
+Aínda que usar chaves pode resultar máis claro.
 
-### 13.1. Se non
+```js
+if (true) {
+    doSomething()
+};
+```
 
-Podes achegar unha segunda parte á `if`declaración: `else`.
+### 13.1. `if not` - Se non
 
-Achega unha instrución que se vai executar se a `if`condición é falsa:
+Podes achegar unha segunda parte á declaración `if`: `else`.
+
+Achega unha instrución que se vai executar se a condición `if` é falsa:
 
 ```js
 if (true) {
@@ -522,7 +530,7 @@ if (true) {
 }
 ```
 
-Dado que `else`acepta unha declaración, pode aniñar outra declaración if/else dentro dela:
+Dado que `else` acepta unha declaración, podes aniñar outra declaración if/else dentro dela:
 
 ```js
 if (a === true) {
@@ -549,7 +557,7 @@ const a = [];
 const a = Array();
 ```
 
-O primeiro é usar a **sintaxe literal da matriz** . O segundo usa a función integrada Array.
+O primeiro usa a **sintaxe literal da matriz** . O segundo usa a función integrada Array.
 
 Podes encher previamente a matriz usando esta sintaxe:
 
@@ -564,7 +572,7 @@ Unha matriz pode conter calquera valor, incluso valores de diferentes tipos:
 const a = [1, "Flavio", ["a", "b"]];
 ```
 
-Dado que podemos engadir unha matriz a unha matriz, podemos crear matrices multidimensionais, que teñen aplicacións moi útiles (por exemplo, unha matriz):
+Dado que podemos engadir unha matriz a unha matriz, podemos crear matrices multidimensionais, que teñen aplicacións moi útiles:
 
 ```js
 const matrix = [
@@ -576,6 +584,8 @@ const matrix = [
 matrix[0][0]; //1
 matrix[2][0]; //7
 ```
+
+:eye:  *É habitual que en programación a primeira posición - número- dunha iteración sexa 0*
 
 Podes acceder a calquera elemento da matriz facendo referencia ao seu índice, que comeza desde cero:
 
@@ -591,14 +601,14 @@ Podes inicializar unha nova matriz cun conxunto de valores usando esta sintaxe, 
 Array(12).fill(0);
 ```
 
-Podes obter o número de elementos da matriz comprobando a súa `length`propiedade:
+Podes obter o número de elementos da matriz comprobando a súa propiedade `length`:
 
 ```js
 const a = [1, 2, 3];
 a.length; //3
 ```
 
-Teña en conta que pode definir a lonxitude da matriz. Se asignas un número maior que a capacidade actual da matriz, non pasa nada. Se asigna un número menor, a matriz córtase nesa posición:
+Ter en conta que se pode definir a lonxitude da matriz. Se asignas un número maior que a capacidade actual da matriz, non pasa nada. Se asignas un número menor, a matriz córtase nesa posición:
 
 ```js
 const a = [1, 2, 3];
@@ -609,13 +619,13 @@ a; //[ 1, 2 ]
 
 ### 14.1. Como engadir un elemento a unha matriz
 
-Podemos engadir un elemento ao final dunha matriz usando o `push()`método:
+Podemos engadir un elemento ao final dunha matriz usando o método `push()`:
 
 ```js
 a.push(4);
 ```
 
-Podemos engadir un elemento ao comezo dunha matriz usando o `unshift()`método:
+Podemos engadir un elemento ao comezo dunha matriz usando o método `unshift()`:
 
 ```js
 a.unshift(0);
@@ -624,13 +634,13 @@ a.unshift(-2, -1);
 
 ### 14.2. Como eliminar un elemento dunha matriz
 
-Podemos eliminar un elemento do final dunha matriz usando o `pop()`método:
+Podemos eliminar un elemento do final dunha matriz usando o método `pop()`:
 
 ```js
 a.pop();
 ```
 
-Podemos eliminar un elemento do inicio dunha matriz usando o `shift()`método:
+Podemos eliminar un elemento do inicio dunha matriz usando o método `shift()`
 
 ```js
 a.shift();
@@ -638,7 +648,7 @@ a.shift();
 
 ### 14.3. Como unir dúas ou máis matrices
 
-Podes unir varias matrices usando `concat()`:
+Podes unir varias matrices usando o método `concat()`:
 
 ```js
 const a = [1, 2];
@@ -659,7 +669,7 @@ c; //[1,2,3,4]
 
 ### 14.4. Como atopar un elemento específico na matriz
 
-Podes usar o `find()`método dunha matriz:
+Podes usar o método `find()` nunha matriz:
 
 ```js
 a.find((element, index, array) => {
@@ -667,9 +677,9 @@ a.find((element, index, array) => {
 });
 ```
 
-Este método devolve o primeiro elemento que devolve `true`na función de devolución de chamada proporcionada. Devolve indefinido se nada devolve "verdadeiro".
+Este método devolve o primeiro elemento que devolve `true` na función de devolución de chamada proporcionada. Devolve indefinido -`undefined`-  se nada devolve "verdadeiro" - `true`.
 
-É a súa responsabilidade definir o corpo da función de devolución de chamada, para que poida dicir `find()`o que está a buscar.
+É responsabilidade do programador definir o corpo da función de devolución de chamada, para que `find()` poida dicir o que está a buscar.
 
 Unha sintaxe de uso común é:
 
@@ -679,9 +689,9 @@ const my_id = 3;
 a.find((x) => x.id === my_id);
 ```
 
-A liña anterior devolverá o primeiro elemento da matriz que teña `id`igual a `3`, o valor de `my_id`.
+A liña anterior devolverá o primeiro elemento da matriz que teña `id`  igual a `3`, o valor de `my_id`.
 
-`findIndex()`é outro método de matriz que funciona de forma similar a `find()`, pero devolve o índice do primeiro elemento que devolve verdadeiro, e se non se atopa, devolve `undefined`:
+`findIndex()` é outro método de matriz que funciona de forma similar a `find()`, pero devolve o índice do primeiro elemento que devolve verdadeiro, e se non se atopa, devolve `undefined`:
 
 ```js
 a.findIndex((element, index, array) => {
@@ -695,13 +705,13 @@ Outro método útil é `includes()`:
 a.includes(value);
 ```
 
-Devolve verdadeiro se `a`contén `value`.
+Devolve verdadeiro se `a` contén `value`.
 
 ```js
 a.includes(value, i);
 ```
 
-Devolve verdadeiro se `a`contén `value`despois da posición `i`.
+Devolve verdadeiro se `a` contén `value` despois da posición `i`.
 
 ## 15. Cadeas
 
@@ -710,24 +720,24 @@ Unha cadea é unha secuencia de caracteres.
 Tamén se pode definir como un literal de cadea, que se encerra entre comiñas ou comiñas dobres:
 
 ```js
-"A string";
-"Another string";
+"Unha string ou cadea";
+"Outra string";
 ```
 
-Persoalmente, prefiro as comiñas simples todo o tempo e só uso comiñas dobres en HTML para definir atributos.
+É indistinto usar unhas ou outras, pero se coherente e non as mestures. 
 
 Asigna un valor de cadea a unha variable como esta:
 
 ```js
-const name = "Flavio";
+const name = "Xian";
 ```
 
-Podes determinar a lonxitude dunha cadea usando a `length`súa propiedade:
+Podes calcular a lonxitude dunha cadea usando a súa propiedade `length`:
 
 ```js
-"Flavio".length; //6
-const name = "Flavio";
-name.length; //6
+"Xian".length; //4
+const name = "Xian";
+name.length; //4
 ```
 
 Esta é unha cadea baleira: `''`. A súa propiedade de lonxitude é 0:
@@ -736,22 +746,22 @@ Esta é unha cadea baleira: `''`. A súa propiedade de lonxitude é 0:
 "".length; //0
 ```
 
-Pódense unir dúas cadeas usando o `+`operador:
+Pódense unir dúas cadeas usando o operador  `+`:
 
 ```js
 "A " + "string";
 ```
 
-Podes usar o `+`operador para _interpolar_ variables:
+Podes usar o operador  `+`  para _interpolar_ variables:
 
 ```js
-const name = "Flavio";
-"My name is " + name; //My name is Flavio
+const name = "Xian";
+"Meu nome é " + name; //Meu nome é Xian
 ```
 
-Outra forma de definir cadeas é usar unha sintaxe especial chamada **literal literal** , definida dentro de backticks. Son especialmente útiles para facer que as cadeas multiliña sexan moito máis sinxelas. Con comiñas simples ou dobres non pode definir facilmente unha cadea multiliña: necesitaría usar caracteres de escape.
+Outra forma de definir cadeas é usar unha sintaxe especial chamada **literal** , definida dentro de acentos inversos - *backticks* \` \`. Son especialmente útiles para facer que as cadeas multiliña sexan moito máis sinxelas. Coas comiñas simples ou dobres non se pode definir facilmente unha cadea multiliña: necesitarías usar caracteres de escape.
 
-Unha vez que se abre un literal de modelo co backtick, só tes que premer Intro para crear unha nova liña, sen caracteres especiais, e represéntase como está:
+Unha vez que se abre un literal de modelo con *backtick*, só tes que premer Intro para crear unha nova liña, sen caracteres especiais, e representarase como está:
 
 ```js
 const string = `Hey
@@ -761,9 +771,9 @@ string
 is awesome!`;
 ```
 
-Os literais de modelos tamén son excelentes porque proporcionan un xeito sinxelo de interpolar variables e expresións en cadeas.
+Os modelos literais tamén son excelentes porque proporcionan un xeito sinxelo de interpolar variables e expresións en cadeas.
 
-Faino usando a `${...}`sintaxe:
+Faino usando a sintaxe `${...}`:
 
 ```js
 const var = 'test'
@@ -771,7 +781,7 @@ const string = `something ${var}`
 //something test
 ```
 
-dentro do `${}`pode engadir calquera cousa, incluso expresións:
+dentro do marcado `${}` podes engadir calquera cousa, incluso expresións:
 
 ```js
 const string = `something ${1 + 2 + 3}`;
@@ -781,23 +791,23 @@ const string2 = `something
 
 ## 16. Bucles
 
-Os bucles son unha das principais estruturas de control de JavaScript.
+Os bucles son unha das principais **estruturas de control** de JavaScript.
 
-Cun bucle podemos automatizar e repetir indefinidamente un bloque de código, cantas veces queremos que se execute.
+Cun bucle podemos automatizar e repetir indefinidamente un bloque de código, cantas veces queiramos que se execute.
 
 JavaScript ofrece moitas formas de iterar a través de bucles.
 
-Quero centrarme en 3 xeitos:
+Pero centrémonos nestes 3 xeitos:
 
-- bucles mentres
-- para bucles
-- para..de bucles
+- bucles `while`
+- bucles `for`
+- bucles `for ... of`
 
 ### 16.1.`while`
 
 O bucle while é a estrutura de bucle máis sinxela que nos proporciona JavaScript.
 
-Engadimos unha condición despois da `while`palabra clave e proporcionamos un bloque que se executa ata que a condición se avalía como `true`.
+Engadimos unha condición despois da palabra clave `while` e proporcionamos un bloque que se executa ata que a condición se avalía como `true`.
 
 Exemplo:
 
@@ -811,7 +821,7 @@ while (i < list.length) {
 }
 ```
 
-Podes interromper un `while`bucle usando a `break`palabra clave, así:
+Podes interromper un bucle `while` usando a palabra clave `break`, así:
 
 ```js
 while (true) {
@@ -819,7 +829,7 @@ while (true) {
 }
 ```
 
-e se decides que no medio dun bucle queres saltar a iteración actual, podes ir á seguinte iteración usando `continue`:
+e se decides que no medio dun bucle queres saltarte a iteración actual, podes ir á seguinte iteración usando `continue`:
 
 ```js
 while (true) {
@@ -829,9 +839,9 @@ while (true) {
 }
 ```
 
-Moi semellante a `while`, temos `do..while`bucles. É basicamente o mesmo que `while`, excepto que a condición se avalía _despois de_ executar o bloque de código.
+Moi semellante a `while`, temos os bucles `do..while`. É basicamente o mesmo que `while`, excepto que a condición se avalía _despois de_ executar o bloque de código.
 
-Isto significa que o bloque sempre se executa _polo menos unha vez_ .
+Isto significa que o bloque sempre se executa _polo menos unha vez_.
 
 Exemplo:
 
@@ -847,9 +857,9 @@ do {
 
 ### 16.2.`for`
 
-A segunda estrutura de bucle moi importante en JavaScript é o **bucle for** .
+A segunda estrutura de bucle, moi importante en JavaScript, é o bucle **for** .
 
-Usamos a `for`palabra clave e pasamos un conxunto de 3 instrucións: a inicialización, a condición e a parte de incremento.
+Usamos a palabra clave `for` e pasamos un conxunto de 3 instrucións: a inicialización, a condición e a parte de incremento.
 
 Exemplo:
 
@@ -862,11 +872,11 @@ for (let i = 0; i < list.length; i++) {
 }
 ```
 
-Do mesmo xeito que cos `while`bucles, pode interromper un `for`bucle usando `break`e pode avanzar rapidamente á seguinte iteración dun `for`bucle usando `continue`.
+Do mesmo xeito que cos bucles `while`, podes interromper un bucle `for` usando `break`, e podes avanzar rapidamente á seguinte iteración dun bucle `for` usando `continue`.
 
 ### 16.3.`for...of`
 
-Este bucle é relativamente recente (introducido en 2015) e é unha versión simplificada do `for`bucle:
+Este bucle é relativamente recente (introducido en 2015) e é unha versión simplificada do bucle `for`:
 
 ```js
 const list = ["a", "b", "c"];
@@ -882,7 +892,7 @@ En calquera programa JavaScript moderadamente complexo, todo ocorre dentro das f
 
 As funcións son unha parte fundamental e esencial de JavaScript.
 
-Que é unha función?
+**Que é unha función?**
 
 Unha función é un bloque de código, autónomo.
 
@@ -894,7 +904,7 @@ function getData() {
 }
 ```
 
-Pódese executar unha función cando queiras invocándoa, así:
+Pódese executar unha función cando queiras invocándoa polo seu nome, así:
 
 ```js
 getData();
@@ -927,7 +937,7 @@ getData("green", 24);
 getData("black");
 ```
 
-Teña en conta que na segunda invocación pasei o `black`parámetro cadea como `color`argumento, pero non `age`. Neste caso, `age`dentro da función está `undefined`.
+Ter en conta que na segunda invocación se pasa o parámetro cadea `black` como argumento `color`, pero non o parámetro `age`. Neste caso, dentro da función,  `age` está `undefined`.
 
 Podemos comprobar se un valor non está indefinido usando este condicional:
 
@@ -940,9 +950,9 @@ function getData(color, age) {
 }
 ```
 
-`typeof`é un operador unario que nos permite comprobar o tipo dunha variable.
+`typeof` é un operador unario - só necesita un único operando- que nos permite comprobar o tipo dunha variable.
 
-Tamén podes consultar deste xeito:
+Tamén o podes consultar deste xeito:
 
 ```js
 function getData(color, age) {
@@ -953,7 +963,7 @@ function getData(color, age) {
 }
 ```
 
-aínda que neste caso o condicional será falso se `age`é `null`, `0`ou unha cadea baleira.
+aínda que neste caso o condicional será falso se `age` é `null`, `0` ou unha cadea baleira.
 
 Podes ter valores predeterminados para os parámetros, no caso de que non se pasen:
 
@@ -965,7 +975,7 @@ function getData(color = "black", age = 25) {
 
 Podes pasar calquera valor como parámetro: números, cadeas, booleanos, matrices, obxectos e tamén funcións.
 
-Unha función ten un valor de retorno. De forma predeterminada, unha función devolve `undefined`, a menos que engada unha `return`palabra clave cun valor:
+Unha función ten un valor de retorno. De forma predeterminada, unha función devolve `undefined`, a menos que se engada unha palabra clave `return` cun valor:
 
 ```js
 function getData() {
@@ -985,7 +995,7 @@ function getData() {
 let result = getData();
 ```
 
-`result`agora contén unha cadea co `hi!`valor.
+`result` agora contén unha cadea co valor  `hi!`.
 
 Só podes devolver un valor.
 
@@ -993,7 +1003,7 @@ Para devolver varios valores, podes devolver un obxecto ou unha matriz, así:
 
 ```js
 function getData() {
-  return ["Flavio", 37];
+  return ["Xian", 37];
 }
 
 let [name, age] = getData();
@@ -1009,15 +1019,15 @@ const getData = () => {
 };
 ```
 
-A función aniñada non se pode chamar desde o exterior da función que encerra.
+A función aniñada non se pode chamar desde o exterior da función que a encerra.
 
-Tamén podes devolver unha función desde unha función.
+Tamén se pode devolver unha función desde unha función.
 
 ## 18. Funcións de frecha
 
 As funcións de frecha son unha introdución recente a JavaScript.
 
-Utilízanse con moita frecuencia en lugar de funcións “regulares”, a que describín no capítulo anterior. Atoparás as dúas formas utilizadas en todas partes.
+Utilízanse con moita frecuencia en lugar de funcións “regulares”, que acabamos de describir no apartado anterior. Atoparás as dúas formas utilizadas en todas partes.
 
 Visualmente, permítenche escribir funcións cunha sintaxe máis curta, desde:
 
@@ -1037,7 +1047,7 @@ a
 
 Pero... fíxate que aquí non temos nome.
 
-As funcións de frecha son anónimas. Debemos asignalos a unha variable.
+As funcións de frecha son anónimas. Debemos asignalas a unha variable.
 
 Podemos asignar unha función regular a unha variable, como esta:
 
@@ -1055,7 +1065,7 @@ let getData = function () {
 };
 ```
 
-e invoque a función usando o nome da variable:
+e invocar a función usando o nome da variable:
 
 ```js
 let getData = function () {
@@ -1091,7 +1101,7 @@ Se tes un (e só un) parámetro, podes omitir os parénteses por completo:
 const getData = (param) => console.log(param);
 ```
 
-As funcións de frecha permítenche ter un retorno implícito: os valores son devoltos sen ter que usar a `return`palabra clave.
+As funcións de frecha permítenche ter un retorno implícito: os valores son devoltos sen ter que usar a palabra clave `return`.
 
 Funciona cando hai unha instrución en liña no corpo da función:
 
@@ -1115,21 +1125,21 @@ e só podemos devolver un valor.
 
 As funcións de frecha poden conter outras funcións de frecha ou tamén funcións normais.
 
-Son moi similares, así que podes preguntar por que se presentaron? A gran diferenza coas funcións regulares é cando se usan como métodos obxecto. Isto é algo que en breve analizaremos.
+Son moi similares, así que pódeste preguntar por que se engadiron? A gran diferenza coas funcións regulares é cando se usan como métodos obxecto. Algo que analizaremos en breve.
 
 ## 19. Obxectos
 
 Calquera valor que non sexa de tipo primitivo (unha cadea, un número, un booleano, un símbolo, nulo ou indefinido) é un **obxecto** .
 
-Así é como definimos un obxecto:
+E así é como definimos un obxecto:
 
 ```js
 const car = {};
 ```
 
-Esta é a sintaxe **literal do obxecto** , que é unha das cousas máis bonitas de JavaScript.
+Esta é a sintaxe **literal do obxecto**.
 
-Tamén pode usar a `new Object`sintaxe:
+Tamén se pode usar a sintaxe `new Object`:
 
 ```js
 const car = new Object();
@@ -1141,7 +1151,7 @@ Outra sintaxe é usar `Object.create()`:
 const car = Object.create();
 ```
 
-Tamén pode inicializar un obxecto usando a `new`palabra clave antes dunha función cunha letra maiúscula. Esta función serve como construtor para ese obxecto. Alí, podemos inicializar os argumentos que recibimos como parámetros, para configurar o estado inicial do obxecto:
+Tamén pode inicializar un obxecto usando a palabra clave `new` antes dunha función cunha letra maiúscula. Esta función serve como construtor para ese obxecto. Alí, podemos inicializar os argumentos que recibimos como parámetros, para configurar o estado inicial do obxecto:
 
 ```js
 function Car(brand, model) {
@@ -1177,21 +1187,21 @@ anotherCar.color = "yellow";
 car.color; //'yellow'
 ```
 
-Mesmo as matrices ou funcións están, baixo o capó, obxectos, polo que é moi importante entender como funcionan.
+Mesmo as matrices ou as funcións están, baixo a denominación de obxecto, polo que é importante entender como funcionan.
 
 ### 19.1. Propiedades do obxecto
 
-Os obxectos teñen **propiedades** , que están compostas por unha etiqueta asociada a un valor.
+Os obxectos teñen **propiedades**, que están compostas por unha etiqueta asociada a un valor.
 
 O valor dunha propiedade pode ser de calquera tipo, o que significa que pode ser unha matriz, unha función e mesmo pode ser un obxecto, xa que os obxectos poden aniñar outros obxectos.
 
-Esta é a sintaxe literal do obxecto que vimos no capítulo anterior:
+Esta é a sintaxe literal do obxecto que vimos no apartado anterior:
 
 ```js
 const car = {};
 ```
 
-Podemos definir unha `color`propiedade deste xeito:
+Podemos definir unha propiedade `color` deste xeito:
 
 ```js
 const car = {
@@ -1199,9 +1209,9 @@ const car = {
 };
 ```
 
-aquí temos un `car`obxecto cunha propiedade chamada `color`, co valor `blue`.
+aquí temos un obxecto `car` cunha propiedade chamada `color`, co valor `blue`.
 
-As etiquetas poden ser calquera cadea, pero coidado cos caracteres especiais: se quixese incluír un carácter non válido como nome de variable no nome da propiedade, tería que usar comiñas ao redor:
+As etiquetas poden ser calquera cadea, pero coidado cos caracteres especiais: se se quixese incluír un carácter non válido como nome de variable no nome da propiedade, tería que usar comiñas ao redor:
 
 ```js
 const car = {
@@ -1216,19 +1226,19 @@ Como ves, cando temos varias propiedades, separamos cada propiedade cunha coma.
 
 Podemos recuperar o valor dunha propiedade usando 2 sintaxes diferentes.
 
-O primeiro é **a notación de puntos** :
+A primeira é **a notación de puntos** :
 
 ```js
 car.color; //'blue'
 ```
 
-O segundo (que é o único que podemos usar para propiedades con nomes non válidos), é usar corchetes:
+A segunda (que é a única que podemos usar para propiedades con nomes non válidos), é usar corchetes:
 
 ```js
 car["the color"]; //'blue'
 ```
 
-Se accedes a unha propiedade inexistente, obterás o `undefined`valor:
+Se accedes a unha propiedade inexistente, obterás o valor `undefined`:
 
 ```js
 car.brand; //undefined
@@ -1257,7 +1267,7 @@ ou
 car["brand"]["name"];
 ```
 
-Pode establecer o valor dunha propiedade cando define o obxecto.
+Podes establecer o valor dunha propiedade cando defines o obxecto.
 
 Pero sempre podes actualizalo máis tarde:
 
@@ -1270,7 +1280,7 @@ car.color = "yellow";
 car["color"] = "red";
 ```
 
-E tamén pode engadir novas propiedades a un obxecto:
+E tamén podes engadir novas propiedades a un obxecto:
 
 ```js
 car.model = "Fiesta";
@@ -1287,7 +1297,7 @@ const car = {
 };
 ```
 
-pode eliminar unha propiedade deste obxecto usando
+podes eliminar unha propiedade deste obxecto usando
 
 ```js
 delete car.brand;
@@ -1295,11 +1305,11 @@ delete car.brand;
 
 ### 19.2. Métodos de obxecto
 
-Falei de funcións nun capítulo anterior.
+Falouse das funcións nun apartado anterior.
 
 As funcións pódense asignar a unha propiedade de función, e neste caso chámanse **métodos** .
 
-Neste exemplo, a `start`propiedade ten unha función asignada e podemos invocala usando a sintaxe de puntos que usamos para as propiedades, cos parénteses ao final:
+Neste exemplo, a propiedade `start` ten unha función asignada e podemos invocala usando a sintaxe de puntos que usamos para as propiedades, cos parénteses ao final:
 
 ```js
 const car = {
@@ -1313,7 +1323,7 @@ const car = {
 car.start();
 ```
 
-Dentro dun método definido mediante unha `function() {}`sintaxe temos acceso á instancia do obxecto facendo referencia a `this`.
+Dentro dun método definido mediante unha sintaxe  `function() {}` temos acceso á instancia do obxecto facendo referencia a `this`.
 
 No seguinte exemplo, temos acceso aos valores das propiedades `brand` e `model` usando `this.brand` e `this.model`:
 
@@ -1330,7 +1340,7 @@ const car = {
 car.start();
 ```
 
-É importante ter en conta esta distinción entre funcións regulares e funcións de frecha: non temos acceso a `this`se usamos unha función de frecha:
+É importante ter en conta esta distinción entre funcións regulares e funcións de frecha: non temos acceso a `this` se usamos unha función de frecha:
 
 ```js
 const car = {
@@ -1367,19 +1377,19 @@ car.goTo("Rome");
 
 Falamos dos obxectos, que son unha das partes máis interesantes de JavaScript.
 
-Neste capítulo imos subir un nivel, introducindo clases.
+Neste apartado imos introducir as clases.
 
-Que son as clases? Son unha forma de definir un patrón común para varios obxectos.
+**Que son as clases?** Son unha forma de definir un patrón común para varios obxectos.
 
 Tomemos un obxecto persoa:
 
 ```js
 const person = {
-  name: "Flavio",
+  name: "Xian",
 };
 ```
 
-Podemos crear unha clase chamada `Person`(nótese na capital `P`, unha convención cando se usan clases), que teña unha `name`propiedade:
+Podemos crear unha clase chamada `Person` (fíxate na capital `P`, unha convención cando se usan clases e nomealas coa primeira letra maiúscula), que teña unha propiedade `name`:
 
 ```js
 class Person {
@@ -1387,24 +1397,24 @@ class Person {
 }
 ```
 
-Agora desde esta clase, inicializamos un `flavio`obxecto como este:
+Agora desde esta clase, inicializamos un obxecto `xian` como este:
 
 ```js
-const flavio = new Person();
+const xian = new Person();
 ```
 
-`flavio`chámase unha _instancia_ da clase Person.
+Chamamos  `xian` a unha _instancia_ da clase Person.
 
-Podemos establecer o valor da `name`propiedade:
+Podemos establecer o valor da propiedade `name`:
 
 ```js
-flavio.name = "Flavio";
+xian.name = "Xian";
 ```
 
 e podemos acceder a el usando
 
 ```js
-flavio.name;
+xian.name;
 ```
 
 como facemos coas propiedades dos obxectos.
@@ -1416,7 +1426,7 @@ Os métodos defínense deste xeito:
 ```js
 class Person {
   hello() {
-    return "Hello, I am Flavio";
+    return "Hello, I am Xian";
   }
 }
 ```
@@ -1426,14 +1436,14 @@ e podemos invocar métodos nunha instancia da clase:
 ```js
 class Person {
   hello() {
-    return "Hello, I am Flavio";
+    return "Hello, I am Xian";
   }
 }
-const flavio = new Person();
-flavio.hello();
+const xian = new Person();
+xian.hello();
 ```
 
-Hai un método especial chamado `constructor()`que podemos usar para inicializar as propiedades da clase cando creamos unha nova instancia de obxecto.
+Hai un método especial chamado `constructor()` que podemos usar para inicializar as propiedades da clase cando creamos unha nova instancia de obxecto.
 
 Funciona así:
 
@@ -1449,20 +1459,20 @@ class Person {
 }
 ```
 
-Teña en conta como usamos `this`para acceder á instancia do obxecto.
+Ter en conta como usamos `this`  para acceder á instancia do obxecto.
 
 Agora podemos crear unha instancia dun novo obxecto da clase, pasando unha cadea, e cando chamemos a `hello`, obteremos unha mensaxe personalizada:
 
 ```js
-const flavio = new Person("flavio");
-flavio.hello(); //'Hello, I am flavio.'
+const xian = new Person("xian");
+xian.hello(); //'Hello, I am Xian.'
 ```
 
-Cando se inicializa o obxecto, `constructor`chámase ao método, pasando calquera parámetro.
+Cando se inicializa o obxecto, chámase ao método `constructor`, pasando calquera parámetro.
 
 Normalmente os métodos defínense na instancia do obxecto, non na clase.
 
-Podes definir un método para `static`permitir que se execute na clase no seu lugar:
+Podes definir un método para permitir que se execute `static` na clase no seu lugar:
 
 ```js
 class Person {
@@ -1474,7 +1484,7 @@ class Person {
 Person.genericHello(); //Hello
 ```
 
-Isto é moi útil, ás veces.
+O que, ás veces, resulta moi útil.
 
 ## 21. Herdanza
 
@@ -1490,17 +1500,17 @@ class Person {
 }
 ```
 
-Podemos definir unha nova clase `Programmer`que se estenda `Person`:
+Podemos definir unha nova clase `Programmer` que se estenda `Person`:
 
 ```js
 class Programmer extends Person {}
 ```
 
-Agora, se instanciamos un novo obxecto con class `Programmer`, ten acceso ao `hello()`método:
+Agora, se instanciamos un novo obxecto coa clase  `Programmer`, ten acceso ao método  `hello()`:
 
 ```js
-const flavio = new Programmer();
-flavio.hello(); //'Hello, I am a Person'
+const xian = new Programmer();
+xian.hello(); //'Hello, I am a Person'
 ```
 
 Dentro dunha clase filla, podes facer referencia á clase pai chamando `super()`:
@@ -1512,8 +1522,8 @@ class Programmer extends Person {
   }
 }
 
-const flavio = new Programmer();
-flavio.hello();
+const xian = new Programmer();
+xian.hello();
 ```
 
 O programa anterior imprime _Ola, son unha persoa. Tamén son programador._ .
@@ -1524,59 +1534,63 @@ Na maioría das veces, o código JavaScript execútase de forma sincronizada.
 
 Isto significa que se executa unha liña de código, despois execútase a seguinte, etc.
 
-Todo é como esperas e como funciona na maioría das linguaxes de programación.
+Todo é como esperas e funciona como na maioría das linguaxes de programación.
 
 Non obstante, hai momentos nos que non podes esperar a que se execute unha liña de código.
 
-Non podes esperar 2 segundos a que se cargue un ficheiro grande e deter o programa por completo.
+Non podes esperar 2 segundos a que se cargue un arquivo grande e deter o programa por completo.
 
 Non podes esperar a que se descargue un recurso de rede antes de facer outra cousa.
 
 JavaScript resolve este problema usando **devolucións de chamada** .
 
-Un dos exemplos máis sinxelos de como usar as devolucións de chamada son os temporizadores. Os temporizadores non forman parte de JavaScript, pero son proporcionados polo navegador e Node.js. Déixame falar dun dos temporizadores que temos: `setTimeout()`.
+Un dos exemplos máis sinxelos de como usar as devolucións de chamada son os temporizadores. Os temporizadores non forman parte de JavaScript, pero son proporcionados polo navegador e por Node.js. 
 
-A `setTimeout()`función acepta 2 argumentos: unha función e un número. O número son os milisegundos que deben pasar antes de que se execute a función.
+Falemos dun dos temporizadores dispoñibles: `setTimeout()`.
+
+A función `setTimeout()` acepta dous argumentos: unha función e un número. 
+
+O número son os milisegundos que deben pasar antes de que se execute a función.
 
 Exemplo:
 
 ```js
 setTimeout(() => {
   // runs after 2 seconds
-  console.log("inside the function");
+  console.log("dentro da función");
 }, 2000);
 ```
 
-A función que contén a `console.log('inside the function')`liña executarase despois de 2 segundos.
+A función que contén a liña `console.log('dentro da función')` executarase despois de 2 segundos.
 
-Se engades un `console.log('before')`anterior á función e `console.log('after')`despois:
+Se engades un `console.log('before')` anterior á función e un `console.log('after')` despois:
 
 ```js
 console.log("before");
 setTimeout(() => {
   // runs after 2 seconds
-  console.log("inside the function");
+  console.log("dentro da función");
 }, 2000);
 console.log("after");
 ```
 
-Verás que isto ocorre na túa consola:
+Verás que na túa consola ocorre isto:
 
 ```js
 before
 after
-inside the function
+dentro da función
 ```
 
 A función de devolución de chamada execútase de forma asíncrona.
 
-Este é un patrón moi común cando se traballa co sistema de ficheiros, a rede, os eventos ou o DOM no navegador.
+Este é un patrón moi común cando se traballa co sistema de arquivos, a rede, os eventos ou o DOM no navegador.
 
-Todas as cousas que mencionei non son JavaScript "esenciais", polo que non se explican neste manual, pero atoparás moitos exemplos nos meus outros manuais dispoñibles en [flaviocopes.com](https://flaviocopes.com/book/read/js/) .
+Todas as cousas que mencionei non son JavaScript "esenciais", polo que non se explican neste manual, pero atoparás moitos exemplos noutros manuais dispoñibles. Proba en [flaviocopes.com](https://flaviocopes.com/book/read/js/) .
 
 Así é como podemos implementar as devolucións de chamada no noso código.
 
-Definimos unha función que acepta un `callback`parámetro, que é unha función.
+Definimos unha función que acepta un parámetro `callback`, que é unha función.
 
 Cando o código está listo para invocar a devolución de chamada, invocámolo pasando o resultado:
 
@@ -1600,7 +1614,7 @@ doSomething((result) => {
 
 As promesas son unha forma alternativa de tratar o código asíncrono.
 
-Como vimos no capítulo anterior, coas devolucións de chamada estaríamos pasando unha función a outra chamada de función, que sería chamada cando a función remate de procesar.
+Como vimos no apartado anterior, coas devolucións de chamada estaríamos pasando unha función a outra chamada de función, que sería chamada cando a función se remate de procesar.
 
 Como isto:
 
@@ -1610,7 +1624,7 @@ doSomething((result) => {
 });
 ```
 
-Cando o `doSomething()`código remata, chama á función recibida como un parámetro:
+Cando o código `doSomething()` remata, chama á función recibida como un parámetro:
 
 ```js
 const doSomething = (callback) => {
@@ -1620,7 +1634,7 @@ const doSomething = (callback) => {
 };
 ```
 
-O principal problema con este enfoque é que se necesitamos usar o resultado desta función no resto do noso código, todo o noso código debe estar aniñado dentro da devolución de chamada, e se temos que facer 2-3 devolucións de chamada introducimos o que é normalmente definido "inferno de devolución de chamada" con moitos niveis de funcións sangría noutras funcións:
+O principal problema con este enfoque é que se necesitamos usar o resultado desta función no resto do noso código, todo o noso código debe estar aniñado dentro da devolución de chamada, e se temos que facer 2-3 devolucións de chamada introducimos o que é normalmente definido como "inferno de devolución de chamada" con moitos niveis de funcións sangrados noutras funcións:
 
 ```js
 doSomething((result) => {
@@ -1650,11 +1664,11 @@ doSomething().then((result) => {
 });
 ```
 
-Primeiro chamamos á función, despois temos un `then()`método que se chama cando remata a función.
+Primeiro chamamos á función, despois temos un método `then()` que se chama cando remata a función.
 
 A sangría non importa, pero moitas veces usarás este estilo para obter claridade.
 
-É común detectar erros mediante un `catch()`método:
+É común detectar erros mediante un método `catch()`:
 
 ```js
 doSomething()
@@ -1666,15 +1680,15 @@ doSomething()
   });
 ```
 
-Agora, para poder usar esta sintaxe, a `doSomething()`implementación da función debe ser un pouco especial. Debe usar a API de Promises.
+Agora, para poder usar esta sintaxe, a implementación da función  `doSomething()`  debe ser un pouco especial. Debe usar a API de Promises.
 
-En lugar de declaralo como unha función normal:
+En lugar de declarala como unha función normal:
 
 ```js
 const doSomething = () => {};
 ```
 
-Declaramos como obxecto de promesa:
+Declarámola como obxecto de promesa:
 
 ```js
 const doSomething = new Promise();
@@ -1692,9 +1706,9 @@ Esta función recibe 2 parámetros. A primeira é unha función que chamamos par
 const doSomething = new Promise((resolve, reject) => {});
 ```
 
-Resolver unha promesa significa cumprila con éxito (o que resulta en chamar ao `then()`método a quen o utiliza).
+Resolver unha promesa significa cumprila con éxito (o que resulta en chamar ao método `then()` a quen o utiliza).
 
-Rexeitar unha promesa significa rematala cun erro (o que resulta en chamar ao `catch()`método en quen a utiliza).
+Rexeitar unha promesa significa rematala cun erro (o que resulta en chamar ao método `catch()` en quen a utiliza).
 
 Aquí tes como:
 
@@ -1712,9 +1726,9 @@ const doSomething = new Promise(
 )
 ```
 
-Podemos pasar un parámetro ás funcións de resolución e rexeitamento, de calquera tipo que queiramos.
+Podemos pasar un parámetro, de calquera tipo que queiramos, ás funcións de resolución e rexeitamento.
 
-## 24. Async e Await
+## 24. ``async`` e ``await``
 
 As funcións asíncronas son unha abstracción de nivel superior ás promesas.
 
@@ -1723,22 +1737,22 @@ Unha función asíncrona devolve unha promesa, como neste exemplo:
 ```js
 const getData = () => {
   return new Promise((resolve, reject) => {
-    setTimeout(() => resolve("some data"), 2000);
+    setTimeout(() => resolve("algúns datos"), 2000);
   });
 };
 ```
 
-Calquera código que queira usar esta función usará a `await`palabra clave xusto antes da función:
+Calquera código que queira usar esta función usará a palabra clave `await` xusto antes da función:
 
 ```js
 const data = await getData();
 ```
 
-e ao facelo, calquera dato que devolva a promesa asignarase á `data`variable.
+e ao facelo, calquera dato que devolva a promesa asignarase á variable  `data`.
 
-No noso caso, os datos son a cadea "algúns datos".
+No noso caso, os datos son a cadea ``"algúns datos"``.
 
-Cunha advertencia particular: sempre que usemos a `await`palabra clave, debemos facelo dentro dunha función definida como `async`.
+Cunha advertencia particular: sempre que usemos a palabra clave `await`, debemos facelo dentro dunha función definida como `async`.
 
 Como isto:
 
@@ -1749,7 +1763,7 @@ const doSomething = async () => {
 };
 ```
 
-O dúo Async/wait permítenos ter un código máis limpo e un modelo mental sinxelo para traballar con código asíncrono.
+O dúo ``async/await`` permítenos ter un código máis limpo e un modelo mental sinxelo para traballar con código asíncrono.
 
 Como podes ver no exemplo anterior, o noso código parece moi sinxelo. Compárao co código usando promesas ou funcións de devolución de chamada.
 
@@ -1776,7 +1790,7 @@ const getFirstUserData = () => {
 getFirstUserData();
 ```
 
-E aquí está a mesma funcionalidade proporcionada usando await/async:
+E aquí está a mesma funcionalidade proporcionada usando ``await/async``:
 
 ```js
 const getFirstUserData = async () => {
@@ -1798,56 +1812,56 @@ getFirstUserData();
 
 ## 25. Ámbito das variables
 
-Cando introducín variables, falei sobre o uso de `const`, `let`, e `var`.
+Cando falamos das variables, falamos sobre o uso de `const`, `let`, e `var`.
 
-O alcance é o conxunto de variables que é visible para unha parte do programa.
+O alcance - *scope*- é o conxunto de variables que é visible para unha parte do programa.
 
 En JavaScript temos un ámbito global, un ámbito de bloque e un ámbito de función.
 
 Se unha variable se define fóra dunha función ou bloque, está anexada ao obxecto global e ten un alcance global, o que significa que está dispoñible en todas as partes dun programa.
 
-Hai unha diferenza moi importante entre `var`, `let`e `const`declaracións.
+Hai unha diferenza moi importante entre `var`, `let` e `const` declaracións.
 
-Unha variable definida como `var`dentro dunha función só é visible dentro desa función. Do mesmo xeito que os argumentos dunha función:
+Unha variable definida como `var` dentro dunha función só é visible dentro desa función. Do mesmo xeito que os argumentos dunha función.
 
-Unha variable definida como `const`ou `let`por outra banda só é visible dentro do **bloque** onde está definida.
+Por outra banda, unha variable definida como `const` ou `let` só é visible dentro do **bloque** onde está definida.
 
-Un bloque é un conxunto de instrucións agrupadas nun par de chaves, como as que podemos atopar dentro dunha `if`declaración ou dun `for`bucle. E unha función, tamén.
+Un bloque é un conxunto de instrucións agrupadas nun par de chaves, como as que podemos atopar dentro dunha declaración `if` ou dun bucle `for`. E unha función, tamén.
 
-É importante entender que un bloque non define un novo ámbito para `var`, pero si para `let`e `const`.
+É importante entender que un bloque non define un novo ámbito para `var`, pero si para `let` e `const`.
 
 Isto ten implicacións moi prácticas.
 
-Supoña que define unha `var`variable dentro dun `if`condicional nunha función
+Supoña que define unha variable  `var` dentro dun condicional `if`  dentro dunha función:
 
 ```js
 function getData() {
   if (true) {
-    var data = "some data";
+    var data = "algún dato";
     console.log(data);
   }
 }
 ```
 
-Se chamas a esta función, imprimiráselle `some data`na consola.
+Se chamas a esta función, imprimiráselle a cadea `algún dato` na consola.
 
-Se tentas mover console.log(data) despois do `if`, aínda funciona:
+Se tentas mover ``console.log(data)`` despois do `if`, aínda funciona:
 
 ```js
 function getData() {
   if (true) {
-    var data = "some data";
+    var data = "algún dato";
   }
   console.log(data);
 }
 ```
 
-Pero se cambias `var data`a `let data`:
+Pero se cambias `var data` a `let data`:
 
 ```js
 function getData() {
   if (true) {
-    let data = "some data";
+    let data = "algún dato";
   }
   console.log(data);
 }
@@ -1855,34 +1869,34 @@ function getData() {
 
 Recibirás un erro: `ReferenceError: data is not defined`.
 
-Isto débese `var`a que ten un ámbito de función, e aquí está a suceder unha cousa especial, chamada elevación. En resumo, `var`JavaScript move a declaración á parte superior da función máis próxima antes de executar o código. Máis ou menos este é o aspecto da función para JS, internamente:
+Isto débese a que `var` ten un ámbito de función, e aquí está a suceder unha cousa especial, chamada elevación. En resumo,  JavaScript move a declaración `var` á parte superior da función máis próxima antes de executar o código. Máis ou menos este é o aspecto da función para JS, internamente:
 
 ```js
 function getData() {
   var data;
   if (true) {
-    data = "some data";
+    data = "algún dato";
   }
   console.log(data);
 }
 ```
 
-É por iso que tamén pode estar `console.log(data)`na parte superior dunha función, mesmo antes de que sexa declarada, e obterá `undefined`como valor para esa variable:
+É por iso que  `console.log(data)` tamén pode estar na parte superior dunha función, mesmo antes de que sexa declarada, e obterá `undefined` como valor para esa variable:
 
 ```js
 function getData() {
   console.log(data);
   if (true) {
-    var data = "some data";
+    var data = "algún dato";
   }
 }
 ```
 
-pero se cambias a `let`, terás un erro `ReferenceError: data is not defined`, porque o izado non ocorre coas `let`declaracións.
+pero se cambias a `let`, terás un erro `ReferenceError: data is not defined`, porque a elevación non ocorre coas declaracións `let`.
 
-`const`segue as mesmas regras que `let`: é de ámbito de bloque.
+`const` segue as mesmas regras que `let`: é de ámbito de bloque.
 
-Pode ser complicado ao principio, pero unha vez que te deas conta desta diferenza, verás por que `var`hoxe en día se considera unha mala práctica en comparación con `let`: teñen menos partes móbiles e o seu alcance limítase ao bloque, o que tamén os fai moi boas como variables de bucle, porque deixan de existir despois de que remate un bucle:
+Pode ser complicado ao principio, pero unha vez que te deas conta desta diferenza, verás por que hoxe en día  `var` se considera unha mala práctica en comparación con `let` ou `const`: teñen menos partes móbiles e o seu alcance limítase ao bloque, o que tamén as fai máis axeitadas como variables de bucle, porque deixan de existir despois de que remate un bucle:
 
 ```js
 function doLoop() {
@@ -1895,10 +1909,12 @@ function doLoop() {
 doLoop();
 ```
 
-Cando saia do bucle, `i`será unha variable válida co valor 10.
+Cando saia do bucle, `i` será unha variable válida co valor 10.
 
-Se cambia a `let`, se o intenta `console.log(i)`producirá un erro `ReferenceError: i is not defined`.
+Se cambia a `let`, se o intenta `console.log(i)` producirá un erro `ReferenceError: i is not defined`.
 
 ---
 
 \* _in progress_
+
+*última revisión nov.2023*

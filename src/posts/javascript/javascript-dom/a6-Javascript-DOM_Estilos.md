@@ -6,151 +6,150 @@ description: Uso de javascript na arbore do modelo de obxecto do documento
 
 # Estilo JavaScript
 
-**Resumo** : neste tutorial, aprenderás a usar a propiedade style para manipular o estilo en liña dos elementos HTML.
+**Resumo**: nesta sección, aprenderás a usar a propiedade ``style`` para manipular o estilo en liña dos elementos HTML.
 
 ## Establecer estilos en liña
 
-Para establecer o estilo en liña dun elemento, usa a `style`propiedade dese elemento:
+Para establecer o estilo en liña dun elemento, usar a propiedade `style` dese elemento:
 
-```
+```js
 element.style
 ```
 
-A `style`propiedade devolve o obxecto de só lectura `CSSStyleDeclaration`que contén unha lista de propiedades CSS. Por exemplo, para establecer a cor dun elemento como `red`, usa o seguinte código:
+A propiedade `style` devolve o obxecto de só lectura `CSSStyleDeclaration` que contén unha lista de propiedades CSS. Por exemplo, para establecer a cor dun elemento como `red`, usa o seguinte código:
 
-```
+```js
 element.style.color = 'red';
 ```
 
-Se a propiedade CSS contén guións ( `-`), por exemplo, `-webkit-text-stroke`pode usar a notación tipo matriz ( `[]`) para acceder á propiedade:
+Se a propiedade CSS contén guións ( `-`), por exemplo, `-webkit-text-stroke` se pode usar a notación tipo matriz (`[]`) para acceder á propiedade:
 
-```
+```js
 element.style.['-webkit-text-stock'] = 'unset';
 ```
 
-A seguinte táboa mostra as propiedades CSS comúns:
+A seguinte táboa mostra as propiedades CSS máis comúns:
 
-| **CSS**                 | **JavaScript**                     |
-| :---------------------- | :--------------------------------- |
-| fondo                   | fondo                              |
-| anexo-fondo             | fondoAnexo                         |
-| cor de fondo            | cor de fondo                       |
-| imaxe de fondo          | Imaxe de fondo                     |
-| posición de fondo       | posición de fondo                  |
-| repetición de fondo     | fondoRepetir                       |
-| fronteira               | fronteira                          |
-| borde-inferior          | bordeAbaixo                        |
-| cor do bordo inferior   | borderBottomColor                  |
-| estilo borde inferior   | borderBottomStyle                  |
-| bordo-ancho-inferior    | borderBottomWidth                  |
-| cor-borde               | borderColor                        |
-| fronteira-esquerda      | bordoEsquerda                      |
-| bordo-cor-esquerda      | borderLeftColor                    |
-| estilo borde esquerdo   | borderLeftStyle                    |
-| bordo-esquerdo-ancho    | borderLeftWidth                    |
-| fronteira-dereita       | fronteiraDereita                   |
-| bordo-cor-dereita       | borderRightColor                   |
-| borde-dereita-estilo    | borderRightStyle                   |
-| bordo-dereita-ancho     | borderRightWidth                   |
-| estilo borde            | borderStyle                        |
-| borde superior          | borderTop                          |
-| bordo-cor-superior      | borderTopColor                     |
-| estilo borde superior   | borderTopStyle                     |
-| bordo-superior-ancho    | borderTopWidth                     |
-| ancho de bordo          | borderWidth                        |
-| claro                   | claro                              |
-| clip                    | clip                               |
-| cor                     | cor                                |
-| cursor                  | cursor                             |
-| visualización           | visualización                      |
-| filtro                  | filtro                             |
-| flotar                  | cssFloat                           |
-| tipo de letra           | tipo de letra                      |
-| familia-tipo            | FontFamily                         |
-| tamaño de letra         | tamaño de letra                    |
-| variante da fonte       | FontVariant                        |
-| peso de letra           | FontWeight                         |
-| altura                  | altura                             |
-| esquerda                | esquerda                           |
-| espazamento de letras   | espazamento de letras              |
-| altura da liña          | Altura da liña                     |
-| estilo de lista         | ListStyle                          |
-| imaxe-estilo-lista      | listStyleImage                     |
-| posición-estilo-lista   | listStylePosition                  |
-| tipo de estilo de lista | listStyleType                      |
-| marxe                   | marxe                              |
-| marxe-inferior          | marxeAbaixo                        |
-| marxe esquerda          | marxe esquerda                     |
-| marxe-dereita           | marxeDereita                       |
-| marxe-top               | marxeTop                           |
-| desbordamento           | desbordamento                      |
-| acolchado               | acolchado                          |
-| fondo acolchado         | acolchadoAbaixo                    |
-| recheo-esquerda         | recheoEsquerda                     |
-| recheo-dereita          | acolchadoDereita                   |
-| acolchado superior      | paddingTop                         |
-| salto de páxina despois | pageBreakAfter                     |
-| salto de páxina antes   | pageBreakBefore                    |
-| posición                | posición                           |
-| trazo-dasharray         | accidente cerebrovascularDasharray |
-| trazo-desplazamento     | strokeDashoffset                   |
-| ancho de trazo          | strokeWidth                        |
-| aliñación de texto      | textAlign                          |
-| texto-decoración        | TextoDecoración                    |
-| sangría de texto        | textindent                         |
-| texto-transformación    | TextTransform                      |
-| arriba                  | arriba                             |
-| aliñamento vertical     | Aliñamento vertical                |
-| visibilidade            | visibilidade                       |
-| ancho                   | ancho                              |
-| índice z                | zIndex                             |
+| **CSS**               | **JavaScript**       |
+| :-------------------- | :------------------- |
+| background            | background           |
+| background-attachment | backgroundAttachment |
+| background-color      | backgroundColor      |
+| background-image      | backgroundImage      |
+| background-position   | backgroundPosition   |
+| background-repeat     | backgroundRepeat     |
+| border                | border               |
+| border-bottom         | borderBottom         |
+| border-bottom-color   | borderBottomColor    |
+| border-bottom-style   | borderBottomStyle    |
+| border-bottom-width   | borderBottomWidth    |
+| border-color          | borderColor          |
+| border-left           | borderLeft           |
+| border-left-color     | borderLeftColor      |
+| border-left-style     | borderLeftStyle      |
+| border-left-width     | borderLeftWidth      |
+| border-right          | borderRight          |
+| border-right-color    | borderRightColor     |
+| border-right-style    | borderRightStyle     |
+| border-right-width    | borderRightWidth     |
+| border-style          | borderStyle          |
+| border-top            | borderTop            |
+| border-top-color      | borderTopColor       |
+| border-top-style      | borderTopStyle       |
+| border-top-width      | borderTopWidth       |
+| border-width          | borderWidth          |
+| clear                 | clear                |
+| clip                  | clip                 |
+| color                 | color                |
+| cursor                | cursor               |
+| display               | display              |
+| filter                | filter               |
+| float                 | cssFloat             |
+| font                  | font                 |
+| font-family           | fontFamily           |
+| font-size             | fontSize             |
+| font-variant          | fontVariant          |
+| font-weight           | fontWeight           |
+| height                | height               |
+| left                  | left                 |
+| letter-spacing        | letterSpacing        |
+| line-height           | lineHeight           |
+| list-style            | listStyle            |
+| list-style-image      | listStyleImage       |
+| list-style-position   | listStylePosition    |
+| list-style-type       | listStyleType        |
+| margin                | margin               |
+| margin-bottom         | marginBottom         |
+| margin-left           | marginLeft           |
+| margin-right          | marginRight          |
+| margin-top            | marginTop            |
+| overflow              | overflow             |
+| padding               | padding              |
+| padding-bottom        | paddingBottom        |
+| padding-left          | paddingLeft          |
+| padding-right         | paddingRight         |
+| padding-top           | paddingTop           |
+| page-break-after      | pageBreakAfter       |
+| page-break-before     | pageBreakBefore      |
+| position              | position             |
+| stroke-dasharray      | strokeDasharray      |
+| stroke-dashoffset     | strokeDashoffset     |
+| stroke-width          | strokeWidth          |
+| text-align            | textAlign            |
+| text-decoration       | textDecoration       |
+| text-indent           | textIndent           |
+| text-transform        | textTransform        |
+| top                   | top                  |
+| vertical-align        | verticalAlign        |
+| visibility            | visibility           |
+| width                 | width                |
+| z-index               | zIndex               |
 
-Para anular completamente o estilo en liña existente, establece a `cssText`propiedade do `style`obxecto. Por exemplo:
+Para anular completamente o estilo en liña existente, establecer a propiedade  `cssText` do obxecto `style`. Por exemplo:
 
-```
+```js
 element.style.cssText = 'color:red;background-color:yellow';
-
 ```
 
 Ou podes usar o `setAttribute()`método:
 
-```
+```js
 element.setAttribute('style','color:red;background-color:yellow');
 ```
 
 Unha vez configurado o estilo en liña, pode modificar unha ou máis propiedades CSS:
 
-```
+```js
 element.style.color = 'blue';
 ```
 
-Se non queres sobrescribir completamente as propiedades CSS existentes, podes concatenar a nova propiedade CSS como `cssText`segue:
+Se non queres sobrescribir completamente as propiedades CSS existentes, podes concatenar a nova propiedade CSS como `cssText`:
 
-```
+```js
 element.style.cssText += 'color:red;background-color:yellow';
 ```
 
-Neste caso, o `+= `operador engade a nova cadea de estilo á existente.
+Neste caso, o operador `+= ` engade a nova cadea de estilo á existente.
 
-A seguinte `css()`función auxiliar úsase para definir varios estilos para un elemento a partir dun obxecto de pares clave-valor:
+A seguinte función auxiliar `css()`  úsase para definir varios estilos para un elemento a partir dun obxecto de pares clave-valor:
 
-```
+```js
 function css(e, styles) {
     for (const property in styles)
         e.style[property] = styles[property];
 }
 ```
 
-Podes usar esta `css()`función para definir varios estilos para un elemento co id `#content`do seguinte xeito:
+Podes usar esta función `css()` para definir varios estilos para un elemento co ``id`` `#content` do seguinte xeito:
 
-```
+```js
 let content = document.querySelector('#content');
 css(content, { background: 'yellow', border: 'solid 1px red'});
 ```
 
-O seguinte exemplo usa o `style`obxecto para establecer as propiedades CSS dun parágrafo co id `content`:
+O seguinte exemplo usa o obxecto `style` para establecer as propiedades CSS dun parágrafo co ``id`` `content`:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -168,65 +167,63 @@ O seguinte exemplo usa o `style`obxecto para establecer as propiedades CSS dun p
 </html>
 ```
 
-Cómo funciona:
+**Como funciona:**
 
-- En primeiro lugar, selecciona o elemento de parágrafo cuxo ID é `content`usando o `querySelector()`método.
-- A continuación, establece as propiedades da cor e do peso da fonte do parágrafo configurando as propiedades `color`e `fontWeight`do `style`obxecto.
+- En primeiro lugar, selecciona o elemento de parágrafo cuxo `id` é `content` usando o método `querySelector()`.
+- A continuación, establece as propiedades da cor e do peso da fonte do parágrafo configurando as propiedades `color` e `fontWeight` do obxecto `style`.
 
 ## Obtención de estilos en liña
 
-A `style`propiedade devolve os estilos en liña dun elemento. Non é moi útil na práctica porque a `style`propiedade non devolve as regras que veñen doutros lugares, por exemplo, estilos dunha folla de estilo externa.
+A propiedade `style` devolve os estilos en liña dun elemento. Non é moi útil na práctica porque a propiedade `style` non devolve as regras que veñen doutros lugares, por exemplo, estilos dunha folla de estilo externa.
 
-Para aplicar todos os estilos a un elemento, debes usar o `window.getComputedStyle()`método.
+Para aplicar todos os estilos a un elemento, debes usar o método `window.getComputedStyle()`.
 
 ## Resumo
 
-- Use as propiedades do `element.style`obxecto para establecer as propiedades CSS en liña para o elemento HTML.
+- Usar as propiedades do obxecto `element.style` para establecer as propiedades CSS en liña para o elemento HTML.
 
-# getComputedStyle
+# ``getComputedStyle``
 
-**Resumo** : neste tutorial, aprenderás a usar JavaScript `getComputedStyle()`para obter as propiedades CSS calculadas dun elemento.
+**Resumo**: nesta sección, aprenderás a usar o método `getComputedStyle()` para obter as propiedades CSS calculadas dun elemento.
 
-## Introdución ao `getComputedStyle()`método JavaScript
+## Introdución ao método `getComputedStyle()`
 
-É `getComputedStyle()`un método do `window`obxecto, que devolve un obxecto que contén o estilo calculado e un elemento:
+`getComputedStyle()` é un método do obxecto `window`, que devolve un obxecto que contén o estilo calculado e un elemento:
 
-```
+```js
 let style = window.getComputedStyle(element [,pseudoElement]);
-
 ```
 
 ### Parámetros
 
-O `getComputedStyle()`método acepta dous argumentos:
+O método `getComputedStyle()` acepta dous argumentos:
 
-- `element`é o elemento que quere devolver os estilos calculados. Se pasa outro tipo de nodo, por exemplo, nodo de texto, o método xerará un erro.
-- `pseudoElement`especifica o pseudoelemento que debe coincidir. Por defecto é `null`.
+- `element` é o elemento que quere devolver os estilos calculados. Se pasa outro tipo de nodo, por exemplo, nodo de texto, o método xerará un erro.
+- `pseudoElement` especifica o pseudoelemento que debe coincidir. Por defecto é `null`.
 
-Por exemplo, se queres obter o valor calculado de todas as propiedades CSS dunha ligazón co estado de hover, pasa os seguintes argumentos ao `getComputedStyle()`método:
+Por exemplo, se queres obter o valor calculado de todas as propiedades CSS dunha ligazón co estado de ``hover``, pasa os seguintes argumentos ao método `getComputedStyle()`:
 
-```
+```js
 let link = document.querySelector('a');
 let style = getComputedStyle(link,':hover');
 console.log(style);
-
 ```
 
-Teña en conta que `window`é o obxecto global, polo tanto, pode omitilo ao chamar ao `getComputedStyle()`método get.
+Ter en conta que `window` é o obxecto global, polo tanto, pódese omitir ao chamar ao método `getComputedStyle()`.
 
 ### Valor de retorno
 
-O `getComputedStyle()`método devolve un obxecto de estilo en directo que é unha instancia do `CSSStyleDeclaration`obxecto. O estilo actualízase automaticamente cando se cambian os estilos do elemento.
+O método `getComputedStyle()` devolve un obxecto de estilo en directo que é unha instancia do obxecto `CSSStyleDeclaration`. O estilo actualízase automaticamente cando se cambian os estilos do elemento.
 
-## `getComputedStyle()`Exemplos de JavaScript
+## Exemplos de `getComputedStyle()`
 
-Poñamos algúns exemplos de uso do `getComputedStyle()`método.
+Poñamos algúns exemplos de uso do método `getComputedStyle()`.
 
-### 1) `getComputedStyle()`Exemplo sinxelo
+### 1) Exemplo sinxelo de`getComputedStyle()`
 
-Considere o seguinte exemplo:
+Considera o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -260,26 +257,26 @@ Considere o seguinte exemplo:
 
 ```
 
-Teña en conta que, para efectos de demostración, mesturamos todos os CSS e JavaScript con HTML. Na práctica, debes separalos en diferentes ficheiros.
+> *Ter en conta que, para efectos de demostración, mesturamos todos os CSS e JavaScript con HTML. Na práctica, debes separalos en diferentes arquivos.*
 
-Saída:
+**Saída:**
 
-```
+```css
 color: rgb(255, 0, 0)
 background color: rgb(255, 243, 212)
 ```
 
-Cómo funciona:
+**Como funciona:**
 
-- En primeiro lugar, define as regras CSS para a `message`clase na sección de cabeceira do ficheiro HTML. A cor do texto é negra.
-- En segundo lugar, declare un elemento de parágrafo cuxa cor de texto sexa vermella tal e como se define no estilo en liña. Esta regra anulará a definida na sección de cabeceira.
-- En terceiro lugar, use o `getComputedStyle()`método para obter todo o estilo calculado do elemento de parágrafo. A propiedade da cor é vermella como se indica na xanela da consola ( `rgb(255, 0, 0)`) como se esperaba.
+- En primeiro lugar, definir as regras CSS para a clase `message` na sección de cabeceira do arquivo HTML. A cor do texto é negra.
+- En segundo lugar, declarar un elemento de parágrafo cuxa cor de texto sexa vermella tal e como se define no estilo en liña. Esta regra anulará a definida na sección de cabeceira.
+- En terceiro lugar, usar o método `getComputedStyle()` para obter todo o estilo calculado do elemento de parágrafo. A propiedade da cor é vermella como se indica na xanela da consola ( `rgb(255, 0, 0)`) como se esperaba.
 
-### 2) O `getComputedStyle()`exemplo de pseudo-elementos
+### 2) Exemplo de pseudo-elementos e `getComputedStyle()`
 
-O seguinte exemplo usa o `getComputedStyle()`método para extraer información de estilo dun pseudoelemento:
+O seguinte exemplo usa o método `getComputedStyle()` para extraer información de estilo dun pseudoelemento:
 
-```
+```html
 <html>
 <head>
     <title>JavaScript getComputedStyle() Demo</title>
@@ -307,37 +304,37 @@ O seguinte exemplo usa o `getComputedStyle()`método para extraer información d
 </html>
 ```
 
-Saída:
+**Saída:**
 
-```
+```js
 24px
 ```
 
-Cómo funciona:
+**Como funciona:**
 
-- En primeiro lugar, define regras CSS para a primeira letra de calquera elemento de parágrafo na sección de cabeceira do ficheiro HTML.
-- A continuación, use o `getComputedStyle()`método para extraer o estilo calculado do pseudoelemento. O tamaño da fonte da primeira letra do parágrafo co identificador é de 24 píxeles.
+- En primeiro lugar, definir regras CSS para a primeira letra de calquera elemento de parágrafo na sección de cabeceira do arquivo HTML.
+- A continuación, usar o método `getComputedStyle()` para extraer o estilo calculado do pseudoelemento. O tamaño da fonte da primeira letra do parágrafo co identificador é de 24 píxeles.
 
 ## Resumo
 
-- É `getComputedStyle()`un método do `window`obxecto.
-- O `getComputedStyle()`método devolve un obxecto que contén o estilo calculado dun elemento.
+- `getComputedStyle()` é un método do obxecto `window`.
+- `getComputedStyle()` é o método devolve un obxecto que contén o estilo calculado dun elemento.
 
-# Nome da clase JavaScript
+# ``className``
 
-**Resumo** : neste tutorial, aprenderás a usar a `className`propiedade JavaScript para manipular as clases CSS dun elemento.
+**Resumo**: nesta sección, aprenderás a usar a propiedade `className` para manipular as clases CSS dun elemento.
 
-## Introdución ao className JavaScript
+## Introdución a ``className``
 
-É `className`a propiedade dun elemento que devolve unha lista separada por espazos de clases CSS do elemento como cadea:
+`className` é a propiedade dun elemento que devolve unha lista separada por espazos de clases CSS do elemento como cadea:
 
-```
+```js
 element.className
 ```
 
-Supoña que tes o seguinte `ul`elemento:
+Supón que tes o seguinte elemento `ul`:
 
-```
+```html
 <ul id="menu" class="vertical main">
    <li>Homepage</li>
    <li>Services</li>
@@ -346,83 +343,83 @@ Supoña que tes o seguinte `ul`elemento:
 </ul>
 ```
 
-O seguinte mostra as clases do `ul`elemento na xanela da consola:
+O seguinte código mostra as clases do elemento `ul` na xanela da consola:
 
-```
+```js
 let menu = document.querySelector('#menu');
 console.log(menu.className);
 ```
 
-Saída:
+**Saída:**
 
-```
+```bash
 vertical main
 ```
 
-Para engadir unha nova clase a un elemento mediante a `className`propiedade, pode [concatenar](https://www.javascripttutorial.net/javascript-string-concat/) o nome da clase existente cun novo:
+Para engadir unha nova clase a un elemento mediante a propiedade `className`, pode [concatenar](https://www.javascripttutorial.net/javascript-string-concat/) o nome da clase existente cun novo:
 
-```
+```js
 element.className += newClassName;
 ```
 
-O `+=`operador **concatena** `newClassName` a lista de clases existente do elemento. Polo tanto, cómpre prefixar o nome da nova clase cun espazo como este:
+O operador  `+=` **concatena** `newClassName` a lista de clases existente do elemento. Polo tanto, cómpre prefixar o nome da nova clase cun espazo como este:
 
-```
+```js
 let menu = document.querySelector('#menu');
 menu.className += ' new';
 console.log(menu.className);
 ```
 
-Saída:
+**Saída:**
 
-```
+```bash
 'vertical main new'
 ```
 
 Na práctica, usarás `classList`para engadir unha nova clase ás clases existentes dun elemento:
 
-```
+```js
 let menu = document.querySelector('#menu');
 menu.classList.add('new');
 console.log(menu.className);
 ```
 
-Saída:
+**Saída:**
 
-```
+```bash
 'vertical main new'
 ```
 
 Para sobrescribir completamente todas as clases dun elemento, usa un operador de asignación sinxelo. Por exemplo:
 
-```
+```js
 element.className = "class1 class2";
 ```
 
-Para obter unha lista completa de clases dun elemento, só precisa acceder á `className`propiedade:
+Para obter unha lista completa de clases dun elemento, só precisa acceder á propiedade `className`:
 
 ```
 let classes = element.className;
 ```
 
-Como `class`é unha palabra clave en JavaScript, `className`úsase o nome en lugar de `class`.
+Como `class` é unha palabra clave en JavaScript, úsase o nome `className` en lugar de `class`.
 
-Tamén `class`é un atributo HTML:
+`class` tamén é un atributo HTML:
 
-```
+```html
 <div id="note" class="info yellow-bg red-text">JS className</div>
 ```
 
-while `className`é unha propiedade DOM do elemento:
+mentres `className` é unha propiedade do elemento DOM :
 
-```
+```js
 let note = document.querySelector('#note');
 console.log(note.className);
 ```
 
 Saída:
 
-```
+```bash
 info yellow-bg red-text
 ```
 
@@ -430,156 +427,153 @@ Un elemento ten outra propiedade que che axuda a manipular mellor as súas clase
 
 ## Resumo
 
-- `className`devolve unha lista separada por espazos de clases dun elemento como cadea.
+- `className` devolve unha lista separada por espazos de clases dun elemento como cadea.
 
-# Lista de clases de JavaScript
+# ``classList``
 
-**Resumo** : neste tutorial, aprenderás a usar a `classList`propiedade JavaScript para traballar coas clases CSS dun elemento.
+**Resumo**: nesta sección, aprenderás a usar a propiedade `classList` para traballar coas clases CSS dun elemento.
 
-## `classList`Introdución á propiedade JavaScript
+## Introdución á propiedade `classList`
 
-É `classList`unha propiedade de só lectura dun elemento que devolve unha colección activa de clases CSS:
+`classList` é unha propiedade de só lectura dun elemento que devolve unha colección activa de clases CSS:
 
-```
+```js
 const classes = element.classList;
 ```
 
 É `classList`un `DOMTokenList`obxecto que representa o contido do atributo de clase do elemento.
 
-Aínda que `classList`é de só lectura, podes manipular as clases que contén usando varios métodos.
+Aínda que `classList` é de só lectura, podes manipular as clases que contén usando varios métodos.
 
-## `classList`Exemplos de JavaScript
+## Exemplos de `classList`
 
-Poñamos algúns exemplos de manipulación de clases CSS do elemento a través da `classList`interface de '.
+Poñamos algúns exemplos de manipulación de clases CSS do elemento a través da interface `classList`.
 
 ### 1) Obter as clases CSS dun elemento
 
-Supoña que tes un `div`elemento con dúas clases: `main`e `red`.
+Supón que tes un elemento `div` con dúas clases: `main` e `red`.
 
-```
+```js
 <div id="content" class="main red">JavaScript classList</div>
-
 ```
 
-O seguinte código mostra a lista de clases do `div`elemento na xanela da consola:
+O seguinte código mostra a lista de clases do elemento `div` na xanela da consola:
 
-```
+```js
 let div = document.querySelector('#content');
 for (let cssClass of div.classList) {
     console.log(cssClass);
 }
 ```
 
-Saída:
+**Saída:**
 
 ```
 main
 red
 ```
 
-Cómo funciona:
+**Como funciona:**
 
-- En primeiro lugar, selecciona o `div`elemento co id `content`usando o `querySelector()`método.
-- A continuación, itera sobre os elementos do `classList`e móstrase as clases na xanela da consola.
+- En primeiro lugar, selecciona o elemento `div` co ``id`` `content` usando o método `querySelector()`.
+- A continuación, *itera* sobre os elementos do `classList` e móstranse as clases na xanela da consola.
 
-### 2) Engade unha ou máis clases á lista de clases dun elemento
+### 2) Engadir unha ou máis clases á lista de clases dun elemento
 
-Para engadir unha ou máis clases CSS á lista de clases dun elemento, use o `add()`método do `classList`.
+Para engadir unha ou máis clases CSS á lista de clases dun elemento, use o método `add()` do `classList`.
 
-Por exemplo, o seguinte código engade a `info`clase á lista de clases do `div`elemento co id `content`:
+Por exemplo, o seguinte código engade a clase  `info` á lista de clases do elemento `div` co ``id`` `content`:
 
 ```
 let div = document.querySelector('#content');
 div.classList.add('info');
-
 ```
 
 O seguinte exemplo engade varias clases CSS á lista de clases dun elemento:
 
-```
+```js
 let div = document.querySelector('#content');
 div.classList.add('info','visible','block');
-
 ```
 
-### 3) Eliminar as clases de elementos
+### 3) Eliminar a clase do elemento
 
-Para eliminar unha clase CSS da lista de clases dun elemento, usa o `remove()`método:
+Para eliminar unha clase CSS da lista de clases dun elemento, usamos o método `remove()`:
 
-```
+```js
 let div = document.querySelector('#content');
 div.classList.remove('visible');
 ```
 
-Do mesmo xeito que o `add()`método, podes eliminar varias clases unha vez:
+Do mesmo xeito que co método `add()`, podes eliminar varias clases dunha vez:
 
-```
+```js
 let div = document.querySelector('#content');
 div.classList.remove('block','red');
 ```
 
-### 4) Substitúe unha clase dun elemento
+### 4) Substituir unha clase do elemento
 
-Para substituír unha clase CSS existente por outra nova, usa o `replace()`método:
+Para substituír unha clase CSS existente por outra nova, usa o método `replace()`:
 
-```
+```js
 let div = document.querySelector('#content');
 div.classList.replace('info','warning');
 ```
 
-### 5) Comproba se un elemento ten unha clase especificada
+### 5) Comprobar se un elemento ten unha clase especificada
 
-Para comprobar se o elemento ten unha clase especificada, usa o `contains()`método:
+Para comprobar se o elemento ten unha clase especificada, usa o método `contains()`:
 
-```
+```js
 let div = document.querySelector('#content');
 div.classList.contains('warning'); // true
 ```
 
-O `contains()`método devolve `true`se `classList`contén unha clase especificada; en caso contrario `false`.
+O método `contains()` devolve `true` se `classList` contén unha clase especificada; en caso contrario devolve `false` .
 
 ### 6) Cambiar unha clase
 
-Se a lista de clases dun elemento contén un nome de clase especificado, o método toggle() elimínao. Se a lista de clases non contén o nome da clase, o método toggle() engádeo á lista de clases.
+Se a lista de clases dun elemento contén un nome de clase especificado, o método ``toggle()`` elimínao. Se a lista de clases non contén o nome da clase, o método ``toggle()`` engádeo á lista de clases.
 
-O seguinte exemplo usa o `toggle()`método para alternar a `visible`clase dun elemento co id `content`:
+O seguinte exemplo usa o método `toggle()` para alternar a clase `visible` dun elemento co ``id`` `content`:
 
-```
+```js
 let div = document.querySelector('#content');
 div.classList.toggle('visible');
 ```
 
 ### Resumo
 
-- A propiedade do elemento `classList`devolve a colección activa de clases CSS do elemento.
-- Use `add()`e `remove()`para engadir clases CSS e eliminar clases CSS da lista de clases dun elemento.
-- Use `replace()`o método para substituír unha clase existente por outra nova.
-- Use `contains()`o método para comprobar se a lista de clases dun elemento contén unha clase especificada.
-- Use o `toggle()`método para alternar unha clase.
+- A propiedade do elemento `classList` devolve a colección activa de clases CSS do elemento.
+- Usa `add()` e `remove()` para engadir clases CSS e eliminar clases CSS da lista de clases dun elemento.
+- Usa o método `replace()` para substituír unha clase existente por outra nova.
+- Usa o método `contains()` para comprobar se a lista de clases dun elemento contén unha clase especificada
+- Usa o método `toggle()` para alternar unha clase.
 
-# Obter o ancho e a altura dun elemento
+# Obter o ancho e o alto dun elemento
 
-**Resumo** : neste tutorial, aprenderás a obter a dimensión calculada actual dun elemento, incluíndo o ancho e a altura.
+**Resumo**: nesta sección, aprenderás a obter a dimensión calculada actual dun elemento, incluíndo o ancho e o alto.
 
 A seguinte imaxe mostra o modelo de caixa CSS que inclúe un elemento de bloque con contido, recheo, bordo e marxe:
 
 ![Modelo de caixa CSS](./assets/JavaScript-CSS-Box-Model.png)
 
-Para obter o ancho e o alto do elemento que inclúen o recheo e o bordo, utiliza as propiedades `offsetWidth`e `offsetHeight`do elemento:
+Para obter o ancho e o alto do elemento que inclúen o recheo e o bordo, utiliza as propiedades `offsetWidth` e `offsetHeight` do elemento:
 
-```
+```js
 let box = document.querySelector('.box');
 let width = box.offsetWidth;
 let height = box.offsetHeight;
 ```
 
-A seguinte imaxe ilustra o `offsetWidth`e `offsetHeight`dun elemento:
+A seguinte imaxe ilustra o `offsetWidth` e `offsetHeight` dun elemento:
 
 ![JavaScript offsetWidth e offsetHeight](./assets/JavaScript-offsetWidth-and-offsetHeight.png)
 
-Vexa o seguinte exemplo:
+Ver o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -598,25 +592,24 @@ Vexa o seguinte exemplo:
         console.log({ width, height });
     </script>
 </body>
-
 </html>
 ```
 
-Saída:
+**Saída:**
 
-```
+```bash
 {width: 122, height: 172}
 ```
 
 Neste exemplo:
 
 - O ancho é de 100 píxeles
-- O bordo é de 1 px a cada lado, polo que 2 px para ambos
-- O recheo 10px en cada lado, polo que 20px para ambos
+- O bordo é de 1px a cada lado, polo que é de 2px entre ambos
+- O recheo 10px en cada lado, polo que é de 20px entre ambos
 
-Polo tanto, o ancho total 12px. Do mesmo xeito, a altura é de 172 px.
+Polo tanto, o ancho total é 122px. Do mesmo xeito, a altura é de 172 px.
 
-Para obter o ancho e o alto dun elemento como punto flotante despois da transformación CSS, usa o `getBoundingClientRect()`método do elemento DOM. Por exemplo:
+Para obter o ancho e o alto dun elemento como punto flotante despois da transformación CSS, usa o método `getBoundingClientRect()` do elemento DOM. Por exemplo:
 
 ```html
 <!DOCTYPE html>
@@ -645,7 +638,7 @@ Para obter o ancho e o alto dun elemento como punto flotante despois da transfor
 </html>
 ```
 
-Saída:
+**Saída:**
 
 ```json
 {width: 122, height: 172}
@@ -653,11 +646,11 @@ Saída:
 DOMRect {x: 7.997685432434082, y: 7.997685432434082, width: 121.95602416992188, height: 171.95602416992188, top: 7.997685432434082, …}
 ```
 
-## clientWidth e clientHeight
+## ``clientWidth`` e ``clientHeight``
 
-Para obter o ancho e o alto do elemento que inclúe o recheo pero sen o bordo, usa as propiedades `clientWidth`e :`clientHeight`
+Para obter o ancho e o alto do elemento que inclúe o recheo pero sen o bordo, usa as propiedades `clientWidth` e `clientHeight`
 
-```
+```js
 let box = document.querySelector('.box');
 let width = box.clientWidth;
 let height = box.clientHeight;
@@ -667,7 +660,7 @@ A seguinte imaxe ilustra o `clientWidth`e `clientHeight`dun elemento:
 
 ![JavaScript clientWidth e clientHeight png](./assets/JavaScript-clientWidth-and-clientHeight-png.png)
 
-Para obter a marxe dun elemento, usa o `getComputedStyle()`método:
+Para obter a marxe dun elemento, usa o método `getComputedStyle()`:
 
 ```js
 let box = document.querySelector(".box");
@@ -679,7 +672,7 @@ let marginTop = parseInt(style.marginTop);
 let marginBottom = parseInt(style.marginBottom);
 ```
 
-Para obter o ancho do bordo dun elemento, usa a propiedade do `style`obxecto devolto polo `getComputedStyle()`método:
+Para obter o ancho do bordo dun elemento, usa a propiedade do obxecto `style` devolto polo método `getComputedStyle()`:
 
 ```js
 let box = document.querySelector(".box");
@@ -706,4 +699,8 @@ let height =
 
 ## Resumo
 
-- Use as propiedades offsetWidth e offsetHeight do elemento DOM para obter o seu ancho e alto.
+- Usar as propiedades ``offsetWidth`` e ``offsetHeight`` do elemento DOM para obter o seu ancho e alto.
+
+---
+
+nov 2023

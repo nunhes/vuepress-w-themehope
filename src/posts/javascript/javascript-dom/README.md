@@ -124,3 +124,5 @@ ref:
 https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
 
 https://www.javascripttutorial.net/javascript-dom/document-object-model-in-javascript/
+
+https://www.javascripttutorial.net/javascript-dom/

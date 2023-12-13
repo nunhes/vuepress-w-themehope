@@ -6,59 +6,59 @@ description: Uso de javascript na arbore do modelo de obxecto do documento
 
 # Comprender as relacións entre os atributos HTML e as propiedades do obxecto DOM
 
-**Resumo** : neste tutorial aprenderás as relacións entre os atributos HTML e as propiedades do obxecto DOM.
+**Resumo**: nesta sección aprenderás as relacións entre os atributos HTML e as propiedades do obxecto DOM.
 
 Cando o navegador web [carga unha páxina HTML](https://www.javascripttutorial.net/javascript-dom/javascript-page-load-events/) , xera os obxectos DOM correspondentes en función dos nodos DOM do documento.
 
-Por exemplo, se unha páxina contén o seguinte `input`elemento:
+Por exemplo, se unha páxina contén o seguinte elemento  `input`:
 
+```html
+<input type="text" id="username">
 ```
-<input type="text" id="username">Idioma do código:  JavaScript  ( javascript )
-```
 
-O navegador web xerará un `HTMLInputElement`obxecto.
+O navegador web xerará un obxecto `HTMLInputElement`.
 
-O `input`elemento ten dous atributos:
+O elemento `input` ten dous atributos:
 
-- O `type`atributo co valor `text`.
-- O `id`atributo co valor `username`.
+- O atributo `type` co valor `text`.
+- O atributo `id` co valor `username`.
 
-O obxecto xerado `HTMLInputElement`terá as propiedades correspondentes:
+O obxecto xerado `HTMLInputElement` terá as propiedades correspondentes:
 
-- O `input.type`co valor `text`.
-- O `input.id`co valor `username`.
+- `input.type` co valor `text`.
+- `input.id`co valor `username`.
 
-Noutras palabras, o navegador web converterá automaticamente atributos de elementos HTML en propiedades de obxectos DOM.
+Noutras palabras, **o navegador web converterá automaticamente atributos de elementos HTML en propiedades de obxectos DOM**.
 
 Non obstante, o navegador web só converte os atributos _estándar_ nas propiedades do obxecto DOM. Os atributos estándar dun elemento están listados na especificación do elemento.
 
 A asignación de atributos-propiedades non sempre é unha a unha. Por exemplo:
 
-```
-<input type="text" id="username" secured="true">Idioma do código:  JavaScript  ( javascript )
+```html
+<input type="text" id="username" secured="true">
 ```
 
 Neste exemplo, `secured`é un atributo non estándar:
 
-```
+```js
 let input = document.querySelector('#username');
-console.log(input.secured); // undefinedIdioma do código:  JavaScript  ( javascript )
+console.log(input.secured); // undefined
 ```
 
 ## Métodos de atributos
 
 Para acceder aos atributos estándar e non estándar, utiliza os seguintes métodos:
 
-- `element.getAttribute(name)`- [Obter o valor do atributo](https://www.javascripttutorial.net/javascript-dom/javascript-getattribute/)
+- `element.getAttribute(name)`- [obter o valor do atributo](https://www.javascripttutorial.net/javascript-dom/javascript-getattribute/)
 - `element.setAttribute(name, value)`- [establecer o valor para o atributo](https://www.javascripttutorial.net/javascript-dom/javascript-setattribute/)
-- `element.hasAttribute(name)`- [Comprobar a existencia dun atributo](https://www.javascripttutorial.net/javascript-dom/javascript-hasattribute/)
+- `element.hasAttribute(name)`- [comprobar a existencia dun atributo](https://www.javascripttutorial.net/javascript-dom/javascript-hasattribute/)
 - `element.removeAttribute(name)`- [eliminar o atributo](https://www.javascripttutorial.net/javascript-dom/javascript-removeattribute/)
 
-## elemento.atributos
+## ``element.attributes``
 
-A `element.attributes`propiedade ofrece unha colección activa de atributos dispoñibles nun elemento específico. Por exemplo:
+A propiedade `element.attributes` ofrece unha colección activa de atributos dispoñibles nun elemento específico. Por exemplo:
 
-```
+```js
 let input = document.querySelector('#username');
 
 for(let attr of input.attributes) {
@@ -66,29 +66,29 @@ for(let attr of input.attributes) {
 }Idioma do código:  JavaScript  ( javascript )
 ```
 
-Saída:
+**Saída:**
 
-```
+```js
 type = text
 id = username
-secure = trueIdioma do código:  JavaScript  ( javascript )
+secure = true
 ```
 
-Teña en conta que `element.attributes`é un `NamedNodeMap`, non un `Array`, polo tanto, non ten métodos de Array.
+Ter en conta que `element.attributes` é un `NamedNodeMap`, non un *array*, polo tanto, non ten métodos de `Array`.
 
 ## Sincronización atributo-propiedade
 
 Cando cambia un atributo estándar, a propiedade correspondente actualízase automaticamente con algunhas excepcións e viceversa.
 
-Supoña que tes o seguinte `input`elemento:
+Supón que tes o seguinte elemento `input`:
 
-```
-<input type="text" id="username" tabindex="1">Idioma do código:  JavaScript  ( javascript )
+```html
+<input type="text" id="username" tabindex="1">
 ```
 
-O seguinte exemplo ilustra o cambio do `tabindex`atributo que se propaga á `tabIndex`propiedade e viceversa:
+O seguinte exemplo ilustra o cambio do atributo `tabindex` que se propaga á propiedade `tabIndex` e viceversa:
 
-```
+```js
 let input = document.querySelector('#username');
 
 // attribute -> property
@@ -98,12 +98,12 @@ console.log(input.tabIndex);  // 2
 
 // property -> attribute
 input.tabIndex = 3;
-console.log(input.getAttribute('tabIndex')); // 3Idioma do código:  JavaScript  ( javascript )
+console.log(input.getAttribute('tabIndex')); // 3
 ```
 
-O seguinte exemplo mostra cando o `value`atributo cambia, reflíctese na `value`propiedade, pero non ao revés:
+O seguinte exemplo mostra cando o atributo `value` cambia, reflíctese na propiedade `value`, pero non ao revés:
 
-```
+```js
 let input = document.querySelector('#username');
 
 // attribute -> property: OK
@@ -113,69 +113,69 @@ console.log(input.value);  // guest
 
 // property -> attribute: doesn't change
 input.value = 'admin';
-console.log(input.getAttribute('value')); // guestIdioma do código:  JavaScript  ( javascript )
+console.log(input.getAttribute('value')); // guest
 ```
 
-## Escríbense as propiedades DOM
+## As propiedades DOM se escriben
 
 O valor dun atributo é sempre unha cadea. Non obstante, cando o atributo se converte na propiedade dun obxecto DOM, o valor da propiedade pode ser unha cadea, un booleano, un obxecto, etc.
 
-O seguinte `checkbox`elemento ten o `checked`atributo. Cando o `checked`atributo se converte na propiedade, é un valor booleano:
+O seguinte elemento  `checkbox` ten o atributo `checked`. Cando o atributo `checked` se converte na propiedade, é un valor booleano:
 
-```
+```html
 <input type="checkbox" id="chkAccept" checked> Accept
 
 let checkbox = document.querySelector('#chkAccept');
-console.log(checkbox.checked); // trueIdioma do código:  JavaScript  ( javascript )
+console.log(checkbox.checked); // true+
 ```
 
-O seguinte mostra un `input`elemento co `style`atributo:
+O seguinte código mostra un elemento `input` co atributo `style`:
 
-```
-<input type="password" id="password" style="color:red;with:100%">Idioma do código:  JavaScript  ( javascript )
+```html
+<input type="password" id="password" style="color:red;with:100%">
 ```
 
-O `style`atributo é unha cadea mentres que a `style`propiedade é un obxecto:
+O atributo `style` é unha cadea mentres que a propiedade `style` é un obxecto:
 
-```
+```js
 let input = document.querySelector('#password');
 
 let styleAttr = input.getAttribute('style');
 console.log(styleAttr);
 
-console.dir(input.style);Idioma do código:  JavaScript  ( javascript )
+console.dir(input.style);
 ```
 
-Saída:
+**Saída:**
 
-```
-[object CSSStyleDeclaration]Idioma do código:  JavaScript  ( javascript )
+```js
+[object CSSStyleDeclaration]
 ```
 
 ## Os atributos data-\*
 
-Se queres engadir un atributo personalizado a un elemento, debes prefixo con por `data-`exemplo, `data-secured`porque todos os atributos que comezan por `data-`están reservados para usos do programador.
+Se queres engadir un atributo personalizado a un elemento, debes prefixalo con `data-`,  por exemplo `data-secured`, porque todos os atributos que comezan por `data-` están reservados para usos do programador.
 
-Para acceder `data-*`aos atributos, pode usar a `dataset`propiedade. Por exemplo, temos o seguinte `div`elemento con atributos personalizados:
+Para acceder aos atributos `data-*`, pódese usar a propiedade `dataset`. Por exemplo, temos o seguinte elemento `div` con atributos personalizados:
 
+```html
+<div id="main" data-progress="pending" data-value="10%"></div>
 ```
-<div id="main" data-progress="pending" data-value="10%"></div>Idioma do código:  JavaScript  ( javascript )
-```
 
-O seguinte mostra como acceder aos `data-*`atributos a través da `dataset`propiedade:
+O seguinte código mostra como acceder aos atributos `data-*` a través da propiedade `dataset`:
 
-```
+```js
 let bar = document.querySelector('#main');
-console.log(bar.dataset);Idioma do código:  JavaScript  ( javascript )
+console.log(bar.dataset);
 ```
 
-Saída:
+**Saída:**
 
-```
+```js
 [object DOMStringMap] {
     progress: "pending",
     value: "10%"
-}Idioma do código:  JavaScript  ( javascript )
+}
 ```
 
 ## Resumo
@@ -183,42 +183,42 @@ Saída:
 - Os atributos especifícanse nos elementos HTML.
 - As propiedades son obxectos DOM especificados.
 - Os atributos convértense en propiedades respectivamente.
-- Use a `element.attributes`propiedade para acceder aos atributos estándar e personalizados dun elemento.
-- Use a `element.dataset`propiedade para acceder aos `data-*`atributos.
+- Usar a propiedade `element.attributes` para acceder aos atributos estándar e personalizados dun elemento.
+- Usar a propiedade `element.dataset` para acceder aos atributos `data-*`.
 
-# setAttribute
+# ``setAttribute``
 
-**Resumo** : neste tutorial, aprenderás a usar o `setAttribute()`método JavaScript para establecer un valor para un atributo nun elemento especificado.
+**Resumo**: nesta sección, aprenderás a usar o método `setAttribute()`  para establecer un valor para un atributo nun elemento especificado.
 
-## Introdución ao `setAttribute()`método JavaScript
+## Introdución ao método `setAttribute()`
 
-Para establecer un valor dun atributo nun elemento especificado, usa o `setAttribute()`método:
+Para establecer un valor dun atributo nun elemento especificado, usa o método `setAttribute()`:
 
-```
-element.setAttribute(name, value);Idioma do código:  CSS  ( css )
+```js
+element.setAttribute(name, value);
 ```
 
 ### Parámetros
 
-Especifica o `name`nome do atributo cuxo valor está definido. Convértese automaticamente a minúsculas se chama a `setAttribute()`un elemento HTML.
+Especifica o nome do atributo `name` cuxo valor está definido. Convértese automaticamente a minúsculas se  `setAttribute()` chama a un elemento HTML.
 
-Especifica `value`o valor para asignarlle ao atributo. Convértese automaticamente nunha cadea se lle pasa un valor que non sexa unha cadea ao método.
+Especifica o valor `value` para asignarllo ao atributo. Convértese automaticamente nunha cadea se lle pasa un valor que non sexa unha cadea ao método.
 
 ### Valor de retorno
 
-Os `setAttribute()`retornos `undefined`.
+`setAttribute()` devolve `undefined`.
 
-Teña en conta que se o atributo xa existe no elemento, o `setAttribute()`método actualiza o valor; se non, engade un novo atributo co especificado `name`e `value`.
+Ter en conta que se o atributo xa existe no elemento, o método  `setAttribute()` actualiza o valor; se non, engade un novo atributo co  `name` e `value` especificado.
 
-Normalmente, usa o `querySelector()`ou `getElementById()`para seleccionar un elemento antes de chamar ao `setAttribute()`elemento seleccionado.
+Normalmente, se usa `querySelector()` ou `getElementById()` para seleccionar un elemento antes de chamar ao elemento `setAttribute()` seleccionado.
 
-Para obter o valor actual dun atributo, usa o `getAttribute()`método. Para eliminar un atributo, chama ao `removeAttribute()`método.
+Para obter o valor actual dun atributo, usa o método `getAttribute()`. Para eliminar un atributo, chama ao método `removeAttribute()`.
 
-## `setAttribute()`Exemplo de JavaScript
+## Exemplo de `setAttribute()`
 
-Vexa o seguinte exemplo:
+Ver o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -237,50 +237,48 @@ Vexa o seguinte exemplo:
     </script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-Cómo funciona:
+**Como funciona:**
 
-- En primeiro lugar, selecciona o botón co ID `btnSend`usando o `querySelector()`método.
-- En segundo lugar, establece o valor do `name`atributo para `send`usar o `setAttribute()`método.
-- En terceiro lugar, establece o valor do `disabled`atributo para que cando os usuarios fagan clic no botón, non faga nada.
+- En primeiro lugar, seleccionar o botón co ID `btnSend` usando o método `querySelector()`.
+- En segundo lugar, establecer o valor do atributo `name` para usar `send` ao método `setAttribute()`.
+- En terceiro lugar, establecer o valor do atributo `disabled` para que cando os usuarios fagan clic no botón, non faga nada.
 
-Teña en conta que o `disabled`atributo é especial porque é un atributo booleano. Se un atributo booleano está presente, sexa cal sexa o valor que teña, considérase que o valor é `true`. Para establecer o valor dun atributo booleano en `false`, cómpre eliminar todo o atributo mediante o `removeAttribute()`método.
+Ter en conta que o atributo  `disabled` é especial porque é un atributo booleano. Se un atributo booleano está presente, sexa cal sexa o valor que teña, considérase que o seu valor é `true`. Para establecer o valor dun atributo booleano en `false`, cómpre eliminar todo o atributo mediante o método  `removeAttribute()`.
 
 ## Resumo
 
-- Use o `setAttribute()`para establecer o valor dun atributo nun elemento especificado.
-- Establecendo o valor dun atributo booleano calquera valor, ese valor considerarase `true`.
+- Usar `setAttribute()` para establecer o valor dun atributo nun elemento especificado.
+- Establecer o valor dun atributo booleano, ao establecelo ese valor considerarase `true`.
 
-# getAttribute
+# ``getAttribute``
 
-**Resumo** : neste tutorial, aprenderás a usar o `getAttribute()`método JavaScript para obter o valor dun atributo especificado nun elemento.
+**Resumo**: nesta sección, aprenderás a usar o método `getAttribute()` para obter o valor dun atributo especificado nun elemento.
 
-## Introdución ao `getAttribute()`método JavaScript
+## Introdución ao método `getAttribute()`
 
-Para obter o valor dun atributo nun elemento especificado, chama ao `getAttribute()`método do elemento:
+Para obter o valor dun atributo nun elemento especificado, chama ao método `getAttribute()` do elemento:
 
-```
+```js
 let value = element.getAttribute(name);
-Idioma do código:  JavaScript  ( javascript )
 ```
 
 ### Parámetros
 
-Acepta `getAttribute()`un argumento que é o nome do atributo do que quere devolver o valor.
+`getAttribute()` acepta un argumento que é o nome do atributo do que quere devolver o valor.
 
 ### Valor de retorno
 
-Se o atributo existe no elemento, devolve `getAttribute()`unha cadea que representa o valor do atributo. No caso de que o atributo non exista, `getAttribute()`devolve `null`.
+Se o atributo existe no elemento,  `getAttribute()` devolve unha cadea que representa o valor do atributo. No caso de que o atributo non exista, `getAttribute()` devolve `null`.
 
-Teña en conta que pode usar o `hasAttribute()`método para comprobar se o atributo existe no elemento antes de obter o seu valor.
+Ter en conta que pode usar o método `hasAttribute()` para comprobar se o atributo existe no elemento antes de obter o seu valor.
 
-## `getAttribute()`Exemplo de JavaScript
+## Exemplo de `getAttribute()`
 
-Considere o seguinte exemplo:
+Considera o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -303,92 +301,86 @@ Considere o seguinte exemplo:
     </script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-Saída
+**Saída:**
 
-```
+```html
 _blank
 ```
 
-Cómo funciona:
+**Como funciona:**
 
-- En primeiro lugar, selecciona o elemento de ligazón co id `js`usando o `querySelector()`método.
-- En segundo lugar, obtén o atributo de destino da ligazón chamando ao `getAttribute()`elemento de ligazón seleccionado.
-- En terceiro lugar, mostra o valor do destino na xanela da consola.
+- En primeiro lugar, se selecciona o elemento de ligazón co ``id`` `js` usando o método `querySelector()`.
+- En segundo lugar, se obtén o atributo de destino da ligazón chamando ao elemento `getAttribute()` de ligazón seleccionado.
+- En terceiro lugar, se mostra o valor do destino na xanela da consola.
 
-O seguinte exemplo usa o `getAttribute()`método para obter o valor do atributo title do elemento de ligazón co id `js`:
+O seguinte exemplo usa o método `getAttribute()` para obter o valor do atributo ``title`` do elemento de ligazón co ``id`` `js`:
 
-```
+```html
 let link = document.querySelector('#js');
 if (link) {
     let title = link.getAttribute('title');
     console.log(title);
 }
-Idioma do código:  JavaScript  ( javascript )
 ```
 
-Saída:
+**Saída:**
 
-```
+```js
 null
-Idioma do código:  JavaScript  ( javascript )
 ```
 
 ## Resumo
 
-- Obter o valor dun atributo dun elemento especificado chamando ao `getAttribute()`método do elemento.
-- Devolve `getAttribute()`nulo se o atributo non existe.
+- Obter o valor dun atributo dun elemento especificado chamando ao  método `getAttribute()` do elemento.
+- `getAttribute()` devolve  ``null`` se o atributo non existe.
 
-# removeAttribute
+# ``removeAttribute``
 
-**Resumo** : neste tutorial, aprenderás a usar o JavaScript `removeAttribute()`para eliminar o atributo co nome especificado do elemento.
+**Resumo**: nesta sección, aprenderás a usar o método `removeAttribute()` para eliminar o atributo co nome especificado do elemento.
 
-## Introdución ao `removeAttribute()`método JavaScript
+## Introdución ao método  `removeAttribute()`
 
-Elimina `removeAttribute()`un atributo cun nome especificado dun elemento:
+`removeAttribute()` elimina un atributo cun nome especificado dun elemento:
 
-```
+```js
 element.removeAttribute(name);
-Idioma do código:  CSS  ( css )
 ```
 
 ### Parámetros
 
-Acepta `removeAttribute()`un argumento que é o nome do atributo que quere eliminar. Se o atributo non existe, o `removeAttribute()` método non xerará un erro.
+`removeAttribute()` acepta un argumento que é o nome do atributo que se quere eliminar. Se o atributo non existe, o método  `removeAttribute()` non xerará un erro.
 
 ### Valor de retorno
 
-O `removeAttribute()`devolve un valor de `undefined`.
+`removeAttribute()` devolve un valor de  `undefined`.
 
 ### Notas de uso
 
-Os elementos HTML teñen algúns atributos que son atributos booleanos. Para configurar `false`os atributos booleanos, non pode simplemente usar o `setAttribute()`método, pero ten que eliminar o atributo por completo usando o `removeAttribute()`método.
+Os elementos HTML teñen algúns atributos que son atributos booleanos. Para configurar os atributos booleanos en `false`, non se pode simplemente usar o método `setAttribute()`, pero ten que eliminar o atributo por completo usando o método `removeAttribute()`.
 
-Por exemplo, os valores dos `disabled`atributos están `true`nos seguintes casos:
+Por exemplo, os valores dos atributos `disabled` son `true` nos seguintes casos:
 
-```
+```html
 <button disabled>Save Draft</button>
 <button disabled="">Save</button>
 <button disabled="disabled">Cancel</button>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-Do mesmo xeito, os valores dos seguintes `readonly`atributos son `true`:
+Do mesmo xeito, os valores dos seguintes atributos `readonly` son `true`:
 
-```
+```html
 <input type="text" readonly>
 <textarea type="text" readonly="">
 <textarea type="text" readonly="readonly">
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-## `removeAttribute()`Exemplo de JavaScript
+## Exemplo de `removeAttribute()`
 
-O seguinte exemplo usa o `removeAttribute()`método para eliminar o `target`atributo do elemento de ligazón co id `js`:
+O seguinte exemplo usa o método `removeAttribute()` para eliminar o atributo `target` do elemento de ligazón co ``id`` `js`:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -408,47 +400,45 @@ O seguinte exemplo usa o `removeAttribute()`método para eliminar o `target`atri
     </script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-Cómo funciona:
+**Como funciona:**
 
-- Seleccione o elemento de ligazón con id `js`usando o `querySelector()`método.
-- Elimina o `target`atributo chamando ao `removeAttribute()`elemento de ligazón seleccionado.
+- Seleccionar o elemento de ligazón con ``id`` `js` usando o método `querySelector()`.
+- Eliminar o atributo `target` chamando ao elemento `removeAttribute()` da ligazón seleccionada.
 
 ## Resumo
 
-- Use o `removeAttribute()`para eliminar un atributo dun elemento especificado.
-- Establecer o valor dun atributo booleano en `false`non funcionará; use o `removeAttribute()`método no seu lugar.
+- Usar  `removeAttribute()` para eliminar un atributo dun elemento especificado.
+- Establecer o valor dun atributo booleano en `false` non funcionará; no seu lugar usar o método `removeAttribute()`.
 
 # `hasAttribute()`
 
-**Resumo** : neste tutorial, aprenderás a usar JavaScript `hasAttribute()`para comprobar se un elemento ten un atributo.
+**Resumo**: nesta sección, aprenderás a usar  `hasAttribute()` para comprobar se un elemento ten un atributo.
 
-## Introdución ao `hasAttribute()`método JavaScript
+## Introdución ao método `hasAttribute()`
 
-Para comprobar que un elemento ten ou non un atributo especificado, usa o `hasAttribute()`método:
+Para comprobar que un elemento ten ou non un atributo especificado, usa o método `hasAttribute()`:
 
-```
+```js
 let result = element.hasAttribute(name);
-Idioma do código:  JavaScript  ( javascript )
 ```
 
 ### Parámetros
 
-O `hasAttribute()`método acepta un argumento que especifica o nome do atributo que quere comprobar.
+O método `hasAttribute()` acepta un argumento que especifica o nome do atributo que se quere comprobar.
 
 ### Valor de retorno
 
-Devolve `hasAttribute()`un valor booleano que indica se o elemento ten o atributo especificado.
+`hasAttribute()` devolve un valor booleano que indica se o elemento ten o atributo especificado.
 
-Se o elemento contén un atributo, devolve `hasAttribute()`verdadeiro; se non, volve `false`.
+Se o elemento contén un atributo, `hasAttribute()` devolve ``true``; se non, devolve `false`.
 
-## `hasAttribute()`Exemplo de JavaScript
+## Exemplo de `hasAttribute()`
 
-Vexa o seguinte exemplo:
+Ver o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -468,21 +458,23 @@ Vexa o seguinte exemplo:
     </script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-Saída:
+**Saída:**
 
-```
+```bash
 true
-Idioma do código:  JavaScript  ( javascript )
 ```
 
-Cómo funciona:
+**Como funciona:**
 
-- Seleccione o botón co id btnSend mediante o `querySelector()`método.
-- Comproba se o botón ten o atributo desactivado chamando ao `hasAttribute()`método no elemento botón.
+- Selecciona o botón co ``id`` ``btnSend`` mediante o método `querySelector()`.
+- Comproba se o botón ten o atributo desactivado chamando ao método `hasAttribute()` no elemento botón.
 
 ## Resumo
 
-- Use o `hasAttribute()`método para comprobar se un elemento contén un atributo especificado.
+- Use o método `hasAttribute()` para comprobar se un elemento contén un atributo especificado.
+
+---
+
+nov 2023

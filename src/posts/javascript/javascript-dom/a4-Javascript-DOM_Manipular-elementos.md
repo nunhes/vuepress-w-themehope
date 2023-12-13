@@ -155,7 +155,7 @@ const menu = document.querySelector("#menu");
 menu.appendChild(li);
 ```
 
-Saída:
+**Saída:**
 
 ```html
 <ul id="menu">
@@ -255,13 +255,13 @@ menu.appendChild(createMenuItem("Services"));
 menu.appendChild(createMenuItem("About Us"));
 ```
 
-Como funciona:
+**Como funciona:**
 
 - En primeiro lugar, a función `createMenuItem()` crea un novo elemento de lista cun nome especificado mediante o método `createElement()`.
 - En segundo lugar, se selecciona o elemento `<ul>` con id `menu` usando o método `querySelector()`.
 - En terceiro lugar, chámase á función `createMenuItem()` para crear un novo elemento de menú e se usa o método `appendChild()` para engadir o elemento de menú ao elemento `<ul>`.
 
-Saída:
+**Saída:**
 
 ```html
 <ul id="menu">
@@ -331,7 +331,7 @@ const secondList = document.querySelector("#second-list");
 secondList.appendChild(everest);
 ```
 
-Como funciona:
+**Como funciona:**
 
 - En primeiro lugar, selecciona o primeiro elemento polo seu id (`first-list`) usando o método `querySelector()`.
 - En segundo lugar, selecciona o primeiro elemento fillo da primeira lista.
@@ -376,12 +376,12 @@ let note = document.getElementById("note");
 console.log(note.textContent);
 ```
 
-Como funciona.
+**Como funciona:**
 
 - En primeiro lugar, selecciona o elemento `div` coa nota de identificación mediante o método `getElementById()`.
 - A continuación, amosa o texto do nodo accedendo á propiedade `textContent`.
 
-Saída:
+**Saída:**
 
 ```text
 JavaScript textContent Demo!
@@ -399,7 +399,7 @@ let note = document.getElementById("note");
 console.log(note.innerText);
 ```
 
-Saída:
+**Saída:**
 
 ```text
 JavaScript textContent Demo!
@@ -470,12 +470,12 @@ let menu = document.getElementById("menu");
 console.log(menu.innerHTML);
 ```
 
-Como funciona:
+**Como funciona:**
 
 - En primeiro lugar, seleccione o elemento `<ul>` polo seu id ( `menu`) usando o método `getElementById()`.
 - A continuación, obtén o contido HTML do elemento `<ul>` usando o `innerHTML`.
 
-Saída:
+**Saída:**
 
 ```js
 <li>Home</li>
@@ -515,7 +515,7 @@ Vexa o seguinte exemplo:
 </html>
 ```
 
-Saída:
+**Saída:**
 
 ```html
 <li>Home</li>
@@ -523,7 +523,7 @@ Saída:
 <li>About Us</li>
 ```
 
-Como funciona.
+**Como funciona:**
 
 - Primeiro, obtén o elemento `<ul>` co id `menu` usando o método `getElementById()`.
 - En segundo lugar, crea un elemento `<li>` novo e engádeo ao elemento `<ul>` usando os métodos `createElement()` e `appendChild()`.
@@ -739,7 +739,7 @@ langEl.appendChild(fragment);
 
 <iframe src="https://www.javascripttutorial.net/sample/dom/documentfragment/" height="150" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
 
-Como funciona:
+**Como funciona:**
 
 - En primeiro lugar, selecciona o elemento `<ul>` polo seu id usando o método `querySelector()`.
 - En segundo lugar, crea un novo fragmento de documento.
@@ -849,7 +849,7 @@ O seguinte exemplo usa o método `before()` para inserir `<h1>` antes dun parág
 </html>
 ```
 
-Como funciona.
+**Como funciona:**
 
 Primeiro, se obtén o elemento `<p>` usando o método `querySelector()`:
 
@@ -904,7 +904,7 @@ O seguinte exemplo usa o método `before()` para inserir varios nodos antes dun 
 </html>
 ```
 
-Como funciona:
+**Como funciona:**
 
 En primeiro lugar, selecciona o elemento ul usando o método `querySelector()`:
 
@@ -1056,7 +1056,7 @@ O seguinte exemplo usa o método `after()` para inserir un parágrafo despois du
 </html>
 ```
 
-Como funciona.
+**Como funciona:**
 
 En primeiro lugar, obtén o elemento de título usando o método `querySelector()`:
 
@@ -1110,7 +1110,7 @@ O seguinte exemplo usa o método `after()` para inserir varios nodos despois dun
 </html>
 ```
 
-Como funciona:
+**Como funciona:**
 
 En primeiro lugar, selecciona o elemento ul usando o método `querySelector()`:
 
@@ -1210,7 +1210,7 @@ Ter en conta que a `DOMString` é unha cadea UTF-16 que se asigna directamente a
 
 O método `append()` non ten valor de retorno. Significa que o método `append()` devolve implicitamente `undefined`.
 
-## Exemplos do método JavaScript `append()`.
+## Exemplos do método `append()`.
 
 Poñamos algúns exemplos de uso do método `append()`.
 
@@ -1251,7 +1251,7 @@ HTML de saída:
 </ul>
 ```
 
-Como funciona:
+**Como funciona:**
 
 - En primeiro lugar, selecciona o elemento `ul` mediante o `id` co método `querySelector()`.
 - En segundo lugar, declarar unha matriz de linguas.
@@ -1299,7 +1299,7 @@ Aquí están as diferenzas entre `append()`e `appendChild()`:
 
 **Resumo**: nesta sección, aprenderás a usar o método `insertAdjacentHTML()` para inserir HTML no documento.
 
-## Introdución ao método JavaScript `insertAdjacentHTML()`.
+## Introdución ao método `insertAdjacentHTML()`.
 
 `insertAdjacentHTML()` è un método da interface `Element` para que poidas invocalo desde calquera elemento.
 
@@ -1334,13 +1334,13 @@ O parámetro `text` é unha cadea que o método `insertAdjacentHTML()` analiza c
 
 ### Consideración de seguridade
 
-Do mesmo xeito que o `innerHTML`, se usas a entrada do usuario para pasar ao método `insertAdjacentHTML()`, sempre debes escapar del para evitar riscos de seguridade.
+Do mesmo xeito que o `innerHTML`, se usas a entrada do usuario para pasarlla ao método `insertAdjacentHTML()`, sempre o debes *escapar* para evitar riscos de seguridade.
 
-## Exemplo do método JavaScript `insertAdjacentHTML()`.
+## Exemplo do método `insertAdjacentHTML()`.
 
-O seguinte exemplo de JavaScript usa o método `insertAdjacentHTML()` para inserir varios elementos na páxina coas posicións relativas ao `ul`elemento:
+O seguinte exemplo de JavaScript usa o método `insertAdjacentHTML()` para inserir varios elementos na páxina coas posicións relativas ao elemento `ul`:
 
-```
+```html
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -1365,49 +1365,49 @@ O seguinte exemplo de JavaScript usa o método `insertAdjacentHTML()` para inser
  </html>
 ```
 
-<iframe src="https://www.javascripttutorial.net/sample/dom/insertadjacenthtml/index.html" height="200" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
+![image-20231212170606683](./assets/image-20231212170606683.png)
 
-Como funciona:
 
-- En primeiro lugar, seleccione o `ul`elemento polo seu id `list`usando o `querySelector()`método.
-- A continuación, use o `insertAdjacentHTML()`método para inserir un elemento de título 2 antes do `ul`elemento. A posición é `'beforebegin'`.
-- Despois, use o `insertAdjacentHTML()`método para inserir un novo elemento de lista antes do primeiro fillo do elemento ul. A posición é `'afterbegin'`.
-- Despois diso, use o `insertAdjacentHTML()`método para inserir un novo elemento de lista despois do último fillo do elemento ul coa posición `'beforeend'`.
-- Finalmente, inserir use o `insertAdjacentHTML()`método para inserir un novo elemento de parágrafo despois do elemento ul coa posición `'afterend'`.
+
+**Como funciona:**
+
+- En primeiro lugar, seleccionar o elemento `ul` polo seu ``id`` `list` usando o método `querySelector()`.
+- A continuación, usar o método `insertAdjacentHTML()` para inserir un elemento de ``h2`` antes do  elemento `ul`. A posición é `'beforebegin'`.
+- Despois, usar o método `insertAdjacentHTML()` para inserir un novo elemento de lista antes do primeiro fillo do elemento ``ul``. A posición é `'afterbegin'`.
+- Despois diso, usar o método `insertAdjacentHTML()` para inserir un novo elemento de lista despois do último fillo do elemento ``ul`` coa posición `'beforeend'`.
+- Finalmente, inserir usar o método `insertAdjacentHTML()` para inserir un novo elemento de parágrafo despois do elemento ``ul`` coa posición `'afterend'`.
 
 ## Resumo
 
-- Use o `insertAdjacentHTML()`método para inserir un texto como Nodos na árbore DOM nunha posición especificada.
-- Escape sempre do texto introducido polo usuario que pasa ao `insertAdjacentHTML()`método para evitar riscos de seguridade.
+- Use o método `insertAdjacentHTML()`o para inserir un texto como nodos na árbore DOM nunha posición especificada.
+- *Escapar* sempre o texto introducido polo usuario e que pasa ao método `insertAdjacentHTML()` para evitar riscos de seguridade.
 
 # `replaceChild`
 
-**Resumo** : nesta sección aprenderás a usar o `Node.replaceChild()`método JavaScript para substituír un elemento HTML por outro novo.
+**Resumo**: nesta sección aprenderás a usar o método `Node.replaceChild()` para substituír un elemento HTML por outro novo.
 
-Para substituír un elemento HTML, usa o `node.replaceChild()`método:
+Para substituír un elemento HTML, usa o método `node.replaceChild()`:
 
-```
+```js
 parentNode.replaceChild(newChild, oldChild);
-
 ```
 
-Neste método, `newChild`é o novo nodo para substituír o `oldChild`nodo que é o antigo nodo fillo que se vai substituír.
+Neste método, `newChild` é o novo nodo para substituír o nodo `oldChild`, que é o antigo nodo fillo que se vai substituír.
 
-Supoña que tes a seguinte lista de elementos:
+Supón que tes a seguinte lista de elementos:
 
-```
+```html
 <ul id="menu">
     <li>Homepage</li>
     <li>Services</li>
     <li>About</li>
     <li>Contact</li>
 </ul>
-
 ```
 
 O seguinte exemplo crea un novo elemento de lista e substitúe o primeiro elemento de lista do menú por outro novo:
 
-```
+```js
 let menu = document.getElementById('menu');
 // create a new node
 let li = document.createElement('li');
@@ -1418,9 +1418,9 @@ menu.replaceChild(li, menu.firstElementChild);
 
 ```
 
-Poñelo todo xunto.
+**Poñelo todo xunto:**
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1449,48 +1449,48 @@ Poñelo todo xunto.
 
 ## Resumo
 
-- Utilízase `Node.replaceChild()`para substituír un elemento fillo dun nodo por un elemento novo.
+- Utilízase `Node.replaceChild()` para substituír un elemento fillo dun nodo determinado por un elemento novo.
 
 # `cloneNode`
 
-**Resumo** : nesta sección, aprenderás a usar o `cloneNode()`método JavaScript para clonar un elemento.
+**Resumo**: nesta sección, aprenderás a usar o método `cloneNode()` para clonar un elemento.
 
-É `cloneNode()`un método da `Node`interface que che permite clonar un elemento:
+ `cloneNode()` é un método da interface `Node` que che permite clonar un elemento:
 
-```
+```js
 let clonedNode = originalNode.cloneNode(deep);
 ```
 
-### Pamaraters
+### Pamaratros
 
 ### `deep`
 
-O `cloneNode()`método acepta un parámetro opcional `deep`:
+O método `cloneNode()` acepta un parámetro opcional `deep`:
 
-- Se `deep`é `true`, entón o nodo orixinal e todos os seus descendentes son clonados.
-- Se `deep`é `false`, só se clonará o nodo orixinal. _Non_ se clonarán todos os descendentes do nodo .
+- Se `deep` é `true`, entón o nodo orixinal e todos os seus descendentes son clonados.
+- Se `deep` é `false`, só se clonará o nodo orixinal. _Non_ se clonarán todos os descendentes do nodo .
 
-O `deep`parámetro predeterminado se `false`omite.
+O parámetro `deep` predeterminado é `false`, se da por sentado e se omite.
 
-### `originalNode`
+### `originalNode `
 
-O `originalNode`é o elemento a clonar.
+`originalNode` é o elemento a clonar.
 
 ### Valor de retorno
 
-O `cloneNode()`devolve unha copia do `originalNode`.
+ `cloneNode()` devolve unha copia do `originalNode`.
 
 ### Notas de uso
 
-Ademais da estrutura DOM, `cloneNode()`copia todos os atributos e escoitas en liña do nodo orixinal. Non obstante, non copia os oíntes de eventos engadidos mediante `addEventListener()`nin a asignación ás propiedades do elemento, como `originalNode.onclick = eventHandler()`.
+Ademais da estrutura DOM, `cloneNode()` copia todos os atributos e escoitas en liña do nodo orixinal. Non obstante, non copia os oíntes de eventos engadidos mediante `addEventListener()` nin a asignación ás propiedades do elemento, como `originalNode.onclick = eventHandler()`.
 
-Se clona un nodo cun `id`atributo e coloca o nodo clonado no mesmo documento, duplicarase `id`. Neste caso, cómpre cambiar `id`antes de engadilo á árbore DOM.
+> Se clonamos un nodo cun atributo `id` e colocamos o nodo clonado no mesmo documento, duplicarase a `id`. Nese caso, cómpre cambiar a `id` antes de engadilo á árbore DOM.
 
-## `cloneNode()`Exemplo de JavaScript
+## Exemplo de `cloneNode()`
 
-O seguinte exemplo usa o `cloneNode()`método para copiar o `<ul>`elemento e colocalo no mesmo documento:
+O seguinte exemplo usa o método `cloneNode()` para copiar o elemento  `<ul>` e colocalo no mesmo documento:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1515,76 +1515,73 @@ O seguinte exemplo usa o `cloneNode()`método para copiar o `<ul>`elemento e col
 
 ```
 
-Como funciona.
+**Como funciona:**
 
-- En primeiro lugar, seleccione o `<ul>`menú co id usando o `querySelector()`método.
-- En segundo lugar, crea un clon profundo do `<ul>`elemento usando o `cloneNode()`método.
-- En terceiro lugar, cambia o `id`elemento clonado para evitar a duplicación.
-- Finalmente, engade o elemento clonado aos nodos fillos do método `document.body`usando `appendChild()`.
+- En primeiro lugar, seleccionar o menú `<ul>` co ``id`` usando o método `querySelector()`.
+- En segundo lugar, crear un clon profundo do elemento `<ul>` usando o método `cloneNode()`.
+- En terceiro lugar, cambiar o elemento `id` clonado para evitar a duplicación.
+- Finalmente, engadir o elemento clonado aos nodos fillos do método `document.body` usando `appendChild()`.
 
-Saída:
+**Saída:**
 
 ![JavaScript cloneNode](./assets/JavaScript-cloneNode.png)
 
 ## Resumo
 
-- Use o `node.cloneNode()`método para clonar o nodo.
-- Pasa `true`ao `cloneNode()`método para crear un clon profundo dun elemento DOM.
+- Usar o método `node.cloneNode()` para clonar o nodo.
+- Pasar `true` ao método `cloneNode()` para crear un clon profundo dun elemento DOM.
 
 # `removeChild`
 
-**Resumo** : nesta sección, aprenderás a usar o `removeChild()`método JavaScript para eliminar un nodo fillo dun nodo pai.
+**Resumo**: nesta sección, aprenderás a usar o método `removeChild()` para eliminar un nodo fillo dun nodo pai.
 
-## Introdución ao `removeChild()`método JavaScript
+## Introdución ao método `removeChild()`
 
-Para eliminar un elemento fillo dun nodo, usa o `removeChild()`método:
+Para eliminar un elemento fillo dun nodo, usa o método `removeChild()`:
 
-```
+```js
 let childNode = parentNode.removeChild(childNode);
 ```
 
-É `childNode`o nodo fillo do `parentNode`que queres eliminar. Se `childNode`non é o nodo fillo do `parentNode`, o método lanza unha excepción.
+`childNode` é o nodo fillo do `parentNode` que queres eliminar. Se `childNode` non é o nodo fillo do `parentNode`, o método lanza unha excepción.
 
-Devolve `removeChild()`o nodo fillo eliminado da árbore DOM pero gárdao na memoria, que se pode usar máis tarde.
+`removeChild()` devolve o nodo fillo eliminado da árbore DOM pero gárdao na memoria, que se pode usar máis tarde.
 
 Se non queres manter o nodo fillo eliminado na memoria, utiliza a seguinte sintaxe:
 
-```
+```js
 parentNode.removeChild(childNode);
-
 ```
 
 O nodo fillo estará na memoria ata que sexa destruído polo colector de lixo de JavaScript.
 
-## `removeChild()`Exemplo de JavaScript
+## Exemplo de `removeChild()`
 
 Supoña que tes a seguinte lista de elementos:
 
-```
+```html
 <ul id="menu">
     <li>Home</li>
     <li>Products</li>
     <li>About Us</li>
 </ul>
-
 ```
 
-O seguinte exemplo usa `removeChild()`para eliminar o último elemento da lista:
+O seguinte exemplo usa `removeChild()` para eliminar o último elemento da lista:
 
-```
+```js
 let menu = document.getElementById('menu');
 menu.removeChild(menu.lastElementChild);
-
 ```
 
-Como funciona:
+**Como funciona:**
 
-- Primeiro, obtén o `ul`elemento co id `menu`usando o `getElementById()`método.
-- A continuación, elimine o último elemento do `ul`elemento mediante o `removeChild()`método. A `menu.lastElementChild`propiedade devolve o último elemento fillo do `menu`.
+- Primeiro, obter o elemento `ul` co ``id``  `menu` usando o método `getElementById()`.
+- A continuación, eliminar o último elemento do elemento `ul` mediante o método `removeChild()`. A propiedade `menu.lastElementChild` devolve o último elemento fillo do `menu`.
 
-Poñelo todo xunto.
+**Poñelo todo xunto:**
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1609,75 +1606,72 @@ Poñelo todo xunto.
 
 Para eliminar todos os nodos fillos dun elemento, debes seguir os seguintes pasos:
 
-- Obter o primeiro nodo do elemento usando a `firstChild`propiedade.
-- Eliminando repetidamente o nodo fillo ata que non quede ningún nodo fillo.
+- Obter o primeiro nodo do elemento usando a propiedade `firstChild`.
+- Eliminar repetidamente o nodo fillo ata que non quede ningún nodo fillo.
 
-O seguinte código mostra como eliminar todos os elementos da lista do `menu`elemento:
+O seguinte código mostra como eliminar todos os elementos da lista do elemento `menu`:
 
-```
+```js
 let menu = document.getElementById('menu');
 while (menu.firstChild) {
     menu.removeChild(menu.firstChild);
 }
 ```
 
-Podes eliminar todos os nodos fillos dun elemento configurando a `innerHTML`propiedade do nodo pai en branco:
+Podes eliminar todos os nodos fillos dun elemento configurando a propiedade `innerHTML` do nodo pai en branco:
 
-```
+```js
 let menu = document.getElementById('menu');
 menu.innerHTML = '';
 ```
 
 ## Resumo
 
-- Utilízase `parentNode.removeChild()`para eliminar un nodo fillo dun nodo pai.
-- Lanza `parentNode.removeChild()`unha excepción se o nodo fillo non se pode atopar no nodo pai.
+- `parentNode.removeChild()`se usa para eliminar un nodo fillo dun nodo pai.
+- `parentNode.removeChild()` lanza unha excepción se o nodo fillo non se pode atopar no nodo pai.
 
 # `insertBefore`
 
-**Resumo** : nesta sección, aprenderás a usar o JavaScript `insertBefore()`para inserir un nodo antes doutro como un nodo fillo dun nodo pai especificado.
+**Resumo**: nesta sección, aprenderás a usar o método `insertBefore()` para inserir un nodo antes doutro como un nodo fillo dun nodo pai especificado.
 
-## Introdución ao `insertBefore()`método JavaScript
+## Introdución ao método `insertBefore()`
 
-Para inserir un nodo antes doutro como nodo fillo dun nodo pai, usa o `parentNode.insertBefore()`método:
+Para inserir un nodo antes doutro como nodo fillo dun nodo pai, usa o método `parentNode.insertBefore()`:
 
-```
+```js
 parentNode.insertBefore(newNode, existingNode);
-
 ```
 
 Neste método:
 
-- É `newNode`o novo nodo a inserir.
-- É `existingNode`o nodo antes do cal se insire o novo nodo. Se `existingNode`é `null`, `insertBefore()`insire o `newNode`ao final dos `parentNode`nodos fillos de.
+- `newNode` é o novo nodo a inserir.
+- `existingNode` é o nodo antes do cal se insire o novo nodo. Se `existingNode` é `null`, `insertBefore()` insire o `newNode` ao final dos nodos fillos de `parentNode`.
 
-O `insertBefore()`devolve o nodo fillo inserido.
+ `insertBefore()` devolve o nodo fillo inserido.
 
-## `insertBefore()`Función auxiliar de JavaScript
+## Función auxiliar `insertBefore()`
 
-A seguinte `insertBefore()`función insire un novo nodo antes dun nodo especificado:
+A seguinte función `insertBefore()` insire un novo nodo antes dun nodo especificado:
 
-```
+```js
 function insertBefore(newNode, existingNode) {
     existingNode.parentNode.insertBefore(newNode, existingNode);
 }
-
 ```
 
-## `insertBefore()`Exemplo de JavaScript
+## Exemplo de `insertBefore()`
 
-Supoña que tes a seguinte lista de elementos:
+Supón que tes a seguinte lista de elementos:
 
-```
+```html
 <ul id="menu">
     <li>Services</li>
     <li>About</li>
     <li>Contact</li>
 </ul>
-
 ```
 
-O seguinte exemplo usa o `insertBefore()`método para inserir un novo nodo como primeiro elemento da lista:
+O seguinte exemplo usa o método `insertBefore()` para inserir un novo nodo como primeiro elemento da lista:
 
 ```
 let menu = document.getElementById('menu');
@@ -1689,15 +1683,15 @@ li.textContent = 'Home';
 menu.insertBefore(li, menu.firstElementChild);
 ```
 
-Como funciona.
+**Como funciona:**
 
 - Primeiro, obtén o `menu`elemento usando o `getElementById()`método.
 - En segundo lugar, crea un novo elemento de lista usando o `createElement()`método.
 - En terceiro lugar, insira o elemento de lista antes do primeiro elemento fillo do `menu`elemento usando o `insertBefore()`método.
 
-Poñelo todo xunto.
+**Poñelo todo xunto:**
 
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -1729,32 +1723,32 @@ Poñelo todo xunto.
 
 ## Resumo
 
-- Use o `parentNode.insertBefore()`para inserir un novo nodo antes dun nodo existente como un nodo fillo dun nodo pai.
+- Usar `parentNode.insertBefore()` para inserir un novo nodo antes dun nodo existente como un nodo fillo dun nodo pai.
 
 # insertAfter
 
-**Resumo** : nesta sección, aprenderás a inserir un novo nodo despois dun nodo existente como nodo fillo dun nodo pai.
+**Resumo**: nesta sección, aprenderás a inserir un novo nodo despois dun nodo existente como nodo fillo dun nodo pai.
 
-Esta sección foi escrito cando a API DOM non admitía o `after()`método. Agora, pode usar o `after()`método para inserir un nodo despois dun elemento.
+Esta sección foi escrito cando a API DOM non admitía o método `after()`. Agora, pódese usar o método `after()` para inserir un nodo despois dun elemento.
 
-JavaScript DOM proporciona o `insertBefore()`método que lle permite inserir un novo nodo despois dun nodo existente como un nodo fillo.
+JavaScript DOM proporciona o método `insertBefore()` que lle permite inserir un novo nodo despois dun nodo existente como un nodo fillo.
 
-Para inserir un novo nodo despois dun nodo existente como nodo fillo, pode usar o seguinte enfoque:
+Para inserir un novo nodo despois dun nodo existente como nodo fillo, pódese usar o seguinte enfoque:
 
-- En primeiro lugar, [seleccione o seguinte nodo irmán](https://www.javascripttutorial.net/javascript-dom/javascript-get-parent-element-parentnode/) do nodo existente.
-- A continuación, [seleccione o nodo pai](https://www.javascripttutorial.net/javascript-dom/javascript-get-parent-element-parentnode/) do nodo existente e chame ao `insertBefore()`método no nodo pai para inserir un novo nodo antes dese nodo irmán inmediato.
+- En primeiro lugar, [seleccionar o seguinte nodo irmán](https://www.javascripttutorial.net/javascript-dom/javascript-get-parent-element-parentnode/) do nodo existente.
+- A continuación, [seleccionar o nodo pai](https://www.javascripttutorial.net/javascript-dom/javascript-get-parent-element-parentnode/) do nodo existente e chamar ao método `insertBefore()` no nodo pai para inserir un novo nodo antes dese nodo irmán inmediato.
 
-A seguinte `insertAfter()`función ilustra a lóxica:
+A seguinte función `insertAfter()` ilustra a lóxica:
 
-```
+```js
 function insertAfter(newNode, existingNode) {
     existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
 }
 ```
 
-Supoña que tes a seguinte lista de elementos:
+Supón que tes a seguinte lista de elementos:
 
-```
+```html
 <ul id="menu">
     <li>Home</li>
     <li>About</li>
@@ -1762,9 +1756,9 @@ Supoña que tes a seguinte lista de elementos:
 </ul>
 ```
 
-O seguinte insire un novo nodo despois do último elemento da lista:
+O seguinte código insire un novo nodo despois do último elemento da lista:
 
-```
+```js
 let menu = document.getElementById('menu');
 // create a new li node
 let li = document.createElement('li');
@@ -1774,15 +1768,15 @@ li.textContent = 'Services';
 insertAfter(li,  menu.lastElementChild);
 ```
 
-Como funciona:
+**Como funciona:**
 
-- En primeiro lugar, seleccione o `ul`elemento polo seu id ( `menu`) usando o `getElementById()`método.
-- En segundo lugar, crea un novo elemento de lista usando o `createElement()`método.
-- En terceiro lugar, use o `insertAfter`método () para inserir un elemento de lista despois do último elemento de lista.
+- En primeiro lugar, seleccionar o elemento `ul` polo seu ``id`` `menu` usando o método `getElementById()`.
+- En segundo lugar, crear un novo elemento de lista usando o método  `createElement()`.
+- En terceiro lugar, usar o método  `insertAfter` para inserir un elemento de lista despois do último elemento de lista.
 
-Poñelo todo xunto.
+**Poñelo todo xunto:**
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1813,7 +1807,7 @@ Poñelo todo xunto.
 
 O menú parece o seguinte despois da inserción:
 
-```
+```html
 <ul id="menu">
     <li>Home</li>
     <li>About</li>
@@ -1824,5 +1818,9 @@ O menú parece o seguinte despois da inserción:
 
 ## Resumo
 
-- JavaScript DOM aínda non admitiu o `insertAfter()`método.
-- Use o `insertBefore()`método e a `nextSibling`propiedade para inserir un novo antes dun nodo existente como fillo dun nodo pai.
+- JavaScript DOM aínda non admitiu o método `insertAfter()`.
+- Usar o método `insertBefore()` e a propiedade `nextSibling` para inserir un novo elemento como fillo dun nodo pai antes dun nodo existente.
+
+---
+
+nov 2023

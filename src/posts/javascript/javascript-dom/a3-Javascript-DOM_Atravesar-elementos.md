@@ -46,11 +46,9 @@ Consulta o seguinte documento HTML:
 </html>
 ```
 
-A seguinte imaxe mostra a saída na Consola:
+*Comproba a saída na consola*!
 
-![JavaScript parentNode](F:\2024\DAW2024\js\assets\JavaScript-parentNode.png)
-
-Cómo funciona:
+**Como funciona:**
 
 - En primeiro lugar, selecciona o elemento coa clase `.note` mediante o método `querySelector()`.
 - En segundo lugar, busca o nodo pai do elemento.

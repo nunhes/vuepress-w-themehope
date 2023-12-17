@@ -56,9 +56,9 @@ category:
    - [Principais metodoloxías de programación](https://www.obsbusiness.school/blog/metodologia-de-programacion-definicion-tipos-y-aplicacion). [2](https://asana.com/es/resources/project-management-methodologies)
 2. [Linguaxes para o desenvolvemento de contido dinámico](https://www.um.es/docencia/barzana/DAWEB/2017-18/daweb-tema-13-paginas-web-dinamicas.html).
    - [Linguaxes de guión](https://kinsta.com/es/blog/lenguajes-script/). [Características xerais](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/que-son-los-lenguajes-de-scripting/).
-   - Comparativa de linguaxes de guión. [Criterios para a selección dunha linguaxe de guión](https://blog.educacionit.com/2018/04/10/4-criterios-para-elegir-tu-primer-lenguaje-de-programacion/).
-   - Máquinas virtuais en navegadores. Miniaplicacións (applets).
-   - Outras linguaxes para o desenvolvemento de [aplicacións web enriquecidas (RIA)](https://es.wikipedia.org/wiki/Rich_Internet_application).
+   - [Comparativa de linguaxes de guión](https://kinsta.com/es/blog/lenguajes-script/) + [2](https://kinsta.com/es/blog/php-vs-javascript/). [Criterios para a selección dunha linguaxe de guión](https://blog.educacionit.com/2018/04/10/4-criterios-para-elegir-tu-primer-lenguaje-de-programacion/).
+   - [Máquinas virtuais en navegadores](https://cloud.google.com/compute?hl=es). Miniaplicacións (applets).
+   - Outras linguaxes para o desenvolvemento de [aplicacións web enriquecidas (RIA)](https://es.wikipedia.org/wiki/Rich_Internet_application). + [b](https://neilpatel.com/es/blog/web-progresivas/)
 
 
 ### UD 4. [LINGUAXES DE GUIÓN DE USO XERAL](https://kinsta.com/es/blog/lenguajes-script/)
@@ -66,7 +66,7 @@ category:
 1. [Integración de linguaxes de guión en navegadores web.](https://www.crampete.com/blogs/client-side-scripting-top-languages-to-learn/)
    - [Comparativa e compatibilidade con navegadores](https://crampeteb.medium.com/client-side-scripting-top-languages-to-learn-4c8d736fa19a).
    - [Diferencias entre versións](https://madasamy.medium.com/javascript-brief-history-and-ecmascript-es6-es7-es8-features-673973394df4).
-2. [Estrutura xeral dun programa nunha linguaxe de guión](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics).
+2. [Estrutura xeral dun programa nunha linguaxe de guión](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics). [2](https://developer.mozilla.org/es/docs/Web/JavaScript/Language_overview)
    - [Variables](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables) e tipos de datos.
    - [Operadores](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators).
    - [Obxectos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects).
@@ -75,93 +75,93 @@ category:
    - [Bucles](https://developer.mozilla.org/es/docs/Learn/JavaScript/Building_blocks/Looping_code).
    - Comentarios
 3. [Funcións](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions).
-   - Parámetros.
+   - [Parámetros](https://es.javascript.info/function-basics).
    - [Variables locais e globais](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables).
-   - Bibliotecas de funcións
-4. Manipulación de texto.
-   - Funcións básicas para manipulación de texto.
-   - Introdución e validación de texto.
+   - [Bibliotecas de funcións](https://kinsta.com/es/blog/bibliotecas-javascript/) +[2](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/frameworks-javascript-y-librerias-populares/)
+4. [Manipulación de texto](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Strings).
+   - [Funcións básicas para manipulación de texto](https://ed.team/blog/5-metodos-que-debes-conocer-para-manipular-textos-con-javascript).
+   - [Introdución e validación de texto](https://blog.hubspot.es/website/como-validar-formulario-javascript).
 5. [Listas (arrays)](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Arrays).
-   - Creación de arrays básicos.
-   - Arrays multidimensionais.
-   - Tratamento de arrays mediante bucles.
-6. Formatos estándar de almacenamento de datos en linguaxes de guión.
-   - Comparativa.
-   - Tratamento de formatos estándar.
-   - Dicionarios de datos.
-7. [Obxectos](https://www.freecodecamp.org/news/object-oriented-programming-javascript/).
+   - [Creación de arrays básicos](https://es.javascript.info/array).
+   - [Arrays multidimensionais](https://keepcoding.io/blog/matrices-multidimensionales-en-javascript/).
+   - [Tratamento de arrays mediante bucles](https://keepcoding.io/blog/arrays-con-bucles-for-en-javascript/).
+6. [Formatos estándar de almacenamento de datos en linguaxes de guión](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures).
+   - [Comparativa](https://aws.amazon.com/es/compare/the-difference-between-block-file-object-storage/).
+   - [Tratamento de formatos estándar](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Text_formatting).
+   - [Dicionarios](https://rodrwan.medium.com/dictionaries-en-js-e2abd196f720) de datos. + [2](https://blog.koalite.com/2017/01/un-diccionario-persistente-en-4-lineas-de-javascript/)
+7. [Obxectos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_objects) + [2](https://www.freecodecamp.org/news/object-oriented-programming-javascript/).
    - [Creación de obxectos: métodos e estruturas de datos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Basics) + [1](https://www.freecodecamp.org/espanol/news/javascript-crear-objecto-como-definir-objetos-en-js/)
-   - Bibliotecas de obxectos
+   - [Bibliotecas de obxectos](https://learn.microsoft.com/es-es/previous-versions/office/sharepoint-visio/jj193050(v=office.15))
 8. [O modelo de documento web](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
-   - Estrutura de documento.
-   - Navegación polas propiedades dun documento.
-   - Cambio de propiedades mediante linguaxes de guión.
-9. Xestión de eventos.
-   - Tipos de eventos.
-   - Técnicas para o manexo de eventos mediante linguaxes de guión.
-   - Manexadores de eventos.
-   - Eventos de carga inicial.
-   - Delegación e propagación de eventos.
+   - [Estrutura de documento](https://es.javascript.info/dom-nodes). + [2](https://lenguajejs.com/webcomponents/componentes/estructura-componente/)
+   - [Navegación polas propiedades dun documento](https://es.javascript.info/basic-dom-node-properties).
+   - [Cambio de propiedades mediante linguaxes de guión](https://es.javascript.info/property-accessors).
+9. [Xestión de eventos](https://es.javascript.info/introduction-browser-events).
+   - [Tipos de eventos](https://es.javascript.info/introduction-browser-events).
+   - [Técnicas para o manexo de eventos mediante linguaxes de guión](https://es.javascript.info/modifying-document).
+   - [Controladores de eventos](https://es.javascript.info/introduction-browser-events#controladores-de-eventos).
+   - [Eventos de carga inicial](https://es.javascript.info/onload-ondomcontentloaded). + [2](https://desarrolloweb.com/articulos/1319.php)
+   - [Delegación e propagación de eventos.](https://es.javascript.info/event-delegation) + [2](https://osmancea.medium.com/delegaci%C3%B3n-de-eventos-del-dom-con-javascript-d28131d43686) + [3](https://www.paradigmadigital.com/dev/entendiendo-delegacion-eventos-javascript/)
 10. [Xestión de errores](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_went_wrong).
-    - Manexo de erro «Linguaxes de guión non habilitados» (no script).
-    - Comprobación de erros en funcións.
-    - Captura de errores.
-    - Uso de puntos de ruptura
-11. Usos específicos de linguaxes de guión.
-    - Integración multimedia mediante linguaxes de guión.
-    - Animacións.
-    - Efectos especiais en elementos gráficos e texto.
-    - Reixas de datos.
-    - Manexo de canais de subscrición (RSS).
-    - Descrición das técnicas de acceso asíncrono (AJAX).
-    - Uso de linguaxes de guión en dispositivos móbiles.
-12. Entornas integradas (*frameworks*) para o desenvolvemento con linguaxes de guión.
-    - Características das entornas de uso común. Comparativa.
-    - Editores avanzados.
-    - Funcionalidades de validación e depuración de código.
-    - Técnicas para documentación do código.
-    - Utilidades adicionais para a realización de contidos dinámicos.
-13. Extensións  útiles de navegadores.
-    - Entornas de desenvolvemento específicos: desenvolvemento sobre dispositivos móbiles
+    - [Manexo de erro «Linguaxes de guión non habilitados» (no script).](https://kinsta.com/es/blog/errores-en-javascript/)
+    - [Comprobación de erros](https://es.javascript.info/structure) en funcións. +[2](https://developer.mozilla.org/es/docs/Learn/JavaScript/Howto)
+    - [Captura de errores.](https://developer.mozilla.org/es/docs/Learn/JavaScript/Howto) + [2](https://es.javascript.info/promise-error-handling)
+    - [Uso de puntos de ruptura](https://learn.microsoft.com/es-es/microsoft-edge/devtools-guide-chromium/javascript/breakpoints) + [2](https://picodotdev.github.io/blog-bitix/2018/05/depurar-codigo-javascript-con-la-instruccion-debugger/)
+11. [Usos específicos de linguaxes de guión.](https://blog.hubspot.es/website/que-es-javascript) + [2](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
+    - Integración [multimedia](https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding) mediante [linguaxes de guión](https://www.tutorialspoint.com/javascript/javascript_multimedia.htm).
+    - [Animacións](https://es.javascript.info/js-animation). + [2](https://developer.mozilla.org/es/docs/Web/API/Canvas_API/Tutorial/Basic_animations) + [3](https://lenguajejs.com/javascript/dom/animate-elementos-dom/)
+    - [Efectos](https://efectosjavascript.com/) especiais en elementos gráficos e texto. [2](https://www.campusmvp.es/recursos/post/bibliotecas-de-animaciones-con-css-y-javascript.aspx)
+    - Reixas de datos. + [2](https://www.smashingmagazine.com/2022/09/useful-javascript-data-grid-libraries/) + [3](https://www.ag-grid.com/javascript-data-grid/getting-started/)
+    - [Manexo de canais de subscrición (RSS).](https://desarrolloweb.com/articulos/lector-rss-con-javascript.html)
+    - [Descrición das técnicas de acceso asíncrono (AJAX)](https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data). + [2](https://www.hostinger.es/tutoriales/que-es-ajax)
+    - [Uso de linguaxes de guión en dispositivos móbiles.](https://www.techmagic.co/blog/why-use-javascript-for-mobile-apps/)
+12. Entornas integradas (*[frameworks](https://hackr.io/blog/best-javascript-frameworks)*) para o [desenvolvemento con linguaxes de guión](https://www.lambdatest.com/blog/best-javascript-frameworks/).
+    - Características das entornas de uso común. [Comparativa](https://www.wikiwand.com/en/Comparison_of_JavaScript-based_web_frameworks).
+    - [Editores avanzados](https://www.freecodecamp.org/espanol/news/como-elegir-el-mejor-editor-de-javascript/).
+    - Funcionalidades de [validación e depuración](https://learn.microsoft.com/es-es/visualstudio/javascript/debug-nodejs?view=vs-2022) de código. + [2](https://keepcoding.io/blog/pruebas-y-depuracion-de-juegos-en-js/) + [3](https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
+    - [Técnicas para documentación do código.](https://www.linkedin.com/pulse/descubrir-maneras-eficientes-de-documentar-c%C3%B3digo-con-erik-alvarez-fcmac/?originalSubdomain=es) + [2](https://www.gradiweb.com/es/marketing-digital/documentacion-de-codigo-para-javascript-con-jsdoc/)
+    - [Utilidades adicionais](https://www.webreactiva.com/blog/66-librerias-javascript) para a realización de [contidos dinámicos](https://appmaster.io/es/blog/javascript-contenido-web-dinamico).
+13. [Extensións  útiles de navegadores](https://profile.es/blog/extensiones-chrome-front-end/). + [2](https://www.dobuss.es/mejores-extensiones-chrome-para-desarrolladores-web/)
+    - [Entornas de desenvolvemento](https://es.bitdegree.org/tutoriales/mejor-ide-para-javascript/) específicos: [desenvolvemento sobre dispositivos móbiles](https://geekflare.com/es/best-ide-for-mobile-app-development/) + [2](https://www.arsys.es/blog/extensiones-vscode)
 
-### UD 5. CONTIDOS MULTIMEDIA
+### UD 5. [CONTIDOS MULTIMEDIA ](https://www.crehana.com/blog/transformacion-digital/contenidos-multimedia/) + [2](https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding)
 
-1. Definición de multimedia. Tipos de recursos multimedia.
-2. Inclusión de contido multimedia en páxinas web.
-   - Adaptadores para recursos multimedia.
-   - Enlace a diferentes recursos desde páxinas web.
-   - Incrustación de contido multimedia.
-   - Formatos de arquivo web. [El estándar MIME](https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_Types).
-   - Tipos de reprodución. Streaming e carga progresiva.
-   - Comparativa do tratamento de contido multimedia en diferentes versións de linguaxes de marcado de páxinas.
-3. Gráficos multimedia.
-   - Formatos gráficos. Comparativa.
-   - Repositorios de imaxes.
-   - Tipos de gráficos: fotografías, imaxes vectorizadas e iconas.
-   - Ferramentas para o tratamento gráfico. Filtros e tratamento de imaxes
-   - Conversión de formatos gráficos.
-4. [Son](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs).
-   - Formatos de son. Comparativa.
+1. [Definición de multimedia](https://www.wikiwand.com/es/Multimedia). [Tipos de recursos multimedia](https://soniadurolimia.com/contenido-multimedia/#que-es-contenido-multimedia-y-por-que-es-importante-para-tu-empresa).
+2. [Inclusión de contido multimedia en páxinas web](https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content). + [2](https://www.juroga.com/blog/como-usar-los-archivos-multimedia-en-nuestra-web/)
+   - [Adaptadores para recursos multimedia](https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Other_embedding_technologies).
+   - Enlace a diferentes recursos desde páxinas web. + [2](https://developer.mozilla.org/es/docs/Web/HTML/Element/iframe)
+   - [Incrustación](https://developer.mozilla.org/es/docs/Web/HTML/Element/embed) de [contido multimedia](https://ieperiodismo.com/que-elementos-multimedia-existen/).
+   - [Formatos de arquivo](https://es.wix.com/blog/2018/09/tipos-de-archivos-y-como-utilizarlos/) web. [El estándar MIME](https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_Types). + [2](https://blog.scaleflex.com/es/los-formatos-de-imagen-para-sitios-web-mas-populares/)
+   - [Tipos de reprodución](https://developer.mozilla.org/es/docs/Web/Media). [Streaming](https://www.telefonicaserviciosaudiovisuales.com/articulos-de-divulgacion/protocolos-de-streaming/) e [carga progresiva](https://www.webtvsolutions.com/support.php?s=other_docs&d=streaming_progressive_vs_streaming&lang=es). + [2](https://www.avast.com/es-es/c-what-is-streaming)
+   - Comparativa do tratamento de contido multimedia en [diferentes versións de linguaxes de marcado](https://kinsta.com/es/blog/html-vs-html5/) de páxinas.
+3. [Gráficos multimedia](https://www.martechforum.com/articulo/graficos-multimedia-para-que-sirven/). + [2](https://learn.microsoft.com/es-es/dotnet/desktop/wpf/graphics-multimedia/?view=netframeworkdesktop-4.8)
+   - [Formatos gráficos](https://www.ionos.es/digitalguide/paginas-web/diseno-web/cuales-son-los-formatos-de-imagen-mas-importantes/). Comparativa.
+   - [Repositorios](https://es.godaddy.com/blog/bancos-de-imagenes-gratis-para-tu-web/) de imaxes.
+   - [Tipos de gráficos](https://www.aulacreactiva.com/tipos-de-imagenes-para-diseno-grafico/): fotografías, imaxes vectorizadas e iconas.
+   - [Ferramentas](https://marketing4ecommerce.net/mejores-herramientas-de-diseno-imprescindibles-en-tu-estrategia-online/) para o tratamento gráfico. Filtros e tratamento de imaxes + [2](https://rockcontent.com/es/blog/paginas-de-diseno/)
+   - [Conversión de formatos gráficos](https://www.movavi.com/es/learning-portal/best-free-image-converter.html). + [2](https://protecciondatos-lopd.com/empresas/conversores-imagenes/)
+4. [Son](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs). + [2](https://lenguajehtml.com/html/multimedia/etiqueta-html-audio/)
+   - [Formatos de son](https://www.eniun.com/formatos-archivos-audio-optimizaciones-web/). Comparativa.
    - Reprodutores de son. Inserción en navegadores web.
-   - Enlace o inserción de canles de son.
-   - Conversión de formatos de son.
+   - [Enlace o inserción de canles de son](https://blog.duda.co/es/ponerle-audio-a-un-sitio-web).
+   - Conversión de [formatos](https://lenguajehtml.com/html/multimedia/etiqueta-html-audio/#formatos-de-audio) de son.
    - Ferramentas para o tratamento de son. Edición de fragmentos de son.
 5. [Vídeo](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs).
-   - Formatos de vídeo. Calidade de vídeo e comparativa.
-   - Repositorios de vídeo.
+   - [Formatos de vídeo](https://www.eniun.com/formatos-archivos-video-conversiones-web/). Calidade de vídeo e comparativa.
+   - [Repositorios de vídeo](https://www.eniun.com/recursos-referencias-sonido-video-animaciones/).
    - Reprodutores de vídeo. Inserción en navegadores web.
-   - Enlace o inserción de canles de vídeo.
-   - Conversión de formatos de vídeo. Optimización.
-   - Ferramentas de edición de vídeo. Creación de efectos e composición.
-6. Animacións multimedia.
+   - [Enlace o inserción de canles de vídeo.](https://www.eniun.com/control-reproduccion-video-audio-javascript/)
+   - Conversión de [formatos](https://lenguajehtml.com/html/multimedia/etiqueta-html-video/#formatos-de-video) de vídeo. Optimización.
+   - [Ferramentas de edición de vídeo.](https://blog.hubspot.es/marketing/editores-video-online) Creación de efectos e composición.
+6. [Animacións](https://www.eniun.com/animaciones-keyframes-animation/) multimedia.
    - [Principios da animación](https://www.adobe.com/es/creativecloud/animation/discover/principles-of-animation.html).
    - [Ferramentas para creación de animacións](https://fixthephoto.com/best-free-2d-animation-software.html).
    - [Formatos de animacións](https://graphicdesign.stackexchange.com/questions/39613/whats-the-best-way-to-animate-an-illustration-for-the-web).
-   - Inclusión en páxinas web.
+   - [Inclusión en páxinas web](https://www.eniun.com/animaciones-canvas-html5/).
    - Boas prácticas no uso de animacións
-7. Elementos interactivos
-   - Creación de elementos interactivos.
-   - Mapas Interactivos.
+7. [Elementos interactivos](https://axarnet.es/blog/web-interactiva)
+   - [Creación de elementos interactivos.](https://www.ionos.es/digitalguide/online-marketing/marketing-para-motores-de-busqueda/contenido-interactivo-el-camino-hacia-el-exito/)
+   - Mapas Interactivos. + [2](https://www.cyberclick.es/numerical-blog/las-mejores-herramientas-para-crear-contenido-interactivo)
    - Ámbitos de uso.
 
 ![img](https://miso-4208-labs.gitlab.io/book/assets/browser-arch.png)
@@ -170,10 +170,12 @@ category:
 
 ### Libros:
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
+- [JavaScript Moderno](https://es.javascript.info/) :star:
+- Recursos:
+  - [graphics-multimedia-and-web-design](https://www.similarweb.com/es/top-websites/computers-electronics-and-technology/graphics-multimedia-and-web-design/)
 
-<!--
 
-## DATOS IDENTIFICATIVOS DA UNIDADE FORMATIVA
+<! -- DATOS IDENTIFICATIVOS DA UNIDADE FORMATIVA
 
 ##### 
 

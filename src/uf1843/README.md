@@ -34,11 +34,11 @@
 - [https://www.accessibilitychecker.org/](https://www.accessibilitychecker.org/)
 - [https://www.classcentral.com/provider/freecodecamp?subject=art-and-design](https://www.classcentral.com/provider/freecodecamp?subject=art-and-design)
 
-:::: info
 
-[Lecturas complementarias](UF1843.md)
+> ::notebook::
 
-::::
+> [Lecturas complementarias](UF1843.md)
+
 
 ---
 <!--

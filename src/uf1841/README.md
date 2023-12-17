@@ -42,11 +42,7 @@
 
 ### [GLOSARIO WEB](https://developer.mozilla.org/en-US/docs/Glossary)
 
-::: info
-
-[Lecturas complementarias](UF1841.md)
-
-:::
+> :notebook: [Lecturas complementarias](UF1841.md)
 
 ---
 NAD 2023

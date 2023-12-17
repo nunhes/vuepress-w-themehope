@@ -34,7 +34,7 @@ function fullName($firstName, $lastName)
 
 function age($dateOfBirth)
 {
-    // Calculate age...
+    // Calcular idade...
     return $age;
 }
 ```

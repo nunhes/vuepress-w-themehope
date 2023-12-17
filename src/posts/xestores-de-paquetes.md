@@ -15,15 +15,15 @@ tag:
 
 # Xestores de paquetes
 
-Como programador - frontend ou full stack-, de seguro que acabarás empregando algún destes xestores de paquetes: **NPM**, **YARN** ou **PNPM**. Todos eles son ferramentas que che axudan a xestionar as dependencias do teu proxecto - librarías, marcos, utilidades,...-, e a axilizar as tarefas de desenvolvemento e publicación.
+Como programador - frontend ou full stack-, de seguro que acabarás empregando algún destes xestores de paquetes: **NPM**, **YARN** ou **PNPM**. Todos eles son ferramentas que axudan a xestionar as dependencias do teu proxecto - librarías, marcos, utilidades,...-, e a axilizar as tarefas de desenvolvemento e publicación.
 
 Imos logo a coñecelos algo mellor.
 
 ## NPM
 
-[NPM](https://www.npmjs.com/) significa Node Package Manager. É o xestor de paquetes predeterminado de NodeJS e o máis popular. Creado en 2009 por Isaac Schlueter, foi ideado como a forma de compartir e reutilizar código para proxectos de NodeJS. Desde o momento da súa aparición foi medrando ata converterse nun repositorio de máis de 2 millóns e medio de paquetes que se poden usar para o desenvolvemento tanto front-end como back-end.
+[NPM](https://www.npmjs.com/) significa *Node Package Manager*. É o xestor de paquetes predeterminado de NodeJS e o máis popular. Creado en 2009 por Isaac Schlueter, foi ideado como forma de compartir e reutilizar código para proxectos de NodeJS. Desde o momento da súa aparición foi medrando ata converterse nun repositorio de máis de 2 millóns e medio de paquetes que se poden usar para o desenvolvemento tanto front-end como back-end.
 
-NPM dispón dunha interface de liña de comandos sinxela e intuitiva que permite instalar, actualizar, desinstalar e publicar paquetes. Tamén conta cun sitio web ([npmjs.com](https://www.npmjs.com/)) onde podes buscar, buscar e descargar paquetes. NPM usa un arquivo chamado `package.json` para almacenar os metadatos do teu proxecto, como nome, versión, dependencias, scripts, etc. Tamén crea un cartafol chamado `node_modules` onde almacena os paquetes instalados.
+NPM dispón dunha interface de liña de comandos sinxela e intuitiva que permite instalar, actualizar, desinstalar e publicar paquetes. Tamén conta cun sitio web ([npmjs.com](https://www.npmjs.com/)) onde podes buscar, localizar e descargar paquetes. NPM usa un arquivo chamado `package.json` para almacenar os metadatos do teu proxecto, como nome, versión, dependencias, scripts, etc. Tamén crea un cartafol chamado `node_modules` onde almacena os paquetes instalados segundo as necesidades do teu proxecto.
 
 ### Vantaxes
 
@@ -47,7 +47,7 @@ YARN ten unha interface de liña de comandos semellante á de NPM, pero con algu
 ### Vantaxes
 
 - É máis rápido e eficiente que NPM ao instalar ou actualizar paquetes.
-- Usa unha estrutura de dependencia plana que evita a duplicación e aniñación de paquetes.
+- Usa unha estrutura de dependencia plana que evita a duplicación e o aniñado de paquetes.
 - Admite a instalación fóra de liña de paquetes desde unha caché local.
 - Ten un algoritmo de mellor resolución que garante versións consistentes e deterministas dos paquetes en diferentes ambientes.
 
@@ -185,3 +185,7 @@ Yarn é máis rápido que NPM e ten algunhas funcións novas interesantes, pero 
 PNPM é o xestor de paquetes máis rápido e eficiente no disco, pero pode ter problemas de compatibilidade con algúns paquetes.
 
 Escolla o xestor de paquetes que mellor se adapte ás necesidades do seu proxecto.
+
+---
+
+NOV 2023

@@ -159,23 +159,32 @@ Elixir unha ou outra depende de ti: a que te faga sentir máis cómodo e por sup
 
 ## Cálculo de ancho e alto
 
+---
+
 Os atributos **width** e **height** definen o ancho e o alto dos elementos HTML, son moi utilizados para definir a disposición da páxina, especialmente nos elementos contenedores (div, p, etc.). É importante ter en conta a que se refiren estes valores, xa que ás veces se comete o erro de crer que inclúen partes que realmente non inclúen.
+
+---
 
 Os atributos **width** e **height** definen o ancho e o alto dos elementos HTML, pero só inclúen o contido da etiqueta, non o **recheo** **,** a marxe **ou** o **bordo** .
 
 Imos explicar o caso do **ancho** co seguinte esquema (a **altura** sería similar):
 
+---
+
 ![Modelo de caixa CSS.  Anchura total box-sizing: content-box](./assets/modelo_cajas_anchos.svg)
 
- <img src="./assets/screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35.png" alt="screencapture-aulaclic-es-html-graficos-modelo-cajas-anchos-svg-2023-01-24-23_26_35" style="transform-origin: 0 0; transform: scale(0.5);" />
+---
 
 O esquema corresponde á definición dun contedor (por exemplo div ) con estes atributos:
 
 ```css
 div {ancho: 200px; ancho do bordo: 5px; acolchado: 20px; marxe: 100px }
 ```
+---
 
 Por defecto (sen definir o **tamaño da caixa** ) debemos reservar un espazo de 450 px na nosa disposición de páxina, xa que debemos engadir o **recheo** e o **bordo ao** **ancho** do contido , e despois engadir a **marxe** . É dicir, 200 px, que ocupa o contido, máis 100 px, para cada lado da **marxe** ; outros 5px. a cada lado da **fronteira** ; outros 20px. para cada lado do **acolchado** .
+
+---
 
 Esta forma de calcular o ancho do modelo de caixa non é a máis intuitiva, e provocou numerosos erros no deseño, nalgúns casos pola súa complexidade e noutros por descoñecemento de como se calcula o ancho.
 
@@ -185,17 +194,23 @@ Afortunadamente, está a propiedade **do tamaño da caixa** que imos ver a conti
 
 ## box-sizing
 
-A propiedad **box-sizing** indica cómo se calcula el ancho y alto de la etiqueta correspondiente. Tiene dos valores: **content-box** y **border-box**:
+A propiedade **box-sizing** indica como se calcula o ancho e o alto da etiqueta correspondente. Ten dous valores: **content-box** e **border-box**:
 
-\- **content-box**, el ancho y el alto se calculan teniendo en cuenta sólo el **contenido**, **sin incluir** el **border** y el **padding**. Es el valor por defecto.
+- **content-box**, o ancho e o alto se calculan tendo en conta só o **contido**, **sen incluir** o **border** e o **padding**. É o valor por defecto.
 
-\- **border-box**, el ancho y el alto se calculan teniendo en cuenta el **contenido** y **también** el **border** y el **padding**. Es decir, el **border** y el **padding** están incluidos en el ancho y alto.
+- **border-box**, o ancho e o alto se calculan tendo en conta o **contido** e **tamén** o **border** e o **padding**. É dicir, o **border** e o **padding** están incluidos no ancho e alto.
 
-El caso de **content-box** lo hemos explicado en el punto anterior, ahora vamos a ver un esquema para ver el caso de **border-box**:
+---
 
-![Modelo de caja CSS. Anchura total box-sizing: border-box](./assets/modelo_cajas_anchos_border.svg)
+O caso de **content-box** explicouse no punto anterior, agora imos a ver un esquema para ver o caso de **border-box**:
 
-El esquema corresponde a la definición de un contenedor (por ejemplo div) con estos atributos:
+---
+
+![Modelo de caixa CSS. Anchura total box-sizing: border-box](./assets/modelo_cajas_anchos_border.svg)
+
+---
+
+O esquema corresponde á definición dun contedor (por exemplo div) con estes atributos:
 
 ```css
 div { 
@@ -205,26 +220,45 @@ div {
     padding: 20px; 
     margin: 100px } 
 ```
+---
 
-El espacio que debemos reservar en nuestro diseño de la página es de 400 px., que corresponden al **width** del contenido y al **margin**. Es decir, 200 px, que ocupa el contenido, más 100 px, por cada lado del margin. En este caso los 5 px. por cada lado del **border**, y los 20 px. por cada lado del **padding**, **ya están incluidos** en el **width** del contenido.
-
-A continuación puedes ver un primer ejemplo con box-sizing: border-box y un segundo ejemplo con el valor por defecto, box-sizing: content-box.
-
-El resto de valores son igual para ambos ejemplos: border-width: 5px; border-style: solid; border-color: royalblue; padding: 20px; width: 200px; margin-left: 100px; margin-right: 100px;
-
-Observa la diferencia de anchura.
-
-Ejemplo con box-sizing: border-box :
-
-Párrafo uno. Lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi porro ius soluta in voluptates voluptatem, nesciunt dolorem obcaecati nemo eligendi porro iusto, earum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-
-Ejemplo con box-sizing: content-box :
-
-Párrafo uno. Lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi porro ius soluta in voluptates voluptatem, nesciunt dolorem obcaecati nemo eligendi porro iusto, earum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+O espazo que debemos reservar no noso deseño da paxina é de 400 px., que corresponden ao **width** do contido e ao **margin**. É dicir, ``200px``, que ocupa o contido, máis ``100px``, por cada lado do ``margin``. Neste caso os ``5px`` por cada lado do **border**, e os ``20px`` por cada lado do **padding**, **xa están incluidos** no **width** do contido.
 
 ---
 
-XAN2023
+A continuación podes ver un primeiro exemplo con ``box-sizing: border-box`` e un segundo exemplo co valor por defecto, ``box-sizing: content-box``.
+
+O resto de valores son iguais para ambos exemplos: 
+
+```css
+border-width: 5px;
+border-style: solid;
+border-color: royalblue;
+padding: 20px;
+width: 200px;
+margin-left: 100px;
+margin-right: 100px;
+```
+---
+
+Observa a diferencia de anchura.
+
+Exemplo con ``box-sizing: border-box`` :
+
+```html
+<p style="box-sizing: border-box">Párrafo uno. Lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi porro ius soluta in voluptates voluptatem, nesciunt dolorem obcaecati nemo eligendi porro iusto, earum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
+---
+
+Exemplo con ``box-sizing: content-box`` :
+
+```html
+<p style="box-sizing: content-box">Párrafo uno. Lorem ipsum dolor sit amet, consectetur adipisicing elit. eligendi porro ius soluta in voluptates voluptatem, nesciunt dolorem obcaecati nemo eligendi porro iusto, earum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+```
+
+---
+
+NAD 2023
 
 ---
 

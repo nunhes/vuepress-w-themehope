@@ -217,7 +217,7 @@ function loadJSAsync(url) {
 
 `appendChild()` é un método da interface `Node`. O método `appendChild()` permite engadir un nodo ao final da lista de nodos fillos dun nodo pai especificado.
 
-O seguinte ilustra a sintaxe do `appendChild()`método:
+O seguinte ilustra a sintaxe do método `appendChild()`:
 
 ```
 parentNode.appendChild(childNode);
@@ -486,7 +486,7 @@ console.log(menu.innerHTML);
 
 A propiedade `innerHTML` devolve a fonte HTML actual do documento, incluíndo todos os cambios que se fixeron desde que se cargou a páxina.
 
-Vexa o seguinte exemplo:
+Mira o seguinte exemplo:
 
 ```html
 <!DOCTYPE html>
@@ -1320,7 +1320,7 @@ O método `insertAdjacentHTML()` ten dous parámetros:
 - `'beforeend'`: despois do último fillo do elemento
 - `'afterend'`: despois do elemento
 
-Teña en conta que os `'beforebegin'` e `'afterend'` só son relevantes se o elemento está na árbore DOM e ten un elemento pai.
+Ter en conta que os `'beforebegin'` e `'afterend'` só son relevantes se o elemento está na árbore DOM e ten un elemento pai.
 
 O método `insertAdjacentHTML()` non ten valor de retorno ou `undefined` por defecto.
 
@@ -1685,9 +1685,9 @@ menu.insertBefore(li, menu.firstElementChild);
 
 **Como funciona:**
 
-- Primeiro, obtén o `menu`elemento usando o `getElementById()`método.
-- En segundo lugar, crea un novo elemento de lista usando o `createElement()`método.
-- En terceiro lugar, insira o elemento de lista antes do primeiro elemento fillo do `menu`elemento usando o `insertBefore()`método.
+- Primeiro, obtén o `menu`elemento usando o método `getElementById()`.
+- En segundo lugar, crea un novo elemento de lista usando o método `createElement()`.
+- En terceiro lugar, insira o elemento de lista antes do primeiro elemento fillo do `menu`elemento usando o método `insertBefore()`.
 
 **Poñelo todo xunto:**
 

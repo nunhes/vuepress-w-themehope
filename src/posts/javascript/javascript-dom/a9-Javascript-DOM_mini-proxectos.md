@@ -6,7 +6,7 @@ description: Uso de javascript na arbore do modelo de obxecto do documento
 
 # 01. Como cambiar a visibilidade do contrasinal
 
-**Resumo** : neste tutorial, aprenderás a cambiar a visibilidade dunha entrada de contrasinal usando JavaScript simple.
+**Resumo**: nesta sección, aprenderás a cambiar a visibilidade dunha entrada de contrasinal usando JavaScript simple.
 
 Un campo de contrasinal ofrece unha forma de que os usuarios introduzan un contrasinal de forma segura mostrando o `*`carácter en lugar dos caracteres reais.
 
@@ -14,15 +14,15 @@ Non obstante, é probable que algúns usuarios escriban o contrasinal incorrecto
 
 Para facer visible o contrasinal, siga estes pasos:
 
-- En primeiro lugar, cree un `<input>`elemento co tipo de `password`e unha icona que permita aos usuarios premer nel para cambiar a visibilidade do contrasinal.
-- En segundo lugar, vincula un controlador de eventos ao evento de clic da icona. Se se fai clic na icona, alterna o `type`atributo do campo de contrasinal entre `text`e `password`. A entrada co tipo `text`mostrará o contrasinal real.
+- En primeiro lugar, cree un elemento `<input>` co tipo de `password` e unha icona que permita aos usuarios premer nel para cambiar a visibilidade do contrasinal.
+- En segundo lugar, vincula un controlador de eventos ao evento de clic da icona. Se se fai clic na icona, alterna o atributo `type` do campo de contrasinal entre `text` e `password`. A entrada co tipo `text` mostrará o contrasinal real.
 - En terceiro lugar, cambia a icona para facelo máis fácil de usar. Este paso é opcional.
 
 Para facelo máis sinxelo, utilizaremos dúas iconas da icona Bootstrap para cambiar a visibilidade do contrasinal.
 
 O seguinte mostra o código HTML da páxina:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,36 +71,36 @@ O seguinte mostra o código HTML da páxina:
     </script>
 </body>
 
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
-A páxina HTML ten un elemento de entrada co tipo `password`e un `<i>`elemento coas clases CSS proporcionadas por Bootstrap CSS.
+A páxina HTML ten un elemento de entrada co tipo `password` e un elemento `<i>` coas clases CSS proporcionadas por Bootstrap CSS.
 
-O CSS Bootstrap permítelle usar a clase `bi-eye`do `<i>`elemento para mostrar a icona do ollo. Para cambiar a icona de ollo a ollo, só tes que cambiar a clase do `<i>`elemento a`bi-eye-slash`
+O CSS Bootstrap permítelle usar a clase `bi-eye` do elemento `<i>` para mostrar a icona do ollo. Para cambiar a icona de ollo a ollo, só tes que cambiar a clase do elemento `<i>` a `bi-eye-slash`
 
-Para colocar a icona dentro da entrada do contrasinal, pode usar a marxe negativa do `<i>`elemento do seguinte xeito:
+Para colocar a icona dentro da entrada do contrasinal, pode usar a marxe negativa do elemento `<i>` do seguinte xeito:
 
-```
+```js
 form i {
     margin-left: -30px;
     cursor: pointer;
-}Idioma do código:  CSS  ( css )
+}
 ```
 
 O resto do CSS é sinxelo.
 
 No JavaScript:
 
-En primeiro lugar, seleccione a icona de alternar contrasinal e o campo de entrada de contrasinal usando o `querySelector()`método:
+En primeiro lugar, seleccione a icona de alternar contrasinal e o campo de entrada de contrasinal usando o método `querySelector()`:
 
-```
+```js
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#password');
 ```
 
-A continuación, [anexa un detector de eventos](https://www.javascripttutorial.net/dom/events/add-an-event-handler/) á `togglePassword`icona e alterna o `type`atributo do campo de contrasinal e a [clase da icona](https://www.javascripttutorial.net/dom/css/toggle-a-class-of-an-element/) :
+A continuación, [anexa un detector de eventos](https://www.javascripttutorial.net/dom/events/add-an-event-handler/) á icona `togglePassword` e alterna o atributo `type` do campo de contrasinal e a [clase da icona](https://www.javascripttutorial.net/dom/css/toggle-a-class-of-an-element/) :
 
-```
+```js
 togglePassword.addEventListener('click', function (e) {
     // toggle the type attribute
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
@@ -116,21 +116,21 @@ Para ver toda a páxina, podes [consultala aquí](https://www.javascripttutorial
 
 # 02. Aprende a función de debote de JavaScript creando a aplicación de busca de Wikipedia
 
-**Resumo** : neste tutorial, aprenderás sobre a función de eliminación de rebote de JavaScript e como usala para mellorar o rendemento da aplicación.
+**Resumo**: nesta sección, aprenderás sobre a función de eliminación de rebote de JavaScript e como usala para mellorar o rendemento da aplicación.
 
 Para comprender a función de eliminación de rebotes, vai construír unha [aplicación de busca na Wikipedia](https://www.javascripttutorial.net/sample/dom/wikipedia-search/) usando a técnica de programación de rebotes.
 
 ## Crea a estrutura do cartafol do proxecto
 
-En primeiro lugar, crea un novo cartafol chamado `wikipedia-search`que almacenará os ficheiros dos proxectos.
+En primeiro lugar, crea un novo cartafol chamado `wikipedia-search`que almacenará os arquivos dos proxectos.
 
-En segundo lugar, cree tres cartafoles dentro do `wikipedia-search`cartafol chamado `js`, `css`e `img`. Estes cartafoles almacenarán ficheiros JavaScript, CSS e imaxes en consecuencia.
+En segundo lugar, cree tres cartafoles dentro do `wikipedia-search`cartafol chamado `js`, `css`e `img`. Estes cartafoles almacenarán arquivos JavaScript, CSS e imaxes en consecuencia.
 
 En terceiro lugar, crea o `style.css`no `css`cartafol e no `app.js`tamén `js`, descarga a seguinte imaxe e cópiaa no `img`cartafol. Usarás o logotipo para crear a IU da aplicación.
 
 ![img](./assets/wikipedia-logo.png)
 
-Finalmente, cree un `index.html`ficheiro no cartafol raíz.
+Finalmente, cree un `index.html`arquivo no cartafol raíz.
 
 A estrutura do proxecto terá o seguinte aspecto:
 
@@ -138,7 +138,7 @@ A estrutura do proxecto terá o seguinte aspecto:
 
 ## Construír a páxina HTML
 
-Abre o ficheiro index.html e engade o seguinte código:
+Abre o arquivo index.html e engade o seguinte código:
 
 ```
 <!DOCTYPE html>
@@ -158,45 +158,45 @@ Abre o ficheiro index.html e engade o seguinte código:
     <main id="searchResult"></main>
     <script src="js/app.js"></script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
-Neste ficheiro HTML:
+Neste arquivo HTML:
 
-- En primeiro lugar, ligue ao `style.css`ficheiro na `<head>`sección.
-- En segundo lugar, engade unha `<script>`etiqueta cuxas `src`ligazóns ao `app.js`ficheiro e colócaa xusto antes da `</body>`etiqueta.
+- En primeiro lugar, ligue ao `style.css`arquivo na `<head>`sección.
+- En segundo lugar, engade unha `<script>`etiqueta cuxas `src`ligazóns ao `app.js`arquivo e colócaa xusto antes da `</body>`etiqueta.
 - En terceiro lugar, engade dúas seccións ao corpo da páxina HTML. A primeira sección é a cabeceira que mostra o logotipo da Wikipedia, o título e a caixa de busca. A segunda sección inclúe a `<main>`etiqueta que mostrará o resultado da busca.
 
 ## Copia o código CSS
 
-Navegue ata o ficheiro [style.css](https://www.javascripttutorial.net/sample/dom/wikipedia-search/css/style.css) , copie o seu código e pégueo no `style.css`ficheiro do `css`cartafol. Cando abras o `index.html`ficheiro, deberías ver algo así como [a seguinte páxina](https://www.javascripttutorial.net/sample/dom/wikipedia-search/) .
+Navegue ata o arquivo [style.css](https://www.javascripttutorial.net/sample/dom/wikipedia-search/css/style.css) , copie o seu código e pégueo no `style.css`arquivo do `css`cartafol. Cando abras o `index.html`arquivo, deberías ver algo así como [a seguinte páxina](https://www.javascripttutorial.net/sample/dom/wikipedia-search/) .
 
 ## Xestionar eventos de entrada
 
-En primeiro lugar, selecciona os `<input>`elementos e resultados da busca usando o `querySelector()`método:
+En primeiro lugar, selecciona os elementos `<input>` e resultados da busca usando o método `querySelector()`:
 
-```
+```js
 const searchTermElem = document.querySelector('#searchTerm');
 const searchResultElem = document.querySelector('#searchResult');
 ```
 
-En segundo lugar, establece o foco no `<input>`elemento chamando ao `focus()`método:
+En segundo lugar, establece o foco no elemento `<input>` chamando ao método `focus()`:
 
-```
-searchTermElem.focus();Idioma do código:  CSS  ( css )
+```js
+searchTermElem.focus();
 ```
 
-En terceiro lugar, anexa un `input`detector de eventos para o `<input>`elemento:
+En terceiro lugar, anexa un detector de eventos `input` para o elemento `<input>`:
 
-```
+```js
 searchTermElem.addEventListener('input', function (event) {
     console.log(event.target.value);
 });
 ```
 
-Se escribes algo de texto no `<input>`elemento, verás que `input`ocorre o evento, que mostra o texto na Consola.
+Se escribes algo de texto no elemento `<input>`, verás que ocorre o evento `input`, que mostra o texto na Consola.
 
-Por exemplo, cando escribe o `debounce`elemento `<input>`:
+Por exemplo, cando escribe o elemento `debounce` `<input>`:
 
 ![img](./assets/JavaScript-Debounce-Function-Input-event.png)
 
@@ -208,33 +208,33 @@ Por exemplo, cando escribe o `debounce`elemento `<input>`:
 
 A API de Wikipedia é bastante sinxela. Non require unha clave API.
 
-Para obter os temas por un termo de busca, cómpre engadir o `srsearch`parámetro de consulta:
+Para obter os temas por un termo de busca, cómpre engadir o parámetro `srsearch` de consulta:
 
-```
-&srsearch=<searchTerm>Idioma do código:  HTML, XML  ( xml )
+```js
+&srsearch=<searchTerm>
 ```
 
 ao seguinte URL:
 
-```
+```html
 https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info|extracts&inprop=url&utf8=&format=json&origin=*&srlimit=10
 ```
 
-... e enviar unha `GET`solicitude HTTP.
+... e enviar unha solicitude HTTP `GET`.
 
-Por exemplo, pode obter os temas relacionados coa `debounce`palabra clave enviando unha `GET`solicitude HTTP ao seguinte URL:
+Por exemplo, pode obter os temas relacionados coa palabra clave `debounce` enviando unha solicitude HTTP `GET` ao seguinte URL:
 
-```
+```html
 https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info|extracts&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=debounce
 ```
 
 Por certo, pode abrir o URL anterior no navegador web para ver a resposta.
 
-Desde JavaScript, pode usar a [API de recuperación](https://www.javascripttutorial.net/javascript-fetch-api/) , que está dispoñible en todos os navegadores web modernos, para enviar unha `GET`solicitude HTTP.
+Desde JavaScript, pode usar a [API de recuperación](https://www.javascripttutorial.net/javascript-fetch-api/) , que está dispoñible en todos os navegadores web modernos, para enviar unha solicitude HTTP `GET`.
 
-O seguinte crea a `search()`función acepta un termo de busca, fai unha `GET`solicitude HTTP a Wikipedia e mostra os resultados da busca na Consola:
+O seguinte crea a función `search()` acepta un termo de busca, fai unha solicitude HTTP `GET` a Wikipedia e mostra os resultados da busca na Consola:
 
-```
+```js
 const search = async (searchTerm) => {
     try {
         const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info|extracts&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${searchTerm}`;
@@ -255,37 +255,37 @@ const search = async (searchTerm) => {
 
 Cómo funciona.
 
-En primeiro lugar, constrúe o URL da API engadindo o `srsearch`parámetro de consulta ao punto final:
+En primeiro lugar, constrúe o URL da API engadindo o parámetro de consulta `srsearch` ao punto final:
 
-```
+```js
 const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info|extracts&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${searchTerm}`;
 ```
 
-En segundo lugar, use o `fetch()`método para enviar unha `GET`solicitude HTTP. Dado que o `fetch()`método devolve unha promesa, cómpre usar `await`a palabra clave para esperar a resposta.
+En segundo lugar, use o método `fetch()` para enviar unha solicitude HTTP `GET`. Dado que o método `fetch()` devolve unha promesa, cómpre usar a palabra clave `await` para esperar a resposta.
 
-A promesa devolta pola `fetch()`función ten moitos métodos, un deles é `json()`. O `json()`método tamén devolve outra promesa que se resolve nun resultado en formato JSON.
+A promesa devolta pola función `fetch()` ten moitos métodos, un deles é `json()`. O `método json()` tamén devolve outra promesa que se resolve nun resultado en formato JSON.
 
-Debido á `await`palabra clave, cómpre marcar a `search()`función como unha `async`función como esta:
+Debido á palabra clave `await`, cómpre marcar a función `search()` como unha función `async` como esta:
 
-```
+```js
 const search = async (searchTerm) = {
    /// ...
 };
 ```
 
-O obxecto devolto do `json()`método ten moitas propiedades. E para obter os resultados da busca, cómpre acceder á `searchResults.query.search`propiedade.
+O obxecto devolto do método `json()` ten moitas propiedades. E para obter os resultados da busca, cómpre acceder á propiedade `searchResults.query.search`.
 
-Para probar o `search()`método, chámao no `input`detector de eventos do seguinte xeito:
+Para probar o método `search()`, chámao no detector de eventos `input` do seguinte xeito:
 
-```
+```js
 searchTermElem.addEventListener('input', function (event) {
     search(event.target.value);
 });
 ```
 
-O seguinte mostra o `app.js`ficheiro completo:
+O seguinte mostra o arquivo `app.js` completo:
 
-```
+```js
 const searchTermElem = document.querySelector('#searchTerm');
 const searchResultElem = document.querySelector('#searchResult');
 
@@ -313,22 +313,22 @@ const search = async (searchTerm) => {
 }
 ```
 
-Agora, se abres o `index.html`ficheiro e escribes a `debounce`palabra clave no elemento de entrada, verás os seguintes resultados na Consola:
+Agora, se abres o arquivo `index.html` e escribes a palabra clave `debounce` no elemento de entrada, verás os seguintes resultados na Consola:
 
 ![img](./assets/JavaScript-Debounce-Function-too-many-requests.png)
 
-A saída indica que a `search()`función se executa para cada carácter que escriba. Chama á API para cada entrada de texto, o que non é eficiente.
+A saída indica que a función `search()` se executa para cada carácter que escriba. Chama á API para cada entrada de texto, o que non é eficiente.
 
 Para limitar o número de solicitudes, enviarás solicitudes de API só cando sexa necesario. Noutras palabras, enviará unha solicitude de API só despois de que os usuarios fagan unha pausa ou deixen de escribir durante un período de tempo, por exemplo, medio segundo.
 
-Para facelo, pode usar o [setTimeout()](https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/) e `clearTimeout()`a función:
+Para facelo, pode usar o [setTimeout()](https://www.javascripttutorial.net/javascript-bom/javascript-settimeout/) e a función `clearTimeout()`:
 
-- Cando os usuarios escriban un carácter, use a `setTimeout()`función para programar a execución da función search() despois dun período de tempo.
-- Se os usuarios seguen escribindo, cancela ese temporizador usando a `clearTimeout()`función. No caso de que os usuarios fagan unha pausa ou deixen de escribir, deixe que o temporizador execute a función programada para buscar.
+- Cando os usuarios escriban un carácter, use a función `setTimeout()` para programar a execución da función search() despois dun período de tempo.
+- Se os usuarios seguen escribindo, cancela ese temporizador usando a función `clearTimeout()`. No caso de que os usuarios fagan unha pausa ou deixen de escribir, deixe que o temporizador execute a función programada para buscar.
 
-O seguinte mostra a nova versión da `search()`función:
+O seguinte mostra a nova versión da función `search()`:
 
-```
+```js
 let timeoutId;
 
 const search = (searchTerm) => {
@@ -356,9 +356,9 @@ const search = (searchTerm) => {
 };
 ```
 
-Dado que o `await`código relacionado se move á función de devolución de chamada do `setTimeout()`, cómpre marcar a devolución de chamada coa `async`palabra clave e eliminar a `async`palabra clave da `search()`función.
+Dado que o código `await` relacionado se move á función de devolución de chamada do `setTimeout()`, cómpre marcar a devolución de chamada coa palabra clave `async` e eliminar a palabra clave `async` da función `search()`.
 
-Se abres o `index.html`ficheiro no navegador web e escribes a palabra clave debonce sen facer unha pausa (durante medio segundo) e paras, verás que a aplicación só realizará unha solicitude da API.
+Se abres o `index.html`arquivo no navegador web e escribes a palabra clave debonce sen facer unha pausa (durante medio segundo) e paras, verás que a aplicación só realizará unha solicitude da API.
 
 E esta técnica coñécese como **debouncing** .
 
@@ -370,9 +370,9 @@ Se tes unha tarefa que leva moito tempo, como unha solicitude de API que se disp
 
 ### Desenvolver unha función de debote reutilizable
 
-A `debounce()`función debe aceptar unha función ( `fn`), limita o número de chamadas a ela e devolve unha función:
+A función `debounce()` debe aceptar unha función (`fn`), limita o número de chamadas a ela e devolve unha función:
 
-```
+```js
 const debounce = (fn) => {
    return (arg) => {
       // logic to limit the number of call fn
@@ -381,9 +381,9 @@ const debounce = (fn) => {
 };
 ```
 
-O seguinte usa as funcións `clearTimeout()`e `setTimeout()`para eliminar a `fn`función:
+O seguinte usa as funcións `clearTimeout()` e `setTimeout()` para eliminar a función `fn`:
 
-```
+```js
 const debounce = (fn) => {
     let timeoutId;
 
@@ -400,9 +400,9 @@ const debounce = (fn) => {
 };
 ```
 
-Normalmente, a `fn`función aceptará máis dun argumento. Para invocar a `fn`función cunha lista de argumentos, usa o `apply()`método:
+Normalmente, a función `fn` aceptará máis dun argumento. Para invocar a función `fn` cunha lista de argumentos, usa o método `apply()`:
 
-```
+```js
 const debounce = (fn, delay=500) => {
     let timeoutId;
 
@@ -421,15 +421,15 @@ const debounce = (fn, delay=500) => {
 
 Cómo funciona:
 
-- En primeiro lugar, substitúe o número codificado `500`polo `delay`argumento para que poida especificar o tempo de espera antes de executar a `fn`función. O valor predeterminado do atraso é 500 ms.
-- En segundo lugar, engade o `...args`á función devolta. É `...arg`un [parámetro de descanso](https://www.javascripttutorial.net/es6/javascript-rest-parameters/) que che permite recoller todos os argumentos da `fn()`función nunha matriz `args`.
-- En terceiro lugar, `fn.apply(null, args)`executa a `fn()`función cos argumentos especificados na `args`matriz.
+- En primeiro lugar, substitúe o número codificado `500` polo argumento `delay` para que poida especificar o tempo de espera antes de executar a función `fn`. O valor predeterminado do atraso é 500 ms.
+- En segundo lugar, engade o á función `...args` devolta. `...arg` é un [parámetro de descanso](https://www.javascripttutorial.net/es6/javascript-rest-parameters/) que che permite recoller todos os argumentos da función `fn()` nunha matriz `args`.
+- En terceiro lugar, `fn.apply(null, args)` executa a función `fn()` cos argumentos especificados na matriz `args`.
 
 ### Use a función de rebote
 
-O seguinte elimina a lóxica de rebote da `search()`función e utiliza a `debounce()`función no seu lugar:
+O seguinte elimina a lóxica de rebote da función `search()` e utiliza a función `debounce()` no seu lugar:
 
-```
+```js
 const search = debounce(async (searchTerm) => {
     try {
         const url = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info|extracts&inprop=url&utf8=&format=json&origin=*&srlimit=10&srsearch=${searchTerm}`;
@@ -453,37 +453,36 @@ Mostraremos o título e o fragmento de cada resultado da busca na saída. Antes 
 
 ### Elimina etiquetas HTML
 
-O `title`e `snippet`do resultado da busca da chamada á API pode conter etiquetas HTML. E é seguro eliminar todas as etiquetas HTML antes de renderizalas.
+O `title` e `snippet` do resultado da busca da chamada á API pode conter etiquetas HTML. E é seguro eliminar todas as etiquetas HTML antes de renderizalas.
 
 A seguinte función de utilidade elimina as etiquetas HTML dunha cadea:
 
-```
+```js
 const stripHtml = (html) => {
     let div = document.createElement('div');
     div.textContent = html;
     return div.textContent;
 };
-
 ```
 
-A `stripHtml()`función acepta unha cadea HTML. Crea un `<div>`elemento temporal, asígnalle `innerHTML`a cadea HTML e devolve a súa `textContent`propiedade.
+A función `stripHtml()` acepta unha cadea HTML. Crea un elemento `<div>` temporal, `innerHTML` asígnalle a cadea HTML e devolve a súa propiedade `textContent`.
 
-Teña en conta que esta función só funcionará nos navegadores web porque depende da API DOM do navegador web.
+Ter en conta que esta función só funcionará nos navegadores web porque depende da API DOM do navegador web.
 
 ### Resalte o termo de busca
 
 É máis intuitivo se os termos da busca están destacados no resultado da busca.
 
-Esta `highlight()`función destaca todas as ocorrencias do `keyword`in the `str`envolvendo cada ocorrencia da palabra clave nunha `<span>`etiqueta coa `highlight`clase:
+Esta función `highlight()` destaca todas as ocorrencias do `keyword` envolvendo no `str` cada ocorrencia da palabra clave nunha etiqueta `<span>` coa clase `highlight`:
 
-```
+```js
 const highlight = (str, keyword, className = "highlight") => {
     const hl = `<span class="${className}">${keyword}</span>`;
     return str.replace(new RegExp(keyword, 'gi'), hl);
 };
 ```
 
-Teña en conta que a función usa a [expresión regular](https://www.javascripttutorial.net/javascript-regular-expression/) para substituír todas as ocorrencias de `keyword`polo `<span>`elemento.
+Ter en conta que a función usa a [expresión regular](https://www.javascripttutorial.net/javascript-regular-expression/) para substituír todas as ocorrencias de `keyword`polo `<span>`elemento.
 
 ### Converte os resultados da busca a HTML
 
@@ -556,7 +555,7 @@ Neste tutorial, aprendeu os seguintes puntos clave:
 
 # 03. Contador de palabras JavaScript
 
-**Resumo** : neste tutorial, aprenderás a crear unha aplicación de contador de palabras usando JavaScript de vainilla.
+**Resumo**: nesta sección, aprenderás a crear unha aplicación de contador de palabras usando JavaScript de vainilla.
 
 Aquí está a [aplicación de contador de palabras](https://javascripttutorial.net/sample/dom/word-counter/index.html) que vas crear.
 
@@ -564,19 +563,19 @@ Aquí está a [aplicación de contador de palabras](https://javascripttutorial.n
 
 En primeiro lugar, cree o cartafol do proxecto chamado `word-counter`.
 
-En segundo lugar, no `word-counter`proxecto, cree os cartafoles `css`e `js`, que almacenarán ficheiros CSS e JavaScript en consecuencia.
+En segundo lugar, no `word-counter`proxecto, cree os cartafoles `css`e `js`, que almacenarán arquivos CSS e JavaScript en consecuencia.
 
-En terceiro lugar, cree un `style.css`ficheiro dentro do `css`cartafol e dous ficheiros JavaScript chamados `word-counter.js`e `app.js`dentro do `js`cartafol.
+En terceiro lugar, cree un `style.css`arquivo dentro do `css`cartafol e dous arquivos JavaScript chamados `word-counter.js`e `app.js`dentro do `js`cartafol.
 
-Finalmente, cree o `index.html`ficheiro no cartafol raíz do proxecto.
+Finalmente, cree o `index.html`arquivo no cartafol raíz do proxecto.
 
 A estrutura do cartafol do proxecto final será así:
 
 ![img](./assets/JavaScript-Word-Counter-Project-Structure.png)
 
-## Crea o ficheiro HTML
+## Crea o arquivo HTML
 
-Primeiro, edite o `index.html`ficheiro e coloque os ficheiros CSS e JavaScript no `index.html`ficheiro:
+Primeiro, edite o `index.html`arquivo e coloque os arquivos CSS e JavaScript no `index.html`arquivo:
 
 ```
 <!DOCTYPE html>
@@ -592,7 +591,7 @@ Primeiro, edite o `index.html`ficheiro e coloque os ficheiros CSS e JavaScript n
     <script src="js/word-counter.js"></script>
     <script src="js/app.js"></script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 A aplicación WordCounter terá un `<textarea>`elemento sinxelo. Cando introduza algún texto, mostrará o número de caracteres e palabras que introduciu.
@@ -604,9 +603,9 @@ Para facelo, necesitarás ter `<textarea>`e `<div>`elementos:
 
 Por defecto, o `<div>`elemento debe mostrar 0 caracteres e 0 palabras.
 
-En segundo lugar, engade os elementos `<textarea>`e `<div>`ao `index.html`ficheiro despois da `<body>`etiqueta de apertura e antes da primeira `<script>`etiqueta:
+En segundo lugar, engade os elementos `<textarea>`e `<div>`ao `index.html`arquivo despois da `<body>`etiqueta de apertura e antes da primeira `<script>`etiqueta:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -624,14 +623,14 @@ En segundo lugar, engade os elementos `<textarea>`e `<div>`ao `index.html`fichei
     <script src="js/word-counter.js"></script>
     <script src="js/app.js"></script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 ## Crea a clase WordCounter
 
-Primeiro, crearás a `WordCounter`clase no `word-counter.js`ficheiro:
+Primeiro, crearás a `WordCounter`clase no `word-counter.js`arquivo:
 
-```
+```js
 class WordCounter {
 }
 ```
@@ -642,7 +641,7 @@ En segundo lugar, engade o `constructor`á `WordCounter`clase. Aceptará `constr
 
 Dentro do `constructor`, inicializará a `inputText`propiedade da clase ao `inputText`argumento e anexará o `input`detector de eventos ao `inputText`elemento:
 
-```
+```js
 class WordCounter {
     constructor(inputText) {
         this.inputText = inputText;
@@ -653,11 +652,11 @@ class WordCounter {
 }
 ```
 
-O `this.count()`método executarase cada vez que `input`ocorra o evento. Volveremos para implementar a lóxica do `count()`método máis tarde.
+O método `this.count()` executarase cada vez que ocorra o evento `input`. Volveremos para implementar a lóxica do método `count()` máis tarde.
 
-En terceiro lugar, engade un novo método á `WordCounter`clase, que calcula o número de caracteres e palabras:
+En terceiro lugar, engade un novo método á clase `WordCounter`, que calcula o número de caracteres e palabras:
 
-```
+```js
 class WordCounter {
     constructor(inputText) {
         this.inputText = inputText;
@@ -832,9 +831,9 @@ When an `input` event occurs on the `inputText` element, the `count()` method ex
 
 And the object that executes the `count()` method is the `inputText` object, not the instance of the `WordCounter` class.
 
-Significa que dentro do `count()`método, o `this`valor fai referencia ao `inputText`elemento, non ao `WordCounter`obxecto.
+Significa que dentro do método `count()`, o `this`valor fai referencia ao `inputText`elemento, non ao `WordCounter`obxecto.
 
-Para demostralo, pode rexistrar o `this`valor dentro do `count()`método do seguinte xeito:
+Para demostralo, pode rexistrar o `this`valor dentro do método `count()` do seguinte xeito:
 
 ```
 count() {
@@ -846,10 +845,10 @@ count() {
 
 ```
 <textarea id="text" rows="10" cols="60"></textarea>
-Idioma do código:  HTML, XML  ( xml )
+
 ```
 
-Dado que o `this`valor dentro do `count()`método fai referencia ao `<textarea>`elemento, non ten a `inputText`propiedade. E tampouco ten o `emitEvent()`método.
+Dado que o `this`valor dentro do método `count()` fai referencia ao `<textarea>`elemento, non ten a `inputText`propiedade. E tampouco ten o `emitEvent()`método.
 
 Para solucionar o problema, cómpre cambiar o escoitador de eventos a unha [función de frecha](https://www.javascripttutorial.net/es6/javascript-arrow-function/) como esta:
 
@@ -862,7 +861,7 @@ constructor(inputText) {
 }
 ```
 
-Cando usa a función de frecha, o `this`valor fai referencia ao obxecto do bloque circundante que é `WordCounter`neste caso. Noutras palabras, pode acceder a todas as propiedades e métodos do WordCounter do `count()`método.
+Cando usa a función de frecha, o `this`valor fai referencia ao obxecto do bloque circundante que é `WordCounter`neste caso. Noutras palabras, pode acceder a todas as propiedades e métodos do WordCounter do método `count()`.
 
 A clase final `WordCounter`será así:
 
@@ -913,7 +912,7 @@ Neste tutorial, aprendeu a desenvolver unha aplicación de contador de palabras 
 
 # 03. Validación de formularios Javascript
 
-**Resumo** : neste tutorial aprenderás sobre a validación de formularios JavaScript creando un formulario de rexistro desde cero.
+**Resumo**: nesta sección aprenderás sobre a validación de formularios JavaScript creando un formulario de rexistro desde cero.
 
 ## Que é a validación de formularios
 
@@ -953,7 +952,7 @@ Validarás o seguinte:
 
 ## Crea a estrutura do proxecto
 
-En primeiro lugar, cree o `form-validation`cartafol que almacena todos os ficheiros de código fonte do proxecto.
+En primeiro lugar, cree o `form-validation`cartafol que almacena todos os arquivos de código fonte do proxecto.
 
 En segundo lugar, cree os cartafoles `js`e `css`dentro do `form-validation`cartafol.
 
@@ -965,7 +964,7 @@ A estrutura final do proxecto será a seguinte:
 
 ## Construír o formulario HTML
 
-Primeiro, abra o `index.html`ficheiro e introduza o seguinte código:
+Primeiro, abra o `index.html`arquivo e introduza o seguinte código:
 
 ```
 <!DOCTYPE html>
@@ -979,12 +978,12 @@ Primeiro, abra o `index.html`ficheiro e introduza o seguinte código:
     <script src="js/app.js"></script>
 </body>
 
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
-Neste ficheiro HTML, colocamos o `style.css`ficheiro na `head`sección e `app.js`o ficheiro na sección do corpo antes da `</body>`etiqueta de peche.
+Neste arquivo HTML, colocamos o `style.css`arquivo na `head`sección e `app.js`o arquivo na sección do corpo antes da `</body>`etiqueta de peche.
 
-En segundo lugar, engade o seguinte marcado HTML para crear o formulario de rexistro. O ficheiro index.html final terá o seguinte aspecto:
+En segundo lugar, engade o seguinte marcado HTML para crear o formulario de rexistro. O arquivo index.html final terá o seguinte aspecto:
 
 ```
  <!DOCTYPE html>
@@ -1030,7 +1029,7 @@ En segundo lugar, engade o seguinte marcado HTML para crear o formulario de rexi
 
     <script src="js/app.js"></script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 O máis destacable do formulario de inscrición é que cada campo está envolto nunha `div`clase coa clase `form-field`.
@@ -1067,7 +1066,7 @@ Consulte o [style.css](https://javascripttutorial.net/sample/dom/form-validation
 
 ## Seleccione os campos do formulario e engade o detector de eventos de envío
 
-No `app.js`ficheiro, primeiro empregarás o `document.querySelector()`método para seleccionar os campos de entrada e o formulario:
+No `app.js`arquivo, primeiro empregarás o `document.querySelector()`método para seleccionar os campos de entrada e o formulario:
 
 ```
 const usernameEl = document.querySelector('#username');
@@ -1179,7 +1178,7 @@ En terceiro lugar, selecciona o `<small>`elemento dentro do `form-field`elemento
 const error = formField.querySelector('small');
 ```
 
-Teña en conta que usa `formField.querySelector()`o `document.querySelector()`.
+Ter en conta que usa `formField.querySelector()`o `document.querySelector()`.
 
 Finalmente, establece a mensaxe de erro na súa `textContent`propiedade do `<small>`elemento:
 
@@ -1343,9 +1342,9 @@ Cómo funciona:
 
 - Primeiro, chame a cada función individual para validar os campos de nome de usuario, correo electrónico, contrasinal e confirmar o contrasinal.
 - En segundo lugar, use o `&&`operador para determinar se o formulario é válido. O formulario só é válido se todos os campos son válidos.
-- Finalmente, enviar os datos ao servidor se o formulario é válido especificou a `isFormValid`bandeira. Teña en conta que o envío de datos do formulario ao servidor non se trata neste tutorial.
+- Finalmente, enviar os datos ao servidor se o formulario é válido especificou a `isFormValid`bandeira. Ter en conta que o envío de datos do formulario ao servidor non se trata neste tutorial.
 
-Agora podes abrir o `index.html`ficheiro, introducir algúns valores e facer clic no botón enviar para probalo.
+Agora podes abrir o `index.html`arquivo, introducir algúns valores e facer clic no botón enviar para probalo.
 
 ## Engade a función de comentarios instantáneos
 
@@ -1423,7 +1422,7 @@ form.addEventListener('input', debounce(function (e) {
 
 Se introduces datos nun campo de formulario para activar o `input`evento, verás que a mensaxe de erro ou éxito terá un pouco de atraso.
 
-O seguinte mostra o `app.js`ficheiro completo:
+O seguinte mostra o `app.js`arquivo completo:
 
 ```
 const usernameEl = document.querySelector('#username');
@@ -1611,7 +1610,7 @@ E [aquí está a forma final](https://javascripttutorial.net/sample/dom/form-val
 
 # 04. Temporizador de conta atrás JavaScript
 
-**Resumo** : neste tutorial, aprenderás a desenvolver un temporizador de conta atrás JavaScript reutilizable.
+**Resumo**: nesta sección, aprenderás a desenvolver un temporizador de conta atrás JavaScript reutilizable.
 
 ## Que é un temporizador de conta atrás
 
@@ -1623,13 +1622,13 @@ Neste tutorial, aprenderás a crear un temporizador de conta atrás en JavaScrip
 
 O seguinte mostra a [páxina de destino da conta atrás final do ano novo](https://javascripttutorial.net/sample/dom/countdown-timer/) .
 
-Teña en conta que o temporizador de conta atrás que vas construír é reutilizable para que poidas utilizalo en calquera páxina de destino. Ademais, podes usar esta conta atrás para crear varios temporizadores de conta atrás nunha única páxina.
+Ter en conta que o temporizador de conta atrás que vas construír é reutilizable para que poidas utilizalo en calquera páxina de destino. Ademais, podes usar esta conta atrás para crear varios temporizadores de conta atrás nunha única páxina.
 
 ## Crea a estrutura do proxecto
 
-En primeiro lugar, cree un cartafol do proxecto chamado `countdown-timer`. Dentro dese cartafol, cree tres subcartafoles: `js`, `css`, e `img`que almacenarán os ficheiros JavaScript, CSS e imaxes.
+En primeiro lugar, cree un cartafol do proxecto chamado `countdown-timer`. Dentro dese cartafol, cree tres subcartafoles: `js`, `css`, e `img`que almacenarán os arquivos JavaScript, CSS e imaxes.
 
-En segundo lugar, cree os ficheiros `style.css`no `css`cartafol `app.js`e `countdown.js`os ficheiros no `js`cartafol e `index.html`no `countdown-timer`cartafol:
+En segundo lugar, cree os arquivos `style.css`no `css`cartafol `app.js`e `countdown.js`os arquivos no `js`cartafol e `index.html`no `countdown-timer`cartafol:
 
 En terceiro lugar, [descarga esta imaxe de fogos artificiais](https://www.javascripttutorial.net/sample/dom/countdown-timer//img/new-year.jpg) e cópiaa no `img`cartafol. Usarás esta imaxe como fondo da páxina de conta atrás do ano novo.
 
@@ -1662,12 +1661,12 @@ O seguinte mostra a páxina HTML completa:
     <script src="js/app.js"></script>
 
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
-No `index.html`ficheiro, colocas unha ligazón ao `style.css`ficheiro na `<head>`sección e os ficheiros `countdown.js`e `app.js`na `<body>`sección.
+No `index.html`arquivo, colocas unha ligazón ao `style.css`arquivo na `<head>`sección e os arquivos `countdown.js`e `app.js`na `<body>`sección.
 
-Teña en conta que o `countdown.js`ficheiro debe aparecer antes do `app.js`ficheiro porque `app.js`utilizará os obxectos do `countdown.js`ficheiro.
+Ter en conta que o `countdown.js`arquivo debe aparecer antes do `app.js`arquivo porque `app.js`utilizará os obxectos do `countdown.js`arquivo.
 
 A `<body>`sección ten catro elementos:
 
@@ -1731,7 +1730,7 @@ console.log(time / 1000 / 60);
 Saída:
 
 ```
-2.5Idioma do código:  CSS  ( css )
+2.5
 ```
 
 Para obter os minutos restantes (2), utiliza a `Math.floor()`función:
@@ -1750,7 +1749,7 @@ console.log(seconds); // 30
 
 ## Desenvolver a clase Countdown
 
-Primeiro, crea unha nova `CountDown`clase no `countdown.js`ficheiro:
+Primeiro, crea unha nova `CountDown`clase no `countdown.js`arquivo:
 
 ```
 class CountDown {
@@ -1817,7 +1816,7 @@ setExpiredDate(expiredDate) {
 }
 ```
 
-Teña en conta que usamos o [operador ternario](https://www.javascripttutorial.net/javascript-ternary-operator/) `?:` para executar o método `complete()`or `start()`en función do valor da `this.timeRemaining`propiedade.
+Ter en conta que usamos o [operador ternario](https://www.javascripttutorial.net/javascript-ternary-operator/) `?:` para executar o método `complete()`or `start()`en función do valor da `this.timeRemaining`propiedade.
 
 ### O método complete().
 
@@ -2043,7 +2042,7 @@ const render = (time) => {
         </div>
         `;
 };
-Idioma do código:  HTML, XML  ( xml )
+
 ```
 
 En quinto lugar, cando se completa a conta atrás, mostra unha mensaxe, por exemplo, `"Happy New Year"`.
@@ -2093,7 +2092,7 @@ const countdownTimer = new CountDown(
 );
 ```
 
-O seguinte mostra o `app.js`ficheiro completo:
+O seguinte mostra o `app.js`arquivo completo:
 
 ```js
 // Get the new year
@@ -2175,7 +2174,7 @@ Neste tutorial, aprendeches a:
 
 # 05. Desprazamento infinito de JavaScript
 
-**Resumo** : neste tutorial, aprenderás a implementar a función de desprazamento infinito de JavaScript.
+**Resumo**: nesta sección, aprenderás a implementar a función de desprazamento infinito de JavaScript.
 
 ## O que vas construír
 
@@ -2207,13 +2206,13 @@ En primeiro lugar, cree un novo cartafol chamado `infinite-scroll`. Dentro dese 
 
 En segundo lugar, cree o `style.css`no `css`cartafol e `app.js`no `js`cartafol.
 
-En terceiro lugar, cree un novo ficheiro HTML index.html no `infinite-scroll`cartafol.
+En terceiro lugar, cree un novo arquivo HTML index.html no `infinite-scroll`cartafol.
 
 A estrutura do cartafol do proxecto final será así:
 
 ![img](./assets/JavaScript-Infinite-Scroll-Project-Structure.png)
 
-## Engade código ao ficheiro index.html
+## Engade código ao arquivo index.html
 
 Abre o `index.html`e engade o seguinte código:
 
@@ -2242,10 +2241,10 @@ Abre o `index.html`e engade o seguinte código:
     </div>
     <script src="js/app.js"></script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
-No `index.html`ficheiro, coloque o `style.css`na sección de cabeceira e `app.js`na sección de corpo.
+No `index.html`arquivo, coloque o `style.css`na sección de cabeceira e `app.js`na sección de corpo.
 
 A sección do corpo ten un `div`co nome da clase `container`. O elemento container ten catro elementos fillos:
 
@@ -2316,7 +2315,7 @@ Para cada obxecto de cita, crea o `<blockquote>`elemento coa `quote`clase:
 
 ```
 <blockquote class="quote">
-</blockquote>Idioma do código:  HTML, XML  ( xml )
+</blockquote>
 ```
 
 E xera a representación HTML dun obxecto de cita usando a sintaxe [literal do modelo](https://www.javascripttutorial.net/es6/javascript-template-literals/) . Engade o HTML ao `<blockquote>`elemento.
@@ -2328,7 +2327,7 @@ O seguinte mostra un exemplo do `<blockquote>`elemento xerado:
    <span>1)</span>
       Talk is cheap. Show me the code.
     <footer>Linus Torvalds</footer>
-</blockquote>Idioma do código:  HTML, XML  ( xml )
+</blockquote>
 ```
 
 Ao final de cada iteración, a función engade o `<blockquote>`elemento aos elementos fillos do `quotesEl`elemento mediante o `appendChild()`método.
@@ -2493,7 +2492,7 @@ loadQuotes(currentPage, limit);
 
 ### Envolve o código app.js nun IIFE
 
-Para evitar o conflito de variables e funcións que definiu, pode envolver todo o código no `app.js`ficheiro nun [IIFE](https://www.javascripttutorial.net/javascript-immediately-invoked-function-expression-iife/) .
+Para evitar o conflito de variables e funcións que definiu, pode envolver todo o código no `app.js`arquivo nun [IIFE](https://www.javascripttutorial.net/javascript-immediately-invoked-function-expression-iife/) .
 
 A final `app.js`será así:
 

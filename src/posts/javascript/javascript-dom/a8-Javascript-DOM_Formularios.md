@@ -6,75 +6,75 @@ description: Uso de javascript na arbore do modelo de obxecto do documento
 
 # Formulario JavaScript
 
-**Resumo** : neste tutorial, aprenderá sobre a API do formulario JavaScript: acceder ao formulario, obter valores dos elementos, validar os datos do formulario e enviar o formulario.
+**Resumo**: nesta sección, aprenderá sobre a API do formulario JavaScript: acceder ao formulario, obter valores dos elementos, validar os datos do formulario e enviar o formulario.
 
 ## Conceptos básicos do formulario
 
-Para crear un formulario en HTML, usa o `<form>`elemento:
+Para crear un formulario en HTML, usa o elemento `<form>`:
 
-```
+```html
 <form action="/signup" method="post" id="signup">
 </form>
 ```
 
-O `<form>`elemento ten dous atributos importantes: `action`e `method`.
+O elemento `<form>` ten dous atributos importantes: `action` e `method`.
 
-- O `action`atributo especifica un URL que procesará o envío do formulario. Neste exemplo, a acción é o `/signup`URL.
-- O `method`atributo especifica o método HTTP co que enviar o formulario. Normalmente, o método é `post`ou `get`.
+- O atributo `action` especifica un URL que procesará o envío do formulario. Neste exemplo, a acción é a URL `/signup`.
+- O atributo `method` especifica o método HTTP co que enviar o formulario. Normalmente, o método é `post` ou `get`.
 
-Xeralmente, úsase o `get`método cando quere recuperar datos do servidor e o `post`método cando quere cambiar os datos do servidor.
+Xeralmente, úsase o método `get` cando quere recuperar datos do servidor e o método `post` cando quere cambiar os datos do servidor.
 
-JavaScript usa o `HTMLFormElement`obxecto para representar un formulario. Ten `HTMLFormElement`as seguintes propiedades que se corresponden cos atributos HTML:
+JavaScript usa o obxecto `HTMLFormElement` para representar un formulario. `HTMLFormElement` ten as seguintes propiedades que se corresponden cos atributos HTML:
 
-- `action`– é o URL que procesa os datos do formulario. É equivalente ao `action`atributo do `<form>`elemento.
-- `method`– é o método HTTP que é equivalente ao `method`atributo do `<form>`elemento.
+- `action`– é a URL que procesa os datos do formulario. É equivalente ao atributo `action` do elemento `<from>` .
+- `method`– é o método HTTP que é equivalente ao atributo `method` do elemento `<from>` .
 
-O `HTMLFormElement`elemento tamén ofrece os seguintes métodos útiles:
+O elemento `HTMLFormElement` tamén ofrece os seguintes métodos útiles:
 
 - `submit()`- enviar o formulario.
 - `reset()`- restablecer o formulario.
 
 ## Formularios de referencia
 
-Para facer referencia ao `<form>`elemento, pode usar métodos de selección DOM como `getElementById()`:
+Para facer referencia ao elemento `<from>`, pode usar métodos de selección DOM como `getElementById()`:
 
-```
+```js
 const form = document.getElementById('subscribe');
 ```
 
-Un documento HTML pode ter varios formularios. A `document.forms`propiedade devolve unha colección de formularios ( `HTMLFormControlsCollection`) no documento:
+Un documento HTML pode ter varios formularios. A propiedade `document.forms` devolve unha colección de formularios ( `HTMLFormControlsCollection`) no documento:
 
-```
+```js
 document.forms
 ```
 
 Para facer referencia a un formulario, usa un índice. Por exemplo, a seguinte instrución devolve a primeira forma do documento HTML:
 
-```
-document.forms[0]Idioma do código:  CSS  ( css )
+```js
+document.forms[0]
 ```
 
 ## Envío dun formulario
 
-Normalmente, un formulario ten un botón de envío. Cando fai clic nel, o navegador envía os datos do formulario ao servidor. Para crear un botón de envío, usa `<input>`ou `<button>`elemento co tipo `submit`:
+Normalmente, un formulario ten un botón de envío. Cando fai clic nel, o navegador envía os datos do formulario ao servidor. Para crear un botón de envío, usa `<input>` ou elemento `<button>` co tipo `submit`:
 
-```
+```html
 <input type="submit" value="Subscribe">
 ```
 
 Ou
 
-```
+```html
 <button type="submit">Subscribe</button>
 ```
 
-Se o botón enviar ten foco e premes a `Enter`tecla, o navegador tamén envía os datos do formulario.
+Se o botón enviar ten foco e premes a tecla `Enter`, o navegador tamén envía os datos do formulario.
 
-Cando envía o formulario, o `submit`evento desenvólvese antes de enviar a solicitude ao servidor. Isto dálle a oportunidade de validar os datos do formulario. Se os datos do formulario non son válidos, podes deixar de enviar o formulario.
+Cando envía o formulario, o evento `submit` desenvólvese antes de enviar a solicitude ao servidor. Isto dálle a oportunidade de validar os datos do formulario. Se os datos do formulario non son válidos, podes deixar de enviar o formulario.
 
-Para anexar un detector de eventos ao `submit`evento, utiliza o `addEventListener()`método do elemento de formulario do seguinte xeito:
+Para anexar un detector de eventos ao evento `submit`, utiliza o método `addEventListener()` do elemento de formulario do seguinte xeito:
 
-```
+```js
 const form  = document.getElementById('signup');
 
 form.addEventListener('submit', (event) => {
@@ -82,32 +82,32 @@ form.addEventListener('submit', (event) => {
 });
 ```
 
-Para evitar que o formulario se envíe, chama ao `preventDefault()`método do `event`obxecto dentro do `submit`controlador de eventos deste xeito:
+Para evitar que o formulario se envíe, chama ao método `preventDefault()` do obxecto `event` dentro do controlador de eventos `submit` deste xeito:
 
-```
+```js
 form.addEventListener('submit', (event) => {
     // stop form submission
     event.preventDefault();
-});Idioma do código:  PHP  ( php )
+});
 ```
 
-Normalmente, chama ao `event.preventDefault()`método se os datos do formulario non son válidos. Para enviar o formulario en JavaScript, chama ao `submit()`método do obxecto do formulario:
+Normalmente, chama ao método `event.preventDefault()` se os datos do formulario non son válidos. Para enviar o formulario en JavaScript, chama ao método do obxecto `submit()` do formulario:
 
-```
-form.submit();Idioma do código:  CSS  ( css )
+```js
+form.submit();
 ```
 
-Teña en conta que `form.submit()`non dispara o `submit`evento. Polo tanto, sempre debes [validar o formulario](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) antes de chamar a este método.
+Ter en conta que `form.submit()` non dispara o evento `submit`. Polo tanto, sempre debes [validar o formulario](https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/) antes de chamar a este método.
 
 ## Acceso aos campos do formulario
 
 Para acceder aos campos do formulario, pode usar métodos DOM como `getElementsByName()`, `getElementById()`, `querySelector()`, etc.
 
-Ademais, pode usar a `elements`propiedade do `form`obxecto. A `form.elements`propiedade almacena unha colección de elementos do formulario.
+Ademais, pode usar a propiedade `elements` do obxecto `form`. A propiedade `form.elements` almacena unha colección de elementos do formulario.
 
-JavaScript permítelle acceder a un elemento por índice, ID ou nome. Supoña que tes o seguinte formulario de rexistro con dous `<input>`elementos:
+JavaScript permítelle acceder a un elemento por índice, ID ou nome. Supoña que tes o seguinte formulario de rexistro con dous elementos `<input>`:
 
-```
+```html
 <form action="signup.html" method="post" id="signup">
 	<h1>Sign Up</h1>
 	<div class="field">
@@ -122,18 +122,17 @@ JavaScript permítelle acceder a un elemento por índice, ID ou nome. Supoña qu
 	</div>
 	<button type="submit">Subscribe</button>
 </form>
-
 ```
 
 Para acceder aos elementos do formulario, primeiro obtén o elemento do formulario:
 
-```
+```js
 const form = document.getElementById('signup');
 ```
 
 E usa índice, id ou nome para acceder ao elemento. O seguinte accede ao primeiro elemento do formulario:
 
-```
+```js
 form.elements[0]; // by index
 form.elements['name']; // by name
 form.elements['name']; // by id (name & id are the same in this case)
@@ -141,15 +140,15 @@ form.elements['name']; // by id (name & id are the same in this case)
 
 O seguinte accede ao segundo elemento de entrada:
 
-```
+```js
 form.elements[1]; // by index
 form.elements['email']; //  by name
 form.elements['email']; // by id
 ```
 
-Despois de acceder a un campo de formulario, pode usar a `value`propiedade para acceder ao seu valor, por exemplo:
+Despois de acceder a un campo de formulario, pode usar a propiedade `value` para acceder ao seu valor, por exemplo:
 
-```
+```js
 const form = document.getElementById('signup');
 const name = form.elements['name'];
 const email = form.elements['email'];
@@ -165,7 +164,7 @@ O seguinte ilustra o documento HTML que ten un formulario de rexistro. [Consulta
 
 <iframe src="https://www.javascripttutorial.net/sample/dom/form/signup.html" width="500px" height="400px" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -195,10 +194,9 @@ O seguinte ilustra o documento HTML que ten un formulario de rexistro. [Consulta
 		<script src="js/app.js"></script>
 	</body>
 </html>
-
 ```
 
-O documento HTML fai referencia aos ficheiros `style.css`e `app.js`. Usa o `<small>`elemento para mostrar unha mensaxe de erro no caso de que o `<input>`elemento teña datos non válidos.
+O documento HTML fai referencia aos arquivos `style.css`e `app.js`. Usa o `<small>`elemento para mostrar unha mensaxe de erro no caso de que o `<input>`elemento teña datos non válidos.
 
 O envío do formulario sen proporcionar ningunha información dará lugar ao seguinte erro:
 
@@ -208,9 +206,9 @@ O envío do formulario co nome pero o formato de enderezo de correo electrónico
 
 [![img](https://www.javascripttutorial.net/wp-content/uploads/2021/07/JavaScript-Form-validate-email-address.png)](https://www.javascripttutorial.net/wp-content/uploads/2021/07/JavaScript-Form-validate-email-address.png)
 
-O seguinte mostra o `app.js`ficheiro completo:
+O seguinte mostra o arquivo `app.js` completo:
 
-```
+```js
 // show a message with a type of the input
 function showMessage(input, message, type) {
 	// get the small element and set the message
@@ -270,8 +268,6 @@ form.addEventListener("submit", function (event) {
 		alert("Demo only. No form was posted.");
 	}
 });
-
-
 ```
 
 Cómo funciona.
@@ -280,7 +276,7 @@ Cómo funciona.
 
 A `showMessage()`función acepta un elemento de entrada, unha mensaxe e un tipo:
 
-```
+```js
 // show a message with a type of the input
 function showMessage(input, message, type) {
 	// get the <small> element and set the message
@@ -294,7 +290,7 @@ function showMessage(input, message, type) {
 
 O seguinte mostra o campo de entrada de nome no formulario:
 
-```
+```html
 <div class="field">
 	<label for="name">Name:</label>
 	<input type="text" id="name" name="name" placeholder="Enter your fullname" />
@@ -302,33 +298,33 @@ O seguinte mostra o campo de entrada de nome no formulario:
 </div>
 ```
 
-Se o valor do nome está en branco, primeiro debes obter o seu pai, que é o `<div>`coa clase "campo".
+Se o valor do nome está en branco, primeiro debes obter o seu pai, que é o `<div>` coa clase `field`.
 
-```
-input.parentNodeIdioma do código:  CSS  ( css )
+```js
+input.parentNode
 ```
 
 A continuación, cómpre seleccionar o `<small>`elemento:
 
-```
+```js
 const msg = input.parentNode.querySelector("small");
 ```
 
 A continuación, actualiza a mensaxe:
 
-```
+```js
 msg.innerText = message;
 ```
 
 Despois diso, cambiamos a clase CSS do campo de entrada en función do valor do parámetro tipo. Se o tipo é verdadeiro, cambiamos a clase da entrada a éxito. En caso contrario, cambiamos a clase a erro.
 
-```
+```js
 input.className = type ? "success" : "error";
 ```
 
 Finalmente, devolve o valor do tipo:
 
-```
+```js
 return type;
 ```
 
@@ -336,7 +332,7 @@ return type;
 
 As funcións `showError()`e `showSuccess()`chaman á `showMessage()`función. A `showError()`función sempre devolve `false`mentres que a `showSuccess()`función sempre devolve `true`. Ademais, a `showSuccess()`función establece a mensaxe de erro nunha cadea baleira.
 
-```
+```js
 function showError(input, message) {
 	return showMessage(input, message, false);
 }
@@ -348,9 +344,9 @@ function showSuccess(input) {
 
 ### A función hasValue().
 
-A `hasValue()`función comproba se un elemento de entrada ten un valor ou non e mostra unha mensaxe de erro usando a función `showError()`ou en consecuencia:`showSuccess()`
+A función `hasValue()` comproba se un elemento de entrada ten un valor ou non e mostra unha mensaxe de erro usando a función `showError()` ou senón amosa:`showSuccess()` se atopa un valor inserido.
 
-```
+```js
 function hasValue(input, message) {
 	if (input.value.trim() === "") {
 		return showError(input, message);
@@ -361,9 +357,9 @@ function hasValue(input, message) {
 
 ### A función validateEmail().
 
-A `validateEmail()`función valida se un campo de correo electrónico contén un enderezo de correo electrónico válido:
+A función `validateEmail()` valida se un campo de correo electrónico contén un enderezo de correo electrónico válido:
 
-```
+```js
 function validateEmail(input, requiredMsg, invalidMsg) {
 	// check if the value is not empty
 	if (!hasValue(input, requiredMsg)) {
@@ -378,32 +374,32 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 		return showError(input, invalidMsg);
 	}
 	return true;
-}Idioma do código:  PHP  ( php )
+}
 ```
 
-A `validateEmail()`función chama á `hasValue()`función para comprobar se o valor do campo está baleiro. Se o campo de entrada está baleiro, mostra o `requiredMsg`.
+A función `validateEmail()` chama á función `hasValue()` para comprobar se o valor do campo está baleiro. Se o campo de entrada está baleiro, mostra `requiredMsg`.
 
-Para validar o correo electrónico, usa unha [expresión regular](https://www.javascripttutorial.net/javascript-regular-expression/) . Se o correo electrónico non é válido, a `validateEmail()`función mostra o `invalidMsg`.
+Para validar o correo electrónico, usa unha [expresión regular](https://www.javascripttutorial.net/javascript-regular-expression/). Se o correo electrónico non é válido, a función `validateEmail()` mostra `invalidMsg`.
 
 ### O controlador de eventos de envío
 
-En primeiro lugar, selecciona o formulario de inscrición polo seu ID usando o `querySelector()`método:
+En primeiro lugar, selecciona o formulario de inscrición polo seu ID usando o método `querySelector()`:
 
-```
+```js
 const form = document.querySelector("#signup");
 ```
 
 En segundo lugar, define algunhas constantes para almacenar as mensaxes de erro:
 
-```
+```js
 const NAME_REQUIRED = "Please enter your name";
 const EMAIL_REQUIRED = "Please enter your email";
 const EMAIL_INVALID = "Please enter a correct email address format";
 ```
 
-En terceiro lugar, engade o `submit`escoitador de eventos do formulario de rexistro mediante o `addEventListener()`método:
+En terceiro lugar, engade o *listener* de eventos `submit` do formulario de rexistro mediante o método `addEventListener()`:
 
-```
+```js
 form.addEventListener("submit", function (event) {
 	// stop form submission
 	event.preventDefault();
@@ -419,34 +415,34 @@ form.addEventListener("submit", function (event) {
 
 ```
 
-No manejador de eventos de envío:
+No manexador de eventos de envío:
 
-1. Detén o envío do formulario chamando ao `event.preventDefault()`método.
+1. Detén o envío do formulario chamando ao método `event.preventDefault()`.
 2. Valide os campos de nome e correo electrónico mediante as funcións `hasValue()`e `validateEmail()`.
-3. Se o nome e o correo electrónico son válidos, mostra unha alerta. Nunha aplicación do mundo real, cómpre chamar ao `form.submit()`método para enviar o formulario.
+3. Se o nome e o correo electrónico son válidos, mostra unha alerta. Nunha aplicación do mundo real, cómpre chamar ao método `form.submit()` para enviar o formulario.
 
 ## Resumo
 
-- Use o `<form>`elemento para crear un formulario HTML.
-- Use métodos DOM como `getElementById()`e `querySelector()`para seleccionar un `<form>`elemento. Tamén `document.forms[index]`devolve o elemento do formulario mediante un índice numérico.
-- Use `form.elements`para acceder a elementos do formulario.
-- O `submit`evento desenvólvese cando os usuarios fan clic no botón Enviar no formulario.
+- Use o elemento `<form>` para crear un formulario HTML.
+- Use métodos DOM como `getElementById()` e `querySelector()` para seleccionar un elemento `<form>`. `document.forms[index]` tamén devolve o elemento do formulario mediante un índice numérico.
+- Use `form.elements` para acceder a elementos do formulario.
+- O evento `submit` desenvólvese cando os usuarios fan clic no botón Enviar no formulario.
 
 # Caixa de verificación de JavaScript
 
-**Resumo** : neste tutorial, aprenderás a usar JavaScript para probar se unha caixa de verificación está marcada, obter os valores das caixas de verificación seleccionadas e seleccionar/desmarcar todas as caixas de verificación.
+**Resumo**: nesta sección, aprenderás a usar JavaScript para probar se unha caixa de verificación está marcada, obter os valores das caixas de verificación seleccionadas e seleccionar/desmarcar todas as caixas de verificación.
 
-## Creando unha caixa de verificación HTML
+## Crear unha caixa de verificación HTML
 
-Para crear unha caixa de verificación, use o `<input>`elemento co `type`de `checkbox`como segue:
+Para crear unha caixa de verificación, use o elemento `<input>` co `type` de `checkbox` como segue:
 
-```
+```html
 <input type="checkbox" id="accept"> Accept
 ```
 
 É unha boa práctica asociar sempre unha caixa de verificación cunha etiqueta para mellorar a usabilidade e a accesibilidade. Ao facelo, ao facer clic na etiqueta tamén se marca ou desmarca a caixa de verificación.
 
-```
+```html
 <label for="accept">
    <input type="checkbox" id="accept" name="accept" value="yes">  Accept
 </label>
@@ -454,16 +450,16 @@ Para crear unha caixa de verificación, use o `<input>`elemento co `type`de `che
 
 Ou:
 
-```
+```html
 <input type="checkbox" id="accept" name="accept" value="yes">
 <label for="accept"> Accept </label>
 ```
 
-Teña en conta que o valor do atributo for da etiqueta debe coincidir co id da caixa de verificación.
+Ter en conta que o valor do atributo for da etiqueta debe coincidir co id da caixa de verificación.
 
 O seguinte funciona pero é unha mala práctica, polo que debes evitalo:
 
-```
+```html
 <input type="checkbox" id="accept" name="accept" value="yes"> Accept
 ```
 
@@ -473,12 +469,12 @@ Unha caixa de verificación ten dous estados: marcada e desmarcada.
 
 Para obter o estado dunha caixa de verificación, siga estes pasos:
 
-- En primeiro lugar, seleccione a caixa de verificación mediante un método DOM como `getElementById()`ou `querySelector()`.
-- A continuación, acceda á `checked`propiedade do elemento da caixa de verificación. Se a súa `checked`propiedade é `true`, entón a caixa de verificación está marcada; se non, non o é.
+- En primeiro lugar, seleccione a caixa de verificación mediante un método DOM como `getElementById()` ou `querySelector()`.
+- A continuación, acceda á propiedade `checked` do elemento da caixa de verificación. Se a súa propiedade `checked` é `true`, entón a caixa de verificación está marcada; se non, non o é.
 
-Vexa o seguinte exemplo:
+Mira o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -506,7 +502,7 @@ Neste exemplo:
 
 En primeiro lugar, cree o elemento da caixa de verificación HTML:
 
-```
+```html
 <label for="accept">
    <input type="checkbox" id="accept" name="accept" value="yes"> Accept
 </label>
@@ -514,20 +510,20 @@ En primeiro lugar, cree o elemento da caixa de verificación HTML:
 
 En segundo lugar, seleccione a caixa de verificación con id `#accept`e examine a `checked`propiedade:
 
-```
+```js
 const cb = document.querySelector('#accept');
 console.log(cb.checked);
 ```
 
 Como a caixa de verificación está desmarcada, verás `false`na consola:
 
-```
+```js
 false
 ```
 
 Considere outro exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -552,19 +548,19 @@ Considere outro exemplo:
 
 Neste exemplo, o selector `#accept:checked`selecciona o elemento co id `#accept`e ten o atributo `checked`. Por exemplo, coincide co seguinte elemento:
 
-```
+```html
 <input type="checkbox" id="accept" checked> Accept
 ```
 
 Pero non este:
 
-```
+```html
 <input type="checkbox" id="accept"> Accept
 ```
 
-Polo tanto, se o elemento da caixa de verificación co id `#accept`está marcado, o `document.querySelector()`devolverá. Na xanela da consola, verás o valor `false`porque a caixa de verificación está desmarcada:
+Polo tanto, se o elemento da caixa de verificación co id `#accept` está marcado, o devolverá `document.querySelector()`. Na xanela da consola, verás o valor `false` porque a caixa de verificación está desmarcada:
 
-```
+```js
 false
 ```
 
@@ -572,7 +568,7 @@ false
 
 A páxina seguinte mostra unha caixa de verificación e un botón. Cando fas clic no botón, verás o valor da caixa de verificación na xanela da consola:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -600,7 +596,7 @@ A páxina seguinte mostra unha caixa de verificación e un botón. Cando fas cli
 </html>
 ```
 
-Cando obtén o `value`atributo dunha caixa de verificación, sempre obtén a `'on'`cadea se a caixa de verificación está marcada ou non.
+Cando obtén o atributo `value` dunha caixa de verificación, sempre obtén a cadea `'on'` se a caixa de verificación está marcada ou non.
 
 <iframe height="100px" src="https://www.javascripttutorial.net/sample/dom/checkbox/checkbox.html" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
 
@@ -608,7 +604,7 @@ Cando obtén o `value`atributo dunha caixa de verificación, sempre obtén a `'o
 
 A páxina seguinte mostra tres caixas de verificación. Se selecciona unha ou máis caixas de verificación e fai clic no botón, mostrará os valores da caixa de verificación seleccionada:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -648,7 +644,7 @@ Cómo funciona.
 
 No HTML, creamos tres elementos de caixa de verificación co mesmo nome (cor) pero con valores distintos:
 
-```
+```html
 <label for="c1"><input type="checkbox" name="color" value="red" id="c1">Red</label>
 <label for="c2"><input type="checkbox" name="color" value="green" id="c2">Green</label>
 <label for="c3"><input type="checkbox" name="color" value="blue" id="c3">Blue</label>
@@ -658,22 +654,22 @@ No JavaScript:
 
 Primeiro, engade o controlador de eventos de clic ao botón:
 
-```
+```js
 const btn = document.querySelector('#btn');
 btn.addEventListener('click', (event) => {
    // ...
 });
 ```
 
-En segundo lugar, seleccione as caixas de verificación seleccionadas usando o `document.querySelectorAll()`método dentro do controlador de eventos de clic:
+En segundo lugar, seleccione as caixas de verificación seleccionadas usando o método `document.querySelectorAll()` dentro do controlador de eventos de clic:
 
-```
+```js
 let checkboxes = document.querySelectorAll('input[name="color"]:checked');
 ```
 
 En terceiro lugar, empurra os valores das caixas de verificación seleccionadas a unha matriz:
 
-```
+```js
 let values = [];
 checkboxes.forEach((checkbox) => {
     values.push(checkbox.value);
@@ -690,7 +686,7 @@ Demostración:
 
 A páxina seguinte ten tres caixas de verificación e un botón. Cando fas clic no botón, se as caixas de verificación están marcadas, desmarcaranse e viceversa:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -864,19 +860,19 @@ checkbox.id = id;
 4. Coloque a caixa de verificación dentro da etiqueta:
 
 ```
-label.appendChild(checkbox);Idioma do código:  CSS  ( css )
+label.appendChild(checkbox);
 ```
 
 5. Crea un nodo de texto e engádeo á etiqueta:
 
 ```
-label.appendChild(document.createTextNode(color));Idioma do código:  CSS  ( css )
+label.appendChild(document.createTextNode(color));
 ```
 
 6. Engade a etiqueta ao elemento raíz:
 
 ```
- document.querySelector("#root").appendChild(label);Idioma do código:  CSS  ( css )
+ document.querySelector("#root").appendChild(label);
 ```
 
 O seguinte exemplo tamén xera caixas de verificación dinámicamente como o exemplo anterior:
@@ -905,20 +901,20 @@ O seguinte exemplo tamén xera caixas de verificación dinámicamente como o exe
 
 Neste exemplo:
 
-- En primeiro lugar, xera unha etiqueta e un elemento de caixa de verificación utilizando o `map()`método Array e [os literales de modelo](https://www.javascripttutorial.net/es6/javascript-template-literals/) .
-- En segundo lugar, une as cadeas HTML nun único HTML usando o `join()`método String.
-- En terceiro lugar, engade o HTML ao `#root`elemento.
+- En primeiro lugar, xera unha etiqueta e un elemento de caixa de verificación utilizando o método `map()` Array e [os literais de modelo](https://www.javascripttutorial.net/es6/javascript-template-literals/) .
+- En segundo lugar, une as cadeas HTML nun único HTML usando o método `join()` String.
+- En terceiro lugar, engade o HTML ao elemento `#root`.
 
 ## Resumo
 
-- Use o `<input>`elemento co tipo `checkbox`para crear un elemento de caixa de verificación.
+- Use o elemento `<input>` co tipo `checkbox` para crear un elemento de caixa de verificación.
 - Coloque unha caixa de verificación dentro dun elemento de etiqueta para mellorar a usabilidade e a accesibilidade.
-- Use `checkbox.checked`a propiedade ou `:check`o selector para probar se unha caixa de verificación está marcada.
-- Obter o `value`atributo para obter o valor dunha caixa de verificación.
+- Use a propiedade `checkbox.checked` ou o selector `:check` para probar se unha caixa de verificación está marcada.
+- Obter o atributo `value` para obter o valor dunha caixa de verificación.
 
 # Botón de radio JavaScript
 
-**Resumo** : neste tutorial aprenderás a usar JavaScript para comprobar que botón de radio dun grupo de radio está marcado.
+**Resumo**: nesta sección aprenderás a usar JavaScript para comprobar que botón de radio dun grupo de radio está marcado.
 
 ## Introdución ao botón de radio JavaScript
 
@@ -1052,7 +1048,7 @@ En segundo lugar, rexistra un oínte de eventos de clic no elemento botón:
 
 ```
 btn.addEventListener('click', () => {
-});Idioma do código:  PHP  ( php )
+});
 ```
 
 En terceiro lugar, itera sobre os botóns de opción e obtén o valor do botón de opción seleccionado:
@@ -1219,13 +1215,13 @@ function showSelected(e) {
 
 # Elemento de selección de JavaScript
 
-**Resumo** : neste tutorial aprenderás a manexar o `<select>`elemento en JavaScript.
+**Resumo**: nesta sección aprenderás a manexar o elemento `<select>` en JavaScript.
 
 ## Introdución aos elementos de selección HTML
 
-Un `<select>`elemento ofrécelle unha lista de opcións. Un `<select>`elemento permítelle seleccionar unha ou varias opcións.
+Un elemento `<select>` ofrécelle unha lista de opcións. Un elemento `<select>` permítelle seleccionar unha ou varias opcións.
 
-Para crear un `<select>`elemento, usa os elementos `<select>`e `<option>`. Por exemplo:
+Para crear un elemento `<select>`, usa os elementos `<select>`e `<option>`. Por exemplo:
 
 ```
 <select id="framework">
@@ -1238,9 +1234,9 @@ Para crear un `<select>`elemento, usa os elementos `<select>`e `<option>`. Por e
 
 AngularReaccionarVue.jsEmber.js
 
-O `<select>`elemento anterior permítelle seleccionar unha única opción á vez.
+O elemento `<select>` anterior permítelle seleccionar unha única opción á vez.
 
-Para activar varias seleccións, engade un `multiple`atributo ao `<select>`elemento do seguinte xeito:
+Para activar varias seleccións, engade un `multiple`atributo ao elemento `<select>` do seguinte xeito:
 
 ```
 <select id="framework" multiple>
@@ -1255,17 +1251,17 @@ AngularReaccionarVue.jsEmber.js
 
 ## O `HTMLSelectElement`tipo
 
-Para interactuar co `<select>`elemento en JavaScript, usa o `HTMLSelectElement`tipo.
+Para interactuar co elemento `<select>` en JavaScript, usa o `HTMLSelectElement`tipo.
 
 O `HTMLSelectElement`tipo ten as seguintes propiedades útiles:
 
-- `selectedIndex`– devolve o índice baseado en cero da opción seleccionada. O `selectedIndex`é `-1`se non se selecciona ningunha opción. Se o `<select>`elemento permite varias seleccións, `selectedIndex`devolve a `value`primeira opción.
-- `value`– devolve a `value`propiedade do primeiro elemento de opción seleccionado se o hai. En caso contrario, devolve unha cadea baleira.
-- `multiple`– devolve `true`se o `<select>`elemento permite varias seleccións. É equivalente ao `multiple`atributo.
+- `selectedIndex`– devolve o índice baseado en cero da opción seleccionada. O `selectedIndex` é `-1` se non se selecciona ningunha opción. Se o elemento `<select>` permite varias seleccións, `selectedIndex`devolve a `value`primeira opción.
+- `value`– devolve a propiedade `value` do primeiro elemento de opción seleccionado se o hai. En caso contrario, devolve unha cadea baleira.
+- `multiple`– devolve `true`se o elemento `<select>` permite varias seleccións. É equivalente ao atributo `multiple`.
 
 ### A `selectedIndex`propiedade
 
-Para seleccionar un `<select>`elemento, usa a API DOM como `getElementById()`ou `querySelector()`.
+Para seleccionar un elemento `<select>`, usa a API DOM como `getElementById()`ou `querySelector()`.
 
 O seguinte exemplo ilustra como obter o índice da opción seleccionada:
 
@@ -1304,19 +1300,19 @@ O seguinte exemplo ilustra como obter o índice da opción seleccionada:
 
 Cómo funciona:
 
-- En primeiro lugar, seleccione os elementos `<button>`e `<select>`utilizando o `querySelector()`método.
-- A continuación, anexa un detector de eventos de clic ao botón e amose o índice seleccionado mediante o `alert()`método cando se preme no botón.
+- En primeiro lugar, seleccione os elementos `<button>` e `<select>` utilizando o método `querySelector()`.
+- A continuación, anexa un detector de eventos de clic ao botón e amose o índice seleccionado mediante o método `alert()` cando se preme no botón.
 
-### A `value`propiedade
+### A propiedade `value`
 
-A `value`propiedade do `<select>`elemento depende do `<option>`elemento e do seu `multiple`atributo HTML:
+A propiedade `value` do elemento `<select>` depende do elemento `<option>` e do seu atributo HTML `multiple`:
 
-- Se non se selecciona ningunha opción, a `value`propiedade da caixa de selección é unha cadea baleira.
-- Se se selecciona unha opción e ten un `value`atributo, a `value`propiedade da caixa de selección é o valor da opción seleccionada.
-- Se se selecciona unha opción e non ten ningún `value`atributo, a `value`propiedade da caixa de selección é o texto da opción seleccionada.
-- Se se seleccionan varias opcións, a `value`propiedade da caixa de selección derívase da primeira opción seleccionada en función das dúas regras anteriores.
+- Se non se selecciona ningunha opción, a propiedade `value` da caixa de selección é unha cadea baleira.
+- Se se selecciona unha opción e ten un `value`atributo, a propiedade `value` da caixa de selección é o valor da opción seleccionada.
+- Se se selecciona unha opción e non ten ningún `value`atributo, a propiedade `value` da caixa de selección é o texto da opción seleccionada.
+- Se se seleccionan varias opcións, a propiedade `value` da caixa de selección derívase da primeira opción seleccionada en función das dúas regras anteriores.
 
-Vexa o seguinte exemplo:
+Mira o seguinte exemplo:
 
 ```
 <!DOCTYPE html>
@@ -1354,8 +1350,8 @@ Vexa o seguinte exemplo:
 
 Neste exemplo:
 
-- Se selecciona a primeira opción, a `value`propiedade do `<select>`está baleira.
-- Se selecciona a última opción, a `value`propiedade da caixa de selección é `Ember.js`porque a opción seleccionada non ten ningún `value`atributo.
+- Se selecciona a primeira opción, a propiedade `value` do `<select>`está baleira.
+- Se selecciona a última opción, a propiedade `value` da caixa de selección é `Ember.js`porque a opción seleccionada non ten ningún `value`atributo.
 - Se selecciona a segunda ou terceira opción, a propiedade value será `"1"`ou `"2"`.
 
 ## O `HTMLOptionElement`tipo
@@ -1369,10 +1365,10 @@ O `HTMLOptionElement`tipo ten as seguintes propiedades útiles:
 - `text`– devolve o texto da opción.
 - `value`– devolve o atributo de valor HTML.
 
-O `<select>`elemento ten a `options`propiedade que che permite acceder ás opcións de recollida:
+O elemento `<select>` ten a `options`propiedade que che permite acceder ás opcións de recollida:
 
 ```
-selectBox.optionsIdioma do código:  CSS  ( css )
+selectBox.options
 ```
 
 Por exemplo, para acceder á `text`e `value`da segunda opción, utiliza o seguinte:
@@ -1382,20 +1378,20 @@ const text = selectBox.options[1].text;
 const value = selectBox.options[1].value;
 ```
 
-Para obter a opción seleccionada dun `<select>`elemento cunha única selección, utiliza o seguinte código:
+Para obter a opción seleccionada dun elemento `<select>` cunha única selección, utiliza o seguinte código:
 
 ```
 let selectedOption = selectBox.options[selectBox.selectedIndex];
 ```
 
-A continuación, pode acceder á `text`e `value`da opción seleccionada a través de `text`e `value`propiedades:
+A continuación, pode acceder á `text`e `value`da opción seleccionada a través de `text`e propiedade `value`s:
 
 ```
 const selectedText = selectedOption.text;
 const selectedValue = selectedOption.value;
 ```
 
-Cando un `<select>`elemento permite seleccións múltiples, pode usar a `selected`propiedade para determinar cales son as opcións seleccionadas:
+Cando un elemento `<select>` permite seleccións múltiples, pode usar a `selected`propiedade para determinar cales son as opcións seleccionadas:
 
 ```
 <!DOCTYPE html>
@@ -1437,13 +1433,13 @@ Cando un `<select>`elemento permite seleccións múltiples, pode usar a `selecte
 
 Neste exemplo, `sb.options`é un obxecto similar a unha matriz, polo que non ten os [`filter()`](https://www.javascripttutorial.net/javascript-array-filter/)métodos como un `Array`obxecto.
 
-Para tomar prestados estes métodos do `Array`obxecto, usa o `call()`método. Por exemplo, o seguinte devolve unha matriz de opcións seleccionadas:
+Para tomar prestados estes métodos do `Array`obxecto, usa o método `call()`. Por exemplo, o seguinte devolve unha matriz de opcións seleccionadas:
 
 ```
-[].filter.call(sb.options, option => option.selected)Idioma do código:  PHP  ( php )
+[].filter.call(sb.options, option => option.selected)
 ```
 
-E para obter a `text`propiedade das opcións, encadea o resultado do `filter()`método co `map()`método, así:
+E para obter a propiedade `text` das opcións, encadea o resultado do método `filter()` co método `map()`, así:
 
 ```
 .map(option => option.text);
@@ -1451,52 +1447,52 @@ E para obter a `text`propiedade das opcións, encadea o resultado do `filter()`m
 
 ## Resumo
 
-- O `<select>`elemento permítelle seleccionar unha ou varias opcións. Engade o `multiple`atributo ao `<select>`elemento para activar varias seleccións.
-- O `HTMLSelectElement`representa o `<select>`elemento. Use `selectedIndex`e `value`para obter o índice e o valor da opción seleccionada.
-- O `HTMLOptionElement`representa o `<option>`elemento. Se se selecciona a opción, a `selected`propiedade é verdadeira. As propiedades `selectedText`e `selectedValue`devolven o `text`e `value`da opción seleccionada.
+- O elemento `<select>` permítelle seleccionar unha ou varias opcións. Engade o `multiple`atributo ao elemento `<select>` para activar varias seleccións.
+- `HTMLSelectElement` representa o elemento `<select>`. Use `selectedIndex` e `value` para obter o índice e o valor da opción seleccionada.
+- `HTMLOptionElement` representa o `<option>`elemento. Se se selecciona a opción, a propiedade `selected` é verdadeira. As propiedades `selectedText` e `selectedValue` devolven o `text` e `value` da opción seleccionada.
 
 # JavaScript: opcións de engadir e eliminar dinámicamente
 
-**Resumo** : neste tutorial, aprenderás a engadir e eliminar opcións de forma dinámica a un [elemento seleccionado](https://www.javascripttutorial.net/javascript-dom/javascript-select-box/) en JavaScript.
+**Resumo**: nesta sección, aprenderás a engadir e eliminar opcións de forma dinámica a un [elemento seleccionado](https://www.javascripttutorial.net/javascript-dom/javascript-select-box/) en JavaScript.
 
-O `HTMLSelectElement`tipo representa o `<select>`elemento. Ten o `add()`método que engade dinámicamente unha opción ao `<select>`elemento e o `remove()`método que elimina unha opción do `<select>`elemento:
+O `HTMLSelectElement`tipo representa o elemento `<select>`. Ten o método `add()` que engade dinámicamente unha opción ao elemento `<select>` e o método `remove()` que elimina unha opción do elemento `<select>`:
 
-- `add(option,existingOption)`– engade un novo `<option>`elemento á `<select>`opción anterior a unha existente.
+- `add(option,existingOption)`– engade un novo elemento `<option>` á opción `<select>` anterior a unha existente.
 - `remove(index)`– elimina unha opción especificada polo índice dun `<select>`.
 
 ## Engadindo opcións
 
-Para engadir unha opción dinámicamente a un `<select>`elemento, debes seguir estes pasos:
+Para engadir unha opción dinámicamente a un elemento `<select>`, debes seguir estes pasos:
 
 - En primeiro lugar, crea unha nova opción.
 - En segundo lugar, engade a opción ao elemento de selección.
 
 Hai varias formas de crear unha opción de forma dinámica e engadila a unha `<select>`en JavaScript.
 
-### 1) Usando o `Option`construtor e `add()`o método
+### 1) Usando o construtor `Option` e o método `add()`
 
-Primeiro, use o `Option`construtor para crear unha nova opción co texto e o valor da opción especificado:
+Primeiro, use o construtor `Option` para crear unha nova opción co texto e o valor da opción especificado:
 
 ```
 let newOption = new Option('Option Text','Option Value');
 ```
 
-A continuación, chame ao `add()`método do `HTMLSelectElement`elemento:
+A continuación, chame ao método `add()` do elemento `HTMLSelectElement`:
 
 ```
 const select = document.querySelector('select');
 select.add(newOption,undefined);
 ```
 
-O `add()`método acepta dous argumentos. O primeiro argumento é a nova opción e o segundo é unha opción existente.
+O método `add()` acepta dous argumentos. O primeiro argumento é a nova opción e o segundo é unha opción existente.
 
-Neste exemplo, pasamos `undefined`no segundo argumento, o `add()`método do método engadirá a nova opción ao final da lista de opcións.
+Neste exemplo, pasamos `undefined` no segundo argumento, o método `add()` do método engadirá a nova opción ao final da lista de opcións.
 
 ### 2) Usando os métodos DOM
 
 Primeiro, constrúe unha nova opción usando métodos DOM:
 
-```
+```js
 // create option using DOM
 const newOption = document.createElement('option');
 const optionText = document.createTextNode('Option Text');
@@ -1506,9 +1502,9 @@ newOption.appendChild(optionText);
 newOption.setAttribute('value','Option Value');
 ```
 
-En segundo lugar, engade a nova opción ao elemento select usando o `appendChild()`método:
+En segundo lugar, engade a nova opción ao elemento select usando o método `appendChild()`:
 
-```
+```js
 const select = document.querySelector('select');
 select.appendChild(newOption);
 ```
@@ -1517,28 +1513,28 @@ select.appendChild(newOption);
 
 Tamén hai varias formas de eliminar de forma dinámica as opcións dun elemento seleccionado.
 
-A primeira forma é usar o `remove()`método do `HTMLSelectElement`tipo. O seguinte ilustra como eliminar a primeira opción:
+A primeira forma é usar o método `remove()` do tipo `HTMLSelectElement`. O seguinte ilustra como eliminar a primeira opción:
 
-```
-select.remove(0); Idioma do código:  CSS  ( css )
+```js
+select.remove(0); 
 ```
 
-A segunda forma de eliminar unha opción é facer referencia á opción polo seu índice usando a `options`colección e establecer o seu valor en `null`:
+A segunda forma de eliminar unha opción é facer referencia á opción polo seu índice usando a colección `options` e establecer o seu valor en `null`:
 
-```
+```js
 select.options[0] = null;
 ```
 
-A terceira forma é usar o `removeChild()`método e eliminar unha opción especificada. O seguinte código elimina o primeiro elemento dun `selectBox`:
+A terceira forma é usar o método `removeChild()` e eliminar unha opción especificada. O seguinte código elimina o primeiro elemento dun `selectBox`:
 
-```
+```js
 // remove the first element:
 select.removeChild(selectBox.options[0]);
 ```
 
 Para eliminar todas as opcións dun elemento seleccionado, utiliza o seguinte código:
 
-```
+```js
 function removeAll(selectBox) {
     while (selectBox.options.length > 0) {
         select.remove(0);
@@ -1546,7 +1542,7 @@ function removeAll(selectBox) {
 }
 ```
 
-Cando elimina a primeira opción, o elemento de selección move outra opción como primeira opción. A `removeAll()`función elimina repetidamente a primeira opción no elemento de selección, polo tanto, elimina todas as opcións.
+Cando elimina a primeira opción, o elemento de selección move outra opción como primeira opción. A función `removeAll()` elimina repetidamente a primeira opción no elemento de selección, polo tanto, elimina todas as opcións.
 
 ## Poñelo todo xunto
 
@@ -1554,7 +1550,7 @@ Crearemos unha [aplicación](https://javascripttutorial.net//sample/dom/select-o
 
 Velaquí a estrutura do proxecto:
 
-```
+```bash
 ├── css
 |  └── style.css
 ├── js
@@ -1564,7 +1560,7 @@ Velaquí a estrutura do proxecto:
 
 O índice.html:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -1595,9 +1591,9 @@ O índice.html:
 </html>
 ```
 
-js/app.js
+``js/app.js``
 
-```
+```js
 const btnAdd = document.querySelector('#btnAdd');
 const btnRemove = document.querySelector('#btnRemove');
 const listbox = document.querySelector('#list');
@@ -1640,7 +1636,6 @@ btnRemove.onclick = (e) => {
     }
   }
 };
-
 ```
 
 O estilo pódese [atopar aquí](https://javascripttutorial.net/sample/dom/select-options/css/style.css) .
@@ -1649,7 +1644,7 @@ O estilo pódese [atopar aquí](https://javascripttutorial.net/sample/dom/select
 
 Cómo funciona:
 
-En primeiro lugar, use o `querySelector()`método para seleccionar elementos, incluíndo o texto de entrada, o botón e a caixa de selección:
+En primeiro lugar, use o método `querySelector()` para seleccionar elementos, incluíndo o texto de entrada, o botón e a caixa de selección:
 
 ```js
 const btnAdd = document.querySelector("#btnAdd");
@@ -1658,11 +1653,11 @@ const listbox = document.querySelector("#list");
 const framework = document.querySelector("#framework");
 ```
 
-En segundo lugar, anexa o escoitador de eventos de clic ao `btnAdd`botón.
+En segundo lugar, anexa o escoitador de eventos de clic ao botón `btnAdd`.
 
 Se o valor do texto de entrada está en branco, mostramos unha [alerta](https://www.javascripttutorial.net/javascript-bom/javascript-alert/) para informar aos usuarios de que se require o nome. En caso contrario, creamos unha nova opción e engadímola á caixa de selección. Despois de engadir a opción, restablecemos o texto introducido do texto introducido e fixamos o foco nel.
 
-```
+```js
 btnAdd.addEventListener('click', (e) => {
   e.preventDefault();
 
@@ -1683,7 +1678,7 @@ btnAdd.addEventListener('click', (e) => {
 });
 ```
 
-En terceiro lugar, rexistra un oínte de eventos de clic no `btnRemove`botón. No oínte de eventos, gardamos as opcións seleccionadas nunha matriz e eliminamos cada unha delas.
+En terceiro lugar, rexistra un oínte de eventos de clic no botón `btnRemove`. No oínte de eventos, gardamos as opcións seleccionadas nunha matriz e eliminamos cada unha delas.
 
 ```js
 btnRemove.addEventListener("click", (e) => {
@@ -1708,17 +1703,17 @@ btnRemove.addEventListener("click", (e) => {
 
 ## Resumo
 
-- JavaScript usa o `HTMLSelectElement`tipo para representar o `<select>`elemento.
-- Use o `add()`método do `HTMLSelectElement`para engadir unha opción ao `<select>`elemento.
-- Use o `remove()`método do `HTMLSelectElement`para eliminar unha opción do `<select>`elemento.
+- JavaScript usa o tipo `HTMLSelectElement` para representar o elemento `<select>`.
+- Use o método `add()` do `HTMLSelectElement` para engadir unha opción ao elemento `<select>`.
+- Use o método `remove()` do `HTMLSelectElement` para eliminar unha opción do elemento `<select>`.
 
 # Eliminar elementos dun elemento seleccionado de forma condicional
 
-**Resumo** : neste tutorial, aprenderás a usar JavaScript para eliminar elementos dun elemento seleccionado en función dunha condición.
+**Resumo**: nesta sección, aprenderás a usar JavaScript para eliminar elementos dun elemento seleccionado en función dunha condición.
 
-JavaScript usa a `HTMLSelectElement` clase para representar o `<select>`elemento. Para eliminar unha opción dun elemento seleccionado, usa o `remove()`método do `HTMLSelectElement` obxecto.
+JavaScript usa a `HTMLSelectElement` clase para representar o elemento `<select>`. Para eliminar unha opción dun elemento seleccionado, usa o método `remove()` do obxecto `HTMLSelectElement`.
 
-Supoñamos que o `<select>`elemento ten tres `<option>`elementos co índice correspondente 0, 1 e 2:
+Supoñamos que o elemento `<select>` ten tres elementos `<option>` co índice correspondente 0, 1 e 2:
 
 Por exemplo:
 
@@ -1728,7 +1723,7 @@ Por exemplo:
 | B     | Elemento B | 1      |
 | C     | Elemento C | 2      |
 
-Cando chame ao `remove()`método para eliminar un elemento, o índice cambiará inmediatamente.
+Cando chame ao método `remove()` para eliminar un elemento, o índice cambiará inmediatamente.
 
 Por exemplo, se elimina o segundo elemento ( `B`) co índice 1, o índice do terceiro elemento ( `C`) pasará a ser 1:
 
@@ -1737,9 +1732,9 @@ Por exemplo, se elimina o segundo elemento ( `B`) co índice 1, o índice do ter
 | A     | Elemento A | 0      |
 | C     | Elemento C | 1      |
 
-Un erro común é iterar sobre as opcións dun `<select>`elemento e eliminar o elemento dentro do bucle sen ser consciente de que os índices foron axustados.
+Un erro común é iterar sobre as opcións dun elemento `<select>` e eliminar o elemento dentro do bucle sen ser consciente de que os índices foron axustados.
 
-Por exemplo, os seguintes intentos de eliminar elementos cos valores `B`e `C`. Non obstante, só elimina o elemento `B`pero non `C`.
+Por exemplo, os seguintes intentos de eliminar elementos cos valores `B` e `C`. Non obstante, só elimina o elemento `B` pero non `C`.
 
 ```html
 <!DOCTYPE html>

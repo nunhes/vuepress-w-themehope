@@ -3,7 +3,9 @@
       "editor.formatOnSave": true,
       "editor.wordWrap": "on",
       "editor.renderWhitespace": "all",
-      "editor.acceptSuggestionOnEnter": "off"
+      "editor.acceptSuggestionOnEnter": "off",
+      "files.encoding": "utf8",
     },
-    "cSpell.enabled": false
+    "cSpell.enabled": false,
+    "files.encoding": "utf8",
   }

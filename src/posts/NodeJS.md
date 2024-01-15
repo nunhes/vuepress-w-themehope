@@ -60,7 +60,7 @@ Este código inclúe primeiro o [módulo `http`](https://nodejs.org/api/http.htm
 
 Node.js ten unha [biblioteca estándar](https://nodejs.org/api/) incrible , incluíndo un soporte de primeira clase para redes.
 
-O `createServer()`método de `http`crea un novo servidor HTTP e devólvoo.
+O método `createServer()` de `http` crea un novo servidor HTTP e devólvoo.
 
 O servidor está configurado para escoitar no porto e nome de host especificados. Cando o servidor está listo, chámase a función de devolución de chamada,  neste caso informándonos de que o servidor está en execución.
 
@@ -658,7 +658,7 @@ false
 >
 ```
 
-Teña en conta a diferenza nas saídas das dúas liñas anteriores. O Node REPL imprimiu `undefined`despois de executado `console.log()`, mentres que, por outra banda, só imprimiu o resultado de `5 === '5'`. Debes ter en conta que o primeiro é só unha declaración en JavaScript e o segundo é unha expresión.
+Ter en conta a diferenza nas saídas das dúas liñas anteriores. O Node REPL imprimiu `undefined`despois de executado `console.log()`, mentres que, por outra banda, só imprimiu o resultado de `5 === '5'`. Debes ter en conta que o primeiro é só unha declaración en JavaScript e o segundo é unha expresión.
 
 Nalgúns casos, o código que quere probar pode necesitar varias liñas. Por exemplo, digamos que quere definir unha función que xere un número  aleatorio, na sesión REPL escriba na seguinte liña e prema Intro:
 
@@ -2800,7 +2800,7 @@ Podes ler todos os seus detalles na páxina do módulo de eventos en [https://no
 
 Antes de poder interactuar cun arquivo que se atopa no teu sistema de arquivos, debes obter un descritor de arquivos.
 
-Un descritor de arquivo é unha referencia a un arquivo aberto, un número (fd) que se devolve ao abrir o arquivo mediante o `open()`método que ofrece o `fs`módulo. Este número ( `fd`) identifica de forma única un arquivo aberto no sistema operativo:
+Un descritor de arquivo é unha referencia a un arquivo aberto, un número (fd) que se devolve ao abrir o arquivo mediante o método `open()` que ofrece o `fs`módulo. Este número ( `fd`) identifica de forma única un arquivo aberto no sistema operativo:
 
 ```js
 const fs = require('fs')
@@ -2821,7 +2821,7 @@ Outras bandeiras que usarás habitualmente son:
 - `a`abra o arquivo para escribir, situando o fluxo ao final do arquivo. O arquivo créase se non existe.
 - `a+`abra o arquivo para ler e escribir, situando o fluxo ao final do arquivo. O arquivo créase se non existe.
 
-Tamén podes abrir o arquivo usando o `fs.openSync`método, que devolve o descritor do arquivo, en lugar de fornecelo nunha devolución de chamada:
+Tamén podes abrir o arquivo usando o método `fs.openSync`, que devolve o descritor do arquivo, en lugar de fornecelo nunha devolución de chamada:
 
 ```js
 const fs = require('fs')
@@ -2833,11 +2833,11 @@ try {
 }
 ```
 
-Unha vez que obteñas o descritor do arquivo, do xeito que elixas, podes  realizar todas as operacións que o requiran, como chamar `fs.close()`e moitas outras operacións que interactúan co sistema de arquivos.
+Unha vez que obteñas o descritor do arquivo, do xeito que elixas, podes  realizar todas as operacións que o requiran, como chamar `fs.close()` e moitas outras operacións que interactúan co sistema de arquivos.
 
-Tamén podes abrir o arquivo usando o `fsPromises.open`método baseado en promesas que ofrece o `fs/promises`módulo.
+Tamén podes abrir o arquivo usando o método `fsPromises.open` baseado en promesas que ofrece o módulo `fs/promises`.
 
-O `fs/promises`módulo está dispoñible só a partir de Node.js v14. Antes da versión 14, despois da versión 10, podes usar `require('fs').promises`no seu lugar. Antes da v10, despois da v8, podes usar `util.promisify`para converter `fs`métodos en métodos baseados en promesas.
+O módulo `fs/promises` está dispoñible só a partir de Node.js v14. Antes da versión 14, despois da versión 10, podes usar `require('fs').promises` no seu lugar. Antes da v10, despois da v8, podes usar `util.promisify`para converter métodos `fs` en métodos baseados en promesas.
 
 ```js
 const fs = require('fs/promises')
@@ -2868,15 +2868,15 @@ async function example() {
 example()
 ```
 
-Para ver máis detalles sobre o `fs/promises`módulo, consulta [a API de fs/promises](https://nodejs.org/docs/latest-v17.x/api/fs.html%23promises-api) .
+Para ver máis detalles sobre o módulo `fs/promises`, consulta [a API de fs/promises](https://nodejs.org/docs/latest-v17.x/api/fs.html%23promises-api) .
 
 ## 34. Estatísticas do arquivo de nodos
 
 Cada arquivo inclúe un conxunto de detalles que podemos inspeccionar mediante Node.js.
 
-En particular, utilizando o `stat()`método proporcionado polo `fs`módulo.
+En particular, utilizando o método `stat()` proporcionado polo módulo `fs` .
 
-Chámao pasando unha ruta do arquivo e, unha vez que Node.js obteña os  detalles do arquivo, chamará á función de devolución de chamada que  pasas, con 2 parámetros: unha mensaxe de erro e as estatísticas do  arquivo:
+Chámao pasando unha ruta do arquivo e, unha vez que Node.js obteña os detalles do arquivo, chamará á función de devolución de chamada que pasas, con 2 parámetros: unha mensaxe de erro e as estatísticas do arquivo:
 
 ```js
 const fs = require('fs')
@@ -2906,7 +2906,7 @@ A información do arquivo inclúese na variable stats. Que tipo de información 
 Moito, incluíndo:
 
 - se o arquivo é un directorio ou un arquivo, usando `stats.isFile()`e`stats.isDirectory()`
-- se o arquivo é unha ligazón simbólica usando`stats.isSymbolicLink()`
+- se o arquivo é unha ligazón simbólica usando `stats.isSymbolicLink()`
 - o tamaño do arquivo en bytes usando `stats.size`.
 
 Hai outros métodos avanzados, pero a maior parte do que usarás na túa programación diaria é esta.
@@ -2927,7 +2927,7 @@ fs.stat('/Users/joe/test.txt', (err, stats) => {
 })
 ```
 
-Tamén podes usar `fsPromises.stat()`o método baseado en promesas que ofrece o `fs/promises`módulo se queres:
+Tamén podes usar o método `fsPromises.stat()` baseado en promesas que ofrece o módulo `fs/promises` se queres:
 
 ```js
 const fs = require('fs/promises')
@@ -3033,7 +3033,7 @@ path.normalize('/users/joe/..//test.txt') // '/users/test.txt'
 
 ## 36. Lectura de arquivos con Node
 
-A forma máis sinxela de ler un arquivo en Node.js é usar o `fs.readFile()`método, pasándolle a ruta do arquivo, a codificación e unha función de  devolución de chamada que se chamará cos datos do arquivo (e co erro):
+A forma máis sinxela de ler un arquivo en Node.js é usar o método `fs.readFile()`, pasándolle a ruta do arquivo, a codificación e unha función de  devolución de chamada que se chamará cos datos do arquivo (e co erro):
 
 ```js
 const fs = require('fs')
@@ -3060,7 +3060,7 @@ try {
 }
 ```
 
-Tamén podes usar o `fsPromises.readFile()`método baseado en promesas que ofrece o `fs/promises`módulo:
+Tamén podes usar o método `fsPromises.readFile()` baseado en promesas que ofrece o módulo `fs/promises`:
 
 ```js
 const fs = require('fs/promises')
@@ -3076,7 +3076,7 @@ async function example() {
 example()
 ```
 
-Os tres `fs.readFile()`, `fs.readFileSync()`e `fsPromises.readFile()`le o contido completo do arquivo na memoria antes de devolver os datos.
+Os tres `fs.readFile()`, `fs.readFileSync()` e `fsPromises.readFile()` len o contido completo do arquivo na memoria antes de devolver os datos.
 
 Isto significa que os arquivos grandes van ter un gran impacto no consumo de memoria e na velocidade de execución do programa.
 
@@ -3084,7 +3084,7 @@ Neste caso, unha mellor opción é ler o contido do arquivo mediante fluxos.
 
 ## 37. Escribir arquivos con Node
 
-O xeito máis sinxelo de escribir en arquivos en Node.js é usar a `fs.writeFile()`API.
+O xeito máis sinxelo de escribir en arquivos en Node.js é usar a API `fs.writeFile()`.
 
 Exemplo:
 
@@ -3116,7 +3116,7 @@ try {
 }
 ```
 
-Tamén podes usar o `fsPromises.writeFile()`método baseado en promesas que ofrece o `fs/promises`módulo:
+Tamén podes usar o método `fsPromises.writeFile()` baseado en promesas que ofrece o módulo `fs/promises`:
 
 ```js
 const fs = require('fs/promises')
@@ -3142,16 +3142,16 @@ fs.writeFile('/Users/joe/test.txt', content, { flag: 'a+' }, (err) => {})
 
 As bandeiras que probablemente usarás son
 
-- `r+`abra o arquivo para ler e escribir
-- `w+`abra o arquivo para ler e escribir, situando o fluxo ao comezo do arquivo. O arquivo créase se non existe
-- `a`abra o arquivo para escribir, situando o fluxo ao final do arquivo. O arquivo créase se non existe
-- `a+`abra o arquivo para ler e escribir, situando o fluxo ao final do arquivo. O arquivo créase se non existe
+- `r+` abre o arquivo para ler e escribir
+- `w+` abre o arquivo para ler e escribir, situando o fluxo ao comezo do arquivo. O arquivo créase se non existe
+- `a` abre o arquivo para escribir, situando o fluxo ao final do arquivo. O arquivo créase se non existe
+- `a+` abre o arquivo para ler e escribir, situando o fluxo ao final do arquivo. O arquivo créase se non existe
 
 (podes atopar máis bandeiras en [https://nodejs.org/api/fs.html#fs_file_system_flags](https://nodejs.org/api/fs.html%23fs_file_system_flags) )
 
 ### 37.1. Engadir a un arquivo
 
-Un método útil para engadir contido ao final dun arquivo é `fs.appendFile()`(e a súa `fs.appendFileSync()`contraparte):
+Un método útil para engadir contido ao final dun arquivo é `fs.appendFile()`(e a súa contraparte `fs.appendFileSync()`):
 
 ```js
 const content = 'Some content!'
@@ -3164,7 +3164,7 @@ fs.appendFile('file.log', content, (err) => {
 })
 ```
 
-Aquí tes un `fsPromises.appendFile()`exemplo:
+Aquí tes un exemplo `fsPromises.appendFile()`:
 
 ```js
 const fs = require('fs/promises')

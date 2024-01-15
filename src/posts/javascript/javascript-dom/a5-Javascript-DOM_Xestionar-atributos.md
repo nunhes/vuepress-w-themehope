@@ -63,7 +63,7 @@ let input = document.querySelector('#username');
 
 for(let attr of input.attributes) {
     console.log(`${attr.name} = ${attr.value}` )
-}Idioma do código:  JavaScript  ( javascript )
+}
 ```
 
 **Saída:**

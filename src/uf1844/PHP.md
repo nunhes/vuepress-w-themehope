@@ -138,7 +138,7 @@ Mentres que a **clase** representa o concepto xenérico, un **obxecto** é a rep
 $john = new Person("John", "Doe", "1980-12-01");
 ```
 
-Teña en conta que neste caso usamos o operador "new", seguido do nome da clase e despois os argumentos que acepta o **construtor da clase** .
+Ter en conta que neste caso usamos o operador "new", seguido do nome da clase e despois os argumentos que acepta o **construtor da clase** .
 
 ### Definición do construtor dunha clase
 
@@ -179,7 +179,7 @@ Os construtores de todas as clases de PHP están definidos co mesmo nome `__cons
 $john = new Person("John", "Doe", "1980-12-01");
 ```
 
-Teña en conta que o construtor é o único método do noso exemplo que está a recibir argumentos, unha vez que asignamos eses argumentos ás propiedades da nosa clase (unha por unha), podemos usar esas propiedades no resto dos métodos:
+Ter en conta que o construtor é o único método do noso exemplo que está a recibir argumentos, unha vez que asignamos eses argumentos ás propiedades da nosa clase (unha por unha), podemos usar esas propiedades no resto dos métodos:
 
 ```php
 <?php

@@ -55,7 +55,7 @@ Organizar coidadosamente as propiedades, asociándoas valores e anexalas a eleme
 
 **Un conxunto de regras** CSS ten unha parte chamada **selector**, e a outra parte chamada **declaración** . A declaración contén varias **regras**, cada unha composta por unha **propiedade** e un **valor** .
 
-Neste exemplo, `p`é o selector e aplica unha regra que establece o valor `20px`da `font-size`propiedade:
+Neste exemplo, `p` é o selector e aplica unha regra que establece o valor `20px` da propiedade `font-size`:
 
 ```css
 p {
@@ -2959,7 +2959,7 @@ img {
 
 Un elemento flotante elimínase do fluxo normal da páxina e o outro contido flúe ao seu redor.
 
-[Vexa o exemplo en Codepen](https://codepen.io/flaviocopes/pen/WWGqPr?editors%3D1100)
+[Mira o exemplo en Codepen](https://codepen.io/flaviocopes/pen/WWGqPr?editors%3D1100)
 
 Non está limitado a imaxes flotantes, tamén. Aquí cambiamos a imaxe cun `span`elemento:
 
@@ -3972,7 +3972,7 @@ Por exemplo:
 @import url(myfile.css) screen and (max-width: 800px);
 ```
 
-Teña en conta que envolvemos cada bloque usando descritores de funcións multimedia entre parénteses.
+Ter en conta que envolvemos cada bloque usando descritores de funcións multimedia entre parénteses.
 
 Algúns aceptan un valor fixo. `orientation`, usado para detectar a orientación do dispositivo, acepta `portrait`ou `landscape`.
 
@@ -4415,7 +4415,7 @@ Este código implementa unha transición CSS:
 }
 ```
 
-Vexa o exemplo en Glitch [https://flavio-css-transitions-example.glitch.me](https://flavio-css-transitions-example.glitch.me)
+Mira o exemplo en Glitch [https://flavio-css-transitions-example.glitch.me](https://flavio-css-transitions-example.glitch.me)
 
 Ao pasar os elementos `.one`e `.three`, os círculos roxos, hai unha animación de transición que facilita o cambio de fondo, mentres que os círculos amarelos non, porque non teñen a `transition`propiedade definida.
 
@@ -4589,13 +4589,13 @@ Debes **definir como funciona a túa animación** usando **fotogramas clave** . 
 }
 ```
 
-Dentro da `@keyframes`definición podes ter tantos waypoints intermedios como queiras.
+Dentro da definición `@keyframes` podes ter tantos *waypoints* intermedios como queiras.
 
-Neste caso, indicamos a CSS que faga que a propiedade de transformación xire o eixe Z de 0 a 360 graos, completando o ciclo completo.
+Neste caso, se lle indica a CSS que faga que a propiedade de transformación xire o eixe Z de 0 a 360 graos, completando o ciclo completo.
 
-Podes usar calquera transformación CSS aquí.
+Se pode usar calquera transformación CSS aquí.
 
-Observe como isto non dita nada sobre o intervalo temporal que debe tomar a animación. Isto defínese cando o usas mediante `animation`.
+Observar como isto non dita nada sobre o intervalo temporal que debe tomar a animación. Isto defínese cando o usas mediante `animation`.
 
 ### 41.1. Un exemplo de animacións CSS
 
@@ -4698,7 +4698,7 @@ Podes engadir máis fotogramas clave para ter animacións máis divertidas:
 }
 ```
 
-Vexa o exemplo en [https://flavio-css-animations-four-steps.glitch.me](https://flavio-css-animations-four-steps.glitch.me)
+Mira o exemplo en [https://flavio-css-animations-four-steps.glitch.me](https://flavio-css-animations-four-steps.glitch.me)
 
 ### 41.2. As propiedades de animación CSS
 
@@ -4740,9 +4740,9 @@ Usando JavaScript podes escoitar os seguintes eventos:
 - `animationend`
 - `animationiteration`
 
-Teña coidado con `animationstart`, porque se a animación comeza coa carga da páxina, o código JavaScript sempre se executa despois de procesar o CSS, polo que a animación xa está iniciada e non podes interceptar o evento.
+Ter coidado con `animationstart`, porque se a animación comeza coa carga da páxina, o código JavaScript sempre se executa despois de procesar o CSS, polo que a animación xa está iniciada e non podes interceptar o evento.
 
-```css
+```js
 const container = document.querySelector('.container')
 
 container.addEventListener(
@@ -5093,5 +5093,8 @@ Unha vez que se abra o panel, cambia a emulación de renderizado a `print`:
 
 \* *in progress*
 
+- [State of CSS](https://2023.stateofcss.com/gl-ES/)
+- [CSS: 2023](https://developer.chrome.com/blog/css-wrapped-2023?hl=es-419)
 - [Open-Source UI elements](https://uiverse.io/)
+
   

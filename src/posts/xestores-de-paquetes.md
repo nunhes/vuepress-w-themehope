@@ -187,5 +187,6 @@ PNPM é o xestor de paquetes máis rápido e eficiente no disco, pero pode ter p
 Escolla o xestor de paquetes que mellor se adapte ás necesidades do seu proxecto.
 
 ---
+ref.: [Rollup vs Webpack vs Parcel](https://kinsta.com/es/blog/rollup-vs-webpack-vs-parcel/)
 
 NOV 2023

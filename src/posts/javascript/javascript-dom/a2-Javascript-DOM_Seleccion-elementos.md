@@ -181,7 +181,7 @@ let elements = document.getElementsByTagName(tagName);
 
 A colección de retorno `getElementsByTagName()`está activa, o que significa que se actualiza automaticamente cando se engaden e/ou eliminan do documento elementos co nome de etiqueta correspondente.
 
-Teña en conta que `HTMLCollection` é un obxecto similar a unha matriz, como o obxecto `arguments` dunha función.
+Ter en conta que `HTMLCollection` é un obxecto similar a unha matriz, como o obxecto `arguments` dunha función.
 
 ## Exemplo de JavaScript `getElementsByTagName()`
 

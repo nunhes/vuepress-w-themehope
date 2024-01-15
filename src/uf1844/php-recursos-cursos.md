@@ -80,7 +80,7 @@ Temas clave:
 ## 5. [Killer PHP](https://www.killerphp.com/tutorials/object-oriented-php/)
 
 ![img](https://stackify.com/wp-content/uploads/2018/08/word-image-62.png)
-Killer PHP é un tutorial de PHP para deseñadores web. Teña en conta que a aprendizaxe de PHP dispón de dúas fases: programación procesual e orientada a obxectos (OOP). Como principiante, é xenial comezar co procedemento, xa que só implica guións. Unha vez que teñas o dominio da tecnoloxía, é hora de subir de nivel e aprender OOP PHP. Killer PHP está especializado en PHP OOP. Ten titoriais prácticos con vídeos complementarios. Só ten que aprender os conceptos básicos de OOP PHP, aprender habilidades utilizables de PHP e todo seguirá. Ademais destes titoriais, tamén hai centos de cuestionarios para validar o teu  nivel de habilidade e o que aprendeches ata agora.
+Killer PHP é un tutorial de PHP para deseñadores web. Ter en conta que a aprendizaxe de PHP dispón de dúas fases: programación procesual e orientada a obxectos (OOP). Como principiante, é xenial comezar co procedemento, xa que só implica guións. Unha vez que teñas o dominio da tecnoloxía, é hora de subir de nivel e aprender OOP PHP. Killer PHP está especializado en PHP OOP. Ten titoriais prácticos con vídeos complementarios. Só ten que aprender os conceptos básicos de OOP PHP, aprender habilidades utilizables de PHP e todo seguirá. Ademais destes titoriais, tamén hai centos de cuestionarios para validar o teu  nivel de habilidade e o que aprendeches ata agora.
 
 Tema clave:
 
@@ -345,7 +345,7 @@ Temas clave:
 
 ## Resumo
 
-Presentamos os mellores recursos do sitio web para aprender PHP en liña. Agardamos que poidas escoller un bo sitio da lista recomendada. Por favor, non te limites a só un. Unha combinación de recursos proporciona maiores resultados. Teña en conta que escoller o que se adapte ás súas preferencias para comezar coa programación PHP. Tamén pode ampliar a súa investigación e proceder a marcos.
+Presentamos os mellores recursos do sitio web para aprender PHP en liña. Agardamos que poidas escoller un bo sitio da lista recomendada. Por favor, non te limites a só un. Unha combinación de recursos proporciona maiores resultados. Ter en conta que escoller o que se adapte ás súas preferencias para comezar coa programación PHP. Tamén pode ampliar a súa investigación e proceder a marcos.
 
 Converterse nun profesional de PHP é unha viaxe; aprende os conceptos básicos e mantén un ollo atento ás tendencias de desenvolvemento de PHP actualizadas. Unha vez que teña adquirido coñecementos suficientes, comeza e crea o teu propio sitio web. Si, presentamos unha lista de sitios web, pero o mellor sitio para aprender PHP é o teu propio sitio web. Se pensas que perdemos algún outro gran recurso, fáganos saber nos comentarios.
 

@@ -38,7 +38,7 @@ btn.addEventListener('click',display);
 
 Cómo funciona.
 
-- En primeiro lugar, selecciona o botón co ID `btn`usando o `querySelector()`método.
+- En primeiro lugar, selecciona o botón co ID `btn`usando o método `querySelector()`.
 - A continuación, defina unha [función](https://www.javascripttutorial.net/javascript-function/) chamada `display()`como controlador de eventos.
 - Finalmente, rexistre un controlador de eventos usando o `addEventListener()`para que cando os usuarios preman no botón, a `display()`función se execute.
 
@@ -79,7 +79,7 @@ Existen dous modelos de eventos principais: a burbulla de eventos e a captura de
 
 No modelo de burbulla de eventos, un evento comeza no elemento máis específico e logo flúe cara arriba cara ao elemento menos específico (o `document`ou incluso `window`).
 
-Cando fai clic no botón, o `click`evento ocorre na seguinte orde:
+Cando fai clic no botón, o evento `click` ocorre na seguinte orde:
 
 1. botón
 2. div co contedor de id
@@ -87,19 +87,19 @@ Cando fai clic no botón, o `click`evento ocorre na seguinte orde:
 4. html
 5. documento
 
-O `click`evento ocorre primeiro no botón que é o elemento no que se fixo clic. A continuación, o `click`evento sube pola árbore DOM, disparando en cada nodo ao longo do seu camiño ata chegar ao `document`obxecto.
+O evento `click` ocorre primeiro no botón que é o elemento no que se fixo clic. A continuación, o evento `click` sube pola árbore DOM, disparando en cada nodo ao longo do seu camiño ata chegar ao `document`obxecto.
 
 A seguinte imaxe ilustra o efecto de burbulla do evento cando os usuarios fan clic no botón:
 
 [![Burbulla de eventos de JavaScript](./assets/JavaScript-event-bubbling.png)](https://www.javascripttutorial.net/wp-content/uploads/2020/02/JavaScript-event-bubbling.png)
 
-Teña en conta que os navegadores web modernos fan burbullar o evento ata o `window`obxecto.
+Ter en conta que os navegadores web modernos fan burbullar o evento ata o `window`obxecto.
 
 ### Captura de eventos
 
 No modelo de captura de eventos, un evento comeza no elemento menos específico e flúe cara abaixo cara ao elemento máis específico.
 
-Cando fai clic no botón, o `click`evento ocorre na seguinte orde:
+Cando fai clic no botón, o evento `click` ocorre na seguinte orde:
 
 1. documento
 2. html
@@ -151,26 +151,26 @@ A seguinte táboa mostra as propiedades e métodos máis utilizados do `event`ob
 | defaultPrevented    | devolve verdadeiro se se chamou a preventDefault().                                                                        |
 | detalle             | máis información sobre o evento                                                                                            |
 | EventFase           | 1 para a fase de captura, 2 para o obxectivo, 3 para o burbullo                                                            |
-| preventDefault()    | cancelar o comportamento predeterminado para o evento. Este método só é efectivo se a `cancelable`propiedade é verdadeira  |
-| stopPropagation ()  | cancelar calquera outra captura ou burbulla de eventos. Este método só se pode usar se a `bubbles`propiedade é verdadeira. |
+| preventDefault()    | cancelar o comportamento predeterminado para o evento. Este método só é efectivo se a propiedade `cancelable` é verdadeira  |
+| stopPropagation ()  | cancelar calquera outra captura ou burbulla de eventos. Este método só se pode usar se a propiedade `bubbles` é verdadeira. |
 | obxectivo           | o elemento obxectivo do evento                                                                                             |
 | tipo                | o tipo de evento que se desencadeou                                                                                        |
 
-Teña en conta que o `event`obxecto só é accesible dentro do controlador de eventos. Unha vez que se executaron todos os controladores de eventos, o obxecto do evento destrúese automaticamente.
+Ter en conta que o obxecto `event` só é accesible dentro do controlador de eventos. Unha vez que se executaron todos os controladores de eventos, o obxecto do evento destrúese automaticamente.
 
 ### preventDefault()
 
-Para evitar o comportamento predeterminado dun evento, usa o `preventDefault()`método.
+Para evitar o comportamento predeterminado dun evento, usa o método `preventDefault()`.
 
-Por exemplo, cando fai clic nunha ligazón, o navegador desprázao ata o URL especificado no `href`atributo:
+Por exemplo, cando fai clic nunha ligazón, o navegador desprázao ata o URL especificado no atributo `href`:
 
 ```
 <a href="https://www.javascripttutorial.net/">JS Tutorial</a>
 ```
 
-Non obstante, pode evitar este comportamento usando o `preventDefault()`método do `event`obxecto:
+Non obstante, pode evitar este comportamento usando o método `preventDefault()` do obxecto `event`:
 
-```
+```js
 let link = document.querySelector('a');
 
 link.addEventListener('click',function(event) {
@@ -179,15 +179,15 @@ link.addEventListener('click',function(event) {
 });
 ```
 
-Teña en conta que o `preventDefault()`método non impide que o evento faga burbullas no DOM. E un evento pódese cancelar cando a súa `cancelable`propiedade sexa `true`.
+Ter en conta que o obxecto `preventDefault()` non impide que o evento faga burbullas no DOM. E un evento pódese cancelar cando a súa propiedade `cancelable` sexa `true`.
 
 ### stopPropagation ()
 
-O `stopPropagation()`método detén inmediatamente o fluxo dun evento a través da árbore DOM. Non obstante, non detén o comportamento predeterminado dos navegadores.
+O método `stopPropagation()` detén inmediatamente o fluxo dun evento a través da árbore DOM. Non obstante, non detén o comportamento predeterminado dos navegadores.
 
-Vexa o seguinte exemplo:
+Mira o seguinte exemplo:
 
-```
+```js
 let btn = document.querySelector('#btn');
 
 btn.addEventListener('click', function(event) {
@@ -198,28 +198,27 @@ btn.addEventListener('click', function(event) {
 document.body.addEventListener('click',function(event) {
     console.log('The body was clicked!');
 });
-
 ```
 
-Sen o `stopPropagation()`método, vería dúas mensaxes na xanela da consola.
+Sen o método `stopPropagation()`, vería dúas mensaxes na xanela da consola.
 
-Non obstante, o `click`evento nunca chega ao `body`porque `stopPropagation()`foi chamado no `click`controlador de eventos do botón.
+Non obstante, o evento `click` nunca chega ao `body` porque `stopPropagation()` foi chamado no controlador de eventos `click` do botón.
 
 ## Resumo
 
 - Un evento é unha acción que ocorre no navegador web, por exemplo, un clic do rato.
 - O fluxo de eventos ten dous modelos principais: burbulla de eventos e captura de eventos.
 - O evento de nivel 2 DOM especifica que o fluxo de eventos ten tres fases: burbulla de eventos, o evento ocorre no elemento exacto e captura de eventos.
-- Utilízao `addEventListener()`para rexistrar un evento que conecta un evento cun oínte de eventos
-- `event`Só se pode acceder ao obxecto dentro do escoitador de eventos.
-- Use `preventDefault()`o método para evitar o comportamento predeterminado dun evento, pero non detén o fluxo de eventos.
-- Use `stopPropagation()`o método para deter o fluxo dun evento a través da árbore DOM, pero non cancela o comportamento predeterminado do navegador.
+- Utiliza `addEventListener()` para rexistrar un evento que conecta un evento cun oínte de eventos
+- `event` só se pode acceder ao obxecto dentro do escoitador de eventos.
+- Use o método `preventDefault()` para evitar o comportamento predeterminado dun evento, pero non detén o fluxo de eventos.
+- Use o método `stopPropagation()` para deter o fluxo dun evento a través da árbore DOM, pero non cancela o comportamento predeterminado do navegador.
 
 # Manexo de eventos en JavaScript
 
-**Resumo** : neste tutorial, aprenderás as distintas formas de realizar o manexo de eventos en JavaScript.
+**Resumo**: nesta sección, aprenderás as distintas formas de realizar o manexo de eventos en JavaScript.
 
-Cando se produce un [evento](https://www.javascripttutorial.net/javascript-dom/javascript-events/) , podes crear un controlador de eventos que é unha peza de código que se executará para responder a ese evento. Un controlador de eventos tamén se coñece como escoita de eventos. Escoita o evento e responde en consecuencia aos incendios do evento.
+Cando se produce un [evento](https://www.javascripttutorial.net/javascript-dom/javascript-events/), podes crear un controlador de eventos que é unha peza de código que se executará para responder a ese evento. Un controlador de eventos tamén se coñece como escoita de eventos. Escoita o evento e responde en consecuencia aos incendios do evento.
 
 Un escoitador de eventos é unha [función](https://www.javascripttutorial.net/javascript-function/) cun nome explícito se é reutilizable ou unha función anónima no caso de que se use unha vez.
 
@@ -229,7 +228,7 @@ Hai tres formas de asignar controladores de eventos.
 
 ## 1) Atributos do controlador de eventos HTML
 
-Os controladores de eventos normalmente teñen nomes que comezan por `on`, por exemplo, o controlador de eventos para o `click`evento é `onclick`.
+Os controladores de eventos normalmente teñen nomes que comezan por `on`, por exemplo, o controlador de eventos para o evento `click` é `onclick`.
 
 Para asignar un controlador de eventos a un evento asociado a un elemento HTML, pode usar un atributo HTML co nome do controlador de eventos. Por exemplo, para executar algún código cando se fai clic nun botón, usa o seguinte:
 
@@ -254,7 +253,7 @@ Un controlador de eventos definido no HTML pode chamar a unha función definida 
 
 Neste exemplo, o botón chama á `showAlert()`función cando se fai clic.
 
-É `showAlert()`unha función definida nun `<script>`elemento separado e pódese colocar nun ficheiro JavaScript externo.
+É `showAlert()`unha función definida nun `<script>`elemento separado e pódese colocar nun arquivo JavaScript externo.
 
 ### Notas importantes
 
@@ -286,7 +285,7 @@ En primeiro lugar, o código do controlador de eventos mestúrase co código HTM
 
 En segundo lugar, é unha cuestión de tempo. Se o elemento se carga completamente antes do código JavaScript, os usuarios poden comezar a interactuar co elemento na páxina web, o que provocará un erro.
 
-Por exemplo, supoña que a seguinte `showAlert()`función está definida nun ficheiro JavaScript externo:
+Por exemplo, supoña que a seguinte `showAlert()`función está definida nun arquivo JavaScript externo:
 
 ```
 <input type="button" value="Save" onclick="showAlert()">
@@ -341,11 +340,11 @@ Os controladores de eventos de nivel 2 de DOM proporcionan dous métodos princip
 
 Estes métodos están dispoñibles en todos os nodos DOM.
 
-## O `addEventListener()`método
+## O método `addEventListener()`
 
-O `addEventListener()`método acepta tres argumentos: un nome de evento, unha función de controlador de eventos e un valor booleano que lle indica ao método que chame ao controlador de eventos durante a fase de captura ( `true`) ou durante a fase de burbulla ( `false`). Por exemplo:
+O método `addEventListener()` acepta tres argumentos: un nome de evento, unha función de controlador de eventos e un valor booleano que lle indica ao método que chame ao controlador de eventos durante a fase de captura ( `true`) ou durante a fase de burbulla ( `false`). Por exemplo:
 
-```
+```js
 let btn = document.querySelector('#btn');
 btn.addEventListener('click',function(event) {
     alert(event.type); // click
@@ -354,7 +353,7 @@ btn.addEventListener('click',function(event) {
 
 É posible engadir varios controladores de eventos para xestionar un único evento, como este:
 
-```
+```js
 let btn = document.querySelector('#btn');
 btn.addEventListener('click',function(event) {
     alert(event.type); // click
@@ -365,11 +364,11 @@ btn.addEventListener('click',function(event) {
 });
 ```
 
-## O `removeEventListener()`método
+## O método `removeEventListener()`
 
-Elimina `removeEventListener()`un detector de eventos que se engadiu a través do `addEventListener()`. Non obstante, cómpre pasar os mesmos argumentos que se pasaron ao `addEventListener()`. Por exemplo:
+`removeEventListener()` elimina un detector de eventos que se engadiu a través do `addEventListener()`. Non obstante, cómpre pasar os mesmos argumentos que se pasaron ao `addEventListener()`. Por exemplo:
 
-```
+```js
 let btn = document.querySelector('#btn');
 
 // add the event listener
@@ -380,12 +379,11 @@ btn.addEventListener('click', showAlert);
 
 // remove the event listener
 btn.removeEventListener('click', showAlert);
-
 ```
 
 Non funcionará o uso dun detector de eventos anónimo como o seguinte:
 
-```
+```js
 let btn = document.querySelector('#btn');
 btn.addEventListener('click',function() {
    alert('Clicked!');
@@ -404,7 +402,7 @@ btn.removeEventListener('click', function() {
 
 # Eventos de carga da páxina JavaScript
 
-**Resumo** : neste tutorial aprenderás sobre os eventos relacionados coa carga da páxina, incluíndo , `DOMContentLoaded`, e .` load``beforeunload``unload `
+**Resumo**: nesta sección aprenderás sobre os eventos relacionados coa carga da páxina, incluíndo , `DOMContentLoaded`, e .` load``beforeunload``unload `
 
 ## Visión xeral dos eventos de carga da páxina JavaScript
 
@@ -420,9 +418,9 @@ Cando saes da páxina, os seguintes eventos desenvólvense en secuencia:
 
 ## Xestionar eventos de carga de páxinas JavaScript
 
-Para xestionar os eventos da páxina, pode chamar ao `addEventListener()`método no `document`obxecto:
+Para xestionar os eventos da páxina, pode chamar ao método `addEventListener()` no obxecto `document`:
 
-```
+```js
 document.addEventListener('DOMContentLoaded',() => {
     // handle DOMContentLoaded event
 });
@@ -438,7 +436,6 @@ document.addEventListener('beforeunload',() => {
 document.addEventListener('unload',() => {
     // handle unload event
 });
-
 ```
 
 O seguinte exemplo ilustra como xestionar os eventos de carga da páxina:
@@ -477,31 +474,31 @@ O seguinte exemplo ilustra como xestionar os eventos de carga da páxina:
 
 ## `onLoad`
 
-**Resumo** : neste tutorial, aprenderás a xestionar o evento de carga que se desencadea no documento, a imaxe e os elementos do script en JavaScript.
+**Resumo**: nesta sección, aprenderás a xestionar o evento de carga que se desencadea no documento, a imaxe e os elementos do script en JavaScript.
 
 ## Evento de carga da xanela
 
-Para o `window`obxecto, o `load`evento desenvólvese cando toda a páxina web (HTML) se cargou por completo, incluíndo todos os recursos dependentes, incluídos ficheiros JavaScript, ficheiros CSS e imaxes.
+Para o obxecto `window`, o evento `load` desenvólvese cando toda a páxina web (HTML) se cargou por completo, incluíndo todos os recursos dependentes, incluídos arquivos JavaScript, arquivos CSS e imaxes.
 
-Para xestionar o `load`evento, rexistra un oínte de eventos mediante o `addEventListener()`método:
+Para xestionar o `load`evento, rexistra un oínte de eventos mediante o método `addEventListener()`:
 
-```
+```js
 window.addEventListener('load', (event) => {
     console.log('The page has fully loaded');
 });
 ```
 
-Ou use a `onload`propiedade do `window`obxecto:
+Ou use a propiedade `onload` do obxecto `window`:
 
-```
+```js
 window.onload = (event) => {
     console.log('The page has fully loaded');
 };
 ```
 
-Se mantés un sistema herdado, podes descubrir que o `load`controlador de eventos está rexistrado no elemento do corpo do documento HTML, así:
+Se mantés un sistema herdado, podes descubrir que o controlador `load` de eventos está rexistrado no elemento do corpo do documento HTML, así:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -509,18 +506,18 @@ Se mantés un sistema herdado, podes descubrir que o `load`controlador de evento
 </head>
 <body onload="console.log('Loaded!')">
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
-É unha boa práctica usar o `addEventListener()`método para asignar o `onload`controlador de eventos sempre que sexa posible.
+É unha boa práctica usar o método `addEventListener()` para asignar o controlador `onload` de eventos sempre que sexa posible.
 
 ## Evento de carga da imaxe
 
-O `load`evento tamén dispara sobre imaxes. Para xestionar o `load`evento en imaxes, usa o `addEventListener()`método dos elementos da imaxe.
+O evento `load` tamén dispara sobre imaxes. Para xestionar o evento `load` en imaxes, usa o método `addEventListener()` dos elementos da imaxe.
 
-O seguinte exemplo usa o `load`controlador de eventos para determinar se unha imaxe, que existe na árbore DOM, foi completamente cargada:
+O seguinte exemplo usa o controlador `load` de eventos para determinar se unha imaxe, que existe na árbore DOM, foi completamente cargada:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -539,16 +536,15 @@ O seguinte exemplo usa o `load`controlador de eventos para determinar se unha im
     </script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
-```
-
-Podes asignar un `onload`controlador de eventos directamente usando o `onload`atributo do `<img>`elemento, así:
 
 ```
+
+Podes asignar un controlador `onload` de eventos directamente usando o `onload`atributo do `<img>`elemento, así:
+
+```html
 <img id="logo"
      src="logo.png"
      onload="console.log('Logo loaded!')">
-Idioma do código:  HTML, XML  ( xml )
 ```
 
 Se crea un elemento de imaxe de forma dinámica, pode asignar un `onload`controlador de eventos antes de establecer a `src`propiedade do seguinte xeito:
@@ -576,13 +572,13 @@ window.addEventListener('load' () => {
 
 ## Evento de carga do script
 
-O `<script>`elemento tamén admite o `load`evento lixeiramente diferente das formas estándar. O `load`evento do script permítelle comprobar se un ficheiro JavaScript foi completamente cargado.
+O `<script>`elemento tamén admite o `load`evento lixeiramente diferente das formas estándar. O `load`evento do script permítelle comprobar se un arquivo JavaScript foi completamente cargado.
 
-A diferenza das imaxes, o navegador web comeza a descargar ficheiros JavaScript só despois de `src`asignar a propiedade e `<script>`engadir o elemento ao documento.
+A diferenza das imaxes, o navegador web comeza a descargar arquivos JavaScript só despois de `src`asignar a propiedade e `<script>`engadir o elemento ao documento.
 
-O seguinte código carga o `app.js`ficheiro despois de cargar completamente a páxina. Asigna un `onload`manejador de eventos para comprobar se se `app.js`cargou por completo.
+O seguinte código carga o `app.js`arquivo despois de cargar completamente a páxina. Asigna un `onload`manexador de eventos para comprobar se se `app.js`cargou por completo.
 
-```
+```js
 window.addEventListener('load', checkJSLoaded)
 
 function checkJSLoaded() {
@@ -602,19 +598,19 @@ function checkJSLoaded() {
 
 ## Resumo
 
-- O `load`evento ocorre cando o documento foi completamente cargado, incluíndo recursos dependentes como ficheiros JavaScript, ficheiros CSS e imaxes.
-- Os elementos `<img>`e `<script>`tamén apoian o `load`evento.
-- Use o `addEventListener()`método para rexistrar un `onload`controlador de eventos.
+- O evento `load` ocorre cando o documento foi completamente cargado, incluíndo recursos dependentes como arquivos JavaScript, arquivos CSS e imaxes.
+- Os elementos `<img>` e tamén`<script>` apoian o evento `load`.
+- Use o método `addEventListener()` para rexistrar un controlador de eventos `onload`.
 
 # DOMCContentLoaded
 
-**Resumo** : neste tutorial aprenderás sobre o `DOMContentLoaded`evento JavaScript.
+**Resumo**: nesta sección aprenderás sobre o evento `DOMContentLoaded`.
 
-Disígnase `DOMContentLoaded`cando se carga o contido DOM, sen esperar a que as imaxes e as follas de estilo rematen de cargarse.
+Disígnase `DOMContentLoaded` cando se carga o contido DOM, sen esperar a que as imaxes e as follas de estilo rematen de cargarse.
 
-Debes xestionar o `DOMContentLoaded`evento cando colocas o JavaScript na `head`páxina pero fai referencia a elementos no corpo, por exemplo:
+Debes xestionar o evento `DOMContentLoaded` cando se coloca o JavaScript no `head` da páxina pero fai referencia a elementos no corpo, por exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -634,16 +630,15 @@ Debes xestionar o `DOMContentLoaded`evento cando colocas o JavaScript na `head`p
 </body>
 
 </html>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-Neste exemplo, facemos referencia ao botón `body`do JavaScript no `head`.
+Neste exemplo, facemos referencia ao botón do `body` no `head`.
 
-Como o DOM non se cargou cando o motor JavaScript analiza o JavaScript no `head`, o botón co ID `btn`non existe.
+Como o DOM non se cargou cando o motor JavaScript analiza o JavaScript no `head`, o botón co ID `btn` non existe.
 
-Para solucionar isto, coloca o código dentro dun `DOMContentLoaded`controlador de eventos, así:
+Para solucionar isto, coloca o código dentro dun controlador de eventos `DOMContentLoaded`, así:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -665,12 +660,11 @@ Para solucionar isto, coloca o código dentro dun `DOMContentLoaded`controlador 
 </body>
 
 </html>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-Cando coloques JavaScript na cabeceira, causará pescozos de botella e atrasos de renderización, polo que é mellor mover o script antes da `</body>`etiqueta. Neste caso, non precisa colocar o código no `DOMContentLoaded`evento, así:
+Cando coloques JavaScript na cabeceira, causará pescozos de botella e atrasos de renderización, polo que é mellor mover o script antes da etiqueta `</body>`. Neste caso, non precisa colocar o código no evento `DOMContentLoaded`, así:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 
@@ -691,23 +685,22 @@ Cando coloques JavaScript na cabeceira, causará pescozos de botella e atrasos d
     </script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
 ## Resumo
 
-- O `DOMContentLoaded`evento desenvólvese cando se carga o contido DOM, sen esperar a que as imaxes e as follas de estilo rematen de cargarse.
-- Só xestiona `DOMContentLoaded`o evento se colocas o código JavaScript no `head`, que fai referencia a elementos da sección do corpo.
+- O evento `DOMContentLoaded` desenvólvese cando se carga o contido DOM, sen esperar a que as imaxes e as follas de estilo rematen de cargarse.
+- Só xestiona o evento `DOMContentLoaded` se colocas o código JavaScript no `head`, que fai referencia a elementos da sección do corpo.
 
 # `unload`
 
-**Resumo** : neste tutorial aprenderás a usar o `unload`evento JavaScript que se activa cando o documento está totalmente descargado.
+**Resumo**: nesta sección aprenderás a usar o evento `unload` JavaScript que se activa cando o documento está totalmente descargado.
 
-Teña en conta que nunca debe usar o evento de descarga, é só como referencia.
+Ter en conta que nunca debe usar o evento de descarga, é só como referencia.
 
-## Introdución ao `unload`evento JavaScript
+## Introdución ao evento `unload` JavaScript
 
-O `unload`evento desenvólvese cando un documento se descargou completamente. Normalmente, o `unload`evento desenvólvese cando navegas dunha páxina a outra.
+O evento `unload` desenvólvese cando un documento se descargou completamente. Normalmente, o evento `unload` desenvólvese cando navegas dunha páxina a outra.
 
 O evento de descarga desenvólvese despois de:
 
@@ -720,29 +713,29 @@ Neste momento, o documento HTML está no seguinte estado:
 - Todos os recursos como img, iframe, etc., aínda existen.
 - Un erro non deterá o fluxo de descarga.
 
-Na práctica, nunca deberías usar o `unload`evento porque non é fiable en dispositivos móbiles e [causa un problema con bfcache](https://web.dev/bfcache/#never-use-the-unload-event) .
+Na práctica, nunca deberías usar o evento `unload` porque non é fiable en dispositivos móbiles e [causa un problema con bfcache](https://web.dev/bfcache/#never-use-the-unload-event) .
 
 ## Xestionando o evento de descarga de JavaScript
 
-Para xestionar o `unload`evento, podes usar o `addEventListener()`método:
+Para xestionar o `unload`evento, podes usar o método `addEventListener()`:
 
-```
+```js
 addEventListener('unload', (event) => {
     console.log('The page is unloaded');
 });
 ```
 
-Ou asigne un controlador de eventos á `onunload`propiedade do `window`obxecto:
+Ou asigne un controlador de eventos á propiedade `onunload` do obxecto `window`:
 
-```
+```js
 window.onunload = (event) => {
     console.log('The page is unloaded');
 };
 ```
 
-Ou asigne un controlador de eventos ao `onunload`atributo do `<body>`elemento:
+Ou asigne un controlador de eventos ao atributo `onunload` do elemento `<body>`:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -751,55 +744,55 @@ Ou asigne un controlador de eventos ao `onunload`atributo do `<body>`elemento:
 <body onunload="console.log('The page is unloaded')">
 
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
-É unha boa práctica usar o `addEventListener()`para rexistrar o controlador de eventos de descarga.
+É unha boa práctica usar o `addEventListener()` para rexistrar o controlador de eventos de descarga.
 
 ## Resumo
 
-- JavaScript activa o `unload`evento cando un documento foi completamente descargado.
-- Na práctica, non use o `unload`evento.
+- JavaScript activa o evento `unload` cando un documento foi completamente descargado.
+- Na práctica, non use o evento `unload`.
 
 # Evento antes de descargar JavaScript
 
-**Resumo** : neste tutorial aprenderás sobre o `beforeunload`evento JavaScript que che permite mostrar un diálogo de confirmación antes de saír dunha páxina web.
+**Resumo**: nesta sección aprenderás sobre o evento `beforeunload` que che permite mostrar un diálogo de confirmación antes de saír dunha páxina web.
 
-## `beforeunload`Evento de introdución ao JavaScript
+## Introdución ao evento de JavaScript `beforeunload`
 
-Antes de descargar a páxina web e os seus recursos, `beforeunload`desenvólvese o evento. Neste momento, a páxina web aínda está visible e tes a oportunidade de cancelar o evento.
+Antes de descargar a páxina web e os seus recursos, desenvólvese o evento `beforeunload`. Neste momento, a páxina web aínda está visible e tes a oportunidade de cancelar o evento.
 
-Para rexistrarte no `beforeunload`evento, usa o `window.addEventListener()`método:
+Para rexistrarte no `beforeunload`evento, usa o método `window.addEventListener()`:
 
-```
+```js
 window.addEventListener('beforeunload',(event) =>{
     // do something here
 });
 ```
 
-Xa que `window`é o obxecto global, podes omitilo así:
+Xa que `window` é o obxecto global, podes omitilo así:
 
-```
+```js
 addEventListener('beforeunload',(event) =>{
     // do something here
-});Idioma do código:  PHP  ( php )
+});
 ```
 
-Se unha páxina web ten un `beforeunload`detector de eventos e estás a piques de saír da páxina, o `beforeunload`evento activará un diálogo de confirmación para confirmar se realmente queres saír da páxina.
+Se unha páxina web ten un detector de eventos `beforeunload` e estás a piques de saír da páxina, o evento `beforeunload` activará un diálogo de confirmación para confirmar se realmente queres saír da páxina.
 
 Se o confirmas, o navegador navegará á nova páxina. En caso contrario, cancela a navegación.
 
-Segundo a especificación, cómpre chamar ao `preventDefault()`método dentro do `beforeunload`controlador de eventos para mostrar o diálogo de confirmación. Non obstante, non todos os navegadores implementan isto:
+Segundo a especificación, cómpre chamar ao método `preventDefault()` dentro do controlador de eventos `beforeunload` para mostrar o diálogo de confirmación. Non obstante, non todos os navegadores implementan isto:
 
-```
+```js
 addEventListener('beforeunload',(event) => {
     event.preventDefault();
-});Idioma do código:  PHP  ( php )
+});
 ```
 
 Historicamente, algúns navegadores permítenche mostrar unha mensaxe personalizada no diálogo de confirmación. Con isto pretendía informar aos usuarios de que perderán datos se navegan. Desafortunadamente, esta función úsase a miúdo para estafar aos usuarios. Como resultado, xa non se admite unha mensaxe personalizada.
 
-En función da especificación HTML, as chamadas a `alert()`, `confirm()`, e `prompt()`ignóranse no `beforeunload`manejador de eventos.
+En función da especificación HTML, as chamadas a `alert()`, `confirm()`, e ignóranse `prompt()` no manexador de eventos `beforeunload`.
 
 ## `beforeunload`Exemplo de evento JavaScript
 
@@ -826,7 +819,7 @@ O seguinte exemplo anexa un controlador de eventos ao `beforeunload`evento. Se f
     </script>
 </body>
 
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 ## Resumo
@@ -836,7 +829,7 @@ O seguinte exemplo anexa un controlador de eventos ao `beforeunload`evento. Se f
 
 # Eventos do rato JavaScript
 
-**Resumo** : neste tutorial aprenderás sobre os eventos básicos do rato e as súas propiedades en JavaScript.
+**Resumo**: nesta sección aprenderás sobre os eventos básicos do rato e as súas propiedades en JavaScript.
 
 ## Introdución aos eventos do rato JavaScript
 
@@ -856,7 +849,7 @@ Se presiona o botón do rato nun elemento e move o rato fóra do elemento, e des
 
 Do mesmo xeito, se presiona o botón do rato, move o rato sobre o elemento e solta o botón do rato, o único `mouseup`evento desenvólvese no elemento.
 
-En ambos os casos, o `click`evento nunca se dispara.
+En ambos os casos, o evento `click` nunca se dispara.
 
 ### `dblclick`
 
@@ -878,7 +871,7 @@ Como podes ver, os `click`eventos sempre teñen lugar antes do `dblclick`evento.
 
 ### `mousemove`
 
-O `mousemove`evento desenvólvese repetidamente cando moves o cursor do rato arredor dun elemento. Mesmo cando moves o rato un píxel, o `mousemove`evento segue desencadeando. Fará que a páxina sexa lenta, polo tanto, só rexistras `mousemove`o manejador de eventos só cando o necesites e eliminas inmediatamente o manejador de eventos en canto xa non se use, así:
+O `mousemove`evento desenvólvese repetidamente cando moves o cursor do rato arredor dun elemento. Mesmo cando moves o rato un píxel, o `mousemove`evento segue desencadeando. Fará que a páxina sexa lenta, polo tanto, só rexistras `mousemove`o manexador de eventos só cando o necesites e eliminas inmediatamente o manexador de eventos en canto xa non se use, así:
 
 ```
 element.onmousemove = mouseMoveEventHandler;
@@ -905,18 +898,18 @@ Ambos `mouseenter`e `mouseleave`non burbulla e non se dispara cando o cursor do 
 
 Para rexistrar un evento do rato, debes seguir estes pasos:
 
-- En primeiro lugar, seleccione o elemento usando `querySelector()`ou `getElementById()`método.
-- A continuación, rexistre o evento do rato usando o `addEventListener()`método.
+- En primeiro lugar, seleccione o elemento usando `querySelector()` ou método `getElementById()`.
+- A continuación, rexistre o evento do rato usando o método `addEventListener()`.
 
 Por exemplo, supoña que tes o seguinte botón:
 
-```
-<button id="btn">Click Me!</button>Idioma do código:  HTML, XML  ( xml )
+```html
+<button id="btn">Click Me!</button>
 ```
 
 Para rexistrar un controlador de eventos de clic do rato, usa o seguinte código:
 
-```
+```js
 let btn = document.querySelector('#btn');
 
 btn.addEventListener('click',(event) => {
@@ -926,7 +919,7 @@ btn.addEventListener('click',(event) => {
 
 ou pode asignar un controlador de eventos do rato á propiedade do elemento:
 
-```
+```js
 let btn = document.querySelector('#btn');
 
 btn.onclick = (event) => {
@@ -936,15 +929,15 @@ btn.onclick = (event) => {
 
 Nos sistemas legados, pode descubrir que o controlador de eventos está asignado no atributo HTML do elemento:
 
-```
-<button id="btn" onclick="console.log('clicked')">Click Me!</button>Idioma do código:  HTML, XML  ( xml )
+```html
+<button id="btn" onclick="console.log('clicked')">Click Me!</button>
 ```
 
-É unha boa práctica usar sempre o `addEventListener()`para rexistrar un controlador de eventos do rato.
+É unha boa práctica usar sempre `addEventListener()` para rexistrar un controlador de eventos do rato.
 
 ## Detección de botóns do rato
 
-O `event`obxecto pasado ao controlador de eventos do rato ten unha propiedade chamada `button`que indica que botón do rato foi presionado para activar o evento.
+O obxecto  `event`pasado ao controlador de eventos do rato ten unha propiedade chamada `button` que indica que botón do rato foi presionado para activar o evento.
 
 O botón do rato está representado por un número:
 
@@ -956,9 +949,9 @@ O botón do rato está representado por un número:
 
 ![evento do rato javascript - botóns do rato](./assets/javascript-mouse-event-mouse-buttons.png)
 
-Vexa o seguinte exemplo:
+Mira o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -995,10 +988,9 @@ Vexa o seguinte exemplo:
     </script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
 ```
 
-Neste exemplo, cando fai clic no botón co rato (clic co botón esquerdo, clic co botón dereito e clic co botón central), móstrase unha mensaxe correspondente no `<div>`elemento.
+Neste exemplo, cando fai clic no botón co rato (clic co botón esquerdo, clic co botón dereito e clic co botón central), móstrase unha mensaxe correspondente no elemento `<div>`.
 
 <iframe src="https://www.javascripttutorial.net/sample/dom/mouse-events/mouse-buttons/index.html" height="200" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
 
@@ -1008,15 +1000,15 @@ Cando fai clic nun elemento, pode premer unha ou máis teclas modificadoras: Mai
 
 [![img](./assets/javascript-mouse-event-modifier-keys.png)](https://www.javascripttutorial.net/wp-content/uploads/2020/02/javascript-mouse-event-modifier-keys.png)
 
-Teña en conta que a tecla Meta é a tecla de Windows nos teclados de Windows e a tecla Comando no teclado de Apple.
+Ter en conta que a tecla Meta é a tecla de Windows nos teclados de Windows e a tecla Comando no teclado de Apple.
 
-Para detectar se se presionaron estas teclas modificadoras, pode usar o `event`obxecto pasado ao controlador de eventos do rato.
+Para detectar se se presionaron estas teclas modificadoras, pode usar o obxecto `event` pasado ao controlador de eventos do rato.
 
 O `event`obxecto ten catro propiedades booleanas, onde cada unha delas está definida `true`se se mantén premida a tecla ou `false`se non se preme.
 
-Vexa o seguinte exemplo:
+Mira o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1042,24 +1034,24 @@ Vexa o seguinte exemplo:
         });
     </script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 <iframe src="https://www.javascripttutorial.net/sample/dom/mouse-events/modifier-keys/index.html" height="200" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
 
 ## Obtención de coordenadas da pantalla
 
-As propiedades `screenX`e `screenY`do evento pasadas ao controlador de eventos do rato devolven as coordenadas da pantalla da localización do rato en relación coa pantalla enteira.
+As propiedades `screenX` e `screenY` do evento pasadas ao controlador de eventos do rato devolven as coordenadas da pantalla da localización do rato en relación coa pantalla enteira.
 
 ![Evento do rato JavaScript -screenX screenY](./assets/javascript-mouse-event-screenX-screenY.png)
 
-Por outra banda, as propiedades `clientX`e `clientY`proporcionan as coordenadas horizontais e verticais dentro da área de cliente da aplicación na que ocorreu o evento do rato:
+Por outra banda, as propiedades `clientX` e `clientY` proporcionan as coordenadas horizontais e verticais dentro da área de cliente da aplicación na que ocorreu o evento do rato:
 
 ![img](./assets/javascript-mouse-event-clientX-clientY.png)
 
 Consulta a seguinte demostración:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1087,7 +1079,7 @@ Consulta a seguinte demostración:
         });
     </script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 <iframe src="https://www.javascripttutorial.net/sample/dom/mouse-events/mouse-location/index.html" height="400" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
@@ -1095,15 +1087,15 @@ Consulta a seguinte demostración:
 ## Resumo
 
 - O nivel 3 DOM define nove eventos do rato.
-- Use `addEventListener()`o método para rexistrar un controlador de eventos do rato.
-- Indica `event.button`que botón do rato se premeu para activar o evento do rato.
+- Use o método `addEventListener()` para rexistrar un controlador de eventos do rato.
+- `event.button` indica que botón do rato se premeu para activar o evento do rato.
 - As teclas modificadoras: alt, shift, ctrl e meta (Mac) pódense obter mediante as propiedades do obxecto do evento pasado ao controlador de eventos do rato.
-- As propiedades `screenX`e `screenY`devolven as coordenadas horizontais e verticais do punteiro do rato en coordenadas da pantalla.
-- As propiedades `clientX`e `clientY`do `event`obxecto devolven coordenadas horizontais e verticais dentro da área de cliente da aplicación na que ocorreu o evento do rato.
+- As propiedades `screenX` e `screenY` devolven as coordenadas horizontais e verticais do punteiro do rato en coordenadas da pantalla.
+- As propiedades `clientX` e `clientY` do obxecto `event` devolven coordenadas horizontais e verticais dentro da área de cliente da aplicación na que ocorreu o evento do rato.
 
 # Eventos do teclado JavaScript
 
-**Resumo** : neste tutorial aprenderás a traballar con eventos do teclado JavaScript, incluíndo `keydown`, `keypress`e `keyup`.
+**Resumo**: nesta sección aprenderás a traballar con eventos do teclado JavaScript, incluíndo `keydown`, `keypress`e `keyup`.
 
 ## Introdución aos eventos do teclado JavaScript
 
@@ -1111,7 +1103,7 @@ Cando interactúas co teclado, desenvólvense os [eventos do teclado. ](https://
 
 - `keydown`– dispara cando preme unha tecla do teclado e dispara repetidamente mentres mantés premida a tecla.
 - `keyup`– dispara cando soltas unha tecla do teclado.
-- `keypress`– desenvólvese cando preme un teclado de caracteres como `a`, `b`, ou `c`, non a tecla de frecha esquerda, o teclado de inicio ou o teclado de finalización… `keypress`Tamén se dispara repetidamente mentres mantés premida a tecla do teclado.
+- `keypress`– desenvólvese cando preme un teclado de caracteres como `a`, `b`, ou `c`, non a tecla de frecha esquerda, o teclado de inicio ou o teclado de finalización… `keypress` tamén se dispara repetidamente mentres mantés premida a tecla do teclado.
 
 Os eventos do teclado adoitan dispararse na caixa de texto, aínda que todos os elementos os admiten.
 
@@ -1121,26 +1113,26 @@ Cando preme unha tecla de carácter unha vez no teclado, desenvólvense tres eve
 2. `keypress`
 3. `keyup`
 
-Ambos `keydown`eventos `keypress`desenvólvense antes de que se faga calquera cambio na caixa de texto, mentres que o evento de teclado desenvólvese despois de que se fixeran os cambios na caixa de texto. Se mantés premida unha tecla de carácter, as `keydown`e `keypress`son activadas varias veces ata que soltas a tecla.
+Ambos eventos `keydown` e `keypress` desenvólvense antes de que se faga calquera cambio na caixa de texto, mentres que o evento de teclado desenvólvese despois de que se fixeran os cambios na caixa de texto. Se mantés premida unha tecla de carácter, `keydown` e `keypress` son activadas varias veces ata que soltas a tecla.
 
-Cando preme unha tecla sen carácter, `keydown`primeiro desenvólvese o evento seguido do `keyup`evento. Se mantés premida a tecla sen carácter, dispararase `keydown`varias veces ata que soltas a tecla.
+Cando preme unha tecla sen carácter, primeiro desenvólvese o evento `keydown` seguido do evento `keyup`. Se mantés premida a tecla sen carácter, dispararase varias veces `keydown` ata que soltas a tecla.
 
 ## Manexo de eventos do teclado
 
 Para xestionar un evento de teclado, siga estes pasos:
 
 - En primeiro lugar, selecciona o elemento no que se disparará o evento do teclado. Normalmente, é unha caixa de texto.
-- A continuación, use o `element.addEventListener()`para rexistrar un controlador de eventos.
+- A continuación, use `element.addEventListener()` para rexistrar un controlador de eventos.
 
 Supoña que tes a seguinte caixa de texto co ID `message`:
 
-```
-<input type="text" id="message">Idioma do código:  HTML, XML  ( xml )
+```html
+<input type="text" id="message">
 ```
 
 O seguinte ilustra como rexistrar oíntes de eventos do teclado:
 
-```
+```js
 let msg = document.getDocumentById('#message');
 
 msg.addEventListener("keydown", (event) => {
@@ -1153,20 +1145,20 @@ msg.addEventListener("keypress", (event) => {
 
 msg.addEventListener("keyup", (event) => {
     // handle keyup
-});Idioma do código:  PHP  ( php )
+});
 ```
 
 Se preme unha tecla de carácter, chamaranse os tres controladores de eventos.
 
 ## As propiedades do evento do teclado
 
-O evento do teclado ten dúas propiedades importantes: `key`e `code`. A `key`propiedade devolve o carácter que se premeu mentres que a `code`propiedade devolve o código físico da tecla.
+O evento do teclado ten dúas propiedades importantes: `key` e `code`. A propiedade `key` devolve o carácter que se premeu mentres que a propiedade `code` devolve o código físico da tecla.
 
-Por exemplo, se preme a `z`tecla do carácter, `event.key`volve `z`e `event.code`volve `KeyZ`.
+Por exemplo, se preme a `z` tecla do carácter, `event.key` volve `z` e `event.code` volve `KeyZ`.
 
-Vexa o seguinte exemplo:
+Mira o seguinte exemplo:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1183,29 +1175,29 @@ Vexa o seguinte exemplo:
         });
     </script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 Se escribe o carácter `z`, verá a seguinte mensaxe:
 
-```
+```js
 key=z,code=KeyZ
 ```
 
 **Como funciona:**
 
-- En primeiro lugar, selecciona a caixa de texto co ID `message`usando o `getElementById()`método.
-- A continuación, rexistra un `keydown`oínte de eventos e rexistra a tecla e o código da tecla que se premeu.
+- En primeiro lugar, selecciona a caixa de texto co ID `message` usando o método `getElementById()`.
+- A continuación, rexistra un oínte de eventos `keydown` e rexistra a tecla e o código da tecla que se premeu.
 
 ## Resumo
 
-- Cando preme unha tecla de carácter no teclado, os eventos `keydown`, `keypress`, e `keyup`desenvólvense secuencialmente. Non obstante, se preme unha tecla sen carácter, só se activan os eventos `keydown`e .`keyup`
-- O `event`obxecto de teclado ten dúas propiedades importantes: `key`e `code` propiedades que permiten detectar que tecla se premeu.
-- A `key`propiedade devolve o valor do `key`pulsado mentres que o `code`representa unha tecla física do teclado.
+- Cando preme unha tecla de carácter no teclado, os eventos `keydown`, `keypress`, e `keyup` desenvólvense secuencialmente. Non obstante, se preme unha tecla sen carácter, só se activan os eventos `keydown` e `keyup`.
+- O obxecto de teclado `event` ten dúas propiedades importantes: `key` e `code`, propiedades que permiten detectar que tecla se premeu.
+- A propiedade `key` devolve o valor do `key` pulsado, mentres que o `code` representa unha tecla física do teclado.
 
 # Eventos de desprazamento de JavaScript
 
-**Resumo** : neste tutorial aprenderás sobre os eventos de desprazamento de JavaScript e como xestionar correctamente os eventos de desprazamento.
+**Resumo**: nesta sección aprenderás sobre os eventos de desprazamento de JavaScript e como xestionar correctamente os eventos de desprazamento.
 
 ## Introdución aos eventos de desprazamento de JavaScript
 
@@ -1216,17 +1208,17 @@ Cando desprazas un documento ou un elemento, desenvólvense os eventos de despra
 - Premendo nunha ligazón de identificación
 - Funcións de chamada en JavaScript
 
-Para rexistrar un `scroll`controlador de eventos, chama ao `addEventListener()`método no elemento de destino, así:
+Para rexistrar un `scroll`controlador de eventos, chama ao método `addEventListener()` no elemento de destino, así:
 
-```
+```js
 targetElement.addEventListener('scroll', (event) => {
     // handle the scroll event
-});Idioma do código:  PHP  ( php )
+});
 ```
 
-ou asignar un controlador de eventos á `onscroll`propiedade do elemento de destino:
+ou asignar un controlador de eventos á propiedade do elemento de destino `onscroll`:
 
-```
+```js
 targetElement.onscroll = (event) => {
     // handle the scroll event
 };
@@ -1234,27 +1226,27 @@ targetElement.onscroll = (event) => {
 
 ## Desprazando o documento
 
-Normalmente, xestionas os `scroll`eventos do `window`obxecto para xestionar o desprazamento de toda a páxina web.
+Normalmente, xestionas os eventos `scroll` do obxecto `window` para xestionar o desprazamento de toda a páxina web.
 
 O seguinte mostra como anexar un controlador de eventos ao `scroll`evento dunha páxina:
 
-```
+```js
 window.addEventListener('scroll',(event) => {
     console.log('Scrolling...');
 });
 ```
 
-Ou pode usar a `onscroll`propiedade do `window`obxecto:
+Ou pode usar a `onscroll`propiedade do obxecto `window`:
 
-```
+```js
 window.onscroll = function(event) {
     //
 };
 ```
 
-A `onscroll`propiedade do `window`obxecto é a mesma que `document.body.onscroll`podes usalos indistintamente, por exemplo:
+A `onscroll`propiedade do obxecto `window` é a mesma que `document.body.onscroll` e podes usalos indistintamente, por exemplo:
 
-```
+```js
 document.body.onscroll = null;
 console.log(window.onscroll); // null
 
@@ -1262,23 +1254,23 @@ console.log(window.onscroll); // null
 
 ### Desprazamentos de desprazamento
 
-O `window`obxecto ten dúas propiedades relacionadas cos eventos de desprazamento: `scrollX`e `scrollY`.
+O obxecto `window` ten dúas propiedades relacionadas cos eventos de desprazamento: `scrollX`e `scrollY`.
 
-As propiedades `scrollX`e `scrollY`devolven o número de píxeles que o documento está actualmente desprazado horizontal e verticalmente. Os `scrollX`e `scrollY`son valores de punto flotante de dobre precisión, polo que se necesitas valores enteiros, podes usar o `Math.round()`para redondealos.
+As propiedades `scrollX` e `scrollY` devolven o número de píxeles que o documento está actualmente desprazado horizontal e verticalmente. Os `scrollX` e `scrollY` son valores de punto flotante de dobre precisión, polo que se necesitas valores enteiros, podes usar o `Math.round()` para redondealos.
 
-Os `scrollX`e `scrollY`son 0 se o documento non se moveu en absoluto.
+Os `scrollX` e `scrollY` son 0 se o documento non se moveu en absoluto.
 
-Os `pageXOffset`e `pageYOffset`son alias das propiedades `scrollX`e `scrollY`.
+Os `pageXOffset` e `pageYOffset` son alias das propiedades `scrollX` e `scrollY`.
 
 ## Desprazamento dun elemento
 
-Como o `window`obxecto, podes anexar un `scroll`controlador de eventos a calquera elemento HTML. Non obstante, para realizar un seguimento da compensación de desprazamento, usa `scrollTop`e `scrollLeft`en lugar de `scrollX`e `scrollY`.
+Como o obxecto `window`, podes anexar un controlador de eventos `scroll` a calquera elemento HTML. Non obstante, para realizar un seguimento da compensación de desprazamento, usa `scrollTop` e `scrollLeft` en lugar de `scrollX` e `scrollY`.
 
-A `scrollTop`propiedade establece ou obtén o número de píxeles que o contido do elemento se despraza verticalmente. A `scrollLeft`propiedade obtén e establece o número de píxeles aos que se despraza o contido dun elemento desde o seu bordo esquerdo.
+A propiedade `scrollTop` establece ou obtén o número de píxeles que o contido do elemento se despraza verticalmente. A propiedade `scrollLeft` obtén e establece o número de píxeles aos que se despraza o contido dun elemento desde o seu bordo esquerdo.
 
-O seguinte exemplo mostra como xestionar o `scroll`evento do `div`elemento co id `scrollDemo`:
+O seguinte exemplo mostra como xestionar o evento `scroll` do `div` elemento co id `scrollDemo`:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1330,7 +1322,7 @@ O seguinte exemplo mostra como xestionar o `scroll`evento do `div`elemento co id
     </script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
+
 ```
 
 <iframe src="https://www.javascripttutorial.net/sample/dom/scroll/" height="300" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
@@ -1343,7 +1335,7 @@ Isto provocará un problema coñecido como scroll jank. O efecto de desprazament
 
 ### Acelerado de eventos
 
-É moito mellor manter o `scroll`manejador de eventos lixeiro e executalo cada N milisegundos usando un temporizador. Entón, en lugar de usar o seguinte código (e nunca deberías usalo):
+É moito mellor manter o `scroll`manexador de eventos lixeiro e executalo cada N milisegundos usando un temporizador. Entón, en lugar de usar o seguinte código (e nunca deberías usalo):
 
 ```
 window.scroll = () => {
@@ -1407,20 +1399,20 @@ Consulta [aquí](https://caniuse.com/#feat=passive-event-listener) cales son os 
 
 # scrollIntoView
 
-**Resumo** : neste tutorial, aprenderás a desprazar un elemento na vista usando o seu `scrollIntoView()`método.
+**Resumo**: nesta sección, aprenderás a desprazar un elemento na vista usando o seu método `scrollIntoView()`.
 
 Supoña que tes unha lista de elementos e queres que un elemento específico se destaque e se desprace á vista.
 
-Para conseguilo, pode usar o `element.scrollIntoView()`método. Acepta `element.scrollIntoView()`un valor booleano ou un obxecto:
+Para conseguilo, pode usar o método `element.scrollIntoView()`. `element.scrollIntoView()` acepta un valor booleano ou un obxecto:
 
-```
+```js
 element.scrollIntoView(alignToTop);
 ```
 
 ou
 
-```
-element.scrollIntoView(options);Idioma do código:  CSS  ( css )
+```js
+element.scrollIntoView(options);
 ```
 
 O método acepta un dos dous argumentos seguintes:
@@ -1439,7 +1431,7 @@ Por defecto, `alignToTop`é `true`.
 
 O `options`argumento é un obxecto que dá máis control sobre o aliñamento do elemento na vista. Non obstante, a compatibilidade do navegador web pode ser lixeiramente diferente.
 
-O `options`obxecto ten as seguintes propiedades:
+O obxecto `options` ten as seguintes propiedades:
 
 - `behavior`A propiedade define a animación de transición. A `behavior`propiedade acepta dous valores: `auto`ou `smooth`. Por defecto é `auto`.
 - `block`a propiedade define o aliñamento vertical. Acepta un dos catro valores: `start`, `center`, `end`ou `nearest`. Por defecto, é `start`.
@@ -1488,7 +1480,7 @@ Supoña que tes unha páxina HTML cunha lista da linguaxe de programación como 
     <script src="scrollIntoView.js"></script>
 </body>
 </html>
-Idioma do código:  HTML, XML  ( xml )
+
 ```
 
 Sen desprazarse, o `JavaScript`elemento da lista, que ten unha clase chamada `special`, non está na ventana gráfica. Cando `"Scroll Into View"`se fai clic no botón, o `JavaScript`elemento da lista desprázase á vista:
@@ -1507,15 +1499,15 @@ btn.addEventListener('click', function () {
 
 - Primeiro, [selecciona](https://www.javascripttutorial.net/javascript-dom/javascript-queryselector/) o botón coa `btn`clase e lista o elemento coa `special`clase.
 - A continuación, anexa un detector de eventos ao evento de clic do botón.
-- Finalmente, desprácese polo `JavaScript`elemento da lista na ventana gráfica chamando ao método`el.scrollIntoView(true)` no manexador de eventos de clic.
+- Finalmente, desprácese polo elemento `JavaScript` da lista na ventana gráfica chamando ao método `el.scrollIntoView(true)` no manexador de eventos de clic.
 
 <iframe src="https://www.javascripttutorial.net/sample/dom/scrollintoview/" height="400" style="box-sizing: border-box; margin: 0px; max-width: 100%; border: none; min-height: 70px; width: 1064px; padding: 1rem;"></iframe>
 
 [Aquí está a demostración de JavaScript scrollIntoView().](https://www.javascripttutorial.net/sample/dom/scrollintoview/)
 
-Para aliñar o `JavaScript`elemento da lista na parte inferior da vista, pasa `false`o valor ao `scrollIntoView()`método:
+Para aliñar o elemento `JavaScript` da lista na parte inferior da vista, pasa o valor `false` ao método `scrollIntoView()`:
 
-```
+```js
 let btn = document.querySelector('.btn');
 let el = document.querySelector('.special');
 
@@ -1524,24 +1516,24 @@ btn.addEventListener('click', function() {
 });
 ```
 
-Neste tutorial, aprendeu a usar o `scrollIntoView()`método JavaScript para desprazar un elemento na ventana gráfica.
+nesta sección, aprendeu a usar o método `scrollIntoView()` para desprazar un elemento na ventana gráfica.
 
 # Eventos de enfoque de JavaScript
 
-**Resumo** : neste tutorial, aprenderás sobre os eventos de foco de JavaScript que fan un seguimento dos elementos nos que se centran os usuarios.
+**Resumo**: nesta sección, aprenderás sobre os eventos de foco de JavaScript que fan un seguimento dos elementos nos que se centran os usuarios.
 
 ## Introdución aos eventos de foco de JavaScript
 
-Os `focus`eventos desenvólvense cando un elemento recibe ou perde o foco. Estes son os dous eventos principais:
+Os eventos `focus` desenvólvense cando un elemento recibe ou perde o foco. Estes son os dous eventos principais:
 
-- `focus`dispara cando un elemento recibiu foco.
-- `blur`dispara cando un elemento perdeu o foco.
+- `focus` dispara cando un elemento recibiu foco.
+- `blur` dispara cando un elemento perdeu o foco.
 
-Os `focusin`e `focusout`disparan ao mesmo tempo que `focus`e `blur`, con todo, burbullan mentres que o `focus`e `blur`non.
+Os `focusin`e `focusout`disparan ao mesmo tempo que `focus` e `blur`, con todo, burbullan mentres que `focus` e `blur`non.
 
 Os seguintes elementos son enfocables:
 
-- A **xanela** gaña foco cando a avanzas usando `Alt+Tab`ou facendo clic nela e perde o foco cando a envias de volta.
+- A **xanela** gaña foco cando a avanzas usando `Alt+Tab` ou facendo clic nela e perde o foco cando a envias de volta.
 - **Ligazóns** cando usas un rato ou un teclado.
 - **Campos de formulario** como texto de entrada cando usa un teclado ou un rato.
 - Elementos con **tabindex** , tamén cando se usa un teclado ou un rato.
@@ -1550,7 +1542,7 @@ Os seguintes elementos son enfocables:
 
 O seguinte exemplo mostra como xestionar os eventos `focus`e `blur`. Cando moves o foco ao `password`campo, o fondo cambia a `yellow`. Se moves o rato ao `username`campo, o fondo cambia a `white`.
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -1576,52 +1568,52 @@ O seguinte exemplo mostra como xestionar os eventos `focus`e `blur`. Cando moves
         });
     </script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 ## Resumo
 
-- Use o `focus`evento para xestionar o estado do elemento cando ten ou perde o foco.
+- Use o evento `focus` para xestionar o estado do elemento cando ten ou perde o foco.
 
 # Evento de cambio hash de JavaScript
 
-**Resumo** : neste tutorial aprenderás sobre o `hashchange`evento JavaScript e como manexalo de forma eficaz.
+**Resumo**: nesta sección aprenderás sobre o evento `hashchange` e como manexalo de forma eficaz.
 
-## Introdución ao `hashchange`evento JavaScript
+## Introdución ao evento `hashchange`
 
-O hash do URL é todo o que segue o signo de libra ( `#`) no URL. Por exemplo, supoña que tes o seguinte URL:
+O hash do URL é todo o que segue o signo de libra (`#`) na URL. Por exemplo, supoña que tes o seguinte URL:
 
-```
+```html
 https://www.javascripttutorial.net/javascript-dom/javascript-hashchange/#header
 ```
 
 O URL hash é `header`. Se o hash do URL cambia a `footer`, así:
 
-```
+```html
 https://www.javascripttutorial.net/javascript-dom/javascript-hashchange/#footer
 ```
 
-O `hashchange`evento desenvólvese cando o hash do URL cambia dun a outro. Neste exemplo, cambia de `#header`a `#footer`.
+O evento `hashchange` desenvólvese cando o hash do URL cambia dun a outro. Neste exemplo, cambia de `#header` a `#footer`.
 
-Para anexar un detector de eventos ao `hashchange`evento, chama ao `addEventListener()`método no `window`obxecto:
+Para anexar un detector de eventos ao evento `hashchange`, chama ao método `addEventListener()` no obxecto `window`:
 
-```
+```js
 window.addEventListener('hashchange',() =>{
     console.log('The URL has has changed');
 });
 ```
 
-Para obter o hash do URL actual, accede á propiedade hash do `location`obxecto:
+Para obter o hash da URL actual, accede á propiedade hash do obxecto `location`:
 
-```
+```js
 window.addEventListener('hashchange',() => {
     console.log(`The current URL hash is ${location.hash}`);
 });
 ```
 
-Ademais, pode xestionar o `hashchange`evento asignando un detector de eventos á `onhashchange`propiedade do `window`obxecto:
+Ademais, pode xestionar o evento `hashchange` asignando un detector de eventos á propiedade `onhashchange` do obxecto `window`:
 
-```
+```js
 window.onhashchange = () => {
     // handle hashchange event here
 };
@@ -1630,27 +1622,27 @@ window.onhashchange = () => {
 ## Resumo
 
 - O `hashchange`evento desenvólvese cando o hash do URL cambiou.
-- Para rexistrar un detector de eventos, chama ao `addEventListener()`método ou asigna un detector de eventos á `onhashchange`propiedade do `window`obxecto.
+- Para rexistrar un detector de eventos, chama ao método `addEventListener()` ou asigna un detector de eventos á propiedade `onhashchange` do obxecto `window`.
 
 # Delegación de eventos JavaScript
 
-**Resumo** : neste tutorial, aprenderá a usar a delegación de eventos JavaScript que engade un único controlador de eventos ao elemento principal en lugar de ter que rexistrar varios controladores de eventos aos elementos fillos.
+**Resumo**: nesta sección, aprenderá a usar a delegación de eventos JavaScript que engade un único controlador de eventos ao elemento principal en lugar de ter que rexistrar varios controladores de eventos aos elementos fillos.
 
 ## Introdución á delegación de eventos de JavaScript
 
 Supoña que tes o seguinte menú:
 
-```
+```html
 <ul id="menu">
     <li><a id="home">home</a></li>
     <li><a id="dashboard">Dashboard</a></li>
     <li><a id="report">report</a></li>
-</ul>Idioma do código:  HTML, XML  ( xml )
+</ul>
 ```
 
-Para xestionar o `click`evento de cada elemento do menú, pode engadir os `click`controladores de eventos correspondentes:
+Para xestionar o evento `click` de cada elemento do menú, pode engadir os controladores de eventos `click` correspondentes:
 
-```
+```js
 let home = document.querySelector('#home');
 home.addEventListener('home',(event) => {
     console.log('Home menu item was clicked');
@@ -1665,7 +1657,6 @@ let report = document.querySelector('#report');
 report.addEventListener('report',(event) => {
     console.log('Report menu item was clicked');
 });
-
 ```
 
 En JavaScript, se tes un gran número de [controladores de eventos](https://www.javascripttutorial.net/javascript-dom/handling-events-in-javascript/) nunha páxina, estes controladores de eventos afectarán directamente o rendemento polos seguintes motivos:
@@ -1675,9 +1666,9 @@ En JavaScript, se tes un gran número de [controladores de eventos](https://www.
 
 Para solucionar este problema, podes aproveitar o [evento burbulla](https://www.javascripttutorial.net/javascript-dom/javascript-events/) .
 
-En lugar de ter varios controladores de eventos, pode asignar un único controlador de eventos para xestionar todos os `click`eventos:
+En lugar de ter varios controladores de eventos, pode asignar un único controlador de eventos para xestionar todos os eventos `click`:
 
-```
+```js
 let menu = document.querySelector('#menu');
 
 menu.addEventListener('click', (event) => {
@@ -1699,9 +1690,9 @@ menu.addEventListener('click', (event) => {
 
 Cómo funciona.
 
-- Cando fai clic en calquera `<a>`elemento dentro do `<ul>`elemento co id `menu`, o `click`evento aparece no elemento pai que é o `<ul>`elemento. Polo tanto, en lugar de xestionar o `click`evento do `<a>`elemento individual, pode capturar o `click`evento no elemento pai.
-- No `click`detector de eventos, pode acceder á `target`propiedade que fai referencia ao elemento que envía o evento. Para obter o `id`elemento que realmente desencadea o evento, usa a `target.id`propiedade.
-- Unha vez que teña o `id`elemento que desencadea o `click`evento, pode ter un código que xestione o evento de forma correspondente.
+- Cando fai clic en calquera elemento `<a>` dentro do elemento `<ul>` co id `menu`, o evento `click` aparece no elemento pai que é o elemento `<ul>`. Polo tanto, en lugar de xestionar o evento `click` do elemento individual `<a>`, pode capturar o evento `click` no elemento pai.
+- No detector de eventos `click`, pode acceder á propiedade `target` que fai referencia ao elemento que envía o evento. Para obter o elemento `id` que realmente desencadea o evento, usa a propiedade `target.id`.
+- Unha vez que teña o elemento `id` que desencadea o evento `click`, pode ter un código que xestione o evento de forma correspondente.
 
 A forma en que tratamos o problema dos controladores de demasiados eventos chámase delegación de eventos.
 
@@ -1709,11 +1700,11 @@ A delegación de eventos refírese á técnica de aproveitar o burbullamento de 
 
 ## Beneficios da delegación de eventos de JavaScript
 
-Cando sexa posible, pode ter un único controlador de eventos no `document`que xestionará todos os eventos dun tipo particular. Ao facelo, obtén os seguintes beneficios:
+Cando sexa posible, pode ter un único controlador de eventos no `document` que xestionará todos os eventos dun tipo particular. Ao facelo, obtén os seguintes beneficios:
 
 - Menos uso de memoria, mellor rendemento.
 - Menos tempo necesario para configurar os controladores de eventos na páxina.
-- O `document`obxecto está dispoñible inmediatamente. Mentres o elemento estea representado, pode comezar a funcionar correctamente sen demora. Non necesitas esperar aos eventos `DOMContentLoaded`ou `load`.
+- O obxecto `document` está dispoñible inmediatamente. Mentres o elemento estea representado, pode comezar a funcionar correctamente sen demora. Non necesitas esperar aos eventos `DOMContentLoaded` ou `load`.
 
 ## Resumo
 
@@ -1722,24 +1713,24 @@ Cando sexa posible, pode ter un único controlador de eventos no `document`que x
 
 # Evento de envío de JavaScript
 
-**Resumo** : neste tutorial, aprenderás a crear e enviar eventos mediante programación usando `Event`o constructor e `dispatchEvent()`o método.
+**Resumo**: nesta sección, aprenderás a crear e enviar eventos mediante programación usando `Event` o constructor e o método `dispatchEvent()`.
 
-Normalmente, os eventos xéranse mediante accións do usuario, como [clics do rato](https://www.javascripttutorial.net/javascript-dom/javascript-mouse-events/) e [pulsacións de teclas](https://www.javascripttutorial.net/javascript-dom/javascript-keyboard-events/) . Ademais, pódense xerar eventos a partir do código.
+Normalmente, os eventos xéranse mediante accións do usuario, como [clics do rato](https://www.javascripttutorial.net/javascript-dom/javascript-mouse-events/) e [pulsacións de teclas](https://www.javascripttutorial.net/javascript-dom/javascript-keyboard-events/). Ademais, pódense xerar eventos a partir do código.
 
 Para xerar un evento mediante programación, siga estes pasos:
 
-- Primeiro, crea un novo `Event`obxecto usando `Event`o constructor.
-- A continuación, desencadea o evento usando `element.dispatchEvent()`o método.
+- Primeiro, crea un novo obxecto `Event` usando o constructor `Event`.
+- A continuación, desencadea o evento usando o método `element.dispatchEvent()`.
 
 ## Construtor de eventos
 
-Para crear un novo evento, usa o `Event`construtor deste xeito:
+Para crear un novo evento, usa o construtor `Event` deste xeito:
 
-```
+```js
 let event = new Event(type, [,options]);
 ```
 
-O `Event`construtor acepta dous parámetros:
+O construtor `Event` acepta dous parámetros:
 
 ### tipo
 
@@ -1752,32 +1743,32 @@ O `Event`construtor acepta dous parámetros:
 - `bubbles`: é un valor booleano que determina se o evento burbulla ou non. Se é así `true`, o evento burbulla e viceversa.
 - `cancelable`: tamén é un valor booleano que especifica se o evento se pode cancelar cando é `true`.
 
-Por defecto, o `options`obxecto é:
+Por defecto, o obxecto `options` é:
 
-```
-{ bubbles: false, cancelable: false}Idioma do código:  CSS  ( css )
+```json
+{ bubbles: false, cancelable: false}
 ```
 
-Por exemplo, o seguinte crea un novo `click`evento co `options`obxecto predeterminado:
+Por exemplo, o seguinte crea un novo evento `click` co obxecto `options` predeterminado:
 
-```
+```js
 let clickEvent = new Event('click');
 ```
 
 ## método dispatchEvent
 
-Despois de crear un evento, pode disparalo nun elemento de destino usando o `dispatchEvent()`método como este:
+Despois de crear un evento, pode disparalo nun elemento de destino usando o método `dispatchEvent()` como este:
 
-```
-element.dispatchEvent(event);Idioma do código:  CSS  ( css )
+```js
+element.dispatchEvent(event);
 ```
 
-Por exemplo, o seguinte código mostra como crear o `click`evento e activalo nun botón:
+Por exemplo, o seguinte código mostra como crear o evento `click` e activalo nun botón:
 
 HTML:
 
-```
-<button class="btn">Test</button>Idioma do código:  HTML, XML  ( xml )
+```html
+<button class="btn">Test</button>
 ```
 
 JavaScript:
@@ -1796,7 +1787,7 @@ btn.dispatchEvent(clickEvent);
 
 [Fai clic nesta ligazón para ver a demostración](https://www.javascripttutorial.net/sample/dom/dispatchevent/) .
 
-Neste exemplo, o controlador de eventos execútase coma se o `click`evento fose xerado por accións do usuario.
+Neste exemplo, o controlador de eventos execútase coma se o evento `click` fose xerado por accións do usuario.
 
 Se o evento provén das accións do usuario, a `event.isTrusted`propiedade establécese en `true`. No caso de que o evento sexa xerado por código, `event.isTrusted`é `false`. Polo tanto, pode examinar o valor da `event.isTrusted`propiedade para comprobar a "autenticidade" do evento.
 
@@ -1824,7 +1815,7 @@ A seguinte ligazón mostra a lista completa de propiedades do [MouseEvent](https
 
 # Eventos personalizados de JavaScript
 
-**Resumo** : neste tutorial, aprenderá sobre os eventos personalizados de JavaScript, como crear un evento personalizado e envialo.
+**Resumo**: nesta sección, aprenderá sobre os eventos personalizados de JavaScript, como crear un evento personalizado e envialo.
 
 ## Introdución aos eventos personalizados de JavaScript
 
@@ -1881,7 +1872,7 @@ O seguinte chama a `highlight()`función e engade un bordo a un `<div>`elemento:
         highlight(note, addBorder);
     </script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 Para facer o código máis flexible, podes usar o evento personalizado.
@@ -1910,7 +1901,7 @@ let event = new CustomEvent('highlight', {
 
 ### Envío de eventos personalizados de JavaScript
 
-Despois de crear un evento personalizado, debes anexar o evento a un elemento DOM e activalo mediante o `dispatchEvent()`método:
+Despois de crear un evento personalizado, debes anexar o evento a un elemento DOM e activalo mediante o método`dispatchEvent()`:
 
 ```
 domElement.dispatchEvent(event);
@@ -1965,15 +1956,15 @@ Xúntao todo:
         highlight(div);
     </script>
 </body>
-</html>Idioma do código:  HTML, XML  ( xml )
+</html>
 ```
 
 **Como funciona:**
 
-- En primeiro lugar, declara a `highlight()`función que resalta un elemento e desencadea o `highlight`evento.
-- En segundo lugar, seleccione o `<div>`elemento mediante o `querySelector()`método.
-- En terceiro lugar, escoita o `highlight`evento. Dentro do oínte de eventos, chama á `addBorder()`función e mostra a `detail`propiedade na Consola.
-- Finalmente, chame á `highlight()`función que desencadeará o `highlight`evento.
+- En primeiro lugar, declara a función `highlight()` que resalta un elemento e desencadea o evento `highlight`.
+- En segundo lugar, seleccione o elemento `<div>` mediante o método `querySelector()`.
+- En terceiro lugar, escoita o evento `highlight`. Dentro do oínte de eventos, chama á función `addBorder()` e mostra a propiedade `detail` na Consola.
+- Finalmente, chame á función `highlight()` que desencadeará o evento `highlight`.
 
 ## Por que usar eventos personalizados
 
@@ -1981,4 +1972,4 @@ Os eventos personalizados permítenche desacoplar o código que queres executar 
 
 ## Resumo
 
-- Use o `CustomEvent()`constructor para crear un evento personalizado e `dispatchEvent()`activalo.
+- Use o constructor `CustomEvent()` para crear un evento personalizado e activalo `dispatchEvent()`.

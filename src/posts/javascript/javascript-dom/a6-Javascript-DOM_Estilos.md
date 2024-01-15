@@ -111,7 +111,7 @@ Para anular completamente o estilo en liña existente, establecer a propiedade  
 element.style.cssText = 'color:red;background-color:yellow';
 ```
 
-Ou podes usar o `setAttribute()`método:
+Ou podes usar o método `setAttribute()`m:
 
 ```js
 element.setAttribute('style','color:red;background-color:yellow');

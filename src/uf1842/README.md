@@ -9,10 +9,9 @@ category:
   - Unidades
 ---
 
-
 # UF1842
 
-## Desenvolvemento e reutilización de compoñentes software e  multimedia mediante linguaxes de guión
+## Desenvolvemento e reutilización de compoñentes software e multimedia mediante linguaxes de guión
 
 <!-- ### 90h 19/01/23-13/02/23 -->
 
@@ -36,12 +35,10 @@ category:
 3. [Seguridade en navegadores](https://developer.mozilla.org/en-US/docs/Web/Security).[Test de navegadores seguros: ¿qué navegador es el más seguro?](https://www.ionos.es/digitalguide/online-marketing/vender-en-internet/comparativa-de-navegadores-seguros/)
 4. [Integración de aplicacións en navegadores](https://www.astera.com/es/tipo/blog/integraci%C3%B3n-de-aplicaciones/). [Adaptadores (plugins)](https://www.ionos.es/digitalguide/paginas-web/desarrollo-web/como-instalar-add-ons/).
 
-    - [Adaptadores comúns en diferentes navegadores](https://protege.la/5-complementos-plugins-basicos-para-tu-navegador/)
-    - [Configuración de tipos de arquivo e adaptadores](https://dinahosting.com/blog/que-es-un-plugin-y-para-que-sirve/).
+   - [Adaptadores comúns en diferentes navegadores](https://protege.la/5-complementos-plugins-basicos-para-tu-navegador/)
+   - [Configuración de tipos de arquivo e adaptadores](https://dinahosting.com/blog/que-es-un-plugin-y-para-que-sirve/).
 
 5. [Conformidade a estándares](https://www.inesem.es/revistadigital/informatica-y-tics/estandares-web/).
-
-
 
 ### UD 3. [CREACIÓN](https://learn.microsoft.com/en-us/training/modules/web-development-101-introduction-programming/2-what-is-programming) DE [CONTIDO WEB DINÁMICO](https://www.wearecontent.com/blog/marketing-de-contenidos/contenidos-dinamicos)
 
@@ -59,7 +56,6 @@ category:
    - [Comparativa de linguaxes de guión](https://kinsta.com/es/blog/lenguajes-script/) + [2](https://kinsta.com/es/blog/php-vs-javascript/). [Criterios para a selección dunha linguaxe de guión](https://blog.educacionit.com/2018/04/10/4-criterios-para-elegir-tu-primer-lenguaje-de-programacion/).
    - [Máquinas virtuais en navegadores](https://cloud.google.com/compute?hl=es). Miniaplicacións (applets).
    - Outras linguaxes para o desenvolvemento de [aplicacións web enriquecidas (RIA)](https://es.wikipedia.org/wiki/Rich_Internet_application). + [b](https://neilpatel.com/es/blog/web-progresivas/)
-
 
 ### UD 4. [LINGUAXES DE GUIÓN DE USO XERAL](https://kinsta.com/es/blog/lenguajes-script/)
 
@@ -91,7 +87,7 @@ category:
    - [Dicionarios](https://rodrwan.medium.com/dictionaries-en-js-e2abd196f720) de datos. + [2](https://blog.koalite.com/2017/01/un-diccionario-persistente-en-4-lineas-de-javascript/)
 7. [Obxectos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_objects) + [2](https://www.freecodecamp.org/news/object-oriented-programming-javascript/).
    - [Creación de obxectos: métodos e estruturas de datos](https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Basics) + [1](https://www.freecodecamp.org/espanol/news/javascript-crear-objecto-como-definir-objetos-en-js/)
-   - [Bibliotecas de obxectos](https://learn.microsoft.com/es-es/previous-versions/office/sharepoint-visio/jj193050(v=office.15))
+   - [Bibliotecas de obxectos](<https://learn.microsoft.com/es-es/previous-versions/office/sharepoint-visio/jj193050(v=office.15)>)
 8. [O modelo de documento web](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
    - [Estrutura de documento](https://es.javascript.info/dom-nodes). + [2](https://lenguajejs.com/webcomponents/componentes/estructura-componente/)
    - [Navegación polas propiedades dun documento](https://es.javascript.info/basic-dom-node-properties).
@@ -115,13 +111,13 @@ category:
     - [Manexo de canais de subscrición (RSS).](https://desarrolloweb.com/articulos/lector-rss-con-javascript.html)
     - [Descrición das técnicas de acceso asíncrono (AJAX)](https://developer.mozilla.org/es/docs/Learn/JavaScript/Client-side_web_APIs/Fetching_data). + [2](https://www.hostinger.es/tutoriales/que-es-ajax)
     - [Uso de linguaxes de guión en dispositivos móbiles.](https://www.techmagic.co/blog/why-use-javascript-for-mobile-apps/)
-12. Entornas integradas (*[frameworks](https://hackr.io/blog/best-javascript-frameworks)*) para o [desenvolvemento con linguaxes de guión](https://www.lambdatest.com/blog/best-javascript-frameworks/).
+12. Entornas integradas (_[frameworks](https://hackr.io/blog/best-javascript-frameworks)_) para o [desenvolvemento con linguaxes de guión](https://www.lambdatest.com/blog/best-javascript-frameworks/).
     - Características das entornas de uso común. [Comparativa](https://www.wikiwand.com/en/Comparison_of_JavaScript-based_web_frameworks).
     - [Editores avanzados](https://www.freecodecamp.org/espanol/news/como-elegir-el-mejor-editor-de-javascript/).
     - Funcionalidades de [validación e depuración](https://learn.microsoft.com/es-es/visualstudio/javascript/debug-nodejs?view=vs-2022) de código. + [2](https://keepcoding.io/blog/pruebas-y-depuracion-de-juegos-en-js/) + [3](https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML)
     - [Técnicas para documentación do código.](https://www.linkedin.com/pulse/descubrir-maneras-eficientes-de-documentar-c%C3%B3digo-con-erik-alvarez-fcmac/?originalSubdomain=es) + [2](https://www.gradiweb.com/es/marketing-digital/documentacion-de-codigo-para-javascript-con-jsdoc/)
     - [Utilidades adicionais](https://www.webreactiva.com/blog/66-librerias-javascript) para a realización de [contidos dinámicos](https://appmaster.io/es/blog/javascript-contenido-web-dinamico).
-13. [Extensións  útiles de navegadores](https://profile.es/blog/extensiones-chrome-front-end/). + [2](https://www.dobuss.es/mejores-extensiones-chrome-para-desarrolladores-web/)
+13. [Extensións útiles de navegadores](https://profile.es/blog/extensiones-chrome-front-end/). + [2](https://www.dobuss.es/mejores-extensiones-chrome-para-desarrolladores-web/)
     - [Entornas de desenvolvemento](https://es.bitdegree.org/tutoriales/mejor-ide-para-javascript/) específicos: [desenvolvemento sobre dispositivos móbiles](https://geekflare.com/es/best-ide-for-mobile-app-development/) + [2](https://www.arsys.es/blog/extensiones-vscode)
 
 ### UD 5. [CONTIDOS MULTIMEDIA ](https://www.crehana.com/blog/transformacion-digital/contenidos-multimedia/) + [2](https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding)
@@ -169,15 +165,17 @@ category:
 ---
 
 ### Libros:
+
 - [Eloquent JavaScript](https://eloquentjavascript.net/)
 - [JavaScript Moderno](https://es.javascript.info/) :star:
-- Recursos:
+- [Lenguaje JS](https://lenguajejs.com/)
+
+- **Recursos:**
   - [graphics-multimedia-and-web-design](https://www.similarweb.com/es/top-websites/computers-electronics-and-technology/graphics-multimedia-and-web-design/)
 
+<!-- DATOS IDENTIFICATIVOS DA UNIDADE FORMATIVA
 
-<! -- DATOS IDENTIFICATIVOS DA UNIDADE FORMATIVA
-
-##### 
+#####
 
 ##### Familia profesional INFORMÁTICA E COMUNICACIÓNS
 
@@ -188,7 +186,7 @@ Certificado de profesionalidad DESARROLLO DE APLICACIÓNS CON TECNOLOXÍAS WEB. 
 
 ### UF1842: DESENVOLVEMENTO E REUTILIZACIÓN DE COMPOÑENTE SOFTWARE E MULTIMEDIA MEDIANTE LINGUAXES DE GUIÓN
 
-DURACIÓN 90h 
+DURACIÓN 90h
 
 Resto de unidades formativas que completan o módulo:
 
@@ -270,5 +268,5 @@ Despois de realizar distintos exemplos de paxina web o alumnado debe poder reali
   - Recoñecer as linguaxes de marcado e empregalas para estruturar e difundir contidos web.
 
   - Crear elementos interactivos, responsivos, accesibles,
-  
+
     -->

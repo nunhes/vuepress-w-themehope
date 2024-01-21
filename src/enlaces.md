@@ -101,13 +101,17 @@ icon: info
 
 ### Cursos en liña
 
-- [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) :star:ç
-
-- [W3Schools](https://www.w3schools.com/) :star:
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/) :star:
 
 - [TheOdinProject](https://www.theodinproject.com/paths/full-stack-javascript)
 
 - [JavaScript.Info](https://javascript.info/) :star:
+
+- [Desarrollo Web Moderno](https://fullstackopen.com/es/) :star:
+
+- [CS50](https://cs50.harvard.edu/web/2020/) :star:
+
+- [W3Schools](https://www.w3schools.com/) :star:
 
 ---
 

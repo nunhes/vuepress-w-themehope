@@ -2,7 +2,7 @@
 
 # Titorías de PHP: recursos, sitios web, cursos
 
-​
+
 
 Se estás interesado en aprender esta linguaxe, a busca en liña ofrece moitos resultados de titorías de PHP. Mantén a calma e non te desanimes. As habilidades de PHP, aínda que de natureza altamente técnicas, pódense adquirir cos recursos axeitados. E por recursos, entendemos a gran cantidade de información da web. Para utilizar plenamente esta información dispoñible, é mellor utilizar unha combinación destas referencias para aprender PHP de forma máis eficaz.
 
@@ -329,7 +329,7 @@ Temas clave:
 - Servizos web RESTful con PHP e Laravel
 - PHP de alto rendemento
 
-## 25. [Medios de Travesía](https://www.traversymedia.com/)
+## 25. [Traversymedia](https://www.traversymedia.com/)
 
 ![img](https://stackify.com/wp-content/uploads/2018/08/word-image-81.png)
 O autor deste sitio web é Brad Traversy, especializado en ensinar desenvolvemento e programación web. Traversy Media tamén é unha das principais canles de titoriais de programación e desenvolvemento web en Youtube. Brad ofrece unha canle perfectamente afinada centrada nas tendencias  tecnolóxicas fundamentais, pero facilitando a súa comprensión. Brad é moi apaixonado por ensinar diferentes tecnoloxías como PHP a través da súa canle de YouTube. A súa lista de reprodución completa de PHP Front to Back é imprescindible para os principiantes.
@@ -361,4 +361,4 @@ A linguaxe de programación PHP é un tema moi amplo. Aquí tes recursos adicion
 
 ---
 
-ref: Iryne Somera, 29 de agosto de 2018[Desenvolvemento da carreira de programador](https://stackify-com.translate.goog/career/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es) , [Consellos, trucos e recursos para programadores](https://stackify-com.translate.goog/developers/?_x_tr_sl=auto&_x_tr_tl=gl&_x_tr_hl=es)
+*ref:* Iryne Somera, 29 de agosto de 2018 [Desenvolvemento da carreira de programador](https://stackify.com/career/) , [Consellos, trucos e recursos para programadores](https://stackify.com/developers/)

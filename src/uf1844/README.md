@@ -13,7 +13,7 @@ category:
 
 ## 1. [O proceso de desenvolvemento de software](https://es.wikipedia.org/wiki/Systems_Development_Life_Cycle) [2](https://www.tutorialspoint.com/business_analysis/business_analysis_software_development_life_cycle.htm) [3](https://es.wikipedia.org/wiki/Ciclo_de_vida_del_lanzamiento_de_software)
 
-1. [Modelos do ciclo de vida do software](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm). [2](https://asana.com/es/resources/project-management-methodologies) [3](https://aws.amazon.com/es/what-is/sdlc/)
+1. [Modelos do ciclo de vida do software](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm). [2](https://asana.com/es/resources/project-management-methodologies) [3](https://aws.amazon.com/es/what-is/sdlc/) [4](https://informatecdigital.com/desarrollo/las-etapas-del-desarrollo-de-software-una-guia-completa/)
 2. [Análisis e especificación de requisitos](https://www.tutorialspoint.com/business_analysis/business_analysis_tools_techniques.htm).
 3. [Deseño](https://es.wikipedia.org/wiki/Dise%C3%B1o_de_software).[2](https://profile.es/blog/desarrollo-aplicaciones-web/)
 4. [Implementación](https://www.captio.net/blog/errores-comunes-implementacion-software) [2](https://www.getapp.es/blog/2373/tips-plan-de-implantacion-de-software). [Conceptos xerais de desenvolvemento de software](https://www.ibm.com/es-es/topics/software-development).

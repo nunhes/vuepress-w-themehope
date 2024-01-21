@@ -29,7 +29,7 @@ Se define unha clase comezando coa palabra clave ``class`` seguida do nome que q
 
 ```php
 <?php
- class person {
+ class persoa {
    // código da clase
  }
 ?>
@@ -47,13 +47,13 @@ Cando se crea unha variable dentro dunha clase, chámase "propiedade".
 
 ```php
 <?php
-   class person {
-      var $name;
+   class persoa {
+    var $nome;
    }
 ?>
 ```
 
-**Nota:** os datos/variables dentro dunha clase (por exemplo: *var $name;* ) denomínanse "propiedades".
+**Nota:** os datos/variables dentro dunha clase (por exemplo: *var $nome;* ) denomínanse "propiedades".
 
 ## Paso 4
 
@@ -65,13 +65,13 @@ Os métodos dunha clase úsanse para manipular os seus propios datos/propiedades
 
 ```php
 <?php
- class person {
-  var $name;
-  function set_name($new_name) {
-   $this->name = $new_name;
+ class persoa {
+  var $nome;
+  function set_nome($new_nome) {
+   $this->nome = $new_nome;
   }
-  function get_name() {
-   return $this->name;
+  function get_nome() {
+   return $this->nome;
   }
  }
 ?>
@@ -83,7 +83,7 @@ Os métodos dunha clase úsanse para manipular os seus propios datos/propiedades
 
 **Funcións de obtención e configuración**
 
-Creamos dúas funcións/métodos interesantes: get_name() e set_name().
+Creamos dúas funcións/métodos interesantes: get_nome() e set_nome().
 
 Estes métodos seguen unha convención de POO común que ves en moitos idiomas  (incluídos Java e Ruby), onde creas métodos para "definir" e "obter"  propiedades nunha clase.
 
@@ -91,14 +91,14 @@ Outra convención é que os nomes do getter e do setter deben coincidir cos nome
 
 ```php
 <?php
- class person {
-  var $name;
-  function set_name($new_name) {
-   $this->name = $new_name;
+ class persoa {
+  var $nome;
+  function set_nome($new_nome) {
+   $this->nome = $new_nome;
    }
 
-  function get_name() {
-   return $this->name;
+  function get_nome() {
+   return $this->nome;
   }
  }
 ?>
@@ -106,7 +106,7 @@ Outra convención é que os nomes do getter e do setter deben coincidir cos nome
 
 **Nota:** Observar que os nomes do *getter* e do *setter* coinciden co nome da propiedade asociada.
 
-Deste xeito, cando outros programadores de PHP queiran usar os teus obxectos, saberán que se tes un método/función chamado '``set_name()``', haberá unha  propiedade/variable chamada '``name``'.
+Deste xeito, cando outros programadores de PHP queiran usar os teus obxectos, saberán que se tes un método/función chamado '``set_nome()``', haberá unha  propiedade/variable chamada '``nome``'.
 
 ## Paso 6
 
@@ -115,18 +115,18 @@ Deste xeito, cando outros programadores de PHP queiran usar os teus obxectos, sa
 Probablemente notaches esta liña de código:
 
 ```php
-$this->name = $new_name;
+$this->nome = $new_nome;
 ```
 
-``$this`` é unha variable integrada (en todos os obxectos) que apunta ao obxecto actual. Ou noutras palabras, ``$this`` é unha variable especial de autorreferencia. Se usa ``$this`` para acceder ás propiedades e chamar aos métodos da clase actual.
+``$this`` é unha variable integrada (en todos os obxectos) que apunta ao obxecto actual. Ou noutras palabras, ``$this`` é unha variable especial de auto referencia. Se usa ``$this`` para acceder ás propiedades e chamar aos métodos da clase actual.
 
 ```php
-function get_name() {
- return $this->name;
+function get_nome() {
+ return $this->nome;
 }
 ```
 
-**Nota:** Isto pode ser un pouco confuso para algúns... pero só é porque estás a ver - si cadra por primeira vez-, unha desas capacidades OO integradas (no propio PHP) que fai cousas automaticamente por nós.
+**Nota:** Isto pode ser un pouco confuso para algúns... pero só é porque o estás a ver - si cadra por primeira vez-, unha desas capacidades OO integradas (no propio PHP) que fai cousas automaticamente por nós.
 
 Polo momento, só pensa en ``$this`` como unha palabra clave especial de PHP OO. Cando PHP atopa ``$this``, o motor PHP xa sabe que facer… Esperemos que pronto, ti tamén! :smiley:
 
@@ -158,11 +158,12 @@ Noutras palabras, a instanciación é o proceso de creación dunha **instancia**
 <?php include("class_lib.php"); ?>
 
 <?php
- $stefan = new person();
+    // instanciación
+ 	$xian = new persoa();
 ?>
 ```
 
-**Nota:**  a variable ``$stefan`` convértese nun identificador(handle) ou referencia para o noso obxecto ``person`` recentemente creado. Chamámoslle 'handle'  a ``$stefan`` , porque ímolo usar para controlar e usar o obxecto ``person``.
+**Nota:**  a variable ``$xian`` convértese nun identificador(handle) ou referencia para o noso obxecto ``persoa`` recentemente creado. Chamámoslle 'handle'  a ``$xian`` , porque ímolo usar para controlar e usar o obxecto ``persoa``.
 
 Se executas o código PHP agora, non verás nada nas túas páxinas. A razón disto é porque non lle dixemos a PHP que faga nada co obxecto que acabamos de crear.
 
@@ -172,24 +173,22 @@ Se executas o código PHP agora, non verás nada nas túas páxinas. A razón di
 
 Para crear un obxecto fóra dunha clase, cómpre usar a palabra clave "``new``".
 
-Ao crear/instanciar unha clase, pode engadir corchetes opcionalmente ao nome da clase, como se ve no seguinte exemplo. E, para que quede claro, podes ver como no código a continuación, se poden crear varios obxectos da mesma clase.
+Ao empregar/*instanciar* unha clase, podes engadir corchetes opcionalmente ao nome da clase, como se ve no seguinte exemplo. E, para que quede claro, podes ver como no código a continuación, se poden crear varios obxectos da mesma clase.
 
 … Desde o punto de vista do motor de PHP, cada obxecto é a súa propia entidade. Ten iso sentido?
 
 ```php
 <?php include("class_lib.php"); ?>
 <?php
- $stefan = new person();
- $jimmy = new person;
+ $xian = new persoa();
+ $maria = new persoa;
 ?>
 ```
 
-**Nota:**  ao crear un obxecto, asegúrate de non entrecomillar o nome da clase.
-
-Por exemplo:
+**Nota:**  ao crear un obxecto, asegúrate de non entrecomiñar o nome da clase. Por exemplo:
 
 ```php
-$stefan = new 'person';
+$xian = new 'persoa';
 ```
 
 ... dará erro.
@@ -198,17 +197,17 @@ $stefan = new 'person';
 
 **Establecer as propiedades dun obxecto**
 
-Agora que creamos/instanciamos os nosos dous obxectos separados "``person``",  podemos establecer as súas propiedades usando os métodos (os configuradores) que creamos.
+Agora que creamos/instanciamos os nosos dous obxectos separados "``persoa``",  podemos establecer as súas propiedades usando os métodos (ou configuradores) que creamos.
 
-Ter en conta que aínda que os dous obxectos ``person`` (``$stefan`` e ``$jimmy``)  están baseados na mesma clase "``person``", no que a php se refire, son obxectos totalmente diferentes.
+Ter en conta que aínda que os dous obxectos ``persoa`` (``$xian`` e ``$maria``)  están baseados na mesma clase "``persoa``", no que a php se refire, son obxectos totalmente diferentes.
 
 ```php
 <?php include("class_lib.php"); ?>
 <?php
- $stefan = new person();
- $jimmy = new person;
- $stefan->set_name("Stefan Mischook");
- $jimmy->set_name("Nick Waddles");
+ $xian = new persoa();
+ $maria = new persoa;
+ $xian->set_nome("Xián Pelouro");
+ $maria->set_nome("María Moure");
 ?>
 ```
 
@@ -223,14 +222,14 @@ Ao acceder a métodos e propiedades dunha clase, usa o operador de frecha (``->`
 ```php
 <?php include("class_lib.php"); ?>
 <?php
- $stefan = new person();
- $jimmy = new person;
+ $xian = new persoa();
+ $maria = new persoa;
 
- $stefan->set_name("Stefan Mischook");
- $jimmy->set_name("Nick Waddles");
+ $xian->set_nome("Xián Pelouro");
+ $maria->set_nome("María Moure");
 
- echo "Stefan's full name: " . $stefan->get_name();
- echo "Nick's full name: " . $jimmy->get_name();
+ echo "Nome completo de Xián: " . $xian->get_nome();
+ echo "Nome completo de María: " . $maria->get_nome();
 ?>
 ```
 
@@ -241,7 +240,7 @@ Ao acceder a métodos e propiedades dunha clase, usa o operador de frecha (``->`
 Nun curto período de tempo, tes:
 
 - Deseño dunha clase PHP.
-- Xera/creou un par de obxectos baseados na túa clase.
+- Xerados/instanciados un par de obxectos baseados na túa clase.
 - Datos inseridos nos teus obxectos.
 - Datos recuperados dos teus obxectos.
 
@@ -255,25 +254,25 @@ Se aínda non o fixeches, agora é un bo momento para escribir o código e velo 
 
 Non tes que usar métodos para acceder ás propiedades dos obxectos; podes acceder a eles directamente usando o operador de frecha (``->``) e o nome da variable.
 
-Por exemplo: coa propiedade ``$name`` (no obxecto ``$stefan``) podes obter o seu valor así:
+Por exemplo: coa propiedade ``$nome`` (no obxecto ``$xian``) podes obter o seu valor así:
 
 ```php
-$name = $stefan->name;
+$nome = $xian->nome;
 ```
 
-Aínda que é factible, considérase unha mala práctica facelo porque pode provocar problemas no camiño. Deberías usar métodos getter no seu lugar, máis sobre iso máis tarde.
+Aínda que é factible, considérase unha mala práctica facelo porque pode provocar problemas no camiño. Deberías usar métodos *getter* no seu lugar; pero falaremos sobre iso máis tarde.
 
 ```php
 <?php include("class_lib.php"); ?>
 <?php
- $stefan = new person();
- $jimmy = new person;
+ $xian = new persoa();
+ $maria = new persoa;
 
- $stefan->set_name("Stefan Mischook");
- $jimmy->set_name("Nick Waddles");
+ $xian->set_nome("Xián Pelouro");
+ $maria->set_nome("María Moure");
 
- // directly accessing properties in a class is a no-no.
- echo "Stefan's full name: ".$stefan->name;
+ // o acceso directo as propiedades da clase, aínda que permitido, non é recomendable.
+ echo "Nome completo de Xián: ".$xian->nome;
 ?>
 ```
 
@@ -283,26 +282,25 @@ Aínda que é factible, considérase unha mala práctica facelo porque pode prov
 
 Todos os obxectos poden ter un método incorporado especial chamado "construtor". Os construtores permítenche inicializar as propiedades do teu obxecto  (**tradución:** darlle valores as túas propiedades) cando creas unha instancia dun obxecto.
 
-**Nota:** Se creas unha función de construción -  ``function __construct($nomedafuncion)`` , PHP chamará  automaticamente ao método/función__construct() cando cree un obxecto da súa clase.
+**Nota:** Se creas unha función de construción -  ``function __construct($nomedafuncion)`` , PHP chamará  automaticamente ao método/función __construct() cando cree un obxecto da súa clase.
 
 O método '``construct``' comeza con dous guións baixos (``__``) e a palabra '``construct``'.
 
 ```php
 <?php
- class person {
-  var $name;
-  function __construct($persons_name) {
-   $this->name = $persons_name;
+ class persoa {
+  var $nome;
+  function __construct($persoas_nome) {
+   $this->nome = $persoas_nome;
   }
 
-  function set_name($new_name) {
-     $this->name = $new_name;
+  function set_nome($new_nome) {
+     $this->nome = $new_nome;
   }
 
-  function get_name() {
-     return $this->name;
+  function get_nome() {
+     return $this->nome;
    }
-
  }
 ?>
 ```
@@ -318,23 +316,23 @@ Agora imos usar esta terminoloxía OO.
 
 **Crea un obxecto cun construtor**
 
-Agora que creamos un método construtor, podemos proporcionar un valor para a propiedade ``$name`` cando creamos os nosos obxectos persoa - `person`.
+Agora que creamos un método construtor, podemos proporcionar un valor para a propiedade ``$nome`` cando creamos os nosos obxectos persoa - `persoa`.
 
 Debemos "alimentar" o método construtor proporcionando unha lista de argumentos (como se fai cunha función) despois do nome da clase.
 
 **Por exemplo:**
 
 ```php
-$stefan = new person("Stefan Mischook");
+$xian = new persoa("Xián Pelouro");
 ```
 
-Isto afórranos de ter que chamar ao método set_name() reducindo a cantidade de código. Os construtores son comúns e úsanse a miúdo en PHP, Java, etc.
+Isto afórranos de ter que chamar ao método set_nome() reducindo a cantidade de código. Os construtores son comúns e úsanse a miúdo en PHP, Java, etc.
 
 ```php
 <?php include("class_lib.php"); ?>
 <?php
- $stefan = new person("Stefan Mischook");
- echo "Stefan's full name: ".$stefan->get_name();
+ $xian = new persoa("Xián Pelouro");
+ echo "Nome completo de Xián: ".$xian->get_nome();
 ?>
 ```
 
@@ -344,7 +342,7 @@ Este é só un pequeno exemplo de como os mecanismos integrados en PHP OO poden 
 
 **Restrinxir o acceso ás propiedades mediante "modificadores de acceso"**
 
-Un dos principios fundamentais da POO é a "encapsulación". A idea é que crees un código máis limpo e mellor, se restrinxes o acceso ás estruturas de datos (propiedades) dos teus obxectos.
+Un dos principios fundamentais da POO é a "**encapsulación**". A idea é que crees un código máis limpo e mellor, se restrinxes o acceso ás estruturas de datos (propiedades) dos teus obxectos.
 
 Limitas o acceso ás propiedades da clase usando algo chamado **‘access modifiers’**. Hai 3 modificadores de acceso:
 
@@ -356,22 +354,22 @@ Limitas o acceso ás propiedades da clase usando algo chamado **‘access modifi
 
 ```php
 <?php
- class person {
- var $name;
-  public $height;
-  protected $social_insurance;
-  private $pinn_number;
+ class persoa {
+ var $nome;
+  public $altura;
+  protected $nseguridade_social;
+  private $numero_pin;
 
-  function __construct($persons_name) {
-   $this->name = $persons_name;
+  function __construct($persoas_nome) {
+   $this->nome = $persoas_nome;
   }
 
-  function set_name($new_name) {
-   $this->name = $new_name;
+  function set_nome($new_nome) {
+   $this->nome = $new_nome;
   }
 
-  function get_name() {
-   return $this->name;
+  function get_nome() {
+   return $this->nome;
   }
 
  }
@@ -395,22 +393,22 @@ Para comprender este (probablemente) aspecto neboento da POO, proba o seguinte c
 ```php
 <?php include("class_lib.php"); ?>
 <?php
- $stefan = new person("Stefan Mischook");
- echo "Stefan's full name: " .  $stefan->get_name() ;
+ $xian = new persoa("Xián Pelouro");
+ echo "Nome completo de Xián : " .  $xian->get_nome() ;
 
  /*
- Since $pinn_number was declared private, this line of code
+ Since $numero_pin was declared private, this line of code
  will generate an error. Try it out!
  */
 
- echo "Tell me private stuff: ".$stefan->pinn_number;
+ echo "Falame de cousas privadas: ".$xian->numero_pin;
 ?>
 ```
 
 **Nota:** Se tentas acceder a unha propiedade/variable privada fóra da clase, obterás isto:
 
 ```php
-'Fatal error: Cannot access private property person::$pinn_number in ...'
+'Fatal error: Cannot access private property persoa::$numero_pin in ...'
 ```
 
 ## Paso 17
@@ -434,28 +432,28 @@ Dito isto, podemos (resumir e) dicir que existen moitas construcións OOP coa id
 
 ```php
 <?php
- class person {
-  var $name;
+ class persoa {
+  var $nome;
 
-  public $height;
-  protected $social_insurance;
-  private $pinn_number;
+  public $altura;
+  protected $nseguridade_social;
+  private $numero_pin;
 
-  function __construct($persons_name){
-     $this->name = $persons_name;
+  function __construct($persoas_nome){
+     $this->nome = $persoas_nome;
   }
 
-  private function get_pinn_number(){
+  private function get_numero_pin(){
    return
-   $this->pinn_number;
+   $this->numero_pin;
   }
  }
 ?>
 ```
 
-**Notas:** Dado que o método ``get_pinn_number()`` é 'privado', o único lugar onde podes usar este método é na mesma clase, normalmente noutro método. Se queres chamar/utilizar este método directamente nas túas páxinas PHP, terías que declaralo "público".
+**Notas:** Dado que o método ``get_numero_pin()`` é 'privado', o único lugar onde podes usar este método é na mesma clase, normalmente noutro método. Se queres chamar/utilizar este método directamente nas túas páxinas PHP, terías que declaralo "público".
 
-**Nota Nerd:** de novo, é importante (a medida que avanzamos) que probes o código por ti mesmo. Veralo diferente!
+**Nota nerd:** de novo, é importante (a medida que avanzamos) que probes o código por ti mesmo. Veralo diferente!
 
 ## Paso 18
 
@@ -480,10 +478,10 @@ Neste tipo de situacións, a herdanza pode facer que o teu código sexa máis li
 
 ```php
 // 'extends' é a palabra clave que permite inheritance, a herdanza
-class employee extends person
+class empregado extends persoa
 {
- function __construct($employee_name) {
-  $this->set_name($employee_name);
+ function __construct($empregado_nome) {
+  $this->set_nome($empregado_nome);
  }
 }
 ```
@@ -499,15 +497,15 @@ Dado que a clase "empregado" está baseada na clase "persoa", "empregado" ten au
 O código:
 
 ```php
-class employee extends person
+class empregado extends persoa
 {
- function __construct($employee_name){
-  $this->set_name($employee_name);
+ function __construct($empregado_nome){
+  $this->set_nome($empregado_nome);
  }
 }
 ```
 
-Observar como podemos usar set_name() en 'empregado', aínda que non declaramos ese método na clase 'empregado'. Isto é porque xa creamos set_name() na clase 'persoa'.
+Observar como podemos usar set_nome() en 'empregado', aínda que non declaramos ese método na clase 'empregado'. Isto é porque xa creamos set_nome() na clase 'persoa'.
 
 **Nerd Nota:** a clase "persoa" chámase (polos nerds) a clase "base" ou a clase "pai" porque é a clase na que se basea a clase "empregado". Esta xerarquía de clases pode chegar a ser importante cando os teus proxectos se fan máis complexos.
 
@@ -515,7 +513,7 @@ Observar como podemos usar set_name() en 'empregado', aínda que non declaramos 
 
 **Reutilización de código con herdanza: parte 3**
 
-Como podes ver no fragmento de código que aparece a continuación, podemos chamar a get_name no noso obxecto "empregado", cortesía de "persoa".
+Como podes ver no fragmento de código que aparece a continuación, podemos chamar a get_nome no noso obxecto "empregado", cortesía de "persoa".
 
 O código:
 
@@ -523,11 +521,11 @@ O código:
 <?php include("class_lib.php"); ?>
  <?php
   // Using our PHP objects in our PHP pages.
-  $stefan = new person("Stefan Mischook");
-  echo "Stefan's full name: " . $stefan->get_name();
+  $xian = new persoa("Xián Pelouro");
+  echo "Nome completo de Xián: " . $xian->get_nome();
  
-  $james = new employee("Johnny Fingers");
-  echo "--> " . $james->get_name();
+  $maria = new empregado("María Moure");
+  echo "--> " . $maria->get_nome();
  ?>
 ```
 
@@ -539,35 +537,37 @@ Este é un exemplo clásico de como OOP pode reducir o número de liñas de  có
 
 Ás veces (ao usar a herdanza) podes ter que cambiar o funcionamento dun método desde a clase base.
 
-Por exemplo, digamos que o método set_name() na clase 'empregado' teña que facer algo diferente ao que fai na clase 'persoa'.
+Por exemplo, digamos que o método ``set_nome()`` na clase 'empregado' ten que facer algo diferente ao que fai na clase 'persoa'.
 
-"Anula" a versión das clases "persoa" de set_name(), declarando o mesmo método en "empregado".
+"Anula" a versión da clase "``persoa``" de ``set_nome()``, declarando o mesmo método en "``empregado``".
 
 O fragmento de código:
 
 ```php
 <?php
- class person
+ class persoa
  {
-  protected function set_name($new_name) {
-   if ($new_name != "Jimmy Two Guns") {
-    $this->name = strtoupper($new_name);
+  // ...
+  protected function set_nome($new_nome) {
+   if ($new_nome != "María Moure") {
+    $this->nome = strtoupper($new_nome);
    }
   }
  }
 
- class employee extends person
+ class empregado extends persoa
  {
-  protected function set_name($new_name) {
-   if ($new_name == "Stefan Sucks") {
-    $this->name = $new_name;
+  // ...
+  protected function set_nome($new_nome) {
+   if ($new_nome == "Xián Pelouro") {
+    $this->nome = $new_nome;
    }
   }
  }
 ?>
 ```
 
-Observe como set_name() é diferente na clase "empregado" da versión que se atopa na clase pai: "persoa".
+Observe como set_nome() é diferente na clase "empregado" da versión que se atopa na clase pai: "persoa".
 
 ## Paso 22
 
@@ -575,55 +575,55 @@ Observe como set_name() é diferente na clase "empregado" da versión que se ato
 
 Ás veces podes ter que acceder á versión dun método, da clase base, que se anulou na clase derivada (ás veces chamada clase "fillo" - *child class*).
 
-No noso exemplo, substituímos o método set_name() na clase 'empregado'. Agora usa este código:
+No noso exemplo, substituímos o método set_nome() na clase 'empregado'. Agora usa este código:
 
 ```php
-person::set_name($new_name);
+persoa::set_nome($new_nome);
 ```
 
-... para acceder á versión (persoa) da clase pai do método set_name().
+... para acceder á versión (persoa) da clase pai do método set_nome().
 
 **O código:**
 
 ```php
 <?php
- class person
+ class persoa
  {
-  // explícitamente agregar propiedades de clase é opcional, pero
-        // é unha boa practica
-  var $name;
-  function __construct($persons_name) {
-   $this->name = $persons_name;
+  // agregar explícitamente propiedades de clase é opcional, pero
+  // é unha boa practica
+  var $nome;
+  function __construct($persoas_nome) {
+   $this->nome = $persoas_nome;
    }
 
-   public function get_name() {
-    return $this->name;
+   public function get_nome() {
+    return $this->nome;
    }
 
    // os métodos e propiedades protexidos restrinxen o acceso a
          // eses elementos.
-   protected function set_name($new_name) {
-     if ($this->name !=  "Jimmy Two Guns") {
-      $this->name = strtoupper($new_name);
+   protected function set_nome($new_nome) {
+     if ($this->nome !=  "María Moure") {
+      $this->nome = strtoupper($new_nome);
      }
   }
  }
 
  // 'extends' é a palabra clave que permite a herdanza
- class employee extends person
+ class empregado extends persoa
  {
-  protected function set_name($new_name) {
-  if ($new_name ==  "Stefan Sucks") {
-   $this->name = $new_name;
+  protected function set_nome($new_nome) {
+  if ($new_nome ==  "Xián Pelouro") {
+   $this->nome = $new_nome;
   }
-   else if ($new_name ==  "Johnny Fingers") {
-   person::set_name($new_name);
+   else if ($new_nome ==  "María Moure") {
+   persoa::set_nome($new_nome);
   }
  }
 
- function __construct($employee_name)
+ function __construct($empregado_nome)
  {
-  $this->set_name($employee_name);
+  $this->set_nome($empregado_nome);
  }
 }
 ?>
@@ -638,23 +638,23 @@ person::set_name($new_name);
 ... permíteche nomear especificamente a clase onde queres que PHP busque un método:
 
 ```php
-'person::set_name()'
+'persoa::set_nome()'
 ```
 
-... dille a PHP que busque set_name() na clase "persoa".
+... dille a PHP que busque set_nome() na clase "persoa".
 
 Tamén hai un atallo se só queres facer referencia ao pai da clase actual, usando a palabra clave "pai".
 
 O código:
 
 ```php
-protected function set_name($new_name)
+protected function set_nome($new_nome)
 {
- if ($new_name ==  "Stefan Sucks") {
-  $this->name = $new_name;
+ if ($new_nome ==  "Xián Pelouro") {
+  $this->nome = $new_nome;
   }
-  else if ($new_name ==  "Johnny Fingers") {
-  parent::set_name($new_name);
+  else if ($new_nome ==  "María Moure") {
+  parent::set_nome($new_nome);
  }
 }
 ```

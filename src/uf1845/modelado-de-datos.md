@@ -36,11 +36,11 @@ Hai moitos tipos de modelos de datos, con diferentes tipos de esquemas. A comuni
 
 O modelo "gran imaxe" representa a estrutura e o contido xerais, pero non o detalle do plan de datos. É o típico punto de partida para o modelado de datos, que identifica os distintos conxuntos de datos e fluxos de datos en toda a organización. O modelo conceptual é o modelo para o desenvolvemento dos modelos lóxicos e físicos, e é unha parte importante da documentación da arquitectura de datos.
 
-### modelo lóxico de datos
+### Modelo lóxico de datos
 
 O segundo nivel de detalle é o modelo de datos lóxico. Está máis relacionado coa definición xeral de "modelo de datos" xa que describe o fluxo de datos e o contido da base de datos. O modelo lóxico engade detalles á estrutura xeral do modelo conceptual pero non inclúe especificacións para a propia base de datos, xa que se pode aplicar a diversas tecnoloxías e produtos. (Ten en conta que pode non existir un modelo conceptual se o proxecto se relaciona cunha única aplicación ou outro sistema limitado).
 
-### modelo de datos físicos
+### Modelo de datos físicos
 
 O modelo de base de datos física describe os detalles de como se realizará o modelo lóxico. Debe conter detalles suficientes para que os tecnólogos poidan crear a estrutura real da base de datos en hardware e software para soportar as aplicacións que a utilizarán. Sobra dicir que o modelo de datos físicos é específico dun sistema de software de base de datos designado. Pode haber varios modelos físicos derivados dun único modelo lóxico se se usan sistemas de bases de datos diferentes.
 

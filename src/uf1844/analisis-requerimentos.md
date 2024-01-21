@@ -18,13 +18,13 @@ Antes de poñer en marcha un proxecto web o equipo implicado xunto co cliente de
 Para cumprir cos puntos que determinan o alcance dun análise de sistemas, é necesario prepararnos axeitadamente.
 
 Isto implica agrupar toda a información relevante acerca da organización e dos seus obxectivos, mesmo aquela que serva para que o analista se forme unha imaxe da organización e identifique a cultura da organización baixo a cal se opera e que coñeza as normas laborais da organización.
-Será pois de gran utilidade a identificación de:
+Será pois de grande utilidade a identificación de:
 
-1. Problemas, a etapa crítica para o éxito do resto do proxecto: se require a observación honesta do analista, que ten ese traballo: resaltar os problemas.
+1. **Problemas**, a etapa crítica para o éxito do resto do proxecto: se require a observación honesta do analista, que ten ese traballo: resaltar os problemas.
 
-2. Oportunidades, situacións que o analista cree que poden mellorarse: permite que o negocio gañe valor competitivo.
+2. **Oportunidades**, situacións que o analista cree que poden mellorarse: permite que o negocio gañe valor competitivo.
 
-3. Obxectivo: o analista debe descubrir o que está tratando de facer o negocio; así como ser capaz de identificar si unha aplicación de sistema de información pode axudar ao sistema e ao negocio para alcanzar os seus obxectivos, atacando problemas específicos e oportunidades.
+3. **Obxectivo**: o analista debe descubrir o que está tratando de facer o negocio; así como ser capaz de identificar si unha aplicación de sistema de información pode axudar ao sistema e ao negocio para alcanzar os seus obxectivos, atacando problemas específicos e oportunidades.
 A información esencial ao respecto é a seguinte:
 
 - A actividade da organización (Que).
@@ -40,12 +40,11 @@ A información esencial ao respecto é a seguinte:
 
 - Cal é o equipo que o sistema necesita para funcionar? Móbil, tablet, laptop ou desktop, web TV, outro.
 - Cantos usuarios simultáneos debe atender?
-- Hai restricións ambientais como falta de acceso a internet ou aspectos de
-seguridade?
+- Hai restricións ambientais como falta de acceso a internet ou aspectos de seguridade?
 - Interface
 - As entradas de información proveñen de usuarios ou dun ou máis sistemas?
 - A saída vai a un ou a máis sistemas?
-- Existe unha maneira preestablecida en que deben formatarse os datos?
+- Existe unha maneira preestablecida na que deben formatarse os datos?
 
 ### Usuarios e factores humanos
 
@@ -97,8 +96,7 @@ seguridade?
 
 ### Aseguramento da calidade
 
-- Cales son os requirimentos para a confiabilidade, dispoñibilidade, facilidade de
-mantemento, seguridade e demais atributos de calidade?
+- Cales son os requirimentos para a confiabilidade, dispoñibilidade, facilidade de mantemento, seguridade e demais atributos de calidade?
 - Como deben mostrarse as características do sistema a terceiros?
 - O sistema debe detectar e illar defectos?
 - Cal é o pro medio de tempo prescrito entre erros?
